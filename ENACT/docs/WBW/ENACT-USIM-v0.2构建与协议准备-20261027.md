@@ -16,7 +16,8 @@
 | 评分协议 | `usim_strict_v0.3`：固定分母 + 严格解析 + **空/不可见参考转移 gate**；v0.1 A/B/C 回归逐位不变（0.9571/0.9286/0.7286） |
 | L=5 | 仅 transfer 的 3 条（1304/1318/1357）通过 `at_box`/`NearBox(robot,green_box)` 支持 L=5（6 题）；transfer 100/100 条 `InBox` 不可证；pick 无 release_settle |
 | 划分 | dev 19 条/84 题、val 8 条/36 题；test 预留 10 条（未标注，冻结后构建） |
-| 冻结 | v0.2 协议冻结清单（见 `data/usim_enact/_protocol/`，hash 见 §8） |
+| B 条件 | 局部放大已构建：120 题 / **432 张复合图**（R1 目标锚定 246、R2 固定窗口 186）；左 panel 与 A 原图 **432/432 逐字节一致**，432 张均可被冻结渲染器精确复现；红目标 254 帧中 250 帧完整落在放大窗内 |
+| 冻结 | v0.2 协议冻结清单 `freeze_usim-enact-v0.2_20261027b.json`（13 组 1818 文件，payload `6d14fb83…`，`--verify` exit 0、self-test 7/7；见 §8） |
 | 未完成 | v0.2 的 A/B/C/D 模型运行、正式 test 构建与运行（均需 `VLM_API_KEY`） |
 
 ## 1. v0.2 数据与标注
@@ -144,14 +145,14 @@
 
 - episode 分组 bootstrap（2000 次，seed 20261024）与 direction×L、任务、episode 三层表已生成（all/dev/val 三份）；text_prior 的 episode bootstrap CI 为 **[0.6140, 0.7037]**（dev 0.6548 / val 0.6667）；单个 episode 的分位等于点估计（重采样单位即 episode），不确定性看总体/direction×L 层。
 - 逐 setting：forward L3 的 identity 0.5185、L4 0.1667、L5 0；inverse L3 的文本先验 1.0。程序基线是**模型报告必须并列**的对照，尤其 identity（固定顺序捷径）与 text_prior（文本捷径）。
-- v0.2 的 B 条件（局部放大）尚未生成（v0.1 的 B 为负结果、天花板限制），属可选对照；条件 C/D 的 v0.2 QA 由 protocol-engineer 构建，待模型运行后与 A 配对报告。
+- v0.2 的 B 条件（局部放大）已按 v0.1 冻结裁剪策略构建完成（§7.1）：120 题 / 432 图，题面与 A 完全相同、仅图像多出放大面板；条件 C/D 的 v0.2 QA 已就绪，四条件待模型运行后与 A 配对报告。
 
 ## 7. 条件矩阵与运行准备（A/B/C/D）
 
 | 条件 | 输入 | 状态 |
 |---|---|---|
 | A 原图 | ego 全图 | dry-run 通过（v0.2 dev 84 题/19 ep；format directive sha 与 v0.1 冻结一致 `987976c3…`） |
-| B 局部放大 | `[原图 \| 局部]` | 脚本存在（`build_crops.py`，v0.1 用过）；v0.2 尚未生成，属可选对照 |
+| B 局部放大 | `[原图 \| 局部]` | **已构建**（§7.1）：120 题 / 432 图，QA sha `8c3cfc7b…`；dev/val 划分与 A 逐条同题同 episode |
 | C 去图 | 仅题干 | dry-run 通过（`--drop-images`） |
 | D 去动作文本 | forward 题干删除动作列表 | v0.1 35 题/oracle 1.0；**v0.2 60 题（fwd L3 27/L4 30/L5 3）、oracle 1.0、216 图全在**（`_protocol/conditions/D_no_action_text_v0.2/`，QA sha `81d3382a…`） |
 | 程序基线 | oracle/identity/reverse/random/text-prior | v0.2 已跑（§3）；text-prior v0.2 见 §6 |
@@ -163,15 +164,35 @@
 - **P1（v0.1 遗留）**：v0.1 的 A/B/C 三次 run 使用 3 个不同 `run_inference.py` 版本；v0.2 的 A/B/C/D 必须在同一源码版本上运行并在冻结清单记录源码哈希。
 - 正式测试需要 `VLM_API_KEY`（仅环境变量）；当前会话没有，故 v0.2 只做到构建/基线/协议冻结与 dry-run。
 
-## 8. 协议冻结与正式 test 计划
+### 7.1 B 条件（局部放大）构建与独立校验
 
-**冻结已完成**（`data/usim_enact/_protocol/freeze_usim-enact-v0.2_20261027.json`）：
+**构建**：直接调用冻结版 `build_crops.py`（该脚本在冻结 `code` 组内，本轮**未做任何修改**），输入 v0.2 curated QA，输出 `QA/conditions/B_zoom/{enact_ordering.jsonl, images/, build_manifest.json}`。裁剪策略沿用 v0.1 冻结规则：目标色块紧凑（紧凑度 ≥0.35、长边 ≤120px）时按 `side = max(160, 4·max(w,h))` 居中取窗（R1），否则退到固定窗 `x∈[60,260], y∈[70,230]`（R2）；两窗口均缩放至 320×240 并与未改动原图横向拼接为 640×240。
 
-- 13 组 **1374 文件**（labels / images / QA / run inputs / baseline / splits / condition D / model config / docs / code 等），payload `35568227a73ee011b217f8a7f13922fe78f830a385c39d117f255252232eb85e`；
-- **48 项硬校验全过**，`--verify` exit 0，`--self-test-v02` 7/7；dataset 27 标注 + 220 帧哈希全对；
+| 项目 | 结果 |
+|---|---|
+| 规模 | 120 题 / **432 图**（L3×54→3 帧、L4×60→4 帧、L5×6→5 帧，与题集结构逐一对应） |
+| 取景规则 | R1 目标锚定 **246**、R2 固定窗口 **186** |
+| 实际放大倍率 | R1 **2.0×**（窗口边长恒为 160）、R2 **1.6×**（窗口 200×160 → 320×240）；R1 的 `4·bbox` 项从未触发下限，故**规则只改变取景位置、不改变倍率** |
+| 控制变量 | 左 panel 与条件 A 原图 **432/432 逐字节一致（0 像素差）**；题面/`key_frame_ids`/`answer`/`options` 与 curated QA **0 处差异** |
+| 可复现性 | 用冻结 `compose()` 重算窗口并重新合成，**432/432 与落盘 PNG 完全相同** |
+| 可答性 | B 题集程序基线与 A **逐位相同**：oracle 1.0、identity 0.2833、random 0.3333 |
+
+**独立校验脚本**：`scripts/usim/check_condition_b.py`（本轮新增，非冻结生成链的一部分）；证据 `_protocol/condition_b_check_usim-enact-v0.2.json`，`status=pass`、失败 0。该脚本存在的原因：`build_crops.py` 只把**聚合**规则计数写进 `build_manifest.json`，逐帧的规则与窗口坐标不落盘，单看它自己的产物无法审计"哪一帧为什么这样取景"。校验脚本因此从源帧重推每一帧的取景决策并整图重合成，再与磁盘产物逐字节比对。
+
+**已知缺陷（如实记录，未修）**：红目标可见度审计（254 帧可测）显示 **250 帧目标完整落在放大窗内**，仅 `ep1330/f00080` 的 4 帧（占 432 张的 0.9%）目标被窗口左边界裁切、仅 30.6% 的 bbox 面积在窗内——该帧红块 72×73、紧凑度 0.26 未过 R1 的 0.35 门限，退到固定窗后目标偏出。影响面：仅该 episode 的 "Current State" 帧，且该帧在左 panel 仍以 A 同等分辨率完整可见；方向上是**保守衰减**（B 在该帧≈A），不构成混淆。蓝色目标不做锚定（水体本身是最大蓝块），蓝色 episode 全部走 R2 固定窗口，经抽检（000200）目标位于夹爪旁、取景正常。
+
+
+
+**冻结已完成**（`data/usim_enact/_protocol/freeze_usim-enact-v0.2_20261027b.json`；首版 `…_20261027.json` 保留作对照）：
+
+- 13 组 **1818 文件**（labels / images / QA / run inputs / baseline / splits / condition D / model config / docs / code 等），payload `6d14fb83f822a6088f7d9acc4d638971147b90e8f8e1cca6070b333d23c8c10b`（2026-10-27T18:05:43+08:00 重新冻结，`freeze_id=20261027b`）；
+- **相对首版（1374 文件 / `d3370ad2…`）的增量全部对应 B 条件**：images +432（B 复合图）、qa +2（`B_zoom/enact_ordering.jsonl` + `build_manifest.json`）、inputs +4（`dev_B` / `val_B` / `dev_val_B` / `splits_manifest_B`）、program_baselines +6（oracle/identity/random 的 B 版 json + items）；
+- 首版冻结漂移的原因已记录：17:18:53 首版 freeze 后 audit 又被重跑，造成 `audit_evidence` 哈希漂移；本版以最终证据冻结，且**冻结后不再重跑任何写入冻结路径的脚本**；
+- **48 项硬校验全过**，`--verify` exit 0（`payload_hash_match: true`、errors 为空），`--self-test-v02` 7/7；
 - 规范 sha `ddbcc533…`、评测方案 sha `3754c82f…`；splits seed 20261027（dev 84/19ep、val 36/8ep、test 未建）；
 - **test_reserve 10 条仅登记**：与 curated QA / splits / 条件 D **零重叠**、`used_in_dev_val=false`；
 - `model_config` 是**计划配置**（v0.1 冻结配置派生）；A/B/C/D 运行后须以真实 `run_config` 重新生成/补充冻结（新 freeze_id），并保持 `--verify` 通过。
+- **B 条件与 A 的配对前提已固定**：`dev_B.jsonl` 与 `dev.jsonl` 的 84 个 question ID 一对一同序、episode 划分完全相同（生成后已断言；`splits_manifest_B.json` 的 `derived_from` 字段记录了改名重算过程）。
 
 **正式 test**（冻结后执行，不参与任何选择）：
 
@@ -205,7 +226,16 @@ $run = 'data\usim_enact\runs\qwen3.8-max\v02_dev_001'
 # 运行准备（dummy key 仅用于 dry-run 输入校验，不会发请求）
 $env:VLM_API_KEY='dry-run-placeholder'; $env:VLM_API_URL='https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions'; $env:VLM_MODEL_NAME='qwen3.8-max'
 & $py scripts\usim\run_inference.py --data-root $v2 --qa "$run\inputs\dev.jsonl" --out "$run\A\predictions.jsonl" --api-url $env:VLM_API_URL --model $env:VLM_MODEL_NAME --enable-thinking false --max-completion-tokens 256 --condition-label A_ego_full --dry-run
+
+# B 条件（局部放大）：构建 -> 独立校验 -> 划分 -> 程序基线
+& $py scripts\usim\build_crops.py --data-root $v2 --qa "$v2\QA\train\enact_ordering_curated.jsonl"
+& $py scripts\usim\check_condition_b.py --data-root $v2     # 期望 status=pass、failures=[]
+& $py scripts\usim\make_splits_v02.py --qa "$v2\QA\conditions\B_zoom\enact_ordering.jsonl" --out-dir <临时目录>   # 产物改名并加 B_ 前缀后再并入 $run\inputs
+& $py scripts\usim\evaluate.py --data-root $v2 --qa "$v2\QA\conditions\B_zoom\enact_ordering.jsonl" --synthetic oracle --out "$run\baselines\baseline_oracle_B.json"
 ```
+
+- `make_splits_v02.py` 输出文件名固定为 `dev/val/dev_val.jsonl`，直接写进 `$run\inputs` 会覆盖 A/C/D 的冻结输入；因此先落临时目录，再以 `dev_B.jsonl` / `val_B.jsonl` / `dev_val_B.jsonl` 并入，`splits_manifest_B.json` 的 path 与 sha256 由脚本按最终文件重算（已在 `derived_from` 字段注明该改名）。
+- B 条件运行口径：`--qa "$run\inputs\dev_B.jsonl"`（或全量 B QA）+ `--condition-label B_zoom`，其余参数与 A 完全一致，且必须与 A/C/D 使用同一 `run_inference.py` 源码版本。
 
 ## 10. 限制
 
@@ -216,6 +246,8 @@ $env:VLM_API_KEY='dry-run-placeholder'; $env:VLM_API_URL='https://dashscope.aliy
 5. v0.1 的 A/B/C 用 3 个不同 runner 版本（P1）；v0.2 必须同版本重跑，旧对照只能表述“无可测增益”。
 6. 文本先验问题未消失：v0.2 的 inverse 仍需附程序文本基线与去图条件，主视觉指标用 forward L≥4 与条件 D。
 7. `qwen3.8-max` 为别名模型，底层快照可能变化；只能记录调用时间、request_id 与响应 model。
+8. **B 条件是数字放大，不增加像素信息**：源帧 320×240，放大面板由 R1 2.0× / R2 1.6× 上采样（INTER_CUBIC）得到，没有新的高频细节；它检验的是"目标在输入中占据更多像素/更多视觉 token"能否提升排序准确率，不能表述为"提高分辨率"或"补足细节"。v0.1 的 B 为负结果且存在天花板效应，v0.2 的 B 预期同样只能给出"无可测增益"或弱增益。
+9. B 的取景规则只由目标颜色与色块几何决定，构建期**未使用任何 gt 答案、帧序或模型失败信息**；但红色是唯一的可靠锚点，蓝色/无色目标一律走固定窗，因此 B 的取景质量在蓝色 episode 上未被逐帧验证（仅抽检 000200 一例正常）。
 
 ## 11. 材料索引
 

@@ -2,9 +2,9 @@
 
 最近更新：2026-10-27（Asia/Shanghai）。整理日期：2026-10-23（Asia/Shanghai）。目标：理解 ENACT，在当前工作区的 **USIM 水下仿真数据**上重建同类前向、逆向世界建模评测。
 
-当前执行入口（2026-10-27）：[下一步工作清单与运行手册](05_next_steps.md)（状态与当前有效命令）→ [v0.2 评测与正式测试方案](WBR/ENACT-USIM-v0.2评测与正式测试方案-20261027.md)（在研门禁）；v0.1 现状与证据见 [评分契约与统计](WBW/ENACT-USIM-评分契约与统计-20261027.md) 与 [qwen3.8-max 执行结果](WBW/ENACT-USIM-qwen3.8-max-执行结果-20261024.md)。2026-10-24 的 [DashScope 实施方案](WBR/ENACT-USIM-DashScope-API完整实施方案-20261024.md) 与 [API 方案重写记录](WBW/ENACT-USIM-API方案重写记录-20261024.md) 保留为已完成的接口验证记录。
+当前执行入口（2026-10-27）：[v0.2 构建与协议准备](WBW/ENACT-USIM-v0.2构建与协议准备-20261027.md)（v0.2 数据/题集/冻结/正式 test 计划）→ [v0.2 协议证据](WBW/ENACT-USIM-v0.2协议证据-20261027.md)（五 gate 证据）→ [下一步工作清单与运行手册](05_next_steps.md)。v0.1 现状与证据见 [评分契约与统计](WBW/ENACT-USIM-评分契约与统计-20261027.md) 与 [qwen3.8-max 执行结果](WBW/ENACT-USIM-qwen3.8-max-执行结果-20261024.md)。2026-10-24 的 [DashScope 实施方案](WBR/ENACT-USIM-DashScope-API完整实施方案-20261024.md) 与 [API 方案重写记录](WBW/ENACT-USIM-API方案重写记录-20261024.md) 保留为已完成的接口验证记录。
 
-**建议路线：先补齐 USIM 数据和语义标注，用少量训练集轨迹跑通 ENACT 风格 QA，再扩大评测。** ENACT 的“动作”是可见场景状态的变化，不是 USIM 的 13 维控制向量。当前主要缺口已从“数据/推理器缺失”转为 **v0.2 标注、题集与协议冻结**。
+**建议路线：先补齐 USIM 数据和语义标注，用少量训练集轨迹跑通 ENACT 风格 QA，再扩大评测。** ENACT 的“动作”是可见场景状态的变化，不是 USIM 的 13 维控制向量。当前主要缺口已从“数据/推理器缺失”转为 **v0.2 真实模型实验与正式 test（需 `VLM_API_KEY`）**；v0.2 数据、题集与协议冻结已于 2026-10-27 完成。
 
 ## 阅读入口
 
@@ -33,11 +33,21 @@
 - **独立标签复核 round2 已完成**（2026-10-27，盲评 + 裁决）：修正 **7 处 `OnSeabed` 物理支撑语义**（A 组 3 + B 组 4 个 key3）、**2 处可见性**（555/f140、556/f180，共被 16 道题引用）；`NextTo` 明确为 **approach 语义**（抓住后恒 false）；notes 把红色游动物体由“red cylinder”改为“小鱼”；确认 **1302 无入箱证据**；7 条 v0.1 事实表为模板产物。修正写入 v0.2 迁移，v0.1 原件未改。[reviewer_a 报告](../data/usim_enact/_review/round2/reviewer_a/review_report.md)、[reviewer_b 报告](../data/usim_enact/_review/round2/reviewer_b/review_report.md)、[v0.2 规范 §7–8](WBR/ENACT-USIM-v0.2标注与关键帧规范-20261027.md)
 - **条件 D 已构建**：forward 去动作文本 35 题 / 112 图，oracle EM/TA/PA=1.0；尚未跑模型。[条件 D manifest](../data/usim_enact/_protocol/conditions/D_no_action_text/build_manifest.json)、[评分契约 §11](WBW/ENACT-USIM-评分契约与统计-20261027.md)
 
-### 进行中与阻塞（截至 2026-10-27）
+### v0.2 构建与协议冻结（2026-10-27 完成）
 
-- **v0.2 扩展与正式测试冻结**：v0.1 七条迁移标注已落盘（[migration_v01_to_v02.json](../data/usim_enact/usim-enact-v0.2/migration_v01_to_v02.json)）；规划 dev 19 / val 8（合计 27 条开发/验证）、test 预留 10 条；新增 20 条标注、v0.2 题集构建与冻结仍在进行。[v0.2 标注与关键帧规范](WBR/ENACT-USIM-v0.2标注与关键帧规范-20261027.md)、[v0.2 评测与正式测试方案](WBR/ENACT-USIM-v0.2评测与正式测试方案-20261027.md)；扩展候选 30 条经证据扫描**无一条干净支持 L=5**（transfer 的 InBox 不可证、pick 无 release_settle、touching 在 ego 不可辨），故 v0.2 主线按 **L≤4** 建题；仅 transfer 的 at_box 特例（`NearBox(robot, green_box)`，需 Lead 批准）可能补 **3–4 条 L=5**。[扩展候选与工具](WBW/ENACT-USIM-扩展候选与工具-20261027.md)、[v0.2 规范 §3.1](WBR/ENACT-USIM-v0.2标注与关键帧规范-20261027.md)
-- **条件 D 实跑、思考模式对照、正式 test**：未开始，依赖 v0.2 题集与协议冻结。
-- **API 密钥阻塞**：当前会话无 `VLM_API_KEY`，推理器只能 `--dry-run`（输入/资产校验），不能产出正式分数；正式 test 需注入密钥后运行。[v0.2 方案 §7](WBR/ENACT-USIM-v0.2评测与正式测试方案-20261027.md)、[评分契约 §8](WBW/ENACT-USIM-评分契约与统计-20261027.md)
+- **v0.2 数据**：27 条 train episode（v0.1 迁移 7 + 新增 20），110 关键帧，83 个相邻转移（81 可见）；`OnSeabed` 物理支撑、`NextTo` approach 语义、`NearBox` at_box 已写入迁移与规范。[v0.2 构建报告](WBW/ENACT-USIM-v0.2构建与协议准备-20261027.md)
+- **v0.2 题集（curated 120 题）**：forward/inverse 各 L3 27 / L4 30 / L5 3；重排 seed 20261027；**多答案=0、空参考转移=0、oracle 1.0**；exact uniform EM 0.3104、identity 0.2833、text_prior 0.6583（**inverse 60/60 仍可被纯文本解出**）。划分 dev 84 题/19 ep、val 36 题/8 ep、test 预留 10 条（未标注）。[协议证据](WBW/ENACT-USIM-v0.2协议证据-20261027.md)
+- **v0.2 协议冻结**：13 组 **1818 文件**，payload `6d14fb83f822a6088f7d9acc4d638971147b90e8f8e1cca6070b333d23c8c10b`（`freeze_id=20261027b`，含 B 条件 432 图 + B 划分 + B 基线；较首版 1374 文件/`d3370ad2…` 的增量全部对应 B），`--verify` exit 0、self-test-v02 7/7；test_reserve 与 dev/val/条件 D **零重叠**。[冻结清单](../data/usim_enact/_protocol/freeze_usim-enact-v0.2_20261027b.json)
+- **条件 D（v0.2）**：forward 60 题 / 216 图 / oracle 1.0；**尚未跑模型**。[条件 D](../data/usim_enact/_protocol/conditions/D_no_action_text_v0.2/)
+- **条件 B（局部放大 v0.2）**：已构建 120 题 / 432 图（R1 目标锚定 246、R2 固定窗 186，倍率 2.0×/1.6×）；左 panel 与 A 逐字节一致、432/432 可复现、程序基线与 A 逐位相同；**尚未跑模型**。[构建报告 §7.1](WBW/ENACT-USIM-v0.2构建与协议准备-20261027.md)
+- **L=5 仅 6 题**：来自 3 条 transfer 的 at_box（`NearBox(robot,green_box)`）；`InBox` / `release_settle` / `touching` 均无 ego-only 证据（transfer 100/100 条无可靠入箱）。
+
+### 待做与阻塞（截至 2026-10-27）
+
+- **A/B/C/D 模型实验（v0.2）与正式 test**：未运行；需 `VLM_API_KEY`。四条件必须同一 `run_inference.py` 源码版本，运行后以真实 run 产物重新生成 run 级冻结。
+- **统计脚本缺 D 与文本可解分层**：`report_stats.py` 的 `--condition` 已是任意 N 条件（D 可直接以 `NAME=相对目录` 加入配对），但**尚无"文本可解/不可解"分层表**（v0.2 的 inverse 60/60 文本可解，必须分层才能报视觉证据）；该脚本不在冻结 `code` 组内，可安全扩展。
+- **思考模式对照**（`enable_thinking=true` + 更大预算）未开始。
+- **API 密钥阻塞**：当前会话无 `VLM_API_KEY`，推理器只能 `--dry-run`（输入/资产校验），不能产出正式分数。[v0.2 方案 §7](WBR/ENACT-USIM-v0.2评测与正式测试方案-20261027.md)
 
 ### 历史里程碑（2026-10-23 及以前，保留原文）
 
@@ -52,6 +62,8 @@
 
 | 材料 | 内容 |
 |---|---|
+| [v0.2 构建与协议准备](WBW/ENACT-USIM-v0.2构建与协议准备-20261027.md) | v0.2 数据/题集/基线/评分 v0.3/条件矩阵/冻结与正式 test 计划（本报告） |
+| [v0.2 协议证据](WBW/ENACT-USIM-v0.2协议证据-20261027.md) | v0.2 audit / 文本先验 / 条件 D / 冻结 / 统计五 gate 证据与命令 |
 | [评分契约与统计](WBW/ENACT-USIM-评分契约与统计-20261027.md) | `usim_strict_v0.3` gate、多答案审计、A/B/C 统计与 bootstrap、文本先验基线、v0.1 冻结、条件 D |
 | [v0.2 标注与关键帧规范](WBR/ENACT-USIM-v0.2标注与关键帧规范-20261027.md) | 谓词定义（OnSeabed 物理支撑、NextTo approach）、选帧规则、复核裁决 §8 |
 | [v0.2 评测与正式测试方案](WBR/ENACT-USIM-v0.2评测与正式测试方案-20261027.md) | v0.2 数据组成、构建门禁、条件矩阵、正式 test 协议 |

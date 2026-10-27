@@ -10,7 +10,7 @@
 | 1 | v0.2 QA 有效性（audit，v0.3 gate） | **PASS** | 120 题；**0 多答案**（接受集直方图 `{1:120}`）；**0 空/不可见参考转移**；参考排列 120/120 被接受；精确随机 EM/TA **0.3104**、PA_item **0.4431**、PA_micro **0.4185**；identity EM **0.2833**；与 Lead 侧 audit 逐项一致 | `data/usim_enact/_protocol/audit_qa_validity_usim-enact-v0.2.json` |
 | 2 | 文本先验基线 v0.2（双模板） | **PASS** | 规则 `text_lifecycle_v2`；模板自检 14/14、合成排序自检 4/4；**inverse 60/60 文本可解**；forward 19/60；总体 EM **0.6583**、PA_item 0.7160、PA_micro 0.6955；identity 答案率 0.625 vs 参考 0.2833 | `data/usim_enact/_protocol/text_prior_baseline_usim-enact-v0.2.json` |
 | 3 | 条件 D（forward 去动作文本） | **PASS** | 60 题（L3 27 / L4 30 / L5 3）；oracle **EM/TA/PA=1.0**（156 转移）；216 张图片全部存在；integrity 全过 | `data/usim_enact/_protocol/conditions/D_no_action_text_v0.2/{enact_ordering.jsonl,build_manifest.json,oracle_report.json}` |
-| 4 | v0.2 协议冻结 | **PASS** | 13 组 **1374 文件**；payload `d3370ad2…`；`--verify` exit 0（含 `--root E:\code\UW-VLM\ENACT`）；self-test 7/7；dataset 27 标注 + 220 帧哈希全对；test_reserve 10 条**只登记**、与 curated/splits/条件 D 零重叠；split seed 20261027（dev 84/19 ep、val 36/8 ep、test 未建）；规范/评测方案/条件 D/模型参数/评分 v0.3 全部入清单 | `data/usim_enact/_protocol/freeze_usim-enact-v0.2_20261027.json` + `.verify.json` |
+| 4 | v0.2 协议冻结 | **PASS** | 13 组 **1818 文件**（`freeze_id=20261027b`，含 B 条件）；payload `6d14fb83…`；`--verify` exit 0；self-test 7/7；dataset 27 标注 + 220 帧哈希全对；test_reserve 10 条**只登记**、与 curated/splits/条件 D 零重叠；split seed 20261027（dev 84/19 ep、val 36/8 ep、test 未建）；规范/评测方案/条件 D/模型参数/评分 v0.3/B 条件全部入清单 | `data/usim_enact/_protocol/freeze_usim-enact-v0.2_20261027b.json` + `.verify.json` |
 | 5 | 程序基线 + dev/val 统计（report_stats） | **PASS** | all(120)：oracle 1.0 / identity 0.2833 / reverse 0.3750 / random 0.3333 / empty·malformed 0 / **text_prior 0.6583**（episode bootstrap CI [0.6140, 0.7037]）；dev(84)/val(36) 分层表已产出；empty/malformed 的 invalid 计数 = 该 scope 题数（固定分母生效） | `data/usim_enact/_protocol/stats/report_stats_v0.2_{all,dev,val}.json/.md` |
 | 6 | A/B/C/D 模型条件 | **待运行** | 需要 `VLM_API_KEY`（环境变量，不落盘）；必须同一 `run_inference.py` 源码版本；运行后用 §7 命令出条件矩阵与 A−C/A−D/A−B 配对 | 尚无预测；§7 给出模板 |
 
@@ -96,7 +96,9 @@
 
 ## 5. Gate 4：v0.2 协议冻结
 
-证据：`data/usim_enact/_protocol/freeze_usim-enact-v0.2_20261027.json`（362 KB）+ `.verify.json`。**13 组、1374 个文件**；`profile=v0.2`、`freeze_id=20261027`、`manifest_payload_sha256=d3370ad2b1b00ecd15b063e6b25d200418310cba6a9ae134d59669bc72339f8a`；`--verify` exit **0**（默认记录 root 与显式 `--root E:\code\UW-VLM\ENACT` 均通过）；`--self-test-v02` **7/7**（mock fixture：生成/校验/篡改检测、test_reserve 重叠检出、缺文档检出、条件 D id 不一致检出）。
+证据：`data/usim_enact/_protocol/freeze_usim-enact-v0.2_20261027b.json` + `.verify.json`。**13 组、1818 个文件**；`profile=v0.2`、`freeze_id=20261027b`、`manifest_payload_sha256=6d14fb83f822a6088f7d9acc4d638971147b90e8f8e1cca6070b333d23c8c10b`；`--verify` exit **0**（`payload_hash_match=true`、`errors=[]`）；`--self-test-v02` **7/7**（mock fixture：生成/校验/篡改检测、test_reserve 重叠检出、缺文档检出、条件 D id 不一致检出）。
+
+> **第二次重新冻结记录（B 条件加入，2026-10-27T18:05:43+08:00）**：首版 `freeze_usim-enact-v0.2_20261027.json`（1374 文件 / `d3370ad2…`）冻结时 B 条件图尚未生成，`QA/conditions/B_zoom/` 为空，因此 B 资产不在其文件清单内。B 条件构建完成后按同一 profile 重新冻结为 `20261027b`，**增量全部对应 B**：images +432、qa +2、inputs +4、program_baselines +6（基线 B 版）。两版清单同时保留；首版仍可通过 `--verify`，但**正式运行须以 `20261027b` 为准**。
 
 > **重新冻结记录（发布前修正）**：首版冻结生成于 `2026-10-27T17:18:53+08:00`；随后 audit 证据在 `17:23:52` 被重跑（内容数字不变、`audited_at`/哈希变化），导致 Lead 独立 verify 时 `audit_evidence` 组出现 1 处 hash mismatch（payload 本身匹配）。已用**最终版** audit 证据重新生成冻结（`created_at=2026-10-27T17:25:34+08:00`，payload 如上），`--verify` exit 0、self-test 通过；**此后未再运行 audit/text-prior/条件 D/程序基线等任何会改写冻结证据的命令**（仅编辑本文件与评分契约报告，二者不在冻结组内）。
 
@@ -178,7 +180,7 @@
 | 条件 | QA/输入 | 说明 |
 |---|---|---|
 | A 原图 | `_protocol` 中 curated QA（图像同 curated 记录） | 正式主条件 |
-| B 局部放大 | 需先按 `build_crops.py` 规则生成 B 条件 QA/图 | 当前 v0.2 尚无 B 条件图（images 组中 B 目录为空） |
+| B 局部放大 | `usim-enact-v0.2/QA/conditions/B_zoom/enact_ordering.jsonl`（题面与 A 相同，仅图像为 `[原图\|放大]` 640×240）；dev/val 用 `inputs/dev_B.jsonl` / `val_B.jsonl` | **已构建**：120 题 / 432 图，QA sha `8c3cfc7b…`；左 panel 与 A 逐字节一致、432/432 可复现、程序基线与 A 逐位相同（[构建报告 §7.1](ENACT-USIM-v0.2构建与协议准备-20261027.md)） |
 | C 去图 | curated QA + `--drop-images` | 文本先验模型对照 |
 | D 去动作文本 | `_protocol/conditions/D_no_action_text_v0.2/enact_ordering.jsonl` | 纯视觉 forward 对照 |
 
@@ -279,8 +281,11 @@ $P   = 'data\usim_enact\_protocol'
 | `data/usim_enact/_protocol/conditions/D_no_action_text_v0.2/build_manifest.json` | 50 KB | D 变换规则/完整性/oracle/限制/payload |
 | `data/usim_enact/_protocol/conditions/D_no_action_text_v0.2/oracle_report.json` | 1 KB | D oracle（EM/TA/PA=1.0） |
 | `data/usim_enact/_protocol/v0.2_planned_model_config.json` | 2 KB | 计划模型配置（v0.1 冻结配置派生 + 来源哈希） |
-| `data/usim_enact/_protocol/freeze_usim-enact-v0.2_20261027.json` | 362 KB | v0.2 协议冻结（13 组 1374 文件 + 硬校验 + payload；refreeze 后 payload=`d3370ad2…`） |
-| `data/usim_enact/_protocol/freeze_usim-enact-v0.2_20261027.verify.json` | 5 KB | 冻结即时校验（`ok=true`，payload 匹配） |
+| `data/usim_enact/_protocol/freeze_usim-enact-v0.2_20261027b.json` | — | **当前有效** v0.2 协议冻结（13 组 1818 文件，含 B 条件；payload=`6d14fb83…`，`--verify` 0） |
+| `data/usim_enact/_protocol/freeze_usim-enact-v0.2_20261027b.verify.json` | — | 冻结即时校验（`payload_hash_match=true`，`errors=[]`） |
+| `data/usim_enact/_protocol/freeze_usim-enact-v0.2_20261027.json` | 362 KB | 首版 v0.2 冻结（13 组 1374 文件，**B 条件构建前**；payload=`d3370ad2…`），保留作对照 |
+| `data/usim_enact/_protocol/freeze_usim-enact-v0.2_20261027.verify.json` | 5 KB | 首版冻结即时校验（`ok=true`，payload 匹配） |
+| `data/usim_enact/_protocol/condition_b_check_usim-enact-v0.2.json` | — | B 条件独立校验证据（`status=pass`；字段/几何/左panel/规则复算/整图重合成/目标可见度） |
 | `data/usim_enact/_protocol/templates/freeze_v0.2_template.json` | 9 KB | v0.2 冻结字段模板（section/required CLI/hard gates） |
 | `data/usim_enact/_protocol/stats_v0.2/**` | — | 程序基线 report/items（all/dev/val × 7 条件）+ `program_baselines_manifest.json` |
 | `data/usim_enact/_protocol/stats/report_stats_v0.2_{all,dev,val}.json/.md` | 6 文件 | direction×L×任务、episode bootstrap、配对 Δ、失败统计 |

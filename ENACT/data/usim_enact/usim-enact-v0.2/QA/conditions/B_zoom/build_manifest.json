@@ -1,0 +1,56 @@
+{
+  "condition": "B_zoom",
+  "source_qa": "data\\usim_enact\\usim-enact-v0.2\\QA\\train\\enact_ordering_curated.jsonl",
+  "source_qa_sha256": "f3cf687c613133b26d72064e9b370997e786dbf4d1b920089d4b07b1d5d45c2f",
+  "output_qa": "data\\usim_enact\\usim-enact-v0.2\\QA\\conditions\\B_zoom\\enact_ordering.jsonl",
+  "output_qa_sha256": "8c3cfc7bf52b1a5b9a6ce4a72b5fcb765a0b91d42d22c3d8b693db9ce08240bc",
+  "crop_policy": {
+    "R1_object_anchor": "window side = max(160, 4*max(bbox_w,bbox_h)), centred on the object colour blob",
+    "R2_fixed_window": [
+      60,
+      70,
+      260,
+      230
+    ],
+    "colours_anchored": [
+      "red",
+      "green"
+    ],
+    "panel_layout": "[full 320x240 | zoom 320x240]"
+  },
+  "rule_counts": {
+    "R2_fixed_window": 186,
+    "R1_object_anchor": 246
+  },
+  "object_colours": {
+    "usim_train_episode_000104": null,
+    "usim_train_episode_000175": null,
+    "usim_train_episode_000200": "blue",
+    "usim_train_episode_000201": "blue",
+    "usim_train_episode_000287": "blue",
+    "usim_train_episode_000297": "blue",
+    "usim_train_episode_000501": "blue",
+    "usim_train_episode_000533": "blue",
+    "usim_train_episode_000552": "red",
+    "usim_train_episode_000553": "red",
+    "usim_train_episode_000555": "red",
+    "usim_train_episode_000556": "red",
+    "usim_train_episode_000587": "red",
+    "usim_train_episode_000628": "red",
+    "usim_train_episode_000653": "red",
+    "usim_train_episode_000682": "red",
+    "usim_train_episode_000756": null,
+    "usim_train_episode_000846": null,
+    "usim_train_episode_000962": "blue",
+    "usim_train_episode_000980": "blue",
+    "usim_train_episode_001046": null,
+    "usim_train_episode_001135": "red",
+    "usim_train_episode_001302": "red",
+    "usim_train_episode_001304": "red",
+    "usim_train_episode_001318": "red",
+    "usim_train_episode_001330": "red",
+    "usim_train_episode_001357": "red"
+  },
+  "images": 432,
+  "questions": 120
+}

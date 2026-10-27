@@ -1,0 +1,81 @@
+{
+  "split_version": "usim-enact-v0.2-splits-v1",
+  "seed": 20261027,
+  "assignment": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\_expansion\\annotation_assignment.json",
+  "assignment_sha256": "7910c6ebdf6a4607abccc173051abd7c9bcff2b656585e486145804504e45491",
+  "qa": "data/usim_enact/usim-enact-v0.2/QA/conditions/B_zoom/enact_ordering.jsonl",
+  "qa_sha256": "8c3cfc7bf52b1a5b9a6ce4a72b5fcb765a0b91d42d22c3d8b693db9ce08240bc",
+  "empty_splits": [
+    "test"
+  ],
+  "condition": "B_zoom",
+  "derived_from": "make_splits_v02.py output, renamed with a B_ prefix after generation; path and sha256 below were recomputed from the final files",
+  "splits": {
+    "dev": {
+      "path": "data\\usim_enact\\runs\\qwen3.8-max\\v02_dev_001\\inputs\\dev_B.jsonl",
+      "sha256": "8e8bc26910aee710f8c8d9a35497cc68ebb1925aefbad734787c1128f50a6206",
+      "questions": 84,
+      "episodes": [
+        "usim_train_episode_000104",
+        "usim_train_episode_000175",
+        "usim_train_episode_000200",
+        "usim_train_episode_000201",
+        "usim_train_episode_000287",
+        "usim_train_episode_000297",
+        "usim_train_episode_000501",
+        "usim_train_episode_000533",
+        "usim_train_episode_000552",
+        "usim_train_episode_000553",
+        "usim_train_episode_000555",
+        "usim_train_episode_000556",
+        "usim_train_episode_000587",
+        "usim_train_episode_000628",
+        "usim_train_episode_000653",
+        "usim_train_episode_000756",
+        "usim_train_episode_001302",
+        "usim_train_episode_001304",
+        "usim_train_episode_001318"
+      ],
+      "episode_count": 19,
+      "by_type": {
+        "forward_world_modeling_3_steps": 19,
+        "forward_world_modeling_4_steps": 21,
+        "forward_world_modeling_5_steps": 2,
+        "inverse_world_modeling_3_steps": 19,
+        "inverse_world_modeling_4_steps": 21,
+        "inverse_world_modeling_5_steps": 2
+      },
+      "num_images": 302
+    },
+    "val": {
+      "path": "data\\usim_enact\\runs\\qwen3.8-max\\v02_dev_001\\inputs\\val_B.jsonl",
+      "sha256": "daf7ac6de7cdb5eb004e742c64843b9c85fa57ed688174e09b2263b642a6967b",
+      "questions": 36,
+      "episodes": [
+        "usim_train_episode_000682",
+        "usim_train_episode_000846",
+        "usim_train_episode_000962",
+        "usim_train_episode_000980",
+        "usim_train_episode_001046",
+        "usim_train_episode_001135",
+        "usim_train_episode_001330",
+        "usim_train_episode_001357"
+      ],
+      "episode_count": 8,
+      "by_type": {
+        "forward_world_modeling_3_steps": 8,
+        "forward_world_modeling_4_steps": 9,
+        "forward_world_modeling_5_steps": 1,
+        "inverse_world_modeling_3_steps": 8,
+        "inverse_world_modeling_4_steps": 9,
+        "inverse_world_modeling_5_steps": 1
+      },
+      "num_images": 130
+    }
+  },
+  "dev_val": {
+    "path": "data\\usim_enact\\runs\\qwen3.8-max\\v02_dev_001\\inputs\\dev_val_B.jsonl",
+    "sha256": "1f12ecfc65d9ca4ef7c75c638a06bb014a6bd96c841ec70f08b5432f8dc82e2a",
+    "questions": 120
+  }
+}
