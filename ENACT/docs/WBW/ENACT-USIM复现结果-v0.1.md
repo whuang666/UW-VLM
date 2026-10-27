@@ -1,5 +1,7 @@
 # ENACT × USIM 水下复现结果（协议 v0.1，试点）
 
+> **阅读提示（2026-10-27）**：本文记录 2026-10-23~24 的 v0.1 试点（历史）。摘要与 §7 中“真实 VLM 成绩未产出”“没有模型成绩”“独立复核尚未执行”等表述已过时：`qwen3.8-max` 的 A/B/C 三条件已于 2026-10-24 产出（[执行结果](ENACT-USIM-qwen3.8-max-执行结果-20261024.md)）；**独立标签复核已于 2026-10-27 完成**，结论见 [reviewer_a](../../data/usim_enact/_review/round2/reviewer_a/review_report.md)、[reviewer_b](../../data/usim_enact/_review/round2/reviewer_b/review_report.md) 与 [v0.2 标注与关键帧规范 §8](../WBR/ENACT-USIM-v0.2标注与关键帧规范-20261027.md)；v0.1 的 1302 入箱结论以 round2 为准：**无可靠入箱证据**。正文保留历史记录。
+
 执行时间：2026-10-23 至 2026-10-24　|　数据：`E:\code\UW-VLM\usim`（USIM，LeRobot v2.1）　|　代码：`E:\code\UW-VLM\ENACT`
 
 ---

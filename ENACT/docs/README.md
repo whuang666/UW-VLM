@@ -1,10 +1,10 @@
 # ENACT 复现与 USIM 水下数据迁移文档
 
-当前执行入口（2026-10-24）：[DashScope API 完整实施方案](WBR/ENACT-USIM-DashScope-API完整实施方案-20261024.md)，使用用户指定的 `qwen3.8-max`；[本轮方案重写与接口核验记录](WBW/ENACT-USIM-API方案重写记录-20261024.md) 明确已验证与待执行部分。下面的 2026-10-23 材料保留为前期审阅记录，状态差异以当前方案与代码证据为准。
+最近更新：2026-10-27（Asia/Shanghai）。整理日期：2026-10-23（Asia/Shanghai）。目标：理解 ENACT，在当前工作区的 **USIM 水下仿真数据**上重建同类前向、逆向世界建模评测。
 
-整理日期：2026-10-23（Asia/Shanghai）。目标：理解 ENACT，在当前工作区的 **USIM 水下仿真数据**上重建同类前向、逆向世界建模评测。
+当前执行入口（2026-10-27）：[下一步工作清单与运行手册](05_next_steps.md)（状态与当前有效命令）→ [v0.2 评测与正式测试方案](WBR/ENACT-USIM-v0.2评测与正式测试方案-20261027.md)（在研门禁）；v0.1 现状与证据见 [评分契约与统计](WBW/ENACT-USIM-评分契约与统计-20261027.md) 与 [qwen3.8-max 执行结果](WBW/ENACT-USIM-qwen3.8-max-执行结果-20261024.md)。2026-10-24 的 [DashScope 实施方案](WBR/ENACT-USIM-DashScope-API完整实施方案-20261024.md) 与 [API 方案重写记录](WBW/ENACT-USIM-API方案重写记录-20261024.md) 保留为已完成的接口验证记录。
 
-**建议路线：先补齐 USIM 数据和语义标注，用少量训练集轨迹跑通 ENACT 风格 QA，再扩大评测。** ENACT 的“动作”是可见场景状态的变化，不是 USIM 的 13 维控制向量。当前最主要的缺口是可靠的物体状态、关系和可见性标签，以及模型推理脚本。
+**建议路线：先补齐 USIM 数据和语义标注，用少量训练集轨迹跑通 ENACT 风格 QA，再扩大评测。** ENACT 的“动作”是可见场景状态的变化，不是 USIM 的 13 维控制向量。当前主要缺口已从“数据/推理器缺失”转为 **v0.2 标注、题集与协议冻结**。
 
 ## 阅读入口
 
@@ -14,20 +14,55 @@
 | [02 代码结构与复现问题](02_code_and_reproduction.md) | 每个入口做什么；实际数据依赖；论文、README、代码的差异 |
 | [03 USIM 本地数据核验](03_usim_data_audit.md) | 已有数据、字段、读取兼容性、下载完整性和缺失标签 |
 | [04 水下迁移方案](04_underwater_adaptation.md) | 推荐实施路线；标签本体、关键帧、可见性与模块改造 |
-| [05 接下来要做什么](05_next_steps.md) | 按优先级排列的工作、依赖、验收标准和可运行命令 |
-| [06 数据与评测协议](06_data_and_evaluation_contract.md) | 中间格式、QA/预测格式、指标口径、划分及防泄漏约束 |
-| [07 复现记录（v0.1 试点）](07_reproduction_run.md) | 已跑通的适配层、7 条 episode 标注、70 道双向题、自洽校验与基线成绩 |
+| [05 接下来要做什么](05_next_steps.md) | P0/P1/P2 当前状态、依赖、验收标准和可复跑命令 |
+| [06 数据与评测协议](06_data_and_evaluation_contract.md) | 中间格式、QA/预测格式、指标口径、划分及防泄漏约束（v0.1 已实现、v0.2 在研） |
+| [07 复现记录（v0.1 试点）](07_reproduction_run.md) | v0.1 试点历史记录；文末 §10 为 2026-10-24 真实模型实验与 2026-10-27 独立复核/协议升级摘要 |
 
 如果只想先决定怎么开始，先读 **03 → 05 → 04**；动手改代码前再读 **02 和 06**。
 
-## 当前完成到哪里
+## 当前完成到哪里（2026-10-27）
 
-- **v0.1 试点闭环已跑通**（2026-10-23，详见 [07](07_reproduction_run.md)）：7 条 train episode、28 个关键帧、21 个可见转移、70 道 L=3/4 双向题；参考答案经上游 verifier 全对，随机/恒等基线落回机会水平；真实 VLM 成绩尚未产出。
-- 已核对用户提供的 60 页 PDF 的正文、附录方法、评测定义和实验设置，建立逐页文本与块索引；关键流程图已渲染核对。
-- 已审阅本地 ENACT 的命令入口、分帧、QA 生成、场景图、动作翻译和评测器。
-- 已全量读取审计时已到位的 525 个测试集 Parquet，共 208,605 行；具体时间、完整性与文件哈希见数据审计。
-- 已用合成场景验证双向 QA 生成、标准答案验收、错误顺序拒绝、解析行为及汇总口径。
-- 水下转换器、语义标签、模型推理器、正式 QA 和模型成绩尚未建立；文档中的候选接口与计划命令均明确标为待实现。
+### 已完成
+
+- **USIM 数据补齐并逐文件哈希核验**：下载清单 7 页、6,840 个文件（4,219,493,970 字节），逐文件内容哈希全部通过；train 1,750 个 Parquet / 3,500 个双视角视频，test 525 / 1,050。[数据核验](03_usim_data_audit.md)
+- **v0.1 协议已实现并冻结**：7 条 train episode、28 个关键帧、70 道题；冻结清单 7 组 578 个文件，`--verify` 0 退出、篡改自测 5/5。[评分契约 §6](WBW/ENACT-USIM-评分契约与统计-20261027.md)、[冻结清单](../data/usim_enact/_protocol/freeze_usim-enact-v0.1_20261027.json)
+- **评分修复已落地**：`usim_strict_v0.2` → **`usim_strict_v0.3`**，新增“参考转移可见签名为空”拒绝 gate；v0.1 三条件重跑与存档报告逐位一致。[契约测试](../data/usim_enact/_protocol/contract/check_scoring_contract_v2.json)、[回归报告](../data/usim_enact/_protocol/contract/regression_v0.1)
+- **真实模型 A/B/C 三条件已跑**（2026-10-24，`qwen3.8-max`，70 题开发集，**70/70 请求成功**）：原图 EM **0.9571**、全图+局部放大 **0.9286**、去图 **0.7286**。[执行结果](WBW/ENACT-USIM-qwen3.8-max-执行结果-20261024.md)
+- **捷径已量化**：程序化文本先验基线（不看图）总 EM **0.7714**，**高于**去图模型 C 的 0.7286；inverse 文本基线 **35/35** 全对，因此 **inverse 不能作为视觉能力证据**；forward 组 A 相对文本基线 +40.0pp，是唯一干净的视觉证据。[文本先验基线](../data/usim_enact/_protocol/text_prior_baseline_usim-enact-v0.1.json)、[评分契约 §4–5](WBW/ENACT-USIM-评分契约与统计-20261027.md)
+- **多答案审计**：真实题集 v0.1 每题仅 1 个 TA 接受排列（**多答案题 = 0**），故 **TA≡EM**；“≥2 个语义合法顺序”评分路径由合成契约测试覆盖。[QA 有效性审计](../data/usim_enact/_protocol/audit_qa_validity_usim-enact-v0.1.json)
+- **独立标签复核 round2 已完成**（2026-10-27，盲评 + 裁决）：修正 **7 处 `OnSeabed` 物理支撑语义**（A 组 3 + B 组 4 个 key3）、**2 处可见性**（555/f140、556/f180，共被 16 道题引用）；`NextTo` 明确为 **approach 语义**（抓住后恒 false）；notes 把红色游动物体由“red cylinder”改为“小鱼”；确认 **1302 无入箱证据**；7 条 v0.1 事实表为模板产物。修正写入 v0.2 迁移，v0.1 原件未改。[reviewer_a 报告](../data/usim_enact/_review/round2/reviewer_a/review_report.md)、[reviewer_b 报告](../data/usim_enact/_review/round2/reviewer_b/review_report.md)、[v0.2 规范 §7–8](WBR/ENACT-USIM-v0.2标注与关键帧规范-20261027.md)
+- **条件 D 已构建**：forward 去动作文本 35 题 / 112 图，oracle EM/TA/PA=1.0；尚未跑模型。[条件 D manifest](../data/usim_enact/_protocol/conditions/D_no_action_text/build_manifest.json)、[评分契约 §11](WBW/ENACT-USIM-评分契约与统计-20261027.md)
+
+### 进行中与阻塞（截至 2026-10-27）
+
+- **v0.2 扩展与正式测试冻结**：v0.1 七条迁移标注已落盘（[migration_v01_to_v02.json](../data/usim_enact/usim-enact-v0.2/migration_v01_to_v02.json)）；规划 dev 19 / val 8（合计 27 条开发/验证）、test 预留 10 条；新增 20 条标注、v0.2 题集构建与冻结仍在进行。[v0.2 标注与关键帧规范](WBR/ENACT-USIM-v0.2标注与关键帧规范-20261027.md)、[v0.2 评测与正式测试方案](WBR/ENACT-USIM-v0.2评测与正式测试方案-20261027.md)；扩展候选 30 条经证据扫描**无一条干净支持 L=5**（transfer 的 InBox 不可证、pick 无 release_settle、touching 在 ego 不可辨），故 v0.2 主线按 **L≤4** 建题；仅 transfer 的 at_box 特例（`NearBox(robot, green_box)`，需 Lead 批准）可能补 **3–4 条 L=5**。[扩展候选与工具](WBW/ENACT-USIM-扩展候选与工具-20261027.md)、[v0.2 规范 §3.1](WBR/ENACT-USIM-v0.2标注与关键帧规范-20261027.md)
+- **条件 D 实跑、思考模式对照、正式 test**：未开始，依赖 v0.2 题集与协议冻结。
+- **API 密钥阻塞**：当前会话无 `VLM_API_KEY`，推理器只能 `--dry-run`（输入/资产校验），不能产出正式分数；正式 test 需注入密钥后运行。[v0.2 方案 §7](WBR/ENACT-USIM-v0.2评测与正式测试方案-20261027.md)、[评分契约 §8](WBW/ENACT-USIM-评分契约与统计-20261027.md)
+
+### 历史里程碑（2026-10-23 及以前，保留原文）
+
+- （历史，2026-10-23）**v0.1 试点闭环已跑通**（详见 [07](07_reproduction_run.md)）：7 条 train episode、28 个关键帧、21 个可见转移、70 道 L=3/4 双向题；参考答案经上游 verifier 全对，随机/恒等基线落回机会水平。当时“真实 VLM 成绩尚未产出”已被 2026-10-24 的实验取代。
+- （历史，2026-10-23）已核对用户提供的 60 页 PDF 的正文、附录方法、评测定义和实验设置，建立逐页文本与块索引；关键流程图已渲染核对。
+- （历史，2026-10-23）已审阅本地 ENACT 的命令入口、分帧、QA 生成、场景图、动作翻译和评测器。
+- （历史，2026-10-23）已全量读取审计时已到位的 525 个测试集 Parquet，共 208,605 行；具体时间、完整性与文件哈希见数据审计。
+- （历史，2026-10-23）已用合成场景验证双向 QA 生成、标准答案验收、错误顺序拒绝、解析行为及汇总口径。
+- （历史，2026-10-23）当时水下转换器、语义标签、模型推理器、正式 QA 和模型成绩尚未建立；截至 2026-10-27 上述组件与真实成绩均已落地，见本节“已完成”。
+
+## 2026-10-27 材料索引
+
+| 材料 | 内容 |
+|---|---|
+| [评分契约与统计](WBW/ENACT-USIM-评分契约与统计-20261027.md) | `usim_strict_v0.3` gate、多答案审计、A/B/C 统计与 bootstrap、文本先验基线、v0.1 冻结、条件 D |
+| [v0.2 标注与关键帧规范](WBR/ENACT-USIM-v0.2标注与关键帧规范-20261027.md) | 谓词定义（OnSeabed 物理支撑、NextTo approach）、选帧规则、复核裁决 §8 |
+| [v0.2 评测与正式测试方案](WBR/ENACT-USIM-v0.2评测与正式测试方案-20261027.md) | v0.2 数据组成、构建门禁、条件矩阵、正式 test 协议 |
+| [扩展候选与工具（task-3）](WBW/ENACT-USIM-扩展候选与工具-20261027.md) | 30 条扩展候选、取证包与标注工具、L=5 负结果（v0.2 主线 L≤4，仅 transfer at_box 例外） |
+| [round2 复核 A 组](../data/usim_enact/_review/round2/reviewer_a/review_report.md) | 200/201/552：48 格 36 一致、8 处 NextTo 定义分歧、M1–M3 OnSeabed 修正、模板化标注 |
+| [round2 复核 B 组](../data/usim_enact/_review/round2/reviewer_b/review_report.md) | 553/555/556/1302：2 处可见性错误、4 处 OnSeabed 修正、NextTo 语义、1302 无入箱证据 |
+| [协议证据目录](../data/usim_enact/_protocol/) | `audit_qa_validity`、`contract/`（含 v0.1 回归）、`stats/`、`text_prior_baseline`、`freeze_*`、`conditions/D_no_action_text/` |
+| [历史复核与补充清单](WBW/ENACT-USIM试运行复核与补充清单-20261024.md) | 2026-10-24 的 P0 清单；修复状态见上文“已完成” |
+| [真实模型执行结果](WBW/ENACT-USIM-qwen3.8-max-执行结果-20261024.md) | 2026-10-24 A/B/C 三条件、预检、分层冒烟与限制 |
+
+注：`data/usim_enact/_protocol/` 与复核图片/工作副本按 `ENACT/.gitignore` 未纳入 Git（本机可读）；复核报告正文在 `_review/` 下，图片与裁切默认忽略。
 
 ## 证据与版本
 
@@ -39,6 +74,9 @@
 | 论文来源 | [本地逐页文本](evidence/paper_text.txt)、[原文块索引](evidence/source_map.json) |
 | 代码核验 | [合成契约检查](evidence/code_smoke.json)、[代码符号索引](evidence/code_index.json) |
 | 数据核验 | [机器可读审计](evidence/usim_audit.json)、[最新文件状态](evidence/local_status.json) |
+| 评分与统计 | [v0.3 契约证据](../data/usim_enact/_protocol/contract/check_scoring_contract_v2.json)、[A/B/C 统计与 bootstrap](../data/usim_enact/_protocol/stats/report_stats_dev_ego_thinking_false_001.md)、[文本先验基线](../data/usim_enact/_protocol/text_prior_baseline_usim-enact-v0.1.json) |
+| 独立复核 | [round2 A 组](../data/usim_enact/_review/round2/reviewer_a/review_report.md)、[round2 B 组](../data/usim_enact/_review/round2/reviewer_b/review_report.md) |
+| 真实模型产物 | [执行结果](WBW/ENACT-USIM-qwen3.8-max-执行结果-20261024.md)；本机 run 目录 `data/usim_enact/runs/qwen3.8-max/dev_ego_thinking_false_001/` |
 
 文件名中的“ICLR 2026”来自用户文件名；本次没有独立核验会议录用状态。以下论述以所提供 PDF 与本地代码版本为准。论文中的实验 prompt 和图像生成指令均作为研究材料阅读，不作为当前工作指令。
 

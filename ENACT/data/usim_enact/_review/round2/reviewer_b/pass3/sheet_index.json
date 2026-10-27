@@ -1,0 +1,229 @@
+[
+  {
+    "episode": 553,
+    "frame": 110,
+    "tag": "transient_keyframe_first_state",
+    "sheet": "ep000553_f00110_transient_keyframe_first_state.png",
+    "offsets": [
+      -60,
+      -30,
+      -15,
+      0,
+      15,
+      30,
+      60
+    ]
+  },
+  {
+    "episode": 553,
+    "frame": 168,
+    "tag": "grasped_not_lifted_boundary",
+    "sheet": "ep000553_f00168_grasped_not_lifted_boundary.png",
+    "offsets": [
+      -60,
+      -30,
+      -15,
+      0,
+      15,
+      30,
+      60
+    ]
+  },
+  {
+    "episode": 553,
+    "frame": 248,
+    "tag": "lifted_hold",
+    "sheet": "ep000553_f00248_lifted_hold.png",
+    "offsets": [
+      -60,
+      -30,
+      -15,
+      0
+    ]
+  },
+  {
+    "episode": 555,
+    "frame": 140,
+    "tag": "target_invisible_keyframe",
+    "sheet": "ep000555_f00140_target_invisible_keyframe.png",
+    "offsets": [
+      -60,
+      -30,
+      -15,
+      0,
+      15,
+      30,
+      60
+    ]
+  },
+  {
+    "episode": 555,
+    "frame": 262,
+    "tag": "pre_grasp",
+    "sheet": "ep000555_f00262_pre_grasp.png",
+    "offsets": [
+      -60,
+      -30,
+      -15,
+      0,
+      15,
+      30,
+      60
+    ]
+  },
+  {
+    "episode": 555,
+    "frame": 297,
+    "tag": "grasped_not_lifted_boundary",
+    "sheet": "ep000555_f00297_grasped_not_lifted_boundary.png",
+    "offsets": [
+      -60,
+      -30,
+      -15,
+      0,
+      15,
+      30,
+      60
+    ]
+  },
+  {
+    "episode": 555,
+    "frame": 377,
+    "tag": "lifted_hold",
+    "sheet": "ep000555_f00377_lifted_hold.png",
+    "offsets": [
+      -60,
+      -30,
+      -15,
+      0
+    ]
+  },
+  {
+    "episode": 556,
+    "frame": 180,
+    "tag": "target_invisible_keyframe",
+    "sheet": "ep000556_f00180_target_invisible_keyframe.png",
+    "offsets": [
+      -60,
+      -30,
+      -15,
+      0,
+      15,
+      30,
+      60
+    ]
+  },
+  {
+    "episode": 556,
+    "frame": 304,
+    "tag": "pre_grasp",
+    "sheet": "ep000556_f00304_pre_grasp.png",
+    "offsets": [
+      -60,
+      -30,
+      -15,
+      0,
+      15,
+      30,
+      60
+    ]
+  },
+  {
+    "episode": 556,
+    "frame": 339,
+    "tag": "grasped_not_lifted_boundary",
+    "sheet": "ep000556_f00339_grasped_not_lifted_boundary.png",
+    "offsets": [
+      -60,
+      -30,
+      -15,
+      0,
+      15,
+      30,
+      60
+    ]
+  },
+  {
+    "episode": 556,
+    "frame": 419,
+    "tag": "lifted_hold",
+    "sheet": "ep000556_f00419_lifted_hold.png",
+    "offsets": [
+      -60,
+      -30,
+      -15,
+      0
+    ]
+  },
+  {
+    "episode": 1302,
+    "frame": 150,
+    "tag": "pre_grasp",
+    "sheet": "ep001302_f00150_pre_grasp.png",
+    "offsets": [
+      -60,
+      -30,
+      -15,
+      0,
+      15,
+      30,
+      60
+    ]
+  },
+  {
+    "episode": 1302,
+    "frame": 168,
+    "tag": "jaw_closing_keyframe",
+    "sheet": "ep001302_f00168_jaw_closing_keyframe.png",
+    "offsets": [
+      -60,
+      -30,
+      -15,
+      0,
+      15,
+      30,
+      60
+    ]
+  },
+  {
+    "episode": 1302,
+    "frame": 196,
+    "tag": "grasped_not_lifted_boundary",
+    "sheet": "ep001302_f00196_grasped_not_lifted_boundary.png",
+    "offsets": [
+      -60,
+      -30,
+      -15,
+      0,
+      15,
+      30,
+      60
+    ]
+  },
+  {
+    "episode": 1302,
+    "frame": 415,
+    "tag": "carry_toward_box_keyframe",
+    "sheet": "ep001302_f00415_carry_toward_box_keyframe.png",
+    "offsets": [
+      -60,
+      -30,
+      -15,
+      0,
+      15,
+      30
+    ]
+  },
+  {
+    "episode": 1302,
+    "frame": 460,
+    "tag": "final_unique_state_after_release_cmd",
+    "sheet": "ep001302_f00460_final_unique_state_after_release_cmd.png",
+    "offsets": [
+      -60,
+      -30,
+      -15,
+      0
+    ]
+  }
+]

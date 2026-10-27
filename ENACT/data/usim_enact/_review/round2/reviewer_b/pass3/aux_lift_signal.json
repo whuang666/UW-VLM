@@ -1,0 +1,140 @@
+{
+  "usim_train_episode_000553": {
+    "close_frames": [
+      149
+    ],
+    "open_frames": [],
+    "pressure_peak_after_close": [
+      12.1293,
+      149
+    ],
+    "pressure_min_after_peak": 11.9222,
+    "aux_lift_onset_10pct": 182,
+    "key_frames": {
+      "110": {
+        "gripper_state0": 4e-05,
+        "gripper_closed": false,
+        "pressure": 12.077
+      },
+      "140": {
+        "gripper_state0": 4e-05,
+        "gripper_closed": false,
+        "pressure": 12.1302
+      },
+      "168": {
+        "gripper_state0": 0.0149,
+        "gripper_closed": true,
+        "pressure": 12.1169
+      },
+      "248": {
+        "gripper_state0": 0.01491,
+        "gripper_closed": true,
+        "pressure": 11.9318
+      }
+    }
+  },
+  "usim_train_episode_000555": {
+    "close_frames": [
+      278
+    ],
+    "open_frames": [],
+    "pressure_peak_after_close": [
+      12.1343,
+      300
+    ],
+    "pressure_min_after_peak": 11.949,
+    "aux_lift_onset_10pct": 320,
+    "key_frames": {
+      "140": {
+        "gripper_state0": 2e-05,
+        "gripper_closed": false,
+        "pressure": 12.0082
+      },
+      "262": {
+        "gripper_state0": 2e-05,
+        "gripper_closed": false,
+        "pressure": 12.0996
+      },
+      "297": {
+        "gripper_state0": 0.01493,
+        "gripper_closed": true,
+        "pressure": 12.1331
+      },
+      "377": {
+        "gripper_state0": 0.01492,
+        "gripper_closed": true,
+        "pressure": 11.9588
+      }
+    }
+  },
+  "usim_train_episode_000556": {
+    "close_frames": [
+      319
+    ],
+    "open_frames": [],
+    "pressure_peak_after_close": [
+      12.1058,
+      344
+    ],
+    "pressure_min_after_peak": 11.9226,
+    "aux_lift_onset_10pct": 360,
+    "key_frames": {
+      "180": {
+        "gripper_state0": 3e-05,
+        "gripper_closed": false,
+        "pressure": 12.0176
+      },
+      "304": {
+        "gripper_state0": 3e-05,
+        "gripper_closed": false,
+        "pressure": 12.0643
+      },
+      "339": {
+        "gripper_state0": 0.0149,
+        "gripper_closed": true,
+        "pressure": 12.1052
+      },
+      "419": {
+        "gripper_state0": 0.0149,
+        "gripper_closed": true,
+        "pressure": 11.9284
+      }
+    }
+  },
+  "usim_train_episode_001302": {
+    "close_frames": [
+      176
+    ],
+    "open_frames": [
+      448
+    ],
+    "pressure_peak_after_close": [
+      2.6309,
+      178
+    ],
+    "pressure_min_after_peak": 2.1181,
+    "aux_lift_onset_10pct": 225,
+    "key_frames": {
+      "150": {
+        "gripper_state0": 7e-05,
+        "gripper_closed": false,
+        "pressure": 2.6171
+      },
+      "168": {
+        "gripper_state0": 7e-05,
+        "gripper_closed": false,
+        "pressure": 2.6289
+      },
+      "196": {
+        "gripper_state0": 0.01491,
+        "gripper_closed": true,
+        "pressure": 2.6264
+      },
+      "415": {
+        "gripper_state0": 0.0149,
+        "gripper_closed": true,
+        "pressure": 2.1287
+      }
+    }
+  }
+}

@@ -1,5 +1,7 @@
 # ENACT × USIM 现状总览与执行手册（WBR 方案 + WBW 执行记录合并）
 
+> **阅读提示（2026-10-27）**：本文写于 2026-10-24（历史）。§1“一页状态总览”与 §6 的 ❌/⏳ 状态列已被 2026-10-27 的审查与实现超越：评分侧 P0 已修复并升级 `usim_strict_v0.3`、独立标签复核 round2 已完成、真实模型 A/B/C 成绩已产出、条件 D 已构建。**正文表格保留为历史记录，不改写**。当前状态见 [docs/README.md](../README.md)、[评分契约与统计](ENACT-USIM-评分契约与统计-20261027.md)、[真实模型执行结果](ENACT-USIM-qwen3.8-max-执行结果-20261024.md)；v0.2 计划见 [v0.2 评测与正式测试方案](../WBR/ENACT-USIM-v0.2评测与正式测试方案-20261027.md)。
+
 合并日期：2026-10-24（Asia/Shanghai）。项目：`E:\code\UW-VLM\ENACT`。
 
 **本文把两份材料合成一份可操作的东西**：[WBR DashScope 完整实施方案](../WBR/ENACT-USIM-DashScope-API完整实施方案-20261024.md)（该做什么、验收什么）与 [WBW 试运行复核](../WBW/ENACT-USIM试运行复核与补充清单-20261024.md)、[审计证据](evidence/trial_audit_20261024.json)、[官方文档摘录](evidence/dashscope_official_docs_20261024.json)（实际是什么、证据是什么）。不再分别阅读两份原文即可判断当前该做什么。

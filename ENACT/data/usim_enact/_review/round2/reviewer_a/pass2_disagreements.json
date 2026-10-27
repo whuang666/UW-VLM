@@ -1,0 +1,1242 @@
+{
+  "reviewer": "reviewer_a",
+  "pass": 2,
+  "generated_at": "2026-10-27T16:37:12+08:00",
+  "pass1_lock": {
+    "reviewer": "reviewer_a",
+    "pass": 1,
+    "locked_at": "2026-10-27T16:31:16+08:00",
+    "note": "Pass-1 盲评文件先写盘并登记哈希；读取 annotations 是在此之后。",
+    "files": {
+      "pass1/summary.json": "1ae92dfebf02d4f8785464fcc53fc77ee829c3253ac183914c51a0b4de8f1eb2",
+      "pass1/usim_train_episode_000200.json": "730d6625a8fbd3029bed253f44cbbf6efe5588d8e1713cad5afe0ae6ba9e18ce",
+      "pass1/usim_train_episode_000201.json": "4b83dcd065b0dc4a68700bc44fbba7a6a79d9fe44ce30f717b40d7ed96224bec",
+      "pass1/usim_train_episode_000552.json": "e1f5b383b178e227863d6a95ae92838913918d3a0aec7c64c6fc4b43a546570e"
+    }
+  },
+  "annotation_files": {
+    "usim_train_episode_000200": {
+      "path": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\usim-enact-v0.1\\annotations\\episodes\\usim_train_episode_000200.json",
+      "sha256": "db74fd90af5879f9f72cb084fbcef9445fc41d4e914809013160a4fd0f2c686f"
+    },
+    "usim_train_episode_000201": {
+      "path": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\usim-enact-v0.1\\annotations\\episodes\\usim_train_episode_000201.json",
+      "sha256": "62bf18b6b769f733b0582df3b8c4c33e24a80db40ac79cacddf0e7e1c15ba0f7"
+    },
+    "usim_train_episode_000552": {
+      "path": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\usim-enact-v0.1\\annotations\\episodes\\usim_train_episode_000552.json",
+      "sha256": "4d266138fef372a5f3df581c74350745b124cf17de9b08faa7ac343c13a3b897"
+    }
+  },
+  "agreement_stats": {
+    "overall": {
+      "rows": 48,
+      "exact_agreement": 36,
+      "abstain_pass1_undecidable": 4,
+      "disagreement": 8,
+      "exact_agreement_rate": 0.75,
+      "agreement_rate_excluding_abstentions": 0.8182
+    },
+    "by_predicate": {
+      "OnSeabed": {
+        "agree": 8,
+        "disagree": 0,
+        "abstain": 4
+      },
+      "InGripper": {
+        "agree": 12,
+        "disagree": 0,
+        "abstain": 0
+      },
+      "Lifted": {
+        "agree": 12,
+        "disagree": 0,
+        "abstain": 0
+      },
+      "NextTo": {
+        "agree": 4,
+        "disagree": 8,
+        "abstain": 0
+      }
+    },
+    "by_episode": {
+      "usim_train_episode_000200": {
+        "agree": 11,
+        "disagree": 3,
+        "abstain": 2,
+        "total": 16
+      },
+      "usim_train_episode_000201": {
+        "agree": 13,
+        "disagree": 2,
+        "abstain": 1,
+        "total": 16
+      },
+      "usim_train_episode_000552": {
+        "agree": 12,
+        "disagree": 3,
+        "abstain": 1,
+        "total": 16
+      }
+    }
+  },
+  "frame_relation_comparison": [
+    {
+      "episode": "usim_train_episode_000200",
+      "frame": 140,
+      "relation": "OnSeabed(blue_cylinder)",
+      "annotation_value": "true",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "high",
+      "pass1_ego_only": "yes",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000200",
+      "frame": 140,
+      "relation": "InGripper(blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "gripper_signal+frame_review",
+      "pass1_value": "false",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000200",
+      "frame": 140,
+      "relation": "Lifted(blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "false",
+      "pass1_confidence": "medium-high",
+      "pass1_ego_only": "partial",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000200",
+      "frame": 140,
+      "relation": "NextTo(robot,blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "disagree"
+    },
+    {
+      "episode": "usim_train_episode_000200",
+      "frame": 213,
+      "relation": "OnSeabed(blue_cylinder)",
+      "annotation_value": "true",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "undecidable",
+      "pass1_confidence": "low",
+      "pass1_ego_only": "no",
+      "status": "abstain"
+    },
+    {
+      "episode": "usim_train_episode_000200",
+      "frame": 213,
+      "relation": "InGripper(blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "gripper_signal+frame_review",
+      "pass1_value": "false",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "yes",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000200",
+      "frame": 213,
+      "relation": "Lifted(blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "false",
+      "pass1_confidence": "medium-high",
+      "pass1_ego_only": "partial",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000200",
+      "frame": 213,
+      "relation": "NextTo(robot,blue_cylinder)",
+      "annotation_value": "true",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000200",
+      "frame": 248,
+      "relation": "OnSeabed(blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "undecidable",
+      "pass1_confidence": "low",
+      "pass1_ego_only": "no",
+      "status": "abstain"
+    },
+    {
+      "episode": "usim_train_episode_000200",
+      "frame": 248,
+      "relation": "InGripper(blue_cylinder)",
+      "annotation_value": "true",
+      "annotation_evidence": "gripper_signal+frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "high",
+      "pass1_ego_only": "yes",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000200",
+      "frame": 248,
+      "relation": "Lifted(blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "false",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000200",
+      "frame": 248,
+      "relation": "NextTo(robot,blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "disagree"
+    },
+    {
+      "episode": "usim_train_episode_000200",
+      "frame": 328,
+      "relation": "OnSeabed(blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "false",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000200",
+      "frame": 328,
+      "relation": "InGripper(blue_cylinder)",
+      "annotation_value": "true",
+      "annotation_evidence": "gripper_signal+frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "high",
+      "pass1_ego_only": "yes",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000200",
+      "frame": 328,
+      "relation": "Lifted(blue_cylinder)",
+      "annotation_value": "true",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000200",
+      "frame": 328,
+      "relation": "NextTo(robot,blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "disagree"
+    },
+    {
+      "episode": "usim_train_episode_000201",
+      "frame": 199,
+      "relation": "OnSeabed(blue_cylinder)",
+      "annotation_value": "true",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "high",
+      "pass1_ego_only": "yes",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000201",
+      "frame": 199,
+      "relation": "InGripper(blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "gripper_signal+frame_review",
+      "pass1_value": "false",
+      "pass1_confidence": "high",
+      "pass1_ego_only": "yes",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000201",
+      "frame": 199,
+      "relation": "Lifted(blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "false",
+      "pass1_confidence": "high",
+      "pass1_ego_only": "yes",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000201",
+      "frame": 199,
+      "relation": "NextTo(robot,blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "false",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000201",
+      "frame": 244,
+      "relation": "OnSeabed(blue_cylinder)",
+      "annotation_value": "true",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "high",
+      "pass1_ego_only": "yes",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000201",
+      "frame": 244,
+      "relation": "InGripper(blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "gripper_signal+frame_review",
+      "pass1_value": "false",
+      "pass1_confidence": "high",
+      "pass1_ego_only": "yes",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000201",
+      "frame": 244,
+      "relation": "Lifted(blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "false",
+      "pass1_confidence": "high",
+      "pass1_ego_only": "yes",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000201",
+      "frame": 244,
+      "relation": "NextTo(robot,blue_cylinder)",
+      "annotation_value": "true",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "high",
+      "pass1_ego_only": "yes",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000201",
+      "frame": 279,
+      "relation": "OnSeabed(blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "undecidable",
+      "pass1_confidence": "low",
+      "pass1_ego_only": "no",
+      "status": "abstain"
+    },
+    {
+      "episode": "usim_train_episode_000201",
+      "frame": 279,
+      "relation": "InGripper(blue_cylinder)",
+      "annotation_value": "true",
+      "annotation_evidence": "gripper_signal+frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "high",
+      "pass1_ego_only": "yes",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000201",
+      "frame": 279,
+      "relation": "Lifted(blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "false",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000201",
+      "frame": 279,
+      "relation": "NextTo(robot,blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "disagree"
+    },
+    {
+      "episode": "usim_train_episode_000201",
+      "frame": 357,
+      "relation": "OnSeabed(blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "false",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000201",
+      "frame": 357,
+      "relation": "InGripper(blue_cylinder)",
+      "annotation_value": "true",
+      "annotation_evidence": "gripper_signal+frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "high",
+      "pass1_ego_only": "yes",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000201",
+      "frame": 357,
+      "relation": "Lifted(blue_cylinder)",
+      "annotation_value": "true",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000201",
+      "frame": 357,
+      "relation": "NextTo(robot,blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "disagree"
+    },
+    {
+      "episode": "usim_train_episode_000552",
+      "frame": 120,
+      "relation": "OnSeabed(red_cylinder)",
+      "annotation_value": "true",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "high",
+      "pass1_ego_only": "yes",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000552",
+      "frame": 120,
+      "relation": "InGripper(red_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "gripper_signal+frame_review",
+      "pass1_value": "false",
+      "pass1_confidence": "high",
+      "pass1_ego_only": "yes",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000552",
+      "frame": 120,
+      "relation": "Lifted(red_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "false",
+      "pass1_confidence": "high",
+      "pass1_ego_only": "yes",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000552",
+      "frame": 120,
+      "relation": "NextTo(robot,red_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "disagree"
+    },
+    {
+      "episode": "usim_train_episode_000552",
+      "frame": 249,
+      "relation": "OnSeabed(red_cylinder)",
+      "annotation_value": "true",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000552",
+      "frame": 249,
+      "relation": "InGripper(red_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "gripper_signal+frame_review",
+      "pass1_value": "false",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000552",
+      "frame": 249,
+      "relation": "Lifted(red_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "false",
+      "pass1_confidence": "high",
+      "pass1_ego_only": "yes",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000552",
+      "frame": 249,
+      "relation": "NextTo(robot,red_cylinder)",
+      "annotation_value": "true",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "high",
+      "pass1_ego_only": "yes",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000552",
+      "frame": 284,
+      "relation": "OnSeabed(red_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "undecidable",
+      "pass1_confidence": "low",
+      "pass1_ego_only": "no",
+      "status": "abstain"
+    },
+    {
+      "episode": "usim_train_episode_000552",
+      "frame": 284,
+      "relation": "InGripper(red_cylinder)",
+      "annotation_value": "true",
+      "annotation_evidence": "gripper_signal+frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "high",
+      "pass1_ego_only": "yes",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000552",
+      "frame": 284,
+      "relation": "Lifted(red_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "false",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000552",
+      "frame": 284,
+      "relation": "NextTo(robot,red_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "disagree"
+    },
+    {
+      "episode": "usim_train_episode_000552",
+      "frame": 364,
+      "relation": "OnSeabed(red_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "false",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000552",
+      "frame": 364,
+      "relation": "InGripper(red_cylinder)",
+      "annotation_value": "true",
+      "annotation_evidence": "gripper_signal+frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "high",
+      "pass1_ego_only": "yes",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000552",
+      "frame": 364,
+      "relation": "Lifted(red_cylinder)",
+      "annotation_value": "true",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "agree"
+    },
+    {
+      "episode": "usim_train_episode_000552",
+      "frame": 364,
+      "relation": "NextTo(robot,red_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "disagree"
+    }
+  ],
+  "disagreements": [
+    {
+      "id": "D01",
+      "episode": "usim_train_episode_000200",
+      "frame": 140,
+      "relation": "NextTo(robot,blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "disagree",
+      "pass1_evidence": "末端夹爪与物体在图像上相距约一个指长（≈10–20 px），机械臂已处于可接触范围；但 NextTo 若有明确距离阈值/三维位姿定义，ego 无法标定，故仅 partial。",
+      "pass3_required": true,
+      "preliminary_classification": "semantics_definition"
+    },
+    {
+      "id": "D02",
+      "episode": "usim_train_episode_000200",
+      "frame": 248,
+      "relation": "NextTo(robot,blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "disagree",
+      "pass1_evidence": "夹爪正夹持物体，机器人与物体在几何上最近（接触）；若 NextTo 定义为『尚未接触的接近阶段』则应为 false——本项判定依赖定义，见语义备注。",
+      "pass3_required": true,
+      "preliminary_classification": "semantics_definition"
+    },
+    {
+      "id": "D03",
+      "episode": "usim_train_episode_000200",
+      "frame": 328,
+      "relation": "NextTo(robot,blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "disagree",
+      "pass1_evidence": "几何上机器人末端正夹持物体；定义依赖项（同 f248）。",
+      "pass3_required": true,
+      "preliminary_classification": "semantics_definition"
+    },
+    {
+      "id": "D04",
+      "episode": "usim_train_episode_000201",
+      "frame": 279,
+      "relation": "NextTo(robot,blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "disagree",
+      "pass1_evidence": "几何上机器人末端正夹持物体；定义依赖项。",
+      "pass3_required": true,
+      "preliminary_classification": "semantics_definition"
+    },
+    {
+      "id": "D05",
+      "episode": "usim_train_episode_000201",
+      "frame": 357,
+      "relation": "NextTo(robot,blue_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "disagree",
+      "pass1_evidence": "几何上夹爪正持物体；定义依赖项。",
+      "pass3_required": true,
+      "preliminary_classification": "semantics_definition"
+    },
+    {
+      "id": "D06",
+      "episode": "usim_train_episode_000552",
+      "frame": 120,
+      "relation": "NextTo(robot,red_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "disagree",
+      "pass1_evidence": "夹爪与物体图像间距约 5–10 px，机器人已来到物体旁；阈值语义依赖定义，故 medium。",
+      "pass3_required": true,
+      "preliminary_classification": "semantics_definition"
+    },
+    {
+      "id": "D07",
+      "episode": "usim_train_episode_000552",
+      "frame": 284,
+      "relation": "NextTo(robot,red_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "disagree",
+      "pass1_evidence": "几何上夹爪正持物体；定义依赖项。",
+      "pass3_required": true,
+      "preliminary_classification": "semantics_definition"
+    },
+    {
+      "id": "D08",
+      "episode": "usim_train_episode_000552",
+      "frame": 364,
+      "relation": "NextTo(robot,red_cylinder)",
+      "annotation_value": "false",
+      "annotation_evidence": "frame_review",
+      "pass1_value": "true",
+      "pass1_confidence": "medium",
+      "pass1_ego_only": "partial",
+      "status": "disagree",
+      "pass1_evidence": "几何上夹爪正持物体；定义依赖项。",
+      "pass3_required": true,
+      "preliminary_classification": "semantics_definition"
+    }
+  ],
+  "adjacent_transition_checks": [
+    {
+      "episode": "usim_train_episode_000200",
+      "from": 140,
+      "to": 213,
+      "annotation_diff": [
+        {
+          "relation": "NextTo(robot,blue_cylinder)",
+          "annotation": "False→True"
+        }
+      ],
+      "annotation_visible_nonempty": true,
+      "compiled_action_text": "The robot now becomes next to the blue cylinder.",
+      "compiled_signatures": [
+        "add_edge_robot_blue_cylinder_NextTo"
+      ],
+      "pass1_predicted_changes": [
+        {
+          "relation": "OnSeabed(blue_cylinder)",
+          "pass1": "true→undecidable"
+        }
+      ],
+      "pixel_frames_identical": false,
+      "ego_only_judgeable": "partial",
+      "text_vs_visible_issues": [],
+      "ego_only_reason": "唯一净变化是 NextTo=false→true（距离/阶段阈值），ego 单帧无法标定；ego 上可见变化主要是物体被拨倒，而不是『机器人靠近』。"
+    },
+    {
+      "episode": "usim_train_episode_000200",
+      "from": 213,
+      "to": 248,
+      "annotation_diff": [
+        {
+          "relation": "OnSeabed(blue_cylinder)",
+          "annotation": "True→False"
+        },
+        {
+          "relation": "InGripper(blue_cylinder)",
+          "annotation": "False→True"
+        },
+        {
+          "relation": "NextTo(robot,blue_cylinder)",
+          "annotation": "True→False"
+        }
+      ],
+      "annotation_visible_nonempty": true,
+      "compiled_action_text": "The blue cylinder becomes grasped by the robot. The blue cylinder is no longer on the seabed. The robot stopped being next to the blue cylinder.",
+      "compiled_signatures": [
+        "add_node_blue_cylinder_InGripper",
+        "remove_edge_robot_blue_cylinder_NextTo",
+        "remove_node_blue_cylinder_OnSeabed"
+      ],
+      "pass1_predicted_changes": [
+        {
+          "relation": "InGripper(blue_cylinder)",
+          "pass1": "false→true"
+        }
+      ],
+      "pixel_frames_identical": false,
+      "ego_only_judgeable": "partial",
+      "text_vs_visible_issues": [
+        "文本声称『不再在海床上』：pass1 无法从 ego 证实（pass3 需核查接触）",
+        "文本同时出现『被抓住』与『不再在旁』，中文/英文语义自相矛盾（抓取时机器人恰恰贴着物体）"
+      ],
+      "ego_only_reason": "InGripper false→true 可从『夹爪张开→合拢包夹』辨认，但 320×240 下张开/合拢差异小；NextTo true→false 需定义。"
+    },
+    {
+      "episode": "usim_train_episode_000200",
+      "from": 248,
+      "to": 328,
+      "annotation_diff": [
+        {
+          "relation": "Lifted(blue_cylinder)",
+          "annotation": "False→True"
+        }
+      ],
+      "annotation_visible_nonempty": true,
+      "compiled_action_text": "The blue cylinder becomes lifted above the seabed.",
+      "compiled_signatures": [
+        "add_node_blue_cylinder_Lifted"
+      ],
+      "pass1_predicted_changes": [
+        {
+          "relation": "OnSeabed(blue_cylinder)",
+          "pass1": "undecidable→false"
+        },
+        {
+          "relation": "Lifted(blue_cylinder)",
+          "pass1": "false→true"
+        }
+      ],
+      "pixel_frames_identical": false,
+      "ego_only_judgeable": "partial",
+      "text_vs_visible_issues": [],
+      "ego_only_reason": "Lifted false→true 只有 ~16 cm 上浮，ego 单帧不可判，需跨帧/辅助信号。"
+    },
+    {
+      "episode": "usim_train_episode_000201",
+      "from": 199,
+      "to": 244,
+      "annotation_diff": [
+        {
+          "relation": "NextTo(robot,blue_cylinder)",
+          "annotation": "False→True"
+        }
+      ],
+      "annotation_visible_nonempty": true,
+      "compiled_action_text": "The robot transitions to be next to the blue cylinder.",
+      "compiled_signatures": [
+        "add_edge_robot_blue_cylinder_NextTo"
+      ],
+      "pass1_predicted_changes": [
+        {
+          "relation": "NextTo(robot,blue_cylinder)",
+          "pass1": "false→true"
+        }
+      ],
+      "pixel_frames_identical": false,
+      "ego_only_judgeable": "yes",
+      "text_vs_visible_issues": [],
+      "ego_only_reason": "机器人从远到贴近物体，ego 图像差异明显（190→236 run），NextTo 变化在画面上可辨。"
+    },
+    {
+      "episode": "usim_train_episode_000201",
+      "from": 244,
+      "to": 279,
+      "annotation_diff": [
+        {
+          "relation": "OnSeabed(blue_cylinder)",
+          "annotation": "True→False"
+        },
+        {
+          "relation": "InGripper(blue_cylinder)",
+          "annotation": "False→True"
+        },
+        {
+          "relation": "NextTo(robot,blue_cylinder)",
+          "annotation": "True→False"
+        }
+      ],
+      "annotation_visible_nonempty": true,
+      "compiled_action_text": "The blue cylinder is now grasped by the robot. The blue cylinder is no longer on the seabed. The robot is no longer next to the blue cylinder.",
+      "compiled_signatures": [
+        "add_node_blue_cylinder_InGripper",
+        "remove_edge_robot_blue_cylinder_NextTo",
+        "remove_node_blue_cylinder_OnSeabed"
+      ],
+      "pass1_predicted_changes": [
+        {
+          "relation": "OnSeabed(blue_cylinder)",
+          "pass1": "true→undecidable"
+        },
+        {
+          "relation": "InGripper(blue_cylinder)",
+          "pass1": "false→true"
+        }
+      ],
+      "pixel_frames_identical": false,
+      "ego_only_judgeable": "partial",
+      "text_vs_visible_issues": [
+        "文本声称『不再在海床上』：pass1 无法从 ego 证实（pass3 需核查接触）",
+        "文本同时出现『被抓住』与『不再在旁』，中文/英文语义自相矛盾（抓取时机器人恰恰贴着物体）"
+      ],
+      "ego_only_reason": "InGripper 变化可辨；OnSeabed true→false 不可辨（对象仍在底部高度）；NextTo true→false 需定义。"
+    },
+    {
+      "episode": "usim_train_episode_000201",
+      "from": 279,
+      "to": 357,
+      "annotation_diff": [
+        {
+          "relation": "Lifted(blue_cylinder)",
+          "annotation": "False→True"
+        }
+      ],
+      "annotation_visible_nonempty": true,
+      "compiled_action_text": "The blue cylinder is now lifted above the seabed.",
+      "compiled_signatures": [
+        "add_node_blue_cylinder_Lifted"
+      ],
+      "pass1_predicted_changes": [
+        {
+          "relation": "OnSeabed(blue_cylinder)",
+          "pass1": "undecidable→false"
+        },
+        {
+          "relation": "Lifted(blue_cylinder)",
+          "pass1": "false→true"
+        }
+      ],
+      "pixel_frames_identical": false,
+      "ego_only_judgeable": "partial",
+      "text_vs_visible_issues": [],
+      "ego_only_reason": "Lifted 变化只在 ~16 cm 上浮中体现，ego 单帧不可判。"
+    },
+    {
+      "episode": "usim_train_episode_000552",
+      "from": 120,
+      "to": 249,
+      "annotation_diff": [
+        {
+          "relation": "NextTo(robot,red_cylinder)",
+          "annotation": "False→True"
+        }
+      ],
+      "annotation_visible_nonempty": true,
+      "compiled_action_text": "The robot now becomes next to the red cylinder.",
+      "compiled_signatures": [
+        "add_edge_robot_red_cylinder_NextTo"
+      ],
+      "pass1_predicted_changes": [],
+      "pixel_frames_identical": false,
+      "ego_only_judgeable": "yes",
+      "text_vs_visible_issues": [],
+      "ego_only_reason": "夹爪从物体上方下降到物体上（ego 图像差异明显），NextTo 变化在画面上可辨。"
+    },
+    {
+      "episode": "usim_train_episode_000552",
+      "from": 249,
+      "to": 284,
+      "annotation_diff": [
+        {
+          "relation": "OnSeabed(red_cylinder)",
+          "annotation": "True→False"
+        },
+        {
+          "relation": "InGripper(red_cylinder)",
+          "annotation": "False→True"
+        },
+        {
+          "relation": "NextTo(robot,red_cylinder)",
+          "annotation": "True→False"
+        }
+      ],
+      "annotation_visible_nonempty": true,
+      "compiled_action_text": "The red cylinder is now grasped by the robot. The red cylinder is not on the seabed anymore. The robot stopped being next to the red cylinder.",
+      "compiled_signatures": [
+        "add_node_red_cylinder_InGripper",
+        "remove_edge_robot_red_cylinder_NextTo",
+        "remove_node_red_cylinder_OnSeabed"
+      ],
+      "pass1_predicted_changes": [
+        {
+          "relation": "OnSeabed(red_cylinder)",
+          "pass1": "true→undecidable"
+        },
+        {
+          "relation": "InGripper(red_cylinder)",
+          "pass1": "false→true"
+        }
+      ],
+      "pixel_frames_identical": false,
+      "ego_only_judgeable": "partial",
+      "text_vs_visible_issues": [
+        "文本声称『不再在海床上』：pass1 无法从 ego 证实（pass3 需核查接触）",
+        "文本同时出现『被抓住』与『不再在旁』，中文/英文语义自相矛盾（抓取时机器人恰恰贴着物体）"
+      ],
+      "ego_only_reason": "InGripper 变化可辨；OnSeabed 不可辨；NextTo 需定义。"
+    },
+    {
+      "episode": "usim_train_episode_000552",
+      "from": 284,
+      "to": 364,
+      "annotation_diff": [
+        {
+          "relation": "Lifted(red_cylinder)",
+          "annotation": "False→True"
+        }
+      ],
+      "annotation_visible_nonempty": true,
+      "compiled_action_text": "The red cylinder is now lifted above the seabed.",
+      "compiled_signatures": [
+        "add_node_red_cylinder_Lifted"
+      ],
+      "pass1_predicted_changes": [
+        {
+          "relation": "OnSeabed(red_cylinder)",
+          "pass1": "undecidable→false"
+        },
+        {
+          "relation": "Lifted(red_cylinder)",
+          "pass1": "false→true"
+        }
+      ],
+      "pixel_frames_identical": false,
+      "ego_only_judgeable": "partial",
+      "text_vs_visible_issues": [],
+      "ego_only_reason": "Lifted 变化 ego 单帧不可判。"
+    }
+  ],
+  "special_audits": {
+    "annotation_template": {
+      "all_seven_episodes_identical_fact_table": false,
+      "fact_table": [
+        {
+          "OnSeabed(blue_cylinder)": true,
+          "InGripper(blue_cylinder)": false,
+          "Lifted(blue_cylinder)": false,
+          "NextTo(robot,blue_cylinder)": false
+        },
+        {
+          "OnSeabed(blue_cylinder)": true,
+          "InGripper(blue_cylinder)": false,
+          "Lifted(blue_cylinder)": false,
+          "NextTo(robot,blue_cylinder)": true
+        },
+        {
+          "OnSeabed(blue_cylinder)": false,
+          "InGripper(blue_cylinder)": true,
+          "Lifted(blue_cylinder)": false,
+          "NextTo(robot,blue_cylinder)": false
+        },
+        {
+          "OnSeabed(blue_cylinder)": false,
+          "InGripper(blue_cylinder)": true,
+          "Lifted(blue_cylinder)": true,
+          "NextTo(robot,blue_cylinder)": false
+        }
+      ],
+      "note": "7 条 episode 的 4×4 事实表完全相同（OnSeabed T,T,F,F / InGripper F,F,T,T / Lifted F,F,F,T / NextTo F,T,F,F），且 compile_action_descriptions 产出的动作文本除对象名外完全一致。这强烈提示标注是按『物体生命周期模板』套用，而不是逐帧独立判读；manifest 声称的『21 个相邻转移均可见且非空』可由模板直接推出，不构成视觉证据。"
+    },
+    "nextto_semantics": {
+      "observed_annotation_pattern": "key1=false, key2=true, key3=false, key4=false（三个 episode 一致）",
+      "evidence_from_pass3_planned": "wrist 视角显示 key1 时夹爪与物体仍有明显空隙、key2 时物体已进入夹爪口部但未合拢、key3 之后已夹紧。",
+      "interpretation": "v0.1 的 NextTo 实际语义 ≈『机器人已到达抓取位姿、但尚未夹紧』这一生命周期阶段，而不是『robot 与 object 的空间距离小于阈值』。名字与语义不符，且编译出的动作文本『The robot becomes next to …』把阶段变化写成了空间关系变化。",
+      "post_grasp_false_issue": "抓住后 NextTo=false 导致同一转移里同时出现 'grasped by the robot' 与 'no longer next to the robot'，自然语义自相矛盾；这也意味着被评模型仅凭动作文本即可推断顺序（与去图 EM 0.7286 的现象一致）。"
+    },
+    "intermediate_state": {
+      "state": "OnSeabed=false ∧ InGripper=true ∧ Lifted=false（key3）",
+      "ego_visibility": "reviewer pass1 在 3 个 key3 帧均判 OnSeabed=undecidable：ego 单帧看不到明确的离底间隙或接触点。",
+      "physical_evidence": "dvl_h（离底高度，辅助信号）：三条 episode 的 key3 都处于最低点（0.235/0.231/0.260 m），上浮起点分别在其后 23/22/22 帧（ascent onset 271/301/306）；key3 相对 key2 还略微下降 3–5 cm。夹爪在 key3 前 15–20 帧才闭合，且 wrist 视角下物体相对夹爪无竖直位移。=> 没有发生离底提升，物体极可能仍与海床接触。",
+      "conclusion": "『OnSeabed=false』在物理语义上无依据；它是按生命周期模板（grasped ⇒ 不再 on seabed）推出来的。该中间状态在 ego 中不可见，且定义不自洽（OnSeabed 物理支撑 vs 生命周期阶段两种读法冲突）。"
+    },
+    "object_reference": {
+      "unique_reference_ok_in_relation_scope": true,
+      "notes": [
+        "ep200/ep201 的 v0.1 notes 写『A red cylinder is also present』，但复核视频显示红色物体是游动的小鱼（wrist 视角下由远及近再离开、朝向/位置随帧剧烈变化），并非红色圆柱。注释应改为 red fish。",
+        "ep552（红圆柱任务）画面中存在蓝色条状干扰物（ego 左上/腕部视角下方），颜色与蓝圆柱任务的目标同色系；对『red cylinder』指代不构成混淆，但对跨任务颜色捷径有提示意义。",
+        "蓝圆柱在 ego 流中呈紫色/紫蓝色，而 object_id/文本用 'blue'；v0.1 已在 notes 中说明，但 QA 文本没有颜色线索以外的指代约束，建议 v0.2 保留 description 并明确颜色命名规则。"
+      ]
+    },
+    "visibility": {
+      "schema_limitation": "v0.1 visibility 只有布尔 true/false；复核认为 ep200 f328 与 ep552 f364 的目标物为 partial（被夹爪遮挡 20–40%、颜色对比下降）但仍可指代。",
+      "visibility_notes": [
+        {
+          "episode": "usim_train_episode_000200",
+          "frame": 328,
+          "object_id": "blue_cylinder",
+          "annotation_value": true,
+          "pass1_value": "partial",
+          "note": "v0.1 visibility 为布尔；复核给出 partial（部分遮挡但与 scope 关系仍可判）。建议 v0.2 支持 visible/partial/not_visible 三值。"
+        },
+        {
+          "episode": "usim_train_episode_000552",
+          "frame": 364,
+          "object_id": "red_cylinder",
+          "annotation_value": true,
+          "pass1_value": "partial",
+          "note": "v0.1 visibility 为布尔；复核给出 partial（部分遮挡但与 scope 关系仍可判）。建议 v0.2 支持 visible/partial/not_visible 三值。"
+        }
+      ]
+    },
+    "qa_input_audit": {
+      "qa_images_equal_raw_outside_overlay": true,
+      "overlay_bbox_xyxy_max": [
+        7,
+        9,
+        160,
+        29
+      ],
+      "overlay_labels": [
+        "Current State",
+        "Next State 1",
+        "Next State 2",
+        "Next State 3"
+      ],
+      "subject_occluded": false,
+      "frame_duplication": {
+        "usim_train_episode_000200": {
+          "frames": 343,
+          "unique": 42
+        },
+        "usim_train_episode_000201": {
+          "frames": 368,
+          "unique": 35
+        },
+        "usim_train_episode_000552": {
+          "frames": 374,
+          "unique": 38
+        }
+      },
+      "note": "ego 视频每 8–14 帧才更新一个渲染画面；QA 的 3–4 张图来自不同渲染画面，因此图像差分非空，但 ±10~20 帧的『邻近帧』多为同一画面。"
+    }
+  },
+  "compiled_action_texts": {
+    "usim_train_episode_000200": [
+      {
+        "from": "140",
+        "to": "213",
+        "visible": true,
+        "text": "The robot now becomes next to the blue cylinder.",
+        "signatures": [
+          "add_edge_robot_blue_cylinder_NextTo"
+        ]
+      },
+      {
+        "from": "213",
+        "to": "248",
+        "visible": true,
+        "text": "The blue cylinder becomes grasped by the robot. The blue cylinder is no longer on the seabed. The robot stopped being next to the blue cylinder.",
+        "signatures": [
+          "add_node_blue_cylinder_InGripper",
+          "remove_edge_robot_blue_cylinder_NextTo",
+          "remove_node_blue_cylinder_OnSeabed"
+        ]
+      },
+      {
+        "from": "248",
+        "to": "328",
+        "visible": true,
+        "text": "The blue cylinder becomes lifted above the seabed.",
+        "signatures": [
+          "add_node_blue_cylinder_Lifted"
+        ]
+      }
+    ],
+    "usim_train_episode_000201": [
+      {
+        "from": "199",
+        "to": "244",
+        "visible": true,
+        "text": "The robot transitions to be next to the blue cylinder.",
+        "signatures": [
+          "add_edge_robot_blue_cylinder_NextTo"
+        ]
+      },
+      {
+        "from": "244",
+        "to": "279",
+        "visible": true,
+        "text": "The blue cylinder is now grasped by the robot. The blue cylinder is no longer on the seabed. The robot is no longer next to the blue cylinder.",
+        "signatures": [
+          "add_node_blue_cylinder_InGripper",
+          "remove_edge_robot_blue_cylinder_NextTo",
+          "remove_node_blue_cylinder_OnSeabed"
+        ]
+      },
+      {
+        "from": "279",
+        "to": "357",
+        "visible": true,
+        "text": "The blue cylinder is now lifted above the seabed.",
+        "signatures": [
+          "add_node_blue_cylinder_Lifted"
+        ]
+      }
+    ],
+    "usim_train_episode_000552": [
+      {
+        "from": "120",
+        "to": "249",
+        "visible": true,
+        "text": "The robot now becomes next to the red cylinder.",
+        "signatures": [
+          "add_edge_robot_red_cylinder_NextTo"
+        ]
+      },
+      {
+        "from": "249",
+        "to": "284",
+        "visible": true,
+        "text": "The red cylinder is now grasped by the robot. The red cylinder is not on the seabed anymore. The robot stopped being next to the red cylinder.",
+        "signatures": [
+          "add_node_red_cylinder_InGripper",
+          "remove_edge_robot_red_cylinder_NextTo",
+          "remove_node_red_cylinder_OnSeabed"
+        ]
+      },
+      {
+        "from": "284",
+        "to": "364",
+        "visible": true,
+        "text": "The red cylinder is now lifted above the seabed.",
+        "signatures": [
+          "add_node_red_cylinder_Lifted"
+        ]
+      }
+    ]
+  },
+  "preliminary_conclusions": [
+    "48 个帧×关系判定中精确一致 36/48（75.00%），复核给出 undecidable 的 4 项，硬分歧 8 项（8）。",
+    "逐谓词：InGripper 12/12、Lifted 12/12 一致；OnSeabed 8/12 一致（4 项复核为 undecidable，无反向硬分歧）；NextTo 仅 4/12 一致 —— 全部分歧集中在 NextTo。",
+    "NextTo 的 8 处分歧全部是『复核按几何语义判 true、v0.1 判 false』；其中 6 处发生在抓住之后（定义问题），2 处发生在 key1（ep200 f140 / ep552 f120；wrist 证据显示 ep552 f120 物体确实离夹爪较远，v0.1 正确；ep200 f140 则处于灰区）。",
+    "v0.1 的 OnSeabed=false（key3）没有可见证据支持：三条 episode 在 key3 时离底高度处于最低点、上浮尚未开始；这是生命周期模板推导而非物理接触观测。",
+    "9 个相邻转移按 v0.1 全部非空，但只有 2 个（ep201 199→244、ep552 120→249，NextTo 距离变化）能仅凭 ego 直接辨认；其余依赖 NextTo 的阶段定义或 ~16 cm 的 Lifted 上浮（ego 单帧证据弱）。",
+    "三条 episode 的关键帧与 v0.1 事实表完全模板化；不同 episode 的动作文本除对象名外逐字相同，说明注释未做 episode 级 grounding。"
+  ],
+  "pass3_scope": [
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D05",
+    "D06",
+    "D07",
+    "D08"
+  ]
+}

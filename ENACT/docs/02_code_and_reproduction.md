@@ -1,6 +1,10 @@
 # 代码结构、实际契约与复现问题
 
-核验版本：`87e323a985418f7dcb09e9f62d065a9d010ce98b`。源代码符号位置见 [code_index.json](evidence/code_index.json)，运行探针见 [code_smoke.json](evidence/code_smoke.json)。本轮保留上游核心实现，下面的改动项尚未实施。
+最近更新：2026-10-27（Asia/Shanghai）。
+
+> **状态（2026-10-27）**：本文是（历史，2026-10-23 代码审阅记录）；开头“下面的改动项尚未实施”与 §7“尚未验证”已过时：适配层与 `scripts/usim/*` 已实现并在 v0.1/v0.2 使用（[07 §1](07_reproduction_run.md)）；评分已升级 `usim_strict_v0.3`（固定分母、严格解析、空签名 gate，[契约证据](../data/usim_enact/_protocol/contract/check_scoring_contract_v2.json)、[评分契约 §3/§10](WBW/ENACT-USIM-评分契约与统计-20261027.md)）；`qwen3.8-max` 真实模型 A/B/C 已于 2026-10-24 跑通（[执行结果](WBW/ENACT-USIM-qwen3.8-max-执行结果-20261024.md)）。本文记录的上游 seed 重置、解析容错等缺陷仍有效，v0.1 用后处理重排与严格评分器规避。
+
+核验版本：`87e323a985418f7dcb09e9f62d065a9d010ce98b`。源代码符号位置见 [code_index.json](evidence/code_index.json)，运行探针见 [code_smoke.json](evidence/code_smoke.json)。本轮保留上游核心实现，下面的改动项尚未实施（历史，2026-10-23；改动项已实施，见文首状态框）。
 
 ## 1. 项目包含什么
 
@@ -104,4 +108,4 @@ data/
 
 已在当前 Python 3.13 环境直接导入本地模块，用三帧合成场景各生成 1 道前向和逆向题。两者标准答案 TA/PA 均为 1，反向排列 TA 均为 0，生成图片路径均存在；另外复现了缺少场景图时评测 0 行且不抛异常的行为。
 
-未安装 BEHAVIOR-1K/OmniGibson，未运行仿真重放、原版数据完整分帧、真实模型推理或 USIM 语义评测。Python 3.13 的合成检查通过，不代表全部上游和模型依赖已兼容；推荐单建 Python 3.10 环境运行正式复现。
+未安装 BEHAVIOR-1K/OmniGibson，未运行仿真重放、原版数据完整分帧（历史，2026-10-23）；真实模型推理与 USIM 语义评测已于 2026-10-24 完成（[执行结果](WBW/ENACT-USIM-qwen3.8-max-执行结果-20261024.md)、[07 §6](07_reproduction_run.md)）。Python 3.13 的合成检查通过，不代表全部上游和模型依赖已兼容；推荐单建 Python 3.10 环境运行正式复现（实际运行统一使用 `C:\Users\whuang\.workbuddy\binaries\python\envs\default\Scripts\python.exe`，见 [07 §8](07_reproduction_run.md)；未按此建 conda 环境）。

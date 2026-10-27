@@ -1,0 +1,324 @@
+{
+  "reviewer": "reviewer_a",
+  "pass": 3,
+  "generated_at": "2026-10-27T17:05:00+08:00",
+  "scope": "A 组 3 条 episode（200/201/552）的 8 个硬分歧 + 4 个 OnSeabed 中止项 + 4 个可疑点",
+  "evidence_policy": {
+    "primary": "视频上下文（ego/wrist 解码，含 ±15/±30/±60 帧接触表；关键帧均处于渲染保持段内，故同时给出全片『唯一画面』时间线接触表）",
+    "auxiliary": "parquet observation.state[0]（夹爪 ~0.004 阈值，3 帧 ramp）与 observation.state[28]（DVL 离底高度 dvl_h）/state[27]（pressure），仅作辅助，不是标签真值",
+    "not_used": "未使用任何外部 API / 网络；未修改 v0.1 任何文件"
+  },
+  "signals": {
+    "usim_train_episode_000200": {"gripper_close_frames": [228], "dvl_altitude_min_after_close": 0.2347, "ascent_onset_frame": 271,
+      "key_frame_dvl_h": {"140": 0.251, "213": 0.2664, "248": 0.2353, "328": 0.3978}},
+    "usim_train_episode_000201": {"gripper_close_frames": [259], "dvl_altitude_min_after_close": 0.2313, "ascent_onset_frame": 301,
+      "key_frame_dvl_h": {"199": 0.3246, "244": 0.2848, "279": 0.2313, "357": 0.3952}},
+    "usim_train_episode_000552": {"gripper_close_frames": [264], "dvl_altitude_min_after_close": 0.2594, "ascent_onset_frame": 306,
+      "key_frame_dvl_h": {"120": 0.2694, "249": 0.3021, "284": 0.2597, "364": 0.4289}}
+  },
+  "adjudications": [
+    {
+      "id": "D01",
+      "episode": "usim_train_episode_000200",
+      "frame": 140,
+      "relation": "NextTo(robot,blue_cylinder)",
+      "original": false,
+      "review": true,
+      "adjudicated_value": "false（v0.1 阶段语义下）/ true（几何语义下）— 定义依赖",
+      "verdict": "both_acceptable",
+      "evidence": [
+        "wrist 视角 f136–145（key1 落在此 run 内）：物体立在夹爪前上方，夹爪两指张开，指端与物体底部之间有明显空隙（约 10–15 px），机器人尚未到达物体 → v0.1 的 false 在『到达抓取位姿之前』语义下成立。",
+        "ego 视角 f138–149：物体上端与右指在图像上重叠，是透视遮挡，实际仍分离；ego 单帧无法区分『接触』与『前后遮挡』。",
+        "物体此时仍立在海床上（ego：底端压在沙面；wrist：物体未被夹持）。"
+      ],
+      "context_sheets": ["pass3/context/ego_ctx_200_140.png", "pass3/context/wrist_ctx_200_140.png", "pass3/wrist_unique/ep200/wuniq_012.png"],
+      "note": "pass1 的 true 来自 ego 透视误读；wrist 证明二者未接触。但按纯几何距离（数厘米级）仍可判 true。v0.2 必须给 NextTo 明确阈值或改名。"
+    },
+    {
+      "id": "D02",
+      "episode": "usim_train_episode_000200",
+      "frame": 248,
+      "relation": "NextTo(robot,blue_cylinder)",
+      "original": false,
+      "review": true,
+      "adjudicated_value": "阶段语义 false / 几何语义 true",
+      "verdict": "both_acceptable",
+      "evidence": [
+        "wrist f246–259：夹爪已合拢、物体被夹在指间，机器人末端与物体距离≈0。",
+        "v0.1 NextTo 在 key3/key4 一律 false，说明其真实语义是生命周期阶段『尚未夹紧』；若按字面几何语义，抓住时机器人恰恰最接近物体。"
+      ],
+      "context_sheets": ["pass3/context/ego_ctx_200_248.png", "pass3/context/wrist_ctx_200_248.png", "pass3/wrist_unique/ep200/wuniq_048.png"],
+      "note": "与 D03/D04/D05/D07/D08 同类：6 个 post-grasp 帧全部是定义分歧，不是视觉分歧。"
+    },
+    {
+      "id": "D03",
+      "episode": "usim_train_episode_000200",
+      "frame": 328,
+      "relation": "NextTo(robot,blue_cylinder)",
+      "original": false,
+      "review": true,
+      "adjudicated_value": "阶段语义 false / 几何语义 true",
+      "verdict": "both_acceptable",
+      "evidence": ["wrist f314–342：物体被夹爪夹住并随载具上浮；机器人末端与物体仍是最近距离。", "同 D02 定义问题。"],
+      "context_sheets": ["pass3/context/ego_ctx_200_328.png", "pass3/context/wrist_ctx_200_328.png", "pass3/wrist_unique/ep200/wuniq_072.png"]
+    },
+    {
+      "id": "D04",
+      "episode": "usim_train_episode_000201",
+      "frame": 279,
+      "relation": "NextTo(robot,blue_cylinder)",
+      "original": false,
+      "review": true,
+      "adjudicated_value": "阶段语义 false / 几何语义 true",
+      "verdict": "both_acceptable",
+      "evidence": ["wrist f268–287：夹爪已夹住物体（close 事件 f259 之后）；几何上机器人末端与物体重合。"],
+      "context_sheets": ["pass3/context/ego_ctx_201_279.png", "pass3/context/wrist_ctx_201_279.png", "pass3/wrist_unique/ep201/wuniq_024.png"]
+    },
+    {
+      "id": "D05",
+      "episode": "usim_train_episode_000201",
+      "frame": 357,
+      "relation": "NextTo(robot,blue_cylinder)",
+      "original": false,
+      "review": true,
+      "adjudicated_value": "阶段语义 false / 几何语义 true",
+      "verdict": "both_acceptable",
+      "evidence": ["wrist f348–367：物体被夹持；dvl_h=0.3952（上浮 ~16 cm）。机器人末端与物体最近。"],
+      "context_sheets": ["pass3/context/ego_ctx_201_357.png", "pass3/context/wrist_ctx_201_357.png", "pass3/wrist_unique/ep201/wuniq_024.png"]
+    },
+    {
+      "id": "D06",
+      "episode": "usim_train_episode_000552",
+      "frame": 120,
+      "relation": "NextTo(robot,red_cylinder)",
+      "original": false,
+      "review": true,
+      "adjudicated_value": "false",
+      "verdict": "original_ok",
+      "evidence": [
+        "wrist f110–123（key1 所在 run）：红圆柱位于画面右侧，与夹爪口部之间有明显距离（wrist 图上约 40–50 px），机器人尚未到达物体。",
+        "ego 视角因深度压缩把两者投影到相邻位置，造成『已在旁边』的误读；pass1 的 true 不成立。"
+      ],
+      "context_sheets": ["pass3/context/ego_ctx_552_120.png", "pass3/context/wrist_ctx_552_120.png", "pass3/wrist_unique/ep552/wuniq_024.png"],
+      "note": "此例同时说明 ego-only 对距离/接触的判定不可靠：同一类误读在 ep200 f140 也出现。"
+    },
+    {
+      "id": "D07",
+      "episode": "usim_train_episode_000552",
+      "frame": 284,
+      "relation": "NextTo(robot,red_cylinder)",
+      "original": false,
+      "review": true,
+      "adjudicated_value": "阶段语义 false / 几何语义 true",
+      "verdict": "both_acceptable",
+      "evidence": ["wrist f260–313：close 事件 f264 之后物体被夹紧；机器人末端与物体最近。"],
+      "context_sheets": ["pass3/context/ego_ctx_552_284.png", "pass3/context/wrist_ctx_552_284.png", "pass3/wrist_unique/ep552/wuniq_036.png"]
+    },
+    {
+      "id": "D08",
+      "episode": "usim_train_episode_000552",
+      "frame": 364,
+      "relation": "NextTo(robot,red_cylinder)",
+      "original": false,
+      "review": true,
+      "adjudicated_value": "阶段语义 false / 几何语义 true",
+      "verdict": "both_acceptable",
+      "evidence": ["wrist f356–373：物体被夹持；dvl_h=0.4289（上浮 ~17 cm）。末端与物体最近。"],
+      "context_sheets": ["pass3/context/ego_ctx_552_364.png", "pass3/context/wrist_ctx_552_364.png", "pass3/wrist_unique/ep552/wuniq_048.png"]
+    },
+    {
+      "id": "S01",
+      "episode": "usim_train_episode_000200",
+      "frame": 213,
+      "relation": "OnSeabed(blue_cylinder)",
+      "original": true,
+      "review": "undecidable",
+      "adjudicated_value": "true",
+      "verdict": "original_ok",
+      "evidence": [
+        "dvl_h f213=0.2664，接近本 episode 最低值 0.2347，上浮起点在 f271；此时载具没有上浮。",
+        "wrist f204–225：物体已进入夹爪口部但夹爪未合拢（close 在 f228），相对夹爪无竖直位移 → 没有发生离底提升；物体此前立在海床上。",
+        "pass1 的 undecidable 只说明 ego 单帧不可判，不代表 v0.1 的 true 错误。"
+      ],
+      "context_sheets": ["pass3/context/ego_ctx_200_213.png", "pass3/context/wrist_ctx_200_213.png", "pass3/wrist_unique/ep200/wuniq_024.png"]
+    },
+    {
+      "id": "S02",
+      "episode": "usim_train_episode_000200",
+      "frame": 248,
+      "relation": "OnSeabed(blue_cylinder)",
+      "original": false,
+      "review": "undecidable",
+      "adjudicated_value": "unknown（物理证据倾向 true）",
+      "verdict": "review_ok",
+      "evidence": [
+        "dvl_h f248=0.2353 = 本 episode 最低点；上浮起点 f271（23 帧之后）→ key3 时未发生离底提升。",
+        "wrist f246–259：夹爪合拢后物体相对夹爪无竖直位移；close 前后物体高度未变。",
+        "⇒ 物体极可能仍与海床接触。v0.1 的 false 来自生命周期模板（grasped ⇒ 不再 on seabed），没有任何接触观测支持。"
+      ],
+      "context_sheets": ["pass3/context/ego_ctx_200_248.png", "pass3/context/wrist_ctx_200_248.png", "pass3/wrist_unique/ep200/wuniq_048.png"],
+      "note": "这是 3 个 key3 中间状态（OnSeabed=false/InGripper=true/Lifted=false）里最关键的物理矛盾。"
+    },
+    {
+      "id": "S03",
+      "episode": "usim_train_episode_000201",
+      "frame": 279,
+      "relation": "OnSeabed(blue_cylinder)",
+      "original": false,
+      "review": "undecidable",
+      "adjudicated_value": "unknown（物理证据倾向 true）",
+      "verdict": "review_ok",
+      "evidence": [
+        "dvl_h f279=0.2313 = 本 episode 最低点；上浮起点 f301（22 帧之后）；相对 key2 f244（0.2848）还下降了 5 cm。",
+        "wrist f268–287：物体夹在夹爪中，位置相对夹爪稳定，无竖直提升。",
+        "⇒ 无离底证据，物体仍可能压在海床上。"
+      ],
+      "context_sheets": ["pass3/context/ego_ctx_201_279.png", "pass3/context/wrist_ctx_201_279.png", "pass3/wrist_unique/ep201/wuniq_024.png"]
+    },
+    {
+      "id": "S04",
+      "episode": "usim_train_episode_000552",
+      "frame": 284,
+      "relation": "OnSeabed(red_cylinder)",
+      "original": false,
+      "review": "undecidable",
+      "adjudicated_value": "unknown（物理证据倾向 true）",
+      "verdict": "review_ok",
+      "evidence": [
+        "dvl_h f284=0.2597 = 本 episode 最低点；上浮起点 f306（22 帧之后）。",
+        "wrist f260–313：close 事件 f264 后物体被夹紧，相对夹爪无竖直位移。",
+        "⇒ 无离底证据，物体仍可能压在海床上。"
+      ],
+      "context_sheets": ["pass3/context/ego_ctx_552_284.png", "pass3/context/wrist_ctx_552_284.png", "pass3/wrist_unique/ep552/wuniq_036.png"]
+    },
+    {
+      "id": "X01",
+      "type": "lifted_verification",
+      "episode": "all",
+      "relation": "Lifted at key4",
+      "original": true,
+      "review": true,
+      "adjudicated_value": "true",
+      "verdict": "original_ok",
+      "evidence": [
+        "dvl_h：ep200 f328=0.3978（key3 最低 0.2353，+16.3 cm）；ep201 f357=0.3952（+16.4 cm）；ep552 f364=0.4289（+16.9 cm）。pressure 同步下降 ~0.17–0.18，方向一致。",
+        "wrist：ep201 f348–367 背景由沙面变为水体+远处沙面，符合载具上浮；ep200/ep552 背景变化较弱。",
+        "ego：ep201 海床远缘 y≈85→96（相机抬高），但 ep200/ep552 该指标不显著。",
+        "结论：key4 的 Lifted=true 有物理支持；但 ego-only 单帧不可靠（pass1 只能给 medium，ego_only=partial）。"
+      ],
+      "verdict_note": "值正确，但『可由 ego 图像判定』不成立，v0.2 不应把 Lifted 当 ego-only 主结果。"
+    },
+    {
+      "id": "X02",
+      "type": "grasp_verification",
+      "episode": "all",
+      "relation": "InGripper key2→key3",
+      "original": "false→true",
+      "review": "false→true",
+      "adjudicated_value": "true",
+      "verdict": "original_ok",
+      "evidence": [
+        "gripper signal close 帧：ep200 f228、ep201 f259、ep552 f264；key2 均在 close 前 15 帧，key3 在 close 后 16–20 帧。",
+        "wrist：close 前后指爪与物体的包夹关系变化明显（张开→夹紧）。",
+        "ego：key3 明显看出物体被夹在指间（pass1 InGripper 一致率 12/12）。"
+      ]
+    },
+    {
+      "id": "R01",
+      "type": "action_text_consistency",
+      "episode": "usim_train_episode_000200",
+      "transition": "213→248",
+      "compiled_text": "The blue cylinder is now grasped by the robot. The blue cylinder is no longer on the seabed. The robot is no longer next to the blue cylinder.",
+      "verdict": "review_ok",
+      "issue": [
+        "『no longer on the seabed』在该帧没有可见证据（对象仍在底部高度，见 S02）。",
+        "『grasped』与『no longer next to』在同一句并列，自然语义自相矛盾；这正是 qwen3.8-max 仅靠文本即可排序（inverse 去图 0.93/1.00）的原因之一。"
+      ],
+      "recommendation": "若保留现有事实表，动作文本应写成『the robot closes its gripper on X while X is still at the seabed surface』；否则应改标签定义后再生成。"
+    },
+    {
+      "id": "R02",
+      "type": "action_text_consistency",
+      "episode": "usim_train_episode_000200",
+      "transition": "140→213",
+      "compiled_text": "The robot transitions to be next to the blue cylinder.",
+      "verdict": "review_ok",
+      "issue": ["ego 画面中 f140→f213 最显著的变化是『物体被拨倒/进入指间』，而不是『机器人靠近』；文本与可见变化不一致（ep201/ep552 的同文本 transition 则大体一致）。"],
+      "recommendation": "同一句动作文本无法同时描述三条 episode 的不同可见变化 → v0.2 必须先按帧核实谓词变化再生成动作文本。"
+    },
+    {
+      "id": "R03",
+      "type": "annotation_template",
+      "episode": "all 7",
+      "verdict": "review_ok",
+      "issue": [
+        "7 条 episode 的 4×4 事实表完全相同：OnSeabed T,T,F,F / InGripper F,F,T,T / Lifted F,F,F,T / NextTo F,T,F,F；compile_action_descriptions 文本除对象名外逐字相同。",
+        "因此 manifest 的『21 个相邻转移均已标记为可见且非空』是模板的直接推论，不是逐帧视觉证据。label_source=agent_visual_review / status=reviewed 不能替代独立复核。"
+      ],
+      "recommendation": "v0.2 标注必须逐帧独立判定，并在文件中记录每帧的证据类型与参考图；对同一任务的不同 episode 允许事实表不同。"
+    },
+    {
+      "id": "R04",
+      "type": "annotation_notes",
+      "episode": "usim_train_episode_000200 / usim_train_episode_000201",
+      "verdict": "review_ok",
+      "issue": ["v0.1 notes 称『A red cylinder is also present』；复核视频显示红色物体是游动的小鱼（wrist 视角下由远及近再离开，姿态/位置随帧剧变），不是红色圆柱。注释应改为 red fish。"],
+      "recommendation": "删除该错误说明；若未来确有干扰圆柱，应给出 object_id 与可见性。"
+    },
+    {
+      "id": "X03",
+      "type": "model_error_linkage",
+      "episode": "usim_train_episode_000200",
+      "verdict": "review_ok",
+      "issue": [
+        "qwen3.8-max 开发集 3 处图像条件错误全部落在本组 ep200：forward L=4 gt[1,3,2]→[3,1,2]（把 248 与 213 顺序对调）、forward L=3 gt[2,1]→[1,2]（同样对调 248/213）、inverse L=3 gt[2,1]→[1,2]（把 lifted 映射到 213→248、把 grasped 映射到 248→328）。",
+        "这 3 处恰好落在本复核认定的两个最弱环节：NextTo/抓取前的阶段语义（213 vs 248）与 Lifted 的 ego 可见性（248→328）。不能把 0.9571 的残差简单归因于『模型能力』。"
+      ],
+      "evidence": [
+        "data/usim_enact/runs/qwen3.8-max/dev_ego_thinking_false_001/full_v1/predictions.jsonl（复核者重新比对 70 题，确认 3 错全部为 ep200）",
+        "条件 C（去图）同 3 题也错，且 inverse L=3 全组去图 EM 0.9286 → 文本先验接近满分。"
+      ],
+      "recommendation": "v0.2 应先修标签/定义，再评估模型；报告需附条件 C 与逐题失败类型（标签争议/不可见/真实顺序错误）。"
+    }
+  ],
+  "nextto_approach_semantics": {
+    "lead_ruling": "8 处 NextTo 分歧判定为语义定义问题而非标签错误；需证明 v0.1 采用 approach 语义时自洽、且文档必须显式写明。",
+    "quantitative_anchors": {
+      "usim_train_episode_000200": {"key1": 140, "key2": 213, "key3": 248, "key4": 328, "close": 228},
+      "usim_train_episode_000201": {"key1": 199, "key2": 244, "key3": 279, "key4": 357, "close": 259},
+      "usim_train_episode_000552": {"key1": 120, "key2": 249, "key3": 284, "key4": 364, "close": 264},
+      "pattern": "三条 episode 的 key2 都恰好等于 close−15；key3 = close+20；key1 = close−88/−60/−144。",
+      "wrist_arrival_times": {"ep200": "物体在 f161 起进入夹爪口部", "ep201": "≈f228–247", "ep552": "≈f198–199"}
+    },
+    "self_consistency_chain": [
+      "key2 全部落在『到达抓取位、尚未夹紧』窗口（close−15，wrist 显示物体已在夹爪口部、未合拢）→ NextTo=true。",
+      "key1 全部在到达之前（ep200 f140 wrist 仍见 10–15 px 空隙、到达≈f161；ep201 f199 距离>90 px；ep552 f120 wrist 相距≈40–50 px、到达≈f199）→ NextTo=false。",
+      "key3/key4 全部在夹紧之后（key3=close+20）→ approach 语义下恒 false。",
+      "⇒ v0.1 的 key1 F / key2 T / key3 F / key4 F 与『approach 只在对准抓取位窗口内为 true』自洽；但该边界未写进 v0.1 文档，外部无法复核。"
+    ],
+    "other_frames_under_approach": {
+      "ep552_f120": {"verdict": "false 在两种读法下都成立（wrist 相距 ~40–50 px、到 close 还有 144 帧、到达≈f199）→ v0.1 正确，无需改判。"},
+      "ep200_f140": {"verdict": "唯一边界帧。按『到达抓取位窗口』定义应 false（v0.1 自洽）；按『末端已靠近且未抓住』的宽口径 approach 应 true。v0.1 未写边界 → 不可复核的语义跳跃。"},
+      "other_key_frames": "除 ep200 f140 外，12 个关键帧没有任何一帧需要在 approach 语义下改判。"
+    },
+    "recommendation": [
+      "v0.2 规范显式定义 NextTo = approach（末端进入抓取位窗口、尚未夹紧；抓住后恒 false；不是纯距离）。",
+      "窗口边界建议事件锚定：NextTo=true 只取 close 事件前 15±5 帧内且 InGripper=false、OnSeabed=true 的稳定帧（本组 key2 全部精确落在 close−15）。",
+      "动作文本生成器同步修改，禁止再输出『grasped + no longer next to』的矛盾句。",
+      "Touching 若启用需同样事件锚定，避免与 NextTo 混淆。"
+    ]
+  },
+  "verdict_distribution_disagreements_only": {
+    "original_ok": 1,
+    "review_ok": 0,
+    "both_acceptable": 7,
+    "undecidable": 0
+  },
+  "verdict_distribution_all_items": {
+    "original_ok": 4,
+    "review_ok": 8,
+    "both_acceptable": 7,
+    "undecidable": 0,
+    "total_items": 19
+  }
+}

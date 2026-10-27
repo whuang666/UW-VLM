@@ -1,82 +1,138 @@
 # 下一步工作清单与运行手册
 
-这份清单按依赖排序。**现在首先需要补数据和明确语义真值；GPU 训练不在第一步。** 数据集已经确定为当前工作区的 USIM。
+最近更新：2026-10-27（Asia/Shanghai）。**当前主战场：v0.2 标注/题集构建与正式测试冻结。** v0.1 的数据、题集、评分、真实模型开发集实验与独立标签复核均已完成；数字与证据汇总见 [docs/README.md 的“当前完成到哪里”](README.md)。本文只列状态、依赖与可复跑命令，不重复实验结论。
 
-## P0：先使数据与协议可信
+这份清单按依赖排序。**GPU 训练仍不在当前阶段。** 数据集已经确定为当前工作区的 USIM（`E:\code\UW-VLM\usim`）。
 
-| 状态 | 工作 | 交付物与验收标准 | 责任/所需资源 |
+## P0：先使数据与协议可信（2026-10-27 状态）
+
+| 状态 | 工作 | 交付物与验收标准 | 证据 |
 |---|---|---|---|
-| 已完成 | 阅读论文、代码和数据结构 | 本套文档、来源索引、合成契约检查 | 本轮完成 |
-| 已完成 | 已到位 test Parquet 核验 | 525 文件、208,605 行可读，结构检查通过 | 本轮完成；不代表视频或标签齐全 |
-| 待做 | 补齐 USIM 下载 | 固定远端 commit、分页全清单、train 1,750/test 525；视频 3,500/1,050；逐文件大小/哈希/可读性核验 | 网络和磁盘；复用已有文件 |
-| 待做 | 建立隔离环境 | Python 3.10；已验证的 Arrow 23.0.1；ENACT CLI 和数据读取可用，保存依赖锁与版本 | 本地 Conda/venv |
-| 待做 | 确认动作与坐标语义 | action/state 的关节与推进器映射、单位、target_pos 的对象/坐标/有效性说明 | 上游采集源码或可信文档 |
-| 待做 | 确定首版标签与标注来源 | 可判定的操作谓词、unknown 规则、ego 可见性规则、标注指南 | 人工标注；或仿真状态导出 |
-| 待做 | 从 train 划开发/验证集合 | 保存 episode 清单、划分种子和哈希；test 不参与阈值、模型或 prompt 选择 | 数据脚本 |
+| ✅ 已完成 | 阅读论文、代码和数据结构 | 本套文档、来源索引、合成契约检查 | [01](01_paper_reading.md)、[02](02_code_and_reproduction.md) |
+| ✅ 已完成 | 已到位 test Parquet 核验 | 525 文件、208,605 行可读，结构检查通过（不代表视频或标签齐全） | [03 数据核验 §1–§2](03_usim_data_audit.md) |
+| ✅ 已完成 | 补齐 USIM 下载 | 固定远端 commit、分页全清单 6,840 个文件（4,219,493,970 字节），逐文件内容哈希核验全部通过；train 1,750 Parquet / 3,500 视频，test 525 / 1,050 | [03 顶部更新](03_usim_data_audit.md) |
+| ⚠️ 部分完成 | 建立隔离环境 | 实际运行统一使用 `C:\Users\whuang\.workbuddy\binaries\python\envs\default\Scripts\python.exe`（numpy/pyarrow/opencv 可用）；原计划的独立 conda 环境与依赖锁**未建**，环境版本未锁定（待核实） | [07 §8](07_reproduction_run.md)、[评分契约 §8](WBW/ENACT-USIM-评分契约与统计-20261027.md) |
+| ⚠️ 部分完成 | 确认动作与坐标语义 | 夹爪 `observation.state[0]`、离底高度 `state[28]` 已作为**辅助证据**用于复核；完整关节/推进器映射、单位与 `target_pos` 语义仍待上游源码确认 | [03 §3–§4](03_usim_data_audit.md)、[round2 B §1](<../data/usim_enact/_review/round2/reviewer_b/review_report.md>) |
+| ✅ 已完成 | 确定首版标签与标注来源 | v0.1：4 谓词、`agent_visual_review`、70 题；v0.2：`OnSeabed` 物理支撑语义、`NextTo` approach 语义、可见性与选帧规则已写入规范 | [v0.2 标注与关键帧规范](WBR/ENACT-USIM-v0.2标注与关键帧规范-20261027.md) |
+| ✅ 已完成 | 从 train 划开发/验证集合 | v0.1：7 条 train episode 作开发集，seed 20261024；v0.2：按 episode 划分，dev 19 / val 8 / test 预留 10（test 冻结后才标注） | [07 §2](07_reproduction_run.md)、[v0.2 评测方案 §2](WBR/ENACT-USIM-v0.2评测与正式测试方案-20261027.md) |
+| ✅ 已完成 | 评分修复（P0 遗留） | 固定分母、严格解析、资产预检失败即退出；`usim_strict_v0.3` 新增“参考转移可见签名为空”gate；6 项契约测试全过、v0.1 回归逐位一致 | [契约证据](../data/usim_enact/_protocol/contract/check_scoring_contract_v2.json)、[评分契约 §3/§10](WBW/ENACT-USIM-评分契约与统计-20261027.md) |
+| ✅ 已完成 | 真实模型推理 | `qwen3.8-max` 70 题开发集 A/B/C 三条件，70/70 请求成功、格式全合法 | [执行结果](WBW/ENACT-USIM-qwen3.8-max-执行结果-20261024.md) |
 
-数据下载验收以元数据和冻结 manifest 为准，数量相同仍需检查路径、大小、哈希、解码和时间对应。`tools/hf_snapshot_download.py` 的递归 API 分页需先修复/核验；不把当前不完整目录当作完整数据快照，也不直接再次覆盖已到位文件。
+数据下载验收以元数据和冻结 manifest 为准，数量相同仍需检查路径、大小、哈希、解码和时间对应。`tools/hf_snapshot_download.py` 的递归 API 分页问题已修复；6,840 个文件的逐文件哈希证据见 03 顶部链接。旧文档“尚待补齐下载”已过时。
 
-## P1：做一个能人工检查的小闭环
+## P1：做一个能人工检查的小闭环（2026-10-27 状态）
 
-| 顺序 | 工作 | 验收条件 |
-|---:|---|---|
-| 1 | 从 train 挑 10–20 条操作轨迹 | 原视频、Parquet、指令/场景来源可追溯；不是从 test 挑“容易题” |
-| 2 | 人工标注关键帧、关系和可见性 | 至少 2–4 种可靠变化；记录未知和分歧，独立复核覆盖每种谓词 |
-| 3 | 写 USIM reader 与标签适配层 | 帧 0 与 frame_index=0 对齐；ego 映射、episode 主键、标签来源正确 |
-| 4 | 编译稀疏场景图与分帧输入 | unknown 不被误当 false；没有虚构 visibility 像素数；不强行运行稠密分帧 |
-| 5 | 生成 `L=3/4` 双向题 | 目标约 100–200 QA，达不到时报告实际数；每个转移可在输入图验证 |
-| 6 | 验证题集与 scorer | 所有参考答案通过；非法排列拒绝；EM/TA 区分，多答案行为有审查记录 |
-| 7 | 写一个模型推理器 | 模型实际收到全部图、正确标签和题干；不收到答案/帧号/时间信息 |
-| 8 | 开发集运行 20–50 题 | 预测逐行保存；失败计入；中断能续跑，同一 records 文件只有一个写入者 |
+| 顺序 | 工作 | 验收条件 | 状态与证据 |
+|---:|---|---|---|
+| 1 | 从 train 挑 10–20 条操作轨迹 | 原视频、Parquet、指令/场景来源可追溯；不是从 test 挑“容易题” | ✅ v0.1 已用 7 条；v0.2 新增 20 条（dev 12 / val 8）已登记、标注进行中（[v0.2 评测方案 §2](WBR/ENACT-USIM-v0.2评测与正式测试方案-20261027.md)） |
+| 2 | 人工标注关键帧、关系和可见性 | 至少 2–4 种可靠变化；记录未知和分歧，独立复核覆盖每种谓词 | ✅ v0.1 28 帧已复核（round2 盲评 + 裁决），v0.2 定义与选帧规则已写入规范 v1（[规范](WBR/ENACT-USIM-v0.2标注与关键帧规范-20261027.md)） |
+| 3 | 写 USIM reader 与标签适配层 | 帧 0 与 frame_index=0 对齐；ego 映射、episode 主键、标签来源正确 | ✅ 已在 07 §1 落地（[07 §1](07_reproduction_run.md)） |
+| 4 | 编译稀疏场景图与分帧输入 | unknown 不被误当 false；没有虚构 visibility 像素数；不强行运行稠密分帧 | ✅ v0.1 已编译并通过 oracle；v0.2 要求逐帧独立标注（[07 §4](07_reproduction_run.md)） |
+| 5 | 生成 `L=3/4` 双向题 | 目标约 100–200 QA，达不到时报告实际数；每个转移可在输入图验证 | ✅ v0.1 70 题（56×L3 + 14×L4）；v0.2 目标准备 L=4/5（[07 §5](07_reproduction_run.md)） |
+| 6 | 验证题集与 scorer | 所有参考答案通过；非法排列拒绝；EM/TA 区分，多答案行为有审查记录 | ✅ oracle 1.0；多答案题 = 0 → TA≡EM（已审计），多答案路径由合成契约覆盖（[审计](../data/usim_enact/_protocol/audit_qa_validity_usim-enact-v0.1.json)） |
+| 7 | 写一个模型推理器 | 模型实际收到全部图、正确标签和题干；不收到答案/帧号/时间信息 | ✅ `run_inference.py`（多图鉴权、dry-run、断点续跑、配置哈希）；70/70 成功（[执行结果 §2](WBW/ENACT-USIM-qwen3.8-max-执行结果-20261024.md)） |
+| 8 | 开发集运行 20–50 题 | 预测逐行保存；失败计入；中断能续跑 | ✅ 超额完成：70 题 A/B/C 三条件（[执行结果 §5–§7](WBW/ENACT-USIM-qwen3.8-max-执行结果-20261024.md)） |
 
-如果第 2–5 步发现大量语义变化不可见或不足以形成短题，先调整数据范围/标签设计；不要直接扩模型数量或开始微调。
+如果第 2–5 步发现大量语义变化不可见或不足以形成短题，先调整数据范围/标签设计；不要直接扩模型数量或开始微调。round2 复核已确认 v0.1 部分转移 `ego-only` 只到 partial——v0.2 起必须把“ego 可判性”与“标签值”分列。
 
 ## P2：冻结后做正式评测
 
-- [ ] 根据开发/验证数据确定谓词阈值、prompt、图像处理、模型快照与解码参数。
-- [ ] 冻结 split、QA、标签、图片清单和协议哈希，再生成测试题。
-- [ ] 在实际可支持的长度上运行前向/逆向，逐方向、逐 `L`、逐任务报告数量和成绩。
-- [ ] 运行随机/固定顺序及信息移除基线，检查时间、标签、文本先验捷径。
-- [ ] 保留固定分母的 EM、语义 TA、PA、格式有效率、错误/缺失率；说明 PA 汇总口径。
-- [ ] 对来自同一 episode 的题进行分组不确定性分析，避免把大量相关题当独立样本。
-- [ ] 复核典型错误、歧义标签和低可见性样本；测试集问题若需纠正则版本化并对全部模型重评。
+以下为 2026-10-27 的 P2 状态（原 7 项清单逐项标注完成情况，新增未完成项单列）：
 
-## P3：有了可靠基线后再扩展
+- [x] **确定并冻结 v0.1 谓词/prompt/图像处理/模型与解码参数**：prompt 策略、格式指令、`qwen3.8-max`、temperature=0、`enable_thinking=false`、`max_completion_tokens=256` 已写入冻结清单（[评分契约 §6](WBW/ENACT-USIM-评分契约与统计-20261027.md)）。
+- [x] **冻结 v0.1 split/QA/标签/图片清单和协议哈希**：7 组 578 文件，`--verify` 0 退出、篡改自测 5/5（[冻结清单](../data/usim_enact/_protocol/freeze_usim-enact-v0.1_20261027.json)）。v0.2/test 冻结**未完成**（见下）。
+- [x] **在可支持长度上运行前向/逆向并分方向、分 L、分任务报告**：v0.1 70 题 A/B/C 已完成（[执行结果](WBW/ENACT-USIM-qwen3.8-max-执行结果-20261024.md)）。
+- [x] **运行随机/固定顺序及信息移除基线**：六种程序基线 + 条件 C（去图）+ 条件 D（forward 去动作文本，35 题，oracle 1.0）+ 程序化文本先验基线 0.7714（[评分契约 §4–§5、§11](WBW/ENACT-USIM-评分契约与统计-20261027.md)）。
+- [x] **保留固定分母的 EM/TA/PA/格式有效率/错误缺失率**：`usim_strict_v0.3` 已实现固定分母与严格解析，报告含 invalid/missing 计数（[契约测试](../data/usim_enact/_protocol/contract/check_scoring_contract_v2.json)）。
+- [x] **按 episode 分组的 uncertainty**：`report_stats.py` 已实现按 episode 重采样 2000 次的 bootstrap（7 簇，seed 20261024），A/B/C 区间与配对 Δ 已产出（[统计证据](../data/usim_enact/_protocol/stats/report_stats_dev_ego_thinking_false_001.md)）。
+- [x] **复核歧义标签与低可见性样本**：round2 盲评复核完成，修正 7 处 `OnSeabed`、2 处可见性、`NextTo` 语义与 notes（[reviewer_a](../data/usim_enact/_review/round2/reviewer_a/review_report.md)、[reviewer_b](../data/usim_enact/_review/round2/reviewer_b/review_report.md)）；v0.2 评估前仍需按新标签整体复评。
 
-- [ ] 扩至 `L=5…10`，同时报告每类任务能支持的最大长度与有效路径数。
+### P2 新增未完成项（2026-10-27）
+
+- [ ] **v0.2 标注与题集构建**：v0.1 七条已迁移（[migration_v01_to_v02.json](../data/usim_enact/usim-enact-v0.2/migration_v01_to_v02.json)）；新增 dev 12 / val 8 共 20 条逐帧标注、test 预留 10 条冻结后才标注。构建门禁：`build_dataset → build_qa → reseed_answers → curate_qa_v02 → audit_qa_validity`，任一失败即停止（[v0.2 评测方案 §3](WBR/ENACT-USIM-v0.2评测与正式测试方案-20261027.md)）。
+- [ ] **文本先验与条件 D（v0.2 版）**：条件 D 已构建（forward 35 题 / 112 图 / oracle 1.0，[manifest](../data/usim_enact/_protocol/conditions/D_no_action_text/build_manifest.json)）；需按 v0.2 新动作模板更新 `text_prior_baseline.py` 正则，并把 A/B/C/D 四条件与文本基线同表报告。条件 D **尚未跑任何模型**。
+- [ ] **v0.2 协议冻结**：正式推理前用 `freeze_protocol.py` 生成 v0.2 输入冻结并 `--verify` 0 退出；冻结模板见 [评分契约 §6.3](WBW/ENACT-USIM-评分契约与统计-20261027.md)。
+- [ ] **正式 test**：冻结后标注 test 预留 10 条、构建 test QA，A/B/C/D 与程序基线各跑一次，只报一次、不得据 test 结果调参（[v0.2 方案 §7](WBR/ENACT-USIM-v0.2评测与正式测试方案-20261027.md)）。
+- [ ] **P1 遗留：同版本重跑对照**：v0.1 的 A/B/C 三条件用了 **3 个不同版本的 `run_inference.py`**，正式对照必须同一源码版本重跑；冻结清单已记录漂移（[评分契约 §6.2](WBW/ENACT-USIM-评分契约与统计-20261027.md)）。
+- [ ] **思考模式对照**：`enable_thinking=true` + 更大预算，单独 run，不与首轮混分（[执行结果 §11](WBW/ENACT-USIM-qwen3.8-max-执行结果-20261024.md)）。
+- [ ] **API 密钥阻塞**：当前会话无 `VLM_API_KEY` 时推理器只能 `--dry-run`，无法产出正式分数；正式 run/test 需注入密钥（环境变量、不落盘，[v0.2 方案 §7](WBR/ENACT-USIM-v0.2评测与正式测试方案-20261027.md)）。
+
+## P3：有了可靠基线后再扩展（2026-10-27：均未开始）
+
+- [ ] 扩至 `L=5…10`，同时报告每类任务能支持的最大长度与有效路径数（v0.2 选帧规范目标 5–6 帧以支持 L=4/5，见 [规范 §3](WBR/ENACT-USIM-v0.2标注与关键帧规范-20261027.md)）。
 - [ ] 引入导航/巡检/跟随；先建立目标语义、几何和成功条件。
-- [ ] 增加 wrist 或双相机条件，保留 ego-only 对照，不能混合为一个分数。
+- [ ] 增加 wrist 或双相机条件，保留 ego-only 对照，不能混合为一个分数（round2 已把 wrist 作为辅助证据使用，未进入主结果）。
 - [ ] 若能获得 Stonefish 状态/接触/可见性导出，用自动流程替代人工环节并核验一致性。
 - [ ] 再考虑训练、SFT/LoRA、浑浊度/光照等控制实验；每项另有独立的验证选择与测试协议。
 
-## 已存在、可以运行的命令
+## 当前有效命令（2026-10-27）
 
-以下命令适用于 PowerShell。它们核验本地项目；不需要先装 BEHAVIOR-1K。
+以下命令适用于 PowerShell。Python 统一使用：
 
 ```powershell
 Set-Location E:\code\UW-VLM\ENACT
-
-# 不安装 package 也可从仓库根看 CLI 帮助
-python -m scripts.enact.cli --help
-
-# 只读审计本地 USIM；输出放在数据目录之外
-python scripts/helpers/audit_usim_readiness.py `
-  --dataset-root E:\code\UW-VLM\usim `
-  --output docs/evidence/usim_audit.json
+$py = 'C:\Users\whuang\.workbuddy\binaries\python\envs\default\Scripts\python.exe'
 ```
 
-基础环境的 Arrow 19 会报本文记录的兼容性错误，应使用新环境，或本轮已存在的临时隔离目录运行：
+### 0）契约与冻结自检（不需要密钥）
 
 ```powershell
-python scripts/helpers/audit_usim_readiness.py `
-  --dataset-root E:\code\UW-VLM\usim `
-  --output docs/evidence/usim_audit.json `
-  --pyarrow-site "$env:TEMP\codex-enact-audit-20261023"
+# 评分契约 (a)–(f)：多答案/不可交换/空签名拒绝/固定分母/重复ID/v0.1 回归
+& $py -m scripts.usim.check_scoring_contract_v2
+# 冻结工具自测（篡改检测 5 项）
+& $py -m scripts.usim.freeze_protocol --self-test
 ```
 
-临时目录可能被系统清理，不将它视为正式环境交付。审计返回 JSON，必须阅读 `source_unchanged_during_scan`、`declared_asset_counts_complete` 和各检查结果；资产数量不齐、读取失败或扫描时源文件变化时退出码为 1。它不验证语义真值，也没有执行全视频解码；即使退出码为 0，也不等于已完成 ENACT 语义数据准备。重跑会更新同名审计报告，正式实验使用独立 run 目录归档。
+### 1）v0.2 数据与题集构建（当前主流程）
 
-## 建议新建的正式环境（尚未执行）
+```powershell
+$v2  = 'data\usim_enact\usim-enact-v0.2'
+$run = 'data\usim_enact\runs\qwen3.8-max\v02_dev_001'
+
+# 标注 → 数据集（manifest/场景图/图片）
+& $py -m scripts.usim.build_dataset --annotations "$v2\annotations\episodes" --out $v2
+
+# QA 生成 → 固定 seed 重排 → 按长度配额筛选（规则先于模型结果冻结）
+& $py -m scripts.usim.build_qa --data-root $v2 --step-lengths 3,4,5 --num-to-sample 25
+& $py -m scripts.usim.reseed_answers --data-root $v2 --qa "$v2\QA\train\enact_ordering.jsonl" --seed 20261027
+& $py -m scripts.usim.curate_qa_v02 --data-root $v2 --qa "$v2\QA\train\enact_ordering.jsonl" --out "$v2\QA\train\enact_ordering_curated.jsonl"
+```
+
+### 2）门禁：有效性审计、oracle、划分、条件 D、冻结
+
+```powershell
+$qa = "$v2\QA\train\enact_ordering_curated.jsonl"
+
+# 排列枚举 + 精确机会水平 + 参考排列/空签名 gate
+& $py -m scripts.usim.audit_qa_validity --data-root $v2 --qa $qa --out data\usim_enact\_protocol\audit_qa_validity_v0.2.json
+# 合成 oracle 必须全 1.0
+& $py -m scripts.usim.evaluate --data-root $v2 --qa $qa --synthetic oracle --out "$run\baseline_oracle.json"
+# dev/val 输入划分（按 episode；test 冻结后另建）
+& $py -m scripts.usim.make_splits_v02 --qa $qa --out-dir "$run\inputs"
+# 条件 D：forward 去动作文本（纯视觉排序）
+& $py -m scripts.usim.build_condition_d --data-root $v2 --qa $qa --out "$v2\QA\train\enact_ordering_curated_no_text.jsonl"
+# v0.2 冻结（参数见评分契约 §6.3；--verify 必须 0 退出）
+& $py -m scripts.usim.freeze_protocol --data-root $v2 --run-dir $run --freeze-id <YYYYMMDD>
+& $py -m scripts.usim.freeze_protocol --verify data\usim_enact\_protocol\freeze_usim-enact-v0.2_<YYYYMMDD>.json
+```
+
+### 3）真实模型（无 `VLM_API_KEY` 只能 dry-run；A/B/C/D 必须同一源码版本）
+
+```powershell
+$env:VLM_API_URL    = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions'
+$env:VLM_MODEL_NAME = 'qwen3.8-max'
+$env:VLM_API_KEY    = '<本会话设置，不落盘>'
+
+# 无密钥时先做输入/资产校验
+& $py -m scripts.usim.run_inference --qa "$run\inputs\full_dev_v02.jsonl" --out "$run\A\predictions.jsonl" --dry-run
+# 有密钥后按条件 A/B/C/D 分别输出到独立目录，再用 evaluate.py + report_stats.py 出表
+```
+
+v0.1 的复跑命令（契约/统计/文本先验/冻结/三条件评测）见 [07 §8](07_reproduction_run.md) 与 [评分契约 §8](WBW/ENACT-USIM-评分契约与统计-20261027.md)。上游 `enact qa` / `enact eval` CLI 不适用于当前水下数据（见文末历史备注）。
+
+## 历史备注（2026-10-23，保留；已过时部分仅作记录）
+
+### 建议新建的正式环境（历史，未按此执行）
 
 ```powershell
 conda create -n enact-usim python=3.10 -y
@@ -88,27 +144,27 @@ enact --help
 python -m pip freeze > docs/evidence/enact_usim_environment.txt
 ```
 
-模型推理所需的 torch/transformers/专用模型依赖应按选定后端单独配置，不声称以上几行已经完成 VLM 推理环境。USIM 已有视频和标注适配路线不要求安装 BEHAVIOR-1K；Stonefish 自动导出路线才需要另行解决其仿真与资产依赖。
+实际运行未建该 conda 环境，统一使用上文 `$py` 路径；依赖版本未锁定（待核实）。上游 `--seed` 被 generator 内部 42 重置的问题未修复，不能据此设计多种子实验。
 
-## 只有满足输入条件后才能运行的上游命令
+### 上游 CLI 示例（历史，不适用于当前水下数据）
 
 ```powershell
 # 仅适用于已编译好的 ENACT 格式输入，不可直接指向 usim/test/data
 enact qa data/replayed_usim_segmented data/replayed_usim data/QA/enact_ordering.jsonl --num-to-sample 5
 
-# predictions 需要自行编写模型 runner 生成；语义评测仍需两份场景图
+# predictions 需要模型 runner 生成；当前已有 scripts/usim/run_inference.py + evaluate.py 闭环
 enact eval data/predictions/enact_ordering_mymodel.jsonl `
   --segmented-data data/replayed_usim_segmented `
   --raw-data data/replayed_usim `
   --output-root data/evaluation/usim_pilot
 ```
 
-以上两条是上游 CLI 的条件性调用示例。水下目录和 predictions 目前不存在。上游 `--seed` 被 generator 内部 42 重置的问题未修复，不能据此设计多种子实验。
+以上两条为 2026-10-23 记录的上游 CLI 条件性调用示例；当前水下目录与预测产物已存在，但评测统一走 `scripts/usim/evaluate.py`，不使用上游 eval 入口。
 
 ## 仍需要你掌握或补充的信息
 
-1. **语义真值来源：** 是否能取得 USIM/Stonefish 的采集源码、场景配置、物体/接触状态或可重放资产；若不能，先按人工标注路线推进。
-2. **控制字段说明：** 关节、夹爪、推进器映射，以及 target_pos 的真实定义。未知信息不会靠猜测写进标签。
-3. **推理资源：** 已有模型/接口或可用 GPU 与显存，以便选择首个多图 VLM。先跑通一个模型即可，不必一开始复现论文全部模型。
+1. **语义真值来源：** 已按人工标注路线推进（v0.1 完成、v0.2 进行中）；Stonefish 场景/接触状态自动导出仍未接入（[03 §8](03_usim_data_audit.md)）。若后续能导出真值，可替代部分人工判断。
+2. **控制字段说明：** 夹爪（`state[0]`）与离底高度（`state[28]`）已作辅助证据使用；关节/推进器映射、单位与 `target_pos` 语义**待核实**，未知信息不猜测写进标签（[03 §3–§4](03_usim_data_audit.md)）。
+3. **推理资源：** 已使用 DashScope API 的 `qwen3.8-max`（密钥仅经环境变量注入、不落盘；单价未核实，不折算金额）。当前会话无 `VLM_API_KEY`，正式批量实验与 test 需先补密钥。
 
-当前最值得投入的下一项工作是：**补齐 train 与视频，然后从训练集建立小规模、可审查的操作事件标注集。**
+当前最值得投入的下一项工作是：**完成 v0.2 新增 20 条 dev/val 标注与数据/题集构建门禁，随后做 v0.2 协议冻结与正式 test。**
