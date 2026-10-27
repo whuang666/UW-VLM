@@ -1,0 +1,13 @@
+{
+  "markdown_local_links_checked": 29,
+  "problems": [],
+  "source_pages": 60,
+  "source_blocks": 1216,
+  "synthetic_contract_checks": {
+    "ground_truth_all_accepted": true,
+    "reversed_all_rejected": true,
+    "images_all_exist": true
+  },
+  "original_core_source_unchanged": true,
+  "note": "USIM data inventory remains incomplete and changed during its audit; this is documented, not a passed readiness gate."
+}

@@ -1,0 +1,65 @@
+{
+  "packet_version": "blind-review-20261027",
+  "data_root": "ENACT\\data\\usim_enact\\usim-enact-v0.1",
+  "reviewers": {
+    "reviewer_a": {
+      "episodes": [
+        {
+          "episode_key": "usim_train_episode_000200",
+          "path": "data\\usim_enact\\_review\\round2\\packets\\reviewer_a\\usim_train_episode_000200.json",
+          "sha256": "fb38ec14a6cb6c2feac03057ff700f2a85fae156b1fa4f5548c1d57d01d666c4",
+          "key_frames": 4,
+          "qa_questions": 10
+        },
+        {
+          "episode_key": "usim_train_episode_000201",
+          "path": "data\\usim_enact\\_review\\round2\\packets\\reviewer_a\\usim_train_episode_000201.json",
+          "sha256": "c37f4b51b12ef2fffafec6f195d2c955d43ecc543f0b7e28f10c6cbb22a6ac8f",
+          "key_frames": 4,
+          "qa_questions": 10
+        },
+        {
+          "episode_key": "usim_train_episode_000552",
+          "path": "data\\usim_enact\\_review\\round2\\packets\\reviewer_a\\usim_train_episode_000552.json",
+          "sha256": "c6036be748653dcd2ce5a59b4d0dcb1a5d6df2bba4a660ca3e51a76cbbe06a9f",
+          "key_frames": 4,
+          "qa_questions": 10
+        }
+      ],
+      "assignment_count": 3
+    },
+    "reviewer_b": {
+      "episodes": [
+        {
+          "episode_key": "usim_train_episode_000553",
+          "path": "data\\usim_enact\\_review\\round2\\packets\\reviewer_b\\usim_train_episode_000553.json",
+          "sha256": "a8d88cb677980fd9773b940587cb10defac211b1d7abaaa5bca3162e9ce46d2d",
+          "key_frames": 4,
+          "qa_questions": 10
+        },
+        {
+          "episode_key": "usim_train_episode_000555",
+          "path": "data\\usim_enact\\_review\\round2\\packets\\reviewer_b\\usim_train_episode_000555.json",
+          "sha256": "a1bbb15647057ae7aea6d42a20fb1069b84561af55dfca2313251f10bb98a27f",
+          "key_frames": 4,
+          "qa_questions": 10
+        },
+        {
+          "episode_key": "usim_train_episode_000556",
+          "path": "data\\usim_enact\\_review\\round2\\packets\\reviewer_b\\usim_train_episode_000556.json",
+          "sha256": "e55ab58547b079f5d343e179658f601ebfc3369b0d90a83746284a66e0832d94",
+          "key_frames": 4,
+          "qa_questions": 10
+        },
+        {
+          "episode_key": "usim_train_episode_001302",
+          "path": "data\\usim_enact\\_review\\round2\\packets\\reviewer_b\\usim_train_episode_001302.json",
+          "sha256": "839a16c4692a16cbad68d20408d7d3cd7fab5ed397cd565bf863a06549c72e45",
+          "key_frames": 4,
+          "qa_questions": 10
+        }
+      ],
+      "assignment_count": 4
+    }
+  }
+}

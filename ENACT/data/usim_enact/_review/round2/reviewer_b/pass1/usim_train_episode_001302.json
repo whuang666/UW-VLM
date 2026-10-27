@@ -1,0 +1,446 @@
+{
+  "reviewer": "reviewer_b",
+  "pass": "pass1_blind",
+  "packet_version": "blind-review-20261027",
+  "episode_key": "usim_train_episode_001302",
+  "episode_index": 1302,
+  "task_text": "Pick up the red cylinder and transfer it to the box",
+  "episode_length": 466,
+  "unique_states": 57,
+  "frames": [
+    {
+      "frame_index": 150,
+      "timestamp_seconds": 15.0,
+      "run": {
+        "start": 142,
+        "end": 157,
+        "length": 16
+      },
+      "stability": "stable (1.6 s run); pre-grasp hold",
+      "relations": {
+        "OnSeabed(red_cylinder)": {
+          "judgment": true,
+          "confidence": "high",
+          "evidence": "Cylinder lies diagonally on the lit seabed; open jaws ~8-10 px above it; tight contact shadow, no gap.",
+          "ego_only_decidable": true
+        },
+        "InGripper(red_cylinder)": {
+          "judgment": false,
+          "confidence": "high",
+          "evidence": "Jaws open and above the object; visible gap between jaw tips and cylinder; close command starts at frame 176.",
+          "ego_only_decidable": true
+        },
+        "Lifted(red_cylinder)": {
+          "judgment": false,
+          "confidence": "high",
+          "evidence": "Object on the seabed.",
+          "ego_only_decidable": true
+        },
+        "NextTo(robot,red_cylinder)": {
+          "judgment": true,
+          "confidence": "high",
+          "evidence": "Gripper directly above the cylinder within grasp reach; green box visible in the background (upper-left, partly behind the arm) but not part of the relation scope.",
+          "ego_only_decidable": true
+        }
+      },
+      "visibility": {
+        "robot": {
+          "value": "visible",
+          "evidence": "Arm/gripper visible centre-left."
+        },
+        "red_cylinder": {
+          "value": "visible",
+          "evidence": "Cylinder visible on the seabed (bbox 15x22 px at (118,117))."
+        },
+        "green_box": {
+          "value": "visible",
+          "evidence": "Green box in the background at approx. (128-160, 42-66); partly occluded by the robot arm."
+        }
+      },
+      "representative": {
+        "stable_semantic_state": true,
+        "mid_action": false,
+        "better_frame_candidates": [],
+        "note": "Good pre-grasp key frame; box is visible in the scene."
+      },
+      "model_input": {
+        "qa_images_containing_this_frame": [
+          {
+            "qa_id": "usim_train_episode_001302_forward_world_modeling_3_steps_6ddf9c86",
+            "qa_type": "forward_world_modeling_3_steps",
+            "slot": 0,
+            "label": "Current State"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_forward_world_modeling_3_steps_761d65c7",
+            "qa_type": "forward_world_modeling_3_steps",
+            "slot": 0,
+            "label": "Current State"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_forward_world_modeling_3_steps_160b8525",
+            "qa_type": "forward_world_modeling_3_steps",
+            "slot": 0,
+            "label": "Current State"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_forward_world_modeling_4_steps_68512d26",
+            "qa_type": "forward_world_modeling_4_steps",
+            "slot": 0,
+            "label": "Current State"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_inverse_world_modeling_3_steps_761d65c7",
+            "qa_type": "inverse_world_modeling_3_steps",
+            "slot": 0,
+            "label": "Current State"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_inverse_world_modeling_3_steps_160b8525",
+            "qa_type": "inverse_world_modeling_3_steps",
+            "slot": 0,
+            "label": "Current State"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_inverse_world_modeling_3_steps_6ddf9c86",
+            "qa_type": "inverse_world_modeling_3_steps",
+            "slot": 0,
+            "label": "Current State"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_inverse_world_modeling_4_steps_68512d26",
+            "qa_type": "inverse_world_modeling_4_steps",
+            "slot": 0,
+            "label": "Current State"
+          }
+        ],
+        "label_overlay": "QA images are the raw frame plus a burned-in 'Current State'/'Next State N' label in the top-left; pixels outside that label region are identical to the raw frame (verified, masked mean diff 0.0)."
+      }
+    },
+    {
+      "frame_index": 168,
+      "timestamp_seconds": 16.8,
+      "run": {
+        "start": 160,
+        "end": 175,
+        "length": 16
+      },
+      "stability": "stable (1.6 s run); jaws closing onto the object",
+      "relations": {
+        "OnSeabed(red_cylinder)": {
+          "judgment": true,
+          "confidence": "medium",
+          "evidence": "Cylinder is still at seabed level between the jaws (obvious dark shadow band right below it); gripper close command has not yet fired (starts at 176), so the object is not yet lifted.",
+          "ego_only_decidable": "partial"
+        },
+        "InGripper(red_cylinder)": {
+          "judgment": false,
+          "confidence": "medium",
+          "evidence": "Object is inside the jaw opening and one finger overlaps it in projection, but the jaws have not closed yet (close command at frame 176); from the single image it is ambiguous whether the finger already touches the object. Not yet 'held'.",
+          "ego_only_decidable": false
+        },
+        "Lifted(red_cylinder)": {
+          "judgment": false,
+          "confidence": "medium",
+          "evidence": "Object at seabed level, no lift.",
+          "ego_only_decidable": "partial"
+        },
+        "NextTo(robot,red_cylinder)": {
+          "judgment": true,
+          "confidence": "high",
+          "evidence": "Jaws enclose the object (contact/imminent contact).",
+          "ego_only_decidable": true
+        }
+      },
+      "visibility": {
+        "robot": {
+          "value": "visible",
+          "evidence": "Arm/gripper visible."
+        },
+        "red_cylinder": {
+          "value": "partial",
+          "evidence": "Cylinder partly occluded by the right jaw; red bbox shrinks to 8x10 px at (119,103)."
+        }
+      },
+      "representative": {
+        "stable_semantic_state": true,
+        "mid_action": true,
+        "better_frame_candidates": [
+          160,
+          178,
+          196
+        ],
+        "note": "State is stable in the video but is a closing-jaw intermediate; the frame does NOT contain information that distinguishes 'touching but not grasped' from 'already grasped'. If the label set makes f168 different from f150 only by jaw proximity, the transition may not be visually verifiable ego-only."
+      },
+      "model_input": {
+        "qa_images_containing_this_frame": [
+          {
+            "qa_id": "usim_train_episode_001302_forward_world_modeling_3_steps_6ddf9c86",
+            "qa_type": "forward_world_modeling_3_steps",
+            "slot": 2,
+            "label": "Next State 2"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_forward_world_modeling_3_steps_160b8525",
+            "qa_type": "forward_world_modeling_3_steps",
+            "slot": 2,
+            "label": "Next State 2"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_forward_world_modeling_3_steps_094f02f6",
+            "qa_type": "forward_world_modeling_3_steps",
+            "slot": 0,
+            "label": "Current State"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_forward_world_modeling_4_steps_68512d26",
+            "qa_type": "forward_world_modeling_4_steps",
+            "slot": 1,
+            "label": "Next State 1"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_inverse_world_modeling_3_steps_160b8525",
+            "qa_type": "inverse_world_modeling_3_steps",
+            "slot": 1,
+            "label": "Next State 1"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_inverse_world_modeling_3_steps_094f02f6",
+            "qa_type": "inverse_world_modeling_3_steps",
+            "slot": 0,
+            "label": "Current State"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_inverse_world_modeling_3_steps_6ddf9c86",
+            "qa_type": "inverse_world_modeling_3_steps",
+            "slot": 1,
+            "label": "Next State 1"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_inverse_world_modeling_4_steps_68512d26",
+            "qa_type": "inverse_world_modeling_4_steps",
+            "slot": 1,
+            "label": "Next State 1"
+          }
+        ],
+        "label_overlay": "QA images are the raw frame plus a burned-in 'Current State'/'Next State N' label in the top-left; pixels outside that label region are identical to the raw frame (verified, masked mean diff 0.0)."
+      }
+    },
+    {
+      "frame_index": 196,
+      "timestamp_seconds": 19.6,
+      "run": {
+        "start": 196,
+        "end": 213,
+        "length": 18
+      },
+      "stability": "stable (1.8 s run); post-close hold",
+      "relations": {
+        "OnSeabed(red_cylinder)": {
+          "judgment": false,
+          "confidence": "low",
+          "evidence": "Object clamped by closed jaws (close at 176-178); body appears just above the lit seabed with a narrow shadow band. Residual contact/gap of a few px cannot be resolved.",
+          "ego_only_decidable": false
+        },
+        "InGripper(red_cylinder)": {
+          "judgment": true,
+          "confidence": "high",
+          "evidence": "Jaws closed on both sides of the object; jaw occludes part of it; object follows the gripper.",
+          "ego_only_decidable": true
+        },
+        "Lifted(red_cylinder)": {
+          "judgment": false,
+          "confidence": "medium",
+          "evidence": "Object still at/near seabed level; no clear clearance visible.",
+          "ego_only_decidable": "partial"
+        },
+        "NextTo(robot,red_cylinder)": {
+          "judgment": true,
+          "confidence": "high",
+          "evidence": "End effector holds the object.",
+          "ego_only_decidable": true
+        }
+      },
+      "visibility": {
+        "robot": {
+          "value": "visible",
+          "evidence": "Arm/gripper visible."
+        },
+        "red_cylinder": {
+          "value": "visible",
+          "evidence": "Cylinder visible between jaws (bbox 14x16 px at (99,113))."
+        }
+      },
+      "representative": {
+        "stable_semantic_state": true,
+        "mid_action": false,
+        "better_frame_candidates": [],
+        "note": "Intermediate grasped-not-lifted state; OnSeabed/Lifted boundary not ego-only decidable."
+      },
+      "model_input": {
+        "qa_images_containing_this_frame": [
+          {
+            "qa_id": "usim_train_episode_001302_forward_world_modeling_3_steps_761d65c7",
+            "qa_type": "forward_world_modeling_3_steps",
+            "slot": 1,
+            "label": "Next State 1"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_forward_world_modeling_3_steps_160b8525",
+            "qa_type": "forward_world_modeling_3_steps",
+            "slot": 1,
+            "label": "Next State 1"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_forward_world_modeling_3_steps_094f02f6",
+            "qa_type": "forward_world_modeling_3_steps",
+            "slot": 1,
+            "label": "Next State 1"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_forward_world_modeling_4_steps_68512d26",
+            "qa_type": "forward_world_modeling_4_steps",
+            "slot": 3,
+            "label": "Next State 3"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_inverse_world_modeling_3_steps_761d65c7",
+            "qa_type": "inverse_world_modeling_3_steps",
+            "slot": 1,
+            "label": "Next State 1"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_inverse_world_modeling_3_steps_160b8525",
+            "qa_type": "inverse_world_modeling_3_steps",
+            "slot": 2,
+            "label": "Next State 2"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_inverse_world_modeling_3_steps_094f02f6",
+            "qa_type": "inverse_world_modeling_3_steps",
+            "slot": 1,
+            "label": "Next State 1"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_inverse_world_modeling_4_steps_68512d26",
+            "qa_type": "inverse_world_modeling_4_steps",
+            "slot": 2,
+            "label": "Next State 2"
+          }
+        ],
+        "label_overlay": "QA images are the raw frame plus a burned-in 'Current State'/'Next State N' label in the top-left; pixels outside that label region are identical to the raw frame (verified, masked mean diff 0.0)."
+      }
+    },
+    {
+      "frame_index": 415,
+      "timestamp_seconds": 41.5,
+      "run": {
+        "start": 414,
+        "end": 427,
+        "length": 14
+      },
+      "stability": "stable (1.4 s run); carrying toward the box",
+      "relations": {
+        "OnSeabed(red_cylinder)": {
+          "judgment": false,
+          "confidence": "high",
+          "evidence": "Object hangs under the closed jaws, carried in open water; seabed far below in the frame; green box ahead at the same image height as the gripper.",
+          "ego_only_decidable": true
+        },
+        "InGripper(red_cylinder)": {
+          "judgment": true,
+          "confidence": "high",
+          "evidence": "Jaws closed around the object (job still holding; release command only at frame 448).",
+          "ego_only_decidable": true
+        },
+        "Lifted(red_cylinder)": {
+          "judgment": true,
+          "confidence": "medium",
+          "evidence": "Object carried clear of the seabed toward the box; more water column below the object than in f196. No metric height.",
+          "ego_only_decidable": "partial"
+        },
+        "NextTo(robot,red_cylinder)": {
+          "judgment": true,
+          "confidence": "high",
+          "evidence": "End effector holds the object.",
+          "ego_only_decidable": true
+        }
+      },
+      "visibility": {
+        "robot": {
+          "value": "visible",
+          "evidence": "Arm/gripper visible."
+        },
+        "red_cylinder": {
+          "value": "visible",
+          "evidence": "Cylinder visible under the jaws (bbox 18x12 px at (93,113))."
+        },
+        "green_box": {
+          "value": "visible",
+          "evidence": "Green box clearly visible in front-right of the robot at approx. (133-196, 66-92); box opening empty, object still held outside/left-below the box."
+        }
+      },
+      "representative": {
+        "stable_semantic_state": false,
+        "mid_action": true,
+        "better_frame_candidates": [
+          "post-release frames (>=448, to be checked in pass 3)"
+        ],
+        "note": "The 4th key frame is NOT the terminal transfer state: the object is still held and the box is still ahead. The 'inside the box' state is not represented by any key frame and there is no InBox relation in scope. Whether the video shows a confirmed box entry/release must be adjudicated in pass 3."
+      },
+      "model_input": {
+        "qa_images_containing_this_frame": [
+          {
+            "qa_id": "usim_train_episode_001302_forward_world_modeling_3_steps_6ddf9c86",
+            "qa_type": "forward_world_modeling_3_steps",
+            "slot": 1,
+            "label": "Next State 1"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_forward_world_modeling_3_steps_761d65c7",
+            "qa_type": "forward_world_modeling_3_steps",
+            "slot": 2,
+            "label": "Next State 2"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_forward_world_modeling_3_steps_094f02f6",
+            "qa_type": "forward_world_modeling_3_steps",
+            "slot": 2,
+            "label": "Next State 2"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_forward_world_modeling_4_steps_68512d26",
+            "qa_type": "forward_world_modeling_4_steps",
+            "slot": 2,
+            "label": "Next State 2"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_inverse_world_modeling_3_steps_761d65c7",
+            "qa_type": "inverse_world_modeling_3_steps",
+            "slot": 2,
+            "label": "Next State 2"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_inverse_world_modeling_3_steps_094f02f6",
+            "qa_type": "inverse_world_modeling_3_steps",
+            "slot": 2,
+            "label": "Next State 2"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_inverse_world_modeling_3_steps_6ddf9c86",
+            "qa_type": "inverse_world_modeling_3_steps",
+            "slot": 2,
+            "label": "Next State 2"
+          },
+          {
+            "qa_id": "usim_train_episode_001302_inverse_world_modeling_4_steps_68512d26",
+            "qa_type": "inverse_world_modeling_4_steps",
+            "slot": 3,
+            "label": "Next State 3"
+          }
+        ],
+        "label_overlay": "QA images are the raw frame plus a burned-in 'Current State'/'Next State N' label in the top-left; pixels outside that label region are identical to the raw frame (verified, masked mean diff 0.0)."
+      }
+    }
+  ]
+}

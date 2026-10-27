@@ -1,0 +1,64 @@
+{
+  "source_qa": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\train\\enact_ordering.jsonl",
+  "source_qa_sha256": "c88c22be47a612e075a18cd8b5a33c4a5e137ea37eae05721034a53790d67f58",
+  "seed": 20261024,
+  "smoke_per_group": 5,
+  "preflight": {
+    "count": 1,
+    "by_setting": {
+      "forward_L4": 1
+    },
+    "episodes": [
+      "usim_train_episode_000200"
+    ],
+    "tasks": [
+      "usim_train"
+    ]
+  },
+  "smoke": {
+    "count": 20,
+    "by_setting": {
+      "forward_L3": 5,
+      "forward_L4": 5,
+      "inverse_L3": 5,
+      "inverse_L4": 5
+    },
+    "episodes": [
+      "usim_train_episode_000200",
+      "usim_train_episode_000201",
+      "usim_train_episode_000552",
+      "usim_train_episode_000553",
+      "usim_train_episode_000556",
+      "usim_train_episode_001302"
+    ],
+    "tasks": [
+      "usim_train"
+    ]
+  },
+  "full_dev": {
+    "count": 70,
+    "by_setting": {
+      "forward_L3": 28,
+      "forward_L4": 7,
+      "inverse_L3": 28,
+      "inverse_L4": 7
+    },
+    "episodes": [
+      "usim_train_episode_000200",
+      "usim_train_episode_000201",
+      "usim_train_episode_000552",
+      "usim_train_episode_000553",
+      "usim_train_episode_000555",
+      "usim_train_episode_000556",
+      "usim_train_episode_001302"
+    ],
+    "tasks": [
+      "usim_train"
+    ]
+  },
+  "sha256": {
+    "preflight.jsonl": "6eb6f43a1fd4f1e9bdd4a171df47f5c05689799880ddd30e2a250a119130c3b9",
+    "smoke.jsonl": "2dede1cebf708ac101ecb56165f5b65086d9394af52088fadbacb3a2d05a048e",
+    "full_dev.jsonl": "7384b4efea601795655be8a0584b73faaffb90e0194f40c62bc5b4217be301ca"
+  }
+}

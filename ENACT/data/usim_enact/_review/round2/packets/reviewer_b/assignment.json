@@ -1,0 +1,10 @@
+{
+  "packet_version": "blind-review-20261027",
+  "reviewer": "reviewer_b",
+  "episodes": [
+    "usim_train_episode_000553",
+    "usim_train_episode_000555",
+    "usim_train_episode_000556",
+    "usim_train_episode_001302"
+  ]
+}

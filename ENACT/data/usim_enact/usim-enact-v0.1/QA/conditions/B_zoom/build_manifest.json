@@ -1,0 +1,36 @@
+{
+  "condition": "B_zoom",
+  "source_qa": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\train\\enact_ordering.jsonl",
+  "source_qa_sha256": "c88c22be47a612e075a18cd8b5a33c4a5e137ea37eae05721034a53790d67f58",
+  "output_qa": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\conditions\\B_zoom\\enact_ordering.jsonl",
+  "output_qa_sha256": "1706b00ae3903d8ec9ad0212458c5aa92ee5a6860f9a4379ccdd3ebabd8b3824",
+  "crop_policy": {
+    "R1_object_anchor": "window side = max(160, 4*max(bbox_w,bbox_h)), centred on the object colour blob",
+    "R2_fixed_window": [
+      60,
+      70,
+      260,
+      230
+    ],
+    "colours_anchored": [
+      "red",
+      "green"
+    ],
+    "panel_layout": "[full 320x240 | zoom 320x240]"
+  },
+  "rule_counts": {
+    "R2_fixed_window": 80,
+    "R1_object_anchor": 144
+  },
+  "object_colours": {
+    "usim_train_episode_000200": "blue",
+    "usim_train_episode_000201": "blue",
+    "usim_train_episode_000552": "red",
+    "usim_train_episode_000553": "red",
+    "usim_train_episode_000555": "red",
+    "usim_train_episode_000556": "red",
+    "usim_train_episode_001302": "red"
+  },
+  "images": 224,
+  "questions": 70
+}

@@ -1,0 +1,48 @@
+{
+  "repo_id": "Vincent2025hello/usim",
+  "url": "https://huggingface.co/datasets/Vincent2025hello/usim",
+  "endpoint_used": "https://huggingface.co",
+  "revision": "88c3612bf99d10652f19ec531052a38c04f0202e",
+  "commit": "88c3612bf99d10652f19ec531052a38c04f0202e",
+  "downloaded_at": "2026-10-23T21:41:34.374471+08:00",
+  "file_count": 6840,
+  "total_bytes": 4219493970,
+  "complete": true,
+  "verified": "All 6840 published files verified: 6825 LFS SHA-256 hashes and 15 Git blob SHA-1 hashes match the pinned remote snapshot.",
+  "remote_listing_pages": 7,
+  "structure": {
+    "train": {
+      "parquet": 1750,
+      "frames": 696990,
+      "mp4_ego": 1750,
+      "mp4_wrist": 1750,
+      "meta": 5
+    },
+    "test": {
+      "parquet": 525,
+      "frames": 208605,
+      "mp4_ego": 525,
+      "mp4_wrist": 525,
+      "meta": 6
+    }
+  },
+  "repo_gaps": [],
+  "repair": {
+    "cause": "Previous downloader consumed only the first 1000-entry tree API page per split; upstream files were incorrectly reported as absent.",
+    "files_added": 4856,
+    "bytes_added": 3550670971,
+    "previous_manifest": "../tools/_hfcache/previous_download_manifest.json"
+  },
+  "verification_report": "../tools/_hfcache/verification.json",
+  "readability_report": "../tools/_hfcache/readability.json",
+  "expected_manifest": "../tools/_hfcache/expected.json",
+  "expected_manifest_sha256": "663c1980f3c3bcc467e80edd7b9d8eefc9c9bb1165e77392eb7a32933c3b8b9d",
+  "readability_checks": {
+    "pyarrow_version": "23.0.1",
+    "all_parquet_footers_checked": 2275,
+    "parquet_tables_sampled": 6,
+    "videos_sampled": 12,
+    "video_frames_decoded": 36,
+    "passed": true
+  }
+}

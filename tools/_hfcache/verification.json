@@ -1,0 +1,13 @@
+{
+  "verified_at_utc": "2026-10-23T13:39:24.999902+00:00",
+  "dataset_root": "E:\\code\\UW-VLM\\usim",
+  "expected_files": 6840,
+  "expected_bytes": 4219493970,
+  "verified_files": 6840,
+  "promoted_files": 4856,
+  "sha256_files": 6825,
+  "git_blob_sha1_files": 15,
+  "missing": [],
+  "hash_or_size_mismatch": [],
+  "complete": true
+}

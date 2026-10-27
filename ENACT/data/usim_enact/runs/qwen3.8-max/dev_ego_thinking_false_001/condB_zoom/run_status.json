@@ -1,0 +1,13 @@
+{
+  "state": "completed",
+  "abort_reason": null,
+  "planned": 70,
+  "answered": 70,
+  "success": 70,
+  "truncated": 0,
+  "invalid": 0,
+  "failed": 0,
+  "missing": 0,
+  "finished_at": "2026-10-24T13:10:02+08:00",
+  "config": "data\\usim_enact\\runs\\qwen3.8-max\\dev_ego_thinking_false_001\\condB_zoom\\run_config.json"
+}

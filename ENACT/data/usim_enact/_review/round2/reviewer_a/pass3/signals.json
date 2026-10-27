@@ -1,0 +1,123 @@
+{
+ "reviewer": "reviewer_a",
+ "source": "parquet observation.state (aux only; NOT ground truth)",
+ "episodes": {
+  "200": {
+   "length": 343,
+   "close_events": [
+    228
+   ],
+   "open_events": [],
+   "dvl_altitude_min_after_close": 0.2347,
+   "ascent_onset_after_close": 271,
+   "key_frames": {
+    "140": {
+     "gripper_state0": 0.0,
+     "dvl_h": 0.251,
+     "pressure": 12.0862,
+     "ego_ctx_sheet": "ego_ctx_200_140.png",
+     "wrist_ctx_sheet": "wrist_ctx_200_140.png"
+    },
+    "213": {
+     "gripper_state0": 0.0,
+     "dvl_h": 0.2664,
+     "pressure": 12.0689,
+     "ego_ctx_sheet": "ego_ctx_200_213.png",
+     "wrist_ctx_sheet": "wrist_ctx_200_213.png"
+    },
+    "248": {
+     "gripper_state0": 0.0149,
+     "dvl_h": 0.2353,
+     "pressure": 12.1004,
+     "ego_ctx_sheet": "ego_ctx_200_248.png",
+     "wrist_ctx_sheet": "wrist_ctx_200_248.png"
+    },
+    "328": {
+     "gripper_state0": 0.0149,
+     "dvl_h": 0.3978,
+     "pressure": 11.9272,
+     "ego_ctx_sheet": "ego_ctx_200_328.png",
+     "wrist_ctx_sheet": "wrist_ctx_200_328.png"
+    }
+   }
+  },
+  "201": {
+   "length": 368,
+   "close_events": [
+    259
+   ],
+   "open_events": [],
+   "dvl_altitude_min_after_close": 0.2313,
+   "ascent_onset_after_close": 301,
+   "key_frames": {
+    "199": {
+     "gripper_state0": 0.0001,
+     "dvl_h": 0.3246,
+     "pressure": 12.0707,
+     "ego_ctx_sheet": "ego_ctx_201_199.png",
+     "wrist_ctx_sheet": "wrist_ctx_201_199.png"
+    },
+    "244": {
+     "gripper_state0": 0.0,
+     "dvl_h": 0.2848,
+     "pressure": 12.1176,
+     "ego_ctx_sheet": "ego_ctx_201_244.png",
+     "wrist_ctx_sheet": "wrist_ctx_201_244.png"
+    },
+    "279": {
+     "gripper_state0": 0.0149,
+     "dvl_h": 0.2313,
+     "pressure": 12.1703,
+     "ego_ctx_sheet": "ego_ctx_201_279.png",
+     "wrist_ctx_sheet": "wrist_ctx_201_279.png"
+    },
+    "357": {
+     "gripper_state0": 0.0149,
+     "dvl_h": 0.3952,
+     "pressure": 11.9956,
+     "ego_ctx_sheet": "ego_ctx_201_357.png",
+     "wrist_ctx_sheet": "wrist_ctx_201_357.png"
+    }
+   }
+  },
+  "552": {
+   "length": 374,
+   "close_events": [
+    264
+   ],
+   "open_events": [],
+   "dvl_altitude_min_after_close": 0.2594,
+   "ascent_onset_after_close": 306,
+   "key_frames": {
+    "120": {
+     "gripper_state0": 0.0,
+     "dvl_h": 0.2694,
+     "pressure": 12.1672,
+     "ego_ctx_sheet": "ego_ctx_552_120.png",
+     "wrist_ctx_sheet": "wrist_ctx_552_120.png"
+    },
+    "249": {
+     "gripper_state0": 0.0001,
+     "dvl_h": 0.3021,
+     "pressure": 12.1275,
+     "ego_ctx_sheet": "ego_ctx_552_249.png",
+     "wrist_ctx_sheet": "wrist_ctx_552_249.png"
+    },
+    "284": {
+     "gripper_state0": 0.0149,
+     "dvl_h": 0.2597,
+     "pressure": 12.1734,
+     "ego_ctx_sheet": "ego_ctx_552_284.png",
+     "wrist_ctx_sheet": "wrist_ctx_552_284.png"
+    },
+    "364": {
+     "gripper_state0": 0.0149,
+     "dvl_h": 0.4289,
+     "pressure": 11.9874,
+     "ego_ctx_sheet": "ego_ctx_552_364.png",
+     "wrist_ctx_sheet": "wrist_ctx_552_364.png"
+    }
+   }
+  }
+ }
+}

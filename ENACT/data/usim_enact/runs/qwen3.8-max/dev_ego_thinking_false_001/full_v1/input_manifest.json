@@ -1,0 +1,1476 @@
+{
+  "qa": "data\\usim_enact\\runs\\qwen3.8-max\\dev_ego_thinking_false_001\\inputs\\full_dev.jsonl",
+  "qa_sha256": "7384b4efea601795655be8a0584b73faaffb90e0194f40c62bc5b4217be301ca",
+  "records": [
+    {
+      "id": "usim_train_episode_000556_forward_world_modeling_3_steps_875b2724",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_forward_world_modeling_3_steps_875b2724_cur_state.png",
+          "sha256": "277572e3962b9e77030a720f646543b145fb356cb4214d6cad070fbcfb7e64c0",
+          "bytes": 48643
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_forward_world_modeling_3_steps_875b2724_next_state_1.png",
+          "sha256": "72ecb9ab42ecdaffc7b09fbe7413c512cda3ee5054be269e6bf51de99fdb5778",
+          "bytes": 49011
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_forward_world_modeling_3_steps_875b2724_next_state_2.png",
+          "sha256": "454fc90fef5ac4865f732da334d539f9053d8b0ea9c58f222d8b9528426f7e2b",
+          "bytes": 49137
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_001302_forward_world_modeling_3_steps_094f02f6",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_094f02f6_cur_state.png",
+          "sha256": "546ddb8249fa9fe489b935bda7b8dabfff14d6d2f776db7560561cad1cf5012a",
+          "bytes": 56223
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_094f02f6_next_state_1.png",
+          "sha256": "f8924d7fcdbe75730747cf720a3cb2975467dd09141370e98c4bade84a26d262",
+          "bytes": 56279
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_094f02f6_next_state_2.png",
+          "sha256": "e5c4580d11fc998979d4d26f6b1be2ddd54962f9cabf4aa7b479ddf0b5cbfd50",
+          "bytes": 64911
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000553_forward_world_modeling_3_steps_27806f78",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_forward_world_modeling_3_steps_27806f78_cur_state.png",
+          "sha256": "73c79f20e52495281ccfaa2244166a053fa015c6bcede5e0879bbf282892a81d",
+          "bytes": 52507
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_forward_world_modeling_3_steps_27806f78_next_state_1.png",
+          "sha256": "03f45f4a91d295ca6d827107545f234bdd0bbb0c57781a1caf0d02bf6fd686fb",
+          "bytes": 48423
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_forward_world_modeling_3_steps_27806f78_next_state_2.png",
+          "sha256": "07d381887898d920c3303bf98e2a114d48b1ca9aaecf58ff79a63ca6674edaa0",
+          "bytes": 49063
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000552_forward_world_modeling_3_steps_46dc0be0",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_forward_world_modeling_3_steps_46dc0be0_cur_state.png",
+          "sha256": "72437574749b6eae80aa74d7e766872966c249d9de6bbfd5210bc60d9fe69bd4",
+          "bytes": 52025
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_forward_world_modeling_3_steps_46dc0be0_next_state_1.png",
+          "sha256": "68ef6416bd7cc23c76fd13f3569390d86f36610d73d4f86ec4ef219f06209cfd",
+          "bytes": 51764
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_forward_world_modeling_3_steps_46dc0be0_next_state_2.png",
+          "sha256": "a43c3ac16888e43e5e0d2007c2ecf92d03501abe44f434e197b83044709a0c14",
+          "bytes": 53362
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000200_forward_world_modeling_3_steps_03b01f3a",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_forward_world_modeling_3_steps_03b01f3a_cur_state.png",
+          "sha256": "1786de7ef5a305f598b67d2543c0fd771b248c99022608f1c93846fb5e93c8f0",
+          "bytes": 50032
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_forward_world_modeling_3_steps_03b01f3a_next_state_1.png",
+          "sha256": "d71478c7e5bacada59dcd0bb7081443dcf56a866f8e114a60a341920e18db7b0",
+          "bytes": 50507
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_forward_world_modeling_3_steps_03b01f3a_next_state_2.png",
+          "sha256": "455a965fa036b9c3204fa134e1d64ecf4bf11665023360729c9137ed3d1f8a8c",
+          "bytes": 52540
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000553_forward_world_modeling_4_steps_5965fa9d",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000553\\usim_train_episode_000553_forward_world_modeling_4_steps_5965fa9d_cur_state.png",
+          "sha256": "73c79f20e52495281ccfaa2244166a053fa015c6bcede5e0879bbf282892a81d",
+          "bytes": 52507
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000553\\usim_train_episode_000553_forward_world_modeling_4_steps_5965fa9d_next_state_1.png",
+          "sha256": "03f45f4a91d295ca6d827107545f234bdd0bbb0c57781a1caf0d02bf6fd686fb",
+          "bytes": 48423
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000553\\usim_train_episode_000553_forward_world_modeling_4_steps_5965fa9d_next_state_2.png",
+          "sha256": "fad7820cdaf1198e8bd00af678059da6dfd436f840e5bee3bb9fbe67dc3434d4",
+          "bytes": 49631
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000553\\usim_train_episode_000553_forward_world_modeling_4_steps_5965fa9d_next_state_3.png",
+          "sha256": "a6234407d3d33d08557123fc816d971ac60856f0206cf8bd9bdc54ebda219321",
+          "bytes": 49137
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000552_forward_world_modeling_4_steps_b95e6e61",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000552\\usim_train_episode_000552_forward_world_modeling_4_steps_b95e6e61_cur_state.png",
+          "sha256": "56b28e6cc08a9df7e84df898ec1a4efe0b0a940e54e0800d373566e2f09fb91b",
+          "bytes": 50828
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000552\\usim_train_episode_000552_forward_world_modeling_4_steps_b95e6e61_next_state_1.png",
+          "sha256": "68ef6416bd7cc23c76fd13f3569390d86f36610d73d4f86ec4ef219f06209cfd",
+          "bytes": 51764
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000552\\usim_train_episode_000552_forward_world_modeling_4_steps_b95e6e61_next_state_2.png",
+          "sha256": "a43c3ac16888e43e5e0d2007c2ecf92d03501abe44f434e197b83044709a0c14",
+          "bytes": 53362
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000552\\usim_train_episode_000552_forward_world_modeling_4_steps_b95e6e61_next_state_3.png",
+          "sha256": "1afdee1748280689f1753c52900927dd1d321222b6cb60258ffe38918b6971af",
+          "bytes": 52212
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_001302_forward_world_modeling_4_steps_68512d26",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_4_steps_68512d26_cur_state.png",
+          "sha256": "caee3131f479d38b1c04a05c7bc80f7c926f21f62b94788df336f152fe4ee295",
+          "bytes": 59416
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_4_steps_68512d26_next_state_1.png",
+          "sha256": "d86089b1be659db4b1a48d6a61d60aec68e77da3793e4a06e7f9b4de0dc2d0a1",
+          "bytes": 56375
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_4_steps_68512d26_next_state_2.png",
+          "sha256": "e5c4580d11fc998979d4d26f6b1be2ddd54962f9cabf4aa7b479ddf0b5cbfd50",
+          "bytes": 64911
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_4_steps_68512d26_next_state_3.png",
+          "sha256": "25b7fceff2deda7f24c44c91cd58a7daee55708fe47fdc5fc2e1d3b5719923cb",
+          "bytes": 56497
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000556_forward_world_modeling_4_steps_ce1f847c",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000556\\usim_train_episode_000556_forward_world_modeling_4_steps_ce1f847c_cur_state.png",
+          "sha256": "277572e3962b9e77030a720f646543b145fb356cb4214d6cad070fbcfb7e64c0",
+          "bytes": 48643
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000556\\usim_train_episode_000556_forward_world_modeling_4_steps_ce1f847c_next_state_1.png",
+          "sha256": "72ecb9ab42ecdaffc7b09fbe7413c512cda3ee5054be269e6bf51de99fdb5778",
+          "bytes": 49011
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000556\\usim_train_episode_000556_forward_world_modeling_4_steps_ce1f847c_next_state_2.png",
+          "sha256": "8151815646c61a411c009d3554f9b29187c743d402e8476fbc346a0b2ccdaa6a",
+          "bytes": 48489
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000556\\usim_train_episode_000556_forward_world_modeling_4_steps_ce1f847c_next_state_3.png",
+          "sha256": "b6e1e15f13b08bf98b85575ff922763f3524576c15a057d646fbe4369ae3b61f",
+          "bytes": 49202
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000200_forward_world_modeling_4_steps_ea4ca751",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000200\\usim_train_episode_000200_forward_world_modeling_4_steps_ea4ca751_cur_state.png",
+          "sha256": "1786de7ef5a305f598b67d2543c0fd771b248c99022608f1c93846fb5e93c8f0",
+          "bytes": 50032
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000200\\usim_train_episode_000200_forward_world_modeling_4_steps_ea4ca751_next_state_1.png",
+          "sha256": "88c000fa04ab2e67304c3f554b78405d6c3927375b54e83e5eaee75cd8a0a42a",
+          "bytes": 51602
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000200\\usim_train_episode_000200_forward_world_modeling_4_steps_ea4ca751_next_state_2.png",
+          "sha256": "455a965fa036b9c3204fa134e1d64ecf4bf11665023360729c9137ed3d1f8a8c",
+          "bytes": 52540
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000200\\usim_train_episode_000200_forward_world_modeling_4_steps_ea4ca751_next_state_3.png",
+          "sha256": "21b7f9df7531c41ceb38c86d60243ac2808987e1884fca7466d47bbf675614a5",
+          "bytes": 50662
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000200_inverse_world_modeling_3_steps_03b01f3a",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_inverse_world_modeling_3_steps_03b01f3a_cur_state.png",
+          "sha256": "1786de7ef5a305f598b67d2543c0fd771b248c99022608f1c93846fb5e93c8f0",
+          "bytes": 50032
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_inverse_world_modeling_3_steps_03b01f3a_next_state_1.png",
+          "sha256": "d71478c7e5bacada59dcd0bb7081443dcf56a866f8e114a60a341920e18db7b0",
+          "bytes": 50507
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_inverse_world_modeling_3_steps_03b01f3a_next_state_2.png",
+          "sha256": "455a965fa036b9c3204fa134e1d64ecf4bf11665023360729c9137ed3d1f8a8c",
+          "bytes": 52540
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000552_inverse_world_modeling_3_steps_46dc0be0",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_inverse_world_modeling_3_steps_46dc0be0_cur_state.png",
+          "sha256": "72437574749b6eae80aa74d7e766872966c249d9de6bbfd5210bc60d9fe69bd4",
+          "bytes": 52025
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_inverse_world_modeling_3_steps_46dc0be0_next_state_1.png",
+          "sha256": "68ef6416bd7cc23c76fd13f3569390d86f36610d73d4f86ec4ef219f06209cfd",
+          "bytes": 51764
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_inverse_world_modeling_3_steps_46dc0be0_next_state_2.png",
+          "sha256": "a43c3ac16888e43e5e0d2007c2ecf92d03501abe44f434e197b83044709a0c14",
+          "bytes": 53362
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_001302_inverse_world_modeling_3_steps_094f02f6",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_094f02f6_cur_state.png",
+          "sha256": "546ddb8249fa9fe489b935bda7b8dabfff14d6d2f776db7560561cad1cf5012a",
+          "bytes": 56223
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_094f02f6_next_state_1.png",
+          "sha256": "f8924d7fcdbe75730747cf720a3cb2975467dd09141370e98c4bade84a26d262",
+          "bytes": 56279
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_094f02f6_next_state_2.png",
+          "sha256": "e5c4580d11fc998979d4d26f6b1be2ddd54962f9cabf4aa7b479ddf0b5cbfd50",
+          "bytes": 64911
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000556_inverse_world_modeling_3_steps_875b2724",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_inverse_world_modeling_3_steps_875b2724_cur_state.png",
+          "sha256": "277572e3962b9e77030a720f646543b145fb356cb4214d6cad070fbcfb7e64c0",
+          "bytes": 48643
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_inverse_world_modeling_3_steps_875b2724_next_state_1.png",
+          "sha256": "72ecb9ab42ecdaffc7b09fbe7413c512cda3ee5054be269e6bf51de99fdb5778",
+          "bytes": 49011
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_inverse_world_modeling_3_steps_875b2724_next_state_2.png",
+          "sha256": "454fc90fef5ac4865f732da334d539f9053d8b0ea9c58f222d8b9528426f7e2b",
+          "bytes": 49137
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000201_inverse_world_modeling_3_steps_134565fd",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_inverse_world_modeling_3_steps_134565fd_cur_state.png",
+          "sha256": "e6fc7ffeb77dd7f361222792cd8cf8735cdda473d0ff22efb3d1f25d2f40cd8b",
+          "bytes": 51266
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_inverse_world_modeling_3_steps_134565fd_next_state_1.png",
+          "sha256": "14f8b62dd2ea3148ba28c108a9d246b89be479fee24b2b27c5907b40a4eaaf67",
+          "bytes": 49817
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_inverse_world_modeling_3_steps_134565fd_next_state_2.png",
+          "sha256": "793f0944727ca8abb9c5d550cbbf1695a6f020254b3d43634a3b698968b87b09",
+          "bytes": 52542
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000200_inverse_world_modeling_4_steps_ea4ca751",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000200\\usim_train_episode_000200_inverse_world_modeling_4_steps_ea4ca751_cur_state.png",
+          "sha256": "1786de7ef5a305f598b67d2543c0fd771b248c99022608f1c93846fb5e93c8f0",
+          "bytes": 50032
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000200\\usim_train_episode_000200_inverse_world_modeling_4_steps_ea4ca751_next_state_1.png",
+          "sha256": "88c000fa04ab2e67304c3f554b78405d6c3927375b54e83e5eaee75cd8a0a42a",
+          "bytes": 51602
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000200\\usim_train_episode_000200_inverse_world_modeling_4_steps_ea4ca751_next_state_2.png",
+          "sha256": "4debd0b25d72efe71f5f6b841668b6ff1d45073b8ab621ae23ccefaa2a3742ad",
+          "bytes": 50612
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000200\\usim_train_episode_000200_inverse_world_modeling_4_steps_ea4ca751_next_state_3.png",
+          "sha256": "6a0e95bb4a7421d6b0f7a6f908546524c6d3b6ed2208b90ad1167cbe089f7fe3",
+          "bytes": 52639
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_001302_inverse_world_modeling_4_steps_68512d26",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_4_steps_68512d26_cur_state.png",
+          "sha256": "caee3131f479d38b1c04a05c7bc80f7c926f21f62b94788df336f152fe4ee295",
+          "bytes": 59416
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_4_steps_68512d26_next_state_1.png",
+          "sha256": "d86089b1be659db4b1a48d6a61d60aec68e77da3793e4a06e7f9b4de0dc2d0a1",
+          "bytes": 56375
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_4_steps_68512d26_next_state_2.png",
+          "sha256": "ff5a000fad903f7ef61cd2ddacd3061c96fd4975815790f8a305f85d856f67ca",
+          "bytes": 56411
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_4_steps_68512d26_next_state_3.png",
+          "sha256": "c297659c75a37f86ccb68b8ff37ba31ce836d858be06bb9549c94a7ee9ef95d0",
+          "bytes": 64988
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000201_inverse_world_modeling_4_steps_bdff3379",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000201\\usim_train_episode_000201_inverse_world_modeling_4_steps_bdff3379_cur_state.png",
+          "sha256": "e6fc7ffeb77dd7f361222792cd8cf8735cdda473d0ff22efb3d1f25d2f40cd8b",
+          "bytes": 51266
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000201\\usim_train_episode_000201_inverse_world_modeling_4_steps_bdff3379_next_state_1.png",
+          "sha256": "14f8b62dd2ea3148ba28c108a9d246b89be479fee24b2b27c5907b40a4eaaf67",
+          "bytes": 49817
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000201\\usim_train_episode_000201_inverse_world_modeling_4_steps_bdff3379_next_state_2.png",
+          "sha256": "fe9c695cae0768a80c75ba0690978945a8e86381a8807d493be36cafcde28505",
+          "bytes": 48630
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000201\\usim_train_episode_000201_inverse_world_modeling_4_steps_bdff3379_next_state_3.png",
+          "sha256": "6798f72611a4e2cd49484a1644718bcdef3eb3d229aebdabedd7b5610e4c3f95",
+          "bytes": 52655
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000556_inverse_world_modeling_4_steps_ce1f847c",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000556\\usim_train_episode_000556_inverse_world_modeling_4_steps_ce1f847c_cur_state.png",
+          "sha256": "277572e3962b9e77030a720f646543b145fb356cb4214d6cad070fbcfb7e64c0",
+          "bytes": 48643
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000556\\usim_train_episode_000556_inverse_world_modeling_4_steps_ce1f847c_next_state_1.png",
+          "sha256": "8dd466e0bf0b9468d89ef122ad753fbee1a97f33d9d10a721d66837b03c07cc3",
+          "bytes": 48292
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000556\\usim_train_episode_000556_inverse_world_modeling_4_steps_ce1f847c_next_state_2.png",
+          "sha256": "805024dc6dec21bf08100970ee794a3546a32be4d3d9388c07c2e16b44c96fb6",
+          "bytes": 49241
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000556\\usim_train_episode_000556_inverse_world_modeling_4_steps_ce1f847c_next_state_3.png",
+          "sha256": "b6e1e15f13b08bf98b85575ff922763f3524576c15a057d646fbe4369ae3b61f",
+          "bytes": 49202
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000552_inverse_world_modeling_4_steps_b95e6e61",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000552\\usim_train_episode_000552_inverse_world_modeling_4_steps_b95e6e61_cur_state.png",
+          "sha256": "56b28e6cc08a9df7e84df898ec1a4efe0b0a940e54e0800d373566e2f09fb91b",
+          "bytes": 50828
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000552\\usim_train_episode_000552_inverse_world_modeling_4_steps_b95e6e61_next_state_1.png",
+          "sha256": "04519935b16d05970b17b8abf257649c81be1a2baf282ade5f032046888edb21",
+          "bytes": 51998
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000552\\usim_train_episode_000552_inverse_world_modeling_4_steps_b95e6e61_next_state_2.png",
+          "sha256": "70eb273d1cd0290d2d84fa482508ec3224fa17768fe309631d0832c6b1763c3d",
+          "bytes": 52001
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000552\\usim_train_episode_000552_inverse_world_modeling_4_steps_b95e6e61_next_state_3.png",
+          "sha256": "63f55a4aedecec1f4a2766d8264d341c6620d41ddd6d0179a42a7d47e871ac13",
+          "bytes": 53435
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000200_forward_world_modeling_3_steps_0f3c71f2",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_forward_world_modeling_3_steps_0f3c71f2_cur_state.png",
+          "sha256": "1786de7ef5a305f598b67d2543c0fd771b248c99022608f1c93846fb5e93c8f0",
+          "bytes": 50032
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_forward_world_modeling_3_steps_0f3c71f2_next_state_1.png",
+          "sha256": "88c000fa04ab2e67304c3f554b78405d6c3927375b54e83e5eaee75cd8a0a42a",
+          "bytes": 51602
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_forward_world_modeling_3_steps_0f3c71f2_next_state_2.png",
+          "sha256": "455a965fa036b9c3204fa134e1d64ecf4bf11665023360729c9137ed3d1f8a8c",
+          "bytes": 52540
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000200_forward_world_modeling_3_steps_a1a5cb60",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_forward_world_modeling_3_steps_a1a5cb60_cur_state.png",
+          "sha256": "1786de7ef5a305f598b67d2543c0fd771b248c99022608f1c93846fb5e93c8f0",
+          "bytes": 50032
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_forward_world_modeling_3_steps_a1a5cb60_next_state_1.png",
+          "sha256": "d71478c7e5bacada59dcd0bb7081443dcf56a866f8e114a60a341920e18db7b0",
+          "bytes": 50507
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_forward_world_modeling_3_steps_a1a5cb60_next_state_2.png",
+          "sha256": "a46d5cf337ef8f6a006f5e07186bbd0bd1593ff12300274f4390549177243dfe",
+          "bytes": 51826
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000200_forward_world_modeling_3_steps_cc3bf6aa",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_forward_world_modeling_3_steps_cc3bf6aa_cur_state.png",
+          "sha256": "9fd7b0f02d6f338ca6f075fc0dbe58d54a83ef51411c96461ca78d1b4b8a8017",
+          "bytes": 51546
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_forward_world_modeling_3_steps_cc3bf6aa_next_state_1.png",
+          "sha256": "d71478c7e5bacada59dcd0bb7081443dcf56a866f8e114a60a341920e18db7b0",
+          "bytes": 50507
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_forward_world_modeling_3_steps_cc3bf6aa_next_state_2.png",
+          "sha256": "455a965fa036b9c3204fa134e1d64ecf4bf11665023360729c9137ed3d1f8a8c",
+          "bytes": 52540
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000201_forward_world_modeling_3_steps_134565fd",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_forward_world_modeling_3_steps_134565fd_cur_state.png",
+          "sha256": "e6fc7ffeb77dd7f361222792cd8cf8735cdda473d0ff22efb3d1f25d2f40cd8b",
+          "bytes": 51266
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_forward_world_modeling_3_steps_134565fd_next_state_1.png",
+          "sha256": "e32214c94479133d93ec2d1e645d70865e6d1a88d57e5da0e047935ddce24ccc",
+          "bytes": 52326
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_forward_world_modeling_3_steps_134565fd_next_state_2.png",
+          "sha256": "dc741faab0b7001b88978cb418851384c42ab2f39b2d578ebd78f72c8ae6449c",
+          "bytes": 50082
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000201_forward_world_modeling_3_steps_260efa63",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_forward_world_modeling_3_steps_260efa63_cur_state.png",
+          "sha256": "e6fc7ffeb77dd7f361222792cd8cf8735cdda473d0ff22efb3d1f25d2f40cd8b",
+          "bytes": 51266
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_forward_world_modeling_3_steps_260efa63_next_state_1.png",
+          "sha256": "15b111ac27a72e185d9ea8f60fe84fa91b3c361bbac070362351e1fb571592c3",
+          "bytes": 48381
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_forward_world_modeling_3_steps_260efa63_next_state_2.png",
+          "sha256": "793f0944727ca8abb9c5d550cbbf1695a6f020254b3d43634a3b698968b87b09",
+          "bytes": 52542
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000201_forward_world_modeling_3_steps_66fab727",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_forward_world_modeling_3_steps_66fab727_cur_state.png",
+          "sha256": "e6fc7ffeb77dd7f361222792cd8cf8735cdda473d0ff22efb3d1f25d2f40cd8b",
+          "bytes": 51266
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_forward_world_modeling_3_steps_66fab727_next_state_1.png",
+          "sha256": "15b111ac27a72e185d9ea8f60fe84fa91b3c361bbac070362351e1fb571592c3",
+          "bytes": 48381
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_forward_world_modeling_3_steps_66fab727_next_state_2.png",
+          "sha256": "dc741faab0b7001b88978cb418851384c42ab2f39b2d578ebd78f72c8ae6449c",
+          "bytes": 50082
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000201_forward_world_modeling_3_steps_ca247e53",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_forward_world_modeling_3_steps_ca247e53_cur_state.png",
+          "sha256": "a216f4269e4192441e9949e513bc026bc2334df2076c53be96021ac33f885b1a",
+          "bytes": 50124
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_forward_world_modeling_3_steps_ca247e53_next_state_1.png",
+          "sha256": "15b111ac27a72e185d9ea8f60fe84fa91b3c361bbac070362351e1fb571592c3",
+          "bytes": 48381
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_forward_world_modeling_3_steps_ca247e53_next_state_2.png",
+          "sha256": "793f0944727ca8abb9c5d550cbbf1695a6f020254b3d43634a3b698968b87b09",
+          "bytes": 52542
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000552_forward_world_modeling_3_steps_908ca6ab",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_forward_world_modeling_3_steps_908ca6ab_cur_state.png",
+          "sha256": "56b28e6cc08a9df7e84df898ec1a4efe0b0a940e54e0800d373566e2f09fb91b",
+          "bytes": 50828
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_forward_world_modeling_3_steps_908ca6ab_next_state_1.png",
+          "sha256": "e8d47ab06dcbe230d95bde1a6d057f0a3bcfeb7cd73bba30ed8ad8ec75688dfc",
+          "bytes": 53117
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_forward_world_modeling_3_steps_908ca6ab_next_state_2.png",
+          "sha256": "8be1f4782d6b88741cc016ca1c840d7f49d9a1bd4afd65c2e7f43b03388544b5",
+          "bytes": 52141
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000552_forward_world_modeling_3_steps_ed872fc8",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_forward_world_modeling_3_steps_ed872fc8_cur_state.png",
+          "sha256": "56b28e6cc08a9df7e84df898ec1a4efe0b0a940e54e0800d373566e2f09fb91b",
+          "bytes": 50828
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_forward_world_modeling_3_steps_ed872fc8_next_state_1.png",
+          "sha256": "68ef6416bd7cc23c76fd13f3569390d86f36610d73d4f86ec4ef219f06209cfd",
+          "bytes": 51764
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_forward_world_modeling_3_steps_ed872fc8_next_state_2.png",
+          "sha256": "a43c3ac16888e43e5e0d2007c2ecf92d03501abe44f434e197b83044709a0c14",
+          "bytes": 53362
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000552_forward_world_modeling_3_steps_b318deca",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_forward_world_modeling_3_steps_b318deca_cur_state.png",
+          "sha256": "56b28e6cc08a9df7e84df898ec1a4efe0b0a940e54e0800d373566e2f09fb91b",
+          "bytes": 50828
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_forward_world_modeling_3_steps_b318deca_next_state_1.png",
+          "sha256": "68ef6416bd7cc23c76fd13f3569390d86f36610d73d4f86ec4ef219f06209cfd",
+          "bytes": 51764
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_forward_world_modeling_3_steps_b318deca_next_state_2.png",
+          "sha256": "8be1f4782d6b88741cc016ca1c840d7f49d9a1bd4afd65c2e7f43b03388544b5",
+          "bytes": 52141
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000553_forward_world_modeling_3_steps_bdd319c2",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_forward_world_modeling_3_steps_bdd319c2_cur_state.png",
+          "sha256": "73c79f20e52495281ccfaa2244166a053fa015c6bcede5e0879bbf282892a81d",
+          "bytes": 52507
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_forward_world_modeling_3_steps_bdd319c2_next_state_1.png",
+          "sha256": "a9bdead5642e7de85762ea3d1560da42994c63d55557298f6de7b0ac9c10f7fa",
+          "bytes": 49549
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_forward_world_modeling_3_steps_bdd319c2_next_state_2.png",
+          "sha256": "07d381887898d920c3303bf98e2a114d48b1ca9aaecf58ff79a63ca6674edaa0",
+          "bytes": 49063
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000553_forward_world_modeling_3_steps_b905dcea",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_forward_world_modeling_3_steps_b905dcea_cur_state.png",
+          "sha256": "73c79f20e52495281ccfaa2244166a053fa015c6bcede5e0879bbf282892a81d",
+          "bytes": 52507
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_forward_world_modeling_3_steps_b905dcea_next_state_1.png",
+          "sha256": "03f45f4a91d295ca6d827107545f234bdd0bbb0c57781a1caf0d02bf6fd686fb",
+          "bytes": 48423
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_forward_world_modeling_3_steps_b905dcea_next_state_2.png",
+          "sha256": "fad7820cdaf1198e8bd00af678059da6dfd436f840e5bee3bb9fbe67dc3434d4",
+          "bytes": 49631
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000553_forward_world_modeling_3_steps_fdca870a",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_forward_world_modeling_3_steps_fdca870a_cur_state.png",
+          "sha256": "6921fd1ce247a5d1bc5f6482d8de2c9dfc0a1cd2298b309cb69037b95ce51875",
+          "bytes": 48539
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_forward_world_modeling_3_steps_fdca870a_next_state_1.png",
+          "sha256": "a9bdead5642e7de85762ea3d1560da42994c63d55557298f6de7b0ac9c10f7fa",
+          "bytes": 49549
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_forward_world_modeling_3_steps_fdca870a_next_state_2.png",
+          "sha256": "07d381887898d920c3303bf98e2a114d48b1ca9aaecf58ff79a63ca6674edaa0",
+          "bytes": 49063
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000555_forward_world_modeling_3_steps_3ab07983",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_forward_world_modeling_3_steps_3ab07983_cur_state.png",
+          "sha256": "9d85d75914c6fc82825a089e50fd9a029952c91f1e323a6750374c2cdf190a77",
+          "bytes": 52037
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_forward_world_modeling_3_steps_3ab07983_next_state_1.png",
+          "sha256": "923b1453e60d585392110f479425879634b66f626d9eeea33db962df58f09287",
+          "bytes": 50367
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_forward_world_modeling_3_steps_3ab07983_next_state_2.png",
+          "sha256": "a7a395f6379359354af4e2c31d09e31aa23755d63c87cbf95d2ece277dc6eadc",
+          "bytes": 53826
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000555_forward_world_modeling_3_steps_2df5f292",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_forward_world_modeling_3_steps_2df5f292_cur_state.png",
+          "sha256": "9d85d75914c6fc82825a089e50fd9a029952c91f1e323a6750374c2cdf190a77",
+          "bytes": 52037
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_forward_world_modeling_3_steps_2df5f292_next_state_1.png",
+          "sha256": "e313a02262b4bfeb8d1fc1d64bc7f09944b782f56f52363b4c2012726c122630",
+          "bytes": 51904
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_forward_world_modeling_3_steps_2df5f292_next_state_2.png",
+          "sha256": "f45ea7a0b029ff6aaae4dd276c7b6a17ca68f4ee733f410d566c7db91ec8a305",
+          "bytes": 50470
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000555_forward_world_modeling_3_steps_e8351802",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_forward_world_modeling_3_steps_e8351802_cur_state.png",
+          "sha256": "9d85d75914c6fc82825a089e50fd9a029952c91f1e323a6750374c2cdf190a77",
+          "bytes": 52037
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_forward_world_modeling_3_steps_e8351802_next_state_1.png",
+          "sha256": "e313a02262b4bfeb8d1fc1d64bc7f09944b782f56f52363b4c2012726c122630",
+          "bytes": 51904
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_forward_world_modeling_3_steps_e8351802_next_state_2.png",
+          "sha256": "a7a395f6379359354af4e2c31d09e31aa23755d63c87cbf95d2ece277dc6eadc",
+          "bytes": 53826
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000555_forward_world_modeling_3_steps_712815ba",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_forward_world_modeling_3_steps_712815ba_cur_state.png",
+          "sha256": "364dd327c04fdd80cd4e372476db75327d9931c596870032a34a22e12136f2bc",
+          "bytes": 53584
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_forward_world_modeling_3_steps_712815ba_next_state_1.png",
+          "sha256": "923b1453e60d585392110f479425879634b66f626d9eeea33db962df58f09287",
+          "bytes": 50367
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_forward_world_modeling_3_steps_712815ba_next_state_2.png",
+          "sha256": "a61a18c9e20da0c9c44a266810faa95b45270a50ea26157b1ea74cbd1e1df043",
+          "bytes": 52064
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000556_forward_world_modeling_3_steps_99de32c7",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_forward_world_modeling_3_steps_99de32c7_cur_state.png",
+          "sha256": "277572e3962b9e77030a720f646543b145fb356cb4214d6cad070fbcfb7e64c0",
+          "bytes": 48643
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_forward_world_modeling_3_steps_99de32c7_next_state_1.png",
+          "sha256": "8dd466e0bf0b9468d89ef122ad753fbee1a97f33d9d10a721d66837b03c07cc3",
+          "bytes": 48292
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_forward_world_modeling_3_steps_99de32c7_next_state_2.png",
+          "sha256": "454fc90fef5ac4865f732da334d539f9053d8b0ea9c58f222d8b9528426f7e2b",
+          "bytes": 49137
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000556_forward_world_modeling_3_steps_c80b3d9a",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_forward_world_modeling_3_steps_c80b3d9a_cur_state.png",
+          "sha256": "277572e3962b9e77030a720f646543b145fb356cb4214d6cad070fbcfb7e64c0",
+          "bytes": 48643
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_forward_world_modeling_3_steps_c80b3d9a_next_state_1.png",
+          "sha256": "72ecb9ab42ecdaffc7b09fbe7413c512cda3ee5054be269e6bf51de99fdb5778",
+          "bytes": 49011
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_forward_world_modeling_3_steps_c80b3d9a_next_state_2.png",
+          "sha256": "8151815646c61a411c009d3554f9b29187c743d402e8476fbc346a0b2ccdaa6a",
+          "bytes": 48489
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000556_forward_world_modeling_3_steps_9b9af4a6",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_forward_world_modeling_3_steps_9b9af4a6_cur_state.png",
+          "sha256": "b31fe18457f57f1f41cc5115aafd158dd43499fccfab72f3b14fd3dc15df40d4",
+          "bytes": 48387
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_forward_world_modeling_3_steps_9b9af4a6_next_state_1.png",
+          "sha256": "72ecb9ab42ecdaffc7b09fbe7413c512cda3ee5054be269e6bf51de99fdb5778",
+          "bytes": 49011
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_forward_world_modeling_3_steps_9b9af4a6_next_state_2.png",
+          "sha256": "454fc90fef5ac4865f732da334d539f9053d8b0ea9c58f222d8b9528426f7e2b",
+          "bytes": 49137
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_001302_forward_world_modeling_3_steps_6ddf9c86",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_6ddf9c86_cur_state.png",
+          "sha256": "caee3131f479d38b1c04a05c7bc80f7c926f21f62b94788df336f152fe4ee295",
+          "bytes": 59416
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_6ddf9c86_next_state_1.png",
+          "sha256": "b8e84fa29383f36e78d5aacbf73bcd7487290aa6a80f6755738dc7a78ed1dff4",
+          "bytes": 64715
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_6ddf9c86_next_state_2.png",
+          "sha256": "03bad83866b54b0de3900651e42cd3b4c9b71839d4560fc6d4dc5ffbee734de2",
+          "bytes": 56540
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_001302_forward_world_modeling_3_steps_761d65c7",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_761d65c7_cur_state.png",
+          "sha256": "caee3131f479d38b1c04a05c7bc80f7c926f21f62b94788df336f152fe4ee295",
+          "bytes": 59416
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_761d65c7_next_state_1.png",
+          "sha256": "f8924d7fcdbe75730747cf720a3cb2975467dd09141370e98c4bade84a26d262",
+          "bytes": 56279
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_761d65c7_next_state_2.png",
+          "sha256": "e5c4580d11fc998979d4d26f6b1be2ddd54962f9cabf4aa7b479ddf0b5cbfd50",
+          "bytes": 64911
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_001302_forward_world_modeling_3_steps_160b8525",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_160b8525_cur_state.png",
+          "sha256": "caee3131f479d38b1c04a05c7bc80f7c926f21f62b94788df336f152fe4ee295",
+          "bytes": 59416
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_160b8525_next_state_1.png",
+          "sha256": "f8924d7fcdbe75730747cf720a3cb2975467dd09141370e98c4bade84a26d262",
+          "bytes": 56279
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_160b8525_next_state_2.png",
+          "sha256": "03bad83866b54b0de3900651e42cd3b4c9b71839d4560fc6d4dc5ffbee734de2",
+          "bytes": 56540
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000201_forward_world_modeling_4_steps_bdff3379",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000201\\usim_train_episode_000201_forward_world_modeling_4_steps_bdff3379_cur_state.png",
+          "sha256": "e6fc7ffeb77dd7f361222792cd8cf8735cdda473d0ff22efb3d1f25d2f40cd8b",
+          "bytes": 51266
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000201\\usim_train_episode_000201_forward_world_modeling_4_steps_bdff3379_next_state_1.png",
+          "sha256": "14f8b62dd2ea3148ba28c108a9d246b89be479fee24b2b27c5907b40a4eaaf67",
+          "bytes": 49817
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000201\\usim_train_episode_000201_forward_world_modeling_4_steps_bdff3379_next_state_2.png",
+          "sha256": "fe9c695cae0768a80c75ba0690978945a8e86381a8807d493be36cafcde28505",
+          "bytes": 48630
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000201\\usim_train_episode_000201_forward_world_modeling_4_steps_bdff3379_next_state_3.png",
+          "sha256": "6798f72611a4e2cd49484a1644718bcdef3eb3d229aebdabedd7b5610e4c3f95",
+          "bytes": 52655
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000555_forward_world_modeling_4_steps_5ad9969a",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000555\\usim_train_episode_000555_forward_world_modeling_4_steps_5ad9969a_cur_state.png",
+          "sha256": "9d85d75914c6fc82825a089e50fd9a029952c91f1e323a6750374c2cdf190a77",
+          "bytes": 52037
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000555\\usim_train_episode_000555_forward_world_modeling_4_steps_5ad9969a_next_state_1.png",
+          "sha256": "923b1453e60d585392110f479425879634b66f626d9eeea33db962df58f09287",
+          "bytes": 50367
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000555\\usim_train_episode_000555_forward_world_modeling_4_steps_5ad9969a_next_state_2.png",
+          "sha256": "a7a395f6379359354af4e2c31d09e31aa23755d63c87cbf95d2ece277dc6eadc",
+          "bytes": 53826
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000555\\usim_train_episode_000555_forward_world_modeling_4_steps_5ad9969a_next_state_3.png",
+          "sha256": "f6f0e4460b154ac0f2ed98603c06d1dde3f238e062015b5573ed24265c3814ca",
+          "bytes": 52097
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000200_inverse_world_modeling_3_steps_a1a5cb60",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_inverse_world_modeling_3_steps_a1a5cb60_cur_state.png",
+          "sha256": "1786de7ef5a305f598b67d2543c0fd771b248c99022608f1c93846fb5e93c8f0",
+          "bytes": 50032
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_inverse_world_modeling_3_steps_a1a5cb60_next_state_1.png",
+          "sha256": "88c000fa04ab2e67304c3f554b78405d6c3927375b54e83e5eaee75cd8a0a42a",
+          "bytes": 51602
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_inverse_world_modeling_3_steps_a1a5cb60_next_state_2.png",
+          "sha256": "4debd0b25d72efe71f5f6b841668b6ff1d45073b8ab621ae23ccefaa2a3742ad",
+          "bytes": 50612
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000200_inverse_world_modeling_3_steps_cc3bf6aa",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_inverse_world_modeling_3_steps_cc3bf6aa_cur_state.png",
+          "sha256": "9fd7b0f02d6f338ca6f075fc0dbe58d54a83ef51411c96461ca78d1b4b8a8017",
+          "bytes": 51546
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_inverse_world_modeling_3_steps_cc3bf6aa_next_state_1.png",
+          "sha256": "d71478c7e5bacada59dcd0bb7081443dcf56a866f8e114a60a341920e18db7b0",
+          "bytes": 50507
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_inverse_world_modeling_3_steps_cc3bf6aa_next_state_2.png",
+          "sha256": "455a965fa036b9c3204fa134e1d64ecf4bf11665023360729c9137ed3d1f8a8c",
+          "bytes": 52540
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000200_inverse_world_modeling_3_steps_0f3c71f2",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_inverse_world_modeling_3_steps_0f3c71f2_cur_state.png",
+          "sha256": "1786de7ef5a305f598b67d2543c0fd771b248c99022608f1c93846fb5e93c8f0",
+          "bytes": 50032
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_inverse_world_modeling_3_steps_0f3c71f2_next_state_1.png",
+          "sha256": "88c000fa04ab2e67304c3f554b78405d6c3927375b54e83e5eaee75cd8a0a42a",
+          "bytes": 51602
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000200\\usim_train_episode_000200_inverse_world_modeling_3_steps_0f3c71f2_next_state_2.png",
+          "sha256": "455a965fa036b9c3204fa134e1d64ecf4bf11665023360729c9137ed3d1f8a8c",
+          "bytes": 52540
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000201_inverse_world_modeling_3_steps_260efa63",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_inverse_world_modeling_3_steps_260efa63_cur_state.png",
+          "sha256": "e6fc7ffeb77dd7f361222792cd8cf8735cdda473d0ff22efb3d1f25d2f40cd8b",
+          "bytes": 51266
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_inverse_world_modeling_3_steps_260efa63_next_state_1.png",
+          "sha256": "15b111ac27a72e185d9ea8f60fe84fa91b3c361bbac070362351e1fb571592c3",
+          "bytes": 48381
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_inverse_world_modeling_3_steps_260efa63_next_state_2.png",
+          "sha256": "793f0944727ca8abb9c5d550cbbf1695a6f020254b3d43634a3b698968b87b09",
+          "bytes": 52542
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000201_inverse_world_modeling_3_steps_66fab727",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_inverse_world_modeling_3_steps_66fab727_cur_state.png",
+          "sha256": "e6fc7ffeb77dd7f361222792cd8cf8735cdda473d0ff22efb3d1f25d2f40cd8b",
+          "bytes": 51266
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_inverse_world_modeling_3_steps_66fab727_next_state_1.png",
+          "sha256": "14f8b62dd2ea3148ba28c108a9d246b89be479fee24b2b27c5907b40a4eaaf67",
+          "bytes": 49817
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_inverse_world_modeling_3_steps_66fab727_next_state_2.png",
+          "sha256": "fe9c695cae0768a80c75ba0690978945a8e86381a8807d493be36cafcde28505",
+          "bytes": 48630
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000201_inverse_world_modeling_3_steps_ca247e53",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_inverse_world_modeling_3_steps_ca247e53_cur_state.png",
+          "sha256": "a216f4269e4192441e9949e513bc026bc2334df2076c53be96021ac33f885b1a",
+          "bytes": 50124
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_inverse_world_modeling_3_steps_ca247e53_next_state_1.png",
+          "sha256": "15b111ac27a72e185d9ea8f60fe84fa91b3c361bbac070362351e1fb571592c3",
+          "bytes": 48381
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000201\\usim_train_episode_000201_inverse_world_modeling_3_steps_ca247e53_next_state_2.png",
+          "sha256": "793f0944727ca8abb9c5d550cbbf1695a6f020254b3d43634a3b698968b87b09",
+          "bytes": 52542
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000552_inverse_world_modeling_3_steps_ed872fc8",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_inverse_world_modeling_3_steps_ed872fc8_cur_state.png",
+          "sha256": "56b28e6cc08a9df7e84df898ec1a4efe0b0a940e54e0800d373566e2f09fb91b",
+          "bytes": 50828
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_inverse_world_modeling_3_steps_ed872fc8_next_state_1.png",
+          "sha256": "68ef6416bd7cc23c76fd13f3569390d86f36610d73d4f86ec4ef219f06209cfd",
+          "bytes": 51764
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_inverse_world_modeling_3_steps_ed872fc8_next_state_2.png",
+          "sha256": "a43c3ac16888e43e5e0d2007c2ecf92d03501abe44f434e197b83044709a0c14",
+          "bytes": 53362
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000552_inverse_world_modeling_3_steps_b318deca",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_inverse_world_modeling_3_steps_b318deca_cur_state.png",
+          "sha256": "56b28e6cc08a9df7e84df898ec1a4efe0b0a940e54e0800d373566e2f09fb91b",
+          "bytes": 50828
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_inverse_world_modeling_3_steps_b318deca_next_state_1.png",
+          "sha256": "04519935b16d05970b17b8abf257649c81be1a2baf282ade5f032046888edb21",
+          "bytes": 51998
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_inverse_world_modeling_3_steps_b318deca_next_state_2.png",
+          "sha256": "70eb273d1cd0290d2d84fa482508ec3224fa17768fe309631d0832c6b1763c3d",
+          "bytes": 52001
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000552_inverse_world_modeling_3_steps_908ca6ab",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_inverse_world_modeling_3_steps_908ca6ab_cur_state.png",
+          "sha256": "56b28e6cc08a9df7e84df898ec1a4efe0b0a940e54e0800d373566e2f09fb91b",
+          "bytes": 50828
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_inverse_world_modeling_3_steps_908ca6ab_next_state_1.png",
+          "sha256": "04519935b16d05970b17b8abf257649c81be1a2baf282ade5f032046888edb21",
+          "bytes": 51998
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000552\\usim_train_episode_000552_inverse_world_modeling_3_steps_908ca6ab_next_state_2.png",
+          "sha256": "a43c3ac16888e43e5e0d2007c2ecf92d03501abe44f434e197b83044709a0c14",
+          "bytes": 53362
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000553_inverse_world_modeling_3_steps_bdd319c2",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_inverse_world_modeling_3_steps_bdd319c2_cur_state.png",
+          "sha256": "73c79f20e52495281ccfaa2244166a053fa015c6bcede5e0879bbf282892a81d",
+          "bytes": 52507
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_inverse_world_modeling_3_steps_bdd319c2_next_state_1.png",
+          "sha256": "a9bdead5642e7de85762ea3d1560da42994c63d55557298f6de7b0ac9c10f7fa",
+          "bytes": 49549
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_inverse_world_modeling_3_steps_bdd319c2_next_state_2.png",
+          "sha256": "07d381887898d920c3303bf98e2a114d48b1ca9aaecf58ff79a63ca6674edaa0",
+          "bytes": 49063
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000553_inverse_world_modeling_3_steps_b905dcea",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_inverse_world_modeling_3_steps_b905dcea_cur_state.png",
+          "sha256": "73c79f20e52495281ccfaa2244166a053fa015c6bcede5e0879bbf282892a81d",
+          "bytes": 52507
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_inverse_world_modeling_3_steps_b905dcea_next_state_1.png",
+          "sha256": "03f45f4a91d295ca6d827107545f234bdd0bbb0c57781a1caf0d02bf6fd686fb",
+          "bytes": 48423
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_inverse_world_modeling_3_steps_b905dcea_next_state_2.png",
+          "sha256": "fad7820cdaf1198e8bd00af678059da6dfd436f840e5bee3bb9fbe67dc3434d4",
+          "bytes": 49631
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000553_inverse_world_modeling_3_steps_fdca870a",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_inverse_world_modeling_3_steps_fdca870a_cur_state.png",
+          "sha256": "6921fd1ce247a5d1bc5f6482d8de2c9dfc0a1cd2298b309cb69037b95ce51875",
+          "bytes": 48539
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_inverse_world_modeling_3_steps_fdca870a_next_state_1.png",
+          "sha256": "a9bdead5642e7de85762ea3d1560da42994c63d55557298f6de7b0ac9c10f7fa",
+          "bytes": 49549
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_inverse_world_modeling_3_steps_fdca870a_next_state_2.png",
+          "sha256": "07d381887898d920c3303bf98e2a114d48b1ca9aaecf58ff79a63ca6674edaa0",
+          "bytes": 49063
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000553_inverse_world_modeling_3_steps_27806f78",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_inverse_world_modeling_3_steps_27806f78_cur_state.png",
+          "sha256": "73c79f20e52495281ccfaa2244166a053fa015c6bcede5e0879bbf282892a81d",
+          "bytes": 52507
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_inverse_world_modeling_3_steps_27806f78_next_state_1.png",
+          "sha256": "03f45f4a91d295ca6d827107545f234bdd0bbb0c57781a1caf0d02bf6fd686fb",
+          "bytes": 48423
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000553\\usim_train_episode_000553_inverse_world_modeling_3_steps_27806f78_next_state_2.png",
+          "sha256": "07d381887898d920c3303bf98e2a114d48b1ca9aaecf58ff79a63ca6674edaa0",
+          "bytes": 49063
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000555_inverse_world_modeling_3_steps_2df5f292",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_inverse_world_modeling_3_steps_2df5f292_cur_state.png",
+          "sha256": "9d85d75914c6fc82825a089e50fd9a029952c91f1e323a6750374c2cdf190a77",
+          "bytes": 52037
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_inverse_world_modeling_3_steps_2df5f292_next_state_1.png",
+          "sha256": "e313a02262b4bfeb8d1fc1d64bc7f09944b782f56f52363b4c2012726c122630",
+          "bytes": 51904
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_inverse_world_modeling_3_steps_2df5f292_next_state_2.png",
+          "sha256": "f45ea7a0b029ff6aaae4dd276c7b6a17ca68f4ee733f410d566c7db91ec8a305",
+          "bytes": 50470
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000555_inverse_world_modeling_3_steps_e8351802",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_inverse_world_modeling_3_steps_e8351802_cur_state.png",
+          "sha256": "9d85d75914c6fc82825a089e50fd9a029952c91f1e323a6750374c2cdf190a77",
+          "bytes": 52037
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_inverse_world_modeling_3_steps_e8351802_next_state_1.png",
+          "sha256": "6c57d1b2cec84c70af1ba5780f6e927b6665251fa07cfb1a61c6c5fdeadcefbc",
+          "bytes": 53654
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_inverse_world_modeling_3_steps_e8351802_next_state_2.png",
+          "sha256": "a61a18c9e20da0c9c44a266810faa95b45270a50ea26157b1ea74cbd1e1df043",
+          "bytes": 52064
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000555_inverse_world_modeling_3_steps_712815ba",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_inverse_world_modeling_3_steps_712815ba_cur_state.png",
+          "sha256": "364dd327c04fdd80cd4e372476db75327d9931c596870032a34a22e12136f2bc",
+          "bytes": 53584
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_inverse_world_modeling_3_steps_712815ba_next_state_1.png",
+          "sha256": "e313a02262b4bfeb8d1fc1d64bc7f09944b782f56f52363b4c2012726c122630",
+          "bytes": 51904
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_inverse_world_modeling_3_steps_712815ba_next_state_2.png",
+          "sha256": "f45ea7a0b029ff6aaae4dd276c7b6a17ca68f4ee733f410d566c7db91ec8a305",
+          "bytes": 50470
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000555_inverse_world_modeling_3_steps_3ab07983",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_inverse_world_modeling_3_steps_3ab07983_cur_state.png",
+          "sha256": "9d85d75914c6fc82825a089e50fd9a029952c91f1e323a6750374c2cdf190a77",
+          "bytes": 52037
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_inverse_world_modeling_3_steps_3ab07983_next_state_1.png",
+          "sha256": "6c57d1b2cec84c70af1ba5780f6e927b6665251fa07cfb1a61c6c5fdeadcefbc",
+          "bytes": 53654
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000555\\usim_train_episode_000555_inverse_world_modeling_3_steps_3ab07983_next_state_2.png",
+          "sha256": "f45ea7a0b029ff6aaae4dd276c7b6a17ca68f4ee733f410d566c7db91ec8a305",
+          "bytes": 50470
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000556_inverse_world_modeling_3_steps_c80b3d9a",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_inverse_world_modeling_3_steps_c80b3d9a_cur_state.png",
+          "sha256": "277572e3962b9e77030a720f646543b145fb356cb4214d6cad070fbcfb7e64c0",
+          "bytes": 48643
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_inverse_world_modeling_3_steps_c80b3d9a_next_state_1.png",
+          "sha256": "8dd466e0bf0b9468d89ef122ad753fbee1a97f33d9d10a721d66837b03c07cc3",
+          "bytes": 48292
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_inverse_world_modeling_3_steps_c80b3d9a_next_state_2.png",
+          "sha256": "805024dc6dec21bf08100970ee794a3546a32be4d3d9388c07c2e16b44c96fb6",
+          "bytes": 49241
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000556_inverse_world_modeling_3_steps_9b9af4a6",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_inverse_world_modeling_3_steps_9b9af4a6_cur_state.png",
+          "sha256": "b31fe18457f57f1f41cc5115aafd158dd43499fccfab72f3b14fd3dc15df40d4",
+          "bytes": 48387
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_inverse_world_modeling_3_steps_9b9af4a6_next_state_1.png",
+          "sha256": "72ecb9ab42ecdaffc7b09fbe7413c512cda3ee5054be269e6bf51de99fdb5778",
+          "bytes": 49011
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_inverse_world_modeling_3_steps_9b9af4a6_next_state_2.png",
+          "sha256": "454fc90fef5ac4865f732da334d539f9053d8b0ea9c58f222d8b9528426f7e2b",
+          "bytes": 49137
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000556_inverse_world_modeling_3_steps_99de32c7",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_inverse_world_modeling_3_steps_99de32c7_cur_state.png",
+          "sha256": "277572e3962b9e77030a720f646543b145fb356cb4214d6cad070fbcfb7e64c0",
+          "bytes": 48643
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_inverse_world_modeling_3_steps_99de32c7_next_state_1.png",
+          "sha256": "8dd466e0bf0b9468d89ef122ad753fbee1a97f33d9d10a721d66837b03c07cc3",
+          "bytes": 48292
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_000556\\usim_train_episode_000556_inverse_world_modeling_3_steps_99de32c7_next_state_2.png",
+          "sha256": "454fc90fef5ac4865f732da334d539f9053d8b0ea9c58f222d8b9528426f7e2b",
+          "bytes": 49137
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_001302_inverse_world_modeling_3_steps_761d65c7",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_761d65c7_cur_state.png",
+          "sha256": "caee3131f479d38b1c04a05c7bc80f7c926f21f62b94788df336f152fe4ee295",
+          "bytes": 59416
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_761d65c7_next_state_1.png",
+          "sha256": "f8924d7fcdbe75730747cf720a3cb2975467dd09141370e98c4bade84a26d262",
+          "bytes": 56279
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_761d65c7_next_state_2.png",
+          "sha256": "e5c4580d11fc998979d4d26f6b1be2ddd54962f9cabf4aa7b479ddf0b5cbfd50",
+          "bytes": 64911
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_001302_inverse_world_modeling_3_steps_160b8525",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_160b8525_cur_state.png",
+          "sha256": "caee3131f479d38b1c04a05c7bc80f7c926f21f62b94788df336f152fe4ee295",
+          "bytes": 59416
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_160b8525_next_state_1.png",
+          "sha256": "d86089b1be659db4b1a48d6a61d60aec68e77da3793e4a06e7f9b4de0dc2d0a1",
+          "bytes": 56375
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_160b8525_next_state_2.png",
+          "sha256": "ff5a000fad903f7ef61cd2ddacd3061c96fd4975815790f8a305f85d856f67ca",
+          "bytes": 56411
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_001302_inverse_world_modeling_3_steps_6ddf9c86",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_6ddf9c86_cur_state.png",
+          "sha256": "caee3131f479d38b1c04a05c7bc80f7c926f21f62b94788df336f152fe4ee295",
+          "bytes": 59416
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_6ddf9c86_next_state_1.png",
+          "sha256": "d86089b1be659db4b1a48d6a61d60aec68e77da3793e4a06e7f9b4de0dc2d0a1",
+          "bytes": 56375
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_6ddf9c86_next_state_2.png",
+          "sha256": "e5c4580d11fc998979d4d26f6b1be2ddd54962f9cabf4aa7b479ddf0b5cbfd50",
+          "bytes": 64911
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000553_inverse_world_modeling_4_steps_5965fa9d",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000553\\usim_train_episode_000553_inverse_world_modeling_4_steps_5965fa9d_cur_state.png",
+          "sha256": "73c79f20e52495281ccfaa2244166a053fa015c6bcede5e0879bbf282892a81d",
+          "bytes": 52507
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000553\\usim_train_episode_000553_inverse_world_modeling_4_steps_5965fa9d_next_state_1.png",
+          "sha256": "03f45f4a91d295ca6d827107545f234bdd0bbb0c57781a1caf0d02bf6fd686fb",
+          "bytes": 48423
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000553\\usim_train_episode_000553_inverse_world_modeling_4_steps_5965fa9d_next_state_2.png",
+          "sha256": "fad7820cdaf1198e8bd00af678059da6dfd436f840e5bee3bb9fbe67dc3434d4",
+          "bytes": 49631
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000553\\usim_train_episode_000553_inverse_world_modeling_4_steps_5965fa9d_next_state_3.png",
+          "sha256": "a6234407d3d33d08557123fc816d971ac60856f0206cf8bd9bdc54ebda219321",
+          "bytes": 49137
+        }
+      ]
+    },
+    {
+      "id": "usim_train_episode_000555_inverse_world_modeling_4_steps_5ad9969a",
+      "images": [
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000555\\usim_train_episode_000555_inverse_world_modeling_4_steps_5ad9969a_cur_state.png",
+          "sha256": "9d85d75914c6fc82825a089e50fd9a029952c91f1e323a6750374c2cdf190a77",
+          "bytes": 52037
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000555\\usim_train_episode_000555_inverse_world_modeling_4_steps_5ad9969a_next_state_1.png",
+          "sha256": "6c57d1b2cec84c70af1ba5780f6e927b6665251fa07cfb1a61c6c5fdeadcefbc",
+          "bytes": 53654
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000555\\usim_train_episode_000555_inverse_world_modeling_4_steps_5ad9969a_next_state_2.png",
+          "sha256": "a61a18c9e20da0c9c44a266810faa95b45270a50ea26157b1ea74cbd1e1df043",
+          "bytes": 52064
+        },
+        {
+          "path": "QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_000555\\usim_train_episode_000555_inverse_world_modeling_4_steps_5ad9969a_next_state_3.png",
+          "sha256": "2ab2201a994137b64752df6f7d8b23c39d1ff6a20b8dcb1407321ef2faa56627",
+          "bytes": 50555
+        }
+      ]
+    }
+  ]
+}

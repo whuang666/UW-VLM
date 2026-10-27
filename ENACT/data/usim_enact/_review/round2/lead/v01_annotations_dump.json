@@ -1,0 +1,907 @@
+{
+  "episodes": [
+    {
+      "episode_key": "usim_train_episode_000200",
+      "task_text": "Pick up the blue cylinder",
+      "notes": "Blue cylinder (purple in the ego stream). A red cylinder is also present but is not a manipulated object in this protocol.",
+      "key_frames": [
+        {
+          "frame_index": 140,
+          "timestamp": 14.0,
+          "facts": {
+            "OnSeabed(blue_cylinder)": true,
+            "InGripper(blue_cylinder)": false,
+            "Lifted(blue_cylinder)": false,
+            "NextTo(robot,blue_cylinder)": false
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "blue_cylinder": true
+            }
+          ]
+        },
+        {
+          "frame_index": 213,
+          "timestamp": 21.3,
+          "facts": {
+            "OnSeabed(blue_cylinder)": true,
+            "InGripper(blue_cylinder)": false,
+            "Lifted(blue_cylinder)": false,
+            "NextTo(robot,blue_cylinder)": true
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "blue_cylinder": true
+            }
+          ]
+        },
+        {
+          "frame_index": 248,
+          "timestamp": 24.8,
+          "facts": {
+            "OnSeabed(blue_cylinder)": false,
+            "InGripper(blue_cylinder)": true,
+            "Lifted(blue_cylinder)": false,
+            "NextTo(robot,blue_cylinder)": false
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "blue_cylinder": true
+            }
+          ]
+        },
+        {
+          "frame_index": 328,
+          "timestamp": 32.8,
+          "facts": {
+            "OnSeabed(blue_cylinder)": false,
+            "InGripper(blue_cylinder)": true,
+            "Lifted(blue_cylinder)": true,
+            "NextTo(robot,blue_cylinder)": false
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "blue_cylinder": true
+            }
+          ]
+        }
+      ],
+      "relations": [
+        [
+          "OnSeabed",
+          "blue_cylinder"
+        ],
+        [
+          "InGripper",
+          "blue_cylinder"
+        ],
+        [
+          "Lifted",
+          "blue_cylinder"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "blue_cylinder"
+        ]
+      ],
+      "transitions": [
+        {
+          "from": "140",
+          "to": "213",
+          "visible": true,
+          "signatures": [
+            "add_edge_robot_blue_cylinder_NextTo"
+          ],
+          "text": "The robot becomes next to the blue cylinder."
+        },
+        {
+          "from": "213",
+          "to": "248",
+          "visible": true,
+          "signatures": [
+            "add_node_blue_cylinder_InGripper",
+            "remove_edge_robot_blue_cylinder_NextTo",
+            "remove_node_blue_cylinder_OnSeabed"
+          ],
+          "text": "The blue cylinder is now grasped by the robot. The blue cylinder is no longer on the seabed. The robot is no longer next to the blue cylinder."
+        },
+        {
+          "from": "248",
+          "to": "328",
+          "visible": true,
+          "signatures": [
+            "add_node_blue_cylinder_Lifted"
+          ],
+          "text": "The blue cylinder becomes lifted above the seabed."
+        }
+      ]
+    },
+    {
+      "episode_key": "usim_train_episode_000201",
+      "task_text": "Pick up the blue cylinder",
+      "notes": "Blue cylinder; a red cylinder is visible in some frames but is not modelled.",
+      "key_frames": [
+        {
+          "frame_index": 199,
+          "timestamp": 19.9,
+          "facts": {
+            "OnSeabed(blue_cylinder)": true,
+            "InGripper(blue_cylinder)": false,
+            "Lifted(blue_cylinder)": false,
+            "NextTo(robot,blue_cylinder)": false
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "blue_cylinder": true
+            }
+          ]
+        },
+        {
+          "frame_index": 244,
+          "timestamp": 24.4,
+          "facts": {
+            "OnSeabed(blue_cylinder)": true,
+            "InGripper(blue_cylinder)": false,
+            "Lifted(blue_cylinder)": false,
+            "NextTo(robot,blue_cylinder)": true
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "blue_cylinder": true
+            }
+          ]
+        },
+        {
+          "frame_index": 279,
+          "timestamp": 27.9,
+          "facts": {
+            "OnSeabed(blue_cylinder)": false,
+            "InGripper(blue_cylinder)": true,
+            "Lifted(blue_cylinder)": false,
+            "NextTo(robot,blue_cylinder)": false
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "blue_cylinder": true
+            }
+          ]
+        },
+        {
+          "frame_index": 357,
+          "timestamp": 35.7,
+          "facts": {
+            "OnSeabed(blue_cylinder)": false,
+            "InGripper(blue_cylinder)": true,
+            "Lifted(blue_cylinder)": true,
+            "NextTo(robot,blue_cylinder)": false
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "blue_cylinder": true
+            }
+          ]
+        }
+      ],
+      "relations": [
+        [
+          "OnSeabed",
+          "blue_cylinder"
+        ],
+        [
+          "InGripper",
+          "blue_cylinder"
+        ],
+        [
+          "Lifted",
+          "blue_cylinder"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "blue_cylinder"
+        ]
+      ],
+      "transitions": [
+        {
+          "from": "199",
+          "to": "244",
+          "visible": true,
+          "signatures": [
+            "add_edge_robot_blue_cylinder_NextTo"
+          ],
+          "text": "The robot now becomes next to the blue cylinder."
+        },
+        {
+          "from": "244",
+          "to": "279",
+          "visible": true,
+          "signatures": [
+            "add_node_blue_cylinder_InGripper",
+            "remove_edge_robot_blue_cylinder_NextTo",
+            "remove_node_blue_cylinder_OnSeabed"
+          ],
+          "text": "The blue cylinder becomes grasped by the robot. The blue cylinder is not on the seabed anymore. The robot is no longer next to the blue cylinder."
+        },
+        {
+          "from": "279",
+          "to": "357",
+          "visible": true,
+          "signatures": [
+            "add_node_blue_cylinder_Lifted"
+          ],
+          "text": "The blue cylinder becomes lifted above the seabed."
+        }
+      ]
+    },
+    {
+      "episode_key": "usim_train_episode_000552",
+      "task_text": "Pick up the red cylinder",
+      "notes": "Clean single grasp; gripper closes at f264, object held at f284, carried clear of the seabed by f364.",
+      "key_frames": [
+        {
+          "frame_index": 120,
+          "timestamp": 12.0,
+          "facts": {
+            "OnSeabed(red_cylinder)": true,
+            "InGripper(red_cylinder)": false,
+            "Lifted(red_cylinder)": false,
+            "NextTo(robot,red_cylinder)": false
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "red_cylinder": true
+            }
+          ]
+        },
+        {
+          "frame_index": 249,
+          "timestamp": 24.9,
+          "facts": {
+            "OnSeabed(red_cylinder)": true,
+            "InGripper(red_cylinder)": false,
+            "Lifted(red_cylinder)": false,
+            "NextTo(robot,red_cylinder)": true
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "red_cylinder": true
+            }
+          ]
+        },
+        {
+          "frame_index": 284,
+          "timestamp": 28.4,
+          "facts": {
+            "OnSeabed(red_cylinder)": false,
+            "InGripper(red_cylinder)": true,
+            "Lifted(red_cylinder)": false,
+            "NextTo(robot,red_cylinder)": false
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "red_cylinder": true
+            }
+          ]
+        },
+        {
+          "frame_index": 364,
+          "timestamp": 36.4,
+          "facts": {
+            "OnSeabed(red_cylinder)": false,
+            "InGripper(red_cylinder)": true,
+            "Lifted(red_cylinder)": true,
+            "NextTo(robot,red_cylinder)": false
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "red_cylinder": true
+            }
+          ]
+        }
+      ],
+      "relations": [
+        [
+          "OnSeabed",
+          "red_cylinder"
+        ],
+        [
+          "InGripper",
+          "red_cylinder"
+        ],
+        [
+          "Lifted",
+          "red_cylinder"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "red_cylinder"
+        ]
+      ],
+      "transitions": [
+        {
+          "from": "120",
+          "to": "249",
+          "visible": true,
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ],
+          "text": "The robot changes to be next to the red cylinder."
+        },
+        {
+          "from": "249",
+          "to": "284",
+          "visible": true,
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo",
+            "remove_node_red_cylinder_OnSeabed"
+          ],
+          "text": "The red cylinder becomes grasped by the robot. The red cylinder is not on the seabed anymore. The robot is no longer next to the red cylinder."
+        },
+        {
+          "from": "284",
+          "to": "364",
+          "visible": true,
+          "signatures": [
+            "add_node_red_cylinder_Lifted"
+          ],
+          "text": "The red cylinder is now lifted above the seabed."
+        }
+      ]
+    },
+    {
+      "episode_key": "usim_train_episode_000553",
+      "task_text": "Pick up the red cylinder",
+      "notes": "Short episode; gripper closes at f148, object held from f168 and carried by f248.",
+      "key_frames": [
+        {
+          "frame_index": 110,
+          "timestamp": 11.0,
+          "facts": {
+            "OnSeabed(red_cylinder)": true,
+            "InGripper(red_cylinder)": false,
+            "Lifted(red_cylinder)": false,
+            "NextTo(robot,red_cylinder)": false
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "red_cylinder": true
+            }
+          ]
+        },
+        {
+          "frame_index": 140,
+          "timestamp": 14.0,
+          "facts": {
+            "OnSeabed(red_cylinder)": true,
+            "InGripper(red_cylinder)": false,
+            "Lifted(red_cylinder)": false,
+            "NextTo(robot,red_cylinder)": true
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "red_cylinder": true
+            }
+          ]
+        },
+        {
+          "frame_index": 168,
+          "timestamp": 16.8,
+          "facts": {
+            "OnSeabed(red_cylinder)": false,
+            "InGripper(red_cylinder)": true,
+            "Lifted(red_cylinder)": false,
+            "NextTo(robot,red_cylinder)": false
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "red_cylinder": true
+            }
+          ]
+        },
+        {
+          "frame_index": 248,
+          "timestamp": 24.8,
+          "facts": {
+            "OnSeabed(red_cylinder)": false,
+            "InGripper(red_cylinder)": true,
+            "Lifted(red_cylinder)": true,
+            "NextTo(robot,red_cylinder)": false
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "red_cylinder": true
+            }
+          ]
+        }
+      ],
+      "relations": [
+        [
+          "OnSeabed",
+          "red_cylinder"
+        ],
+        [
+          "InGripper",
+          "red_cylinder"
+        ],
+        [
+          "Lifted",
+          "red_cylinder"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "red_cylinder"
+        ]
+      ],
+      "transitions": [
+        {
+          "from": "110",
+          "to": "140",
+          "visible": true,
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ],
+          "text": "The robot now becomes next to the red cylinder."
+        },
+        {
+          "from": "140",
+          "to": "168",
+          "visible": true,
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo",
+            "remove_node_red_cylinder_OnSeabed"
+          ],
+          "text": "The red cylinder is now grasped by the robot. The red cylinder is not on the seabed anymore. The robot stopped being next to the red cylinder."
+        },
+        {
+          "from": "168",
+          "to": "248",
+          "visible": true,
+          "signatures": [
+            "add_node_red_cylinder_Lifted"
+          ],
+          "text": "The red cylinder becomes lifted above the seabed."
+        }
+      ]
+    },
+    {
+      "episode_key": "usim_train_episode_000555",
+      "task_text": "Pick up the red cylinder",
+      "notes": "Gripper closes at f277; object carried clear of the seabed by f377.",
+      "key_frames": [
+        {
+          "frame_index": 140,
+          "timestamp": 14.0,
+          "facts": {
+            "OnSeabed(red_cylinder)": true,
+            "InGripper(red_cylinder)": false,
+            "Lifted(red_cylinder)": false,
+            "NextTo(robot,red_cylinder)": false
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "red_cylinder": true
+            }
+          ]
+        },
+        {
+          "frame_index": 262,
+          "timestamp": 26.2,
+          "facts": {
+            "OnSeabed(red_cylinder)": true,
+            "InGripper(red_cylinder)": false,
+            "Lifted(red_cylinder)": false,
+            "NextTo(robot,red_cylinder)": true
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "red_cylinder": true
+            }
+          ]
+        },
+        {
+          "frame_index": 297,
+          "timestamp": 29.7,
+          "facts": {
+            "OnSeabed(red_cylinder)": false,
+            "InGripper(red_cylinder)": true,
+            "Lifted(red_cylinder)": false,
+            "NextTo(robot,red_cylinder)": false
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "red_cylinder": true
+            }
+          ]
+        },
+        {
+          "frame_index": 377,
+          "timestamp": 37.7,
+          "facts": {
+            "OnSeabed(red_cylinder)": false,
+            "InGripper(red_cylinder)": true,
+            "Lifted(red_cylinder)": true,
+            "NextTo(robot,red_cylinder)": false
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "red_cylinder": true
+            }
+          ]
+        }
+      ],
+      "relations": [
+        [
+          "OnSeabed",
+          "red_cylinder"
+        ],
+        [
+          "InGripper",
+          "red_cylinder"
+        ],
+        [
+          "Lifted",
+          "red_cylinder"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "red_cylinder"
+        ]
+      ],
+      "transitions": [
+        {
+          "from": "140",
+          "to": "262",
+          "visible": true,
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ],
+          "text": "The robot now becomes next to the red cylinder."
+        },
+        {
+          "from": "262",
+          "to": "297",
+          "visible": true,
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo",
+            "remove_node_red_cylinder_OnSeabed"
+          ],
+          "text": "The red cylinder is now grasped by the robot. The red cylinder is no longer on the seabed. The robot stopped being next to the red cylinder."
+        },
+        {
+          "from": "297",
+          "to": "377",
+          "visible": true,
+          "signatures": [
+            "add_node_red_cylinder_Lifted"
+          ],
+          "text": "The red cylinder is now lifted above the seabed."
+        }
+      ]
+    },
+    {
+      "episode_key": "usim_train_episode_000556",
+      "task_text": "Pick up the red cylinder",
+      "notes": "Gripper closes at f319; object lifted clear of the seabed by f419.",
+      "key_frames": [
+        {
+          "frame_index": 180,
+          "timestamp": 18.0,
+          "facts": {
+            "OnSeabed(red_cylinder)": true,
+            "InGripper(red_cylinder)": false,
+            "Lifted(red_cylinder)": false,
+            "NextTo(robot,red_cylinder)": false
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "red_cylinder": true
+            }
+          ]
+        },
+        {
+          "frame_index": 304,
+          "timestamp": 30.4,
+          "facts": {
+            "OnSeabed(red_cylinder)": true,
+            "InGripper(red_cylinder)": false,
+            "Lifted(red_cylinder)": false,
+            "NextTo(robot,red_cylinder)": true
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "red_cylinder": true
+            }
+          ]
+        },
+        {
+          "frame_index": 339,
+          "timestamp": 33.9,
+          "facts": {
+            "OnSeabed(red_cylinder)": false,
+            "InGripper(red_cylinder)": true,
+            "Lifted(red_cylinder)": false,
+            "NextTo(robot,red_cylinder)": false
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "red_cylinder": true
+            }
+          ]
+        },
+        {
+          "frame_index": 419,
+          "timestamp": 41.9,
+          "facts": {
+            "OnSeabed(red_cylinder)": false,
+            "InGripper(red_cylinder)": true,
+            "Lifted(red_cylinder)": true,
+            "NextTo(robot,red_cylinder)": false
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "red_cylinder": true
+            }
+          ]
+        }
+      ],
+      "relations": [
+        [
+          "OnSeabed",
+          "red_cylinder"
+        ],
+        [
+          "InGripper",
+          "red_cylinder"
+        ],
+        [
+          "Lifted",
+          "red_cylinder"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "red_cylinder"
+        ]
+      ],
+      "transitions": [
+        {
+          "from": "180",
+          "to": "304",
+          "visible": true,
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ],
+          "text": "The robot now becomes next to the red cylinder."
+        },
+        {
+          "from": "304",
+          "to": "339",
+          "visible": true,
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo",
+            "remove_node_red_cylinder_OnSeabed"
+          ],
+          "text": "The red cylinder becomes grasped by the robot. The red cylinder is no longer on the seabed. The robot is no longer next to the red cylinder."
+        },
+        {
+          "from": "339",
+          "to": "419",
+          "visible": true,
+          "signatures": [
+            "add_node_red_cylinder_Lifted"
+          ],
+          "text": "The red cylinder becomes lifted above the seabed."
+        }
+      ]
+    },
+    {
+      "episode_key": "usim_train_episode_001302",
+      "task_text": "Pick up the red cylinder and transfer it to the box",
+      "notes": "Transfer task: object carried toward the green box and still held at the end. The trailing gripper-open command (f448) happens after the object is already held above the box rim, but the object never settles inside the box before the video ends, so Inside/InBox is NOT annotated.",
+      "key_frames": [
+        {
+          "frame_index": 150,
+          "timestamp": 15.0,
+          "facts": {
+            "OnSeabed(red_cylinder)": true,
+            "InGripper(red_cylinder)": false,
+            "Lifted(red_cylinder)": false,
+            "NextTo(robot,red_cylinder)": false
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "red_cylinder": true
+            }
+          ]
+        },
+        {
+          "frame_index": 168,
+          "timestamp": 16.8,
+          "facts": {
+            "OnSeabed(red_cylinder)": true,
+            "InGripper(red_cylinder)": false,
+            "Lifted(red_cylinder)": false,
+            "NextTo(robot,red_cylinder)": true
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "red_cylinder": true
+            }
+          ]
+        },
+        {
+          "frame_index": 196,
+          "timestamp": 19.6,
+          "facts": {
+            "OnSeabed(red_cylinder)": false,
+            "InGripper(red_cylinder)": true,
+            "Lifted(red_cylinder)": false,
+            "NextTo(robot,red_cylinder)": false
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "red_cylinder": true
+            }
+          ]
+        },
+        {
+          "frame_index": 415,
+          "timestamp": 41.5,
+          "facts": {
+            "OnSeabed(red_cylinder)": false,
+            "InGripper(red_cylinder)": true,
+            "Lifted(red_cylinder)": true,
+            "NextTo(robot,red_cylinder)": false
+          },
+          "visibility": [
+            {
+              "robot": true
+            },
+            {
+              "red_cylinder": true
+            }
+          ]
+        }
+      ],
+      "relations": [
+        [
+          "OnSeabed",
+          "red_cylinder"
+        ],
+        [
+          "InGripper",
+          "red_cylinder"
+        ],
+        [
+          "Lifted",
+          "red_cylinder"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "red_cylinder"
+        ]
+      ],
+      "transitions": [
+        {
+          "from": "150",
+          "to": "168",
+          "visible": true,
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ],
+          "text": "The robot becomes next to the red cylinder."
+        },
+        {
+          "from": "168",
+          "to": "196",
+          "visible": true,
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo",
+            "remove_node_red_cylinder_OnSeabed"
+          ],
+          "text": "The red cylinder becomes grasped by the robot. The red cylinder is no longer on the seabed. The robot stopped being next to the red cylinder."
+        },
+        {
+          "from": "196",
+          "to": "415",
+          "visible": true,
+          "signatures": [
+            "add_node_red_cylinder_Lifted"
+          ],
+          "text": "The red cylinder is now lifted above the seabed."
+        }
+      ]
+    }
+  ]
+}

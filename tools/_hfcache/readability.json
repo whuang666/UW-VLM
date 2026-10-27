@@ -1,0 +1,462 @@
+{
+  "checked_at_utc": "2026-10-23T13:40:02.047896+00:00",
+  "dataset_root": "E:\\code\\UW-VLM\\usim",
+  "pyarrow_version": "23.0.1",
+  "pyarrow_location": "C:\\Users\\whuang\\AppData\\Local\\Temp\\codex-enact-audit-20261023\\pyarrow\\__init__.py",
+  "splits": {
+    "train": {
+      "parquet_files": 1750,
+      "frames": 696990,
+      "videos_by_camera": {
+        "observation.images.ego": 1750,
+        "observation.images.wrist": 1750
+      },
+      "checks": {
+        "episodes_match": true,
+        "episode_indices_complete": true,
+        "frames_match": true,
+        "videos_match": true,
+        "each_camera_complete": true
+      }
+    },
+    "test": {
+      "parquet_files": 525,
+      "frames": 208605,
+      "videos_by_camera": {
+        "observation.images.ego": 525,
+        "observation.images.wrist": 525
+      },
+      "checks": {
+        "episodes_match": true,
+        "episode_indices_complete": true,
+        "frames_match": true,
+        "videos_match": true,
+        "each_camera_complete": true
+      }
+    }
+  },
+  "video_samples": [
+    {
+      "path": "train\\videos\\chunk-000\\observation.images.ego\\episode_000000.mp4",
+      "frames": 157,
+      "fps": 10.0,
+      "samples": [
+        {
+          "frame": 0,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 78,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 156,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "path": "train\\videos\\chunk-000\\observation.images.wrist\\episode_000000.mp4",
+      "frames": 157,
+      "fps": 10.0,
+      "samples": [
+        {
+          "frame": 0,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 78,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 156,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "path": "train\\videos\\chunk-000\\observation.images.ego\\episode_000999.mp4",
+      "frames": 314,
+      "fps": 10.0,
+      "samples": [
+        {
+          "frame": 0,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 157,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 313,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "path": "train\\videos\\chunk-000\\observation.images.wrist\\episode_000999.mp4",
+      "frames": 314,
+      "fps": 10.0,
+      "samples": [
+        {
+          "frame": 0,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 157,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 313,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "path": "train\\videos\\chunk-001\\observation.images.ego\\episode_001000.mp4",
+      "frames": 364,
+      "fps": 10.0,
+      "samples": [
+        {
+          "frame": 0,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 182,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 363,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "path": "train\\videos\\chunk-001\\observation.images.wrist\\episode_001000.mp4",
+      "frames": 364,
+      "fps": 10.0,
+      "samples": [
+        {
+          "frame": 0,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 182,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 363,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "path": "train\\videos\\chunk-001\\observation.images.ego\\episode_001749.mp4",
+      "frames": 429,
+      "fps": 10.0,
+      "samples": [
+        {
+          "frame": 0,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 214,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 428,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "path": "train\\videos\\chunk-001\\observation.images.wrist\\episode_001749.mp4",
+      "frames": 429,
+      "fps": 10.0,
+      "samples": [
+        {
+          "frame": 0,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 214,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 428,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "path": "test\\videos\\chunk-000\\observation.images.ego\\episode_000461.mp4",
+      "frames": 527,
+      "fps": 10.0,
+      "samples": [
+        {
+          "frame": 0,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 263,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 526,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "path": "test\\videos\\chunk-000\\observation.images.wrist\\episode_000461.mp4",
+      "frames": 527,
+      "fps": 10.0,
+      "samples": [
+        {
+          "frame": 0,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 263,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 526,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "path": "test\\videos\\chunk-000\\observation.images.ego\\episode_000524.mp4",
+      "frames": 293,
+      "fps": 10.0,
+      "samples": [
+        {
+          "frame": 0,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 146,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 292,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        }
+      ],
+      "passed": true
+    },
+    {
+      "path": "test\\videos\\chunk-000\\observation.images.wrist\\episode_000524.mp4",
+      "frames": 293,
+      "fps": 10.0,
+      "samples": [
+        {
+          "frame": 0,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 146,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame": 292,
+          "decoded": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

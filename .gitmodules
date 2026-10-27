@@ -1,0 +1,4 @@
+[submodule "ENACT/BEHAVIOR-1K"]
+	path = ENACT/BEHAVIOR-1K
+	url = https://github.com/StanfordVL/BEHAVIOR-1K.git
+	branch = enact

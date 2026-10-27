@@ -1,0 +1,1040 @@
+[
+  {
+    "path": "enact/core/evaluators.py",
+    "symbol": "TaskWiseOrderingVerifier",
+    "line": 18,
+    "end": 439
+  },
+  {
+    "path": "enact/core/evaluators.py",
+    "symbol": "TaskWiseOrderingVerifier.__init__",
+    "line": 29,
+    "end": 43
+  },
+  {
+    "path": "enact/core/evaluators.py",
+    "symbol": "TaskWiseOrderingVerifier.sensor_names",
+    "line": 46,
+    "end": 50
+  },
+  {
+    "path": "enact/core/evaluators.py",
+    "symbol": "TaskWiseOrderingVerifier._translate_sequence_to_signatures",
+    "line": 52,
+    "end": 69
+  },
+  {
+    "path": "enact/core/evaluators.py",
+    "symbol": "TaskWiseOrderingVerifier._translate_sequence_to_natural_language",
+    "line": 71,
+    "end": 86
+  },
+  {
+    "path": "enact/core/evaluators.py",
+    "symbol": "TaskWiseOrderingVerifier._calculate_pairwise_accuracy_with_alignment",
+    "line": 90,
+    "end": 134
+  },
+  {
+    "path": "enact/core/evaluators.py",
+    "symbol": "TaskWiseOrderingVerifier.verify_forward",
+    "line": 136,
+    "end": 280
+  },
+  {
+    "path": "enact/core/evaluators.py",
+    "symbol": "TaskWiseOrderingVerifier.verify_inverse",
+    "line": 282,
+    "end": 439
+  },
+  {
+    "path": "enact/core/evaluators.py",
+    "symbol": "OrderingEvaluator",
+    "line": 442,
+    "end": 961
+  },
+  {
+    "path": "enact/core/evaluators.py",
+    "symbol": "OrderingEvaluator.__init__",
+    "line": 449,
+    "end": 466
+  },
+  {
+    "path": "enact/core/evaluators.py",
+    "symbol": "OrderingEvaluator._parse_answer_string",
+    "line": 468,
+    "end": 521
+  },
+  {
+    "path": "enact/core/evaluators.py",
+    "symbol": "OrderingEvaluator._create_task_data",
+    "line": 523,
+    "end": 563
+  },
+  {
+    "path": "enact/core/evaluators.py",
+    "symbol": "OrderingEvaluator._collect_image_paths",
+    "line": 565,
+    "end": 614
+  },
+  {
+    "path": "enact/core/evaluators.py",
+    "symbol": "OrderingEvaluator._gather_verifiers",
+    "line": 616,
+    "end": 656
+  },
+  {
+    "path": "enact/core/evaluators.py",
+    "symbol": "OrderingEvaluator.evaluate",
+    "line": 658,
+    "end": 837
+  },
+  {
+    "path": "enact/core/evaluators.py",
+    "symbol": "OrderingEvaluator.report_skipped_items",
+    "line": 839,
+    "end": 871
+  },
+  {
+    "path": "enact/core/evaluators.py",
+    "symbol": "OrderingEvaluator.report_overall_score",
+    "line": 873,
+    "end": 961
+  },
+  {
+    "path": "enact/core/forward_world_modeling.py",
+    "symbol": "ForwardWorldModelingGenerator",
+    "line": 25,
+    "end": 558
+  },
+  {
+    "path": "enact/core/forward_world_modeling.py",
+    "symbol": "ForwardWorldModelingGenerator.__init__",
+    "line": 33,
+    "end": 55
+  },
+  {
+    "path": "enact/core/forward_world_modeling.py",
+    "symbol": "ForwardWorldModelingGenerator.qa_type",
+    "line": 58,
+    "end": 59
+  },
+  {
+    "path": "enact/core/forward_world_modeling.py",
+    "symbol": "ForwardWorldModelingGenerator.visual_prompt_path",
+    "line": 61,
+    "end": 71
+  },
+  {
+    "path": "enact/core/forward_world_modeling.py",
+    "symbol": "ForwardWorldModelingGenerator._has_meaningful_changes",
+    "line": 73,
+    "end": 100
+  },
+  {
+    "path": "enact/core/forward_world_modeling.py",
+    "symbol": "ForwardWorldModelingGenerator._is_valid_transition",
+    "line": 102,
+    "end": 130
+  },
+  {
+    "path": "enact/core/forward_world_modeling.py",
+    "symbol": "ForwardWorldModelingGenerator._build_valid_transitions_graph",
+    "line": 132,
+    "end": 161
+  },
+  {
+    "path": "enact/core/forward_world_modeling.py",
+    "symbol": "ForwardWorldModelingGenerator._count_paths_with_dp",
+    "line": 163,
+    "end": 200
+  },
+  {
+    "path": "enact/core/forward_world_modeling.py",
+    "symbol": "ForwardWorldModelingGenerator._sample_paths_randomly",
+    "line": 202,
+    "end": 288
+  },
+  {
+    "path": "enact/core/forward_world_modeling.py",
+    "symbol": "ForwardWorldModelingGenerator._generate_qa_id_hash",
+    "line": 290,
+    "end": 304
+  },
+  {
+    "path": "enact/core/forward_world_modeling.py",
+    "symbol": "ForwardWorldModelingGenerator._translate_sequence_to_actions",
+    "line": 307,
+    "end": 341
+  },
+  {
+    "path": "enact/core/forward_world_modeling.py",
+    "symbol": "ForwardWorldModelingGenerator._add_text_to_image",
+    "line": 343,
+    "end": 388
+  },
+  {
+    "path": "enact/core/forward_world_modeling.py",
+    "symbol": "ForwardWorldModelingGenerator.generate",
+    "line": 390,
+    "end": 459
+  },
+  {
+    "path": "enact/core/forward_world_modeling.py",
+    "symbol": "ForwardWorldModelingGenerator._create_ordering_qa_pair",
+    "line": 461,
+    "end": 558
+  },
+  {
+    "path": "enact/core/inverse_world_modeling.py",
+    "symbol": "InverseWorldModelingGenerator",
+    "line": 26,
+    "end": 544
+  },
+  {
+    "path": "enact/core/inverse_world_modeling.py",
+    "symbol": "InverseWorldModelingGenerator.__init__",
+    "line": 34,
+    "end": 51
+  },
+  {
+    "path": "enact/core/inverse_world_modeling.py",
+    "symbol": "InverseWorldModelingGenerator.qa_type",
+    "line": 54,
+    "end": 55
+  },
+  {
+    "path": "enact/core/inverse_world_modeling.py",
+    "symbol": "InverseWorldModelingGenerator.visual_prompt_path",
+    "line": 57,
+    "end": 67
+  },
+  {
+    "path": "enact/core/inverse_world_modeling.py",
+    "symbol": "InverseWorldModelingGenerator._has_meaningful_changes",
+    "line": 69,
+    "end": 96
+  },
+  {
+    "path": "enact/core/inverse_world_modeling.py",
+    "symbol": "InverseWorldModelingGenerator._is_valid_transition",
+    "line": 98,
+    "end": 126
+  },
+  {
+    "path": "enact/core/inverse_world_modeling.py",
+    "symbol": "InverseWorldModelingGenerator._build_valid_transitions_graph",
+    "line": 128,
+    "end": 157
+  },
+  {
+    "path": "enact/core/inverse_world_modeling.py",
+    "symbol": "InverseWorldModelingGenerator._count_paths_with_dp",
+    "line": 159,
+    "end": 194
+  },
+  {
+    "path": "enact/core/inverse_world_modeling.py",
+    "symbol": "InverseWorldModelingGenerator._sample_paths_randomly",
+    "line": 196,
+    "end": 282
+  },
+  {
+    "path": "enact/core/inverse_world_modeling.py",
+    "symbol": "InverseWorldModelingGenerator._translate_sequence_to_actions",
+    "line": 284,
+    "end": 306
+  },
+  {
+    "path": "enact/core/inverse_world_modeling.py",
+    "symbol": "InverseWorldModelingGenerator.generate",
+    "line": 309,
+    "end": 376
+  },
+  {
+    "path": "enact/core/inverse_world_modeling.py",
+    "symbol": "InverseWorldModelingGenerator._add_text_to_image",
+    "line": 378,
+    "end": 423
+  },
+  {
+    "path": "enact/core/inverse_world_modeling.py",
+    "symbol": "InverseWorldModelingGenerator.generate_qa_id_hash",
+    "line": 425,
+    "end": 439
+  },
+  {
+    "path": "enact/core/inverse_world_modeling.py",
+    "symbol": "InverseWorldModelingGenerator._create_ordering_qa_pair",
+    "line": 441,
+    "end": 544
+  },
+  {
+    "path": "enact/core/qa_generation.py",
+    "symbol": "QAGenerationManager",
+    "line": 26,
+    "end": 290
+  },
+  {
+    "path": "enact/core/qa_generation.py",
+    "symbol": "QAGenerationManager.__init__",
+    "line": 36,
+    "end": 56
+  },
+  {
+    "path": "enact/core/qa_generation.py",
+    "symbol": "QAGenerationManager._load_all_tasks",
+    "line": 58,
+    "end": 105
+  },
+  {
+    "path": "enact/core/qa_generation.py",
+    "symbol": "QAGenerationManager._collect_image_paths",
+    "line": 107,
+    "end": 151
+  },
+  {
+    "path": "enact/core/qa_generation.py",
+    "symbol": "QAGenerationManager.generate",
+    "line": 153,
+    "end": 224
+  },
+  {
+    "path": "enact/core/qa_generation.py",
+    "symbol": "QAGenerationManager._get_generator_class",
+    "line": 226,
+    "end": 241
+  },
+  {
+    "path": "enact/core/qa_generation.py",
+    "symbol": "QAGenerationManager.save_to_jsonl",
+    "line": 243,
+    "end": 260
+  },
+  {
+    "path": "enact/core/qa_generation.py",
+    "symbol": "QAGenerationManager._append_to_jsonl",
+    "line": 262,
+    "end": 276
+  },
+  {
+    "path": "enact/core/qa_generation.py",
+    "symbol": "QAGenerationManager.clear_qa_pairs",
+    "line": 278,
+    "end": 280
+  },
+  {
+    "path": "enact/core/qa_generation.py",
+    "symbol": "QAGenerationManager.num_tasks",
+    "line": 283,
+    "end": 285
+  },
+  {
+    "path": "enact/core/qa_generation.py",
+    "symbol": "QAGenerationManager.num_qa_pairs",
+    "line": 288,
+    "end": 290
+  },
+  {
+    "path": "enact/core/segmentation.py",
+    "symbol": "FrameSegmentManager",
+    "line": 21,
+    "end": 200
+  },
+  {
+    "path": "enact/core/segmentation.py",
+    "symbol": "FrameSegmentManager.__init__",
+    "line": 28,
+    "end": 40
+  },
+  {
+    "path": "enact/core/segmentation.py",
+    "symbol": "FrameSegmentManager.extract_changes",
+    "line": 42,
+    "end": 55
+  },
+  {
+    "path": "enact/core/segmentation.py",
+    "symbol": "FrameSegmentManager._extract_features",
+    "line": 57,
+    "end": 78
+  },
+  {
+    "path": "enact/core/segmentation.py",
+    "symbol": "FrameSegmentManager._cosine_similarity",
+    "line": 80,
+    "end": 101
+  },
+  {
+    "path": "enact/core/segmentation.py",
+    "symbol": "FrameSegmentManager._has_added_object",
+    "line": 103,
+    "end": 113
+  },
+  {
+    "path": "enact/core/segmentation.py",
+    "symbol": "FrameSegmentManager._extract_cosine_similarity_changes",
+    "line": 115,
+    "end": 185
+  },
+  {
+    "path": "enact/core/segmentation.py",
+    "symbol": "FrameSegmentManager.save_changes",
+    "line": 188,
+    "end": 200
+  },
+  {
+    "path": "enact/processors/evaluator_processor.py",
+    "symbol": "EvaluatorProcessor",
+    "line": 26,
+    "end": 365
+  },
+  {
+    "path": "enact/processors/evaluator_processor.py",
+    "symbol": "EvaluatorProcessor.__init__",
+    "line": 32,
+    "end": 88
+  },
+  {
+    "path": "enact/processors/evaluator_processor.py",
+    "symbol": "EvaluatorProcessor._extract_model_name_from_filename",
+    "line": 90,
+    "end": 104
+  },
+  {
+    "path": "enact/processors/evaluator_processor.py",
+    "symbol": "EvaluatorProcessor._reset_evaluator_state",
+    "line": 106,
+    "end": 112
+  },
+  {
+    "path": "enact/processors/evaluator_processor.py",
+    "symbol": "EvaluatorProcessor._save_detailed_results",
+    "line": 114,
+    "end": 144
+  },
+  {
+    "path": "enact/processors/evaluator_processor.py",
+    "symbol": "EvaluatorProcessor._save_meta_performance",
+    "line": 146,
+    "end": 165
+  },
+  {
+    "path": "enact/processors/evaluator_processor.py",
+    "symbol": "EvaluatorProcessor._save_wrong_case_signatures",
+    "line": 167,
+    "end": 185
+  },
+  {
+    "path": "enact/processors/evaluator_processor.py",
+    "symbol": "EvaluatorProcessor._print_performance_summary",
+    "line": 187,
+    "end": 220
+  },
+  {
+    "path": "enact/processors/evaluator_processor.py",
+    "symbol": "EvaluatorProcessor.evaluate_single_file",
+    "line": 222,
+    "end": 277
+  },
+  {
+    "path": "enact/processors/evaluator_processor.py",
+    "symbol": "EvaluatorProcessor.get_jsonl_files",
+    "line": 279,
+    "end": 289
+  },
+  {
+    "path": "enact/processors/evaluator_processor.py",
+    "symbol": "EvaluatorProcessor.process_all_files",
+    "line": 291,
+    "end": 365
+  },
+  {
+    "path": "enact/processors/qa_gen_processor.py",
+    "symbol": "BatchQAProcessor",
+    "line": 24,
+    "end": 171
+  },
+  {
+    "path": "enact/processors/qa_gen_processor.py",
+    "symbol": "BatchQAProcessor.__init__",
+    "line": 32,
+    "end": 59
+  },
+  {
+    "path": "enact/processors/qa_gen_processor.py",
+    "symbol": "BatchQAProcessor.get_task_directories",
+    "line": 61,
+    "end": 76
+  },
+  {
+    "path": "enact/processors/qa_gen_processor.py",
+    "symbol": "BatchQAProcessor.run",
+    "line": 78,
+    "end": 171
+  },
+  {
+    "path": "enact/processors/segmentation_processor.py",
+    "symbol": "SegmentationProcessor",
+    "line": 24,
+    "end": 212
+  },
+  {
+    "path": "enact/processors/segmentation_processor.py",
+    "symbol": "SegmentationProcessor.__init__",
+    "line": 30,
+    "end": 54
+  },
+  {
+    "path": "enact/processors/segmentation_processor.py",
+    "symbol": "SegmentationProcessor._is_single_task_directory",
+    "line": 56,
+    "end": 68
+  },
+  {
+    "path": "enact/processors/segmentation_processor.py",
+    "symbol": "SegmentationProcessor.get_task_directories",
+    "line": 70,
+    "end": 86
+  },
+  {
+    "path": "enact/processors/segmentation_processor.py",
+    "symbol": "SegmentationProcessor.validate_task_directory",
+    "line": 88,
+    "end": 109
+  },
+  {
+    "path": "enact/processors/segmentation_processor.py",
+    "symbol": "SegmentationProcessor.copy_extracted_frames",
+    "line": 111,
+    "end": 136
+  },
+  {
+    "path": "enact/processors/segmentation_processor.py",
+    "symbol": "SegmentationProcessor.process_task_directory",
+    "line": 138,
+    "end": 184
+  },
+  {
+    "path": "enact/processors/segmentation_processor.py",
+    "symbol": "SegmentationProcessor.process_all_tasks",
+    "line": 186,
+    "end": 212
+  },
+  {
+    "path": "enact/utils/frame_seg_utils.py",
+    "symbol": "has_scene_graph_changes",
+    "line": 8,
+    "end": 32
+  },
+  {
+    "path": "enact/utils/frame_seg_utils.py",
+    "symbol": "has_state_centric_changes",
+    "line": 35,
+    "end": 60
+  },
+  {
+    "path": "enact/utils/frame_seg_utils.py",
+    "symbol": "only_contact_changes",
+    "line": 62,
+    "end": 84
+  },
+  {
+    "path": "enact/utils/qa_gen_utils.py",
+    "symbol": "TaskData",
+    "line": 17,
+    "end": 33
+  },
+  {
+    "path": "enact/utils/qa_gen_utils.py",
+    "symbol": "QAPair",
+    "line": 37,
+    "end": 65
+  },
+  {
+    "path": "enact/utils/qa_gen_utils.py",
+    "symbol": "QAPair.to_dict",
+    "line": 54,
+    "end": 65
+  },
+  {
+    "path": "enact/utils/qa_gen_utils.py",
+    "symbol": "AbstractQAGenerator",
+    "line": 68,
+    "end": 98
+  },
+  {
+    "path": "enact/utils/qa_gen_utils.py",
+    "symbol": "AbstractQAGenerator.generate",
+    "line": 77,
+    "end": 87
+  },
+  {
+    "path": "enact/utils/qa_gen_utils.py",
+    "symbol": "AbstractQAGenerator.qa_type",
+    "line": 91,
+    "end": 98
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "generate_scene_graph_diff",
+    "line": 10,
+    "end": 119
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "generate_state_centric_diff",
+    "line": 122,
+    "end": 265
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader",
+    "line": 268,
+    "end": 1302
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.__init__",
+    "line": 269,
+    "end": 281
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.get_frame_number",
+    "line": 283,
+    "end": 287
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader._load_data",
+    "line": 289,
+    "end": 300
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.reload",
+    "line": 302,
+    "end": 306
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.get_active_objects",
+    "line": 308,
+    "end": 321
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.is_object_visible",
+    "line": 326,
+    "end": 353
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader._is_visible_from_sensor",
+    "line": 355,
+    "end": 377
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.get_visible_objects_in_graph",
+    "line": 379,
+    "end": 397
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.get_all_visible_objects_in_graph",
+    "line": 399,
+    "end": 409
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.get_all_add_or_remove_objects",
+    "line": 411,
+    "end": 425
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.get_visible_objects_in_both_graphs",
+    "line": 427,
+    "end": 453
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.get_all_visible_objects_in_both_graphs",
+    "line": 455,
+    "end": 473
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.get_scene_graph",
+    "line": 475,
+    "end": 515
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.get_diff",
+    "line": 517,
+    "end": 555
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.get_unchanged_states",
+    "line": 557,
+    "end": 631
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.get_state_full_diff",
+    "line": 633,
+    "end": 655
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.diff_signature",
+    "line": 657,
+    "end": 690
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.is_subset_diff",
+    "line": 692,
+    "end": 698
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.is_diff_subset_scene",
+    "line": 700,
+    "end": 768
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.get_visible_objects_from_diff",
+    "line": 770,
+    "end": 797
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.get_obj_category",
+    "line": 799,
+    "end": 807
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.get_visible_full_diff",
+    "line": 809,
+    "end": 889
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.has_similar_edges",
+    "line": 892,
+    "end": 951
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.has_same_category_objects",
+    "line": 954,
+    "end": 958
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader._find_nearest_full_graph",
+    "line": 962,
+    "end": 986
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader._get_frame_ids_between",
+    "line": 988,
+    "end": 1008
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader._apply_diff_to_graph",
+    "line": 1010,
+    "end": 1076
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader.get_available_frame_ids",
+    "line": 1078,
+    "end": 1085
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader._filter_transient_states",
+    "line": 1088,
+    "end": 1127
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader._fix_window_transients",
+    "line": 1129,
+    "end": 1270
+  },
+  {
+    "path": "enact/utils/scene_graph_utils.py",
+    "symbol": "SceneGraphReader._rebuild_data_from_graphs",
+    "line": 1272,
+    "end": 1302
+  },
+  {
+    "path": "enact/utils/state_change_translator.py",
+    "symbol": "StateChangeTranslator",
+    "line": 12,
+    "end": 549
+  },
+  {
+    "path": "enact/utils/state_change_translator.py",
+    "symbol": "StateChangeTranslator.__init__",
+    "line": 23,
+    "end": 94
+  },
+  {
+    "path": "enact/utils/state_change_translator.py",
+    "symbol": "StateChangeTranslator.process_object_add_and_remove",
+    "line": 96,
+    "end": 153
+  },
+  {
+    "path": "enact/utils/state_change_translator.py",
+    "symbol": "StateChangeTranslator.process_object_add_and_remove_into_signatures",
+    "line": 155,
+    "end": 211
+  },
+  {
+    "path": "enact/utils/state_change_translator.py",
+    "symbol": "StateChangeTranslator.translate_diff",
+    "line": 213,
+    "end": 265
+  },
+  {
+    "path": "enact/utils/state_change_translator.py",
+    "symbol": "StateChangeTranslator.translate_diff_into_signatures",
+    "line": 267,
+    "end": 289
+  },
+  {
+    "path": "enact/utils/state_change_translator.py",
+    "symbol": "StateChangeTranslator._translate_node_change_atomic",
+    "line": 291,
+    "end": 325
+  },
+  {
+    "path": "enact/utils/state_change_translator.py",
+    "symbol": "StateChangeTranslator._translate_node_change_atomic_signature",
+    "line": 327,
+    "end": 353
+  },
+  {
+    "path": "enact/utils/state_change_translator.py",
+    "symbol": "StateChangeTranslator._translate_edge_change_atomic",
+    "line": 355,
+    "end": 383
+  },
+  {
+    "path": "enact/utils/state_change_translator.py",
+    "symbol": "StateChangeTranslator._translate_edge_change_atomic_signature",
+    "line": 385,
+    "end": 412
+  },
+  {
+    "path": "enact/utils/state_change_translator.py",
+    "symbol": "StateChangeTranslator._format_object_name",
+    "line": 414,
+    "end": 457
+  },
+  {
+    "path": "enact/utils/state_change_translator.py",
+    "symbol": "StateChangeTranslator._clean_single_part",
+    "line": 459,
+    "end": 463
+  },
+  {
+    "path": "enact/utils/state_change_translator.py",
+    "symbol": "StateChangeTranslator._process_name_part",
+    "line": 465,
+    "end": 507
+  },
+  {
+    "path": "enact/utils/state_change_translator.py",
+    "symbol": "StateChangeTranslator._is_strange_string",
+    "line": 509,
+    "end": 534
+  },
+  {
+    "path": "enact/utils/state_change_translator.py",
+    "symbol": "StateChangeTranslator._remove_trailing_numbers",
+    "line": 536,
+    "end": 549
+  },
+  {
+    "path": "scripts/enact/cli.py",
+    "symbol": "segment_command",
+    "line": 17,
+    "end": 38
+  },
+  {
+    "path": "scripts/enact/cli.py",
+    "symbol": "qa_command",
+    "line": 41,
+    "end": 71
+  },
+  {
+    "path": "scripts/enact/cli.py",
+    "symbol": "eval_command",
+    "line": 74,
+    "end": 116
+  },
+  {
+    "path": "scripts/enact/cli.py",
+    "symbol": "download_command",
+    "line": 119,
+    "end": 134
+  },
+  {
+    "path": "scripts/enact/cli.py",
+    "symbol": "main",
+    "line": 137,
+    "end": 301
+  },
+  {
+    "path": "scripts/enact/run_eval.py",
+    "symbol": "main",
+    "line": 21,
+    "end": 111
+  },
+  {
+    "path": "scripts/enact/run_qa_generation.py",
+    "symbol": "main",
+    "line": 19,
+    "end": 99
+  },
+  {
+    "path": "scripts/enact/run_segmentation.py",
+    "symbol": "main",
+    "line": 21,
+    "end": 71
+  },
+  {
+    "path": "scripts/helpers/audit_usim_readiness.py",
+    "symbol": "sha256",
+    "line": 17,
+    "end": 22
+  },
+  {
+    "path": "scripts/helpers/audit_usim_readiness.py",
+    "symbol": "inventory",
+    "line": 25,
+    "end": 33
+  },
+  {
+    "path": "scripts/helpers/audit_usim_readiness.py",
+    "symbol": "audit_split",
+    "line": 36,
+    "end": 121
+  },
+  {
+    "path": "scripts/helpers/audit_usim_readiness.py",
+    "symbol": "main",
+    "line": 124,
+    "end": 174
+  },
+  {
+    "path": "scripts/helpers/download_dataset.py",
+    "symbol": "check_dependencies",
+    "line": 17,
+    "end": 34
+  },
+  {
+    "path": "scripts/helpers/download_dataset.py",
+    "symbol": "download_enact_qa",
+    "line": 37,
+    "end": 84
+  },
+  {
+    "path": "scripts/helpers/download_dataset.py",
+    "symbol": "clear_gdown_cache",
+    "line": 87,
+    "end": 97
+  },
+  {
+    "path": "scripts/helpers/download_dataset.py",
+    "symbol": "download_from_gdrive",
+    "line": 100,
+    "end": 138
+  },
+  {
+    "path": "scripts/helpers/download_dataset.py",
+    "symbol": "download_hdf5",
+    "line": 141,
+    "end": 150
+  },
+  {
+    "path": "scripts/helpers/download_dataset.py",
+    "symbol": "download_replayed",
+    "line": 153,
+    "end": 162
+  },
+  {
+    "path": "scripts/helpers/download_dataset.py",
+    "symbol": "download_segmented",
+    "line": 165,
+    "end": 174
+  },
+  {
+    "path": "scripts/helpers/download_dataset.py",
+    "symbol": "main",
+    "line": 177,
+    "end": 317
+  },
+  {
+    "path": "scripts/helpers/frame_extraction.py",
+    "symbol": "save_frame",
+    "line": 33,
+    "end": 42
+  },
+  {
+    "path": "scripts/helpers/frame_extraction.py",
+    "symbol": "decompose_video_parallel",
+    "line": 45,
+    "end": 105
+  },
+  {
+    "path": "scripts/helpers/frame_extraction.py",
+    "symbol": "extract_frames_from_task",
+    "line": 108,
+    "end": 168
+  },
+  {
+    "path": "scripts/helpers/frame_extraction.py",
+    "symbol": "process_batch",
+    "line": 171,
+    "end": 238
+  },
+  {
+    "path": "scripts/helpers/frame_extraction.py",
+    "symbol": "main",
+    "line": 241,
+    "end": 328
+  },
+  {
+    "path": "scripts/helpers/replay_hdf5.py",
+    "symbol": "extract_arg_names",
+    "line": 35,
+    "end": 37
+  },
+  {
+    "path": "scripts/helpers/replay_hdf5.py",
+    "symbol": "replay_hdf5_file",
+    "line": 42,
+    "end": 229
+  },
+  {
+    "path": "scripts/helpers/replay_hdf5.py",
+    "symbol": "main",
+    "line": 232,
+    "end": 270
+  }
+]

@@ -1,0 +1,64 @@
+{
+  "protocol_version": "usim-enact-v0.1",
+  "qa_file": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\train\\enact_ordering.jsonl",
+  "name": "baseline_empty",
+  "total_questions": 70,
+  "answered": 70,
+  "by_setting": {
+    "forward_L3": {
+      "count": 28,
+      "valid_permutations": 0,
+      "invalid_or_missing": 28,
+      "EM": 0.0,
+      "semantic_only": 0.0,
+      "TA": 0.0,
+      "PA_item_mean": 0.0,
+      "PA_transition_micro": 0.0
+    },
+    "forward_L4": {
+      "count": 7,
+      "valid_permutations": 0,
+      "invalid_or_missing": 7,
+      "EM": 0.0,
+      "semantic_only": 0.0,
+      "TA": 0.0,
+      "PA_item_mean": 0.0,
+      "PA_transition_micro": 0.0
+    },
+    "inverse_L3": {
+      "count": 28,
+      "valid_permutations": 0,
+      "invalid_or_missing": 28,
+      "EM": 0.0,
+      "semantic_only": 0.0,
+      "TA": 0.0,
+      "PA_item_mean": 0.0,
+      "PA_transition_micro": 0.0
+    },
+    "inverse_L4": {
+      "count": 7,
+      "valid_permutations": 0,
+      "invalid_or_missing": 7,
+      "EM": 0.0,
+      "semantic_only": 0.0,
+      "TA": 0.0,
+      "PA_item_mean": 0.0,
+      "PA_transition_micro": 0.0
+    }
+  },
+  "overall": {
+    "count": 70,
+    "valid_permutations": 0,
+    "invalid_or_missing": 70,
+    "EM": 0.0,
+    "semantic_only": 0.0,
+    "TA": 0.0,
+    "PA_item_mean": 0.0,
+    "PA_transition_micro": 0.0
+  },
+  "identity_reference_rate": 0.4714,
+  "answer_lengths": {
+    "2": 56,
+    "3": 14
+  }
+}

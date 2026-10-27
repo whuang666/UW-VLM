@@ -1,0 +1,29 @@
+*.egg-info/
+*.egg
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+*.pywz
+*.pyzw
+
+**/__pycache__/**
+*/logs
+**/tmp
+
+
+# Keep the compact benchmark, predictions and review records in Git.
+/data/*
+!/data/usim_enact/
+/data/usim_enact/*
+!/data/usim_enact/usim-enact-v*/
+!/data/usim_enact/runs/
+!/data/usim_enact/_review/
+
+# Review sheets/crops and ad-hoc work can be regenerated from source inputs.
+/data/usim_enact/_review/**/*.png
+/data/usim_enact/_review/**/*.jpg
+/data/usim_enact/_review/**/work/
+/data/usim_enact/_review/**/sheets/
+/data/usim_enact/_review/**/tools_out/

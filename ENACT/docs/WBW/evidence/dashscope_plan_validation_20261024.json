@@ -1,0 +1,65 @@
+{
+  "validated_at": "2026-10-24T10:54:20.484819+08:00",
+  "scope": "Documentation validation; no model calls or code execution from command templates.",
+  "files": [
+    {
+      "file": "docs\\WBR\\ENACT-USIM-DashScope-API完整实施方案-20261024.md",
+      "sha256": "a6ce273f587ee16af4a15e73a7bd7b45cf3d973585667484bac2295350b1e720",
+      "characters": 16774,
+      "lines": 367,
+      "missing_local_links": [],
+      "balanced_fences": true,
+      "has_replacement_character": false,
+      "contains_credential_pattern": false
+    },
+    {
+      "file": "docs\\WBW\\ENACT-USIM-API方案重写记录-20261024.md",
+      "sha256": "463e38d5ff8b2d51885877e03aa5ca232e1d96e870735d0ffcb44bbadb038aae",
+      "characters": 1221,
+      "lines": 23,
+      "missing_local_links": [],
+      "balanced_fences": true,
+      "has_replacement_character": false,
+      "contains_credential_pattern": false
+    },
+    {
+      "file": "docs\\WBR\\ENACT-USIM试运行后续流程方案-20261024.md",
+      "sha256": "039d22fc1a4e577efe91f11b0fa2e0ed8ffa1658e7d4031a6b51aceb2b4398c8",
+      "characters": 10130,
+      "lines": 220,
+      "missing_local_links": [],
+      "balanced_fences": true,
+      "has_replacement_character": false,
+      "contains_credential_pattern": false
+    },
+    {
+      "file": "docs\\WBW\\ENACT-USIM试运行复核与补充清单-20261024.md",
+      "sha256": "98cdf5558484a964666181f1951b0c61eeaa6ed5b13e1c38690161130f7485f3",
+      "characters": 6902,
+      "lines": 104,
+      "missing_local_links": [],
+      "balanced_fences": true,
+      "has_replacement_character": false,
+      "contains_credential_pattern": false
+    },
+    {
+      "file": "docs\\README.md",
+      "sha256": "95835fc2b015a0726c67750c50a867199cecdefbb0e82b6d6644a1efec948ed5",
+      "characters": 2213,
+      "lines": 45,
+      "missing_local_links": [],
+      "balanced_fences": true,
+      "has_replacement_character": false,
+      "contains_credential_pattern": false
+    }
+  ],
+  "trial_sources_and_artifacts_unchanged": true,
+  "current_download_snapshot": {
+    "commit": "88c3612bf99d10652f19ec531052a38c04f0202e",
+    "file_count": 6840,
+    "complete": true
+  },
+  "authenticated_api_called": false,
+  "runner_modified": false,
+  "scorer_modified": false
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "path": "E:\\code\\UW-VLM\\usim\\test\\videos\\chunk-000\\observation.images.ego\\episode_000000.mp4",
+    "present": true,
+    "opened": true,
+    "frame_count_reported": 158,
+    "fps_reported": 10.0,
+    "samples": [
+      {
+        "frame_index": 0,
+        "decoded": true
+      },
+      {
+        "frame_index": 79,
+        "decoded": true
+      },
+      {
+        "frame_index": 157,
+        "decoded": true
+      }
+    ]
+  },
+  {
+    "path": "E:\\code\\UW-VLM\\usim\\test\\videos\\chunk-000\\observation.images.ego\\episode_000222.mp4",
+    "present": true,
+    "opened": true,
+    "frame_count_reported": 622,
+    "fps_reported": 10.0,
+    "samples": [
+      {
+        "frame_index": 0,
+        "decoded": true
+      },
+      {
+        "frame_index": 311,
+        "decoded": true
+      },
+      {
+        "frame_index": 621,
+        "decoded": true
+      }
+    ]
+  },
+  {
+    "path": "E:\\code\\UW-VLM\\usim\\test\\videos\\chunk-000\\observation.images.ego\\episode_000445.mp4",
+    "present": true,
+    "opened": true,
+    "frame_count_reported": 247,
+    "fps_reported": 10.0,
+    "samples": [
+      {
+        "frame_index": 0,
+        "decoded": true
+      },
+      {
+        "frame_index": 123,
+        "decoded": true
+      },
+      {
+        "frame_index": 246,
+        "decoded": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,100 @@
+{
+  "dataset_version": "usim-enact-v0.1",
+  "evaluation_protocol": "usim_strict_v0.2",
+  "qa_file": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\_scratch\\v02_pipeline_test\\data\\QA\\train\\enact_ordering.jsonl",
+  "name": "baseline_oracle",
+  "total_questions": 32,
+  "answered": 32,
+  "by_setting": {
+    "forward_L3": {
+      "count": 10,
+      "valid_permutations": 10,
+      "invalid_or_missing": 0,
+      "invalid_reasons": {},
+      "EM": 1.0,
+      "semantic_only": 0.0,
+      "TA": 1.0,
+      "PA_item_mean": 1.0,
+      "PA_transition_micro": 1.0,
+      "transitions_total": 20
+    },
+    "forward_L4": {
+      "count": 5,
+      "valid_permutations": 5,
+      "invalid_or_missing": 0,
+      "invalid_reasons": {},
+      "EM": 1.0,
+      "semantic_only": 0.0,
+      "TA": 1.0,
+      "PA_item_mean": 1.0,
+      "PA_transition_micro": 1.0,
+      "transitions_total": 15
+    },
+    "forward_L5": {
+      "count": 1,
+      "valid_permutations": 1,
+      "invalid_or_missing": 0,
+      "invalid_reasons": {},
+      "EM": 1.0,
+      "semantic_only": 0.0,
+      "TA": 1.0,
+      "PA_item_mean": 1.0,
+      "PA_transition_micro": 1.0,
+      "transitions_total": 4
+    },
+    "inverse_L3": {
+      "count": 10,
+      "valid_permutations": 10,
+      "invalid_or_missing": 0,
+      "invalid_reasons": {},
+      "EM": 1.0,
+      "semantic_only": 0.0,
+      "TA": 1.0,
+      "PA_item_mean": 1.0,
+      "PA_transition_micro": 1.0,
+      "transitions_total": 20
+    },
+    "inverse_L4": {
+      "count": 5,
+      "valid_permutations": 5,
+      "invalid_or_missing": 0,
+      "invalid_reasons": {},
+      "EM": 1.0,
+      "semantic_only": 0.0,
+      "TA": 1.0,
+      "PA_item_mean": 1.0,
+      "PA_transition_micro": 1.0,
+      "transitions_total": 15
+    },
+    "inverse_L5": {
+      "count": 1,
+      "valid_permutations": 1,
+      "invalid_or_missing": 0,
+      "invalid_reasons": {},
+      "EM": 1.0,
+      "semantic_only": 0.0,
+      "TA": 1.0,
+      "PA_item_mean": 1.0,
+      "PA_transition_micro": 1.0,
+      "transitions_total": 4
+    }
+  },
+  "overall": {
+    "count": 32,
+    "valid_permutations": 32,
+    "invalid_or_missing": 0,
+    "invalid_reasons": {},
+    "EM": 1.0,
+    "semantic_only": 0.0,
+    "TA": 1.0,
+    "PA_item_mean": 1.0,
+    "PA_transition_micro": 1.0,
+    "transitions_total": 78
+  },
+  "identity_reference_rate": 0.3125,
+  "answer_lengths": {
+    "2": 20,
+    "3": 10,
+    "4": 2
+  }
+}

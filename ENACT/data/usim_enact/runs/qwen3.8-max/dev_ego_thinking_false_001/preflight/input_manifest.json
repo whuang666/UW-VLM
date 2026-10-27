@@ -1,0 +1,31 @@
+{
+  "qa": "data\\usim_enact\\runs\\qwen3.8-max\\dev_ego_thinking_false_001\\inputs\\preflight.jsonl",
+  "qa_sha256": "6eb6f43a1fd4f1e9bdd4a171df47f5c05689799880ddd30e2a250a119130c3b9",
+  "records": [
+    {
+      "id": "usim_train_episode_000200_forward_world_modeling_4_steps_ea4ca751",
+      "images": [
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000200\\usim_train_episode_000200_forward_world_modeling_4_steps_ea4ca751_cur_state.png",
+          "sha256": "1786de7ef5a305f598b67d2543c0fd771b248c99022608f1c93846fb5e93c8f0",
+          "bytes": 50032
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000200\\usim_train_episode_000200_forward_world_modeling_4_steps_ea4ca751_next_state_1.png",
+          "sha256": "88c000fa04ab2e67304c3f554b78405d6c3927375b54e83e5eaee75cd8a0a42a",
+          "bytes": 51602
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000200\\usim_train_episode_000200_forward_world_modeling_4_steps_ea4ca751_next_state_2.png",
+          "sha256": "455a965fa036b9c3204fa134e1d64ecf4bf11665023360729c9137ed3d1f8a8c",
+          "bytes": 52540
+        },
+        {
+          "path": "QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_000200\\usim_train_episode_000200_forward_world_modeling_4_steps_ea4ca751_next_state_3.png",
+          "sha256": "21b7f9df7531c41ceb38c86d60243ac2808987e1884fca7466d47bbf675614a5",
+          "bytes": 50662
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "reviewer": "reviewer_a",
+  "pass": 1,
+  "locked_at": "2026-10-27T16:31:16+08:00",
+  "note": "Pass-1 盲评文件先写盘并登记哈希；读取 annotations 是在此之后。",
+  "files": {
+    "pass1/summary.json": "1ae92dfebf02d4f8785464fcc53fc77ee829c3253ac183914c51a0b4de8f1eb2",
+    "pass1/usim_train_episode_000200.json": "730d6625a8fbd3029bed253f44cbbf6efe5588d8e1713cad5afe0ae6ba9e18ce",
+    "pass1/usim_train_episode_000201.json": "4b83dcd065b0dc4a68700bc44fbba7a6a79d9fe44ce30f717b40d7ed96224bec",
+    "pass1/usim_train_episode_000552.json": "e1f5b383b178e227863d6a95ae92838913918d3a0aec7c64c6fc4b43a546570e"
+  }
+}

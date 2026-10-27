@@ -1,0 +1,40 @@
+{
+  "observed_at": "2026-10-23T21:07:31.458562+08:00",
+  "scope": "A live file inventory only; not a completed-download or video-integrity certificate.",
+  "audit_source_unchanged_during_scan": false,
+  "audit_finished_at_utc": "2026-10-23T13:06:29.550996+00:00",
+  "splits": {
+    "train": {
+      "present": true,
+      "parquet_files": 947,
+      "video_files": 0,
+      "videos_by_camera": {},
+      "metadata_present": {
+        "info.json": false,
+        "modality.json": false,
+        "tasks.jsonl": false,
+        "episodes.jsonl": false,
+        "episodes_stats.jsonl": false
+      },
+      "audited_parquet_files": 768,
+      "audited_parquet_rows": 292382
+    },
+    "test": {
+      "present": true,
+      "parquet_files": 525,
+      "video_files": 461,
+      "videos_by_camera": {
+        "observation.images.ego": 461
+      },
+      "metadata_present": {
+        "info.json": true,
+        "modality.json": true,
+        "tasks.jsonl": true,
+        "episodes.jsonl": true,
+        "episodes_stats.jsonl": true
+      },
+      "audited_parquet_files": 525,
+      "audited_parquet_rows": 208605
+    }
+  }
+}

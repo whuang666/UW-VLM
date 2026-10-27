@@ -1,0 +1,32 @@
+{
+  "purpose": "synthetic 5-frame episode to validate L=5 pipeline with existing code",
+  "method": "episode 000200 real frames 140/213/248/328 + fabricated contact frame 240 (Touching)",
+  "caution": "labels are synthetic pipeline-test labels, NOT research ground truth",
+  "frames": [
+    140,
+    213,
+    240,
+    248,
+    328
+  ],
+  "qa_counts": {
+    "forward_world_modeling_3_steps": 10,
+    "forward_world_modeling_4_steps": 5,
+    "forward_world_modeling_5_steps": 1,
+    "inverse_world_modeling_3_steps": 10,
+    "inverse_world_modeling_4_steps": 5,
+    "inverse_world_modeling_5_steps": 1
+  },
+  "oracle": {
+    "forward_L3": 1.0,
+    "forward_L4": 1.0,
+    "forward_L5": 1.0,
+    "inverse_L3": 1.0,
+    "inverse_L4": 1.0,
+    "inverse_L5": 1.0,
+    "overall": 1.0
+  },
+  "finding": "existing build_dataset -> build_qa --step-lengths 5 -> evaluate works; L=5 supported without code changes",
+  "next": "v0.2 annotation policy: 5-6 key frames per episode => C(5,3)=10 L3, C(5,4)=5 L4, 1 L5 per direction per episode (before curation)",
+  "scratch_root": "data\\usim_enact\\_scratch\\v02_pipeline_test"
+}

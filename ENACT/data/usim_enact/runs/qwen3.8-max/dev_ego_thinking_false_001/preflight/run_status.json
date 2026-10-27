@@ -1,0 +1,13 @@
+{
+  "state": "completed_with_failures",
+  "abort_reason": null,
+  "planned": 1,
+  "answered": 1,
+  "success": 0,
+  "truncated": 1,
+  "invalid": 0,
+  "failed": 0,
+  "missing": 0,
+  "finished_at": "2026-10-24T12:43:33+08:00",
+  "config": "data\\usim_enact\\runs\\qwen3.8-max\\dev_ego_thinking_false_001\\preflight\\run_config.json"
+}

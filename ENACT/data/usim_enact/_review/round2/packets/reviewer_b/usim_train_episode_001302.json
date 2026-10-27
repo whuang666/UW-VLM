@@ -1,0 +1,235 @@
+{
+  "packet_version": "blind-review-20261027",
+  "episode_key": "usim_train_episode_001302",
+  "source_split": "train",
+  "episode_index": 1302,
+  "task_index": 7,
+  "task_text": "Pick up the red cylinder and transfer it to the box",
+  "objects": [
+    {
+      "object_id": "robot",
+      "category": "agent",
+      "description": "the robot"
+    },
+    {
+      "object_id": "red_cylinder",
+      "category": "cylinder",
+      "color": "red",
+      "description": "the red cylinder"
+    }
+  ],
+  "relation_scope": [
+    [
+      "OnSeabed",
+      "red_cylinder"
+    ],
+    [
+      "InGripper",
+      "red_cylinder"
+    ],
+    [
+      "Lifted",
+      "red_cylinder"
+    ],
+    [
+      "NextTo",
+      "robot",
+      "red_cylinder"
+    ]
+  ],
+  "key_frames": [
+    {
+      "frame_index": 150,
+      "timestamp_seconds": 15.0,
+      "raw_image": "ENACT\\data\\usim_enact\\usim-enact-v0.1\\replayed_activities\\usim_train_episode_001302\\external_sensor1\\00150.png",
+      "segmented_image": "ENACT\\data\\usim_enact\\usim-enact-v0.1\\segmented_activities\\usim_train_episode_001302\\external_sensor1\\00150.png",
+      "raw_image_sha256": "3cf1fbfe3d36eef252e4e2f7e89048aeb725823c8439eb6c0fd013903ce27345"
+    },
+    {
+      "frame_index": 168,
+      "timestamp_seconds": 16.8,
+      "raw_image": "ENACT\\data\\usim_enact\\usim-enact-v0.1\\replayed_activities\\usim_train_episode_001302\\external_sensor1\\00168.png",
+      "segmented_image": "ENACT\\data\\usim_enact\\usim-enact-v0.1\\segmented_activities\\usim_train_episode_001302\\external_sensor1\\00168.png",
+      "raw_image_sha256": "5f0869b777a1a4578281bbb1b3aabf08de61a5a0818ed9042a427a231444eb31"
+    },
+    {
+      "frame_index": 196,
+      "timestamp_seconds": 19.6,
+      "raw_image": "ENACT\\data\\usim_enact\\usim-enact-v0.1\\replayed_activities\\usim_train_episode_001302\\external_sensor1\\00196.png",
+      "segmented_image": "ENACT\\data\\usim_enact\\usim-enact-v0.1\\segmented_activities\\usim_train_episode_001302\\external_sensor1\\00196.png",
+      "raw_image_sha256": "3e2a9798cd7b0a4093d12f72b5421eac78f5887dd3373bd45dbf6daa3dee002e"
+    },
+    {
+      "frame_index": 415,
+      "timestamp_seconds": 41.5,
+      "raw_image": "ENACT\\data\\usim_enact\\usim-enact-v0.1\\replayed_activities\\usim_train_episode_001302\\external_sensor1\\00415.png",
+      "segmented_image": "ENACT\\data\\usim_enact\\usim-enact-v0.1\\segmented_activities\\usim_train_episode_001302\\external_sensor1\\00415.png",
+      "raw_image_sha256": "94a9b0325212abdf8f35f50cbc99377c8e01ed0cc3d4dc3690be568aa2c0a464"
+    }
+  ],
+  "qa_usage": [
+    {
+      "id": "usim_train_episode_001302_forward_world_modeling_3_steps_6ddf9c86",
+      "type": "forward_world_modeling_3_steps",
+      "num_images": 3,
+      "images": [
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_6ddf9c86_cur_state.png",
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_6ddf9c86_next_state_1.png",
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_6ddf9c86_next_state_2.png"
+      ],
+      "chronological_frame_ids": [
+        "150",
+        "168",
+        "415"
+      ]
+    },
+    {
+      "id": "usim_train_episode_001302_forward_world_modeling_3_steps_761d65c7",
+      "type": "forward_world_modeling_3_steps",
+      "num_images": 3,
+      "images": [
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_761d65c7_cur_state.png",
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_761d65c7_next_state_1.png",
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_761d65c7_next_state_2.png"
+      ],
+      "chronological_frame_ids": [
+        "150",
+        "196",
+        "415"
+      ]
+    },
+    {
+      "id": "usim_train_episode_001302_forward_world_modeling_3_steps_160b8525",
+      "type": "forward_world_modeling_3_steps",
+      "num_images": 3,
+      "images": [
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_160b8525_cur_state.png",
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_160b8525_next_state_1.png",
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_160b8525_next_state_2.png"
+      ],
+      "chronological_frame_ids": [
+        "150",
+        "168",
+        "196"
+      ]
+    },
+    {
+      "id": "usim_train_episode_001302_forward_world_modeling_3_steps_094f02f6",
+      "type": "forward_world_modeling_3_steps",
+      "num_images": 3,
+      "images": [
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_094f02f6_cur_state.png",
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_094f02f6_next_state_1.png",
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\forward_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_3_steps_094f02f6_next_state_2.png"
+      ],
+      "chronological_frame_ids": [
+        "168",
+        "196",
+        "415"
+      ]
+    },
+    {
+      "id": "usim_train_episode_001302_forward_world_modeling_4_steps_68512d26",
+      "type": "forward_world_modeling_4_steps",
+      "num_images": 4,
+      "images": [
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_4_steps_68512d26_cur_state.png",
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_4_steps_68512d26_next_state_1.png",
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_4_steps_68512d26_next_state_2.png",
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\forward_world_modeling_4_steps\\usim_train_episode_001302\\usim_train_episode_001302_forward_world_modeling_4_steps_68512d26_next_state_3.png"
+      ],
+      "chronological_frame_ids": [
+        "150",
+        "168",
+        "196",
+        "415"
+      ]
+    },
+    {
+      "id": "usim_train_episode_001302_inverse_world_modeling_3_steps_761d65c7",
+      "type": "inverse_world_modeling_3_steps",
+      "num_images": 3,
+      "images": [
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_761d65c7_cur_state.png",
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_761d65c7_next_state_1.png",
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_761d65c7_next_state_2.png"
+      ],
+      "chronological_frame_ids": [
+        "150",
+        "196",
+        "415"
+      ]
+    },
+    {
+      "id": "usim_train_episode_001302_inverse_world_modeling_3_steps_160b8525",
+      "type": "inverse_world_modeling_3_steps",
+      "num_images": 3,
+      "images": [
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_160b8525_cur_state.png",
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_160b8525_next_state_1.png",
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_160b8525_next_state_2.png"
+      ],
+      "chronological_frame_ids": [
+        "150",
+        "168",
+        "196"
+      ]
+    },
+    {
+      "id": "usim_train_episode_001302_inverse_world_modeling_3_steps_094f02f6",
+      "type": "inverse_world_modeling_3_steps",
+      "num_images": 3,
+      "images": [
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_094f02f6_cur_state.png",
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_094f02f6_next_state_1.png",
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_094f02f6_next_state_2.png"
+      ],
+      "chronological_frame_ids": [
+        "168",
+        "196",
+        "415"
+      ]
+    },
+    {
+      "id": "usim_train_episode_001302_inverse_world_modeling_3_steps_6ddf9c86",
+      "type": "inverse_world_modeling_3_steps",
+      "num_images": 3,
+      "images": [
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_6ddf9c86_cur_state.png",
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_6ddf9c86_next_state_1.png",
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\inverse_world_modeling_3_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_3_steps_6ddf9c86_next_state_2.png"
+      ],
+      "chronological_frame_ids": [
+        "150",
+        "168",
+        "415"
+      ]
+    },
+    {
+      "id": "usim_train_episode_001302_inverse_world_modeling_4_steps_68512d26",
+      "type": "inverse_world_modeling_4_steps",
+      "num_images": 4,
+      "images": [
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_4_steps_68512d26_cur_state.png",
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_4_steps_68512d26_next_state_1.png",
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_4_steps_68512d26_next_state_2.png",
+        "ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\images\\inverse_world_modeling_4_steps\\usim_train_episode_001302\\usim_train_episode_001302_inverse_world_modeling_4_steps_68512d26_next_state_3.png"
+      ],
+      "chronological_frame_ids": [
+        "150",
+        "168",
+        "196",
+        "415"
+      ]
+    }
+  ],
+  "source_media": {
+    "video_ego": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.ego\\episode_001302.mp4",
+    "parquet": "E:\\code\\UW-VLM\\usim\\train\\data\\chunk-001\\episode_001302.parquet",
+    "dataset": "USIM LeRobot v2.1, split=train, camera=ego, 10 fps, 320x240"
+  },
+  "disclosure": {
+    "facts_hidden": true,
+    "note": "关系 scope 已给出，但逐帧取值、标注备注、动作文本与参考答案均未提供。"
+  }
+}

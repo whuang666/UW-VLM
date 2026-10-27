@@ -1,0 +1,79 @@
+{
+  "protocol_version": "usim-enact-v0.1",
+  "data_root": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\usim-enact-v0.1",
+  "output": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\usim-enact-v0.1\\QA\\train\\enact_ordering.jsonl",
+  "episodes": 7,
+  "episode_keys": [
+    "usim_train_episode_000200",
+    "usim_train_episode_000201",
+    "usim_train_episode_000552",
+    "usim_train_episode_000553",
+    "usim_train_episode_000555",
+    "usim_train_episode_000556",
+    "usim_train_episode_001302"
+  ],
+  "num_to_sample": 25,
+  "total": 70,
+  "by_setting": [
+    {
+      "direction": "forward",
+      "step_length": 3,
+      "qa_type": "forward_world_modeling_3_steps",
+      "count": 28,
+      "per_episode": {
+        "usim_train_episode_000200": 4,
+        "usim_train_episode_000201": 4,
+        "usim_train_episode_000552": 4,
+        "usim_train_episode_000553": 4,
+        "usim_train_episode_000555": 4,
+        "usim_train_episode_000556": 4,
+        "usim_train_episode_001302": 4
+      }
+    },
+    {
+      "direction": "forward",
+      "step_length": 4,
+      "qa_type": "forward_world_modeling_4_steps",
+      "count": 7,
+      "per_episode": {
+        "usim_train_episode_000200": 1,
+        "usim_train_episode_000201": 1,
+        "usim_train_episode_000552": 1,
+        "usim_train_episode_000553": 1,
+        "usim_train_episode_000555": 1,
+        "usim_train_episode_000556": 1,
+        "usim_train_episode_001302": 1
+      }
+    },
+    {
+      "direction": "inverse",
+      "step_length": 3,
+      "qa_type": "inverse_world_modeling_3_steps",
+      "count": 28,
+      "per_episode": {
+        "usim_train_episode_000200": 4,
+        "usim_train_episode_000201": 4,
+        "usim_train_episode_000552": 4,
+        "usim_train_episode_000553": 4,
+        "usim_train_episode_000555": 4,
+        "usim_train_episode_000556": 4,
+        "usim_train_episode_001302": 4
+      }
+    },
+    {
+      "direction": "inverse",
+      "step_length": 4,
+      "qa_type": "inverse_world_modeling_4_steps",
+      "count": 7,
+      "per_episode": {
+        "usim_train_episode_000200": 1,
+        "usim_train_episode_000201": 1,
+        "usim_train_episode_000552": 1,
+        "usim_train_episode_000553": 1,
+        "usim_train_episode_000555": 1,
+        "usim_train_episode_000556": 1,
+        "usim_train_episode_001302": 1
+      }
+    }
+  ]
+}

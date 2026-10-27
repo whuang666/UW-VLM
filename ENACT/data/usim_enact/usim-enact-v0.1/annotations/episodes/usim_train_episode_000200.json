@@ -1,0 +1,257 @@
+{
+  "protocol_version": "usim-enact-v0.1",
+  "episode_key": "usim_train_episode_000200",
+  "source_split": "train",
+  "episode_index": 200,
+  "task_index": 2,
+  "task_text": "Pick up the blue cylinder",
+  "label_source": "agent_visual_review",
+  "annotation_status": "reviewed",
+  "notes": "Blue cylinder (purple in the ego stream). A red cylinder is also present but is not a manipulated object in this protocol.",
+  "objects": [
+    {
+      "object_id": "robot",
+      "category": "agent",
+      "description": "the robot"
+    },
+    {
+      "object_id": "blue_cylinder",
+      "category": "cylinder",
+      "color": "blue",
+      "description": "the blue cylinder"
+    }
+  ],
+  "relations": [
+    [
+      "OnSeabed",
+      "blue_cylinder"
+    ],
+    [
+      "InGripper",
+      "blue_cylinder"
+    ],
+    [
+      "Lifted",
+      "blue_cylinder"
+    ],
+    [
+      "NextTo",
+      "robot",
+      "blue_cylinder"
+    ]
+  ],
+  "frames": [
+    {
+      "frame_index": 140,
+      "timestamp_seconds": 14.0,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "gripper_signal+frame_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ]
+    },
+    {
+      "frame_index": 213,
+      "timestamp_seconds": 21.3,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "gripper_signal+frame_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "blue_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ]
+    },
+    {
+      "frame_index": 248,
+      "timestamp_seconds": 24.8,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": true,
+          "evidence": "gripper_signal+frame_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ]
+    },
+    {
+      "frame_index": 328,
+      "timestamp_seconds": 32.8,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": true,
+          "evidence": "gripper_signal+frame_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ]
+    }
+  ]
+}

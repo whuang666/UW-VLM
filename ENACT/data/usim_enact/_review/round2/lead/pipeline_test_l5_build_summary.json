@@ -1,0 +1,67 @@
+{
+  "protocol_version": "usim-enact-v0.1",
+  "data_root": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\_scratch\\v02_pipeline_test\\data",
+  "output": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\_scratch\\v02_pipeline_test\\data\\QA\\train\\enact_ordering.jsonl",
+  "episodes": 1,
+  "episode_keys": [
+    "usim_train_episode_000200"
+  ],
+  "num_to_sample": 25,
+  "total": 32,
+  "by_setting": [
+    {
+      "direction": "forward",
+      "step_length": 3,
+      "qa_type": "forward_world_modeling_3_steps",
+      "count": 10,
+      "per_episode": {
+        "usim_train_episode_000200": 10
+      }
+    },
+    {
+      "direction": "forward",
+      "step_length": 4,
+      "qa_type": "forward_world_modeling_4_steps",
+      "count": 5,
+      "per_episode": {
+        "usim_train_episode_000200": 5
+      }
+    },
+    {
+      "direction": "forward",
+      "step_length": 5,
+      "qa_type": "forward_world_modeling_5_steps",
+      "count": 1,
+      "per_episode": {
+        "usim_train_episode_000200": 1
+      }
+    },
+    {
+      "direction": "inverse",
+      "step_length": 3,
+      "qa_type": "inverse_world_modeling_3_steps",
+      "count": 10,
+      "per_episode": {
+        "usim_train_episode_000200": 10
+      }
+    },
+    {
+      "direction": "inverse",
+      "step_length": 4,
+      "qa_type": "inverse_world_modeling_4_steps",
+      "count": 5,
+      "per_episode": {
+        "usim_train_episode_000200": 5
+      }
+    },
+    {
+      "direction": "inverse",
+      "step_length": 5,
+      "qa_type": "inverse_world_modeling_5_steps",
+      "count": 1,
+      "per_episode": {
+        "usim_train_episode_000200": 1
+      }
+    }
+  ]
+}

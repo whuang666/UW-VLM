@@ -1,0 +1,78 @@
+{
+  "reviewer": "reviewer_a",
+  "pass": 1,
+  "blind": true,
+  "packet_version": "blind-review-20261027",
+  "generated_at": "2026-10-27T16:31:16+08:00",
+  "episodes": {
+    "usim_train_episode_000200": {
+      "frames": 4,
+      "relations": 16,
+      "true": 8,
+      "false": 6,
+      "undecidable": 2,
+      "file": "pass1/usim_train_episode_000200.json",
+      "sha256": "730d6625a8fbd3029bed253f44cbbf6efe5588d8e1713cad5afe0ae6ba9e18ce"
+    },
+    "usim_train_episode_000201": {
+      "frames": 4,
+      "relations": 16,
+      "true": 8,
+      "false": 7,
+      "undecidable": 1,
+      "file": "pass1/usim_train_episode_000201.json",
+      "sha256": "4b83dcd065b0dc4a68700bc44fbba7a6a79d9fe44ce30f717b40d7ed96224bec"
+    },
+    "usim_train_episode_000552": {
+      "frames": 4,
+      "relations": 16,
+      "true": 9,
+      "false": 6,
+      "undecidable": 1,
+      "file": "pass1/usim_train_episode_000552.json",
+      "sha256": "e1f5b383b178e227863d6a95ae92838913918d3a0aec7c64c6fc4b43a546570e"
+    }
+  },
+  "totals": {
+    "frames": 12,
+    "relations": 48,
+    "true": 25,
+    "false": 19,
+    "undecidable": 4,
+    "ego_only_yes": 20,
+    "ego_only_partial": 24,
+    "ego_only_no": 4
+  },
+  "predicate_counts": {
+    "OnSeabed": {
+      "true": 5,
+      "false": 3,
+      "undecidable": 4
+    },
+    "InGripper": {
+      "true": 6,
+      "false": 6,
+      "undecidable": 0
+    },
+    "Lifted": {
+      "true": 3,
+      "false": 9,
+      "undecidable": 0
+    },
+    "NextTo": {
+      "true": 11,
+      "false": 1,
+      "undecidable": 0
+    }
+  },
+  "key_findings": [
+    "QA 图 = raw 帧 + 左上角烧录标签（Current State / Next State N，bbox 最大 [7,9,160,29]）；主体区域未被遮挡，因此 raw 帧可作为等价像素证据。",
+    "ego 视频为保持式渲染：ep200 343 帧仅 42 个唯一画面、ep201 368→35、ep552 374→38；每个画面保持约 8–14 帧。±10~20 帧的『邻近帧』多数与关键帧同画面，不能提供额外时间信息。",
+    "12 个关键帧全部落在保持段内部（非渲染更新帧），画面静态 12–26 帧，因此『稳定』成立；但 f140/f213/f244/f249 等处于接触/抓取进行中，属过渡语义状态。",
+    "关键帧的 4 状态序列与『on seabed → next to → grasped → lifted』生命周期大体吻合；但 4 个谓词是否在两两之间都产生净变化，取决于 OnSeabed 与 NextTo 的定义。",
+    "Lifted 在 ego 单帧上证据最弱：上浮仅约 15 cm（辅助信号 dvl_h 0.23→0.40，仅作旁证），单帧无法标定离底高度；需要同题跨帧比较或 wrist 视角。",
+    "ep552 120→249：按自然几何 NextTo 语义，两帧四个谓词取值相同，相邻转移可能是空转移 —— 需在 pass2 与标注对照、pass3 用视频/信号裁决。"
+  ],
+  "nextto_semantic_note": "NextTo 存在定义歧义：若按几何接近（robot 末端与 object 的距离小于阈值/接触），则抓住后仍为 true；若按『尚未接触的接近阶段』，则抓住后应为 false。本 pass1 按自然几何语义判定，并在 pass2 对照 v0.1 标注、pass3 给出裁决。",
+  "pass2_gate": "本 summary 写盘后才读取 annotations/episodes/*.json。"
+}

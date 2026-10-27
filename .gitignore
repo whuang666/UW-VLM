@@ -1,0 +1,54 @@
+# Original USIM snapshot stays on Hugging Face; retain its card and provenance.
+/usim/*
+!/usim/README.md
+!/usim/_download_manifest.json
+
+# Local download cache: publish reproducibility evidence, not transfer settings.
+/tools/_hfcache/*
+!/tools/_hfcache/expected.json
+!/tools/_hfcache/verification.json
+!/tools/_hfcache/readability.json
+
+# Credentials, local agent state, environments and generated caches.
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+secrets*.json
+.workbuddy/
+.codex/
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
+*.incomplete
+*.tmp
+*.log
+
+# Raw recordings, model weights and archives belong in external storage.
+*.mp4
+*.avi
+*.mov
+*.parquet
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.zip
+*.tar
+*.tar.gz
+*.7z

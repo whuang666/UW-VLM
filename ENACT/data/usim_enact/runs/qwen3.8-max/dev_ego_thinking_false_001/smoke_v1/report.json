@@ -1,0 +1,75 @@
+{
+  "dataset_version": "usim-enact-v0.1",
+  "evaluation_protocol": "usim_strict_v0.2",
+  "qa_file": "data\\usim_enact\\runs\\qwen3.8-max\\dev_ego_thinking_false_001\\inputs\\smoke.jsonl",
+  "name": "smoke_v1",
+  "total_questions": 20,
+  "answered": 20,
+  "by_setting": {
+    "forward_L3": {
+      "count": 5,
+      "valid_permutations": 5,
+      "invalid_or_missing": 0,
+      "invalid_reasons": {},
+      "EM": 1.0,
+      "semantic_only": 0.0,
+      "TA": 1.0,
+      "PA_item_mean": 1.0,
+      "PA_transition_micro": 1.0,
+      "transitions_total": 10
+    },
+    "forward_L4": {
+      "count": 5,
+      "valid_permutations": 5,
+      "invalid_or_missing": 0,
+      "invalid_reasons": {},
+      "EM": 0.8,
+      "semantic_only": 0.0,
+      "TA": 0.8,
+      "PA_item_mean": 0.8667,
+      "PA_transition_micro": 0.8667,
+      "transitions_total": 15
+    },
+    "inverse_L3": {
+      "count": 5,
+      "valid_permutations": 5,
+      "invalid_or_missing": 0,
+      "invalid_reasons": {},
+      "EM": 1.0,
+      "semantic_only": 0.0,
+      "TA": 1.0,
+      "PA_item_mean": 1.0,
+      "PA_transition_micro": 1.0,
+      "transitions_total": 10
+    },
+    "inverse_L4": {
+      "count": 5,
+      "valid_permutations": 5,
+      "invalid_or_missing": 0,
+      "invalid_reasons": {},
+      "EM": 1.0,
+      "semantic_only": 0.0,
+      "TA": 1.0,
+      "PA_item_mean": 1.0,
+      "PA_transition_micro": 1.0,
+      "transitions_total": 15
+    }
+  },
+  "overall": {
+    "count": 20,
+    "valid_permutations": 20,
+    "invalid_or_missing": 0,
+    "invalid_reasons": {},
+    "EM": 0.95,
+    "semantic_only": 0.0,
+    "TA": 0.95,
+    "PA_item_mean": 0.9667,
+    "PA_transition_micro": 0.96,
+    "transitions_total": 50
+  },
+  "identity_reference_rate": 0.55,
+  "answer_lengths": {
+    "2": 10,
+    "3": 10
+  }
+}

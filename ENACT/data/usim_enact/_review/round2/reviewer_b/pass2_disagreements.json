@@ -1,0 +1,2340 @@
+{
+  "reviewer": "reviewer_b",
+  "pass": "pass2_compare",
+  "annotation_dir": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\usim-enact-v0.1\\annotations\\episodes",
+  "pass1_dir": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\_review\\round2\\reviewer_b\\pass1",
+  "matches": {
+    "relation": [
+      47,
+      64
+    ],
+    "visibility": [
+      30,
+      32
+    ]
+  },
+  "episodes": {
+    "usim_train_episode_000553": {
+      "task_text": "Pick up the red cylinder",
+      "frames": {
+        "110": {
+          "relations": {
+            "OnSeabed(red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "true",
+              "confidence": "low",
+              "agree": true,
+              "ego_only_decidable": false,
+              "evidence": "Red cylinder visible only as a clipped bar at the bottom edge (bbox x224-246, y204-240; bottom cut by frame border). Visible part lies inside the bright seabed light patch with no water gap; the actual support/contact point is outside the image, so contact cannot be directly verified."
+            },
+            "InGripper(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Gripper (jaws open, image centre ~x100,y110) is >100 px away from the cylinder; object is not between the jaws and no jaw occlusion."
+            },
+            "Lifted(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "low",
+              "agree": true,
+              "ego_only_decidable": false,
+              "evidence": "No lift evidence; object appears in the seabed plane. But the lower half of the object is cut by the frame, so a gap cannot be excluded from this image alone."
+            },
+            "NextTo(robot,red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "true",
+              "confidence": "medium",
+              "agree": false,
+              "ego_only_decidable": "partial",
+              "evidence": "Robot arm/gripper is directly above the target and the cylinder appears large and sharp at the bottom edge (near field, consistent with the robot hovering over it ~0.5-1 m). Proximity inferred from apparent size/perspective, not from a metric distance."
+            }
+          },
+          "visibility": {
+            "robot": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Manipulator + open gripper fill the upper-centre of the image; only the arm/end effector is in view (vehicle body is out of frame / dark silhouette at left).",
+              "agree": true
+            },
+            "red_cylinder": {
+              "annotation": true,
+              "reviewer_pass1": "partial",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Only the upper part of the cylinder is inside the frame; the bottom edge of the object is clipped by y=239.",
+              "agree": true
+            }
+          }
+        },
+        "140": {
+          "relations": {
+            "OnSeabed(red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Cylinder lies diagonally on the lit seabed directly under the gripper; the lower body merges with the bright seabed and the contact shadow is tight (no water gap)."
+            },
+            "InGripper(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Jaws are still open and straddle the cylinder (fingertips on both sides, ~2-5 px clear of the surface); grip command starts only at frame 149, so the object is not clamped. It is positioned between the jaw tips but not held."
+            },
+            "Lifted(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Cylinder is in direct contact with the seabed; no gap, no displaced shadow."
+            },
+            "NextTo(robot,red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Gripper fingertips are within a few pixels of the cylinder (jaw opening straddles it): interaction distance."
+            }
+          },
+          "visibility": {
+            "robot": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Manipulator and open gripper clearly visible in the upper centre.",
+              "agree": true
+            },
+            "red_cylinder": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Full cylinder body visible as a red diagonal bar in the lit patch; ~20x24 px bbox at (93,115).",
+              "agree": true
+            }
+          }
+        },
+        "168": {
+          "relations": {
+            "OnSeabed(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "medium",
+              "agree": true,
+              "ego_only_decidable": false,
+              "evidence": "Object is clamped by the closed jaws (close at frame 149); its visible body sits slightly above the lit seabed with a narrow grey shadow band under it (~2-4 px). The residual gap is small enough that a millimetre-level contact cannot be fully excluded at 320x240."
+            },
+            "InGripper(red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Jaws closed on both sides of the cylinder; the right jaw occludes part of the object (red area shrinks 160->120 px between f150 and f155) and the object moves with the gripper from this frame on."
+            },
+            "Lifted(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "medium",
+              "agree": true,
+              "ego_only_decidable": false,
+              "evidence": "No visible clearance between object and seabed beyond a thin shadow contact; object is still in ground effect, not lifted above the seabed."
+            },
+            "NextTo(robot,red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": false,
+              "ego_only_decidable": true,
+              "evidence": "Robot's end effector is in direct contact with the object (holding it) -> robot is at the object. NOTE: if NextTo is intended as a pre-contact approach relation, its value after grasping needs an explicit definition (v0.1 makes it false after grasp, which reads oddly in action text)."
+            }
+          },
+          "visibility": {
+            "robot": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Arm + closed gripper visible above the object.",
+              "agree": true
+            },
+            "red_cylinder": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Cylinder visible between the jaws; partly occluded by the right jaw (bbox 14x18 px at (99,115)).",
+              "agree": true
+            }
+          }
+        },
+        "248": {
+          "relations": {
+            "OnSeabed(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Cylinder hangs under the closed gripper in open water; the lit seabed surface is well below it, no contact or contact shadow under the object."
+            },
+            "InGripper(red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Jaws closed around the object; object fixed relative to the gripper across the hold run."
+            },
+            "Lifted(red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "true",
+              "confidence": "medium",
+              "agree": true,
+              "ego_only_decidable": "partial",
+              "evidence": "Object is visibly separated from the seabed compared with f168: more water column between the object and the lit seabed, background structures shifted relative to the object (camera/gripper rose with the object). Single-frame metric height still cannot be measured without depth."
+            },
+            "NextTo(robot,red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": false,
+              "ego_only_decidable": true,
+              "evidence": "End effector holds the object."
+            }
+          },
+          "visibility": {
+            "robot": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Arm + gripper visible; gripper/object remain in the upper-middle of the frame.",
+              "agree": true
+            },
+            "red_cylinder": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Object clearly visible below the jaws (bbox 12x15 px at (99,111)).",
+              "agree": true
+            }
+          }
+        }
+      },
+      "transitions": [
+        {
+          "episode": "usim_train_episode_000553",
+          "from": 110,
+          "to": 140,
+          "non_empty": true,
+          "action_text": "The robot becomes next to the red cylinder.",
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ],
+          "changed_relations": [
+            "NextTo(robot,red_cylinder)"
+          ],
+          "change_checks": [
+            {
+              "relation": "NextTo(robot,red_cylinder)",
+              "from_value": "false",
+              "to_value": "true",
+              "reviewer_from_confidence": "medium",
+              "reviewer_to_confidence": "high",
+              "ego_only_decidable": false,
+              "note": "one or both endpoint frames judged not ego-only decidable"
+            }
+          ],
+          "ego_only_decidable_changes": false,
+          "object_visibility": {
+            "from": {
+              "robot": "visible",
+              "red_cylinder": "partial"
+            },
+            "to": {
+              "robot": "visible",
+              "red_cylinder": "visible"
+            }
+          }
+        },
+        {
+          "episode": "usim_train_episode_000553",
+          "from": 140,
+          "to": 168,
+          "non_empty": true,
+          "action_text": "The red cylinder becomes grasped by the robot. The red cylinder is not on the seabed anymore. The robot is no longer next to the red cylinder.",
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo",
+            "remove_node_red_cylinder_OnSeabed"
+          ],
+          "changed_relations": [
+            "OnSeabed(red_cylinder)",
+            "InGripper(red_cylinder)",
+            "NextTo(robot,red_cylinder)"
+          ],
+          "change_checks": [
+            {
+              "relation": "OnSeabed(red_cylinder)",
+              "from_value": "true",
+              "to_value": "false",
+              "reviewer_from_confidence": "high",
+              "reviewer_to_confidence": "medium",
+              "ego_only_decidable": false,
+              "note": "one or both endpoint frames judged not ego-only decidable"
+            },
+            {
+              "relation": "InGripper(red_cylinder)",
+              "from_value": "false",
+              "to_value": "true",
+              "reviewer_from_confidence": "high",
+              "reviewer_to_confidence": "high",
+              "ego_only_decidable": true,
+              "note": ""
+            },
+            {
+              "relation": "NextTo(robot,red_cylinder)",
+              "from_value": "true",
+              "to_value": "false",
+              "reviewer_from_confidence": "high",
+              "reviewer_to_confidence": "high",
+              "ego_only_decidable": true,
+              "note": ""
+            }
+          ],
+          "ego_only_decidable_changes": false,
+          "object_visibility": {
+            "from": {
+              "robot": "visible",
+              "red_cylinder": "visible"
+            },
+            "to": {
+              "robot": "visible",
+              "red_cylinder": "visible"
+            }
+          }
+        },
+        {
+          "episode": "usim_train_episode_000553",
+          "from": 168,
+          "to": 248,
+          "non_empty": true,
+          "action_text": "The red cylinder is now lifted above the seabed.",
+          "signatures": [
+            "add_node_red_cylinder_Lifted"
+          ],
+          "changed_relations": [
+            "Lifted(red_cylinder)"
+          ],
+          "change_checks": [
+            {
+              "relation": "Lifted(red_cylinder)",
+              "from_value": "false",
+              "to_value": "true",
+              "reviewer_from_confidence": "medium",
+              "reviewer_to_confidence": "medium",
+              "ego_only_decidable": false,
+              "note": "one or both endpoint frames judged not ego-only decidable"
+            }
+          ],
+          "ego_only_decidable_changes": false,
+          "object_visibility": {
+            "from": {
+              "robot": "visible",
+              "red_cylinder": "visible"
+            },
+            "to": {
+              "robot": "visible",
+              "red_cylinder": "visible"
+            }
+          }
+        }
+      ],
+      "action_descriptions": [
+        {
+          "from": "110",
+          "to": "140",
+          "visible": true,
+          "text": "The robot becomes next to the red cylinder.",
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "140",
+          "to": "168",
+          "visible": true,
+          "text": "The red cylinder becomes grasped by the robot. The red cylinder is not on the seabed anymore. The robot is no longer next to the red cylinder.",
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo",
+            "remove_node_red_cylinder_OnSeabed"
+          ]
+        },
+        {
+          "from": "168",
+          "to": "248",
+          "visible": true,
+          "text": "The red cylinder is now lifted above the seabed.",
+          "signatures": [
+            "add_node_red_cylinder_Lifted"
+          ]
+        }
+      ]
+    },
+    "usim_train_episode_000555": {
+      "task_text": "Pick up the red cylinder",
+      "frames": {
+        "140": {
+          "relations": {
+            "OnSeabed(red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "undecidable",
+              "confidence": "high",
+              "agree": false,
+              "ego_only_decidable": false,
+              "evidence": "Red cylinder is NOT visible anywhere in the frame (red-pixel scan area=0; only a blue cylinder at the right edge x~285,y~115). Its state cannot be read from this image."
+            },
+            "InGripper(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "medium",
+              "agree": true,
+              "ego_only_decidable": "partial",
+              "evidence": "The gripper is open and visibly empty (jaws at ~x100,y110); no red object at or around the jaws. If the target were held it would be visible between the jaws."
+            },
+            "Lifted(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "undecidable",
+              "confidence": "high",
+              "agree": false,
+              "ego_only_decidable": false,
+              "evidence": "Target not in view; cannot judge its height above the seabed."
+            },
+            "NextTo(robot,red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "undecidable",
+              "confidence": "high",
+              "agree": false,
+              "ego_only_decidable": false,
+              "evidence": "Target not in view; robot-object distance cannot be estimated from this ego frame (only the empty gripper over open seabed is visible)."
+            }
+          },
+          "visibility": {
+            "robot": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Arm/gripper visible in the centre; vehicle body not in view.",
+              "agree": true
+            },
+            "red_cylinder": {
+              "annotation": true,
+              "reviewer_pass1": "not_visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "No red pixels in the frame; target has not entered the camera view yet (first appears at frame ~174).",
+              "agree": false
+            }
+          }
+        },
+        "262": {
+          "relations": {
+            "OnSeabed(red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Cylinder lies on the lit seabed under the open gripper; contact shadow tight, no water gap."
+            },
+            "InGripper(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Jaws open with a clear visible gap (~5-8 px) between jaw tips and the cylinder; grip command starts at frame 278."
+            },
+            "Lifted(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Object resting on the seabed."
+            },
+            "NextTo(robot,red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Gripper is immediately above the cylinder, within grasp reach."
+            }
+          },
+          "visibility": {
+            "robot": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Arm/gripper visible.",
+              "agree": true
+            },
+            "red_cylinder": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Cylinder visible on the lit seabed (bbox 12x16 px at (105,119)).",
+              "agree": true
+            }
+          }
+        },
+        "297": {
+          "relations": {
+            "OnSeabed(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "undecidable",
+              "confidence": "low",
+              "agree": false,
+              "ego_only_decidable": false,
+              "evidence": "Object is clamped at its upper end (close command at 278, joint signal closed by 280). The lower end is very close to the lit seabed and a grey shadow runs under the body; at 320x240 the residual contact/gap (a few px) cannot be reliably resolved. Cannot exclude a tip still touching the seabed."
+            },
+            "InGripper(red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Jaws closed on the upper end of the cylinder; right jaw occludes part of the object (blob area changes 202->132 px between f290 and f295); object follows the gripper."
+            },
+            "Lifted(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "medium",
+              "agree": true,
+              "ego_only_decidable": "partial",
+              "evidence": "Object is still at seabed level, only a thin shadow gap; no visible lift above the seabed."
+            },
+            "NextTo(robot,red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": false,
+              "ego_only_decidable": true,
+              "evidence": "End effector holds the object (definition caveat as for 553/f168)."
+            }
+          },
+          "visibility": {
+            "robot": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Arm/gripper visible.",
+              "agree": true
+            },
+            "red_cylinder": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Cylinder visible between/behind the jaws (bbox 22x18 px at (93,113)).",
+              "agree": true
+            }
+          }
+        },
+        "377": {
+          "relations": {
+            "OnSeabed(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "medium",
+              "agree": true,
+              "ego_only_decidable": "partial",
+              "evidence": "Object hangs under the closed jaws clear of the lit seabed; soft shadow below and water column between object and bottom."
+            },
+            "InGripper(red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Jaws closed around the object; object fixed relative to jaw."
+            },
+            "Lifted(red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "true",
+              "confidence": "medium",
+              "agree": true,
+              "ego_only_decidable": "partial",
+              "evidence": "Object is visibly raised off the seabed relative to f297 (more water column visible below, shadow separated); no metric depth in a single ego frame."
+            },
+            "NextTo(robot,red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": false,
+              "ego_only_decidable": true,
+              "evidence": "End effector holds the object."
+            }
+          },
+          "visibility": {
+            "robot": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Arm/gripper visible.",
+              "agree": true
+            },
+            "red_cylinder": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Cylinder visible below the jaws (bbox 14x16 px at (97,113)).",
+              "agree": true
+            }
+          }
+        }
+      },
+      "transitions": [
+        {
+          "episode": "usim_train_episode_000555",
+          "from": 140,
+          "to": 262,
+          "non_empty": true,
+          "action_text": "The robot transitions to be next to the red cylinder.",
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ],
+          "changed_relations": [
+            "NextTo(robot,red_cylinder)"
+          ],
+          "change_checks": [
+            {
+              "relation": "NextTo(robot,red_cylinder)",
+              "from_value": "false",
+              "to_value": "true",
+              "reviewer_from_confidence": "high",
+              "reviewer_to_confidence": "high",
+              "ego_only_decidable": false,
+              "note": "one or both endpoint frames judged not ego-only decidable"
+            }
+          ],
+          "ego_only_decidable_changes": false,
+          "object_visibility": {
+            "from": {
+              "robot": "visible",
+              "red_cylinder": "not_visible"
+            },
+            "to": {
+              "robot": "visible",
+              "red_cylinder": "visible"
+            }
+          }
+        },
+        {
+          "episode": "usim_train_episode_000555",
+          "from": 262,
+          "to": 297,
+          "non_empty": true,
+          "action_text": "The red cylinder becomes grasped by the robot. The red cylinder is no longer on the seabed. The robot stopped being next to the red cylinder.",
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo",
+            "remove_node_red_cylinder_OnSeabed"
+          ],
+          "changed_relations": [
+            "OnSeabed(red_cylinder)",
+            "InGripper(red_cylinder)",
+            "NextTo(robot,red_cylinder)"
+          ],
+          "change_checks": [
+            {
+              "relation": "OnSeabed(red_cylinder)",
+              "from_value": "true",
+              "to_value": "false",
+              "reviewer_from_confidence": "high",
+              "reviewer_to_confidence": "low",
+              "ego_only_decidable": false,
+              "note": "one or both endpoint frames judged not ego-only decidable"
+            },
+            {
+              "relation": "InGripper(red_cylinder)",
+              "from_value": "false",
+              "to_value": "true",
+              "reviewer_from_confidence": "high",
+              "reviewer_to_confidence": "high",
+              "ego_only_decidable": true,
+              "note": ""
+            },
+            {
+              "relation": "NextTo(robot,red_cylinder)",
+              "from_value": "true",
+              "to_value": "false",
+              "reviewer_from_confidence": "high",
+              "reviewer_to_confidence": "high",
+              "ego_only_decidable": true,
+              "note": ""
+            }
+          ],
+          "ego_only_decidable_changes": false,
+          "object_visibility": {
+            "from": {
+              "robot": "visible",
+              "red_cylinder": "visible"
+            },
+            "to": {
+              "robot": "visible",
+              "red_cylinder": "visible"
+            }
+          }
+        },
+        {
+          "episode": "usim_train_episode_000555",
+          "from": 297,
+          "to": 377,
+          "non_empty": true,
+          "action_text": "The red cylinder becomes lifted above the seabed.",
+          "signatures": [
+            "add_node_red_cylinder_Lifted"
+          ],
+          "changed_relations": [
+            "Lifted(red_cylinder)"
+          ],
+          "change_checks": [
+            {
+              "relation": "Lifted(red_cylinder)",
+              "from_value": "false",
+              "to_value": "true",
+              "reviewer_from_confidence": "medium",
+              "reviewer_to_confidence": "medium",
+              "ego_only_decidable": false,
+              "note": "one or both endpoint frames judged not ego-only decidable"
+            }
+          ],
+          "ego_only_decidable_changes": false,
+          "object_visibility": {
+            "from": {
+              "robot": "visible",
+              "red_cylinder": "visible"
+            },
+            "to": {
+              "robot": "visible",
+              "red_cylinder": "visible"
+            }
+          }
+        }
+      ],
+      "action_descriptions": [
+        {
+          "from": "140",
+          "to": "262",
+          "visible": true,
+          "text": "The robot transitions to be next to the red cylinder.",
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "262",
+          "to": "297",
+          "visible": true,
+          "text": "The red cylinder becomes grasped by the robot. The red cylinder is no longer on the seabed. The robot stopped being next to the red cylinder.",
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo",
+            "remove_node_red_cylinder_OnSeabed"
+          ]
+        },
+        {
+          "from": "297",
+          "to": "377",
+          "visible": true,
+          "text": "The red cylinder becomes lifted above the seabed.",
+          "signatures": [
+            "add_node_red_cylinder_Lifted"
+          ]
+        }
+      ]
+    },
+    "usim_train_episode_000556": {
+      "task_text": "Pick up the red cylinder",
+      "frames": {
+        "180": {
+          "relations": {
+            "OnSeabed(red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "undecidable",
+              "confidence": "high",
+              "agree": false,
+              "ego_only_decidable": false,
+              "evidence": "Red cylinder is NOT visible in this frame (red-pixel scan area=0; only a blue cylinder on the right seabed). Its state cannot be read from this image."
+            },
+            "InGripper(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "medium",
+              "agree": true,
+              "ego_only_decidable": "partial",
+              "evidence": "Gripper is open and visibly empty above the lit seabed; no red object at the jaws."
+            },
+            "Lifted(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "undecidable",
+              "confidence": "high",
+              "agree": false,
+              "ego_only_decidable": false,
+              "evidence": "Target not in view; height above seabed cannot be judged."
+            },
+            "NextTo(robot,red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "undecidable",
+              "confidence": "high",
+              "agree": false,
+              "ego_only_decidable": false,
+              "evidence": "Target not in view; robot-object proximity cannot be judged."
+            }
+          },
+          "visibility": {
+            "robot": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Arm/gripper visible centre.",
+              "agree": true
+            },
+            "red_cylinder": {
+              "annotation": true,
+              "reviewer_pass1": "not_visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "No red pixels; target enters view only at frame ~182.",
+              "agree": false
+            }
+          }
+        },
+        "304": {
+          "relations": {
+            "OnSeabed(red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Cylinder lies diagonally on the lit seabed; contact shadow tight, no gap."
+            },
+            "InGripper(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Jaws open above the cylinder, visible clearance; close command at frame 319."
+            },
+            "Lifted(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Object resting on seabed."
+            },
+            "NextTo(robot,red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Gripper immediately above the cylinder within grasp reach."
+            }
+          },
+          "visibility": {
+            "robot": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Arm/gripper visible.",
+              "agree": true
+            },
+            "red_cylinder": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Cylinder visible (bbox 24x26 px at (89,119)).",
+              "agree": true
+            }
+          }
+        },
+        "339": {
+          "relations": {
+            "OnSeabed(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "low",
+              "agree": true,
+              "ego_only_decidable": false,
+              "evidence": "Object clamped by closed jaws (close at 319); body appears just above the lit seabed with a narrow shadow band. Residual gap is a few pixels; contact cannot be fully excluded at this resolution."
+            },
+            "InGripper(red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Jaws closed on both sides; right jaw occludes the object; object follows the gripper."
+            },
+            "Lifted(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "medium",
+              "agree": true,
+              "ego_only_decidable": "partial",
+              "evidence": "Object still at seabed level; no visible clearance beyond shadow contact."
+            },
+            "NextTo(robot,red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": false,
+              "ego_only_decidable": true,
+              "evidence": "End effector holds the object (definition caveat)."
+            }
+          },
+          "visibility": {
+            "robot": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Arm/gripper visible.",
+              "agree": true
+            },
+            "red_cylinder": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Cylinder visible between jaws (bbox 14x18 px at (99,113)).",
+              "agree": true
+            }
+          }
+        },
+        "419": {
+          "relations": {
+            "OnSeabed(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "medium",
+              "agree": true,
+              "ego_only_decidable": "partial",
+              "evidence": "Object hangs under the closed jaws clear of the lit seabed; shadow/water separation visible below."
+            },
+            "InGripper(red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Jaws closed around the object."
+            },
+            "Lifted(red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "true",
+              "confidence": "medium",
+              "agree": true,
+              "ego_only_decidable": "partial",
+              "evidence": "Object visibly raised relative to f339 (more water column between object and lit seabed); metric height not available in a single ego frame."
+            },
+            "NextTo(robot,red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": false,
+              "ego_only_decidable": true,
+              "evidence": "End effector holds the object."
+            }
+          },
+          "visibility": {
+            "robot": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Arm/gripper visible.",
+              "agree": true
+            },
+            "red_cylinder": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Cylinder visible below the jaws (bbox 12x12 px at (99,113)).",
+              "agree": true
+            }
+          }
+        }
+      },
+      "transitions": [
+        {
+          "episode": "usim_train_episode_000556",
+          "from": 180,
+          "to": 304,
+          "non_empty": true,
+          "action_text": "The robot changes to be next to the red cylinder.",
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ],
+          "changed_relations": [
+            "NextTo(robot,red_cylinder)"
+          ],
+          "change_checks": [
+            {
+              "relation": "NextTo(robot,red_cylinder)",
+              "from_value": "false",
+              "to_value": "true",
+              "reviewer_from_confidence": "high",
+              "reviewer_to_confidence": "high",
+              "ego_only_decidable": false,
+              "note": "one or both endpoint frames judged not ego-only decidable"
+            }
+          ],
+          "ego_only_decidable_changes": false,
+          "object_visibility": {
+            "from": {
+              "robot": "visible",
+              "red_cylinder": "not_visible"
+            },
+            "to": {
+              "robot": "visible",
+              "red_cylinder": "visible"
+            }
+          }
+        },
+        {
+          "episode": "usim_train_episode_000556",
+          "from": 304,
+          "to": 339,
+          "non_empty": true,
+          "action_text": "The red cylinder becomes grasped by the robot. The red cylinder is not on the seabed anymore. The robot is no longer next to the red cylinder.",
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo",
+            "remove_node_red_cylinder_OnSeabed"
+          ],
+          "changed_relations": [
+            "OnSeabed(red_cylinder)",
+            "InGripper(red_cylinder)",
+            "NextTo(robot,red_cylinder)"
+          ],
+          "change_checks": [
+            {
+              "relation": "OnSeabed(red_cylinder)",
+              "from_value": "true",
+              "to_value": "false",
+              "reviewer_from_confidence": "high",
+              "reviewer_to_confidence": "low",
+              "ego_only_decidable": false,
+              "note": "one or both endpoint frames judged not ego-only decidable"
+            },
+            {
+              "relation": "InGripper(red_cylinder)",
+              "from_value": "false",
+              "to_value": "true",
+              "reviewer_from_confidence": "high",
+              "reviewer_to_confidence": "high",
+              "ego_only_decidable": true,
+              "note": ""
+            },
+            {
+              "relation": "NextTo(robot,red_cylinder)",
+              "from_value": "true",
+              "to_value": "false",
+              "reviewer_from_confidence": "high",
+              "reviewer_to_confidence": "high",
+              "ego_only_decidable": true,
+              "note": ""
+            }
+          ],
+          "ego_only_decidable_changes": false,
+          "object_visibility": {
+            "from": {
+              "robot": "visible",
+              "red_cylinder": "visible"
+            },
+            "to": {
+              "robot": "visible",
+              "red_cylinder": "visible"
+            }
+          }
+        },
+        {
+          "episode": "usim_train_episode_000556",
+          "from": 339,
+          "to": 419,
+          "non_empty": true,
+          "action_text": "The red cylinder becomes lifted above the seabed.",
+          "signatures": [
+            "add_node_red_cylinder_Lifted"
+          ],
+          "changed_relations": [
+            "Lifted(red_cylinder)"
+          ],
+          "change_checks": [
+            {
+              "relation": "Lifted(red_cylinder)",
+              "from_value": "false",
+              "to_value": "true",
+              "reviewer_from_confidence": "medium",
+              "reviewer_to_confidence": "medium",
+              "ego_only_decidable": false,
+              "note": "one or both endpoint frames judged not ego-only decidable"
+            }
+          ],
+          "ego_only_decidable_changes": false,
+          "object_visibility": {
+            "from": {
+              "robot": "visible",
+              "red_cylinder": "visible"
+            },
+            "to": {
+              "robot": "visible",
+              "red_cylinder": "visible"
+            }
+          }
+        }
+      ],
+      "action_descriptions": [
+        {
+          "from": "180",
+          "to": "304",
+          "visible": true,
+          "text": "The robot changes to be next to the red cylinder.",
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "304",
+          "to": "339",
+          "visible": true,
+          "text": "The red cylinder becomes grasped by the robot. The red cylinder is not on the seabed anymore. The robot is no longer next to the red cylinder.",
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo",
+            "remove_node_red_cylinder_OnSeabed"
+          ]
+        },
+        {
+          "from": "339",
+          "to": "419",
+          "visible": true,
+          "text": "The red cylinder becomes lifted above the seabed.",
+          "signatures": [
+            "add_node_red_cylinder_Lifted"
+          ]
+        }
+      ]
+    },
+    "usim_train_episode_001302": {
+      "task_text": "Pick up the red cylinder and transfer it to the box",
+      "frames": {
+        "150": {
+          "relations": {
+            "OnSeabed(red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Cylinder lies diagonally on the lit seabed; open jaws ~8-10 px above it; tight contact shadow, no gap."
+            },
+            "InGripper(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Jaws open and above the object; visible gap between jaw tips and cylinder; close command starts at frame 176."
+            },
+            "Lifted(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Object on the seabed."
+            },
+            "NextTo(robot,red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": false,
+              "ego_only_decidable": true,
+              "evidence": "Gripper directly above the cylinder within grasp reach; green box visible in the background (upper-left, partly behind the arm) but not part of the relation scope."
+            }
+          },
+          "visibility": {
+            "robot": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Arm/gripper visible centre-left.",
+              "agree": true
+            },
+            "red_cylinder": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Cylinder visible on the seabed (bbox 15x22 px at (118,117)).",
+              "agree": true
+            }
+          }
+        },
+        "168": {
+          "relations": {
+            "OnSeabed(red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "true",
+              "confidence": "medium",
+              "agree": true,
+              "ego_only_decidable": "partial",
+              "evidence": "Cylinder is still at seabed level between the jaws (obvious dark shadow band right below it); gripper close command has not yet fired (starts at 176), so the object is not yet lifted."
+            },
+            "InGripper(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "medium",
+              "agree": true,
+              "ego_only_decidable": false,
+              "evidence": "Object is inside the jaw opening and one finger overlaps it in projection, but the jaws have not closed yet (close command at frame 176); from the single image it is ambiguous whether the finger already touches the object. Not yet 'held'."
+            },
+            "Lifted(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "medium",
+              "agree": true,
+              "ego_only_decidable": "partial",
+              "evidence": "Object at seabed level, no lift."
+            },
+            "NextTo(robot,red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Jaws enclose the object (contact/imminent contact)."
+            }
+          },
+          "visibility": {
+            "robot": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Arm/gripper visible.",
+              "agree": true
+            },
+            "red_cylinder": {
+              "annotation": true,
+              "reviewer_pass1": "partial",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Cylinder partly occluded by the right jaw; red bbox shrinks to 8x10 px at (119,103).",
+              "agree": true
+            }
+          }
+        },
+        "196": {
+          "relations": {
+            "OnSeabed(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "low",
+              "agree": true,
+              "ego_only_decidable": false,
+              "evidence": "Object clamped by closed jaws (close at 176-178); body appears just above the lit seabed with a narrow shadow band. Residual contact/gap of a few px cannot be resolved."
+            },
+            "InGripper(red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Jaws closed on both sides of the object; jaw occludes part of it; object follows the gripper."
+            },
+            "Lifted(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "medium",
+              "agree": true,
+              "ego_only_decidable": "partial",
+              "evidence": "Object still at/near seabed level; no clear clearance visible."
+            },
+            "NextTo(robot,red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": false,
+              "ego_only_decidable": true,
+              "evidence": "End effector holds the object."
+            }
+          },
+          "visibility": {
+            "robot": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Arm/gripper visible.",
+              "agree": true
+            },
+            "red_cylinder": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Cylinder visible between jaws (bbox 14x16 px at (99,113)).",
+              "agree": true
+            }
+          }
+        },
+        "415": {
+          "relations": {
+            "OnSeabed(red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "false",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Object hangs under the closed jaws, carried in open water; seabed far below in the frame; green box ahead at the same image height as the gripper."
+            },
+            "InGripper(red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": true,
+              "ego_only_decidable": true,
+              "evidence": "Jaws closed around the object (job still holding; release command only at frame 448)."
+            },
+            "Lifted(red_cylinder)": {
+              "annotation": "true",
+              "reviewer_pass1": "true",
+              "confidence": "medium",
+              "agree": true,
+              "ego_only_decidable": "partial",
+              "evidence": "Object carried clear of the seabed toward the box; more water column below the object than in f196. No metric height."
+            },
+            "NextTo(robot,red_cylinder)": {
+              "annotation": "false",
+              "reviewer_pass1": "true",
+              "confidence": "high",
+              "agree": false,
+              "ego_only_decidable": true,
+              "evidence": "End effector holds the object."
+            }
+          },
+          "visibility": {
+            "robot": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Arm/gripper visible.",
+              "agree": true
+            },
+            "red_cylinder": {
+              "annotation": true,
+              "reviewer_pass1": "visible",
+              "annotation_evidence": "frame_review",
+              "reviewer_evidence": "Cylinder visible under the jaws (bbox 18x12 px at (93,113)).",
+              "agree": true
+            }
+          }
+        }
+      },
+      "transitions": [
+        {
+          "episode": "usim_train_episode_001302",
+          "from": 150,
+          "to": 168,
+          "non_empty": true,
+          "action_text": "The robot transitions to be next to the red cylinder.",
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ],
+          "changed_relations": [
+            "NextTo(robot,red_cylinder)"
+          ],
+          "change_checks": [
+            {
+              "relation": "NextTo(robot,red_cylinder)",
+              "from_value": "false",
+              "to_value": "true",
+              "reviewer_from_confidence": "high",
+              "reviewer_to_confidence": "high",
+              "ego_only_decidable": true,
+              "note": ""
+            }
+          ],
+          "ego_only_decidable_changes": true,
+          "object_visibility": {
+            "from": {
+              "robot": "visible",
+              "red_cylinder": "visible"
+            },
+            "to": {
+              "robot": "visible",
+              "red_cylinder": "partial"
+            }
+          }
+        },
+        {
+          "episode": "usim_train_episode_001302",
+          "from": 168,
+          "to": 196,
+          "non_empty": true,
+          "action_text": "The red cylinder is now grasped by the robot. The red cylinder is not on the seabed anymore. The robot stopped being next to the red cylinder.",
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo",
+            "remove_node_red_cylinder_OnSeabed"
+          ],
+          "changed_relations": [
+            "OnSeabed(red_cylinder)",
+            "InGripper(red_cylinder)",
+            "NextTo(robot,red_cylinder)"
+          ],
+          "change_checks": [
+            {
+              "relation": "OnSeabed(red_cylinder)",
+              "from_value": "true",
+              "to_value": "false",
+              "reviewer_from_confidence": "medium",
+              "reviewer_to_confidence": "low",
+              "ego_only_decidable": false,
+              "note": "one or both endpoint frames judged not ego-only decidable"
+            },
+            {
+              "relation": "InGripper(red_cylinder)",
+              "from_value": "false",
+              "to_value": "true",
+              "reviewer_from_confidence": "medium",
+              "reviewer_to_confidence": "high",
+              "ego_only_decidable": false,
+              "note": "one or both endpoint frames judged not ego-only decidable"
+            },
+            {
+              "relation": "NextTo(robot,red_cylinder)",
+              "from_value": "true",
+              "to_value": "false",
+              "reviewer_from_confidence": "high",
+              "reviewer_to_confidence": "high",
+              "ego_only_decidable": true,
+              "note": ""
+            }
+          ],
+          "ego_only_decidable_changes": false,
+          "object_visibility": {
+            "from": {
+              "robot": "visible",
+              "red_cylinder": "partial"
+            },
+            "to": {
+              "robot": "visible",
+              "red_cylinder": "visible"
+            }
+          }
+        },
+        {
+          "episode": "usim_train_episode_001302",
+          "from": 196,
+          "to": 415,
+          "non_empty": true,
+          "action_text": "The red cylinder is now lifted above the seabed.",
+          "signatures": [
+            "add_node_red_cylinder_Lifted"
+          ],
+          "changed_relations": [
+            "Lifted(red_cylinder)"
+          ],
+          "change_checks": [
+            {
+              "relation": "Lifted(red_cylinder)",
+              "from_value": "false",
+              "to_value": "true",
+              "reviewer_from_confidence": "medium",
+              "reviewer_to_confidence": "medium",
+              "ego_only_decidable": false,
+              "note": "one or both endpoint frames judged not ego-only decidable"
+            }
+          ],
+          "ego_only_decidable_changes": false,
+          "object_visibility": {
+            "from": {
+              "robot": "visible",
+              "red_cylinder": "visible"
+            },
+            "to": {
+              "robot": "visible",
+              "red_cylinder": "visible"
+            }
+          }
+        }
+      ],
+      "action_descriptions": [
+        {
+          "from": "150",
+          "to": "168",
+          "visible": true,
+          "text": "The robot transitions to be next to the red cylinder.",
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "168",
+          "to": "196",
+          "visible": true,
+          "text": "The red cylinder is now grasped by the robot. The red cylinder is not on the seabed anymore. The robot stopped being next to the red cylinder.",
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo",
+            "remove_node_red_cylinder_OnSeabed"
+          ]
+        },
+        {
+          "from": "196",
+          "to": "415",
+          "visible": true,
+          "text": "The red cylinder is now lifted above the seabed.",
+          "signatures": [
+            "add_node_red_cylinder_Lifted"
+          ]
+        }
+      ]
+    }
+  },
+  "predicate_stats": {
+    "OnSeabed": {
+      "n": 16,
+      "agree": 13,
+      "review_undecidable": 3
+    },
+    "InGripper": {
+      "n": 16,
+      "agree": 16,
+      "review_undecidable": 0
+    },
+    "Lifted": {
+      "n": 16,
+      "agree": 14,
+      "review_undecidable": 2
+    },
+    "NextTo": {
+      "n": 16,
+      "agree": 4,
+      "review_undecidable": 2
+    }
+  },
+  "disagreements": [
+    {
+      "episode": "usim_train_episode_000553",
+      "frame": 110,
+      "relation": "NextTo(robot,red_cylinder)",
+      "annotation": "false",
+      "reviewer_pass1": "true",
+      "confidence": "medium",
+      "kind": "value_conflict",
+      "evidence": "Robot arm/gripper is directly above the target and the cylinder appears large and sharp at the bottom edge (near field, consistent with the robot hovering over it ~0.5-1 m). Proximity inferred from apparent size/perspective, not from a metric distance."
+    },
+    {
+      "episode": "usim_train_episode_000553",
+      "frame": 168,
+      "relation": "NextTo(robot,red_cylinder)",
+      "annotation": "false",
+      "reviewer_pass1": "true",
+      "confidence": "high",
+      "kind": "value_conflict",
+      "evidence": "Robot's end effector is in direct contact with the object (holding it) -> robot is at the object. NOTE: if NextTo is intended as a pre-contact approach relation, its value after grasping needs an explicit definition (v0.1 makes it false after grasp, which reads oddly in action text)."
+    },
+    {
+      "episode": "usim_train_episode_000553",
+      "frame": 248,
+      "relation": "NextTo(robot,red_cylinder)",
+      "annotation": "false",
+      "reviewer_pass1": "true",
+      "confidence": "high",
+      "kind": "value_conflict",
+      "evidence": "End effector holds the object."
+    },
+    {
+      "episode": "usim_train_episode_000555",
+      "frame": 140,
+      "relation": "OnSeabed(red_cylinder)",
+      "annotation": "true",
+      "reviewer_pass1": "undecidable",
+      "confidence": "high",
+      "kind": "review_undecidable",
+      "evidence": "Red cylinder is NOT visible anywhere in the frame (red-pixel scan area=0; only a blue cylinder at the right edge x~285,y~115). Its state cannot be read from this image."
+    },
+    {
+      "episode": "usim_train_episode_000555",
+      "frame": 140,
+      "relation": "Lifted(red_cylinder)",
+      "annotation": "false",
+      "reviewer_pass1": "undecidable",
+      "confidence": "high",
+      "kind": "review_undecidable",
+      "evidence": "Target not in view; cannot judge its height above the seabed."
+    },
+    {
+      "episode": "usim_train_episode_000555",
+      "frame": 140,
+      "relation": "NextTo(robot,red_cylinder)",
+      "annotation": "false",
+      "reviewer_pass1": "undecidable",
+      "confidence": "high",
+      "kind": "review_undecidable",
+      "evidence": "Target not in view; robot-object distance cannot be estimated from this ego frame (only the empty gripper over open seabed is visible)."
+    },
+    {
+      "episode": "usim_train_episode_000555",
+      "frame": 297,
+      "relation": "OnSeabed(red_cylinder)",
+      "annotation": "false",
+      "reviewer_pass1": "undecidable",
+      "confidence": "low",
+      "kind": "review_undecidable",
+      "evidence": "Object is clamped at its upper end (close command at 278, joint signal closed by 280). The lower end is very close to the lit seabed and a grey shadow runs under the body; at 320x240 the residual contact/gap (a few px) cannot be reliably resolved. Cannot exclude a tip still touching the seabed."
+    },
+    {
+      "episode": "usim_train_episode_000555",
+      "frame": 297,
+      "relation": "NextTo(robot,red_cylinder)",
+      "annotation": "false",
+      "reviewer_pass1": "true",
+      "confidence": "high",
+      "kind": "value_conflict",
+      "evidence": "End effector holds the object (definition caveat as for 553/f168)."
+    },
+    {
+      "episode": "usim_train_episode_000555",
+      "frame": 377,
+      "relation": "NextTo(robot,red_cylinder)",
+      "annotation": "false",
+      "reviewer_pass1": "true",
+      "confidence": "high",
+      "kind": "value_conflict",
+      "evidence": "End effector holds the object."
+    },
+    {
+      "episode": "usim_train_episode_000556",
+      "frame": 180,
+      "relation": "OnSeabed(red_cylinder)",
+      "annotation": "true",
+      "reviewer_pass1": "undecidable",
+      "confidence": "high",
+      "kind": "review_undecidable",
+      "evidence": "Red cylinder is NOT visible in this frame (red-pixel scan area=0; only a blue cylinder on the right seabed). Its state cannot be read from this image."
+    },
+    {
+      "episode": "usim_train_episode_000556",
+      "frame": 180,
+      "relation": "Lifted(red_cylinder)",
+      "annotation": "false",
+      "reviewer_pass1": "undecidable",
+      "confidence": "high",
+      "kind": "review_undecidable",
+      "evidence": "Target not in view; height above seabed cannot be judged."
+    },
+    {
+      "episode": "usim_train_episode_000556",
+      "frame": 180,
+      "relation": "NextTo(robot,red_cylinder)",
+      "annotation": "false",
+      "reviewer_pass1": "undecidable",
+      "confidence": "high",
+      "kind": "review_undecidable",
+      "evidence": "Target not in view; robot-object proximity cannot be judged."
+    },
+    {
+      "episode": "usim_train_episode_000556",
+      "frame": 339,
+      "relation": "NextTo(robot,red_cylinder)",
+      "annotation": "false",
+      "reviewer_pass1": "true",
+      "confidence": "high",
+      "kind": "value_conflict",
+      "evidence": "End effector holds the object (definition caveat)."
+    },
+    {
+      "episode": "usim_train_episode_000556",
+      "frame": 419,
+      "relation": "NextTo(robot,red_cylinder)",
+      "annotation": "false",
+      "reviewer_pass1": "true",
+      "confidence": "high",
+      "kind": "value_conflict",
+      "evidence": "End effector holds the object."
+    },
+    {
+      "episode": "usim_train_episode_001302",
+      "frame": 150,
+      "relation": "NextTo(robot,red_cylinder)",
+      "annotation": "false",
+      "reviewer_pass1": "true",
+      "confidence": "high",
+      "kind": "value_conflict",
+      "evidence": "Gripper directly above the cylinder within grasp reach; green box visible in the background (upper-left, partly behind the arm) but not part of the relation scope."
+    },
+    {
+      "episode": "usim_train_episode_001302",
+      "frame": 196,
+      "relation": "NextTo(robot,red_cylinder)",
+      "annotation": "false",
+      "reviewer_pass1": "true",
+      "confidence": "high",
+      "kind": "value_conflict",
+      "evidence": "End effector holds the object."
+    },
+    {
+      "episode": "usim_train_episode_001302",
+      "frame": 415,
+      "relation": "NextTo(robot,red_cylinder)",
+      "annotation": "false",
+      "reviewer_pass1": "true",
+      "confidence": "high",
+      "kind": "value_conflict",
+      "evidence": "End effector holds the object."
+    }
+  ],
+  "visibility_disagreements": [
+    {
+      "episode": "usim_train_episode_000555",
+      "frame": 140,
+      "object": "red_cylinder",
+      "annotation": true,
+      "reviewer_pass1": "not_visible",
+      "reviewer_evidence": "No red pixels in the frame; target has not entered the camera view yet (first appears at frame ~174)."
+    },
+    {
+      "episode": "usim_train_episode_000556",
+      "frame": 180,
+      "object": "red_cylinder",
+      "annotation": true,
+      "reviewer_pass1": "not_visible",
+      "reviewer_evidence": "No red pixels; target enters view only at frame ~182."
+    }
+  ],
+  "transitions": [
+    {
+      "episode": "usim_train_episode_000553",
+      "from": 110,
+      "to": 140,
+      "non_empty": true,
+      "action_text": "The robot becomes next to the red cylinder.",
+      "signatures": [
+        "add_edge_robot_red_cylinder_NextTo"
+      ],
+      "changed_relations": [
+        "NextTo(robot,red_cylinder)"
+      ],
+      "change_checks": [
+        {
+          "relation": "NextTo(robot,red_cylinder)",
+          "from_value": "false",
+          "to_value": "true",
+          "reviewer_from_confidence": "medium",
+          "reviewer_to_confidence": "high",
+          "ego_only_decidable": false,
+          "note": "one or both endpoint frames judged not ego-only decidable"
+        }
+      ],
+      "ego_only_decidable_changes": false,
+      "object_visibility": {
+        "from": {
+          "robot": "visible",
+          "red_cylinder": "partial"
+        },
+        "to": {
+          "robot": "visible",
+          "red_cylinder": "visible"
+        }
+      }
+    },
+    {
+      "episode": "usim_train_episode_000553",
+      "from": 140,
+      "to": 168,
+      "non_empty": true,
+      "action_text": "The red cylinder becomes grasped by the robot. The red cylinder is not on the seabed anymore. The robot is no longer next to the red cylinder.",
+      "signatures": [
+        "add_node_red_cylinder_InGripper",
+        "remove_edge_robot_red_cylinder_NextTo",
+        "remove_node_red_cylinder_OnSeabed"
+      ],
+      "changed_relations": [
+        "OnSeabed(red_cylinder)",
+        "InGripper(red_cylinder)",
+        "NextTo(robot,red_cylinder)"
+      ],
+      "change_checks": [
+        {
+          "relation": "OnSeabed(red_cylinder)",
+          "from_value": "true",
+          "to_value": "false",
+          "reviewer_from_confidence": "high",
+          "reviewer_to_confidence": "medium",
+          "ego_only_decidable": false,
+          "note": "one or both endpoint frames judged not ego-only decidable"
+        },
+        {
+          "relation": "InGripper(red_cylinder)",
+          "from_value": "false",
+          "to_value": "true",
+          "reviewer_from_confidence": "high",
+          "reviewer_to_confidence": "high",
+          "ego_only_decidable": true,
+          "note": ""
+        },
+        {
+          "relation": "NextTo(robot,red_cylinder)",
+          "from_value": "true",
+          "to_value": "false",
+          "reviewer_from_confidence": "high",
+          "reviewer_to_confidence": "high",
+          "ego_only_decidable": true,
+          "note": ""
+        }
+      ],
+      "ego_only_decidable_changes": false,
+      "object_visibility": {
+        "from": {
+          "robot": "visible",
+          "red_cylinder": "visible"
+        },
+        "to": {
+          "robot": "visible",
+          "red_cylinder": "visible"
+        }
+      }
+    },
+    {
+      "episode": "usim_train_episode_000553",
+      "from": 168,
+      "to": 248,
+      "non_empty": true,
+      "action_text": "The red cylinder is now lifted above the seabed.",
+      "signatures": [
+        "add_node_red_cylinder_Lifted"
+      ],
+      "changed_relations": [
+        "Lifted(red_cylinder)"
+      ],
+      "change_checks": [
+        {
+          "relation": "Lifted(red_cylinder)",
+          "from_value": "false",
+          "to_value": "true",
+          "reviewer_from_confidence": "medium",
+          "reviewer_to_confidence": "medium",
+          "ego_only_decidable": false,
+          "note": "one or both endpoint frames judged not ego-only decidable"
+        }
+      ],
+      "ego_only_decidable_changes": false,
+      "object_visibility": {
+        "from": {
+          "robot": "visible",
+          "red_cylinder": "visible"
+        },
+        "to": {
+          "robot": "visible",
+          "red_cylinder": "visible"
+        }
+      }
+    },
+    {
+      "episode": "usim_train_episode_000555",
+      "from": 140,
+      "to": 262,
+      "non_empty": true,
+      "action_text": "The robot transitions to be next to the red cylinder.",
+      "signatures": [
+        "add_edge_robot_red_cylinder_NextTo"
+      ],
+      "changed_relations": [
+        "NextTo(robot,red_cylinder)"
+      ],
+      "change_checks": [
+        {
+          "relation": "NextTo(robot,red_cylinder)",
+          "from_value": "false",
+          "to_value": "true",
+          "reviewer_from_confidence": "high",
+          "reviewer_to_confidence": "high",
+          "ego_only_decidable": false,
+          "note": "one or both endpoint frames judged not ego-only decidable"
+        }
+      ],
+      "ego_only_decidable_changes": false,
+      "object_visibility": {
+        "from": {
+          "robot": "visible",
+          "red_cylinder": "not_visible"
+        },
+        "to": {
+          "robot": "visible",
+          "red_cylinder": "visible"
+        }
+      }
+    },
+    {
+      "episode": "usim_train_episode_000555",
+      "from": 262,
+      "to": 297,
+      "non_empty": true,
+      "action_text": "The red cylinder becomes grasped by the robot. The red cylinder is no longer on the seabed. The robot stopped being next to the red cylinder.",
+      "signatures": [
+        "add_node_red_cylinder_InGripper",
+        "remove_edge_robot_red_cylinder_NextTo",
+        "remove_node_red_cylinder_OnSeabed"
+      ],
+      "changed_relations": [
+        "OnSeabed(red_cylinder)",
+        "InGripper(red_cylinder)",
+        "NextTo(robot,red_cylinder)"
+      ],
+      "change_checks": [
+        {
+          "relation": "OnSeabed(red_cylinder)",
+          "from_value": "true",
+          "to_value": "false",
+          "reviewer_from_confidence": "high",
+          "reviewer_to_confidence": "low",
+          "ego_only_decidable": false,
+          "note": "one or both endpoint frames judged not ego-only decidable"
+        },
+        {
+          "relation": "InGripper(red_cylinder)",
+          "from_value": "false",
+          "to_value": "true",
+          "reviewer_from_confidence": "high",
+          "reviewer_to_confidence": "high",
+          "ego_only_decidable": true,
+          "note": ""
+        },
+        {
+          "relation": "NextTo(robot,red_cylinder)",
+          "from_value": "true",
+          "to_value": "false",
+          "reviewer_from_confidence": "high",
+          "reviewer_to_confidence": "high",
+          "ego_only_decidable": true,
+          "note": ""
+        }
+      ],
+      "ego_only_decidable_changes": false,
+      "object_visibility": {
+        "from": {
+          "robot": "visible",
+          "red_cylinder": "visible"
+        },
+        "to": {
+          "robot": "visible",
+          "red_cylinder": "visible"
+        }
+      }
+    },
+    {
+      "episode": "usim_train_episode_000555",
+      "from": 297,
+      "to": 377,
+      "non_empty": true,
+      "action_text": "The red cylinder becomes lifted above the seabed.",
+      "signatures": [
+        "add_node_red_cylinder_Lifted"
+      ],
+      "changed_relations": [
+        "Lifted(red_cylinder)"
+      ],
+      "change_checks": [
+        {
+          "relation": "Lifted(red_cylinder)",
+          "from_value": "false",
+          "to_value": "true",
+          "reviewer_from_confidence": "medium",
+          "reviewer_to_confidence": "medium",
+          "ego_only_decidable": false,
+          "note": "one or both endpoint frames judged not ego-only decidable"
+        }
+      ],
+      "ego_only_decidable_changes": false,
+      "object_visibility": {
+        "from": {
+          "robot": "visible",
+          "red_cylinder": "visible"
+        },
+        "to": {
+          "robot": "visible",
+          "red_cylinder": "visible"
+        }
+      }
+    },
+    {
+      "episode": "usim_train_episode_000556",
+      "from": 180,
+      "to": 304,
+      "non_empty": true,
+      "action_text": "The robot changes to be next to the red cylinder.",
+      "signatures": [
+        "add_edge_robot_red_cylinder_NextTo"
+      ],
+      "changed_relations": [
+        "NextTo(robot,red_cylinder)"
+      ],
+      "change_checks": [
+        {
+          "relation": "NextTo(robot,red_cylinder)",
+          "from_value": "false",
+          "to_value": "true",
+          "reviewer_from_confidence": "high",
+          "reviewer_to_confidence": "high",
+          "ego_only_decidable": false,
+          "note": "one or both endpoint frames judged not ego-only decidable"
+        }
+      ],
+      "ego_only_decidable_changes": false,
+      "object_visibility": {
+        "from": {
+          "robot": "visible",
+          "red_cylinder": "not_visible"
+        },
+        "to": {
+          "robot": "visible",
+          "red_cylinder": "visible"
+        }
+      }
+    },
+    {
+      "episode": "usim_train_episode_000556",
+      "from": 304,
+      "to": 339,
+      "non_empty": true,
+      "action_text": "The red cylinder becomes grasped by the robot. The red cylinder is not on the seabed anymore. The robot is no longer next to the red cylinder.",
+      "signatures": [
+        "add_node_red_cylinder_InGripper",
+        "remove_edge_robot_red_cylinder_NextTo",
+        "remove_node_red_cylinder_OnSeabed"
+      ],
+      "changed_relations": [
+        "OnSeabed(red_cylinder)",
+        "InGripper(red_cylinder)",
+        "NextTo(robot,red_cylinder)"
+      ],
+      "change_checks": [
+        {
+          "relation": "OnSeabed(red_cylinder)",
+          "from_value": "true",
+          "to_value": "false",
+          "reviewer_from_confidence": "high",
+          "reviewer_to_confidence": "low",
+          "ego_only_decidable": false,
+          "note": "one or both endpoint frames judged not ego-only decidable"
+        },
+        {
+          "relation": "InGripper(red_cylinder)",
+          "from_value": "false",
+          "to_value": "true",
+          "reviewer_from_confidence": "high",
+          "reviewer_to_confidence": "high",
+          "ego_only_decidable": true,
+          "note": ""
+        },
+        {
+          "relation": "NextTo(robot,red_cylinder)",
+          "from_value": "true",
+          "to_value": "false",
+          "reviewer_from_confidence": "high",
+          "reviewer_to_confidence": "high",
+          "ego_only_decidable": true,
+          "note": ""
+        }
+      ],
+      "ego_only_decidable_changes": false,
+      "object_visibility": {
+        "from": {
+          "robot": "visible",
+          "red_cylinder": "visible"
+        },
+        "to": {
+          "robot": "visible",
+          "red_cylinder": "visible"
+        }
+      }
+    },
+    {
+      "episode": "usim_train_episode_000556",
+      "from": 339,
+      "to": 419,
+      "non_empty": true,
+      "action_text": "The red cylinder becomes lifted above the seabed.",
+      "signatures": [
+        "add_node_red_cylinder_Lifted"
+      ],
+      "changed_relations": [
+        "Lifted(red_cylinder)"
+      ],
+      "change_checks": [
+        {
+          "relation": "Lifted(red_cylinder)",
+          "from_value": "false",
+          "to_value": "true",
+          "reviewer_from_confidence": "medium",
+          "reviewer_to_confidence": "medium",
+          "ego_only_decidable": false,
+          "note": "one or both endpoint frames judged not ego-only decidable"
+        }
+      ],
+      "ego_only_decidable_changes": false,
+      "object_visibility": {
+        "from": {
+          "robot": "visible",
+          "red_cylinder": "visible"
+        },
+        "to": {
+          "robot": "visible",
+          "red_cylinder": "visible"
+        }
+      }
+    },
+    {
+      "episode": "usim_train_episode_001302",
+      "from": 150,
+      "to": 168,
+      "non_empty": true,
+      "action_text": "The robot transitions to be next to the red cylinder.",
+      "signatures": [
+        "add_edge_robot_red_cylinder_NextTo"
+      ],
+      "changed_relations": [
+        "NextTo(robot,red_cylinder)"
+      ],
+      "change_checks": [
+        {
+          "relation": "NextTo(robot,red_cylinder)",
+          "from_value": "false",
+          "to_value": "true",
+          "reviewer_from_confidence": "high",
+          "reviewer_to_confidence": "high",
+          "ego_only_decidable": true,
+          "note": ""
+        }
+      ],
+      "ego_only_decidable_changes": true,
+      "object_visibility": {
+        "from": {
+          "robot": "visible",
+          "red_cylinder": "visible"
+        },
+        "to": {
+          "robot": "visible",
+          "red_cylinder": "partial"
+        }
+      }
+    },
+    {
+      "episode": "usim_train_episode_001302",
+      "from": 168,
+      "to": 196,
+      "non_empty": true,
+      "action_text": "The red cylinder is now grasped by the robot. The red cylinder is not on the seabed anymore. The robot stopped being next to the red cylinder.",
+      "signatures": [
+        "add_node_red_cylinder_InGripper",
+        "remove_edge_robot_red_cylinder_NextTo",
+        "remove_node_red_cylinder_OnSeabed"
+      ],
+      "changed_relations": [
+        "OnSeabed(red_cylinder)",
+        "InGripper(red_cylinder)",
+        "NextTo(robot,red_cylinder)"
+      ],
+      "change_checks": [
+        {
+          "relation": "OnSeabed(red_cylinder)",
+          "from_value": "true",
+          "to_value": "false",
+          "reviewer_from_confidence": "medium",
+          "reviewer_to_confidence": "low",
+          "ego_only_decidable": false,
+          "note": "one or both endpoint frames judged not ego-only decidable"
+        },
+        {
+          "relation": "InGripper(red_cylinder)",
+          "from_value": "false",
+          "to_value": "true",
+          "reviewer_from_confidence": "medium",
+          "reviewer_to_confidence": "high",
+          "ego_only_decidable": false,
+          "note": "one or both endpoint frames judged not ego-only decidable"
+        },
+        {
+          "relation": "NextTo(robot,red_cylinder)",
+          "from_value": "true",
+          "to_value": "false",
+          "reviewer_from_confidence": "high",
+          "reviewer_to_confidence": "high",
+          "ego_only_decidable": true,
+          "note": ""
+        }
+      ],
+      "ego_only_decidable_changes": false,
+      "object_visibility": {
+        "from": {
+          "robot": "visible",
+          "red_cylinder": "partial"
+        },
+        "to": {
+          "robot": "visible",
+          "red_cylinder": "visible"
+        }
+      }
+    },
+    {
+      "episode": "usim_train_episode_001302",
+      "from": 196,
+      "to": 415,
+      "non_empty": true,
+      "action_text": "The red cylinder is now lifted above the seabed.",
+      "signatures": [
+        "add_node_red_cylinder_Lifted"
+      ],
+      "changed_relations": [
+        "Lifted(red_cylinder)"
+      ],
+      "change_checks": [
+        {
+          "relation": "Lifted(red_cylinder)",
+          "from_value": "false",
+          "to_value": "true",
+          "reviewer_from_confidence": "medium",
+          "reviewer_to_confidence": "medium",
+          "ego_only_decidable": false,
+          "note": "one or both endpoint frames judged not ego-only decidable"
+        }
+      ],
+      "ego_only_decidable_changes": false,
+      "object_visibility": {
+        "from": {
+          "robot": "visible",
+          "red_cylinder": "visible"
+        },
+        "to": {
+          "robot": "visible",
+          "red_cylinder": "visible"
+        }
+      }
+    }
+  ],
+  "transition_issues": [
+    {
+      "episode": "usim_train_episode_000553",
+      "from": 110,
+      "to": 140,
+      "action_text": "The robot becomes next to the red cylinder.",
+      "issues": [
+        "changed relation(s) not ego-only decidable at one/both endpoints: NextTo(robot,red_cylinder)"
+      ]
+    },
+    {
+      "episode": "usim_train_episode_000553",
+      "from": 140,
+      "to": 168,
+      "action_text": "The red cylinder becomes grasped by the robot. The red cylinder is not on the seabed anymore. The robot is no longer next to the red cylinder.",
+      "issues": [
+        "changed relation(s) not ego-only decidable at one/both endpoints: OnSeabed(red_cylinder)"
+      ]
+    },
+    {
+      "episode": "usim_train_episode_000553",
+      "from": 168,
+      "to": 248,
+      "action_text": "The red cylinder is now lifted above the seabed.",
+      "issues": [
+        "changed relation(s) not ego-only decidable at one/both endpoints: Lifted(red_cylinder)"
+      ]
+    },
+    {
+      "episode": "usim_train_episode_000555",
+      "from": 140,
+      "to": 262,
+      "action_text": "The robot transitions to be next to the red cylinder.",
+      "issues": [
+        "changed relation(s) not ego-only decidable at one/both endpoints: NextTo(robot,red_cylinder)",
+        "red_cylinder not visible at the 'from' key frame"
+      ]
+    },
+    {
+      "episode": "usim_train_episode_000555",
+      "from": 262,
+      "to": 297,
+      "action_text": "The red cylinder becomes grasped by the robot. The red cylinder is no longer on the seabed. The robot stopped being next to the red cylinder.",
+      "issues": [
+        "changed relation(s) not ego-only decidable at one/both endpoints: OnSeabed(red_cylinder)"
+      ]
+    },
+    {
+      "episode": "usim_train_episode_000555",
+      "from": 297,
+      "to": 377,
+      "action_text": "The red cylinder becomes lifted above the seabed.",
+      "issues": [
+        "changed relation(s) not ego-only decidable at one/both endpoints: Lifted(red_cylinder)"
+      ]
+    },
+    {
+      "episode": "usim_train_episode_000556",
+      "from": 180,
+      "to": 304,
+      "action_text": "The robot changes to be next to the red cylinder.",
+      "issues": [
+        "changed relation(s) not ego-only decidable at one/both endpoints: NextTo(robot,red_cylinder)",
+        "red_cylinder not visible at the 'from' key frame"
+      ]
+    },
+    {
+      "episode": "usim_train_episode_000556",
+      "from": 304,
+      "to": 339,
+      "action_text": "The red cylinder becomes grasped by the robot. The red cylinder is not on the seabed anymore. The robot is no longer next to the red cylinder.",
+      "issues": [
+        "changed relation(s) not ego-only decidable at one/both endpoints: OnSeabed(red_cylinder)"
+      ]
+    },
+    {
+      "episode": "usim_train_episode_000556",
+      "from": 339,
+      "to": 419,
+      "action_text": "The red cylinder becomes lifted above the seabed.",
+      "issues": [
+        "changed relation(s) not ego-only decidable at one/both endpoints: Lifted(red_cylinder)"
+      ]
+    },
+    {
+      "episode": "usim_train_episode_001302",
+      "from": 168,
+      "to": 196,
+      "action_text": "The red cylinder is now grasped by the robot. The red cylinder is not on the seabed anymore. The robot stopped being next to the red cylinder.",
+      "issues": [
+        "changed relation(s) not ego-only decidable at one/both endpoints: OnSeabed(red_cylinder), InGripper(red_cylinder)"
+      ]
+    },
+    {
+      "episode": "usim_train_episode_001302",
+      "from": 196,
+      "to": 415,
+      "action_text": "The red cylinder is now lifted above the seabed.",
+      "issues": [
+        "changed relation(s) not ego-only decidable at one/both endpoints: Lifted(red_cylinder)"
+      ]
+    }
+  ],
+  "rates": {
+    "relation_agreement": 0.7344,
+    "visibility_agreement": 0.9375,
+    "relation_agreement_excluding_review_undecidable": 0.8246
+  }
+}
