@@ -57,6 +57,8 @@
 - [ ] **P1 遗留：同版本重跑对照**：v0.1 的 A/B/C 三条件用了 **3 个不同版本的 `run_inference.py`**，正式对照必须同一源码版本重跑；冻结清单已记录漂移（[评分契约 §6.2](WBW/ENACT-USIM-评分契约与统计-20261027.md)）。
 - [ ] **思考模式对照**：`enable_thinking=true` + 更大预算，单独 run，不与首轮混分（[执行结果 §11](WBW/ENACT-USIM-qwen3.8-max-执行结果-20261024.md)）。
 - [x] **B 条件（v0.2 局部放大）**：已构建 120 题 / 432 图，左 panel 与 A 逐字节一致、432/432 可被冻结渲染器复现、程序基线与 A 逐位相同；独立校验 `scripts/usim/check_condition_b.py` → `status=pass`（[构建报告 §7.1](WBW/ENACT-USIM-v0.2构建与协议准备-20261027.md)）。**尚未跑模型**。
+- [x] **四条件一键驱动**：`scripts/usim/run_v02_matrix.py` 固定同一 `run_inference.py`/`evaluate.py`（sha 写入 manifest），A=84 / B=84 / C=84 / D=42（dev 过滤），`--dry-run` 四条件全通过；密钥只读 `VLM_API_KEY`，无密钥即拒绝运行（[构建报告 §7.2](WBW/ENACT-USIM-v0.2构建与协议准备-20261027.md)）。
+- [ ] **test_reserve 10 条标注（进行中 1/10）**：`001078` 已完成并过 `annotate_episode --check`（4 帧 / 3 转移全可见 / 0 空转移）；其余 9 条（1384/1650/1734/1259/1273/1145/1497/1549/1378）事件提议与审阅图已生成，待逐帧确认。标注写入 `_expansion/annotation_work/test_reserve/`，**不写 v0.2 数据集**（避免破坏已冻结的 dev/val）。
 - [ ] **统计分层（密钥就位前可做）**：`report_stats.py` 可接受任意 N 个 `--condition`（D 直接加入 A−C/A−D/A−B 配对），但缺"文本可解/不可解"分层；v0.2 inverse 60/60 文本可解，不分层就无法把视觉证据与文本捷径分开。
 - [ ] **API 密钥阻塞**：当前会话无 `VLM_API_KEY` 时推理器只能 `--dry-run`，无法产出正式分数；正式 run/test 需注入密钥（环境变量、不落盘，[v0.2 方案 §7](WBR/ENACT-USIM-v0.2评测与正式测试方案-20261027.md)）。
 

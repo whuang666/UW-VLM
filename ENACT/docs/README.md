@@ -40,11 +40,13 @@
 - **v0.2 协议冻结**：13 组 **1818 文件**，payload `6d14fb83f822a6088f7d9acc4d638971147b90e8f8e1cca6070b333d23c8c10b`（`freeze_id=20261027b`，含 B 条件 432 图 + B 划分 + B 基线；较首版 1374 文件/`d3370ad2…` 的增量全部对应 B），`--verify` exit 0、self-test-v02 7/7；test_reserve 与 dev/val/条件 D **零重叠**。[冻结清单](../data/usim_enact/_protocol/freeze_usim-enact-v0.2_20261027b.json)
 - **条件 D（v0.2）**：forward 60 题 / 216 图 / oracle 1.0；**尚未跑模型**。[条件 D](../data/usim_enact/_protocol/conditions/D_no_action_text_v0.2/)
 - **条件 B（局部放大 v0.2）**：已构建 120 题 / 432 图（R1 目标锚定 246、R2 固定窗 186，倍率 2.0×/1.6×）；左 panel 与 A 逐字节一致、432/432 可复现、程序基线与 A 逐位相同；**尚未跑模型**。[构建报告 §7.1](WBW/ENACT-USIM-v0.2构建与协议准备-20261027.md)
+- **四条件一键驱动**：`scripts/usim/run_v02_matrix.py`（A/B/C/D 同源同参，源码 sha 写入 manifest；`--dry-run` 已全通，无 `VLM_API_KEY` 时拒绝运行）。[构建报告 §7.2](WBW/ENACT-USIM-v0.2构建与协议准备-20261027.md)
 - **L=5 仅 6 题**：来自 3 条 transfer 的 at_box（`NearBox(robot,green_box)`）；`InBox` / `release_settle` / `touching` 均无 ego-only 证据（transfer 100/100 条无可靠入箱）。
 
 ### 待做与阻塞（截至 2026-10-27）
 
-- **A/B/C/D 模型实验（v0.2）与正式 test**：未运行；需 `VLM_API_KEY`。四条件必须同一 `run_inference.py` 源码版本，运行后以真实 run 产物重新生成 run 级冻结。
+- **A/B/C/D 模型实验（v0.2）与正式 test**：未运行；需 `VLM_API_KEY`。四条件用 `run_v02_matrix.py` 一次跑完（同源同参），运行后以真实 run 产物重新生成 run 级冻结。
+- **test_reserve 标注（1/10）**：`001078` 已完成并过校验；其余 9 条的事件提议与审阅图已生成，待逐帧确认。标注先落 `_expansion/annotation_work/`，不写已冻结的 v0.2 dev/val。
 - **统计脚本缺 D 与文本可解分层**：`report_stats.py` 的 `--condition` 已是任意 N 条件（D 可直接以 `NAME=相对目录` 加入配对），但**尚无"文本可解/不可解"分层表**（v0.2 的 inverse 60/60 文本可解，必须分层才能报视觉证据）；该脚本不在冻结 `code` 组内，可安全扩展。
 - **思考模式对照**（`enable_thinking=true` + 更大预算）未开始。
 - **API 密钥阻塞**：当前会话无 `VLM_API_KEY`，推理器只能 `--dry-run`（输入/资产校验），不能产出正式分数。[v0.2 方案 §7](WBR/ENACT-USIM-v0.2评测与正式测试方案-20261027.md)

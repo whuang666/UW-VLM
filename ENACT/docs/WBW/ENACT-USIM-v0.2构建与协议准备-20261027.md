@@ -183,6 +183,26 @@
 
 
 
+### 7.2 一条命令跑完四条件（`run_v02_matrix.py`）
+
+v0.1 的 A/B/C 三次 run 用了三个不同 `run_inference.py` 版本（P1），根源是 §9 那串手敲命令。本轮新增驱动脚本 `scripts/usim/run_v02_matrix.py`，把"同一源码版本 + 同一解码参数 + 每条件固定题集"变成代码约束而不是操作纪律：
+
+| 条件 | 题集 | 题数 | 备注 |
+|---|---|---|---|
+| A `A_full_image` | `inputs/dev.jsonl` | 84 | — |
+| B `B_zoom` | `inputs/dev_B.jsonl` | 84 | ID 顺序与 A **完全相同**（已断言） |
+| C `C_text_only` | `inputs/dev.jsonl` + `--drop-images` | 84 | — |
+| D `D_no_action_text` | `_protocol/derived/dev_D_forward.jsonl` | 42 | 条件 D 全量 60 题按 dev 19 条 episode 过滤；A∩D = 42 |
+
+- 脚本在发起任何请求前先解析四份题集、打印题量与 `qa_sha256`/`image_manifest_sha256`，并把 `run_inference.py` 与 `evaluate.py` 的源码 sha 写进 `_protocol/derived/matrix_manifest_{dryrun,run}.json`——"同版本"因此可被外部核对，而不是靠声明。
+- D 的 dev 过滤题集写到 `_protocol/derived/`，**不写 `$run\inputs\`**：后者在冻结 `inputs` 组通配内，加文件会立刻让 `--verify` 失配。
+- 密钥只从 `VLM_API_KEY` 环境变量读取（`run_inference.py` 自身读，驱动脚本不接触、不记录、不落盘）；无密钥时脚本明确拒绝运行，只允许 `--dry-run`。
+- `--dry-run` 实测：四条件全通过，`format_directive_sha256` 与 v0.1 冻结值一致（`987976c3…`），未发任何网络请求；四条件 qa/image 哈希各不相同且与实际题集对应。
+- 缺省端点 `https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions`、模型 `qwen3.8-max`（即冻结契约里的那一个）。
+- 直接派生自 v0.2 协议冻结的是 `run_inference.py` 与 `evaluate.py`（在冻结 `code` 组内）；驱动脚本本身不在冻结组，但它在 manifest 里记录了这两个文件的 sha，因此"同版本"仍可核对。
+
+## 8. 协议冻结与正式 test 计划
+
 **冻结已完成**（`data/usim_enact/_protocol/freeze_usim-enact-v0.2_20261027b.json`；首版 `…_20261027.json` 保留作对照）：
 
 - 13 组 **1818 文件**（labels / images / QA / run inputs / baseline / splits / condition D / model config / docs / code 等），payload `6d14fb83f822a6088f7d9acc4d638971147b90e8f8e1cca6070b333d23c8c10b`（2026-10-27T18:05:43+08:00 重新冻结，`freeze_id=20261027b`）；
@@ -203,6 +223,19 @@
 5. 目前 test 构建与运行待 `VLM_API_KEY`；test 候选与划分规则已固定（`annotation_assignment.json`），冻结清单已登记。
 
 ## 9. 复现命令
+
+**四条件正式运行（推荐，一条命令）**：
+
+```powershell
+Set-Location 'E:\code\UW-VLM\ENACT'
+$env:VLM_API_KEY = '<your-key>'      # 只在会话内，不写文件、不进命令行参数
+& 'C:\Users\whuang\.workbuddy\binaries\python\envs\default\Scripts\python.exe' scripts\usim\run_v02_matrix.py
+# 先校验输入、不发请求：
+# & $py scripts\usim\run_v02_matrix.py --dry-run
+```
+
+下面是分步手工命令，用于重建数据/题集/基线（**不是**跑四条件的常规路径，逐条手敲正是 v0.1 P1 的来源）。
+
 
 ```powershell
 Set-Location 'E:\code\UW-VLM\ENACT'

@@ -1,0 +1,384 @@
+{
+  "episode_key": "usim_train_episode_001259",
+  "task_text": "Pick up the blue cylinder",
+  "length": 304,
+  "gripper_events": [
+    {
+      "event": "close",
+      "frame": 159
+    },
+    {
+      "event": "open",
+      "frame": 186
+    },
+    {
+      "event": "close",
+      "frame": 190
+    }
+  ],
+  "proposed_frames": [
+    0,
+    99,
+    126,
+    129,
+    130,
+    149,
+    156,
+    159,
+    160,
+    174,
+    176,
+    180,
+    186,
+    190,
+    199,
+    201,
+    205,
+    226,
+    230,
+    302
+  ],
+  "blob_stats": {
+    "0": {
+      "red": {
+        "area": 32,
+        "cx": 101.5,
+        "cy": 6.5
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 584,
+        "cx": 258.8,
+        "cy": 62.0
+      }
+    },
+    "99": {
+      "red": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 4522,
+        "cx": 31.9,
+        "cy": 33.2
+      }
+    },
+    "126": {
+      "red": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 6205,
+        "cx": 49.3,
+        "cy": 31.8
+      }
+    },
+    "129": {
+      "red": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 4316,
+        "cx": 31.0,
+        "cy": 32.2
+      }
+    },
+    "130": {
+      "red": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 4316,
+        "cx": 31.0,
+        "cy": 32.2
+      }
+    },
+    "149": {
+      "red": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 4365,
+        "cx": 31.5,
+        "cy": 32.7
+      }
+    },
+    "156": {
+      "red": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 4365,
+        "cx": 31.5,
+        "cy": 32.7
+      }
+    },
+    "159": {
+      "red": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 4365,
+        "cx": 31.5,
+        "cy": 32.7
+      }
+    },
+    "160": {
+      "red": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 4439,
+        "cx": 31.7,
+        "cy": 32.8
+      }
+    },
+    "174": {
+      "red": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 5879,
+        "cx": 47.0,
+        "cy": 30.5
+      }
+    },
+    "176": {
+      "red": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 5879,
+        "cx": 47.0,
+        "cy": 30.5
+      }
+    },
+    "180": {
+      "red": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 4376,
+        "cx": 30.9,
+        "cy": 32.3
+      }
+    },
+    "186": {
+      "red": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 4376,
+        "cx": 30.9,
+        "cy": 32.3
+      }
+    },
+    "190": {
+      "red": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 4376,
+        "cx": 30.9,
+        "cy": 32.3
+      }
+    },
+    "199": {
+      "red": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 4317,
+        "cx": 31.3,
+        "cy": 32.3
+      }
+    },
+    "201": {
+      "red": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 4317,
+        "cx": 31.3,
+        "cy": 32.3
+      }
+    },
+    "205": {
+      "red": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 4317,
+        "cx": 31.3,
+        "cy": 32.3
+      }
+    },
+    "226": {
+      "red": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 4470,
+        "cx": 31.6,
+        "cy": 32.7
+      }
+    },
+    "230": {
+      "red": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 4522,
+        "cx": 32.3,
+        "cy": 33.2
+      }
+    },
+    "302": {
+      "red": {
+        "area": 95,
+        "cx": 2.1,
+        "cy": 223.6
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 6462,
+        "cx": 50.0,
+        "cy": 32.7
+      }
+    }
+  },
+  "sheet": "data\\usim_enact\\_review\\test_reserve\\proposal_0000_0302.png"
+}

@@ -1,0 +1,160 @@
+{
+  "episode_key": "usim_train_episode_001145",
+  "task_text": "Pick up the red cylinder",
+  "length": 221,
+  "gripper_events": [
+    {
+      "event": "close",
+      "frame": 141
+    }
+  ],
+  "proposed_frames": [
+    0,
+    81,
+    111,
+    131,
+    141,
+    156,
+    181,
+    219
+  ],
+  "blob_stats": {
+    "0": {
+      "red": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 14080,
+        "cx": 210.8,
+        "cy": 34.1
+      }
+    },
+    "81": {
+      "red": {
+        "area": 109,
+        "cx": 79.6,
+        "cy": 161.6
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 8097,
+        "cx": 235.1,
+        "cy": 28.6
+      }
+    },
+    "111": {
+      "red": {
+        "area": 241,
+        "cx": 100.8,
+        "cy": 159.8
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 6534,
+        "cx": 241.0,
+        "cy": 27.2
+      }
+    },
+    "131": {
+      "red": {
+        "area": 246,
+        "cx": 108.9,
+        "cy": 136.1
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 3425,
+        "cx": 258.5,
+        "cy": 27.0
+      }
+    },
+    "141": {
+      "red": {
+        "area": 172,
+        "cx": 104.4,
+        "cy": 126.0
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 3688,
+        "cx": 262.0,
+        "cy": 25.3
+      }
+    },
+    "156": {
+      "red": {
+        "area": 120,
+        "cx": 103.0,
+        "cy": 120.7
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 5004,
+        "cx": 57.3,
+        "cy": 25.5
+      }
+    },
+    "181": {
+      "red": {
+        "area": 119,
+        "cx": 103.5,
+        "cy": 119.6
+      },
+      "green": {
+        "area": 16,
+        "cx": 57.5,
+        "cy": 53.5
+      },
+      "blue": {
+        "area": 5029,
+        "cx": 57.2,
+        "cy": 25.4
+      }
+    },
+    "219": {
+      "red": {
+        "area": 123,
+        "cx": 103.5,
+        "cy": 120.5
+      },
+      "green": {
+        "area": 0,
+        "cx": null,
+        "cy": null
+      },
+      "blue": {
+        "area": 6768,
+        "cx": 241.1,
+        "cy": 24.5
+      }
+    }
+  },
+  "sheet": "data\\usim_enact\\_review\\test_reserve\\proposal_0000_0219.png"
+}

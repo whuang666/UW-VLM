@@ -28,6 +28,14 @@
 - 重新冻结为 `freeze_usim-enact-v0.2_20261027b`：13 组 **1818 文件**（首版 1374 + B 的 images 432 / qa 2 / inputs 4 / baselines 6），payload `6d14fb83…`，`--verify` exit 0、`--self-test-v02` 7/7。
 - 文档：v0.2 构建报告新增 §7.1（B 构建与校验）、条件矩阵与 §9 命令更新、§10 新增"数字放大不增加像素信息"等 2 条限制；协议证据与 README/next_steps 同步冻结与 B 状态。
 
+## 2026-10-27（四条件驱动与 test 首条标注）
+
+- 新增 `ENACT/scripts/usim/run_v02_matrix.py`：一条命令跑完 A/B/C/D（同源同参、固定题集 A=84/B=84/C=84/D=42），把 `run_inference.py`/`evaluate.py` 的 sha 写进 manifest，使"同一源码版本"可外部核对；密钥只从 `VLM_API_KEY` 读取，缺失即拒绝运行。`--dry-run` 四条件全通过。
+- D 条件的 dev 过滤题集落在 `_protocol/derived/`（不写冻结的 `inputs/`），避免加文件破坏 `--verify`。
+- test_reserve 首条 episode `001078`（Pick up the pipe）完成标注并通过 `annotate_episode --check`：4 关键帧 / 3 转移全可见 / 0 空转移；判定依据为夹爪闭合于 199、dvl 离底高度最低点在 230 且此后单调上浮。其余 9 条事件提议与审阅图已生成。
+- 修正 `_expansion/tools/annotate_spec_template.json`：grasp 帧的 `OnSeabed` 由 `false` 改为 `true`（该模板仍沿用已被第二轮复核推翻的 v0.1 模板推导"抓住 ⇒ 离底"）。
+- 文档：构建报告新增 §7.2（一键驱动）与 §9 首选命令，并修复上一处插入误删的 `## 8.` 章节标题。
+
 ## 2026-10-24
 
 - 修复严格评分与 API 运行记录，采用评分协议 `usim_strict_v0.2`。
