@@ -184,7 +184,7 @@ def pick_target(frame: np.ndarray, colours: Sequence[str]) -> Tuple[Optional[Dic
             for component in components
             if MIN_TARGET_AREA.get(colour, 40) <= component["area"] <= MAX_TARGET_AREA.get(colour, 2500)
             and not component["touches_border"]
-            and component["cy"] >= 0.30 * height
+            and component["cy"] >= 0.40 * height
         ]
         if not usable:
             continue
@@ -812,12 +812,18 @@ def l5_analysis(gripper: Dict, task_text: str, candidates: List[Dict], candidate
         )
     else:
         conclusion = "L=4 maximum under the current predicate set; no L=5 evidence."
+    strong_routes = {"transfer_inbox", "release_settle"}
     return {
         "route": primary["route"],
         "route_candidates": route_candidates,
         "l_max_states_baseline": baseline,
         "l_max_states_optimistic": optimistic,
-        "l5_target_feasible": bool(primary["available"] and optimistic >= 5),
+        "l5_target_feasible": bool(
+            primary["available"] and optimistic >= 5 and primary["route"] in strong_routes
+        ),
+        "touching_route_may_extend": bool(
+            primary["route"] == "touching" and primary["available"] and optimistic >= 5
+        ),
         "needs_review": True,
         "conclusion": conclusion,
     }
@@ -1123,6 +1129,100 @@ def build_package(reader: USIMReader, row: Dict, out_root: Path, dataset_root: P
     return package
 
 
+# ------------------------------------------------------------------ index file
+def collect_result(package: Dict, package_dir: Path) -> Dict:
+    l5 = package["l5"]
+    primary = l5["route_candidates"][0]
+    return {
+        "episode_key": package["episode_key"],
+        "episode_index": package["episode_index"],
+        "task_text": package["task_text"],
+        "task_index": package.get("task_index"),
+        "block_id": package.get("block_id"),
+        "length": package["length"],
+        "scene_hint": package.get("scene", {}).get("hint"),
+        "l5_route": l5["route"],
+        "l5_route_available": primary["available"],
+        "l5_target_feasible": l5.get("l5_target_feasible", False),
+        "touching_route_may_extend": l5.get("touching_route_may_extend", False),
+        "l_max_states_baseline": l5.get("l_max_states_baseline"),
+        "l_max_states_optimistic": l5.get("l_max_states_optimistic"),
+        "supports_l5_candidate": package.get("selection", {}).get("supports_l5_candidate"),
+        "candidate_frames": [item["frame_index"] for item in package["candidate_frames"]],
+        "candidate_roles": [item["role"] for item in package["candidate_frames"]],
+        "sheets": {key: value["path"] for key, value in package.get("sheets", {}).items()},
+        "package_json": str(package_dir / "package.json"),
+        "package_sha256": sha256_file(package_dir / "package.json"),
+        "warnings": package.get("warnings", []),
+    }
+
+
+def write_index(out_root: Path, selection_path: Optional[Path] = None) -> Dict:
+    """Build a stable ``index.json`` from the existing package directories."""
+    results: List[Dict] = []
+    for package_dir in sorted(out_root.glob("usim_train_episode_*")):
+        package_path = package_dir / "package.json"
+        if not package_path.is_file():
+            continue
+        package = json.loads(package_path.read_text(encoding="utf-8"))
+        results.append(collect_result(package, package_dir))
+    results.sort(key=lambda item: item["episode_index"])
+
+    by_task: Dict[str, int] = {}
+    by_block: Dict[str, int] = {}
+    by_route: Dict[str, int] = {}
+    by_baseline: Dict[str, int] = {}
+    by_scene: Dict[str, int] = {}
+    for item in results:
+        by_task[item["task_text"]] = by_task.get(item["task_text"], 0) + 1
+        by_block[str(item["block_id"])] = by_block.get(str(item["block_id"]), 0) + 1
+        by_route[item["l5_route"]] = by_route.get(item["l5_route"], 0) + 1
+        key = str(item["l_max_states_baseline"])
+        by_baseline[key] = by_baseline.get(key, 0) + 1
+        scene = str(item["scene_hint"])
+        by_scene[scene] = by_scene.get(scene, 0) + 1
+
+    missing_sheets = []
+    for item in results:
+        for relative in item["sheets"].values():
+            path = Path(item["package_json"]).parent / relative
+            if not path.exists() or path.stat().st_size == 0:
+                missing_sheets.append({"episode_key": item["episode_key"], "path": str(path)})
+    index = {
+        "schema_version": 2,
+        "builder": "scripts/usim/build_episode_package.py",
+        "selection": str(selection_path) if selection_path else None,
+        "package_count": len(results),
+        "counts_by_task": by_task,
+        "counts_by_block": by_block,
+        "counts_by_l5_route": by_route,
+        "counts_by_l_max_baseline": dict(sorted(by_baseline.items())),
+        "counts_by_scene_hint": by_scene,
+        "packages_supporting_l5": [
+            item["episode_key"]
+            for item in results
+            if item["l5_target_feasible"] or item["supports_l5_candidate"]
+        ],
+        "packages_touching_route_candidates": [
+            item["episode_key"] for item in results if item["touching_route_may_extend"]
+        ],
+        "packages_with_warnings": [
+            item["episode_key"] for item in results if item["warnings"]
+        ],
+        "sheets_missing": missing_sheets,
+        "packages": results,
+        "note": (
+            "L=5 routes are evidence proposals from gripper signal + colour blobs; "
+            "every state needs visual review before annotation"
+        ),
+    }
+    index_path = out_root / "index.json"
+    index_path.write_text(
+        json.dumps(index, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n"
+    )
+    return index
+
+
 # -------------------------------------------------------------------------- main
 def main(argv: Optional[Sequence[str]] = None) -> int:
     parser = argparse.ArgumentParser(
@@ -1134,7 +1234,19 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     parser.add_argument("--only", default="", help="comma separated episode indices")
     parser.add_argument("--no-wrist", action="store_true")
     parser.add_argument("--overwrite", action="store_true")
+    parser.add_argument("--reindex", action="store_true",
+                        help="only rebuild index.json from existing package directories")
     args = parser.parse_args(argv)
+
+    out_root = Path(args.out)
+    out_root.mkdir(parents=True, exist_ok=True)
+    if args.reindex:
+        index = write_index(out_root, Path(args.selection))
+        print(json.dumps({key: index[key] for key in ("package_count", "counts_by_task",
+                                                       "counts_by_l5_route", "counts_by_l_max_baseline")},
+                         indent=2, ensure_ascii=False))
+        print(f"index: {out_root / 'index.json'}")
+        return 0
 
     dataset_root = Path(args.dataset_root)
     rows = load_selection(Path(args.selection))
@@ -1142,10 +1254,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     if only:
         rows = [row for row in rows if int(row["episode_index"]) in only]
     reader = USIMReader(dataset_root, split="train")
-    out_root = Path(args.out)
-    out_root.mkdir(parents=True, exist_ok=True)
 
-    results = []
     for row in rows:
         episode_index = int(row["episode_index"])
         package_dir = out_root / f"usim_train_episode_{episode_index:06d}"
@@ -1160,59 +1269,25 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
                 f"[built] {package['episode_key']}: {len(package['candidate_frames'])} frames, "
                 f"l5_route={route}, sheets={len(package['sheets'])}, warnings={len(package['warnings'])}"
             )
-        results.append(
-            {
-                "episode_key": package["episode_key"],
-                "episode_index": package["episode_index"],
-                "task_text": package["task_text"],
-                "block_id": package.get("block_id"),
-                "length": package["length"],
-                "l5_route": package["l5"]["route"],
-                "l5_route_available": package["l5"]["route_candidates"][0]["available"],
-                "supports_l5_candidate": package["selection"].get("supports_l5_candidate"),
-                "candidate_frames": [item["frame_index"] for item in package["candidate_frames"]],
-                "sheets": {key: value["path"] for key, value in package["sheets"].items()},
-                "package_json": str(package_dir / "package.json"),
-                "package_sha256": package.get("package_sha256"),
-                "warnings": package["warnings"],
-            }
-        )
 
-    # -------------------------------------------------------------- index file
-    by_task: Dict[str, int] = {}
-    by_block: Dict[str, int] = {}
-    by_route: Dict[str, int] = {}
-    for item in results:
-        by_task[item["task_text"]] = by_task.get(item["task_text"], 0) + 1
-        by_block[str(item["block_id"])] = by_block.get(str(item["block_id"]), 0) + 1
-        by_route[item["l5_route"]] = by_route.get(item["l5_route"], 0) + 1
-    missing_sheets = []
-    for item in results:
-        for relative in item["sheets"].values():
-            path = Path(item["package_json"]).parent / relative
-            if not path.exists() or path.stat().st_size == 0:
-                missing_sheets.append(str(path))
-    index = {
-        "schema_version": 1,
-        "builder": "scripts/usim/build_episode_package.py",
-        "selection": str(Path(args.selection)),
-        "packages": len(results),
-        "counts_by_task": by_task,
-        "counts_by_block": by_block,
-        "counts_by_l5_route": by_route,
-        "l5_route_candidates": sorted(by_route),
-        "missing_sheets": missing_sheets,
-        "warnings": [item["episode_key"] for item in results if item["warnings"]],
-        "episodes": results,
-        "note": "L=5 routes are evidence proposals from gripper signal + colour blobs; every state needs visual review",
-    }
-    index_path = out_root / "index.json"
-    index_path.write_text(
-        json.dumps(index, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n"
+    index = write_index(out_root, Path(args.selection))
+    print(
+        json.dumps(
+            {
+                key: index[key]
+                for key in (
+                    "package_count",
+                    "counts_by_task",
+                    "counts_by_l5_route",
+                    "counts_by_l_max_baseline",
+                    "packages_supporting_l5",
+                )
+            },
+            indent=2,
+            ensure_ascii=False,
+        )
     )
-    print(json.dumps({key: index[key] for key in ("packages", "counts_by_task", "counts_by_l5_route")},
-                     indent=2, ensure_ascii=False))
-    print(f"index: {index_path}")
+    print(f"index: {out_root / 'index.json'}")
     return 0
 
 

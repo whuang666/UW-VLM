@@ -1,35 +1,39 @@
-"""Contract tests for the (proposed) ``usim_strict_v0.3`` scoring contract.
+"""Contract tests for the ``usim_strict_v0.3`` scoring protocol + v0.1 regression.
 
-``evaluate.py`` (``usim_strict_v0.2``) already fixes the four P0 items of
-docs/WBW §3.  Two scoring-relevant gaps remain, and both can only be tested with
-*synthetic* data because the frozen v0.1 set does not contain the situations:
+v0.3 was implemented in ``evaluate.py`` after Lead approval.  It keeps the v0.2
+EM/TA/PA formulas unchanged and adds one hard data gate:
 
-a. **Multiple semantically valid orders.**  ``evaluate.py`` computes TA from the
-   verifier, so if two permutations are accepted both must get ``TA=1`` while EM
-   must still recognise only the reference permutation.  The check enumerates a
-   synthetic case whose reference transitions are signature-subsets of the
-   swapped order and asserts ``TA=1`` for both, ``EM`` for one, and
-   ``semantic_only=0.5`` in the summary.
-b. **Non-exchangeable actions.**  Swapping a genuinely ordered pair (grasp then
-   lift) must give ``TA=0``; this guards against a verifier that only compares
-   sets and ignores order.
-c. **Empty reference signatures / empty visible transitions.**  The empty set is
-   a subset of everything, so the upstream verifier accepts *every* permutation
-   when a reference transition has an empty visible signature -- a false
-   semantic pass.  The test documents that upstream behaviour, then asserts the
-   v0.3 reference guard rejects such a record and scores it 0 instead of 1.
+* **Empty reference signatures / empty visible transitions.**  The empty set is a
+  subset of everything, so the verifier would accept *every* permutation for a
+  question whose reference transition has an empty visible signature -- a false
+  semantic pass.  ``USIMEvaluator.precheck`` now aborts the whole run
+  (``AssetError``, non-zero exit, no report) instead.
+
+The suite covers, with synthetic in-memory scene graphs unless stated otherwise:
+
+a. **Multiple semantically valid orders.**  Two permutations are accepted: both
+   must get ``TA=1`` while EM recognises only the reference one.
+b. **Non-exchangeable actions.**  Swapping grasp/lift must give ``TA=0``.
+c. **Empty reference signatures.**  Document the upstream verifier's false pass,
+   then assert the **actual** v0.3 ``precheck`` gate raises ``AssetError``; an
+   end-to-end ``evaluate.main`` run on such a frozen question exits non-zero and
+   writes no report.
 d. **Fixed denominator + strict parsing boundaries.**  L=3 perfect + L=4 missing
    must yield ``PA_transition_micro = 0.4``; explanation text / multiple arrays /
    non-permutations must all be invalid with zero score.
 e. **Duplicate / unknown prediction IDs** are rejected (exit code 2 from
    ``evaluate.main``), while a valid file for the same question is accepted.
+f. **v0.1 regression.**  Re-score the frozen v0.1 A/B/C predictions with the v0.3
+   scorer and compare ``overall``/``by_setting``/per-item values against the
+   archival v0.2 reports: every EM/TA/PA/count value must be identical (the only
+   report difference is the protocol name and the new gate block).
 
-Synthetic scene graphs are fed through a stub ``SceneGraphReader``; every fixture
-lives in memory, so no v0.1 file is written or modified.  Real v0.1 data is only
-*read* for the duplicate/unknown-ID probe of the existing ``evaluate.main``.
+Synthetic fixtures live in memory and the v0.1 files are only *read*; regression
+reports are written under ``data/usim_enact/_protocol/contract/regression_v0.1/``.
 
 Usage:
     python -m scripts.usim.check_scoring_contract_v2
+    python -m scripts.usim.check_scoring_contract_v2 --skip-regression
 
 Exit code 0 = every test passed; 1 = at least one failed.
 """
@@ -55,6 +59,7 @@ from scripts.usim import evaluate as evaluate_module  # noqa: E402
 from scripts.usim.evaluate import (  # noqa: E402
     DEFAULT_DATA_ROOT,
     EVALUATION_PROTOCOL,
+    AssetError,
     USIMEvaluator,
     USIMVerifier,
     load_jsonl,
@@ -62,8 +67,40 @@ from scripts.usim.evaluate import (  # noqa: E402
 )
 
 DEFAULT_OUT = ROOT / "data" / "usim_enact" / "_protocol" / "contract" / "check_scoring_contract_v2.json"
+REGRESSION_DIR = ROOT / "data" / "usim_enact" / "_protocol" / "contract" / "regression_v0.1"
+DEFAULT_RUN_DIR = ROOT / "data" / "usim_enact" / "runs" / "qwen3.8-max" / "dev_ego_thinking_false_001"
 CONTRACT_VERSION = "usim_strict_v0.3"
 TZ_SHANGHAI = timezone(timedelta(hours=8))
+
+# Published v0.2 reports that the v0.3 re-score must reproduce bit-for-bit
+# (report-level `overall` and `by_setting`, plus per-question item files).
+REGRESSION_CASES = {
+    "A_full_v1": {
+        "qa": "inputs/full_dev.jsonl",
+        "predictions": "full_v1/predictions.jsonl",
+        "reference_report": "full_v1/report.json",
+        "reference_items": "full_v1/report.items.jsonl",
+        "expected": {"count": 70, "EM": 0.9571, "TA": 0.9571,
+                     "PA_item_mean": 0.9619, "PA_transition_micro": 0.9610},
+    },
+    "B_condB_zoom": {
+        "qa": "B_zoom_qa",
+        "predictions": "condB_zoom/predictions.jsonl",
+        "reference_report": "condB_zoom/report.json",
+        "reference_items": "condB_zoom/report.items.jsonl",
+        "expected": {"count": 70, "EM": 0.9286, "TA": 0.9286,
+                     "PA_item_mean": 0.9333, "PA_transition_micro": 0.9351},
+    },
+    "C_condC_text_only": {
+        "qa": "inputs/full_dev.jsonl",
+        "predictions": "condC_text_only/predictions.jsonl",
+        "reference_report": "condC_text_only/report.json",
+        "reference_items": "condC_text_only/report.items.jsonl",
+        "expected": {"count": 70, "EM": 0.7286, "TA": 0.7286,
+                     "PA_item_mean": 0.7810, "PA_transition_micro": 0.7662},
+    },
+}
+REGRESSION_B_QA = "QA/conditions/B_zoom/enact_ordering.jsonl"
 
 
 def now_iso() -> str:
@@ -135,32 +172,40 @@ def make_record(record_id: str, task_name: str, direction: str, num_states: int,
 
 def stub_evaluator(reader: StubGraphReader, key_frame_ids: Sequence[str],
                    task_name: str = "synthetic_ordering_task") -> Tuple[USIMEvaluator, USIMVerifier]:
-    """A USIMEvaluator whose verifier is backed by the in-memory stub reader."""
+    """A USIMEvaluator whose verifier/task_data are backed by the in-memory stub.
+
+    ``image_paths`` is populated for every synthetic frame id so that the real
+    ``USIMEvaluator.precheck`` image checks pass and only the v0.3 reference gate
+    can fail.
+    """
     task_data = TaskData(
         task_name=task_name,
         scene_graph_reader=reader,
         key_frame_ids=list(key_frame_ids),
-        image_paths={},
+        image_paths={frame_id: {"external_sensor1": f"<stub>/{frame_id}.png"}
+                     for frame_id in key_frame_ids},
         task_dir="",
         image_root_path=Path("."),
     )
     verifier = USIMVerifier(task_data)
     evaluator = USIMEvaluator(DEFAULT_DATA_ROOT)
     evaluator.verifier = lambda _task_name: verifier  # type: ignore[assignment]
+    evaluator.task_data = lambda _task_name: task_data  # type: ignore[assignment]
     return evaluator, verifier
 
 
-# ------------------------------------------------------- proposed v0.3 contract
+# --------------------------------------------------- v0.3 reference-side checks
 class ContractViolation(RuntimeError):
     """Raised when the frozen question set itself cannot be scored (v0.3)."""
 
 
 class ScoringContractV2:
-    """Reference-spec implementation of the v0.3 contract additions.
+    """Independent reference implementation of the v0.3 reference-transition gate.
 
-    Not wired into ``evaluate.py`` (docs/WBW constraint: do not edit existing
-    scripts without Lead approval); the script serves as the executable spec and
-    as a regression test for the future scorer.
+    ``evaluate.py`` now implements the same rule in ``USIMEvaluator.precheck``.
+    Keeping this small class makes the contract test independent of the scorer
+    implementation: the suite asserts that both the reference implementation and
+    the shipped scorer reject the same synthetic data.
     """
 
     def __init__(self, evaluator: USIMEvaluator) -> None:
@@ -362,10 +407,8 @@ def test_b_non_exchangeable_swap() -> Dict[str, Any]:
     }
 
 
-def test_c_empty_reference_transitions() -> Dict[str, Any]:
+def test_c_empty_reference_transitions(data_root: Path) -> Dict[str, Any]:
     """Empty (or invisibly filtered) reference signatures must be rejected, not passed."""
-    import itertools
-
     no_visible_change = StubGraphReader({})
     invisible_change = StubGraphReader({
         # The underlying transition changes something, but nothing is visible in
@@ -390,16 +433,24 @@ def test_c_empty_reference_transitions() -> Dict[str, Any]:
         upstream = acceptance[tuple(wrong_answer)]
         upstream_false_passes = sum(1 for result in acceptance.values() if result["task_accuracy"])
 
+        # Independent reference implementation of the same gate.
         contract = ScoringContractV2(evaluator)
         audit = contract.reference_audit(record)
-        rejected_item = contract.score_record(record, wrong_answer)
         try:
             contract.validate_records([record])
-            validation_raises = False
-            validation_message = "no error raised"
+            reference_raises, reference_message = False, "no error raised"
         except ContractViolation as error:
-            validation_raises = True
-            validation_message = str(error).splitlines()[0]
+            reference_raises, reference_message = True, str(error).splitlines()[0]
+
+        # The shipped v0.3 gate (USIMEvaluator.precheck) must reject the same record.
+        actual_raises, actual_message_full = False, "no error raised"
+        try:
+            evaluator.precheck([record])
+        except AssetError as error:
+            actual_raises, actual_message_full = True, str(error)
+        except Exception as error:  # pragma: no cover - defensive evidence
+            actual_raises, actual_message_full = True, f"{type(error).__name__}: {error}"
+        actual_message = actual_message_full.splitlines()[0]
 
         checks = {
             "upstream_accepts_own_reference": check(acceptance[(1, 2)]["task_accuracy"], True,
@@ -409,13 +460,15 @@ def test_c_empty_reference_transitions() -> Dict[str, Any]:
                                                     note="empty signature is a subset of everything"),
             "upstream_wrong_answer_TA_is_1": check(upstream["task_accuracy"] is True, True,
                                                    upstream["task_accuracy"]),
-            "v03_guard_flags_empty_reference": check(bool(audit["empty_indices"]), "non-empty empty_indices",
-                                                     audit["empty_indices"]),
-            "v03_rejected_answer_TA": check(rejected_item["task_accuracy"] == 0.0, 0.0,
-                                            rejected_item["task_accuracy"]),
-            "v03_rejected_answer_reason": check(rejected_item["reason"] == "invalid_reference_transitions",
-                                                "invalid_reference_transitions", rejected_item["reason"]),
-            "v03_precheck_raises": check(validation_raises, True, validation_raises),
+            "reference_impl_flags_empty": check(bool(audit["empty_indices"]), "non-empty empty_indices",
+                                                audit["empty_indices"]),
+            "reference_impl_validate_raises": check(reference_raises, True, reference_raises),
+            "actual_precheck_raises_AssetError": check(actual_raises, True, actual_raises),
+            "actual_precheck_mentions_empty_signature": check(
+                "empty visible reference signature" in actual_message_full, True,
+                "empty visible reference signature" in actual_message_full),
+            "actual_precheck_mentions_record_id": check(record["id"] in actual_message_full, True,
+                                                        record["id"] in actual_message_full),
         }
         passed = all(block["pass"] for block in checks.values())
         all_checks_pass = all_checks_pass and passed
@@ -423,15 +476,67 @@ def test_c_empty_reference_transitions() -> Dict[str, Any]:
             "permutations_total": len(acceptance),
             "upstream_false_passes": upstream_false_passes,
             "reference_audit": audit,
-            "v03_rejected_item": rejected_item,
-            "v03_validation_message": validation_message,
+            "reference_validation_message": reference_message,
+            "actual_precheck_message": actual_message,
+            "actual_precheck_message_full": actual_message_full,
             "checks": checks,
             "pass": passed,
         }
+
+    # End-to-end: a *frozen-like* question with one empty reference transition must
+    # make evaluate.main exit non-zero and write no report.  Real v0.1 assets are
+    # only read; the duplicate-frame bug is injected into a temp QA copy.
+    records = load_jsonl(data_root / "QA" / "train" / "enact_ordering.jsonl")
+    forward = next(record for record in records if record["type"] == "forward_world_modeling_3_steps")
+    bad_record = dict(forward)
+    frames = list(forward["key_frame_ids"])
+    bad_record["key_frame_ids"] = [frames[0], frames[0], frames[1]]
+    end_to_end: Dict[str, Any] = {}
+    end_to_end_checks: Dict[str, Any] = {}
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp_path = Path(tmp)
+        qa_bad = tmp_path / "qa_bad.jsonl"
+        qa_bad.write_text(json.dumps(bad_record, ensure_ascii=False) + "\n", encoding="utf-8")
+        pred_bad = tmp_path / "pred_bad.jsonl"
+        pred_bad.write_text(json.dumps({"id": bad_record["id"], "answer": json.dumps(bad_record["gt_answer"])},
+                                       ensure_ascii=False) + "\n", encoding="utf-8")
+        report_path = tmp_path / "gate_bad.report.json"
+        import io
+        from contextlib import redirect_stderr, redirect_stdout
+
+        stdout, stderr = io.StringIO(), io.StringIO()
+        with redirect_stdout(stdout), redirect_stderr(stderr):
+            exit_code = evaluate_module.main([
+                "--data-root", str(data_root), "--qa", str(qa_bad), "--predictions", str(pred_bad),
+                "--out", str(report_path), "--name", "gate_bad",
+            ])
+        stderr_text = stderr.getvalue()
+        end_to_end = {
+            "record_id": bad_record["id"],
+            "injected_key_frame_ids": bad_record["key_frame_ids"],
+            "exit_code": exit_code,
+            "report_written": report_path.exists(),
+            "stderr_mentions_empty_signature": "empty visible reference signature" in stderr_text,
+            "stderr_mentions_record_id": bad_record["id"] in stderr_text,
+            "stderr_first_lines": [line for line in stderr_text.splitlines() if line.strip()][:3],
+        }
+        end_to_end_checks = {
+            "exit_code_nonzero": check(exit_code == 2, 2, exit_code),
+            "no_report_written": check(not report_path.exists(), False, report_path.exists()),
+            "error_is_about_empty_signature": check(
+                end_to_end["stderr_mentions_empty_signature"], True,
+                end_to_end["stderr_mentions_empty_signature"]),
+            "error_names_question": check(end_to_end["stderr_mentions_record_id"], True,
+                                          end_to_end["stderr_mentions_record_id"]),
+        }
+    end_to_end["checks"] = end_to_end_checks
+    end_to_end["pass"] = all(block["pass"] for block in end_to_end_checks.values())
     return {
-        "description": "empty visible reference signature would make every permutation pass semantically",
+        "description": "empty visible reference signature would make every permutation pass semantically; "
+                       "the shipped v0.3 precheck gate must reject it (synthetic + end-to-end)",
         "cases": results,
-        "pass": all_checks_pass,
+        "end_to_end_gate": end_to_end,
+        "pass": all_checks_pass and end_to_end["pass"],
     }
 
 
@@ -581,61 +686,176 @@ def test_e_duplicate_and_unknown_ids(data_root: Path) -> Dict[str, Any]:
     }
 
 
+def test_f_v01_regression(data_root: Path, run_dir: Path = DEFAULT_RUN_DIR) -> Dict[str, Any]:
+    """v0.3 must reproduce the archival v0.2 metrics on all three frozen conditions."""
+    REGRESSION_DIR.mkdir(parents=True, exist_ok=True)
+    import io
+    from contextlib import redirect_stderr, redirect_stdout
+
+    cases: Dict[str, Any] = {}
+    all_pass = True
+    for name, spec in REGRESSION_CASES.items():
+        qa_path = data_root / REGRESSION_B_QA if spec["qa"] == "B_zoom_qa" else run_dir / spec["qa"]
+        predictions_path = run_dir / spec["predictions"]
+        reference_report_path = run_dir / spec["reference_report"]
+        reference_items_path = run_dir / spec["reference_items"]
+        if not (qa_path.exists() and predictions_path.exists() and reference_report_path.exists()):
+            cases[name] = {"missing_inputs": {"qa": str(qa_path), "predictions": str(predictions_path),
+                                              "reference_report": str(reference_report_path)},
+                           "pass": False}
+            all_pass = False
+            continue
+        before = {
+            "reference_report_sha256": sha256_file(reference_report_path),
+            "reference_items_sha256": sha256_file(reference_items_path) if reference_items_path.exists() else None,
+            "predictions_sha256": sha256_file(predictions_path),
+        }
+        out_report = REGRESSION_DIR / f"{name}.report.json"
+        out_items = REGRESSION_DIR / f"{name}.report.items.jsonl"
+        stdout, stderr = io.StringIO(), io.StringIO()
+        with redirect_stdout(stdout), redirect_stderr(stderr):
+            exit_code = evaluate_module.main([
+                "--data-root", str(data_root), "--qa", str(qa_path),
+                "--predictions", str(predictions_path), "--out", str(out_report), "--name", name,
+            ])
+        new_report = json.loads(out_report.read_text(encoding="utf-8")) if out_report.exists() else {}
+        old_report = json.loads(reference_report_path.read_text(encoding="utf-8"))
+        new_items = [json.loads(line) for line in out_items.read_text(encoding="utf-8").splitlines()
+                     if line.strip()] if out_items.exists() else []
+        old_items = [json.loads(line) for line in reference_items_path.read_text(encoding="utf-8").splitlines()
+                     if line.strip()] if reference_items_path.exists() else []
+        expected = spec["expected"]
+        overall = new_report.get("overall", {})
+        expected_ok = all(abs(float(overall.get(key, -1)) - value) <= 5e-9 for key, value in expected.items())
+        gate = new_report.get("reference_transition_gate", {})
+        after = {
+            "reference_report_sha256": sha256_file(reference_report_path),
+            "reference_items_sha256": sha256_file(reference_items_path) if reference_items_path.exists() else None,
+            "predictions_sha256": sha256_file(predictions_path),
+        }
+        checks = {
+            "exit_code_0": check(exit_code == 0, 0, exit_code,
+                                 stderr_tail=[line for line in stderr.getvalue().splitlines() if line.strip()][:3]),
+            "report_written": check(out_report.exists(), True, out_report.exists()),
+            "protocol_is_usim_strict_v0.3": check(new_report.get("evaluation_protocol") == CONTRACT_VERSION,
+                                                  CONTRACT_VERSION, new_report.get("evaluation_protocol")),
+            "gate_enforced": check(gate.get("enforced") is True, True, gate.get("enforced")),
+            "gate_checked_all_questions": check(gate.get("checked_questions") == expected["count"],
+                                                expected["count"], gate.get("checked_questions")),
+            "gate_reports_zero_empty_transitions": check(gate.get("empty_reference_transitions") == 0, 0,
+                                                         gate.get("empty_reference_transitions")),
+            "overall_identical_to_v0.2_report": check(new_report.get("overall") == old_report.get("overall"),
+                                                      True, new_report.get("overall") == old_report.get("overall")),
+            "by_setting_identical_to_v0.2_report": check(new_report.get("by_setting") == old_report.get("by_setting"),
+                                                         True, new_report.get("by_setting") == old_report.get("by_setting")),
+            "item_rows_identical_to_v0.2": check(new_items == old_items, True, new_items == old_items,
+                                                 new_item_count=len(new_items), old_item_count=len(old_items)),
+            "expected_EM_TA_PA_values": check(expected_ok, True, expected_ok,
+                                              expected_values=expected,
+                                              actual_values={key: overall.get(key) for key in expected}),
+            "archival_report_not_modified": check(
+                after["reference_report_sha256"] == before["reference_report_sha256"], True,
+                after["reference_report_sha256"] == before["reference_report_sha256"]),
+            "archival_items_not_modified": check(
+                after["reference_items_sha256"] == before["reference_items_sha256"], True,
+                after["reference_items_sha256"] == before["reference_items_sha256"]),
+            "predictions_not_modified": check(
+                after["predictions_sha256"] == before["predictions_sha256"], True,
+                after["predictions_sha256"] == before["predictions_sha256"]),
+        }
+        passed = all(block["pass"] for block in checks.values())
+        all_pass = all_pass and passed
+        cases[name] = {
+            "qa": str(qa_path),
+            "predictions": str(predictions_path),
+            "archival_report": str(reference_report_path),
+            "regression_report": str(out_report),
+            "regression_items": str(out_items),
+            "new_protocol": new_report.get("evaluation_protocol"),
+            "new_gate": gate,
+            "overall": overall,
+            "expected": expected,
+            "before_hashes": before,
+            "after_hashes": after,
+            "checks": checks,
+            "pass": passed,
+        }
+    return {
+        "description": "re-score the frozen v0.1 A/B/C predictions with usim_strict_v0.3; metrics must be "
+                       "identical to the archival usim_strict_v0.2 reports",
+        "regression_dir": str(REGRESSION_DIR),
+        "cases": cases,
+        "pass": all_pass,
+    }
+
+
 def main(argv: Optional[List[str]] = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--data-root", default=str(DEFAULT_DATA_ROOT))
+    parser.add_argument("--run-dir", default=str(DEFAULT_RUN_DIR))
     parser.add_argument("--out", default=str(DEFAULT_OUT))
+    parser.add_argument("--skip-regression", action="store_true",
+                        help="skip the v0.1 A/B/C re-score regression (synthetic contract tests only)")
     args = parser.parse_args(argv)
 
     data_root = Path(args.data_root)
+    run_dir = Path(args.run_dir)
     evaluate_script = Path(evaluate_module.__file__)
 
     tests: Dict[str, Any] = {
         "a_multiple_valid_orders": test_a_multiple_valid_orders(),
         "b_non_exchangeable_swap": test_b_non_exchangeable_swap(),
-        "c_empty_reference_transitions": test_c_empty_reference_transitions(),
+        "c_empty_reference_transitions": test_c_empty_reference_transitions(data_root),
         "d_fixed_denominator_and_strict_parsing": test_d_fixed_denominator_and_strict_parsing(),
         "e_duplicate_and_unknown_ids": test_e_duplicate_and_unknown_ids(data_root),
     }
+    if not args.skip_regression:
+        tests["f_v0_1_regression"] = test_f_v01_regression(data_root, run_dir)
     evidence = {
-        "contract": "scoring_contract_v2",
+        "contract": "scoring_contract",
         "contract_version": CONTRACT_VERSION,
         "under_test": {
             "scorer": "scripts/usim/evaluate.py",
             "scorer_sha256": sha256_file(evaluate_script),
-            "existing_protocol": EVALUATION_PROTOCOL,
+            "scoring_protocol": EVALUATION_PROTOCOL,
+            "parser_version": "strict_permutation_v1",
             "dataset_version": PROTOCOL_VERSION,
             "python": sys.version.split()[0],
         },
         "generated_at": now_iso(),
         "fixtures": {
             "kind": "in-memory synthetic scene graphs via a stub SceneGraphReader",
-            "note": "no frozen v0.1 file is written; the frozen dataset is only read by the "
-                    "duplicate/unknown-ID probe of evaluate.main",
+            "note": "no frozen v0.1 file is written; v0.1 is only read by the v0.3 gate end-to-end probe, "
+                    "the duplicate/unknown-ID probe and the A/B/C regression, whose outputs go to "
+                    "data/usim_enact/_protocol/contract/regression_v0.1/",
         },
         "tests": tests,
         "all_pass": all(test["pass"] for test in tests.values()),
-        "remaining_known_gap": (
-            "evaluate.py (usim_strict_v0.2) does not reject empty visible reference signatures; "
-            "ScoringContractV2 is the executable spec that closes that gap for usim_strict_v0.3 "
-            "(wiring it into evaluate.py needs Lead approval, docs/WBW constraint)"
-        ),
+        "notes": [
+            "v0.3 adds only the reference-transition gate; EM/TA/PA formulas are identical to v0.2.",
+            "The upstream verifier still false-passes empty reference signatures when called directly; "
+            "evaluate.py now aborts in precheck before any report is produced.",
+            "The v0.1 A/B/C regression re-scores the frozen predictions and reproduces the archival v0.2 "
+            "overall/by_setting/item values exactly.",
+        ],
     }
 
     out_path = Path(args.out)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(evidence, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
+    def report_checks(prefix: str, checks: Dict[str, Any]) -> None:
+        for check_name, block in checks.items():
+            if not block["pass"]:
+                print(f"    - {prefix}/{check_name}: expected={block['expected']!r} actual={block['actual']!r}")
+
     for name, test in tests.items():
         print(f"[{'PASS' if test['pass'] else 'FAIL'}] {name}")
-        for check_name, block in test.get("checks", {}).items():
-            if not block["pass"]:
-                print(f"    - {check_name}: expected={block['expected']!r} actual={block['actual']!r}")
+        report_checks(name, test.get("checks", {}))
         for case_name, case in test.get("cases", {}).items():
-            for check_name, block in case.get("checks", {}).items():
-                if not block["pass"]:
-                    print(f"    - {name}/{case_name}/{check_name}: expected={block['expected']!r} "
-                          f"actual={block['actual']!r}")
+            report_checks(f"{name}/{case_name}", case.get("checks", {}))
+        if "end_to_end_gate" in test:
+            report_checks(f"{name}/end_to_end_gate", test["end_to_end_gate"].get("checks", {}))
     print(json.dumps({"all_pass": evidence["all_pass"], "evidence": str(out_path)}, ensure_ascii=False))
     return 0 if evidence["all_pass"] else 1
 

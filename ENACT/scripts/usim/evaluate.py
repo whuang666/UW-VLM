@@ -1,6 +1,6 @@
-"""Strict USIM-ENACT scoring (protocol ``usim_strict_v0.2``).
+"""Strict USIM-ENACT scoring (protocol ``usim_strict_v0.3``).
 
-Differences from the v0.1 scorer (all four are P0 fixes from docs/WBW §3):
+Differences from the v0.1 scorer (all five are P0 fixes from docs/WBW §3):
 
 1. **Fixed denominator.**  Every frozen question contributes ``n_i = L_i - 1``
    transitions to ``PA_transition_micro``; invalid / missing / failed answers add 0
@@ -11,6 +11,16 @@ Differences from the v0.1 scorer (all four are P0 fixes from docs/WBW §3):
    integers forming a permutation of ``1..L-1``.  Explanations, multiple arrays,
    index shifting, truncation and booleans are rejected.
 4. **Prediction integrity.**  Duplicate or unknown IDs are errors, not warnings.
+5. **Reference-transition gate (v0.3).**  ``precheck`` verifies that every
+   reference transition between adjacent ``key_frame_ids`` has a *non-empty
+   visible* signature.  An empty signature is a subset of every candidate
+   signature, so the verifier would silently accept *any* permutation for such a
+   question (fake semantic TA=1).  v0.3 turns that into a hard ``AssetError``:
+   the CLI exits non-zero and no report is written.
+
+Only item 5 is new in v0.3; the EM/TA/PA formulas are identical to v0.2.
+Re-scoring the frozen v0.1 predictions under v0.3 reproduces the v0.2 report
+values exactly (evidence: ``data/usim_enact/_protocol/contract/regression_v0.1/``).
 
 ``PA_item_mean`` (mean over questions) and ``PA_transition_micro``
 (transition-weighted) are kept apart; both use the full frozen set.
@@ -23,7 +33,7 @@ import random
 import sys
 from collections import defaultdict
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Sequence, Tuple
+from typing import Any, Dict, List, Optional, Sequence, Set, Tuple
 
 ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
@@ -36,7 +46,7 @@ from enact.core.evaluators import TaskWiseOrderingVerifier  # noqa: E402
 from enact.utils.qa_gen_utils import TaskData  # noqa: E402
 
 DEFAULT_DATA_ROOT = ROOT / "data" / "usim_enact" / PROTOCOL_VERSION
-EVALUATION_PROTOCOL = "usim_strict_v0.2"
+EVALUATION_PROTOCOL = "usim_strict_v0.3"
 
 
 class USIMVerifier(TaskWiseOrderingVerifier):
@@ -128,8 +138,22 @@ class USIMEvaluator:
         return list(value), "ok"
 
     # ----------------------------------------------------------- evaluation
+    def reference_transitions(self, record: Dict) -> List[Set[str]]:
+        """Visible (partial-diff) signatures of the correct timeline transitions.
+
+        Used by the v0.3 precheck gate; the scoring formulas are unchanged.
+        """
+        verifier = self.verifier(record["task_name"])
+        return verifier._translate_sequence_to_signatures(list(record["key_frame_ids"]), partial_diff=True)
+
     def precheck(self, records: Sequence[Dict]) -> None:
-        """Fail before scoring if any frozen question lost its assets."""
+        """Fail before scoring if any asset is lost or a reference transition is empty.
+
+        v0.3 adds the second condition: an empty visible reference signature is a
+        subset of every candidate signature, so the verifier would accept *any*
+        answer for that question.  Such a question is invalid data, not a
+        scoreable item, so the whole run aborts before a report is produced.
+        """
         problems: List[str] = []
         for record in records:
             task_name = record["task_name"]
@@ -141,6 +165,24 @@ class USIMEvaluator:
             for frame_id in record["key_frame_ids"]:
                 if frame_id not in task.image_paths:
                     problems.append(f"{record['id']}: no image for frame {frame_id}")
+
+            # ---- v0.3 gate: every reference transition must have a visible signature
+            try:
+                signatures = self.reference_transitions(record)
+            except Exception as error:  # treat uncomputable diffs as data errors, never skip
+                problems.append(f"{record['id']}: reference transition diff failed "
+                                f"({type(error).__name__}: {error})")
+                continue
+            expected_transitions = len(record["gt_answer"])
+            if len(signatures) != expected_transitions:
+                problems.append(
+                    f"{record['id']}: {len(signatures)} reference transitions but the answer "
+                    f"has {expected_transitions} entries")
+            empty = [index for index, signature in enumerate(signatures) if not signature]
+            if empty:
+                problems.append(
+                    f"{record['id']}: empty visible reference signature at transitions {empty} "
+                    f"(any answer would pass semantic TA); refusing to score")
         if problems:
             unique = sorted(set(problems))
             raise AssetError("资产预检查失败，拒绝评分：\n  - " + "\n  - ".join(unique[:30]))
@@ -326,6 +368,13 @@ def main(argv: Optional[List[str]] = None) -> int:
         "name": name,
         "total_questions": len(records),
         "answered": sum(1 for value in predictions.values() if value is not None),
+        "reference_transition_gate": {
+            "enforced": True,
+            "checked_questions": len(records),
+            # precheck aborted already if any of these were non-empty, so a report
+            # only ever exists when the gate passed.
+            "empty_reference_transitions": 0,
+        },
         "by_setting": {},
     }
     for key in sorted(result["items"], key=lambda item: (item[0], item[1])):

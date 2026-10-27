@@ -163,6 +163,12 @@ def main(argv: List[str] | None = None) -> int:
         print(f"no annotations found in {args.annotations}", file=sys.stderr)
         return 2
 
+    protocol_versions = {annotation.protocol_version for annotation in annotations}
+    if len(protocol_versions) != 1:
+        print(f"annotations mix protocol versions: {sorted(protocol_versions)}", file=sys.stderr)
+        return 2
+    protocol_version = protocol_versions.pop()
+
     readers: Dict[str, USIMReader] = {}
     out_root = Path(args.out)
     entries = []
@@ -179,7 +185,7 @@ def main(argv: List[str] | None = None) -> int:
 
     usim_manifest = dataset_root / "_download_manifest.json"
     manifest = {
-        "protocol_version": PROTOCOL_VERSION,
+        "protocol_version": protocol_version,
         "camera_mapping": {"ego": SENSOR_NAME},
         "visibility": {
             "method": "annotated_boolean",

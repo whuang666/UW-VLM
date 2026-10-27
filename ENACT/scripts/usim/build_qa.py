@@ -148,8 +148,18 @@ def main(argv: List[str] | None = None) -> int:
                 )
                 print(f"[qa] {direction} L={step_length}: {produced} questions")
 
+    manifest_path = data_root / "manifest.json"
+    summary_protocol_version = PROTOCOL_VERSION
+    if manifest_path.exists():
+        try:
+            summary_protocol_version = json.loads(manifest_path.read_text(encoding="utf-8")).get(
+                "protocol_version", PROTOCOL_VERSION
+            )
+        except json.JSONDecodeError:
+            pass
+
     summary = {
-        "protocol_version": PROTOCOL_VERSION,
+        "protocol_version": summary_protocol_version,
         "data_root": str(data_root),
         "output": str(out_path),
         "episodes": len(tasks),

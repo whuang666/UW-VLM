@@ -24,16 +24,20 @@ USIM_STATE_TEMPLATES: Dict[str, str] = {
     "InGripper": "grasped by the robot",
     "Lifted": "lifted above the seabed",
     "InBox": "inside the green box",
-    # binary relations reused from the BEHAVIOR vocabulary
-    "NextTo": "next to",
-    "Touching": "touching",
+    # binary relations reused from the BEHAVIOR vocabulary.
+    # ``NextTo`` is *approach-phase* semantics in USIM (see docs/WBR v0.2
+    # guideline): the phrase avoids the spatial-contradiction "grasped ... no
+    # longer next to" that the raw "next to" wording produced.
+    "NextTo": "in position for the pre-grasp approach beside",
+    "Touching": "in contact with",
+    "NearBox": "near",
     "Inside": "inside",
     "OnTop": "on top of and touching",
     "Grasping": "grasping",
 }
 
 USIM_NODE_STATE_NAMES = ("OnSeabed", "InGripper", "Lifted", "InBox")
-USIM_EDGE_PREDICATES = ("NextTo", "Touching", "Inside", "OnTop", "Grasping")
+USIM_EDGE_PREDICATES = ("NextTo", "Touching", "Inside", "OnTop", "Grasping", "NearBox")
 
 
 class USIMStateChangeTranslator(StateChangeTranslator):

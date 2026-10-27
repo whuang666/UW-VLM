@@ -4,14 +4,13 @@ The inverse questions already contain ``[Action N] <description>`` lines for eve
 transition; the task is to order those labels.  Because the USIM state vocabulary
 is a monotone object lifecycle (annotation schema / ``usim_translator.py``:
 
-    OnSeabed -> NextTo(approach) -> InGripper -> Lifted -> InBox
+    OnSeabed -> NextTo(approach) -> [Touching] -> InGripper -> Lifted -> [NearBox] -> InBox
 
 ) the *text alone* fixes the chronological order for the inverse questions.  This
 script builds a deterministic baseline from the ``question`` field only:
 
 * **inverse**: parse each ``[Action N]`` line, score the highest positive lifecycle
-  stage mentioned in a non-negated sentence (``next to``=1, ``grasped``=2,
-  ``lifted``=3, ``inside the ... box``=4), then order labels by
+  stage mentioned in a non-negated sentence, then order labels by
   ``(stage, label)`` ascending;
 * **forward**: the question lists the actions in chronological order but carries
   no action -> image-label mapping, so text cannot order the future images.  The
@@ -19,15 +18,37 @@ script builds a deterministic baseline from the ``question`` field only:
   this baseline makes that assumption explicit instead of pretending it solved
   the question.
 
-The rule never reads ``gt_answer``, ``images`` or ``key_frame_ids`` and was frozen
-from the documented predicate lifecycle before being compared with any model
-condition.  The baseline is scored with the real ``evaluate.py`` path and then
-compared with the image-free model condition C to quantify how much of C's score
-is explained by the text prior.  QA is never modified.
+**Rule version ``text_lifecycle_v2`` supports both question-template generations**
+so the frozen v0.1 evidence can be re-run and v0.2 can be scored with the same
+script:
+
+* v0.1 template: ``next to`` for ``NextTo``, ``touching`` for ``Touching``;
+* v0.2 template (``docs/WBR/ENACT-USIM-v0.2标注与关键帧规范-20261027.md``):
+  ``in position for the pre-grasp approach beside`` for ``NextTo``,
+  ``in contact with`` for ``Touching`` and ``near`` for ``NearBox`` (the
+  at-box release-position state used for the transfer L=5 route).
+
+Stage ranks are monotone: ``OnSeabed(0) < NextTo(10) < Touching(15) <
+InGripper(20) < Lifted(30) < NearBox(35) < InBox(40)``.  ``Touching`` sits between
+the approach and the grasp because the v0.2 guideline defines it as "contact before
+holding"; ``NearBox`` sits after ``Lifted`` because it is the at-box release
+position of a transferred object.  The v0.1/v0.2 lifecycle order without those
+optional states is preserved.  Negated sentences (``no longer`` / ``not ...
+anymore`` / ``stopped being``) never contribute a stage.
+
+The rule never reads ``gt_answer``, ``images`` or ``key_frame_ids``; it was frozen
+from the documented predicate lifecycle and templates before being compared with
+any model condition.  A built-in ``template_compatibility`` probe asserts that the
+rule resolves the exact documented sentence templates of both generations (and
+that negated removal sentences stay unresolved); a probe failure exits non-zero.
+The baseline is scored with the real ``evaluate.py`` path and compared with the
+image-free model condition C to quantify how much of C's score is the text prior.
+QA is never modified.
 
 Usage:
     python -m scripts.usim.text_prior_baseline
-    python -m scripts.usim.text_prior_baseline --data-root data/usim_enact/usim-enact-v0.2
+    python -m scripts.usim.text_prior_baseline --data-root data/usim_enact/usim-enact-v0.2 \
+        --qa data/usim_enact/usim-enact-v0.2/QA/train/enact_ordering_curated.jsonl
 """
 
 from __future__ import annotations
@@ -58,31 +79,74 @@ from scripts.usim.evaluate import (  # noqa: E402
 DEFAULT_RUN_DIR = ROOT / "data" / "usim_enact" / "runs" / "qwen3.8-max" / "dev_ego_thinking_false_001"
 DEFAULT_OUT_DIR = ROOT / "data" / "usim_enact" / "_protocol"
 TZ_SHANGHAI = timezone(timedelta(hours=8))
-RULE_VERSION = "text_lifecycle_v1"
+RULE_VERSION = "text_lifecycle_v2"
 
-# Lifecycle index from the annotated USIM predicate vocabulary.  Higher = later.
+# Lifecycle rank from the annotated USIM predicate vocabulary.  Higher = later.
+# v0.2 fixates the approach semantics of NextTo and (optionally) a distinct
+# contact phase Touching that sits between approach and grasp.
 STAGE_ORDER: Dict[str, int] = {
     "OnSeabed": 0,
-    "NextTo": 1,
-    "InGripper": 2,
-    "Lifted": 3,
-    "InBox": 4,
+    "NextTo": 10,
+    "Touching": 15,
+    "InGripper": 20,
+    "Lifted": 30,
+    "NearBox": 35,
+    "InBox": 40,
 }
 
-STAGE_PATTERNS: Tuple[Tuple[int, str, str], ...] = (
-    (0, "OnSeabed", r"\bon the seabed\b"),
-    (1, "NextTo", r"\bnext to\b"),
-    (2, "InGripper", r"\bgrasped by the robot\b"),
-    (3, "Lifted", r"\blifted above the seabed\b"),
-    (4, "InBox", r"\binside the (?:green )?box\b"),
+# (rank, predicate, regex, template generation).  Multiple patterns per predicate
+# because the question wording differs between v0.1 and v0.2; both must resolve.
+STAGE_PATTERNS: Tuple[Tuple[int, str, str, str], ...] = (
+    (0, "OnSeabed", r"\bon the seabed\b", "v0.1+v0.2"),
+    (10, "NextTo", r"\bnext to\b", "v0.1"),
+    (10, "NextTo", r"\bin position for the (?:pre-grasp )?approach beside\b", "v0.2"),
+    (15, "Touching", r"\btouching\b", "v0.1"),
+    (15, "Touching", r"\bin contact with\b", "v0.2"),
+    (20, "InGripper", r"\bgrasped by the robot\b", "v0.1+v0.2"),
+    (30, "Lifted", r"\blifted above the seabed\b", "v0.1+v0.2"),
+    (35, "NearBox", r"\bnear\b", "v0.2"),
+    (40, "InBox", r"\binside the (?:green )?box\b", "v0.1+v0.2"),
 )
 
 NEGATION_PATTERNS: Tuple[str, ...] = (
     r"\bno longer\b",
-    r"\bnot\b.{0,40}?\banymore\b",
+    r"\bnot\b.{0,60}?\banymore\b",
     r"\bstopped being\b",
     r"\bnever\b",
     r"\bno more\b",
+)
+
+# Documented sentence templates per generation, used as a frozen self-check of the
+# regex rules (see docs/WBR/ENACT-USIM-v0.2标注与关键帧规范-20261027.md §9).
+TEMPLATE_PROBES: Tuple[Dict[str, Any], ...] = (
+    {"generation": "v0.1", "predicate": "NextTo", "expected_rank": 10,
+     "text": "The robot now becomes next to the blue cylinder."},
+    {"generation": "v0.2", "predicate": "NextTo", "expected_rank": 10,
+     "text": "The robot is now in position for the pre-grasp approach beside the blue cylinder."},
+    {"generation": "v0.2", "predicate": "NextTo", "expected_rank": 10,
+     "text": "The robot becomes in position for the pre-grasp approach beside the red cylinder."},
+    {"generation": "v0.1", "predicate": "Touching", "expected_rank": 15,
+     "text": "The robot is now touching the blue cylinder."},
+    {"generation": "v0.2", "predicate": "Touching", "expected_rank": 15,
+     "text": "The robot is now in contact with the blue cylinder."},
+    {"generation": "v0.1", "predicate": "InGripper", "expected_rank": 20,
+     "text": "The blue cylinder becomes grasped by the robot."},
+    {"generation": "v0.2", "predicate": "InGripper", "expected_rank": 20,
+     "text": "The blue cylinder is now grasped by the robot."},
+    {"generation": "v0.1", "predicate": "Lifted", "expected_rank": 30,
+     "text": "The blue cylinder is now lifted above the seabed."},
+    {"generation": "v0.2", "predicate": "InBox", "expected_rank": 40,
+     "text": "The red cylinder is now inside the green box."},
+    {"generation": "v0.2", "predicate": "NearBox", "expected_rank": 35,
+     "text": "The robot is now near the green box."},
+    {"generation": "v0.2", "predicate": "NearBox", "expected_rank": None,
+     "text": "The robot is no longer near the green box."},
+    {"generation": "v0.2", "predicate": "NextTo", "expected_rank": None,
+     "text": "The robot is no longer in position for the pre-grasp approach beside the blue cylinder."},
+    {"generation": "v0.2", "predicate": "Touching", "expected_rank": None,
+     "text": "The robot is not in contact with the blue cylinder anymore."},
+    {"generation": "v0.1", "predicate": "OnSeabed", "expected_rank": None,
+     "text": "The blue cylinder is not on the seabed anymore."},
 )
 
 ACTION_LINE_RE = re.compile(r"^\[Action\s+(\d+)\]\s*(.+?)\s*$", re.MULTILINE)
@@ -95,6 +159,14 @@ def now_iso() -> str:
 
 def sha256_file(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def relative_repo_path(path: Path) -> str:
+    """Repository-relative POSIX path when possible (stable evidence across machines)."""
+    try:
+        return path.resolve().relative_to(ROOT.resolve()).as_posix()
+    except ValueError:
+        return str(path)
 
 
 def direction_of(record: Dict[str, Any]) -> str:
@@ -140,22 +212,130 @@ def parse_action_lines(question: str) -> Tuple[Dict[int, str], str]:
 
 
 def action_stage(description: str) -> Tuple[Optional[int], List[str]]:
-    """Highest positive lifecycle stage in a non-negated sentence.
+    """Highest positive lifecycle rank in a non-negated sentence.
 
-    Returns ``(stage, evidence_phrases)``.  ``None`` means the rule could not
-    resolve the action description (a v0.2 vocabulary extension would be needed).
+    Supports both v0.1 and v0.2 action-text template generations (see
+    ``STAGE_PATTERNS``).  Returns ``(rank, evidence_predicates)``.  ``None`` means
+    the rule could not resolve the action description (a vocabulary extension
+    would be needed).
     """
     best: Optional[int] = None
     evidence: List[str] = []
     for sentence in split_sentences(description):
         if is_negated(sentence):
             continue
-        for stage, predicate, pattern in STAGE_PATTERNS:
+        for rank, predicate, pattern, _generation in STAGE_PATTERNS:
             if re.search(pattern, sentence, flags=re.IGNORECASE):
-                if best is None or stage > best:
-                    best = stage
+                if best is None or rank > best:
+                    best = rank
                 evidence.append(predicate)
     return best, evidence
+
+
+def template_compatibility_probe() -> Dict[str, Any]:
+    """Run the frozen rule over the documented sentence templates of both generations."""
+    rows: List[Dict[str, Any]] = []
+    all_pass = True
+    for probe in TEMPLATE_PROBES:
+        rank, evidence = action_stage(probe["text"])
+        expected = probe["expected_rank"]
+        passed = rank == expected and (expected is None or probe["predicate"] in evidence)
+        all_pass = all_pass and passed
+        rows.append({
+            "generation": probe["generation"],
+            "predicate": probe["predicate"],
+            "text": probe["text"],
+            "expected_rank": expected,
+            "actual_rank": rank,
+            "evidence_predicates": evidence,
+            "pass": passed,
+        })
+    generations = sorted({row["generation"] for row in rows})
+    return {
+        "rule_version": RULE_VERSION,
+        "probes_total": len(rows),
+        "generations_covered": generations,
+        "rows": rows,
+        "all_pass": all_pass,
+    }
+
+
+def synthetic_order_probes() -> Dict[str, Any]:
+    """End-to-end rule probes on synthetic inverse questions (no scoring/assets needed).
+
+    These check the full parse+order path for both template generations and for the
+    v0.2-only Touching phase, without needing a v0.2 dataset or verifier.
+    """
+    cases = [
+        {
+            "name": "v0.1_generation_order",
+            "expected_prediction": [2, 1, 3],
+            "question": "## Shuffled Actions\n"
+                        "[Action 1] The blue cylinder is now grasped by the robot. The blue cylinder is not on the seabed anymore. The robot stopped being next to the blue cylinder.\n"
+                        "[Action 2] The robot now becomes next to the blue cylinder.\n"
+                        "[Action 3] The blue cylinder is now lifted above the seabed.\n",
+        },
+        {
+            "name": "v0.2_generation_order",
+            "expected_prediction": [2, 1, 3],
+            "question": "## Shuffled Actions\n"
+                        "[Action 1] The blue cylinder is now grasped by the robot. The blue cylinder is no longer on the seabed. The robot stopped being in position for the pre-grasp approach beside the blue cylinder.\n"
+                        "[Action 2] The robot now becomes in position for the pre-grasp approach beside the blue cylinder.\n"
+                        "[Action 3] The blue cylinder is now lifted above the seabed.\n",
+        },
+        {
+            "name": "v0.2_touching_phase_order",
+            "expected_prediction": [2, 3, 1],
+            "question": "## Shuffled Actions\n"
+                        "[Action 1] The blue cylinder is now lifted above the seabed.\n"
+                        "[Action 2] The robot is now in contact with the blue cylinder.\n"
+                        "[Action 3] The blue cylinder is now grasped by the robot.\n",
+        },
+        {
+            "name": "v0.2_full_l5_chain_order",
+            "expected_prediction": [3, 1, 4, 2],
+            "question": "## Shuffled Actions\n"
+                        "[Action 1] The red cylinder is now lifted above the seabed.\n"
+                        "[Action 2] The red cylinder is now inside the green box.\n"
+                        "[Action 3] The robot now becomes in position for the pre-grasp approach beside the red cylinder.\n"
+                        "[Action 4] The robot is now near the green box.\n",
+        },
+    ]
+    rows: List[Dict[str, Any]] = []
+    all_pass = True
+    for case in cases:
+        action_count = len(re.findall(r"\[Action\s+\d+\]", case["question"]))
+        record = {"question": case["question"], "gt_answer": list(range(1, action_count + 1))}
+        detail = predict_inverse(record)
+        passed = detail["predicted"] == case["expected_prediction"] and not detail["unresolved_labels"]
+        all_pass = all_pass and passed
+        rows.append({
+            "name": case["name"],
+            "expected_prediction": case["expected_prediction"],
+            "actual_prediction": detail["predicted"],
+            "stages": detail["stages"],
+            "stage_evidence": detail["stage_evidence"],
+            "unresolved_labels": detail["unresolved_labels"],
+            "pass": passed,
+        })
+    return {"probes_total": len(rows), "rows": rows, "all_pass": all_pass}
+
+
+def question_template_generation(question: str) -> str:
+    """Best-effort label of which action-text template a question uses (evidence only).
+
+    The two generations differ only in the ``NextTo``/``Touching`` wording; questions
+    whose action text contains neither marker are labelled ``undetermined_shared_template``
+    (the rest of the vocabulary is identical between v0.1 and v0.2).
+    """
+    lowered = question.lower()
+    if "pre-grasp approach beside" in lowered or "in contact with" in lowered:
+        return "v0.2"
+    if re.search(r"\bnext to\b", lowered) or re.search(r"\btouching\b", lowered):
+        return "v0.1"
+    if any(marker in lowered for marker in ("grasped by the robot", "lifted above the seabed", "on the seabed")):
+        return "undetermined_shared_template"
+    return "unknown"
 
 
 def predict_inverse(record: Dict[str, Any]) -> Dict[str, Any]:
@@ -272,6 +452,9 @@ def comparison_with_condition_c(baseline_items: Dict[str, Dict[str, Any]],
                                 condition_items: Dict[str, Dict[str, Any]],
                                 qa_by_id: Dict[str, Dict[str, Any]]) -> Dict[str, Any]:
     common = sorted(set(baseline_items) & set(condition_items))
+    if not common:
+        return {"skipped": "no common ids between this QA set and the condition-C items "
+                           "(pass --condition-c-items for the matching model run)"}
     counts = Counter()
     per_setting: Dict[str, Counter] = {}
     disagreement_ids: List[str] = []
@@ -337,8 +520,14 @@ def main(argv: Optional[List[str]] = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--data-root", default=str(DEFAULT_DATA_ROOT))
     parser.add_argument("--qa", default="", help="QA JSONL; defaults to <data-root>/QA/train/enact_ordering.jsonl")
-    parser.add_argument("--condition-c-items", default=str(DEFAULT_RUN_DIR / "condC_text_only" / "report.items.jsonl"),
-                        help="report.items.jsonl of the image-free condition C (comparison only)")
+    parser.add_argument("--condition-c-items", default="",
+                        help="optional report.items.jsonl of the image-free condition C for the SAME QA set "
+                             "(v0.1 default evidence: data/usim_enact/runs/qwen3.8-max/"
+                             "dev_ego_thinking_false_001/condC_text_only/report.items.jsonl). "
+                             "Omit when no matching model run exists.")
+    parser.add_argument("--predictions-out", default="",
+                        help="optional JSONL of the baseline answers compatible with "
+                             "run_inference/evaluate (for report_stats baselines)")
     parser.add_argument("--out", default="")
     args = parser.parse_args(argv)
 
@@ -363,8 +552,13 @@ def main(argv: Optional[List[str]] = None) -> int:
 
     predictions: Dict[str, List[int]] = {}
     details: Dict[str, Dict[str, Any]] = {}
+    template_probe = template_compatibility_probe()
+    order_probe = synthetic_order_probes()
+    template_generations: Counter = Counter()
     for record in records:
         direction = direction_of(record)
+        generation = question_template_generation(record["question"])
+        template_generations[generation] += 1
         if direction == "inverse":
             detail = predict_inverse(record)
         else:
@@ -379,6 +573,7 @@ def main(argv: Optional[List[str]] = None) -> int:
             "baseline_prediction": detail["predicted"],
             "unresolved_labels": detail["unresolved_labels"],
             "action_header": detail["header"],
+            "question_template_generation": generation,
         }
         if direction == "inverse":
             details[record["id"]].update({
@@ -392,6 +587,24 @@ def main(argv: Optional[List[str]] = None) -> int:
                 "action_list_is_chronological": detail["action_list_is_chronological"],
                 "label_mapping_available_in_text": detail["label_mapping_available_in_text"],
             })
+
+    predictions_out = Path(args.predictions_out) if args.predictions_out else None
+    if predictions_out is not None:
+        predictions_out.parent.mkdir(parents=True, exist_ok=True)
+        rows = []
+        for record in records:
+            detail = details[record["id"]]
+            rows.append({
+                "id": record["id"],
+                "type": record["type"],
+                "task_name": record["task_name"],
+                "num_states": detail["num_states"],
+                "answer": predictions[record["id"]],
+                "status": "success",
+                "backend": f"text_prior_baseline/{RULE_VERSION}",
+            })
+        predictions_out.write_text("".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows),
+                                   encoding="utf-8")
 
     evaluator = USIMEvaluator(data_root)
     try:
@@ -431,16 +644,22 @@ def main(argv: Optional[List[str]] = None) -> int:
     }
 
     qa_by_id = {record["id"]: record for record in records}
-    condition_c_items = Path(args.condition_c_items)
+    condition_c_items = Path(args.condition_c_items) if args.condition_c_items else None
     comparison: Dict[str, Any] = {}
-    if condition_c_items.exists():
+    if condition_c_items is not None and condition_c_items.is_file():
         comparison = comparison_with_condition_c(items, load_condition_items(condition_c_items), qa_by_id)
     else:
-        comparison = {"skipped": f"condition C items not found: {condition_c_items}"}
+        comparison = {"skipped": "no matching condition-C items provided (pass --condition-c-items "
+                                 "with the report.items.jsonl of a run on this exact QA set)"}
 
     forward_details = [details[record["id"]] for record in records if direction_of(record) == "forward"]
     inverse_details = [details[record["id"]] for record in records if direction_of(record) == "inverse"]
     observations: List[str] = []
+    observations.append(
+        f"规则 {RULE_VERSION} 同时支持 v0.1/v0.2 两套动作文本模板；模板自检 "
+        f"{sum(1 for row in template_probe['rows'] if row['pass'])}/{template_probe['probes_total']} 通过；"
+        f"合成 inverse 排序自检 {sum(1 for row in order_probe['rows'] if row['pass'])}/{order_probe['probes_total']} 通过；"
+        f"本轮 question 模板代际分布 {dict(sorted(template_generations.items()))}。")
     if inverse_details:
         inverse_correct = sum(1 for detail in inverse_details if detail["baseline_prediction"] == detail["gt"])
         observations.append(
@@ -449,7 +668,7 @@ def main(argv: Optional[List[str]] = None) -> int:
         if inverse_correct < len(inverse_details):
             unresolved = sorted({label for detail in inverse_details for label in detail["unresolved_labels"]})
             observations.append(f"inverse 基线存在 {len(inverse_details) - inverse_correct} 题未完全命中，"
-                                f"未解析标签 {unresolved[:10]}；v0.2 词表扩展后需复跑本规则。")
+                                f"未解析标签 {unresolved[:10]}；若为新模板导致，请扩展 STAGE_PATTERNS 并升 rule_version。")
     if forward_details:
         observations.append(
             f"forward 文本基线采用恒等先验：{len(forward_details)} 题中动作列表全部按时间顺序给出，"
@@ -464,30 +683,47 @@ def main(argv: Optional[List[str]] = None) -> int:
             f"{comparison['baseline_overall']['EM']:.4f}（Δ={comparison['EM_delta_baseline_minus_C']:+.4f}）；"
             "C 的分数没有超出文本先验可解释的范围。")
 
+    script_path = Path(__file__).resolve()
     evidence = {
-        "schema": "usim_text_prior_baseline/v1",
+        "schema": "usim_text_prior_baseline/v2",
         "rule_version": RULE_VERSION,
+        "rule_script_sha256": sha256_file(script_path),
+        "rule_script_path": relative_repo_path(script_path),
         "generated_at": now_iso(),
         "dataset_version": dataset_version,
         "qa_file": str(qa_path),
         "qa_sha256": sha256_file(qa_path),
         "evaluation_protocol": EVALUATION_PROTOCOL,
+        "predictions_out": ({"path": relative_repo_path(predictions_out),
+                             "sha256": sha256_file(predictions_out),
+                             "rows": len(predictions)} if predictions_out is not None else None),
         "scored_by": "scripts/usim/evaluate.py USIMVerifier (real verifier, same path as the model conditions)",
+        "template_compatibility": template_probe,
+        "synthetic_order_probes": order_probe,
+        "question_template_generations": dict(sorted(template_generations.items())),
         "rules": {
             "target": "predict the answer permutation from the question text only",
             "forbidden_inputs": ["gt_answer", "images", "key_frame_ids", "model predictions"],
-            "stage_order": STAGE_ORDER,
-            "stage_patterns": [{"stage": stage, "predicate": predicate, "regex": pattern}
-                               for stage, predicate, pattern in STAGE_PATTERNS],
+            "stage_ranks": STAGE_ORDER,
+            "lifecycle_without_touching": "OnSeabed(0) < NextTo(10) < InGripper(20) < Lifted(30) < InBox(40)",
+            "touching_rank": "Touching(15) sits between NextTo(10) and InGripper(20) per the v0.2 "
+                             "guideline ('contact before holding')",
+            "stage_patterns": [{"rank": rank, "predicate": predicate, "regex": pattern,
+                                "template_generation": generation}
+                               for rank, predicate, pattern, generation in STAGE_PATTERNS],
             "negation_guard": {"patterns": list(NEGATION_PATTERNS),
                                "effect": "negated sentences do not contribute a stage"},
-            "inverse_rule": "parse [Action N] lines; stage(N)=max positive lifecycle stage; "
-                            "order labels by (stage asc, label asc)",
+            "inverse_rule": "parse [Action N] lines; rank(N)=max positive lifecycle rank; "
+                            "order labels by (rank asc, label asc)",
             "forward_rule": "identity permutation (fixed label prior); the text gives no "
                             "action->future-image-label mapping",
-            "rule_source": ["enact/adapters/usim_translator.py state vocabulary",
-                            "data/usim_enact/usim-enact-v0.1/annotations/episodes/*.json relations",
-                            "docs/06_data_and_evaluation_contract.md §4"],
+            "rule_source": [
+                "enact/adapters/usim_translator.py USIM_STATE_TEMPLATES (v0.1 'next to'/'touching'; "
+                "v0.2 'in position for the pre-grasp approach beside'/'in contact with')",
+                "docs/WBR/ENACT-USIM-v0.2标注与关键帧规范-20261027.md §2.1-2.2 (NextTo approach semantics, "
+                "Touching before grasp), §9.6 (template changes)",
+                "docs/06_data_and_evaluation_contract.md §4",
+            ],
             "tie_break": "ascending label order",
         },
         "counts": {
@@ -508,6 +744,21 @@ def main(argv: Optional[List[str]] = None) -> int:
 
     summary = {
         "dataset_version": dataset_version,
+        "rule_version": RULE_VERSION,
+        "rule_script_sha256": evidence["rule_script_sha256"],
+        "template_compatibility": {
+            "all_pass": template_probe["all_pass"],
+            "probes": template_probe["probes_total"],
+            "generations_covered": template_probe["generations_covered"],
+        },
+        "synthetic_order_probes": {
+            "all_pass": order_probe["all_pass"],
+            "probes": order_probe["probes_total"],
+            "rows": [{"name": row["name"], "pass": row["pass"],
+                      "expected": row["expected_prediction"], "actual": row["actual_prediction"]}
+                     for row in order_probe["rows"]],
+        },
+        "question_template_generations": evidence["question_template_generations"],
         "baseline_overall": metrics["overall"],
         "by_setting": metrics["by_setting"],
         "identity": identity_stats,
@@ -522,6 +773,14 @@ def main(argv: Optional[List[str]] = None) -> int:
         "evidence": str(out_path),
     }
     print(json.dumps(summary, ensure_ascii=False, indent=2))
+    if not template_probe["all_pass"]:
+        failed = [row for row in template_probe["rows"] if not row["pass"]]
+        print(f"template compatibility probe failed: {failed}", file=sys.stderr)
+        return 2
+    if not order_probe["all_pass"]:
+        failed = [row for row in order_probe["rows"] if not row["pass"]]
+        print(f"synthetic order probe failed: {failed}", file=sys.stderr)
+        return 2
     return 0
 
 
