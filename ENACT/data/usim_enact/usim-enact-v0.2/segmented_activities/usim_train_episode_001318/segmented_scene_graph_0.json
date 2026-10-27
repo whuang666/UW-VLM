@@ -1,0 +1,226 @@
+{
+  "200": {
+    "type": "full",
+    "nodes": [
+      {
+        "name": "robot",
+        "category": "agent",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "red_cylinder",
+        "category": "cylinder",
+        "states": [
+          "OnSeabed"
+        ],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "green_box",
+        "category": "box",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      }
+    ],
+    "edges": []
+  },
+  "245": {
+    "type": "full",
+    "nodes": [
+      {
+        "name": "robot",
+        "category": "agent",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "red_cylinder",
+        "category": "cylinder",
+        "states": [
+          "OnSeabed"
+        ],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "green_box",
+        "category": "box",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "from": "robot",
+        "to": "red_cylinder",
+        "states": [
+          "NextTo"
+        ]
+      }
+    ]
+  },
+  "275": {
+    "type": "full",
+    "nodes": [
+      {
+        "name": "robot",
+        "category": "agent",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "red_cylinder",
+        "category": "cylinder",
+        "states": [
+          "InGripper",
+          "OnSeabed"
+        ],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "green_box",
+        "category": "box",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      }
+    ],
+    "edges": []
+  },
+  "352": {
+    "type": "full",
+    "nodes": [
+      {
+        "name": "robot",
+        "category": "agent",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "red_cylinder",
+        "category": "cylinder",
+        "states": [
+          "InGripper",
+          "Lifted"
+        ],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "green_box",
+        "category": "box",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      }
+    ],
+    "edges": []
+  },
+  "517": {
+    "type": "full",
+    "nodes": [
+      {
+        "name": "robot",
+        "category": "agent",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "red_cylinder",
+        "category": "cylinder",
+        "states": [
+          "InGripper",
+          "Lifted"
+        ],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "green_box",
+        "category": "box",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "from": "robot",
+        "to": "green_box",
+        "states": [
+          "NearBox"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,2738 @@
+{
+  "protocol_version": "usim-enact-v0.2",
+  "camera_mapping": {
+    "ego": "external_sensor1"
+  },
+  "visibility": {
+    "method": "annotated_boolean",
+    "note": "Primary signal is visual review of the ego stream. Detector pixel counts are stored as auxiliary evidence only, never used to pass the upstream 0.005% rule."
+  },
+  "usim": {
+    "root": "E:\\code\\UW-VLM\\usim",
+    "download_manifest_sha256": "570c451c097ab0e07f2adf29cbd48c22710f28353017307d03f624383a679c63"
+  },
+  "enact_commit": "e0d92e5554690f0536df5ca82f3469a5b4c4b541",
+  "annotations_dir": "data\\usim_enact\\usim-enact-v0.2\\annotations\\episodes",
+  "annotation_sha256": {
+    "usim_train_episode_000104.json": "6a2b6ef211806f5e76a7d387bad7a70babbaf7c241a18981a9310cd0a9d5ed10",
+    "usim_train_episode_000175.json": "5f4b866ea470701b2134415ec2e73b5b8477836aaa04d80dd8f67d70529ca43d",
+    "usim_train_episode_000200.json": "c9d1f5b97a7aad5ca1017b1e9ac25eb99aebad3592b220c00d95738d2f6f828f",
+    "usim_train_episode_000201.json": "05f0acc5597dbe29f47d3bf464c7ed9d60c3d041b202eb6f0d26fb80a68aac3d",
+    "usim_train_episode_000287.json": "3ffb03d2b7ede1e730cb2f2c26999d1a5b1185c6a6553949bd0a92c3bde6d599",
+    "usim_train_episode_000297.json": "574b32e78ef3ab10fc54ace6d746352ed1ae167ff25f9c092e3b182d23ddf85f",
+    "usim_train_episode_000501.json": "231547ca04c5507b1cd944684c2c3121f1d4567b7b71cfad4fcb57b6013044d7",
+    "usim_train_episode_000533.json": "54a1a21ebe1c68018d8042eca8d0495b28dc64a25c2b01d4933f72b61e9d6572",
+    "usim_train_episode_000552.json": "5601e161705b82eab32eaf75c57a862e6f81c54d6224ede096e1d68e81500917",
+    "usim_train_episode_000553.json": "87e849dbc19fc370cb60e4fb454b06533550abd7939cc626d0352949a96902b4",
+    "usim_train_episode_000555.json": "e501553a100bc9e362a09359f32e6722da8f1dea51c3c5d390d3c4edc67a5aaf",
+    "usim_train_episode_000556.json": "ff3104e801ddc457a985ee2035a7a2a831510d053605c960018ff9de06d8a1d0",
+    "usim_train_episode_000587.json": "a40eb02734441d1f7f509914c22b241e7862c3d1d4b82fd34bfa0761d8fee7be",
+    "usim_train_episode_000628.json": "ef0eb4cb559e4553c68ce4dbbd8a4e317ac53a0943ac819f53479c246729454e",
+    "usim_train_episode_000653.json": "cc2c1c3c9e749d853b9d939b4bac062f338e8a6ef1b1076977d94a124860cbfd",
+    "usim_train_episode_000682.json": "2e112ce4d3172fae3c4ec7ff17f8ce94b90aedc97c4e63b3e0d1da78296eefd0",
+    "usim_train_episode_000756.json": "671ce2f77b7f7e7b2e76e0d9e07fafbb46ddfca9843eca4e410f9e2434b7394a",
+    "usim_train_episode_000846.json": "449384a5ee51f00ff708555d290affc740f58cd87e547f9b3b430e71851aabc4",
+    "usim_train_episode_000962.json": "2491a33ff2b61e69ccb7488121e688dd8edc52e50b740be0f0a8eaf49ab8760d",
+    "usim_train_episode_000980.json": "54e7c8ea79459e999e3407be6f24bcabf5a7ad2fb121314d494f3ecd6d47f42a",
+    "usim_train_episode_001046.json": "4e811a85f88feaf280b254bfeed8d8bb0d10972ed9ae70333e3feb3d47765c0c",
+    "usim_train_episode_001135.json": "b842435037496500aa4d792001cea0bf9471cddedd4636dad1765c05d35f16ad",
+    "usim_train_episode_001302.json": "3f261c0040cc0b8daa857111f925e31518bdb5a886927c0e616533d8cd268bdf",
+    "usim_train_episode_001304.json": "66bb7543c9b5e76ad9ea970e420cfe8eaf7b9ffa5654ccae4eb2746f009b7217",
+    "usim_train_episode_001318.json": "437ef1c2c739fbf65ee5e8d2ee85190b7bc0b6e96af03a1ada103a4c2c1baec6",
+    "usim_train_episode_001330.json": "8d6ac689d7a178760a44948554838a69bc7ed4750e7d041c4b724be2d23e774b",
+    "usim_train_episode_001357.json": "b226c0f0876e8f69258504f87f87273e2f1a21ef25b81626822798a5cb13c70b"
+  },
+  "episodes": [
+    {
+      "episode_key": "usim_train_episode_000104",
+      "source_split": "train",
+      "episode_index": 104,
+      "task_text": "Pick up the pipe",
+      "task_index": 1,
+      "key_frame_ids": [
+        "194",
+        "262",
+        "292",
+        "364"
+      ],
+      "frames": {
+        "194": {
+          "path": "replayed_activities\\usim_train_episode_000104\\external_sensor1\\00194.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "a15d8580c164548743735ebc2ac66c9d18b15cc7228ff5047e7788edd254bfd5"
+        },
+        "262": {
+          "path": "replayed_activities\\usim_train_episode_000104\\external_sensor1\\00262.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "3944f4d2b7909bbb6e97260570ff3af4ad7b129329274a72a2feb220de90a4f5"
+        },
+        "292": {
+          "path": "replayed_activities\\usim_train_episode_000104\\external_sensor1\\00292.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "e92334b4c5303f42bc6d20bd24faa6dbf8efcb39a1eaa87b60ce2c9c4aa36353"
+        },
+        "364": {
+          "path": "replayed_activities\\usim_train_episode_000104\\external_sensor1\\00364.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "9cc4cfda839fd176c8ee2c750b51fa8ab724e0c7189bc16201884df37d5cb26e"
+        }
+      },
+      "segmented_frames": {
+        "194": {
+          "path": "segmented_activities\\usim_train_episode_000104\\external_sensor1\\00194.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "a15d8580c164548743735ebc2ac66c9d18b15cc7228ff5047e7788edd254bfd5"
+        },
+        "262": {
+          "path": "segmented_activities\\usim_train_episode_000104\\external_sensor1\\00262.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "3944f4d2b7909bbb6e97260570ff3af4ad7b129329274a72a2feb220de90a4f5"
+        },
+        "292": {
+          "path": "segmented_activities\\usim_train_episode_000104\\external_sensor1\\00292.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "e92334b4c5303f42bc6d20bd24faa6dbf8efcb39a1eaa87b60ce2c9c4aa36353"
+        },
+        "364": {
+          "path": "segmented_activities\\usim_train_episode_000104\\external_sensor1\\00364.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "9cc4cfda839fd176c8ee2c750b51fa8ab724e0c7189bc16201884df37d5cb26e"
+        }
+      },
+      "transitions": [
+        {
+          "from": "194",
+          "to": "262",
+          "visible": true,
+          "text": "The robot now becomes in position for the pre-grasp approach beside the pipe.",
+          "signatures": [
+            "add_edge_robot_pipe_NextTo"
+          ]
+        },
+        {
+          "from": "262",
+          "to": "292",
+          "visible": true,
+          "text": "The pipe becomes grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the pipe.",
+          "signatures": [
+            "add_node_pipe_InGripper",
+            "remove_edge_robot_pipe_NextTo"
+          ]
+        },
+        {
+          "from": "292",
+          "to": "364",
+          "visible": true,
+          "text": "The pipe is now lifted above the seabed. The pipe is not on the seabed anymore.",
+          "signatures": [
+            "add_node_pipe_Lifted",
+            "remove_node_pipe_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 3,
+      "scene_graph_sha256": "7643bad0ed7075057cef2519904023f2145baa8fa28214250fa9f503b727ba8a"
+    },
+    {
+      "episode_key": "usim_train_episode_000175",
+      "source_split": "train",
+      "episode_index": 175,
+      "task_text": "Pick up the pipe",
+      "task_index": 1,
+      "key_frame_ids": [
+        "98",
+        "172",
+        "202",
+        "278"
+      ],
+      "frames": {
+        "98": {
+          "path": "replayed_activities\\usim_train_episode_000175\\external_sensor1\\00098.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "c43a75b975ba62e18dee83b0da3203819e27536d4cc4c0d99022e87e6980e270"
+        },
+        "172": {
+          "path": "replayed_activities\\usim_train_episode_000175\\external_sensor1\\00172.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "26e34475c36ede7cfeeaa9d0f70ef22ff187b1d6005132e55c0a88bf0547b738"
+        },
+        "202": {
+          "path": "replayed_activities\\usim_train_episode_000175\\external_sensor1\\00202.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "ecc99497c2f918b7e2c79fcedac8eca688672f71e87e79d94292a214441798db"
+        },
+        "278": {
+          "path": "replayed_activities\\usim_train_episode_000175\\external_sensor1\\00278.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "e141bedb00132ef7df839a2624a3b7451236106f7c374165456a9fad41f5c14b"
+        }
+      },
+      "segmented_frames": {
+        "98": {
+          "path": "segmented_activities\\usim_train_episode_000175\\external_sensor1\\00098.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "c43a75b975ba62e18dee83b0da3203819e27536d4cc4c0d99022e87e6980e270"
+        },
+        "172": {
+          "path": "segmented_activities\\usim_train_episode_000175\\external_sensor1\\00172.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "26e34475c36ede7cfeeaa9d0f70ef22ff187b1d6005132e55c0a88bf0547b738"
+        },
+        "202": {
+          "path": "segmented_activities\\usim_train_episode_000175\\external_sensor1\\00202.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "ecc99497c2f918b7e2c79fcedac8eca688672f71e87e79d94292a214441798db"
+        },
+        "278": {
+          "path": "segmented_activities\\usim_train_episode_000175\\external_sensor1\\00278.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "e141bedb00132ef7df839a2624a3b7451236106f7c374165456a9fad41f5c14b"
+        }
+      },
+      "transitions": [
+        {
+          "from": "98",
+          "to": "172",
+          "visible": true,
+          "text": "The robot now becomes in position for the pre-grasp approach beside the pipe.",
+          "signatures": [
+            "add_edge_robot_pipe_NextTo"
+          ]
+        },
+        {
+          "from": "172",
+          "to": "202",
+          "visible": true,
+          "text": "The pipe is now grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the pipe.",
+          "signatures": [
+            "add_node_pipe_InGripper",
+            "remove_edge_robot_pipe_NextTo"
+          ]
+        },
+        {
+          "from": "202",
+          "to": "278",
+          "visible": true,
+          "text": "The pipe is now lifted above the seabed. The pipe is not on the seabed anymore.",
+          "signatures": [
+            "add_node_pipe_Lifted",
+            "remove_node_pipe_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 3,
+      "scene_graph_sha256": "aec013d4b87f98987b920fd12a538292ac10d63278b2aebf807faff87e994463"
+    },
+    {
+      "episode_key": "usim_train_episode_000200",
+      "source_split": "train",
+      "episode_index": 200,
+      "task_text": "Pick up the blue cylinder",
+      "task_index": 2,
+      "key_frame_ids": [
+        "140",
+        "213",
+        "248",
+        "328"
+      ],
+      "frames": {
+        "140": {
+          "path": "replayed_activities\\usim_train_episode_000200\\external_sensor1\\00140.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "f143fa7216a3e78c011a7afa2441c351b98e84d6c7507253c30747e2dd71e1df"
+        },
+        "213": {
+          "path": "replayed_activities\\usim_train_episode_000200\\external_sensor1\\00213.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "f21bcf1cdd54509bf7ec840340856a08db7063ed35a2a6420f167bff1d56add1"
+        },
+        "248": {
+          "path": "replayed_activities\\usim_train_episode_000200\\external_sensor1\\00248.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "01149118041632ddb0526773e40e4bf2937f62223bbfd6b380bd379d59d2dac0"
+        },
+        "328": {
+          "path": "replayed_activities\\usim_train_episode_000200\\external_sensor1\\00328.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "debda809e08824b0b3a56d9a96b3b3a30699a4b79fe34737855bfaaaa183bca5"
+        }
+      },
+      "segmented_frames": {
+        "140": {
+          "path": "segmented_activities\\usim_train_episode_000200\\external_sensor1\\00140.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "f143fa7216a3e78c011a7afa2441c351b98e84d6c7507253c30747e2dd71e1df"
+        },
+        "213": {
+          "path": "segmented_activities\\usim_train_episode_000200\\external_sensor1\\00213.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "f21bcf1cdd54509bf7ec840340856a08db7063ed35a2a6420f167bff1d56add1"
+        },
+        "248": {
+          "path": "segmented_activities\\usim_train_episode_000200\\external_sensor1\\00248.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "01149118041632ddb0526773e40e4bf2937f62223bbfd6b380bd379d59d2dac0"
+        },
+        "328": {
+          "path": "segmented_activities\\usim_train_episode_000200\\external_sensor1\\00328.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "debda809e08824b0b3a56d9a96b3b3a30699a4b79fe34737855bfaaaa183bca5"
+        }
+      },
+      "transitions": [
+        {
+          "from": "140",
+          "to": "213",
+          "visible": true,
+          "text": "The robot transitions to be in position for the pre-grasp approach beside the blue cylinder.",
+          "signatures": [
+            "add_edge_robot_blue_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "213",
+          "to": "248",
+          "visible": true,
+          "text": "The blue cylinder becomes grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the blue cylinder.",
+          "signatures": [
+            "add_node_blue_cylinder_InGripper",
+            "remove_edge_robot_blue_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "248",
+          "to": "328",
+          "visible": true,
+          "text": "The blue cylinder becomes lifted above the seabed. The blue cylinder is not on the seabed anymore.",
+          "signatures": [
+            "add_node_blue_cylinder_Lifted",
+            "remove_node_blue_cylinder_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 3,
+      "scene_graph_sha256": "fd8aee4dd408ab3ff70d4e673d48c0827e20dafccc156b131b677db03067f9f2"
+    },
+    {
+      "episode_key": "usim_train_episode_000201",
+      "source_split": "train",
+      "episode_index": 201,
+      "task_text": "Pick up the blue cylinder",
+      "task_index": 2,
+      "key_frame_ids": [
+        "199",
+        "244",
+        "279",
+        "357"
+      ],
+      "frames": {
+        "199": {
+          "path": "replayed_activities\\usim_train_episode_000201\\external_sensor1\\00199.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "31bbf840114cdd2f9af1791f1aedf3295124be56d40fe1b84b62c6d2ee4c0cbd"
+        },
+        "244": {
+          "path": "replayed_activities\\usim_train_episode_000201\\external_sensor1\\00244.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "fa8c99173e135016f2c909f008ee9e3d5fae7cff3baec76971afc5116ca6fdb1"
+        },
+        "279": {
+          "path": "replayed_activities\\usim_train_episode_000201\\external_sensor1\\00279.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "b91d0aa3fa7512afeda94fcb0e2392b7230a2d5871268529ff5150c50ce3dcd8"
+        },
+        "357": {
+          "path": "replayed_activities\\usim_train_episode_000201\\external_sensor1\\00357.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "18044118eeb15d11d749ad909ffb0636c3775595c646e9a5bed408caf333d71b"
+        }
+      },
+      "segmented_frames": {
+        "199": {
+          "path": "segmented_activities\\usim_train_episode_000201\\external_sensor1\\00199.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "31bbf840114cdd2f9af1791f1aedf3295124be56d40fe1b84b62c6d2ee4c0cbd"
+        },
+        "244": {
+          "path": "segmented_activities\\usim_train_episode_000201\\external_sensor1\\00244.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "fa8c99173e135016f2c909f008ee9e3d5fae7cff3baec76971afc5116ca6fdb1"
+        },
+        "279": {
+          "path": "segmented_activities\\usim_train_episode_000201\\external_sensor1\\00279.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "b91d0aa3fa7512afeda94fcb0e2392b7230a2d5871268529ff5150c50ce3dcd8"
+        },
+        "357": {
+          "path": "segmented_activities\\usim_train_episode_000201\\external_sensor1\\00357.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "18044118eeb15d11d749ad909ffb0636c3775595c646e9a5bed408caf333d71b"
+        }
+      },
+      "transitions": [
+        {
+          "from": "199",
+          "to": "244",
+          "visible": true,
+          "text": "The robot changes to be in position for the pre-grasp approach beside the blue cylinder.",
+          "signatures": [
+            "add_edge_robot_blue_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "244",
+          "to": "279",
+          "visible": true,
+          "text": "The blue cylinder becomes grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the blue cylinder.",
+          "signatures": [
+            "add_node_blue_cylinder_InGripper",
+            "remove_edge_robot_blue_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "279",
+          "to": "357",
+          "visible": true,
+          "text": "The blue cylinder is now lifted above the seabed. The blue cylinder is no longer on the seabed.",
+          "signatures": [
+            "add_node_blue_cylinder_Lifted",
+            "remove_node_blue_cylinder_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 3,
+      "scene_graph_sha256": "54f9d889221be0c264839fdca81d223f385c356872eacfdc86aedcd3ab9526d8"
+    },
+    {
+      "episode_key": "usim_train_episode_000287",
+      "source_split": "train",
+      "episode_index": 287,
+      "task_text": "Pick up the blue cylinder",
+      "task_index": 2,
+      "key_frame_ids": [
+        "208",
+        "312",
+        "342",
+        "424"
+      ],
+      "frames": {
+        "208": {
+          "path": "replayed_activities\\usim_train_episode_000287\\external_sensor1\\00208.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "ae116a8ffa445c8dac5ffd16b61734ca5a3e31fef0523ef8f3fc810f16613387"
+        },
+        "312": {
+          "path": "replayed_activities\\usim_train_episode_000287\\external_sensor1\\00312.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "4880f594627265db86e9c35e400395158f9d2f5d0e9a67495155fcef179dd712"
+        },
+        "342": {
+          "path": "replayed_activities\\usim_train_episode_000287\\external_sensor1\\00342.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "e17c07ef27838011b5479c35ae4723ad816588506fbebabf00cbff1356ace185"
+        },
+        "424": {
+          "path": "replayed_activities\\usim_train_episode_000287\\external_sensor1\\00424.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "21b2313f189360b78512e0165a016f4f18260e1ec514ac28e86176e6aad105aa"
+        }
+      },
+      "segmented_frames": {
+        "208": {
+          "path": "segmented_activities\\usim_train_episode_000287\\external_sensor1\\00208.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "ae116a8ffa445c8dac5ffd16b61734ca5a3e31fef0523ef8f3fc810f16613387"
+        },
+        "312": {
+          "path": "segmented_activities\\usim_train_episode_000287\\external_sensor1\\00312.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "4880f594627265db86e9c35e400395158f9d2f5d0e9a67495155fcef179dd712"
+        },
+        "342": {
+          "path": "segmented_activities\\usim_train_episode_000287\\external_sensor1\\00342.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "e17c07ef27838011b5479c35ae4723ad816588506fbebabf00cbff1356ace185"
+        },
+        "424": {
+          "path": "segmented_activities\\usim_train_episode_000287\\external_sensor1\\00424.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "21b2313f189360b78512e0165a016f4f18260e1ec514ac28e86176e6aad105aa"
+        }
+      },
+      "transitions": [
+        {
+          "from": "208",
+          "to": "312",
+          "visible": true,
+          "text": "The robot now becomes in position for the pre-grasp approach beside the blue cylinder.",
+          "signatures": [
+            "add_edge_robot_blue_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "312",
+          "to": "342",
+          "visible": true,
+          "text": "The blue cylinder is now grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the blue cylinder.",
+          "signatures": [
+            "add_node_blue_cylinder_InGripper",
+            "remove_edge_robot_blue_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "342",
+          "to": "424",
+          "visible": true,
+          "text": "The blue cylinder is now lifted above the seabed. The blue cylinder is no longer on the seabed.",
+          "signatures": [
+            "add_node_blue_cylinder_Lifted",
+            "remove_node_blue_cylinder_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 3,
+      "scene_graph_sha256": "447e81f5bd259d83cfa407cc2561bd1aa40d4938af9170534cfcb94db962bf49"
+    },
+    {
+      "episode_key": "usim_train_episode_000297",
+      "source_split": "train",
+      "episode_index": 297,
+      "task_text": "Pick up the blue cylinder",
+      "task_index": 2,
+      "key_frame_ids": [
+        "358",
+        "503",
+        "533",
+        "612"
+      ],
+      "frames": {
+        "358": {
+          "path": "replayed_activities\\usim_train_episode_000297\\external_sensor1\\00358.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "71a2adb75dfd7e964278c5f77adf27a6b83ab2ae047846a9c79f56f8d92e586f"
+        },
+        "503": {
+          "path": "replayed_activities\\usim_train_episode_000297\\external_sensor1\\00503.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "3fc9b6ef619aa393a2d8f88afa5495c892a5b875a820bd323baa11313a7e7de6"
+        },
+        "533": {
+          "path": "replayed_activities\\usim_train_episode_000297\\external_sensor1\\00533.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "e8f1277cf62f0400e68019e98014652efc485e6c6308a47a939ac8f66d628f03"
+        },
+        "612": {
+          "path": "replayed_activities\\usim_train_episode_000297\\external_sensor1\\00612.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "ca34619334d6c6ea7385d6afd4911e9cb4893d24bd8cf917f9e04efd2b0baf53"
+        }
+      },
+      "segmented_frames": {
+        "358": {
+          "path": "segmented_activities\\usim_train_episode_000297\\external_sensor1\\00358.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "71a2adb75dfd7e964278c5f77adf27a6b83ab2ae047846a9c79f56f8d92e586f"
+        },
+        "503": {
+          "path": "segmented_activities\\usim_train_episode_000297\\external_sensor1\\00503.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "3fc9b6ef619aa393a2d8f88afa5495c892a5b875a820bd323baa11313a7e7de6"
+        },
+        "533": {
+          "path": "segmented_activities\\usim_train_episode_000297\\external_sensor1\\00533.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "e8f1277cf62f0400e68019e98014652efc485e6c6308a47a939ac8f66d628f03"
+        },
+        "612": {
+          "path": "segmented_activities\\usim_train_episode_000297\\external_sensor1\\00612.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "ca34619334d6c6ea7385d6afd4911e9cb4893d24bd8cf917f9e04efd2b0baf53"
+        }
+      },
+      "transitions": [
+        {
+          "from": "358",
+          "to": "503",
+          "visible": true,
+          "text": "The robot transitions to be in position for the pre-grasp approach beside the blue cylinder.",
+          "signatures": [
+            "add_edge_robot_blue_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "503",
+          "to": "533",
+          "visible": true,
+          "text": "The blue cylinder becomes grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the blue cylinder.",
+          "signatures": [
+            "add_node_blue_cylinder_InGripper",
+            "remove_edge_robot_blue_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "533",
+          "to": "612",
+          "visible": true,
+          "text": "The blue cylinder is now lifted above the seabed. The blue cylinder is no longer on the seabed.",
+          "signatures": [
+            "add_node_blue_cylinder_Lifted",
+            "remove_node_blue_cylinder_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 3,
+      "scene_graph_sha256": "a2f741eef90677c58ae148eed6369e565f7ab433b9443f69b037ab631b15e4c8"
+    },
+    {
+      "episode_key": "usim_train_episode_000501",
+      "source_split": "train",
+      "episode_index": 501,
+      "task_text": "Pick up the blue cylinder",
+      "task_index": 2,
+      "key_frame_ids": [
+        "137",
+        "196",
+        "228",
+        "306"
+      ],
+      "frames": {
+        "137": {
+          "path": "replayed_activities\\usim_train_episode_000501\\external_sensor1\\00137.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "03576d1df2dcc1da287f0025aec00dad69110d40b42f963a0806c3fd340c1ca9"
+        },
+        "196": {
+          "path": "replayed_activities\\usim_train_episode_000501\\external_sensor1\\00196.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "39308644e2df55b0bb502495847f4cc0d37f91c3137e2be73cf2574db226ae46"
+        },
+        "228": {
+          "path": "replayed_activities\\usim_train_episode_000501\\external_sensor1\\00228.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "5ccaa3e1bc89dcdb17164efc867adce9520faa1f527d40b9ea26ff6feae642bd"
+        },
+        "306": {
+          "path": "replayed_activities\\usim_train_episode_000501\\external_sensor1\\00306.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "88dcaed394f45932a2971b4541d23f3436ea95c57122daf78bec7394c20b223c"
+        }
+      },
+      "segmented_frames": {
+        "137": {
+          "path": "segmented_activities\\usim_train_episode_000501\\external_sensor1\\00137.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "03576d1df2dcc1da287f0025aec00dad69110d40b42f963a0806c3fd340c1ca9"
+        },
+        "196": {
+          "path": "segmented_activities\\usim_train_episode_000501\\external_sensor1\\00196.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "39308644e2df55b0bb502495847f4cc0d37f91c3137e2be73cf2574db226ae46"
+        },
+        "228": {
+          "path": "segmented_activities\\usim_train_episode_000501\\external_sensor1\\00228.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "5ccaa3e1bc89dcdb17164efc867adce9520faa1f527d40b9ea26ff6feae642bd"
+        },
+        "306": {
+          "path": "segmented_activities\\usim_train_episode_000501\\external_sensor1\\00306.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "88dcaed394f45932a2971b4541d23f3436ea95c57122daf78bec7394c20b223c"
+        }
+      },
+      "transitions": [
+        {
+          "from": "137",
+          "to": "196",
+          "visible": true,
+          "text": "The robot becomes in position for the pre-grasp approach beside the blue cylinder.",
+          "signatures": [
+            "add_edge_robot_blue_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "196",
+          "to": "228",
+          "visible": true,
+          "text": "The blue cylinder becomes grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the blue cylinder.",
+          "signatures": [
+            "add_node_blue_cylinder_InGripper",
+            "remove_edge_robot_blue_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "228",
+          "to": "306",
+          "visible": true,
+          "text": "The blue cylinder is now lifted above the seabed. The blue cylinder is no longer on the seabed.",
+          "signatures": [
+            "add_node_blue_cylinder_Lifted",
+            "remove_node_blue_cylinder_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 3,
+      "scene_graph_sha256": "efd3217624bfd4f4e716c0094d1363e2ae0991e090e8d533b4e4ee5acb8394b0"
+    },
+    {
+      "episode_key": "usim_train_episode_000533",
+      "source_split": "train",
+      "episode_index": 533,
+      "task_text": "Pick up the blue cylinder",
+      "task_index": 2,
+      "key_frame_ids": [
+        "90",
+        "236",
+        "260",
+        "306"
+      ],
+      "frames": {
+        "90": {
+          "path": "replayed_activities\\usim_train_episode_000533\\external_sensor1\\00090.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "5f3f3fc87dbd2e7d5dd4c3ce4fe64e1d1be2bdf8c72f20ca785456a0fcc1d7bb"
+        },
+        "236": {
+          "path": "replayed_activities\\usim_train_episode_000533\\external_sensor1\\00236.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "3f7bea60870b51d980c8916642d28d87f6eee97377a5a77a51f77eac3239afbc"
+        },
+        "260": {
+          "path": "replayed_activities\\usim_train_episode_000533\\external_sensor1\\00260.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "01f2eddd6f7084ed02120654e9909d0acbccdcb3fa2e2128e30079892d2ce923"
+        },
+        "306": {
+          "path": "replayed_activities\\usim_train_episode_000533\\external_sensor1\\00306.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "996042ad29b67d86c3cedf198e032a23d416365a6d8b71f7b9cf3d7f9672c6d3"
+        }
+      },
+      "segmented_frames": {
+        "90": {
+          "path": "segmented_activities\\usim_train_episode_000533\\external_sensor1\\00090.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "5f3f3fc87dbd2e7d5dd4c3ce4fe64e1d1be2bdf8c72f20ca785456a0fcc1d7bb"
+        },
+        "236": {
+          "path": "segmented_activities\\usim_train_episode_000533\\external_sensor1\\00236.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "3f7bea60870b51d980c8916642d28d87f6eee97377a5a77a51f77eac3239afbc"
+        },
+        "260": {
+          "path": "segmented_activities\\usim_train_episode_000533\\external_sensor1\\00260.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "01f2eddd6f7084ed02120654e9909d0acbccdcb3fa2e2128e30079892d2ce923"
+        },
+        "306": {
+          "path": "segmented_activities\\usim_train_episode_000533\\external_sensor1\\00306.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "996042ad29b67d86c3cedf198e032a23d416365a6d8b71f7b9cf3d7f9672c6d3"
+        }
+      },
+      "transitions": [
+        {
+          "from": "90",
+          "to": "236",
+          "visible": true,
+          "text": "The robot now becomes in position for the pre-grasp approach beside the blue cylinder.",
+          "signatures": [
+            "add_edge_robot_blue_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "236",
+          "to": "260",
+          "visible": true,
+          "text": "The blue cylinder is now grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the blue cylinder.",
+          "signatures": [
+            "add_node_blue_cylinder_InGripper",
+            "remove_edge_robot_blue_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "260",
+          "to": "306",
+          "visible": true,
+          "text": "The blue cylinder becomes lifted above the seabed. The blue cylinder is no longer on the seabed.",
+          "signatures": [
+            "add_node_blue_cylinder_Lifted",
+            "remove_node_blue_cylinder_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 3,
+      "scene_graph_sha256": "1c97bc71556964eeff23d2b92d57549efe4a336dc5692d98caa2197f85a4745b"
+    },
+    {
+      "episode_key": "usim_train_episode_000552",
+      "source_split": "train",
+      "episode_index": 552,
+      "task_text": "Pick up the red cylinder",
+      "task_index": 6,
+      "key_frame_ids": [
+        "120",
+        "249",
+        "284",
+        "364"
+      ],
+      "frames": {
+        "120": {
+          "path": "replayed_activities\\usim_train_episode_000552\\external_sensor1\\00120.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "7d356593e700494a92bb046e1d9531502c0cc05edb6620de34cfaf9066f8c798"
+        },
+        "249": {
+          "path": "replayed_activities\\usim_train_episode_000552\\external_sensor1\\00249.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "f20751c40faa4dafd507a95851dd2c500ff6e0de1662f96e148d2cba353214af"
+        },
+        "284": {
+          "path": "replayed_activities\\usim_train_episode_000552\\external_sensor1\\00284.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "ee199134a089709a0a6b1a146b4e2b811bafa6a99b956fc1cbc884f3385791be"
+        },
+        "364": {
+          "path": "replayed_activities\\usim_train_episode_000552\\external_sensor1\\00364.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "18cca7f83b4d37246dcd32841ab245c05c4a7865d196edba5636902d111c63db"
+        }
+      },
+      "segmented_frames": {
+        "120": {
+          "path": "segmented_activities\\usim_train_episode_000552\\external_sensor1\\00120.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "7d356593e700494a92bb046e1d9531502c0cc05edb6620de34cfaf9066f8c798"
+        },
+        "249": {
+          "path": "segmented_activities\\usim_train_episode_000552\\external_sensor1\\00249.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "f20751c40faa4dafd507a95851dd2c500ff6e0de1662f96e148d2cba353214af"
+        },
+        "284": {
+          "path": "segmented_activities\\usim_train_episode_000552\\external_sensor1\\00284.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "ee199134a089709a0a6b1a146b4e2b811bafa6a99b956fc1cbc884f3385791be"
+        },
+        "364": {
+          "path": "segmented_activities\\usim_train_episode_000552\\external_sensor1\\00364.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "18cca7f83b4d37246dcd32841ab245c05c4a7865d196edba5636902d111c63db"
+        }
+      },
+      "transitions": [
+        {
+          "from": "120",
+          "to": "249",
+          "visible": true,
+          "text": "The robot transitions to be in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "249",
+          "to": "284",
+          "visible": true,
+          "text": "The red cylinder is now grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "284",
+          "to": "364",
+          "visible": true,
+          "text": "The red cylinder is now lifted above the seabed. The red cylinder is not on the seabed anymore.",
+          "signatures": [
+            "add_node_red_cylinder_Lifted",
+            "remove_node_red_cylinder_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 3,
+      "scene_graph_sha256": "a7498a54eb9dd246c9963970ad659e06524ddbc7ec40bddf3fed7ef6447db375"
+    },
+    {
+      "episode_key": "usim_train_episode_000553",
+      "source_split": "train",
+      "episode_index": 553,
+      "task_text": "Pick up the red cylinder",
+      "task_index": 6,
+      "key_frame_ids": [
+        "110",
+        "140",
+        "168",
+        "248"
+      ],
+      "frames": {
+        "110": {
+          "path": "replayed_activities\\usim_train_episode_000553\\external_sensor1\\00110.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "4c03b878035744976865acd90de67e678d20d3e4eba08443db72f9eb10f5b5ce"
+        },
+        "140": {
+          "path": "replayed_activities\\usim_train_episode_000553\\external_sensor1\\00140.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "3cb62a33582a2bfcc651aced642bdc2557aee4a636b3331d0912cd75b16b095f"
+        },
+        "168": {
+          "path": "replayed_activities\\usim_train_episode_000553\\external_sensor1\\00168.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "397092bf08bf9e85181cffab7d71963de3a2fc6b97c0802cb892c5206d18af59"
+        },
+        "248": {
+          "path": "replayed_activities\\usim_train_episode_000553\\external_sensor1\\00248.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "cf993248829a4e784a44b8a5f7f4b65eccbe6be3c1fdd97e73aca823eced95c9"
+        }
+      },
+      "segmented_frames": {
+        "110": {
+          "path": "segmented_activities\\usim_train_episode_000553\\external_sensor1\\00110.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "4c03b878035744976865acd90de67e678d20d3e4eba08443db72f9eb10f5b5ce"
+        },
+        "140": {
+          "path": "segmented_activities\\usim_train_episode_000553\\external_sensor1\\00140.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "3cb62a33582a2bfcc651aced642bdc2557aee4a636b3331d0912cd75b16b095f"
+        },
+        "168": {
+          "path": "segmented_activities\\usim_train_episode_000553\\external_sensor1\\00168.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "397092bf08bf9e85181cffab7d71963de3a2fc6b97c0802cb892c5206d18af59"
+        },
+        "248": {
+          "path": "segmented_activities\\usim_train_episode_000553\\external_sensor1\\00248.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "cf993248829a4e784a44b8a5f7f4b65eccbe6be3c1fdd97e73aca823eced95c9"
+        }
+      },
+      "transitions": [
+        {
+          "from": "110",
+          "to": "140",
+          "visible": true,
+          "text": "The robot becomes in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "140",
+          "to": "168",
+          "visible": true,
+          "text": "The red cylinder becomes grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "168",
+          "to": "248",
+          "visible": true,
+          "text": "The red cylinder becomes lifted above the seabed. The red cylinder is no longer on the seabed.",
+          "signatures": [
+            "add_node_red_cylinder_Lifted",
+            "remove_node_red_cylinder_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 3,
+      "scene_graph_sha256": "46ac9c2443f8076fbb705f61827ed43e1457344d1d03014a0c6eeb9e6127ed54"
+    },
+    {
+      "episode_key": "usim_train_episode_000555",
+      "source_split": "train",
+      "episode_index": 555,
+      "task_text": "Pick up the red cylinder",
+      "task_index": 6,
+      "key_frame_ids": [
+        "140",
+        "262",
+        "297",
+        "377"
+      ],
+      "frames": {
+        "140": {
+          "path": "replayed_activities\\usim_train_episode_000555\\external_sensor1\\00140.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "105d1f577e819c68b475377db90fb8383df4535ed0c4501ad5805780c37711af"
+        },
+        "262": {
+          "path": "replayed_activities\\usim_train_episode_000555\\external_sensor1\\00262.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "d518936ad33b374dda720f55dba1415eac6e15e8174512886cd7e5e73c5a1762"
+        },
+        "297": {
+          "path": "replayed_activities\\usim_train_episode_000555\\external_sensor1\\00297.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "f2bfef6256aebf14f15b393894a80e388abc7609339b0f165974b8a2dac5dc36"
+        },
+        "377": {
+          "path": "replayed_activities\\usim_train_episode_000555\\external_sensor1\\00377.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "c4eeeefe203dbc8daf1bcd9c529bc0e3d4f6e5ce4b77774489a793fa6630dd21"
+        }
+      },
+      "segmented_frames": {
+        "140": {
+          "path": "segmented_activities\\usim_train_episode_000555\\external_sensor1\\00140.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "105d1f577e819c68b475377db90fb8383df4535ed0c4501ad5805780c37711af"
+        },
+        "262": {
+          "path": "segmented_activities\\usim_train_episode_000555\\external_sensor1\\00262.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "d518936ad33b374dda720f55dba1415eac6e15e8174512886cd7e5e73c5a1762"
+        },
+        "297": {
+          "path": "segmented_activities\\usim_train_episode_000555\\external_sensor1\\00297.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "f2bfef6256aebf14f15b393894a80e388abc7609339b0f165974b8a2dac5dc36"
+        },
+        "377": {
+          "path": "segmented_activities\\usim_train_episode_000555\\external_sensor1\\00377.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "c4eeeefe203dbc8daf1bcd9c529bc0e3d4f6e5ce4b77774489a793fa6630dd21"
+        }
+      },
+      "transitions": [
+        {
+          "from": "140",
+          "to": "262",
+          "visible": false,
+          "text": "No significant changes occurred",
+          "signatures": []
+        },
+        {
+          "from": "262",
+          "to": "297",
+          "visible": true,
+          "text": "The red cylinder becomes grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "297",
+          "to": "377",
+          "visible": true,
+          "text": "The red cylinder is now lifted above the seabed. The red cylinder is no longer on the seabed.",
+          "signatures": [
+            "add_node_red_cylinder_Lifted",
+            "remove_node_red_cylinder_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 2,
+      "scene_graph_sha256": "5ad75aeb7e4f67289cb7bb305c4940395cfe1cd3e22c53e55dbc3e740df6bccd"
+    },
+    {
+      "episode_key": "usim_train_episode_000556",
+      "source_split": "train",
+      "episode_index": 556,
+      "task_text": "Pick up the red cylinder",
+      "task_index": 6,
+      "key_frame_ids": [
+        "180",
+        "304",
+        "339",
+        "419"
+      ],
+      "frames": {
+        "180": {
+          "path": "replayed_activities\\usim_train_episode_000556\\external_sensor1\\00180.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "a3c04f34e64c249f5937ddb46cdeaeaa93b651154879e614171109195b2deb89"
+        },
+        "304": {
+          "path": "replayed_activities\\usim_train_episode_000556\\external_sensor1\\00304.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "c8691c83e06c220fdcfd64c3258cc98507b23f2d8b468d11c79377becc86cd21"
+        },
+        "339": {
+          "path": "replayed_activities\\usim_train_episode_000556\\external_sensor1\\00339.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "1581bf9bb3841f890e5e6fc5715c578a5c931fd82fbb2e5ef78dd94df0310378"
+        },
+        "419": {
+          "path": "replayed_activities\\usim_train_episode_000556\\external_sensor1\\00419.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "075cd6aa669554e6f91e88825d4d7b7b2ffaea8de934fe886f8f2896f66eb408"
+        }
+      },
+      "segmented_frames": {
+        "180": {
+          "path": "segmented_activities\\usim_train_episode_000556\\external_sensor1\\00180.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "a3c04f34e64c249f5937ddb46cdeaeaa93b651154879e614171109195b2deb89"
+        },
+        "304": {
+          "path": "segmented_activities\\usim_train_episode_000556\\external_sensor1\\00304.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "c8691c83e06c220fdcfd64c3258cc98507b23f2d8b468d11c79377becc86cd21"
+        },
+        "339": {
+          "path": "segmented_activities\\usim_train_episode_000556\\external_sensor1\\00339.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "1581bf9bb3841f890e5e6fc5715c578a5c931fd82fbb2e5ef78dd94df0310378"
+        },
+        "419": {
+          "path": "segmented_activities\\usim_train_episode_000556\\external_sensor1\\00419.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "075cd6aa669554e6f91e88825d4d7b7b2ffaea8de934fe886f8f2896f66eb408"
+        }
+      },
+      "transitions": [
+        {
+          "from": "180",
+          "to": "304",
+          "visible": false,
+          "text": "No significant changes occurred",
+          "signatures": []
+        },
+        {
+          "from": "304",
+          "to": "339",
+          "visible": true,
+          "text": "The red cylinder is now grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "339",
+          "to": "419",
+          "visible": true,
+          "text": "The red cylinder becomes lifted above the seabed. The red cylinder is no longer on the seabed.",
+          "signatures": [
+            "add_node_red_cylinder_Lifted",
+            "remove_node_red_cylinder_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 2,
+      "scene_graph_sha256": "9ddb086fb40bf1f9cc829a31f5c95ebebe99bb755152005f58462c936c41f9b8"
+    },
+    {
+      "episode_key": "usim_train_episode_000587",
+      "source_split": "train",
+      "episode_index": 587,
+      "task_text": "Pick up the red cylinder",
+      "task_index": 6,
+      "key_frame_ids": [
+        "190",
+        "224",
+        "256",
+        "305"
+      ],
+      "frames": {
+        "190": {
+          "path": "replayed_activities\\usim_train_episode_000587\\external_sensor1\\00190.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "a73e6307d5da8e37a5a58d5bc3154f4c893d202f139865eecba60d58a3ea55e9"
+        },
+        "224": {
+          "path": "replayed_activities\\usim_train_episode_000587\\external_sensor1\\00224.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "0c74ef36e68b14ec66d7c8f2adbdef88a25fa1c98fe9607c8983a977c9269484"
+        },
+        "256": {
+          "path": "replayed_activities\\usim_train_episode_000587\\external_sensor1\\00256.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "d3e156d37bac0b525e4c5c526e6f7d4bde3469b89aa3ed2dccb6779c64d1d9c7"
+        },
+        "305": {
+          "path": "replayed_activities\\usim_train_episode_000587\\external_sensor1\\00305.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "fdae99b204a0c22b09eaeb172da5d548ea911190d0fd70792ee34ee6762b0074"
+        }
+      },
+      "segmented_frames": {
+        "190": {
+          "path": "segmented_activities\\usim_train_episode_000587\\external_sensor1\\00190.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "a73e6307d5da8e37a5a58d5bc3154f4c893d202f139865eecba60d58a3ea55e9"
+        },
+        "224": {
+          "path": "segmented_activities\\usim_train_episode_000587\\external_sensor1\\00224.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "0c74ef36e68b14ec66d7c8f2adbdef88a25fa1c98fe9607c8983a977c9269484"
+        },
+        "256": {
+          "path": "segmented_activities\\usim_train_episode_000587\\external_sensor1\\00256.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "d3e156d37bac0b525e4c5c526e6f7d4bde3469b89aa3ed2dccb6779c64d1d9c7"
+        },
+        "305": {
+          "path": "segmented_activities\\usim_train_episode_000587\\external_sensor1\\00305.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "fdae99b204a0c22b09eaeb172da5d548ea911190d0fd70792ee34ee6762b0074"
+        }
+      },
+      "transitions": [
+        {
+          "from": "190",
+          "to": "224",
+          "visible": true,
+          "text": "The robot now becomes in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "224",
+          "to": "256",
+          "visible": true,
+          "text": "The red cylinder is now grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "256",
+          "to": "305",
+          "visible": true,
+          "text": "The red cylinder becomes lifted above the seabed. The red cylinder is no longer on the seabed.",
+          "signatures": [
+            "add_node_red_cylinder_Lifted",
+            "remove_node_red_cylinder_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 3,
+      "scene_graph_sha256": "1df651d8e828be127530ec7d591d23083bb27e912b52dbe92a839a9603f58621"
+    },
+    {
+      "episode_key": "usim_train_episode_000628",
+      "source_split": "train",
+      "episode_index": 628,
+      "task_text": "Pick up the red cylinder",
+      "task_index": 6,
+      "key_frame_ids": [
+        "221",
+        "254",
+        "288",
+        "365"
+      ],
+      "frames": {
+        "221": {
+          "path": "replayed_activities\\usim_train_episode_000628\\external_sensor1\\00221.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "4ad792c6581aaa918b831b5669bc9912035a54d2eb4af6ea0981eeca2db2d28b"
+        },
+        "254": {
+          "path": "replayed_activities\\usim_train_episode_000628\\external_sensor1\\00254.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "648a66b7c79b5686ffd713c3f24cc8e0bc325c866d6cc5b9482d07d4d9c673ec"
+        },
+        "288": {
+          "path": "replayed_activities\\usim_train_episode_000628\\external_sensor1\\00288.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "0c471715d73a7de405e7bdc9ee287dbbdfb922ce55ba3bdbb260ba5d1a4d1f08"
+        },
+        "365": {
+          "path": "replayed_activities\\usim_train_episode_000628\\external_sensor1\\00365.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "99ec50775ad2bd37aafc8b8097dc0f8cb67ad122744676b0e30990cb745a1905"
+        }
+      },
+      "segmented_frames": {
+        "221": {
+          "path": "segmented_activities\\usim_train_episode_000628\\external_sensor1\\00221.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "4ad792c6581aaa918b831b5669bc9912035a54d2eb4af6ea0981eeca2db2d28b"
+        },
+        "254": {
+          "path": "segmented_activities\\usim_train_episode_000628\\external_sensor1\\00254.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "648a66b7c79b5686ffd713c3f24cc8e0bc325c866d6cc5b9482d07d4d9c673ec"
+        },
+        "288": {
+          "path": "segmented_activities\\usim_train_episode_000628\\external_sensor1\\00288.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "0c471715d73a7de405e7bdc9ee287dbbdfb922ce55ba3bdbb260ba5d1a4d1f08"
+        },
+        "365": {
+          "path": "segmented_activities\\usim_train_episode_000628\\external_sensor1\\00365.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "99ec50775ad2bd37aafc8b8097dc0f8cb67ad122744676b0e30990cb745a1905"
+        }
+      },
+      "transitions": [
+        {
+          "from": "221",
+          "to": "254",
+          "visible": true,
+          "text": "The robot becomes in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "254",
+          "to": "288",
+          "visible": true,
+          "text": "The red cylinder becomes grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "288",
+          "to": "365",
+          "visible": true,
+          "text": "The red cylinder is now lifted above the seabed. The red cylinder is not on the seabed anymore.",
+          "signatures": [
+            "add_node_red_cylinder_Lifted",
+            "remove_node_red_cylinder_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 3,
+      "scene_graph_sha256": "52b656973d8906827c6cb6ef21aaab1c3154643d7ff38165565ff0d98ddc950c"
+    },
+    {
+      "episode_key": "usim_train_episode_000653",
+      "source_split": "train",
+      "episode_index": 653,
+      "task_text": "Pick up the red cylinder",
+      "task_index": 6,
+      "key_frame_ids": [
+        "20",
+        "155",
+        "203",
+        "249"
+      ],
+      "frames": {
+        "20": {
+          "path": "replayed_activities\\usim_train_episode_000653\\external_sensor1\\00020.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "3e75783bd1e69f53d5546bb769fee00e2123503ead008fc0b8a3f8410cc9c09c"
+        },
+        "155": {
+          "path": "replayed_activities\\usim_train_episode_000653\\external_sensor1\\00155.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "96a8da202062c9e1e3ecbed742dfd8c93895da81184c65eefc49e5eb595f6694"
+        },
+        "203": {
+          "path": "replayed_activities\\usim_train_episode_000653\\external_sensor1\\00203.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "76efe59764fd684aae144e3fae5088b3eddfc7d8b0c0a9eccb4bf02cc0cd1671"
+        },
+        "249": {
+          "path": "replayed_activities\\usim_train_episode_000653\\external_sensor1\\00249.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "6891045db32a9ba6ba786eb49bd9a98fdcad7b28ea631f6ec5d6e7b35e9dfc08"
+        }
+      },
+      "segmented_frames": {
+        "20": {
+          "path": "segmented_activities\\usim_train_episode_000653\\external_sensor1\\00020.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "3e75783bd1e69f53d5546bb769fee00e2123503ead008fc0b8a3f8410cc9c09c"
+        },
+        "155": {
+          "path": "segmented_activities\\usim_train_episode_000653\\external_sensor1\\00155.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "96a8da202062c9e1e3ecbed742dfd8c93895da81184c65eefc49e5eb595f6694"
+        },
+        "203": {
+          "path": "segmented_activities\\usim_train_episode_000653\\external_sensor1\\00203.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "76efe59764fd684aae144e3fae5088b3eddfc7d8b0c0a9eccb4bf02cc0cd1671"
+        },
+        "249": {
+          "path": "segmented_activities\\usim_train_episode_000653\\external_sensor1\\00249.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "6891045db32a9ba6ba786eb49bd9a98fdcad7b28ea631f6ec5d6e7b35e9dfc08"
+        }
+      },
+      "transitions": [
+        {
+          "from": "20",
+          "to": "155",
+          "visible": true,
+          "text": "The robot now becomes in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "155",
+          "to": "203",
+          "visible": true,
+          "text": "The red cylinder becomes grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "203",
+          "to": "249",
+          "visible": true,
+          "text": "The red cylinder becomes lifted above the seabed. The red cylinder is no longer on the seabed.",
+          "signatures": [
+            "add_node_red_cylinder_Lifted",
+            "remove_node_red_cylinder_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 3,
+      "scene_graph_sha256": "e179cf1debddae227a9416b3bfd91483f2fd418b7f3d74b79a043bfb4a175620"
+    },
+    {
+      "episode_key": "usim_train_episode_000682",
+      "source_split": "train",
+      "episode_index": 682,
+      "task_text": "Pick up the red cylinder",
+      "task_index": 6,
+      "key_frame_ids": [
+        "5",
+        "189",
+        "228",
+        "305"
+      ],
+      "frames": {
+        "5": {
+          "path": "replayed_activities\\usim_train_episode_000682\\external_sensor1\\00005.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "c8d8ecb6aad2b1049cecb3ac587747f31d0066cf3ce1c1c14cb2344af2b4ba19"
+        },
+        "189": {
+          "path": "replayed_activities\\usim_train_episode_000682\\external_sensor1\\00189.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "b42b9537a7cf14c50133705d681e2c7b706ba2851804818b7be6719ef2c2fe9b"
+        },
+        "228": {
+          "path": "replayed_activities\\usim_train_episode_000682\\external_sensor1\\00228.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "7bf05f7c7150306b774ad66117ad95c2d7d6a842b3551f483c7e624a5bb45da9"
+        },
+        "305": {
+          "path": "replayed_activities\\usim_train_episode_000682\\external_sensor1\\00305.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "f04e4e45b136033257ca74f5b6f1fb6ff7eba92d9560c953f15ed9dcc34bf201"
+        }
+      },
+      "segmented_frames": {
+        "5": {
+          "path": "segmented_activities\\usim_train_episode_000682\\external_sensor1\\00005.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "c8d8ecb6aad2b1049cecb3ac587747f31d0066cf3ce1c1c14cb2344af2b4ba19"
+        },
+        "189": {
+          "path": "segmented_activities\\usim_train_episode_000682\\external_sensor1\\00189.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "b42b9537a7cf14c50133705d681e2c7b706ba2851804818b7be6719ef2c2fe9b"
+        },
+        "228": {
+          "path": "segmented_activities\\usim_train_episode_000682\\external_sensor1\\00228.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "7bf05f7c7150306b774ad66117ad95c2d7d6a842b3551f483c7e624a5bb45da9"
+        },
+        "305": {
+          "path": "segmented_activities\\usim_train_episode_000682\\external_sensor1\\00305.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "f04e4e45b136033257ca74f5b6f1fb6ff7eba92d9560c953f15ed9dcc34bf201"
+        }
+      },
+      "transitions": [
+        {
+          "from": "5",
+          "to": "189",
+          "visible": true,
+          "text": "The robot transitions to be in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "189",
+          "to": "228",
+          "visible": true,
+          "text": "The red cylinder is now grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "228",
+          "to": "305",
+          "visible": true,
+          "text": "The red cylinder becomes lifted above the seabed. The red cylinder is not on the seabed anymore.",
+          "signatures": [
+            "add_node_red_cylinder_Lifted",
+            "remove_node_red_cylinder_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 3,
+      "scene_graph_sha256": "6fdd8e21b4a16133df5a50e95319c9070c04cb729bb1545581d680cb7cbb647f"
+    },
+    {
+      "episode_key": "usim_train_episode_000756",
+      "source_split": "train",
+      "episode_index": 756,
+      "task_text": "Pick up the pipe",
+      "task_index": 1,
+      "key_frame_ids": [
+        "15",
+        "254",
+        "280",
+        "352"
+      ],
+      "frames": {
+        "15": {
+          "path": "replayed_activities\\usim_train_episode_000756\\external_sensor1\\00015.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "880b7e601eac5406e84709718c9ca06baeed4260399397b47ea022c12b3e6dff"
+        },
+        "254": {
+          "path": "replayed_activities\\usim_train_episode_000756\\external_sensor1\\00254.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "cd220e66128467c649d328fcb5ed9f3631b8c6af44f3a33e0f8bed6bfd71932a"
+        },
+        "280": {
+          "path": "replayed_activities\\usim_train_episode_000756\\external_sensor1\\00280.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "2fef7381ae8eb772c5bf3c6c2f985146c6b19fa8248812bcc0041186762b2092"
+        },
+        "352": {
+          "path": "replayed_activities\\usim_train_episode_000756\\external_sensor1\\00352.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "5f14a90f52627f65f092dfc43f774e748ccb9709c7fa7391007bf4cf914a144e"
+        }
+      },
+      "segmented_frames": {
+        "15": {
+          "path": "segmented_activities\\usim_train_episode_000756\\external_sensor1\\00015.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "880b7e601eac5406e84709718c9ca06baeed4260399397b47ea022c12b3e6dff"
+        },
+        "254": {
+          "path": "segmented_activities\\usim_train_episode_000756\\external_sensor1\\00254.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "cd220e66128467c649d328fcb5ed9f3631b8c6af44f3a33e0f8bed6bfd71932a"
+        },
+        "280": {
+          "path": "segmented_activities\\usim_train_episode_000756\\external_sensor1\\00280.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "2fef7381ae8eb772c5bf3c6c2f985146c6b19fa8248812bcc0041186762b2092"
+        },
+        "352": {
+          "path": "segmented_activities\\usim_train_episode_000756\\external_sensor1\\00352.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "5f14a90f52627f65f092dfc43f774e748ccb9709c7fa7391007bf4cf914a144e"
+        }
+      },
+      "transitions": [
+        {
+          "from": "15",
+          "to": "254",
+          "visible": true,
+          "text": "The robot transitions to be in position for the pre-grasp approach beside the pipe.",
+          "signatures": [
+            "add_edge_robot_pipe_NextTo"
+          ]
+        },
+        {
+          "from": "254",
+          "to": "280",
+          "visible": true,
+          "text": "The pipe becomes grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the pipe.",
+          "signatures": [
+            "add_node_pipe_InGripper",
+            "remove_edge_robot_pipe_NextTo"
+          ]
+        },
+        {
+          "from": "280",
+          "to": "352",
+          "visible": true,
+          "text": "The pipe is now lifted above the seabed. The pipe is not on the seabed anymore.",
+          "signatures": [
+            "add_node_pipe_Lifted",
+            "remove_node_pipe_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 3,
+      "scene_graph_sha256": "64c5881d8250a0960d4b5577e1808e29a35de748ba9f958826903924961e3217"
+    },
+    {
+      "episode_key": "usim_train_episode_000846",
+      "source_split": "train",
+      "episode_index": 846,
+      "task_text": "Pick up the pipe",
+      "task_index": 1,
+      "key_frame_ids": [
+        "76",
+        "444",
+        "472",
+        "526"
+      ],
+      "frames": {
+        "76": {
+          "path": "replayed_activities\\usim_train_episode_000846\\external_sensor1\\00076.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "e61717bd46e3c50a65394a6a40e0cad82bf795f2bb66120d6927d634d9870e3e"
+        },
+        "444": {
+          "path": "replayed_activities\\usim_train_episode_000846\\external_sensor1\\00444.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "bd2941c95976383474841fa4acb31a09bc5184d9a9fc151d6655641fdb332dff"
+        },
+        "472": {
+          "path": "replayed_activities\\usim_train_episode_000846\\external_sensor1\\00472.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "e8e4c5348476673e6cab41b408f09430ee7994e0352210ac150b750c18f5d090"
+        },
+        "526": {
+          "path": "replayed_activities\\usim_train_episode_000846\\external_sensor1\\00526.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "36e1e061a771b56007997e44943d95a637357508349513f505184442daf8fafc"
+        }
+      },
+      "segmented_frames": {
+        "76": {
+          "path": "segmented_activities\\usim_train_episode_000846\\external_sensor1\\00076.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "e61717bd46e3c50a65394a6a40e0cad82bf795f2bb66120d6927d634d9870e3e"
+        },
+        "444": {
+          "path": "segmented_activities\\usim_train_episode_000846\\external_sensor1\\00444.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "bd2941c95976383474841fa4acb31a09bc5184d9a9fc151d6655641fdb332dff"
+        },
+        "472": {
+          "path": "segmented_activities\\usim_train_episode_000846\\external_sensor1\\00472.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "e8e4c5348476673e6cab41b408f09430ee7994e0352210ac150b750c18f5d090"
+        },
+        "526": {
+          "path": "segmented_activities\\usim_train_episode_000846\\external_sensor1\\00526.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "36e1e061a771b56007997e44943d95a637357508349513f505184442daf8fafc"
+        }
+      },
+      "transitions": [
+        {
+          "from": "76",
+          "to": "444",
+          "visible": true,
+          "text": "The robot changes to be in position for the pre-grasp approach beside the pipe.",
+          "signatures": [
+            "add_edge_robot_pipe_NextTo"
+          ]
+        },
+        {
+          "from": "444",
+          "to": "472",
+          "visible": true,
+          "text": "The pipe is now grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the pipe.",
+          "signatures": [
+            "add_node_pipe_InGripper",
+            "remove_edge_robot_pipe_NextTo"
+          ]
+        },
+        {
+          "from": "472",
+          "to": "526",
+          "visible": true,
+          "text": "The pipe becomes lifted above the seabed. The pipe is not on the seabed anymore.",
+          "signatures": [
+            "add_node_pipe_Lifted",
+            "remove_node_pipe_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 3,
+      "scene_graph_sha256": "3f6fadfb47e616e8052f7950f36e2ee463ed48b2eed95cce269a4a1189f3743d"
+    },
+    {
+      "episode_key": "usim_train_episode_000962",
+      "source_split": "train",
+      "episode_index": 962,
+      "task_text": "Pick up the blue cylinder",
+      "task_index": 2,
+      "key_frame_ids": [
+        "100",
+        "260",
+        "290",
+        "375"
+      ],
+      "frames": {
+        "100": {
+          "path": "replayed_activities\\usim_train_episode_000962\\external_sensor1\\00100.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "67281fe0de799f121685ccf9c7bab644cdb81dd572cde997832b73ee38f2a5d2"
+        },
+        "260": {
+          "path": "replayed_activities\\usim_train_episode_000962\\external_sensor1\\00260.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "80e6324bea18c78a8d5d82e25274cd9324aaef050a6f4aa8739f2f10f3f07af8"
+        },
+        "290": {
+          "path": "replayed_activities\\usim_train_episode_000962\\external_sensor1\\00290.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "19e31e75fad875816646044c3eff0e28f7ad086500d6294de3c80ff436df2e33"
+        },
+        "375": {
+          "path": "replayed_activities\\usim_train_episode_000962\\external_sensor1\\00375.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "3ed3564ae3e35002b1854377d1224b8036d18d67c91078cae1ef65a6aa32d9cc"
+        }
+      },
+      "segmented_frames": {
+        "100": {
+          "path": "segmented_activities\\usim_train_episode_000962\\external_sensor1\\00100.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "67281fe0de799f121685ccf9c7bab644cdb81dd572cde997832b73ee38f2a5d2"
+        },
+        "260": {
+          "path": "segmented_activities\\usim_train_episode_000962\\external_sensor1\\00260.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "80e6324bea18c78a8d5d82e25274cd9324aaef050a6f4aa8739f2f10f3f07af8"
+        },
+        "290": {
+          "path": "segmented_activities\\usim_train_episode_000962\\external_sensor1\\00290.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "19e31e75fad875816646044c3eff0e28f7ad086500d6294de3c80ff436df2e33"
+        },
+        "375": {
+          "path": "segmented_activities\\usim_train_episode_000962\\external_sensor1\\00375.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "3ed3564ae3e35002b1854377d1224b8036d18d67c91078cae1ef65a6aa32d9cc"
+        }
+      },
+      "transitions": [
+        {
+          "from": "100",
+          "to": "260",
+          "visible": true,
+          "text": "The robot now becomes in position for the pre-grasp approach beside the blue cylinder.",
+          "signatures": [
+            "add_edge_robot_blue_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "260",
+          "to": "290",
+          "visible": true,
+          "text": "The blue cylinder becomes grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the blue cylinder.",
+          "signatures": [
+            "add_node_blue_cylinder_InGripper",
+            "remove_edge_robot_blue_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "290",
+          "to": "375",
+          "visible": true,
+          "text": "The blue cylinder is now lifted above the seabed. The blue cylinder is not on the seabed anymore.",
+          "signatures": [
+            "add_node_blue_cylinder_Lifted",
+            "remove_node_blue_cylinder_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 3,
+      "scene_graph_sha256": "a9ab118777b7bb325853d564ee94272414e76faebf3b0638ee512f6b626a7e83"
+    },
+    {
+      "episode_key": "usim_train_episode_000980",
+      "source_split": "train",
+      "episode_index": 980,
+      "task_text": "Pick up the blue cylinder",
+      "task_index": 2,
+      "key_frame_ids": [
+        "95",
+        "110",
+        "170"
+      ],
+      "frames": {
+        "95": {
+          "path": "replayed_activities\\usim_train_episode_000980\\external_sensor1\\00095.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "23fbf230defe36778c2ee540df604f29ad3d937ddae0c602a39a1f444472ac82"
+        },
+        "110": {
+          "path": "replayed_activities\\usim_train_episode_000980\\external_sensor1\\00110.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "794aaca4b152f5539aec6bed07093dafd450b27439ed8bbc6c383f6baaa99e7f"
+        },
+        "170": {
+          "path": "replayed_activities\\usim_train_episode_000980\\external_sensor1\\00170.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "50789c786ce8b2a5a6eb39fc0295e9a1ad5a895267f53df08e80363f55e6cc74"
+        }
+      },
+      "segmented_frames": {
+        "95": {
+          "path": "segmented_activities\\usim_train_episode_000980\\external_sensor1\\00095.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "23fbf230defe36778c2ee540df604f29ad3d937ddae0c602a39a1f444472ac82"
+        },
+        "110": {
+          "path": "segmented_activities\\usim_train_episode_000980\\external_sensor1\\00110.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "794aaca4b152f5539aec6bed07093dafd450b27439ed8bbc6c383f6baaa99e7f"
+        },
+        "170": {
+          "path": "segmented_activities\\usim_train_episode_000980\\external_sensor1\\00170.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "50789c786ce8b2a5a6eb39fc0295e9a1ad5a895267f53df08e80363f55e6cc74"
+        }
+      },
+      "transitions": [
+        {
+          "from": "95",
+          "to": "110",
+          "visible": true,
+          "text": "The blue cylinder becomes grasped by the robot.",
+          "signatures": [
+            "add_node_blue_cylinder_InGripper"
+          ]
+        },
+        {
+          "from": "110",
+          "to": "170",
+          "visible": true,
+          "text": "The blue cylinder becomes lifted above the seabed. The blue cylinder is no longer on the seabed.",
+          "signatures": [
+            "add_node_blue_cylinder_Lifted",
+            "remove_node_blue_cylinder_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 2,
+      "scene_graph_sha256": "68d173c4e43d395416a898106b2cc4b59a788374c7c683d174b4d6828cd4a0c4"
+    },
+    {
+      "episode_key": "usim_train_episode_001046",
+      "source_split": "train",
+      "episode_index": 1046,
+      "task_text": "Pick up the pipe",
+      "task_index": 1,
+      "key_frame_ids": [
+        "210",
+        "245",
+        "280",
+        "355"
+      ],
+      "frames": {
+        "210": {
+          "path": "replayed_activities\\usim_train_episode_001046\\external_sensor1\\00210.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "f75fc2c3a94ea7dc05fbf737aede02c366b9d091c0eeb5b9a36ec9c0292247cf"
+        },
+        "245": {
+          "path": "replayed_activities\\usim_train_episode_001046\\external_sensor1\\00245.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "c6fcfbf587cf342b9d612308b37a9ec21d6f0cb665c66a921aad967bf6abf99c"
+        },
+        "280": {
+          "path": "replayed_activities\\usim_train_episode_001046\\external_sensor1\\00280.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "8414dac54688843dd1c416bf7f016c2f01132b66a1ef9a3144f1cc2a5cdfe169"
+        },
+        "355": {
+          "path": "replayed_activities\\usim_train_episode_001046\\external_sensor1\\00355.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "c9c3b2101f35c7ab37bfa8d907183636bf6876c80c53c4eecb094dac52570d85"
+        }
+      },
+      "segmented_frames": {
+        "210": {
+          "path": "segmented_activities\\usim_train_episode_001046\\external_sensor1\\00210.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "f75fc2c3a94ea7dc05fbf737aede02c366b9d091c0eeb5b9a36ec9c0292247cf"
+        },
+        "245": {
+          "path": "segmented_activities\\usim_train_episode_001046\\external_sensor1\\00245.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "c6fcfbf587cf342b9d612308b37a9ec21d6f0cb665c66a921aad967bf6abf99c"
+        },
+        "280": {
+          "path": "segmented_activities\\usim_train_episode_001046\\external_sensor1\\00280.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "8414dac54688843dd1c416bf7f016c2f01132b66a1ef9a3144f1cc2a5cdfe169"
+        },
+        "355": {
+          "path": "segmented_activities\\usim_train_episode_001046\\external_sensor1\\00355.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "c9c3b2101f35c7ab37bfa8d907183636bf6876c80c53c4eecb094dac52570d85"
+        }
+      },
+      "transitions": [
+        {
+          "from": "210",
+          "to": "245",
+          "visible": true,
+          "text": "The robot now becomes in position for the pre-grasp approach beside the pipe.",
+          "signatures": [
+            "add_edge_robot_pipe_NextTo"
+          ]
+        },
+        {
+          "from": "245",
+          "to": "280",
+          "visible": true,
+          "text": "The pipe is now grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the pipe.",
+          "signatures": [
+            "add_node_pipe_InGripper",
+            "remove_edge_robot_pipe_NextTo"
+          ]
+        },
+        {
+          "from": "280",
+          "to": "355",
+          "visible": true,
+          "text": "The pipe becomes lifted above the seabed. The pipe is not on the seabed anymore.",
+          "signatures": [
+            "add_node_pipe_Lifted",
+            "remove_node_pipe_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 3,
+      "scene_graph_sha256": "23093ead7fa31595ab2d796a765f0c9754835fe5854a1ed73d6bdbf974d3b904"
+    },
+    {
+      "episode_key": "usim_train_episode_001135",
+      "source_split": "train",
+      "episode_index": 1135,
+      "task_text": "Pick up the red cylinder",
+      "task_index": 6,
+      "key_frame_ids": [
+        "50",
+        "92",
+        "120",
+        "195"
+      ],
+      "frames": {
+        "50": {
+          "path": "replayed_activities\\usim_train_episode_001135\\external_sensor1\\00050.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "dab417f8d858d9ebe77677480b0b8058354f8be6d74ca5f67d7e553f6998e417"
+        },
+        "92": {
+          "path": "replayed_activities\\usim_train_episode_001135\\external_sensor1\\00092.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "a32cf796a531180216afa632a7798fac8998c7a37028d9d6fb59bf8a4610f687"
+        },
+        "120": {
+          "path": "replayed_activities\\usim_train_episode_001135\\external_sensor1\\00120.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "add29c40b5b353d6c0167d542df4049afad1756244267a3d3b21acf5cfc4016e"
+        },
+        "195": {
+          "path": "replayed_activities\\usim_train_episode_001135\\external_sensor1\\00195.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "61956cb7400f4bf4608b52ca6e01e17429b451dfec9a2698110d86277d3ceb32"
+        }
+      },
+      "segmented_frames": {
+        "50": {
+          "path": "segmented_activities\\usim_train_episode_001135\\external_sensor1\\00050.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "dab417f8d858d9ebe77677480b0b8058354f8be6d74ca5f67d7e553f6998e417"
+        },
+        "92": {
+          "path": "segmented_activities\\usim_train_episode_001135\\external_sensor1\\00092.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "a32cf796a531180216afa632a7798fac8998c7a37028d9d6fb59bf8a4610f687"
+        },
+        "120": {
+          "path": "segmented_activities\\usim_train_episode_001135\\external_sensor1\\00120.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "add29c40b5b353d6c0167d542df4049afad1756244267a3d3b21acf5cfc4016e"
+        },
+        "195": {
+          "path": "segmented_activities\\usim_train_episode_001135\\external_sensor1\\00195.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "61956cb7400f4bf4608b52ca6e01e17429b451dfec9a2698110d86277d3ceb32"
+        }
+      },
+      "transitions": [
+        {
+          "from": "50",
+          "to": "92",
+          "visible": true,
+          "text": "The robot changes to be in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "92",
+          "to": "120",
+          "visible": true,
+          "text": "The red cylinder becomes grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "120",
+          "to": "195",
+          "visible": true,
+          "text": "The red cylinder is now lifted above the seabed. The red cylinder is not on the seabed anymore.",
+          "signatures": [
+            "add_node_red_cylinder_Lifted",
+            "remove_node_red_cylinder_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 3,
+      "scene_graph_sha256": "220172f1757f24e7ade4b47f5708b4e6677cf223fc0b93b31e9e6ae24bc2df54"
+    },
+    {
+      "episode_key": "usim_train_episode_001302",
+      "source_split": "train",
+      "episode_index": 1302,
+      "task_text": "Pick up the red cylinder and transfer it to the box",
+      "task_index": 7,
+      "key_frame_ids": [
+        "150",
+        "168",
+        "196",
+        "415"
+      ],
+      "frames": {
+        "150": {
+          "path": "replayed_activities\\usim_train_episode_001302\\external_sensor1\\00150.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "3cf1fbfe3d36eef252e4e2f7e89048aeb725823c8439eb6c0fd013903ce27345"
+        },
+        "168": {
+          "path": "replayed_activities\\usim_train_episode_001302\\external_sensor1\\00168.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "5f0869b777a1a4578281bbb1b3aabf08de61a5a0818ed9042a427a231444eb31"
+        },
+        "196": {
+          "path": "replayed_activities\\usim_train_episode_001302\\external_sensor1\\00196.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "3e2a9798cd7b0a4093d12f72b5421eac78f5887dd3373bd45dbf6daa3dee002e"
+        },
+        "415": {
+          "path": "replayed_activities\\usim_train_episode_001302\\external_sensor1\\00415.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "94a9b0325212abdf8f35f50cbc99377c8e01ed0cc3d4dc3690be568aa2c0a464"
+        }
+      },
+      "segmented_frames": {
+        "150": {
+          "path": "segmented_activities\\usim_train_episode_001302\\external_sensor1\\00150.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "3cf1fbfe3d36eef252e4e2f7e89048aeb725823c8439eb6c0fd013903ce27345"
+        },
+        "168": {
+          "path": "segmented_activities\\usim_train_episode_001302\\external_sensor1\\00168.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "5f0869b777a1a4578281bbb1b3aabf08de61a5a0818ed9042a427a231444eb31"
+        },
+        "196": {
+          "path": "segmented_activities\\usim_train_episode_001302\\external_sensor1\\00196.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "3e2a9798cd7b0a4093d12f72b5421eac78f5887dd3373bd45dbf6daa3dee002e"
+        },
+        "415": {
+          "path": "segmented_activities\\usim_train_episode_001302\\external_sensor1\\00415.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "94a9b0325212abdf8f35f50cbc99377c8e01ed0cc3d4dc3690be568aa2c0a464"
+        }
+      },
+      "transitions": [
+        {
+          "from": "150",
+          "to": "168",
+          "visible": true,
+          "text": "The robot changes to be in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "168",
+          "to": "196",
+          "visible": true,
+          "text": "The red cylinder becomes grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "196",
+          "to": "415",
+          "visible": true,
+          "text": "The red cylinder becomes lifted above the seabed. The red cylinder is no longer on the seabed.",
+          "signatures": [
+            "add_node_red_cylinder_Lifted",
+            "remove_node_red_cylinder_OnSeabed"
+          ]
+        }
+      ],
+      "valid_transitions": 3,
+      "scene_graph_sha256": "be993d5c28137041e2261dfb931bda839d219884d78875b0433c74c4f15c1b9e"
+    },
+    {
+      "episode_key": "usim_train_episode_001304",
+      "source_split": "train",
+      "episode_index": 1304,
+      "task_text": "Pick up the red cylinder and transfer it to the box",
+      "task_index": 7,
+      "key_frame_ids": [
+        "132",
+        "177",
+        "244",
+        "292",
+        "481"
+      ],
+      "frames": {
+        "132": {
+          "path": "replayed_activities\\usim_train_episode_001304\\external_sensor1\\00132.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "8a3217e4bd7eef75d98f03efad1ae3363ef6078cd73373f30e248e1964f7b269"
+        },
+        "177": {
+          "path": "replayed_activities\\usim_train_episode_001304\\external_sensor1\\00177.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "6dc479c0750b09ce86cd88f87c9d0f0d89efe83dfbfa6c54840a65f101aa3345"
+        },
+        "244": {
+          "path": "replayed_activities\\usim_train_episode_001304\\external_sensor1\\00244.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "3506c152869ada423a582d8aa0df0030fb48e77f9e09425213867ee4f5344f6f"
+        },
+        "292": {
+          "path": "replayed_activities\\usim_train_episode_001304\\external_sensor1\\00292.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "8fd3082284a0410d4f606e2e3e6f2b9eb903a33a1203f1d2c77b378e8c83aa8a"
+        },
+        "481": {
+          "path": "replayed_activities\\usim_train_episode_001304\\external_sensor1\\00481.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "a8a1531570f15f8de2b822cd07edcda119f1d966de6a632f083b2c52038ac368"
+        }
+      },
+      "segmented_frames": {
+        "132": {
+          "path": "segmented_activities\\usim_train_episode_001304\\external_sensor1\\00132.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "8a3217e4bd7eef75d98f03efad1ae3363ef6078cd73373f30e248e1964f7b269"
+        },
+        "177": {
+          "path": "segmented_activities\\usim_train_episode_001304\\external_sensor1\\00177.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "6dc479c0750b09ce86cd88f87c9d0f0d89efe83dfbfa6c54840a65f101aa3345"
+        },
+        "244": {
+          "path": "segmented_activities\\usim_train_episode_001304\\external_sensor1\\00244.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "3506c152869ada423a582d8aa0df0030fb48e77f9e09425213867ee4f5344f6f"
+        },
+        "292": {
+          "path": "segmented_activities\\usim_train_episode_001304\\external_sensor1\\00292.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "8fd3082284a0410d4f606e2e3e6f2b9eb903a33a1203f1d2c77b378e8c83aa8a"
+        },
+        "481": {
+          "path": "segmented_activities\\usim_train_episode_001304\\external_sensor1\\00481.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "a8a1531570f15f8de2b822cd07edcda119f1d966de6a632f083b2c52038ac368"
+        }
+      },
+      "transitions": [
+        {
+          "from": "132",
+          "to": "177",
+          "visible": true,
+          "text": "The robot transitions to be in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "177",
+          "to": "244",
+          "visible": true,
+          "text": "The red cylinder becomes grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "244",
+          "to": "292",
+          "visible": true,
+          "text": "The red cylinder is now lifted above the seabed. The red cylinder is not on the seabed anymore.",
+          "signatures": [
+            "add_node_red_cylinder_Lifted",
+            "remove_node_red_cylinder_OnSeabed"
+          ]
+        },
+        {
+          "from": "292",
+          "to": "481",
+          "visible": true,
+          "text": "The robot becomes near the green box.",
+          "signatures": [
+            "add_edge_robot_green_box_NearBox"
+          ]
+        }
+      ],
+      "valid_transitions": 4,
+      "scene_graph_sha256": "a31881d344df27bb78c2a9711c1fa5cd66a02f7dfa6231fcdb76e5b324e03366"
+    },
+    {
+      "episode_key": "usim_train_episode_001318",
+      "source_split": "train",
+      "episode_index": 1318,
+      "task_text": "Pick up the red cylinder and transfer it to the box",
+      "task_index": 7,
+      "key_frame_ids": [
+        "200",
+        "245",
+        "275",
+        "352",
+        "517"
+      ],
+      "frames": {
+        "200": {
+          "path": "replayed_activities\\usim_train_episode_001318\\external_sensor1\\00200.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "88ed49b5e2a314ff901f82c51e71039bd6e14849f17b130a3399c98b13ad48f7"
+        },
+        "245": {
+          "path": "replayed_activities\\usim_train_episode_001318\\external_sensor1\\00245.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "a1cfbb6bad8cf65bb77edc4a04b1c208b5d175159d8bfb0c0ace36a135e54202"
+        },
+        "275": {
+          "path": "replayed_activities\\usim_train_episode_001318\\external_sensor1\\00275.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "7a9b11cbe39db2a1be15a53a97edccac0ef57bce11ecd9ae986871efd57e6a8a"
+        },
+        "352": {
+          "path": "replayed_activities\\usim_train_episode_001318\\external_sensor1\\00352.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "d9f4c986b84bf97b6dca169667bb8e3f4301ec7837b6a4951915c0c1a025bf4a"
+        },
+        "517": {
+          "path": "replayed_activities\\usim_train_episode_001318\\external_sensor1\\00517.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "efe9990e930168fac578d7b447b54e78f1c3bdb5a53613d66c49de07dd79fc0e"
+        }
+      },
+      "segmented_frames": {
+        "200": {
+          "path": "segmented_activities\\usim_train_episode_001318\\external_sensor1\\00200.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "88ed49b5e2a314ff901f82c51e71039bd6e14849f17b130a3399c98b13ad48f7"
+        },
+        "245": {
+          "path": "segmented_activities\\usim_train_episode_001318\\external_sensor1\\00245.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "a1cfbb6bad8cf65bb77edc4a04b1c208b5d175159d8bfb0c0ace36a135e54202"
+        },
+        "275": {
+          "path": "segmented_activities\\usim_train_episode_001318\\external_sensor1\\00275.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "7a9b11cbe39db2a1be15a53a97edccac0ef57bce11ecd9ae986871efd57e6a8a"
+        },
+        "352": {
+          "path": "segmented_activities\\usim_train_episode_001318\\external_sensor1\\00352.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "d9f4c986b84bf97b6dca169667bb8e3f4301ec7837b6a4951915c0c1a025bf4a"
+        },
+        "517": {
+          "path": "segmented_activities\\usim_train_episode_001318\\external_sensor1\\00517.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "efe9990e930168fac578d7b447b54e78f1c3bdb5a53613d66c49de07dd79fc0e"
+        }
+      },
+      "transitions": [
+        {
+          "from": "200",
+          "to": "245",
+          "visible": true,
+          "text": "The robot becomes in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "245",
+          "to": "275",
+          "visible": true,
+          "text": "The red cylinder becomes grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "275",
+          "to": "352",
+          "visible": true,
+          "text": "The red cylinder is now lifted above the seabed. The red cylinder is no longer on the seabed.",
+          "signatures": [
+            "add_node_red_cylinder_Lifted",
+            "remove_node_red_cylinder_OnSeabed"
+          ]
+        },
+        {
+          "from": "352",
+          "to": "517",
+          "visible": true,
+          "text": "The robot transitions to be near the green box.",
+          "signatures": [
+            "add_edge_robot_green_box_NearBox"
+          ]
+        }
+      ],
+      "valid_transitions": 4,
+      "scene_graph_sha256": "6ed0bd06ab02cb4f17e7833831878271a4b9eecf3d427ae09396d7560d68ec58"
+    },
+    {
+      "episode_key": "usim_train_episode_001330",
+      "source_split": "train",
+      "episode_index": 1330,
+      "task_text": "Pick up the red cylinder and transfer it to the box",
+      "task_index": 7,
+      "key_frame_ids": [
+        "80",
+        "107",
+        "154",
+        "344"
+      ],
+      "frames": {
+        "80": {
+          "path": "replayed_activities\\usim_train_episode_001330\\external_sensor1\\00080.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "94f126c2c07802fc0aa7a9d228d78797472be9f9a71116fb22e7dcc2e27e8e20"
+        },
+        "107": {
+          "path": "replayed_activities\\usim_train_episode_001330\\external_sensor1\\00107.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "cabab4389e24700f0b1151c54044abb1fd846175f11430c8b46943f6dc2ad278"
+        },
+        "154": {
+          "path": "replayed_activities\\usim_train_episode_001330\\external_sensor1\\00154.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "a1988001aa98f64a1c4bf1ea701958f21f34f1baadc8a6e739358a3a15a46e3b"
+        },
+        "344": {
+          "path": "replayed_activities\\usim_train_episode_001330\\external_sensor1\\00344.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "5375e469df1fc91a51790df4497782eb99cd5fb2de466070e4c0467150d73484"
+        }
+      },
+      "segmented_frames": {
+        "80": {
+          "path": "segmented_activities\\usim_train_episode_001330\\external_sensor1\\00080.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "94f126c2c07802fc0aa7a9d228d78797472be9f9a71116fb22e7dcc2e27e8e20"
+        },
+        "107": {
+          "path": "segmented_activities\\usim_train_episode_001330\\external_sensor1\\00107.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "cabab4389e24700f0b1151c54044abb1fd846175f11430c8b46943f6dc2ad278"
+        },
+        "154": {
+          "path": "segmented_activities\\usim_train_episode_001330\\external_sensor1\\00154.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "a1988001aa98f64a1c4bf1ea701958f21f34f1baadc8a6e739358a3a15a46e3b"
+        },
+        "344": {
+          "path": "segmented_activities\\usim_train_episode_001330\\external_sensor1\\00344.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "5375e469df1fc91a51790df4497782eb99cd5fb2de466070e4c0467150d73484"
+        }
+      },
+      "transitions": [
+        {
+          "from": "80",
+          "to": "107",
+          "visible": true,
+          "text": "The red cylinder is now grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "107",
+          "to": "154",
+          "visible": true,
+          "text": "The red cylinder is now lifted above the seabed. The red cylinder is no longer on the seabed.",
+          "signatures": [
+            "add_node_red_cylinder_Lifted",
+            "remove_node_red_cylinder_OnSeabed"
+          ]
+        },
+        {
+          "from": "154",
+          "to": "344",
+          "visible": true,
+          "text": "The robot now becomes near the green box.",
+          "signatures": [
+            "add_edge_robot_green_box_NearBox"
+          ]
+        }
+      ],
+      "valid_transitions": 3,
+      "scene_graph_sha256": "f9ee48e5fd91933660c5a82b4f35ebe74c4d42fa4389cc00e3c24f05544e7d45"
+    },
+    {
+      "episode_key": "usim_train_episode_001357",
+      "source_split": "train",
+      "episode_index": 1357,
+      "task_text": "Pick up the red cylinder and transfer it to the box",
+      "task_index": 7,
+      "key_frame_ids": [
+        "133",
+        "178",
+        "208",
+        "286",
+        "445"
+      ],
+      "frames": {
+        "133": {
+          "path": "replayed_activities\\usim_train_episode_001357\\external_sensor1\\00133.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "6043ef937f5b48c858ce5f53a97e93067ede53ea08b0f255f13d0e45221bbc83"
+        },
+        "178": {
+          "path": "replayed_activities\\usim_train_episode_001357\\external_sensor1\\00178.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "813efcabfb41a42674c95b3ec6181bb1b1abcdc4f74cc6c8a38c6401e28718e3"
+        },
+        "208": {
+          "path": "replayed_activities\\usim_train_episode_001357\\external_sensor1\\00208.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "c33c1f92db43228b842be5d6bc44922232aee388cf26cf470e72f5c8395a2f08"
+        },
+        "286": {
+          "path": "replayed_activities\\usim_train_episode_001357\\external_sensor1\\00286.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "29bf89ade539e6bf744463c3a014249786215a8cfcfbecfa7d5459bb2368cbc4"
+        },
+        "445": {
+          "path": "replayed_activities\\usim_train_episode_001357\\external_sensor1\\00445.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "3067dd7c2d53948ce6a53caffa5fe92b83aeedc4e3ec0daffbe2d87678a3ad9f"
+        }
+      },
+      "segmented_frames": {
+        "133": {
+          "path": "segmented_activities\\usim_train_episode_001357\\external_sensor1\\00133.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "6043ef937f5b48c858ce5f53a97e93067ede53ea08b0f255f13d0e45221bbc83"
+        },
+        "178": {
+          "path": "segmented_activities\\usim_train_episode_001357\\external_sensor1\\00178.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "813efcabfb41a42674c95b3ec6181bb1b1abcdc4f74cc6c8a38c6401e28718e3"
+        },
+        "208": {
+          "path": "segmented_activities\\usim_train_episode_001357\\external_sensor1\\00208.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "c33c1f92db43228b842be5d6bc44922232aee388cf26cf470e72f5c8395a2f08"
+        },
+        "286": {
+          "path": "segmented_activities\\usim_train_episode_001357\\external_sensor1\\00286.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "29bf89ade539e6bf744463c3a014249786215a8cfcfbecfa7d5459bb2368cbc4"
+        },
+        "445": {
+          "path": "segmented_activities\\usim_train_episode_001357\\external_sensor1\\00445.png",
+          "height": 240,
+          "width": 320,
+          "sha256": "3067dd7c2d53948ce6a53caffa5fe92b83aeedc4e3ec0daffbe2d87678a3ad9f"
+        }
+      },
+      "transitions": [
+        {
+          "from": "133",
+          "to": "178",
+          "visible": true,
+          "text": "The robot becomes in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "178",
+          "to": "208",
+          "visible": true,
+          "text": "The red cylinder is now grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the red cylinder.",
+          "signatures": [
+            "add_node_red_cylinder_InGripper",
+            "remove_edge_robot_red_cylinder_NextTo"
+          ]
+        },
+        {
+          "from": "208",
+          "to": "286",
+          "visible": true,
+          "text": "The red cylinder becomes lifted above the seabed. The red cylinder is not on the seabed anymore.",
+          "signatures": [
+            "add_node_red_cylinder_Lifted",
+            "remove_node_red_cylinder_OnSeabed"
+          ]
+        },
+        {
+          "from": "286",
+          "to": "445",
+          "visible": true,
+          "text": "The robot transitions to be near the green box.",
+          "signatures": [
+            "add_edge_robot_green_box_NearBox"
+          ]
+        }
+      ],
+      "valid_transitions": 4,
+      "scene_graph_sha256": "fc4b5fc7c0ee571f3160fec495388ebcfde860c4bf12968e3b46a79a13ab712f"
+    }
+  ],
+  "counts": {
+    "episodes": 27,
+    "key_frames": 110,
+    "transitions": 83,
+    "visible_transitions": 81
+  }
+}

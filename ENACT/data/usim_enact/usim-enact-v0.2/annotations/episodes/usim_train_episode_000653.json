@@ -1,0 +1,261 @@
+{
+  "protocol_version": "usim-enact-v0.2",
+  "episode_key": "usim_train_episode_000653",
+  "source_split": "train",
+  "episode_index": 653,
+  "task_index": 6,
+  "task_text": "Pick up the red cylinder",
+  "label_source": "agent_visual_review",
+  "annotation_status": "reviewed",
+  "notes": "NextTo 采用 v0.2 approach 语义：机器人末端接近目标、夹爪尚未持有的阶段；抓住后恒为 false（即使机器人物理上仍靠近目标）。 事件锚定：gripper close 命令 c=f170（observation.state[0]>0.004 起始帧，final_state=closed）；视觉抓取 = f195→f196（单次渲染更新，motion 9.59）；close 命令早于视觉抓取 26 帧（在规范的 10–40 帧偏差内）。 关键帧与角色：key1=f20 start（保持段 14–27（14 帧），start 前置帧）；key2=f155 approach（保持段 136–159（24 帧），close−15）；key3=f203 grasp（保持段 196–211（16 帧），close+33）；key4=f249 lift（保持段 238–263（26 帧），dvl 离底上升起点后稳定帧）。 L 路线：标 4 帧（start/approach/grasp/lift），可见转移 3/3，L=5 不成立，本 episode 支持 L≤4。 仅 4 个可辨状态（start/approach/grasp/lift），标 4 帧，支持 L≤4。L=5 三条路线均不成立：① transfer_inbox 不适用：pick red 任务、画面无绿箱、物体在视频结束仍被持有；② release_settle 不适用：无 open 事件（f170–f278 一直 closed），提升后物体未落回海床；③ touching 不可判：抓取前保持段 [162–195] 夹爪张开悬在物体上方（未接触），抓取后保持段 [196–211] 物体已在爪内，两者之间只有一次渲染更新 f195→f196，不存在「可见接触但尚未持有」的稳定帧，故 Touching 不进入 scope，不凑第 5 帧。 干扰物/指代： 目标物指代：白色礁石（海床）上的红色圆柱。画面中蓝色为水体与背景设备结构，浅色小点为悬浮颗粒/背景杂物；4 个关键帧上红色连通分量唯一（面积 92/160/88/103 px，质心与目标位置一致），未见红色游动小鱼，不把小鱼/背景红点当作目标；画面中未见绿箱（package box_blob 均为 null）。 辅助信号： close/final_state 只用于事件锚定（close f170、final closed），不作为 InGripper 直接判据；dvl_h（state[28]）只用于 Lifted 的辅助确认；未使用 wrist 抽帧（package 的 wrist 接触表与 ego 同图）。 渲染保持： 保持段：[14–27],[28–41],[44–61],[64–87],[98–115],[116–133],[136–159],[162–195],[196–211],[214–235],[238–263],[266–277]（motion≤0.35 连续段）；相邻关键帧间隔 135 / 48 / 46 帧（≥2 个渲染更新）；key1 保持段仅 14 帧、key3 保持段 16 帧，「前后 ≥10 帧全静止」在这两段内不可满足；按 §3.0 以「位于保持段内 + 相邻关键帧间隔 ≥2 次渲染更新 + 记录保持段」为准，如实记录。 ego 可判性：key1 NextTo=false=yes；key2 NextTo=true=yes；key3 InGripper=true=yes（夹爪包住物体并在后续帧随末端移动）、key3 OnSeabed=true=partial（物体下端仍贴底可见，但白色海床无纹理、接触靠阴影判断）；key4 Lifted=true=partial（可见离底间隙 + dvl_h 上升辅助）。3 个转移均 ego 可见非空。 dvl 辅助：dvl_h 最低 0.2269（f190），随后单调上升到 f250 约 0.3801；Lifted 取上升起点后约 50 帧的 f249。",
+  "objects": [
+    {
+      "object_id": "robot",
+      "category": "agent",
+      "description": "the robot"
+    },
+    {
+      "object_id": "red_cylinder",
+      "category": "cylinder",
+      "color": "red",
+      "description": "the red cylinder lying on the white seabed"
+    }
+  ],
+  "relations": [
+    [
+      "OnSeabed",
+      "red_cylinder"
+    ],
+    [
+      "InGripper",
+      "red_cylinder"
+    ],
+    [
+      "Lifted",
+      "red_cylinder"
+    ],
+    [
+      "NextTo",
+      "robot",
+      "red_cylinder"
+    ]
+  ],
+  "frames": [
+    {
+      "frame_index": 20,
+      "timestamp_seconds": 2.0,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "role=start; hold=14–27（14 帧）; start：红圆柱平放于白色海床上（红色连通分量面积 92 px，质心约 (165,79)），机械臂/夹爪位于画面左侧、未进入抓取接近姿态；OnSeabed=true、InGripper=false、Lifted=false、NextTo=false。"
+    },
+    {
+      "frame_index": 155,
+      "timestamp_seconds": 15.5,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "role=approach; hold=136–159（24 帧）; approach（close−15）：夹爪张开悬在红圆柱上方约 10 px，未接触；物体仍平贴海床（面积 160 px，质心约 (120,143)）。NextTo=true、InGripper=false、OnSeabed=true、Lifted=false。"
+    },
+    {
+      "frame_index": 203,
+      "timestamp_seconds": 20.3,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review+object_motion"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "role=grasp; hold=196–211（16 帧）; grasp（close+33，实际抓取渲染更新后 +7）：夹爪已夹住红圆柱上端，圆柱下端仍搭在白色海床面上并有接触阴影；夹爪–物体在画面中连成一体且随后随末端移动。OnSeabed=true（物理支撑语义：被夹住但仍贴底）、InGripper=true、Lifted=false、NextTo=false。"
+    },
+    {
+      "frame_index": 249,
+      "timestamp_seconds": 24.9,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review+dvl_h_aux"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "role=lift; hold=238–263（26 帧）; lift：红圆柱被夹在爪内、整体悬空，圆柱最低点与下方白色海床之间有可见间隙（约 1 个物体半宽以上）且接触阴影分离；dvl_h 自 f190 最低点 0.2269 升至 f250 约 0.38（+15 cm，仅辅助）。OnSeabed=false、InGripper=true、Lifted=true、NextTo=false。"
+    }
+  ]
+}

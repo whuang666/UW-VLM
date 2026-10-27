@@ -1,0 +1,401 @@
+{
+  "protocol_version": "usim-enact-v0.2",
+  "episode_key": "usim_train_episode_001318",
+  "source_split": "train",
+  "episode_index": 1318,
+  "task_index": 7,
+  "task_text": "Pick up the red cylinder and transfer it to the box",
+  "label_source": "agent_visual_review",
+  "annotation_status": "reviewed",
+  "notes": "Target object: red_cylinder (the elongated red cylinder manipulated by the gripper). green_box is the only green box in view. Other red objects in the scene may be the small red swimming fish mentioned in the v0.2 review notes; target reference is the cylinder held by the gripper on this trajectory, not the fish. Predicate conventions: NextTo is the v0.2 approach semantics (true only before grasping, false after the grasp); OnSeabed is the v0.2 physical-support semantics (true while the cylinder is held but still touching the seabed); at_box = NearBox(robot, green_box) means the robot/end-effector is at the green-box release position while the object is still held; InBox is UNKNOWN / NOT proven: the release happens only 16 frames before the video ends, the red target's centroid stays outside the green-box bbox and no visible settling is rendered in any of the 100 transfer episodes scanned, so InBox must not be read from the at_box frames. Anchored key frames: start f200 (before the manipulation attempt, object visible on the seabed); approach f245 (first close command minus 15 frames; robot end-effector approaching, not holding); grasp f275 (successful close +15 frames; gripper holds the object while it still touches the seabed); lift f352 (dvl ascent onset +50 frames; visible gap between object and seabed); at_box f517 (release minus 15 frames; robot/end-effector at the green-box release position, object still held). Events: close frames [260], open frames [532], dvl ascent onset f302 (baseline min f278). green_box visibility is true at every key frame; the green-box blob area by frame is start=f200:1484/approach=f245:1402/grasp=f275:1453/lift=f352:1370/at_box=f517:2668 (clear, trackable box in ego at every key frame). f200 in render-hold [188,201] len=14; f245 in render-hold [236,251] len=16; f275 in render-hold [270,287] len=18; f352 in render-hold [344,359] len=16; f517 in render-hold [510,523] len=14. Adjacent key frames are 45/30/77/165 frames apart (all >2 render updates). L=5 route: start -> approach -> grasp -> lift -> at_box (4 visible transitions, all non-empty). at_box is NOT InBox: the object is still InGripper/Lifted and only the robot reaches the green-box release position (NearBox). ego judgeability: start/approach/grasp/lift = yes (object visible; seabed contact at grasp and visible gap at lift are readable in ego); at_box = PARTIAL: the green box is clearly visible and its ego area grows markedly from lift to at_box while the robot arm overlays the box rim, but 'at the release position nearby' is a qualitative ego judgement (no metric distance threshold). The near-box relation NearBox(robot, green_box) is therefore marked with ego judgeability=partial; wrist video was NOT used for any label (ego-only labels).",
+  "objects": [
+    {
+      "object_id": "robot",
+      "category": "agent",
+      "description": "the robot"
+    },
+    {
+      "object_id": "red_cylinder",
+      "category": "cylinder",
+      "color": "red",
+      "description": "the red cylinder (target object for this episode)"
+    },
+    {
+      "object_id": "green_box",
+      "category": "box",
+      "color": "green",
+      "description": "the green box"
+    }
+  ],
+  "relations": [
+    [
+      "OnSeabed",
+      "red_cylinder"
+    ],
+    [
+      "InGripper",
+      "red_cylinder"
+    ],
+    [
+      "Lifted",
+      "red_cylinder"
+    ],
+    [
+      "NextTo",
+      "robot",
+      "red_cylinder"
+    ],
+    [
+      "NearBox",
+      "robot",
+      "green_box"
+    ]
+  ],
+  "frames": [
+    {
+      "frame_index": 200,
+      "timestamp_seconds": 20.0,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "agent_visual_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "agent_visual_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "agent_visual_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "agent_visual_review"
+        },
+        {
+          "predicate": "NearBox",
+          "arguments": [
+            "robot",
+            "green_box"
+          ],
+          "value": false,
+          "evidence": "agent_visual_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "start (200); see notes.md"
+    },
+    {
+      "frame_index": 245,
+      "timestamp_seconds": 24.5,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "agent_visual_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "agent_visual_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "agent_visual_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "agent_visual_review"
+        },
+        {
+          "predicate": "NearBox",
+          "arguments": [
+            "robot",
+            "green_box"
+          ],
+          "value": false,
+          "evidence": "agent_visual_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "approach (245); see notes.md"
+    },
+    {
+      "frame_index": 275,
+      "timestamp_seconds": 27.5,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "agent_visual_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "agent_visual_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "agent_visual_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "agent_visual_review"
+        },
+        {
+          "predicate": "NearBox",
+          "arguments": [
+            "robot",
+            "green_box"
+          ],
+          "value": false,
+          "evidence": "agent_visual_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "grasp (275); see notes.md"
+    },
+    {
+      "frame_index": 352,
+      "timestamp_seconds": 35.2,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "agent_visual_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "agent_visual_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "agent_visual_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "agent_visual_review"
+        },
+        {
+          "predicate": "NearBox",
+          "arguments": [
+            "robot",
+            "green_box"
+          ],
+          "value": false,
+          "evidence": "agent_visual_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "lift (352); see notes.md"
+    },
+    {
+      "frame_index": 517,
+      "timestamp_seconds": 51.7,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "agent_visual_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "agent_visual_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "agent_visual_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "agent_visual_review"
+        },
+        {
+          "predicate": "NearBox",
+          "arguments": [
+            "robot",
+            "green_box"
+          ],
+          "value": true,
+          "evidence": "agent_visual_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "at_box (517); see notes.md"
+    }
+  ]
+}

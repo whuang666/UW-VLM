@@ -1,0 +1,261 @@
+{
+  "protocol_version": "usim-enact-v0.2",
+  "episode_key": "usim_train_episode_000962",
+  "source_split": "train",
+  "episode_index": 962,
+  "task_index": 2,
+  "task_text": "Pick up the blue cylinder",
+  "label_source": "agent_visual_review",
+  "annotation_status": "reviewed",
+  "notes": "NextTo 采用 v0.2 approach 语义（事件锚定：true 只取 close-15±5 且 InGripper=false、OnSeabed=true 的稳定帧；抓住后恒 false），不是纯几何距离。OnSeabed 采用物理支撑语义（被夹住但仍贴底 = true；只有可见离底间隙才 false）。每个事实均先看 ego 帧独立判断，package 的 predicates_hypothesis 仅作提议对照；辅助信号（夹爪 joint_pos、dvl_h、wrist）只用于定位 close 事件与确认，未单独决定任何标签值。 本 episode 关键帧角色：f100=start，f260=approach，f290=grasp，f375=lift。L=5 三条路线均不成立：①无绿色箱子（非 transfer）；②视频结束时物体仍被持有、无 release_settle；③无 ego 可见的 Touching 稳定帧——close 命令 f275 落在保持段 f267-283（该画面仍显示张开的夹爪在物体上方），下一个渲染 f284-303 已是抓取态，接触瞬间没有可作关键帧的稳定画面。故只有 4 个可辨状态，标 4 帧，仅支持 L≤4。 干扰物/指代：无同色干扰物：目标为画面中央沙面上唯一的蓝紫色圆柱（ego 中呈紫色）；蓝色海水背景按边界/尺寸过滤。wrist 仅作辅助：wrist 序列显示同一物体在 f282-284 前后进入爪间，与 ego 抓取态一致。 ego 可判性：start->approach partial（接近阈值依赖事件锚定，纯 ego 距离有深度压缩）；approach->grasp partial（320x240 下张/合爪差异小）；grasp->lift partial（18 cm 上浮在 ego 中主要体现为海床后退，需 dvl_h 辅助）。",
+  "objects": [
+    {
+      "object_id": "robot",
+      "category": "agent",
+      "description": "the robot"
+    },
+    {
+      "object_id": "blue_cylinder",
+      "category": "cylinder",
+      "color": "blue",
+      "description": "the blue cylinder (purple appearance in the ego stream)"
+    }
+  ],
+  "relations": [
+    [
+      "OnSeabed",
+      "blue_cylinder"
+    ],
+    [
+      "InGripper",
+      "blue_cylinder"
+    ],
+    [
+      "Lifted",
+      "blue_cylinder"
+    ],
+    [
+      "NextTo",
+      "robot",
+      "blue_cylinder"
+    ]
+  ],
+  "frames": [
+    {
+      "frame_index": 100,
+      "timestamp_seconds": 10.0,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "role=start: render-hold run f97-111；物体横卧海床，夹爪张开且仍在其左上方远处（画面距离明显，NextTo=false）。"
+    },
+    {
+      "frame_index": 260,
+      "timestamp_seconds": 26.0,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "blue_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "role=approach: render-hold run f251-265；close 事件 c=275，本帧=c-15（窗口 255-265）；夹爪张开位于物体正上方（InGripper=false），物体仍贴底；按事件锚定 NextTo=true。"
+    },
+    {
+      "frame_index": 290,
+      "timestamp_seconds": 29.0,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": true,
+          "evidence": "review_round2_physical_support+frame_review+dvl_altitude"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": true,
+          "evidence": "gripper_signal+frame_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "role=grasp: render-hold run f285-303；c+15（实际咬合发生在 f279-284，晚于 close 命令约 5-9 帧）；夹爪闭合、物体在爪间且仍贴海床（dvl_h=0.2375 处于本 episode 最低平台）→ OnSeabed=true（物理支撑语义）、Lifted=false、NextTo=false。"
+    },
+    {
+      "frame_index": 375,
+      "timestamp_seconds": 37.5,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review+dvl_altitude"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": true,
+          "evidence": "gripper_signal+frame_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review+dvl_altitude"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "role=lift: render-hold run f369-383；dvl 离底高度上升起点 f317，本帧=onset+58；dvl_h 由抓取时 0.237 升至 0.409（+17 cm），ego 中物体随夹爪离开海床、下方可见海床间隙；Lifted=true、OnSeabed=false。"
+    }
+  ]
+}

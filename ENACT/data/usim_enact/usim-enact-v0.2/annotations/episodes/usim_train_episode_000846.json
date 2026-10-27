@@ -1,0 +1,260 @@
+{
+  "protocol_version": "usim-enact-v0.2",
+  "episode_key": "usim_train_episode_000846",
+  "source_split": "train",
+  "episode_index": 846,
+  "task_index": 1,
+  "task_text": "Pick up the pipe",
+  "label_source": "agent_visual_review",
+  "annotation_status": "reviewed",
+  "notes": "NextTo 采用 v0.2 approach 语义：机器人末端接近目标、夹爪尚未持有的阶段；抓住后恒为 false（即使机器人物理上仍靠近目标）。 事件锚定：gripper close 命令 c=f459（observation.state[0]>0.004 起始帧，final_state=closed）；视觉抓取 = f452→f453（渲染更新后夹爪包住管子，motion 13.47；wrist 辅助确认 f460 后管子位于爪内）；close 命令与视觉抓取相差约 6 帧（夹爪信号 f460 开始闭合、f466 完全闭合）。 关键帧与角色：key1=f76 start（保持段 68–79（12 帧），start 前置帧）；key2=f444 approach（保持段 442–451（10 帧），close−15）；key3=f472 grasp（保持段 466–477（12 帧），close+13）；key4=f526 lift（保持段 520–531（12 帧），dvl 离底上升起点后稳定帧）。 L 路线：标 4 帧（start/approach/grasp/lift），可见转移 3/3，L=5 不成立，本 episode 支持 L≤4。 仅 4 个可辨状态（start/approach/grasp/lift），标 4 帧，支持 L≤4。L=5 三条路线均不成立：① transfer_inbox 不适用：pick pipe 任务、无绿箱、末端持有到视频结束；② release_settle 不适用：无 open 事件（f459–f532 一直 closed），管子未落回海床；③ touching 不可判：抓取前保持段 [442–451] 夹爪张开在管子上方，抓取后保持段 [466–477] 管子已在爪内，中间虽有保持段 [454–465]，但该段夹爪已闭合包住管子（f452→f453 渲染更新），属于已持有而非「接触未持有」，Touching 与 InGripper 无法在 ego 上区分，故 Touching 不进 scope。 干扰物/指代： 目标物指代：白色亮沙丘上的灰色弯管。画面干扰物：早期帧右上的蓝色海葵、沙面上的小暗色礁石、背景水体、机器人本体/机械臂——均不建模。画面仅 1 根管子；4 个关键帧上无红色/绿色连通分量（未见红鱼、无绿箱）。 辅助信号： close/final_state 只用于事件锚定（close f459、final closed、f466 起完全闭合）；wrist 相机仅作辅助确认（f446–f532 抽出 wrist 帧：管子自 f460 起位于夹爪虎口内，用于确认 InGripper，不作主标签来源）；dvl_h 只用于 Lifted 辅助确认。 渲染保持： 保持段：[68–79],[96–119],[356–371],[442–451],[454–465],[466–477],[480–489],[492–505],[520–531] 等（motion≤0.35 连续段）；相邻关键帧间隔 368 / 28 / 54 帧（≥2 个渲染更新）；本 episode 渲染保持段多为 10–16 帧，「前后 ≥10 帧全静止」不可满足；按 §3.0 改为「帧位于保持段内 + 相邻关键帧间隔 ≥2 次渲染更新 + 记录保持段」，如实记录。 ego 可判性：key1 NextTo=false=yes；key2 NextTo=true=yes；key3 InGripper=true=yes（爪–管接触可见，wrist 辅助）、OnSeabed=true=partial（管子法兰端仍贴底可见）；key4 Lifted=true=partial（离底间隙 + dvl_h 辅助）。3 个转移均 ego 可见非空。 dvl 辅助：dvl_h 最低 0.2291（f478），随后上升到 f532 0.3630；视频在 f532 结束，key4 取起点后 +31 帧的最后一个保持段 [520–531]。",
+  "objects": [
+    {
+      "object_id": "robot",
+      "category": "agent",
+      "description": "the robot"
+    },
+    {
+      "object_id": "pipe",
+      "category": "pipe",
+      "description": "the grey bent pipe lying on the white seabed"
+    }
+  ],
+  "relations": [
+    [
+      "OnSeabed",
+      "pipe"
+    ],
+    [
+      "InGripper",
+      "pipe"
+    ],
+    [
+      "Lifted",
+      "pipe"
+    ],
+    [
+      "NextTo",
+      "robot",
+      "pipe"
+    ]
+  ],
+  "frames": [
+    {
+      "frame_index": 76,
+      "timestamp_seconds": 7.6,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "pipe"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "pipe"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "pipe"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "pipe"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "role=start; hold=68–79（12 帧）; start：灰色弯管位于白色沙丘上（画面右上区域），夹爪在画面左上、距管子约 60 px，未进入抓取接近姿态；OnSeabed=true、InGripper=false、Lifted=false、NextTo=false。"
+    },
+    {
+      "frame_index": 444,
+      "timestamp_seconds": 44.4,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "pipe"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "pipe"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "pipe"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "pipe"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "role=approach; hold=442–451（10 帧）; approach（close−15）：夹爪张开悬在弯管上方约 15 px，未接触，管子仍平贴海床；NextTo=true、InGripper=false、OnSeabed=true、Lifted=false。"
+    },
+    {
+      "frame_index": 472,
+      "timestamp_seconds": 47.2,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "pipe"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "pipe"
+          ],
+          "value": true,
+          "evidence": "frame_review+wrist_aux"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "pipe"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "pipe"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "role=grasp; hold=466–477（12 帧）; grasp（close+13）：夹爪已夹住弯管中段/法兰端（f466 起夹爪信号完全闭合、wrist 视图显示管子位于爪内），管子另一端仍搭在海床面上；OnSeabed=true（物理支撑语义）、InGripper=true、Lifted=false、NextTo=false。"
+    },
+    {
+      "frame_index": 526,
+      "timestamp_seconds": 52.6,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "pipe"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "pipe"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "pipe"
+          ],
+          "value": true,
+          "evidence": "frame_review+dvl_h_aux"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "pipe"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "role=lift; hold=520–531（12 帧）; lift（dvl 离底上升起点约 f495 后 +31；视频在 f532 结束，无法取到起点后 40–60 帧）：弯管被夹住悬空，法兰端与下方白色海床之间有可见间隙与分离阴影；dvl_h 自 f478 最低 0.2291 升至 f532 0.3630（+13 cm，辅助）。OnSeabed=false、InGripper=true、Lifted=true、NextTo=false。"
+    }
+  ]
+}

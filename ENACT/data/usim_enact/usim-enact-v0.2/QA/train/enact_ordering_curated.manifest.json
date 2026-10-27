@@ -1,0 +1,236 @@
+{
+  "curation_version": "usim-enact-v0.2-curation-v1",
+  "seed": 20261027,
+  "quotas_per_episode_per_direction": {
+    "5": 2,
+    "4": 3,
+    "3": 1
+  },
+  "method": "group questions by (episode, chronological key_frame_ids); visit lengths 5->4->3; select paired forward+inverse paths first, order by seeded sha256, never by model score",
+  "total_input_questions": 312,
+  "total_selected": 120,
+  "by_type": {
+    "forward_world_modeling_3_steps": 27,
+    "forward_world_modeling_4_steps": 30,
+    "forward_world_modeling_5_steps": 3,
+    "inverse_world_modeling_3_steps": 27,
+    "inverse_world_modeling_4_steps": 30,
+    "inverse_world_modeling_5_steps": 3
+  },
+  "by_length": {
+    "5": 6,
+    "4": 60,
+    "3": 54
+  },
+  "identity_reference_rate": 0.2833,
+  "pairing": {
+    "paired_paths_selected": 60,
+    "single_direction_paths_selected": 0,
+    "missing_direction_paths": 0
+  },
+  "episodes": [
+    "usim_train_episode_000104",
+    "usim_train_episode_000175",
+    "usim_train_episode_000200",
+    "usim_train_episode_000201",
+    "usim_train_episode_000287",
+    "usim_train_episode_000297",
+    "usim_train_episode_000501",
+    "usim_train_episode_000533",
+    "usim_train_episode_000552",
+    "usim_train_episode_000553",
+    "usim_train_episode_000555",
+    "usim_train_episode_000556",
+    "usim_train_episode_000587",
+    "usim_train_episode_000628",
+    "usim_train_episode_000653",
+    "usim_train_episode_000682",
+    "usim_train_episode_000756",
+    "usim_train_episode_000846",
+    "usim_train_episode_000962",
+    "usim_train_episode_000980",
+    "usim_train_episode_001046",
+    "usim_train_episode_001135",
+    "usim_train_episode_001302",
+    "usim_train_episode_001304",
+    "usim_train_episode_001318",
+    "usim_train_episode_001330",
+    "usim_train_episode_001357"
+  ],
+  "per_episode_by_type": {
+    "usim_train_episode_000104": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 1
+    },
+    "usim_train_episode_000175": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 1
+    },
+    "usim_train_episode_000200": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 1
+    },
+    "usim_train_episode_000201": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 1
+    },
+    "usim_train_episode_000287": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 1
+    },
+    "usim_train_episode_000297": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 1
+    },
+    "usim_train_episode_000501": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 1
+    },
+    "usim_train_episode_000533": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 1
+    },
+    "usim_train_episode_000552": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 1
+    },
+    "usim_train_episode_000553": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 1
+    },
+    "usim_train_episode_000555": {
+      "forward_world_modeling_3_steps": 1,
+      "inverse_world_modeling_3_steps": 1
+    },
+    "usim_train_episode_000556": {
+      "forward_world_modeling_3_steps": 1,
+      "inverse_world_modeling_3_steps": 1
+    },
+    "usim_train_episode_000587": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 1
+    },
+    "usim_train_episode_000628": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 1
+    },
+    "usim_train_episode_000653": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 1
+    },
+    "usim_train_episode_000682": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 1
+    },
+    "usim_train_episode_000756": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 1
+    },
+    "usim_train_episode_000846": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 1
+    },
+    "usim_train_episode_000962": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 1
+    },
+    "usim_train_episode_000980": {
+      "forward_world_modeling_3_steps": 1,
+      "inverse_world_modeling_3_steps": 1
+    },
+    "usim_train_episode_001046": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 1
+    },
+    "usim_train_episode_001135": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 1
+    },
+    "usim_train_episode_001302": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 1
+    },
+    "usim_train_episode_001304": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 3,
+      "forward_world_modeling_5_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 3,
+      "inverse_world_modeling_5_steps": 1
+    },
+    "usim_train_episode_001318": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 3,
+      "forward_world_modeling_5_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 3,
+      "inverse_world_modeling_5_steps": 1
+    },
+    "usim_train_episode_001330": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 1
+    },
+    "usim_train_episode_001357": {
+      "forward_world_modeling_3_steps": 1,
+      "forward_world_modeling_4_steps": 3,
+      "forward_world_modeling_5_steps": 1,
+      "inverse_world_modeling_3_steps": 1,
+      "inverse_world_modeling_4_steps": 3,
+      "inverse_world_modeling_5_steps": 1
+    }
+  },
+  "excluded_by_reason": {
+    "over_quota": {
+      "forward_world_modeling_3_steps": 90,
+      "forward_world_modeling_4_steps": 6,
+      "inverse_world_modeling_3_steps": 90,
+      "inverse_world_modeling_4_steps": 6
+    }
+  },
+  "input_qa": "data\\usim_enact\\usim-enact-v0.2\\QA\\train\\enact_ordering.jsonl",
+  "input_qa_sha256": "958d84271f53d97cba5f4859a50aea0d4892f8490287deda6e48df0dca65999c",
+  "output_qa": "data\\usim_enact\\usim-enact-v0.2\\QA\\train\\enact_ordering_curated.jsonl",
+  "output_qa_sha256": "f3cf687c613133b26d72064e9b370997e786dbf4d1b920089d4b07b1d5d45c2f"
+}

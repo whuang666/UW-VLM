@@ -1,0 +1,283 @@
+{
+  "migration_version": "v01-to-v02-labels-v1",
+  "source_protocol": "usim-enact-v0.1",
+  "target_protocol": "usim-enact-v0.2",
+  "rule": "protocol bump; OnSeabed=physical support (grasped-but-resting stays true); notes corrected (red fish); NextTo approach semantics documented; label values otherwise unchanged",
+  "episodes": [
+    {
+      "episode_key": "usim_train_episode_000200",
+      "source": "data\\usim_enact\\usim-enact-v0.1\\annotations\\episodes\\usim_train_episode_000200.json",
+      "source_sha256": "db74fd90af5879f9f72cb084fbcef9445fc41d4e914809013160a4fd0f2c686f",
+      "output": "data\\usim_enact\\usim-enact-v0.2\\annotations\\episodes\\usim_train_episode_000200.json",
+      "output_sha256": "c9d1f5b97a7aad5ca1017b1e9ac25eb99aebad3592b220c00d95738d2f6f828f",
+      "changed_facts": [
+        {
+          "frame_index": 248,
+          "relation": "OnSeabed",
+          "from": false,
+          "to": true,
+          "reason": "object is grasped but still supported by the seabed (dvl altitude minimum)"
+        }
+      ],
+      "changed_visibility": [],
+      "transitions": [
+        {
+          "from": "140",
+          "to": "213",
+          "visible": true,
+          "text": "The robot changes to be in position for the pre-grasp approach beside the blue cylinder."
+        },
+        {
+          "from": "213",
+          "to": "248",
+          "visible": true,
+          "text": "The blue cylinder becomes grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the blue cylinder."
+        },
+        {
+          "from": "248",
+          "to": "328",
+          "visible": true,
+          "text": "The blue cylinder becomes lifted above the seabed. The blue cylinder is no longer on the seabed."
+        }
+      ]
+    },
+    {
+      "episode_key": "usim_train_episode_000201",
+      "source": "data\\usim_enact\\usim-enact-v0.1\\annotations\\episodes\\usim_train_episode_000201.json",
+      "source_sha256": "62bf18b6b769f733b0582df3b8c4c33e24a80db40ac79cacddf0e7e1c15ba0f7",
+      "output": "data\\usim_enact\\usim-enact-v0.2\\annotations\\episodes\\usim_train_episode_000201.json",
+      "output_sha256": "05f0acc5597dbe29f47d3bf464c7ed9d60c3d041b202eb6f0d26fb80a68aac3d",
+      "changed_facts": [
+        {
+          "frame_index": 279,
+          "relation": "OnSeabed",
+          "from": false,
+          "to": true,
+          "reason": "object is grasped but still supported by the seabed (dvl altitude minimum)"
+        }
+      ],
+      "changed_visibility": [],
+      "transitions": [
+        {
+          "from": "199",
+          "to": "244",
+          "visible": true,
+          "text": "The robot becomes in position for the pre-grasp approach beside the blue cylinder."
+        },
+        {
+          "from": "244",
+          "to": "279",
+          "visible": true,
+          "text": "The blue cylinder becomes grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the blue cylinder."
+        },
+        {
+          "from": "279",
+          "to": "357",
+          "visible": true,
+          "text": "The blue cylinder is now lifted above the seabed. The blue cylinder is not on the seabed anymore."
+        }
+      ]
+    },
+    {
+      "episode_key": "usim_train_episode_000552",
+      "source": "data\\usim_enact\\usim-enact-v0.1\\annotations\\episodes\\usim_train_episode_000552.json",
+      "source_sha256": "4d266138fef372a5f3df581c74350745b124cf17de9b08faa7ac343c13a3b897",
+      "output": "data\\usim_enact\\usim-enact-v0.2\\annotations\\episodes\\usim_train_episode_000552.json",
+      "output_sha256": "5601e161705b82eab32eaf75c57a862e6f81c54d6224ede096e1d68e81500917",
+      "changed_facts": [
+        {
+          "frame_index": 284,
+          "relation": "OnSeabed",
+          "from": false,
+          "to": true,
+          "reason": "object is grasped but still supported by the seabed (dvl altitude minimum)"
+        }
+      ],
+      "changed_visibility": [],
+      "transitions": [
+        {
+          "from": "120",
+          "to": "249",
+          "visible": true,
+          "text": "The robot becomes in position for the pre-grasp approach beside the red cylinder."
+        },
+        {
+          "from": "249",
+          "to": "284",
+          "visible": true,
+          "text": "The red cylinder is now grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the red cylinder."
+        },
+        {
+          "from": "284",
+          "to": "364",
+          "visible": true,
+          "text": "The red cylinder becomes lifted above the seabed. The red cylinder is no longer on the seabed."
+        }
+      ]
+    },
+    {
+      "episode_key": "usim_train_episode_000553",
+      "source": "data\\usim_enact\\usim-enact-v0.1\\annotations\\episodes\\usim_train_episode_000553.json",
+      "source_sha256": "eba5069f116099cbb336a66b63901009c1f429243ccbb0d50196dbf320c71f2e",
+      "output": "data\\usim_enact\\usim-enact-v0.2\\annotations\\episodes\\usim_train_episode_000553.json",
+      "output_sha256": "87e849dbc19fc370cb60e4fb454b06533550abd7939cc626d0352949a96902b4",
+      "changed_facts": [
+        {
+          "frame_index": 168,
+          "relation": "OnSeabed",
+          "from": false,
+          "to": true,
+          "reason": "object is grasped but still supported by the seabed (dvl altitude minimum)"
+        }
+      ],
+      "changed_visibility": [],
+      "transitions": [
+        {
+          "from": "110",
+          "to": "140",
+          "visible": true,
+          "text": "The robot transitions to be in position for the pre-grasp approach beside the red cylinder."
+        },
+        {
+          "from": "140",
+          "to": "168",
+          "visible": true,
+          "text": "The red cylinder is now grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the red cylinder."
+        },
+        {
+          "from": "168",
+          "to": "248",
+          "visible": true,
+          "text": "The red cylinder is now lifted above the seabed. The red cylinder is no longer on the seabed."
+        }
+      ]
+    },
+    {
+      "episode_key": "usim_train_episode_000555",
+      "source": "data\\usim_enact\\usim-enact-v0.1\\annotations\\episodes\\usim_train_episode_000555.json",
+      "source_sha256": "8719d5d747b5785d45767e12054f85aa55eb9ae1555f5a7d8405689c9cecf04d",
+      "output": "data\\usim_enact\\usim-enact-v0.2\\annotations\\episodes\\usim_train_episode_000555.json",
+      "output_sha256": "e501553a100bc9e362a09359f32e6722da8f1dea51c3c5d390d3c4edc67a5aaf",
+      "changed_facts": [
+        {
+          "frame_index": 297,
+          "relation": "OnSeabed",
+          "from": false,
+          "to": true,
+          "reason": "object is grasped but still supported by the seabed (dvl altitude minimum)"
+        }
+      ],
+      "changed_visibility": [
+        {
+          "frame_index": 140,
+          "object_id": "red_cylinder",
+          "from": true,
+          "to": false,
+          "reason": "target has zero visible pixels in the ego frame (review round 2, B group)"
+        }
+      ],
+      "transitions": [
+        {
+          "from": "140",
+          "to": "262",
+          "visible": false,
+          "text": "No significant changes occurred"
+        },
+        {
+          "from": "262",
+          "to": "297",
+          "visible": true,
+          "text": "The red cylinder is now grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the red cylinder."
+        },
+        {
+          "from": "297",
+          "to": "377",
+          "visible": true,
+          "text": "The red cylinder is now lifted above the seabed. The red cylinder is no longer on the seabed."
+        }
+      ]
+    },
+    {
+      "episode_key": "usim_train_episode_000556",
+      "source": "data\\usim_enact\\usim-enact-v0.1\\annotations\\episodes\\usim_train_episode_000556.json",
+      "source_sha256": "bf9f1fe2b9261a2af601f5fd978938bb641a7005eaf7de4defe491f4b5c994b6",
+      "output": "data\\usim_enact\\usim-enact-v0.2\\annotations\\episodes\\usim_train_episode_000556.json",
+      "output_sha256": "ff3104e801ddc457a985ee2035a7a2a831510d053605c960018ff9de06d8a1d0",
+      "changed_facts": [
+        {
+          "frame_index": 339,
+          "relation": "OnSeabed",
+          "from": false,
+          "to": true,
+          "reason": "object is grasped but still supported by the seabed (dvl altitude minimum)"
+        }
+      ],
+      "changed_visibility": [
+        {
+          "frame_index": 180,
+          "object_id": "red_cylinder",
+          "from": true,
+          "to": false,
+          "reason": "target has zero visible pixels in the ego frame (review round 2, B group)"
+        }
+      ],
+      "transitions": [
+        {
+          "from": "180",
+          "to": "304",
+          "visible": false,
+          "text": "No significant changes occurred"
+        },
+        {
+          "from": "304",
+          "to": "339",
+          "visible": true,
+          "text": "The red cylinder is now grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the red cylinder."
+        },
+        {
+          "from": "339",
+          "to": "419",
+          "visible": true,
+          "text": "The red cylinder becomes lifted above the seabed. The red cylinder is not on the seabed anymore."
+        }
+      ]
+    },
+    {
+      "episode_key": "usim_train_episode_001302",
+      "source": "data\\usim_enact\\usim-enact-v0.1\\annotations\\episodes\\usim_train_episode_001302.json",
+      "source_sha256": "04a8cc223c1267927c5a9e5dd2150bf0af84b0beaa8fcd0f87483875150a32af",
+      "output": "data\\usim_enact\\usim-enact-v0.2\\annotations\\episodes\\usim_train_episode_001302.json",
+      "output_sha256": "3f261c0040cc0b8daa857111f925e31518bdb5a886927c0e616533d8cd268bdf",
+      "changed_facts": [
+        {
+          "frame_index": 196,
+          "relation": "OnSeabed",
+          "from": false,
+          "to": true,
+          "reason": "object is grasped but still supported by the seabed (dvl altitude minimum)"
+        }
+      ],
+      "changed_visibility": [],
+      "transitions": [
+        {
+          "from": "150",
+          "to": "168",
+          "visible": true,
+          "text": "The robot now becomes in position for the pre-grasp approach beside the red cylinder."
+        },
+        {
+          "from": "168",
+          "to": "196",
+          "visible": true,
+          "text": "The red cylinder becomes grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the red cylinder."
+        },
+        {
+          "from": "196",
+          "to": "415",
+          "visible": true,
+          "text": "The red cylinder is now lifted above the seabed. The red cylinder is not on the seabed anymore."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "protocol_version": "usim-enact-v0.2",
+  "episode_key": "usim_train_episode_000628",
+  "source_split": "train",
+  "episode_index": 628,
+  "task_index": 6,
+  "task_text": "Pick up the red cylinder",
+  "label_source": "agent_visual_review",
+  "annotation_status": "reviewed",
+  "notes": "v0.2 annotation. NextTo uses explicit approach semantics: true only in the pre-grasp approach frame (robot end effector in position, jaws still open), false after grasping. Key frames are start/approach/grasp/lift at 221, 254, 288, 365 (roles: start/approach/grasp/lift); approach is anchored at close-15 (553-free numbering per episode), grasp at close+10~20, lift after the dvl_h ascent onset. Only 4 distinguishable states exist, so the episode is annotated with 4 frames and supports L<=4: transfer_inbox is not applicable (pick-up task, no box); release_settle is not applicable (only a close event, object still held at video end); touching is not applicable (no stable rendered frame where the jaws visibly touch but do not hold: the close event falls inside a rendering hold and the next unique frame already shows the grasped object). Ego decidability: start=yes, approach=yes, grasp=partial (InGripper corroborated by jaw signal, OnSeabed by dvl_h at minimum and no visible clearance), lift=yes/partial (visible gap plus dvl_h). Target: red_cylinder = the red cylinder. Distractors: TWO distractors: (a) a blue cylinder lying immediately left of the target red cylinder under the gripper (must not be picked: at f288 the jaws close on the red one; at f365 the blue one is still on the seabed); (b) a large red-rimmed drum/tank in the early frames (not a cylinder, not the target). Instance reference is by colour (red) + position (the small cylinder next to the blue one under the gripper). Auxiliary evidence used only as corroboration: close=269, dvl_h min=0.2333@289, ascent onset(10%)=313; key frames dvl_h: 0.3168/0.2878/0.2340/0.4043.",
+  "objects": [
+    {
+      "object_id": "robot",
+      "category": "agent",
+      "description": "the robot"
+    },
+    {
+      "object_id": "red_cylinder",
+      "category": "cylinder",
+      "color": "red",
+      "description": "the red cylinder"
+    }
+  ],
+  "relations": [
+    [
+      "OnSeabed",
+      "red_cylinder"
+    ],
+    [
+      "InGripper",
+      "red_cylinder"
+    ],
+    [
+      "Lifted",
+      "red_cylinder"
+    ],
+    [
+      "NextTo",
+      "robot",
+      "red_cylinder"
+    ]
+  ],
+  "frames": [
+    {
+      "frame_index": 221,
+      "timestamp_seconds": 22.1,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "start: robot above the seabed; red cylinder (with a blue distractor beside it) visible in the lit patch; no approach"
+    },
+    {
+      "frame_index": 254,
+      "timestamp_seconds": 25.4,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "approach: gripper in pre-grasp position over the red/blue pair, jaws open; NextTo=true"
+    },
+    {
+      "frame_index": 288,
+      "timestamp_seconds": 28.8,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review+aux_dvl_h"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review+aux_gripper_signal"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "grasp: jaws closed (close f269); red cylinder held at seabed level (dvl_h=0.2340 vs min 0.2333); OnSeabed=true"
+    },
+    {
+      "frame_index": 365,
+      "timestamp_seconds": 36.5,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review+aux_gripper_signal"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review+aux_dvl_h"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "lift: red cylinder carried up; blue distractor remains on the seabed far below; Lifted=true"
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "protocol_version": "usim-enact-v0.2",
+  "episode_key": "usim_train_episode_000104",
+  "source_split": "train",
+  "episode_index": 104,
+  "task_index": 1,
+  "task_text": "Pick up the pipe",
+  "label_source": "agent_visual_review",
+  "annotation_status": "reviewed",
+  "notes": "v0.2 annotation (reviewer-a, batch A). Task: Pick up the pipe. (a) NextTo 采用 v0.2 approach 语义：机器人末端接近物体、尚未抓住；抓住后恒 false；不是纯几何距离。key2 取夹爪 close 事件前 15 帧（事件锚定），key3/key4 恒 false。 (b) frames: f'194'=start; f'262'=approach; f'292'=grasp; f'364'=lift. (c) L=5 route: L=4。无 transfer/box、无 open 事件（grasp 后一直夹到 episode 结束），release_settle 不成立；touching 候选是 close+2（f279，package 提议），落在夹爪事件 ±10 内、且 ego 渲染保持段跨过 close（f270-287 同一画面）→ 接触不可作为稳定可辨状态。故按规范退回 4 帧、仅生成 L=3/4 题。 (d) reference/distractors: 场景中未见同类灰色管状干扰物；目标 pipe 为画面下方沙面上的灰色长管。 (e) auxiliary evidence: 夹爪 close f277（仅辅助锚定 key2/key3）；dvl_h 最低 0.2489 m、上浮起点≈f320（仅辅助 key4 选帧，未单独作 Lifted 真值）；wrist 用于确认 f262 尚未夹住、f292 已夹住。 Hard rules: every key frame is a stable render (see checks.json render_run), adjacent key frames are >= 2 render updates apart (close=277, ascent_onset=320); no timestamps/frame numbers/model outputs used for selection. Unknown 不允许进 scope：四条关系在四个关键帧都可判定。",
+  "objects": [
+    {
+      "object_id": "robot",
+      "category": "agent",
+      "description": "the robot"
+    },
+    {
+      "object_id": "pipe",
+      "category": "pipe",
+      "description": "the grey pipe"
+    }
+  ],
+  "relations": [
+    [
+      "OnSeabed",
+      "pipe"
+    ],
+    [
+      "InGripper",
+      "pipe"
+    ],
+    [
+      "Lifted",
+      "pipe"
+    ],
+    [
+      "NextTo",
+      "robot",
+      "pipe"
+    ]
+  ],
+  "frames": [
+    {
+      "frame_index": 194,
+      "timestamp_seconds": 19.4,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "pipe"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "pipe"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "pipe"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "pipe"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "start: pipe 平放在亮色沙面上、完整可见；夹爪在其上方约 20 px（ego 帧坐标）处，张开、未接触；close 事件 f277 前 83 帧"
+    },
+    {
+      "frame_index": 262,
+      "timestamp_seconds": 26.2,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "pipe"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "pipe"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "pipe"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "pipe"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "approach: close(277)-15 帧；夹爪已下降到 pipe 上方（指尖距 pipe ≈5-10 px，ego 可见）；夹爪张开、pipe 仍平贴沙面；grip 信号 0.000"
+    },
+    {
+      "frame_index": 292,
+      "timestamp_seconds": 29.2,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "pipe"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "pipe"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "pipe"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "pipe"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "grasp: close(277)+15 帧；夹爪已合拢夹住 pipe 上端；pipe 未离底（下端仍贴沙面，无 ≥半管宽的可见间隙）；dvl_h=0.26（本 episode 最低 0.2489，主上浮在 f320 之后）"
+    },
+    {
+      "frame_index": 364,
+      "timestamp_seconds": 36.4,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "pipe"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "pipe"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "Lifted",
+          "arguments": [
+            "pipe"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "pipe"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "lift: ascent onset(320)+44 帧；dvl_h=0.40（离底 +15 cm）；ego 可见 pipe 最低点与沙面之间有明显间隙（约 8-12 px，>半管宽 ≈5 px），无接触阴影；仍被夹持"
+    }
+  ]
+}
