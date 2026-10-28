@@ -1,0 +1,27 @@
+{
+  "independent_prepared": {
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "ok": true,
+    "scope": "prepared_inputs",
+    "execution_verified": false
+  },
+  "independent_complete": {
+    "exit_code": 2,
+    "expected_exit_code": 2,
+    "ok": false,
+    "scope": "complete_run",
+    "execution_verified": false
+  },
+  "driver_verify": {
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "ok": true,
+    "scope": "prepared_inputs",
+    "execution_verified": false
+  },
+  "driver_analyse_incomplete": {
+    "exit_code": 2,
+    "expected_exit_code": 2
+  }
+}

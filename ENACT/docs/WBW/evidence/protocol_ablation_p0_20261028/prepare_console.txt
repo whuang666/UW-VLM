@@ -1,0 +1,8 @@
+{
+  "state": "prepared",
+  "expected_formal_jobs": 588,
+  "expected_smoke_jobs": 8,
+  "plan_sha256": "0fc846e9dd354b5d2de62678fca072a17c5c04c460c00b2904dad8e20581f3b3",
+  "authenticated_api_called": false,
+  "execution_verified": false
+}

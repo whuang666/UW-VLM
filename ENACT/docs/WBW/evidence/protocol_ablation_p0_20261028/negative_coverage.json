@@ -1,0 +1,95 @@
+{
+  "negative_categories": 12,
+  "tests_run": 84,
+  "p0_tests": 30,
+  "network_calls": 0,
+  "passed": true,
+  "categories": [
+    {
+      "category": "empty_predictions",
+      "tests": [
+        "test_protocol_ablation_v1.CompletedEvidenceTests.test_empty_formal_predictions_never_pass"
+      ],
+      "passed": true
+    },
+    {
+      "category": "missing_question",
+      "tests": [
+        "test_protocol_ablation_v1.CompletedEvidenceTests.test_one_missing_question_rejected"
+      ],
+      "passed": true
+    },
+    {
+      "category": "duplicate_id",
+      "tests": [
+        "test_protocol_ablation_v1.CompletedEvidenceTests.test_duplicate_prediction_rejected"
+      ],
+      "passed": true
+    },
+    {
+      "category": "unknown_id",
+      "tests": [
+        "test_protocol_ablation_v1.CompletedEvidenceTests.test_unknown_id_rejected"
+      ],
+      "passed": true
+    },
+    {
+      "category": "qa_or_image_drift",
+      "tests": [
+        "test_protocol_ablation_v1.PreparationTests.test_qa_change_rejected",
+        "test_protocol_ablation_v1.PreparationTests.test_image_change_rejected"
+      ],
+      "passed": true
+    },
+    {
+      "category": "payload_tampering",
+      "tests": [
+        "test_protocol_ablation_v1.PreparationTests.test_payload_tampering_rejected"
+      ],
+      "passed": true
+    },
+    {
+      "category": "source_drift",
+      "tests": [
+        "test_protocol_ablation_v1.PreparationTests.test_source_drift_cannot_be_cancelled_by_body_hashes"
+      ],
+      "passed": true
+    },
+    {
+      "category": "prefix_echo",
+      "tests": [
+        "test_protocol_ablation_v1.CompletedEvidenceTests.test_prefix_echo_blocks_formal_execution"
+      ],
+      "passed": true
+    },
+    {
+      "category": "repaired_assembly",
+      "tests": [
+        "test_protocol_ablation_v1.CompletedEvidenceTests.test_repaired_assembly_rejected"
+      ],
+      "passed": true
+    },
+    {
+      "category": "http_failure_with_legal_list",
+      "tests": [
+        "test_protocol_ablation_v1.CompletedEvidenceTests.test_http_failure_with_legal_list_scores_zero"
+      ],
+      "passed": true
+    },
+    {
+      "category": "length_with_closed_list",
+      "tests": [
+        "test_protocol_ablation_v1.CompletedEvidenceTests.test_truncated_closed_list_does_not_pass_format_gate"
+      ],
+      "passed": true
+    },
+    {
+      "category": "resume_config_drift",
+      "tests": [
+        "test_protocol_ablation_v1.PreparationTests.test_resume_configuration_change_rejected_before_key"
+      ],
+      "passed": true
+    }
+  ],
+  "length_case_policy": "format gate fails and secondary scores zero; frozen primary parser behavior unchanged"
+}

@@ -20,7 +20,7 @@
 
 这些是开发集结果。B 有 8 条输出被 256 token 预算截断、1 条列表长度错误，不能将其低分直接归因为感知退化。D 应与 A 的共同 42 道 forward 题比较：A 为 0.8571，D 为 0.6905。
 
-同一16题 A/B 的1024与2048诊断均已完成：A 严格合法16/16，B均13/16；2048截断归零但仍未通过格式判据，停止单纯增加预算。补充规则 [extractable_permutation_v1](ENACT/docs/protocols/extractable_permutation_v1.md) 已独立冻结，2048下 A/B 均可提取16/16、固定分母 EM均14/16；现有开发分析仍为事后探索。下一步选择[前缀续写格式诊断](docs/workbuddyRead/usim_prefill_format_diagnostic_zh.md)，先做单题多图兼容性冒烟，再冻结新请求与输出拼接约定。统一预算尚未选定，294次重跑暂缓。预留 test 有4/10条形成标注并通过结构／源帧检查；1378的 lift 仍待独立视觉验收，尚无最终 test 成绩。最新记录见 [v0.2 任务总结与验收状态](ENACT/docs/WBW/ENACT-USIM-v0.2任务总结与验收状态-20261028.md)。2026-10-24 的 v0.1 三条件结果保留为历史实验。
+16题 A/B 预算与预填格式pilot、P1离线补评已完成：预填后 A/B均16/16严格合法、主副EM均14/16；B主EM从12/16到14/16来自格式恢复，不能当作感知提升。补充规则 [extractable_permutation_v1](ENACT/docs/protocols/extractable_permutation_v1.md) 保持原冻结。旧prefill核验器的空结果可通过缺陷已由独立的新版本替代用于后续准入；[P0交付与执行入口](docs/workbuddyRead/usim_protocol_ablation_p0_handoff_zh.md)包含84项通过测试、12类负例和严格的候选／执行阶段核验。新588次同预算双协议开发计划已离线准备，真实8次兼容性冒烟与正式请求均未启动，统一预算和最终test协议仍未定。预留 test 有4/10条通过结构／源帧检查，1378的 lift 仍待独立视觉验收。最新记录见 [v0.2 任务总结与验收状态](ENACT/docs/WBW/ENACT-USIM-v0.2任务总结与验收状态-20261028.md)。2026-10-24 的 v0.1 结果保留为历史实验。
 
 ## 目录与阅读入口
 

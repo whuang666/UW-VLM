@@ -1,0 +1,23 @@
+{
+  "ok": false,
+  "scope": "complete_run",
+  "execution_verified": false,
+  "errors": [
+    "execution freeze failed"
+  ],
+  "file_freeze": {
+    "ok": true,
+    "changed": [],
+    "missing": [],
+    "errors": []
+  },
+  "request_reconstruction": {},
+  "execution_freeze": {
+    "ok": false,
+    "changed": [],
+    "missing": [],
+    "errors": [
+      "[Errno 2] No such file or directory: 'E:\\\\code\\\\UW-VLM\\\\ENACT\\\\data\\\\usim_enact\\\\runs\\\\qwen3.8-max\\\\v02_protocol_ablation2048_dev_v1\\\\execution.freeze.json'"
+    ]
+  }
+}

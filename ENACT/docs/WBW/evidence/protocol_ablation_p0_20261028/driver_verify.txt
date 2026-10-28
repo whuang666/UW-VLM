@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "scope": "prepared_inputs",
+  "execution_verified": false,
+  "errors": [],
+  "file_freeze": {
+    "ok": true,
+    "changed": [],
+    "missing": [],
+    "errors": []
+  },
+  "request_reconstruction": {}
+}
