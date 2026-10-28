@@ -56,6 +56,15 @@
 - 重新冻结为 `freeze_usim-enact-v0.2_20261027b`：13 组 **1818 文件**（首版 1374 + B 的 images 432 / qa 2 / inputs 4 / baselines 6），payload `6d14fb83…`，`--verify` exit 0、`--self-test-v02` 7/7。
 - 文档：v0.2 构建报告新增 §7.1（B 构建与校验）、条件矩阵与 §9 命令更新、§10 新增"数字放大不增加像素信息"等 2 条限制；协议证据与 README/next_steps 同步冻结与 B 状态。
 
+## 2026-10-28（P1 离线补评：预填只修格式，不提升答案）
+
+- 新增 `report_prefill_pilot_accuracy.py`：对现有 32 条响应事后评分，**0 次新调用**；原预测只读（运行前后哈希一致），prefill 用**派生**评分输入（`derived/<protocol>_<cond>/predictions.jsonl`），并给 stock `evaluate.py` 喂 16 题 QA 子集以免用 120 题全量导致错误 EM。
+- 结果：A 严格 14/16 → 14/16；B **12/16 → 14/16**（只预填对 2、只无预填对 0）；副指标 EM 两侧均 14/16，16 题的提取排列**逐题一致**；stock evaluator 给出相同的 0.875 / 0.75，派生链与主评分器一致。
+- 结论：**B 的严格分数上升完全来自格式恢复，答案内容未变**；不能据此说预填改善了感知。
+- 更正事实：2048 三条格式失败的结尾列表并非全对——`ea4ca751` 结尾 `[3,1,2]`，gt `[1,3,2]`，**合法但答错**。
+- 收录本轮计划与审计材料：`docs/workbuddyRead/usim_prefill_accuracy_and_test_long_plan_zh.md`、`usim_prefill_format_diagnostic_zh.md`（后者被预填冻结清单引用，此前未入库）、`evidence/prefill_long_plan_audit_20261028.json`、`evidence/prefix_format_review_20261028.json`。
+- P0（新核验器 + 负例测试 + 双协议驱动）与 588 次对照仍未启动。
+
 ## 2026-10-28（前缀续写格式诊断：gate 通过，但属协议变更）
 
 - 新增 `run_prefill_format_diagnostic.py`：在冻结请求末尾追加 `{"role":"assistant","content":"[","partial":true}`，评分对象固定为 `"[" + raw_completion`；不改题干/图片/模型/解码。凭据从环境或用户级环境变量读取，不打印不落盘。

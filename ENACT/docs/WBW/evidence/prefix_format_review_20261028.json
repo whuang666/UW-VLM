@@ -1,0 +1,64 @@
+{
+  "checked_at": "2026-10-28T17:25:29+08:00",
+  "scope": "read-only response comparison, documentation lookup and independent visual review; no model call",
+  "model_requests_this_action": 0,
+  "invalid_ids": {
+    "v02_budget1024_diag_v1": [
+      "usim_train_episode_000533_forward_world_modeling_4_steps_cda525ee",
+      "usim_train_episode_000653_forward_world_modeling_4_steps_45a760d1",
+      "usim_train_episode_001304_forward_world_modeling_5_steps_827185aa"
+    ],
+    "v02_budget2048_diag_v1": [
+      "usim_train_episode_000200_forward_world_modeling_4_steps_ea4ca751",
+      "usim_train_episode_000653_forward_world_modeling_4_steps_45a760d1",
+      "usim_train_episode_001304_forward_world_modeling_5_steps_827185aa"
+    ]
+  },
+  "invalid_id_sets_equal": false,
+  "source_sha256": {
+    "ENACT/data/usim_enact/runs/qwen3.8-max/v02_budget1024_diag_v1/B_zoom/report.items.jsonl": "7725bc2def686be990c44341d6d2c0d040280c83bd1355ca37715e03c066cdb3",
+    "ENACT/data/usim_enact/runs/qwen3.8-max/v02_budget1024_diag_v1/B_zoom/predictions.jsonl": "9718d15806cb13aa7eb31fa9abe38c882718ea3a33dfa8e8b0c6a0c10e50534d",
+    "ENACT/data/usim_enact/runs/qwen3.8-max/v02_budget2048_diag_v1/B_zoom/report.items.jsonl": "c6c65ea8357da89698ec92d5c816735b0d7e3790c31763a5261ce8dc4cc9b030",
+    "ENACT/data/usim_enact/runs/qwen3.8-max/v02_budget2048_diag_v1/B_zoom/predictions.jsonl": "5ced6fbff6fca1fab4bcbb82873916c898526802ec33253a11c98d271323fc70",
+    "ENACT/data/usim_enact/_expansion/annotation_work/test_reserve/usim_train_episode_001378.json": "f921640a1d3ed7ef28b223d137d981794570caf7b3fd039492cd96f2e3bdd5ef"
+  },
+  "provider_documentation": {
+    "url": "https://help.aliyun.com/zh/model-studio/partial-mode",
+    "checked_in_this_session": true,
+    "documented_model": "Qwen3.8-Max, non-thinking mode",
+    "assistant_message": {
+      "role": "assistant",
+      "content": "[",
+      "partial": true
+    },
+    "assembly_example": "complete_code = prefix + generated_code",
+    "account_multimodal_preflight_performed": false,
+    "prefix_is_not_a_json_schema_constraint": true
+  },
+  "episode_001378_review": {
+    "source_video_sha256": "c4ee44ac475cf07f3d7af13862aae6ac4f3cba64f51d52ee8dc215bd82b58a4e",
+    "frames_read": [
+      60,
+      176,
+      206,
+      237,
+      250,
+      448
+    ],
+    "native_frame_png_sha256": {
+      "60": "b5354a5999b54a95e9ee59a8beb98947ffefdb22cfa403edfdaebce36d179cd7",
+      "176": "18c53803690aea7275f78bafcda5248fca37e7516d4517520d68f3cfcb95ad96",
+      "206": "be58a35a112a6fb47ae9d2f7ac57c9aa7d4e5eede55be2fd90c9fcc962326cb4",
+      "237": "104c3394d08de0038a55d5df6556dc0999d3be845d9968958e6f94bc4667b856",
+      "250": "c56e9314fb912f0a5effa7bc1e08cb2d6eaae138b728a918b1f259ac5d575875",
+      "448": "384725eedb7cca01c38959d11ed02116e022dce64a357a81ab68ef49f40b047a"
+    },
+    "image_transform_for_grid": "2x nearest-neighbor display only; native frames also inspected",
+    "independent_lift_acceptance": "pending",
+    "reason": "This review cannot confirm that ego f250 shows the required separation of at least half an object width; DVL corroborates robot motion, not object clearance.",
+    "existing_annotation_unchanged": true,
+    "structural_check_is_not_independent_visual_acceptance": true
+  },
+  "chosen_next_action": "A: single-item multimodal partial-mode preflight, then freeze new request/assembly protocol before the fixed 32-request diagnostic",
+  "full_294_matrix": "deferred"
+}

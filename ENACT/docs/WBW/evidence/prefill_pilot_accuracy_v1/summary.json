@@ -1,0 +1,103 @@
+{
+  "schema": "usim-prefill-pilot-accuracy/v1",
+  "post_hoc": true,
+  "api_requests": 0,
+  "primary_metric": "usim_strict_v0.3 (unchanged, full denominator)",
+  "secondary_metric": "extractable_permutation_v1",
+  "note": "16 items per condition; paired pilot only. Does not rewrite the format gate and cannot establish that prefill is neutral.",
+  "conditions": {
+    "A": {
+      "N": 16,
+      "episodes": 13,
+      "no_prefill": {
+        "strict_EM": 0.875,
+        "secondary_EM": 0.875,
+        "extractable_rate": 1.0,
+        "truncation_rate": 0.0,
+        "strict_reasons": {
+          "ok": 16
+        },
+        "stock_evaluate_report": "ENACT\\docs\\WBW\\evidence\\prefill_pilot_accuracy_v1\\derived\\no_prefill_A_full_image\\report.json",
+        "stock_evaluate_exit": 0,
+        "stock_evaluate_EM": 0.875
+      },
+      "prefill": {
+        "strict_EM": 0.875,
+        "secondary_EM": 0.875,
+        "extractable_rate": 1.0,
+        "truncation_rate": 0.0,
+        "strict_reasons": {
+          "ok": 16
+        },
+        "stock_evaluate_report": "ENACT\\docs\\WBW\\evidence\\prefill_pilot_accuracy_v1\\derived\\prefill_A_full_image\\report.json",
+        "stock_evaluate_exit": 0,
+        "stock_evaluate_EM": 0.875
+      },
+      "paired": {
+        "both_correct": 14,
+        "only_prefill": 0,
+        "only_no_prefill": 0,
+        "both_wrong": 2
+      },
+      "extractable_pairs": 16,
+      "extractable_agreement_true": 16,
+      "strict_delta_EM": 0.0,
+      "secondary_delta_EM": 0.0,
+      "token_totals": {
+        "no_prefill": 154,
+        "prefill": 138
+      }
+    },
+    "B": {
+      "N": 16,
+      "episodes": 13,
+      "no_prefill": {
+        "strict_EM": 0.75,
+        "secondary_EM": 0.875,
+        "extractable_rate": 1.0,
+        "truncation_rate": 0.0,
+        "strict_reasons": {
+          "extra_text": 3,
+          "ok": 13
+        },
+        "stock_evaluate_report": "ENACT\\docs\\WBW\\evidence\\prefill_pilot_accuracy_v1\\derived\\no_prefill_B_zoom\\report.json",
+        "stock_evaluate_exit": 0,
+        "stock_evaluate_EM": 0.75
+      },
+      "prefill": {
+        "strict_EM": 0.875,
+        "secondary_EM": 0.875,
+        "extractable_rate": 1.0,
+        "truncation_rate": 0.0,
+        "strict_reasons": {
+          "ok": 16
+        },
+        "stock_evaluate_report": "ENACT\\docs\\WBW\\evidence\\prefill_pilot_accuracy_v1\\derived\\prefill_B_zoom\\report.json",
+        "stock_evaluate_exit": 0,
+        "stock_evaluate_EM": 0.875
+      },
+      "paired": {
+        "both_correct": 12,
+        "only_prefill": 2,
+        "only_no_prefill": 0,
+        "both_wrong": 2
+      },
+      "extractable_pairs": 16,
+      "extractable_agreement_true": 16,
+      "strict_delta_EM": 0.125,
+      "secondary_delta_EM": 0.0,
+      "token_totals": {
+        "no_prefill": 3194,
+        "prefill": 138
+      }
+    }
+  },
+  "sources_unchanged": true,
+  "source_sha256": {
+    "ENACT\\data\\usim_enact\\runs\\qwen3.8-max\\v02_budget2048_diag_v1\\A_full_image\\predictions.jsonl": "7bf5c9f2b733ddd3f10fa4c13fb78d2a9b2ba39fa848e9846bd9e1f997a64c3d",
+    "ENACT\\data\\usim_enact\\runs\\qwen3.8-max\\v02_prefill2048_diag_v1\\A_full_image\\predictions.jsonl": "3ffd52ac43e57dda9544bd3e055e5418f8f933a224d879aef7073450a3f65d92",
+    "ENACT\\data\\usim_enact\\runs\\qwen3.8-max\\v02_budget2048_diag_v1\\B_zoom\\predictions.jsonl": "5ced6fbff6fca1fab4bcbb82873916c898526802ec33253a11c98d271323fc70",
+    "ENACT\\data\\usim_enact\\runs\\qwen3.8-max\\v02_prefill2048_diag_v1\\B_zoom\\predictions.jsonl": "06e3e61ba3c2734d32c90b38876b3b0190961c4c136cc79c3404cb6e23b1336f"
+  },
+  "qa_sha256": "f3cf687c613133b26d72064e9b370997e786dbf4d1b920089d4b07b1d5d45c2f"
+}

@@ -1,0 +1,1045 @@
+{
+  "checked_at": "2026-10-28T17:55:53+08:00",
+  "workspace_head": "08fbd2fc118c63298fd723202ab5222716c60848",
+  "scope": "read-only planning audit; post-hoc development analysis",
+  "new_model_api_requests": 0,
+  "sources_unchanged": true,
+  "source_sha256": {
+    "ENACT/scripts/usim/run_prefill_format_diagnostic.py": "25d37a9be987a646fcd0c6e9b2fb4bdadeb087879ff2c56d2e8334d623588211",
+    "tools/verify_prefill_freeze.py": "5de7e0e09d0105e43ed93ad308c0b698a9b289ff5c7402a6a3f79530efb8a05a",
+    "ENACT/docs/protocols/prefill2048_request.freeze.json": "ab3128c5f2b5dbc1bcb3b482d3968a8dd14d2fcff23089dc446b288b7d3922e5",
+    "ENACT/data/usim_enact/runs/qwen3.8-max/v02_budget2048_diag_v1/A_full_image/predictions.jsonl": "7bf5c9f2b733ddd3f10fa4c13fb78d2a9b2ba39fa848e9846bd9e1f997a64c3d",
+    "ENACT/data/usim_enact/runs/qwen3.8-max/v02_prefill2048_diag_v1/A_full_image/predictions.jsonl": "3ffd52ac43e57dda9544bd3e055e5418f8f933a224d879aef7073450a3f65d92",
+    "ENACT/data/usim_enact/runs/qwen3.8-max/v02_budget2048_diag_v1/B_zoom/predictions.jsonl": "5ced6fbff6fca1fab4bcbb82873916c898526802ec33253a11c98d271323fc70",
+    "ENACT/data/usim_enact/runs/qwen3.8-max/v02_prefill2048_diag_v1/B_zoom/predictions.jsonl": "06e3e61ba3c2734d32c90b38876b3b0190961c4c136cc79c3404cb6e23b1336f",
+    "ENACT/data/usim_enact/runs/qwen3.8-max/v02_budget2048_diag_v1/inputs/A.jsonl": "043dc5a3958e1e4f9af82e5e77c494561f4a002d88c6751ca18115b504883b6d",
+    "ENACT/data/usim_enact/runs/qwen3.8-max/v02_budget2048_diag_v1/inputs/B.jsonl": "09b360906a9061c3ef879ee101727e016f24e39e120187be05620c5751a8fd90"
+  },
+  "pilot": {
+    "A": {
+      "N": 16,
+      "counts": {
+        "no_prefill_strict_correct": 14,
+        "no_prefill_secondary_correct": 14,
+        "prefill_strict_correct": 14,
+        "prefill_secondary_correct": 14,
+        "secondary_answer_agreement": 16,
+        "both_strict_correct": 14,
+        "both_strict_wrong": 2
+      },
+      "rows": [
+        {
+          "id": "usim_train_episode_001304_forward_world_modeling_3_steps_404d8bfb",
+          "type": "forward_world_modeling_3_steps",
+          "gt": [
+            2,
+            1
+          ],
+          "no_prefill_strict": [
+            2,
+            1
+          ],
+          "prefill_strict": [
+            2,
+            1
+          ],
+          "no_prefill_secondary": [
+            2,
+            1
+          ],
+          "prefill_secondary": [
+            2,
+            1
+          ]
+        },
+        {
+          "id": "usim_train_episode_000175_forward_world_modeling_3_steps_d2b5381e",
+          "type": "forward_world_modeling_3_steps",
+          "gt": [
+            1,
+            2
+          ],
+          "no_prefill_strict": [
+            1,
+            2
+          ],
+          "prefill_strict": [
+            1,
+            2
+          ],
+          "no_prefill_secondary": [
+            1,
+            2
+          ],
+          "prefill_secondary": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "usim_train_episode_000287_forward_world_modeling_3_steps_61d06247",
+          "type": "forward_world_modeling_3_steps",
+          "gt": [
+            2,
+            1
+          ],
+          "no_prefill_strict": [
+            2,
+            1
+          ],
+          "prefill_strict": [
+            2,
+            1
+          ],
+          "no_prefill_secondary": [
+            2,
+            1
+          ],
+          "prefill_secondary": [
+            2,
+            1
+          ]
+        },
+        {
+          "id": "usim_train_episode_000552_forward_world_modeling_3_steps_b318deca",
+          "type": "forward_world_modeling_3_steps",
+          "gt": [
+            2,
+            1
+          ],
+          "no_prefill_strict": [
+            2,
+            1
+          ],
+          "prefill_strict": [
+            2,
+            1
+          ],
+          "no_prefill_secondary": [
+            2,
+            1
+          ],
+          "prefill_secondary": [
+            2,
+            1
+          ]
+        },
+        {
+          "id": "usim_train_episode_000200_forward_world_modeling_4_steps_ea4ca751",
+          "type": "forward_world_modeling_4_steps",
+          "gt": [
+            1,
+            3,
+            2
+          ],
+          "no_prefill_strict": [
+            3,
+            1,
+            2
+          ],
+          "prefill_strict": [
+            3,
+            1,
+            2
+          ],
+          "no_prefill_secondary": [
+            3,
+            1,
+            2
+          ],
+          "prefill_secondary": [
+            3,
+            1,
+            2
+          ]
+        },
+        {
+          "id": "usim_train_episode_000653_forward_world_modeling_4_steps_45a760d1",
+          "type": "forward_world_modeling_4_steps",
+          "gt": [
+            3,
+            2,
+            1
+          ],
+          "no_prefill_strict": [
+            3,
+            2,
+            1
+          ],
+          "prefill_strict": [
+            3,
+            2,
+            1
+          ],
+          "no_prefill_secondary": [
+            3,
+            2,
+            1
+          ],
+          "prefill_secondary": [
+            3,
+            2,
+            1
+          ]
+        },
+        {
+          "id": "usim_train_episode_000533_forward_world_modeling_4_steps_cda525ee",
+          "type": "forward_world_modeling_4_steps",
+          "gt": [
+            3,
+            2,
+            1
+          ],
+          "no_prefill_strict": [
+            2,
+            1,
+            3
+          ],
+          "prefill_strict": [
+            2,
+            1,
+            3
+          ],
+          "no_prefill_secondary": [
+            2,
+            1,
+            3
+          ],
+          "prefill_secondary": [
+            2,
+            1,
+            3
+          ]
+        },
+        {
+          "id": "usim_train_episode_000587_forward_world_modeling_4_steps_7d7c0f2e",
+          "type": "forward_world_modeling_4_steps",
+          "gt": [
+            3,
+            2,
+            1
+          ],
+          "no_prefill_strict": [
+            3,
+            2,
+            1
+          ],
+          "prefill_strict": [
+            3,
+            2,
+            1
+          ],
+          "no_prefill_secondary": [
+            3,
+            2,
+            1
+          ],
+          "prefill_secondary": [
+            3,
+            2,
+            1
+          ]
+        },
+        {
+          "id": "usim_train_episode_001318_forward_world_modeling_5_steps_a1dcd6d1",
+          "type": "forward_world_modeling_5_steps",
+          "gt": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "no_prefill_strict": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "prefill_strict": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "no_prefill_secondary": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "prefill_secondary": [
+            4,
+            3,
+            1,
+            2
+          ]
+        },
+        {
+          "id": "usim_train_episode_001304_forward_world_modeling_5_steps_827185aa",
+          "type": "forward_world_modeling_5_steps",
+          "gt": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "no_prefill_strict": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "prefill_strict": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "no_prefill_secondary": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "prefill_secondary": [
+            4,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "usim_train_episode_000556_inverse_world_modeling_3_steps_9b9af4a6",
+          "type": "inverse_world_modeling_3_steps",
+          "gt": [
+            1,
+            2
+          ],
+          "no_prefill_strict": [
+            1,
+            2
+          ],
+          "prefill_strict": [
+            1,
+            2
+          ],
+          "no_prefill_secondary": [
+            1,
+            2
+          ],
+          "prefill_secondary": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "usim_train_episode_000756_inverse_world_modeling_3_steps_1bea44d4",
+          "type": "inverse_world_modeling_3_steps",
+          "gt": [
+            2,
+            1
+          ],
+          "no_prefill_strict": [
+            2,
+            1
+          ],
+          "prefill_strict": [
+            2,
+            1
+          ],
+          "no_prefill_secondary": [
+            2,
+            1
+          ],
+          "prefill_secondary": [
+            2,
+            1
+          ]
+        },
+        {
+          "id": "usim_train_episode_000104_inverse_world_modeling_4_steps_a53e2cc2",
+          "type": "inverse_world_modeling_4_steps",
+          "gt": [
+            2,
+            1,
+            3
+          ],
+          "no_prefill_strict": [
+            2,
+            1,
+            3
+          ],
+          "prefill_strict": [
+            2,
+            1,
+            3
+          ],
+          "no_prefill_secondary": [
+            2,
+            1,
+            3
+          ],
+          "prefill_secondary": [
+            2,
+            1,
+            3
+          ]
+        },
+        {
+          "id": "usim_train_episode_000297_inverse_world_modeling_4_steps_c2832bb3",
+          "type": "inverse_world_modeling_4_steps",
+          "gt": [
+            1,
+            3,
+            2
+          ],
+          "no_prefill_strict": [
+            1,
+            3,
+            2
+          ],
+          "prefill_strict": [
+            1,
+            3,
+            2
+          ],
+          "no_prefill_secondary": [
+            1,
+            3,
+            2
+          ],
+          "prefill_secondary": [
+            1,
+            3,
+            2
+          ]
+        },
+        {
+          "id": "usim_train_episode_001318_inverse_world_modeling_5_steps_a1dcd6d1",
+          "type": "inverse_world_modeling_5_steps",
+          "gt": [
+            4,
+            3,
+            2,
+            1
+          ],
+          "no_prefill_strict": [
+            4,
+            3,
+            2,
+            1
+          ],
+          "prefill_strict": [
+            4,
+            3,
+            2,
+            1
+          ],
+          "no_prefill_secondary": [
+            4,
+            3,
+            2,
+            1
+          ],
+          "prefill_secondary": [
+            4,
+            3,
+            2,
+            1
+          ]
+        },
+        {
+          "id": "usim_train_episode_001304_inverse_world_modeling_5_steps_827185aa",
+          "type": "inverse_world_modeling_5_steps",
+          "gt": [
+            2,
+            4,
+            1,
+            3
+          ],
+          "no_prefill_strict": [
+            2,
+            4,
+            1,
+            3
+          ],
+          "prefill_strict": [
+            2,
+            4,
+            1,
+            3
+          ],
+          "no_prefill_secondary": [
+            2,
+            4,
+            1,
+            3
+          ],
+          "prefill_secondary": [
+            2,
+            4,
+            1,
+            3
+          ]
+        }
+      ],
+      "strict_delta_EM": 0.0,
+      "secondary_delta_EM": 0.0
+    },
+    "B": {
+      "N": 16,
+      "counts": {
+        "no_prefill_strict_correct": 12,
+        "no_prefill_secondary_correct": 14,
+        "prefill_strict_correct": 14,
+        "prefill_secondary_correct": 14,
+        "secondary_answer_agreement": 16,
+        "both_strict_correct": 12,
+        "both_strict_wrong": 2,
+        "only_prefill_strict_correct": 2
+      },
+      "rows": [
+        {
+          "id": "usim_train_episode_001304_forward_world_modeling_3_steps_404d8bfb",
+          "type": "forward_world_modeling_3_steps",
+          "gt": [
+            2,
+            1
+          ],
+          "no_prefill_strict": [
+            2,
+            1
+          ],
+          "prefill_strict": [
+            2,
+            1
+          ],
+          "no_prefill_secondary": [
+            2,
+            1
+          ],
+          "prefill_secondary": [
+            2,
+            1
+          ]
+        },
+        {
+          "id": "usim_train_episode_000175_forward_world_modeling_3_steps_d2b5381e",
+          "type": "forward_world_modeling_3_steps",
+          "gt": [
+            1,
+            2
+          ],
+          "no_prefill_strict": [
+            1,
+            2
+          ],
+          "prefill_strict": [
+            1,
+            2
+          ],
+          "no_prefill_secondary": [
+            1,
+            2
+          ],
+          "prefill_secondary": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "usim_train_episode_000287_forward_world_modeling_3_steps_61d06247",
+          "type": "forward_world_modeling_3_steps",
+          "gt": [
+            2,
+            1
+          ],
+          "no_prefill_strict": [
+            2,
+            1
+          ],
+          "prefill_strict": [
+            2,
+            1
+          ],
+          "no_prefill_secondary": [
+            2,
+            1
+          ],
+          "prefill_secondary": [
+            2,
+            1
+          ]
+        },
+        {
+          "id": "usim_train_episode_000552_forward_world_modeling_3_steps_b318deca",
+          "type": "forward_world_modeling_3_steps",
+          "gt": [
+            2,
+            1
+          ],
+          "no_prefill_strict": [
+            2,
+            1
+          ],
+          "prefill_strict": [
+            2,
+            1
+          ],
+          "no_prefill_secondary": [
+            2,
+            1
+          ],
+          "prefill_secondary": [
+            2,
+            1
+          ]
+        },
+        {
+          "id": "usim_train_episode_000200_forward_world_modeling_4_steps_ea4ca751",
+          "type": "forward_world_modeling_4_steps",
+          "gt": [
+            1,
+            3,
+            2
+          ],
+          "no_prefill_strict": null,
+          "prefill_strict": [
+            3,
+            1,
+            2
+          ],
+          "no_prefill_secondary": [
+            3,
+            1,
+            2
+          ],
+          "prefill_secondary": [
+            3,
+            1,
+            2
+          ]
+        },
+        {
+          "id": "usim_train_episode_000653_forward_world_modeling_4_steps_45a760d1",
+          "type": "forward_world_modeling_4_steps",
+          "gt": [
+            3,
+            2,
+            1
+          ],
+          "no_prefill_strict": null,
+          "prefill_strict": [
+            3,
+            2,
+            1
+          ],
+          "no_prefill_secondary": [
+            3,
+            2,
+            1
+          ],
+          "prefill_secondary": [
+            3,
+            2,
+            1
+          ]
+        },
+        {
+          "id": "usim_train_episode_000533_forward_world_modeling_4_steps_cda525ee",
+          "type": "forward_world_modeling_4_steps",
+          "gt": [
+            3,
+            2,
+            1
+          ],
+          "no_prefill_strict": [
+            3,
+            1,
+            2
+          ],
+          "prefill_strict": [
+            3,
+            1,
+            2
+          ],
+          "no_prefill_secondary": [
+            3,
+            1,
+            2
+          ],
+          "prefill_secondary": [
+            3,
+            1,
+            2
+          ]
+        },
+        {
+          "id": "usim_train_episode_000587_forward_world_modeling_4_steps_7d7c0f2e",
+          "type": "forward_world_modeling_4_steps",
+          "gt": [
+            3,
+            2,
+            1
+          ],
+          "no_prefill_strict": [
+            3,
+            2,
+            1
+          ],
+          "prefill_strict": [
+            3,
+            2,
+            1
+          ],
+          "no_prefill_secondary": [
+            3,
+            2,
+            1
+          ],
+          "prefill_secondary": [
+            3,
+            2,
+            1
+          ]
+        },
+        {
+          "id": "usim_train_episode_001318_forward_world_modeling_5_steps_a1dcd6d1",
+          "type": "forward_world_modeling_5_steps",
+          "gt": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "no_prefill_strict": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "prefill_strict": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "no_prefill_secondary": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "prefill_secondary": [
+            4,
+            3,
+            1,
+            2
+          ]
+        },
+        {
+          "id": "usim_train_episode_001304_forward_world_modeling_5_steps_827185aa",
+          "type": "forward_world_modeling_5_steps",
+          "gt": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "no_prefill_strict": null,
+          "prefill_strict": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "no_prefill_secondary": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "prefill_secondary": [
+            4,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "usim_train_episode_000556_inverse_world_modeling_3_steps_9b9af4a6",
+          "type": "inverse_world_modeling_3_steps",
+          "gt": [
+            1,
+            2
+          ],
+          "no_prefill_strict": [
+            1,
+            2
+          ],
+          "prefill_strict": [
+            1,
+            2
+          ],
+          "no_prefill_secondary": [
+            1,
+            2
+          ],
+          "prefill_secondary": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "usim_train_episode_000756_inverse_world_modeling_3_steps_1bea44d4",
+          "type": "inverse_world_modeling_3_steps",
+          "gt": [
+            2,
+            1
+          ],
+          "no_prefill_strict": [
+            2,
+            1
+          ],
+          "prefill_strict": [
+            2,
+            1
+          ],
+          "no_prefill_secondary": [
+            2,
+            1
+          ],
+          "prefill_secondary": [
+            2,
+            1
+          ]
+        },
+        {
+          "id": "usim_train_episode_000104_inverse_world_modeling_4_steps_a53e2cc2",
+          "type": "inverse_world_modeling_4_steps",
+          "gt": [
+            2,
+            1,
+            3
+          ],
+          "no_prefill_strict": [
+            2,
+            1,
+            3
+          ],
+          "prefill_strict": [
+            2,
+            1,
+            3
+          ],
+          "no_prefill_secondary": [
+            2,
+            1,
+            3
+          ],
+          "prefill_secondary": [
+            2,
+            1,
+            3
+          ]
+        },
+        {
+          "id": "usim_train_episode_000297_inverse_world_modeling_4_steps_c2832bb3",
+          "type": "inverse_world_modeling_4_steps",
+          "gt": [
+            1,
+            3,
+            2
+          ],
+          "no_prefill_strict": [
+            1,
+            3,
+            2
+          ],
+          "prefill_strict": [
+            1,
+            3,
+            2
+          ],
+          "no_prefill_secondary": [
+            1,
+            3,
+            2
+          ],
+          "prefill_secondary": [
+            1,
+            3,
+            2
+          ]
+        },
+        {
+          "id": "usim_train_episode_001318_inverse_world_modeling_5_steps_a1dcd6d1",
+          "type": "inverse_world_modeling_5_steps",
+          "gt": [
+            4,
+            3,
+            2,
+            1
+          ],
+          "no_prefill_strict": [
+            4,
+            3,
+            2,
+            1
+          ],
+          "prefill_strict": [
+            4,
+            3,
+            2,
+            1
+          ],
+          "no_prefill_secondary": [
+            4,
+            3,
+            2,
+            1
+          ],
+          "prefill_secondary": [
+            4,
+            3,
+            2,
+            1
+          ]
+        },
+        {
+          "id": "usim_train_episode_001304_inverse_world_modeling_5_steps_827185aa",
+          "type": "inverse_world_modeling_5_steps",
+          "gt": [
+            2,
+            4,
+            1,
+            3
+          ],
+          "no_prefill_strict": [
+            2,
+            4,
+            1,
+            3
+          ],
+          "prefill_strict": [
+            2,
+            4,
+            1,
+            3
+          ],
+          "no_prefill_secondary": [
+            2,
+            4,
+            1,
+            3
+          ],
+          "prefill_secondary": [
+            2,
+            4,
+            1,
+            3
+          ]
+        }
+      ],
+      "strict_delta_EM": 0.125,
+      "secondary_delta_EM": 0.0
+    }
+  },
+  "unprefilled_2048_format_failure_answers": [
+    {
+      "id": "usim_train_episode_000200_forward_world_modeling_4_steps_ea4ca751",
+      "gt": [
+        1,
+        3,
+        2
+      ],
+      "terminal_extracted": [
+        3,
+        1,
+        2
+      ],
+      "correct": false
+    },
+    {
+      "id": "usim_train_episode_000653_forward_world_modeling_4_steps_45a760d1",
+      "gt": [
+        3,
+        2,
+        1
+      ],
+      "terminal_extracted": [
+        3,
+        2,
+        1
+      ],
+      "correct": true
+    },
+    {
+      "id": "usim_train_episode_001304_forward_world_modeling_5_steps_827185aa",
+      "gt": [
+        4,
+        1,
+        2,
+        3
+      ],
+      "terminal_extracted": [
+        4,
+        1,
+        2,
+        3
+      ],
+      "correct": true
+    }
+  ],
+  "current_verifier": {
+    "exit_code": 0,
+    "report": {
+      "ok": true,
+      "errors": [],
+      "files": {
+        "ENACT/scripts/usim/run_prefill_format_diagnostic.py": "changed",
+        "ENACT/scripts/usim/run_inference.py": "ok",
+        "ENACT/scripts/usim/evaluate.py": "ok",
+        "ENACT/scripts/usim/extractable_v1.py": "ok",
+        "docs/workbuddyRead/usim_prefill_format_diagnostic_zh.md": "ok"
+      },
+      "request_bodies_checked": 32,
+      "request_bodies_mismatch": 0,
+      "payload_sha256": "86ba9f2d2448e6c7dd7bd140ff28da487d6d3aeb56685e9a285f22e9b478760d",
+      "note": "文件哈希记录冻结时刻的字节；诊断脚本此后有一次纯 CLI 改动，因此以 32 条请求体的 body_sha256 重建比对作为协议执行的直接证据。"
+    },
+    "manifest_payload_hash_independently_matches": true
+  },
+  "negative_probe": {
+    "fixture": "empty A/B predictions and placeholder smoke in temporary directory",
+    "exit_code": 0,
+    "ok": true,
+    "bodies_checked": 0,
+    "expected_behavior": "reject; zero checked bodies cannot satisfy the expected 32"
+  },
+  "summary_cli_probe": {
+    "exit_code": 1,
+    "missing_verify_freeze_attribute": true
+  },
+  "request_scopes": {
+    "dev": {
+      "QA": 84,
+      "forward": 42,
+      "episodes": 19,
+      "one_protocol_requests": 294,
+      "two_protocol_requests": 588
+    },
+    "val": {
+      "QA": 36,
+      "forward": 18,
+      "episodes": 8,
+      "one_protocol_requests": 126,
+      "two_protocol_requests": 252
+    }
+  },
+  "claim_limits": [
+    "Small development subset only; no equivalence or causal proof",
+    "Body reconstruction complements source freezing; it does not erase file drift",
+    "The ea4ca751 forward answer is extractable but wrong: [3,1,2] versus gt [1,3,2]"
+  ]
+}
