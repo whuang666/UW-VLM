@@ -1,0 +1,38 @@
+{
+  "schema": "usim-prefill-format-diagnostic/v1",
+  "created_at": "2026-10-28T17:38:32+08:00",
+  "run_dir": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\runs\\qwen3.8-max\\v02_prefill2048_diag_v1",
+  "request": {
+    "prefix": "[",
+    "partial": true,
+    "concat_rule": "completed = \"[\" + raw_completion"
+  },
+  "budget": 2048,
+  "secondary_metric": "extractable_permutation_v1",
+  "conditions": {
+    "A": {
+      "N": 16,
+      "answered": 16,
+      "truncated": 0,
+      "strict_valid": 16,
+      "extractable": 16,
+      "strict_reasons": {
+        "ok": 16
+      },
+      "prefix_echo": 0
+    },
+    "B": {
+      "N": 16,
+      "answered": 16,
+      "truncated": 0,
+      "strict_valid": 16,
+      "extractable": 16,
+      "strict_reasons": {
+        "ok": 16
+      },
+      "prefix_echo": 0
+    }
+  },
+  "budget_gate": "pass_on_fixed_subset",
+  "em_used": false
+}

@@ -1,0 +1,44 @@
+{
+  "schema": "usim-prefill-request-freeze/v1",
+  "freeze_id": "20261028_prefill2048",
+  "frozen": true,
+  "frozen_at": "2026-10-28T17:36:11+08:00",
+  "request_shape": {
+    "user_message": "identical to the frozen run (same question, format directive and images)",
+    "appended_message": {
+      "role": "assistant",
+      "content": "[",
+      "partial": true
+    },
+    "concat_rule": "completed_answer = \"[\" + raw_completion (raw bytes, no strip)",
+    "budget": 2048,
+    "temperature": 0.0,
+    "enable_thinking": false
+  },
+  "scoring": {
+    "primary": "usim_strict_v0.3 on the joined answer (unchanged)",
+    "secondary": "extractable_permutation_v1",
+    "em_used_for_selection": false,
+    "retry_policy": "no retry of format errors; every request stays in the denominator"
+  },
+  "smoke": {
+    "question": "usim_train_episode_000200_forward_world_modeling_4_steps_ea4ca751",
+    "http_status": 200,
+    "finish_reason": "stop",
+    "answers_match_prefix_echo": false,
+    "smoke_file_sha256": "81eebc322952182480a0a44266f68e3f9bfbf53ce36640f272f0e8162cded8a4"
+  },
+  "not_frozen_here": [
+    "test labels/inputs",
+    "model snapshot",
+    "the 294-request matrix protocol"
+  ],
+  "files_sha256": {
+    "ENACT/scripts/usim/run_prefill_format_diagnostic.py": "1cc96fa7cd6f5de8a115fa26cbfaf89d7e713b6b265a1effc1f8621f3f43fa57",
+    "ENACT/scripts/usim/run_inference.py": "4cfc3a5acdcdb1346e214f8473b44347cac1b2aa1653df31ba3d39c853dffad9",
+    "ENACT/scripts/usim/evaluate.py": "f18086e0afcedc45229c3247ceb73cd70090017b133fce6ddf5a3c1165a86a6a",
+    "ENACT/scripts/usim/extractable_v1.py": "ce07191a48fa7e2c2ef734e4d71fc6cc25cc1ae85eab27d2d5e9ac5a02700c85",
+    "docs/workbuddyRead/usim_prefill_format_diagnostic_zh.md": "4b45faadf040d2a906ed55caf330e03ea80d444eb81db1a7dc4733c345d0c24a"
+  },
+  "payload_sha256": "86ba9f2d2448e6c7dd7bd140ff28da487d6d3aeb56685e9a285f22e9b478760d"
+}
