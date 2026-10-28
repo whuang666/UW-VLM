@@ -1,7 +1,8 @@
 """Prepare or run the fixed v0.2 A/B output-budget diagnostic (16 pairs).
 
 Default: freeze inputs and run offline asset/scoring checks. ``--run`` sends at
-most 32 logical requests with a 1024-token output cap. Credentials come only from
+most 32 logical requests with a configurable output cap (default 1024; 2048 was run
+as a separate diagnostic). Credentials come only from
 VLM_API_KEY. Old runs, frozen inputs and inference/scoring code are never edited.
 """
 
@@ -110,7 +111,7 @@ def validate_destination(run_dir: Path) -> None:
             raise ValueError(f"Diagnostic output overlaps protected evidence: {run_dir}")
 
 
-def prepare(run_dir: Path) -> dict:
+def prepare(run_dir: Path, budget: int = 1024) -> dict:
     from scripts.usim.freeze_protocol import verify_manifest
 
     validate_destination(run_dir)
@@ -174,7 +175,7 @@ def prepare(run_dir: Path) -> dict:
                     raise ValueError(f"Frozen image changed: {path}")
             images[key].append({"id": row["id"], "images": entries})
 
-    decode = dict(original, max_completion_tokens=1024)
+    decode = dict(original, max_completion_tokens=budget)
     plan = {
         "schema": "usim-v02-budget-diagnostic/v1", "scope": "dev diagnostic; not val/test",
         "selection_seed": SEED, "selection_rule": "stratum order; fewest previously selected episode questions; SHA256(seed:ID)",
@@ -212,7 +213,7 @@ def runner_args(run_dir: Path, plan: dict, key: str) -> list[str]:
     args = ["--data-root", str(DATA_ROOT), "--qa", str(run_dir / "inputs" / f"{key}.jsonl"),
             "--out", str(run_dir / CONDITIONS[key] / "predictions.jsonl"), "--api-url", decode["api_url"],
             "--model", decode["model_requested"], "--enable-thinking", str(decode["enable_thinking"]).lower(),
-            "--temperature", str(decode["temperature"]), "--max-completion-tokens", "1024",
+            "--temperature", str(decode["temperature"]), "--max-completion-tokens", str(decode["max_completion_tokens"]),
             "--timeout", str(decode["timeout_seconds"]), "--max-attempts", str(decode["max_attempts"]),
             "--sleep", "1.0", "--condition-label", CONDITIONS[key]]
     if decode["system_prompt"]:
@@ -311,7 +312,8 @@ def reliability(rows: list[dict], predictions: list[dict]) -> dict:
 
 
 def summarize(run_dir: Path, plan: dict) -> dict:
-    summary = {"plan_sha256": plan["plan_sha256"], "historical_256": {}, "diagnostic_1024": {}}
+    block_key = f"diagnostic_{plan['decode']['max_completion_tokens']}"
+    summary = {"plan_sha256": plan["plan_sha256"], "historical_256": {}, block_key: {}}
     for key, label in CONDITIONS.items():
         rows = load_rows(run_dir / "inputs" / f"{key}.jsonl")
         wanted = {row["id"] for row in rows}
@@ -323,10 +325,10 @@ def summarize(run_dir: Path, plan: dict) -> dict:
         summary["historical_256"][key] = reliability(rows, [old_rows[row["id"]] for row in rows])
         summary.setdefault("historical_predictions_sha256", {})[key] = digest(old.read_bytes())
         current = run_dir / label / "predictions.jsonl"
-        summary["diagnostic_1024"][key] = reliability(rows, load_rows(current) if current.exists() else [])
-    complete = all(block["answered"] == block["N"] for block in summary["diagnostic_1024"].values())
+        summary[block_key][key] = reliability(rows, load_rows(current) if current.exists() else [])
+    complete = all(block["answered"] == block["N"] for block in summary[block_key].values())
     summary["state"] = "complete" if complete else "not_run_or_incomplete"
-    summary["budget_gate"] = ("pass_on_fixed_subset" if all(block["gate_passed"] for block in summary["diagnostic_1024"].values())
+    summary["budget_gate"] = ("pass_on_fixed_subset" if all(block["gate_passed"] for block in summary[block_key].values())
                               else "fail_on_fixed_subset") if complete else "pending"
     summary["limitations"] = [plan["comparison_limit"], plan["budget_gate_limit"], "No EM-based budget selection; no final test result."]
     (run_dir / "diagnostic_summary.json").write_bytes(json_bytes(summary))
@@ -361,12 +363,14 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--run-dir", type=Path, default=DEFAULT_RUN)
     parser.add_argument("--run", action="store_true", help="send the fixed 32 logical requests")
     parser.add_argument("--resume", action="store_true", help="only continue unattempted IDs; never retry terminal answers")
+    parser.add_argument("--budget", type=int, default=1024,
+                        help="output-token cap for the diagnostic; only this value may differ from the original run")
     args = parser.parse_args(argv)
     try:
         if args.resume and not args.run:
             raise ValueError("--resume requires --run")
         run_dir = args.run_dir.resolve()
-        plan = prepare(run_dir)
+        plan = prepare(run_dir, args.budget)
         offline_checks(run_dir, plan)
         if args.run:
             run_real(run_dir, plan, args.resume)

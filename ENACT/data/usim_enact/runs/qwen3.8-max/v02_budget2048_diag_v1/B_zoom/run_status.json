@@ -1,0 +1,13 @@
+{
+  "state": "completed",
+  "abort_reason": null,
+  "planned": 16,
+  "answered": 16,
+  "success": 16,
+  "truncated": 0,
+  "invalid": 0,
+  "failed": 0,
+  "missing": 0,
+  "finished_at": "2026-10-28T17:07:45+08:00",
+  "config": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\runs\\qwen3.8-max\\v02_budget2048_diag_v1\\B_zoom\\run_config.json"
+}

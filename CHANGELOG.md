@@ -50,6 +50,16 @@
 - 重新冻结为 `freeze_usim-enact-v0.2_20261027b`：13 组 **1818 文件**（首版 1374 + B 的 images 432 / qa 2 / inputs 4 / baselines 6），payload `6d14fb83…`，`--verify` exit 0、`--self-test-v02` 7/7。
 - 文档：v0.2 构建报告新增 §7.1（B 构建与校验）、条件矩阵与 §9 命令更新、§10 新增"数字放大不增加像素信息"等 2 条限制；协议证据与 README/next_steps 同步冻结与 B 状态。
 
+## 2026-10-28（2048 预算诊断：截断归零、格式失败不动；test 标注 4/10）
+
+- `run_v02_budget_diagnostic.py` 增加 `--budget`（默认 1024，保持旧产物可读），summary 的块名随预算生成，避免 1024/2048 结果混淆。
+- 新 run `v02_budget2048_diag_v1`：同 16 题、同图片/prompt/解码，仅预算 1024→2048（`plan_sha256=1bb9f1df…`，32 请求，3 分 07 秒）。结果 `state=complete`、`budget_gate=fail_on_fixed_subset`（exit 3）。
+- 预算阶梯（同 16 题）：B 的 `length` 截断 4 → 1 → **0**（256/1024/2048），但严格合法始终卡在 **13/16**；2048 下 16 条全部 `stop`，3 条 `extra_text` 与 1024 是同一批，且结尾列表全部等于 gt。`completion_tokens` 观察最大值 1968/2048，余量仅 80 token。
+- 冻结副指标在 2048 上：B 可提取 **16/16**（A 亦 16/16），`EM_extractable` 双方均 14/16 = 0.8750 → 严格口径的差距在 2048 下由格式解释。**不据此宣称感知等同**（16 题、单 run、副指标非感知指标）。
+- 按预注册规则：**停止增加预算**，2048 不作为统一预算；下一步转向格式约束的独立版本诊断。
+- test 标注推进到 **4/10**：`1384`（close 224 / open 501）与 `1378`（close 191 / open 463）均判为 **L=5**，走 2026-10-27 批准的 `at_box = NearBox(robot,green_box)` 通道；两条的 5 个关键帧全部落在 ≥8 帧渲染保持段内，`at_box` 取 release−15。`1378` 的 lift 是最弱环节（dvl 仅 +0.099 m），已在 notes 标明为单次目视证据。
+- 文档：总结文档新增 §13.3（预算阶梯与停止加预算的决定），§14.3 补 2048 行，§8 更新下一步。
+
 ## 2026-10-28（副指标 extractable_permutation_v1）
 
 - 按用户拍板落地路径①：主指标 `usim_strict_v0.3` 不变，新增独立副指标 `extractable_permutation_v1`。
