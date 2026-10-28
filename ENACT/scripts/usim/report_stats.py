@@ -1,8 +1,9 @@
-"""Direction x L x task / episode statistics with episode-grouped bootstrap and paired A/B/C.
+"""Direction x L x task / episode statistics with episode-grouped bootstrap and paired conditions.
 
-The frozen development set has 70 questions that come from 7 episodes, and every
-episode contributes both directions and both lengths.  Treating the 70 questions
-as 70 independent trajectories overstates the evidence, so this script:
+Every condition is paired against every other one, so this works for A/B/C as well as for
+the four-condition v0.2 matrix (A/B/C/D).  The v0.2 development set has 84 questions from
+19 episodes (val adds 36 from 8 episodes); treating the questions as independent
+trajectories would overstate the evidence, so this script:
 
 * rebuilds the per-question metrics from ``report.items.jsonl`` (no re-scoring);
 * reports overall / direction / direction x L / episode / task tables;
@@ -494,19 +495,21 @@ def build_markdown(result: Dict[str, Any]) -> str:
     lines.append("")
 
     if any("by_text_solvable" in condition["tables"] for condition in result["conditions"].values()):
-        lines.append("## 5a. 文本可解分层（文本先验答对 = solvable）")
+        lines.append("## 5a. 程序文本基线分层（基线答对 / 基线答错）")
         lines.append("")
-        lines.append("solvable 层的模型得分**不构成视觉证据**：这些题只看打乱后的动作文本就能答对。"
-                     "视觉证据只能看 not_solvable 层的 A−C / A−D 配对差值。")
+        lines.append("分层依据是程序化文本基线（`text_prior_baseline`）在**不看图**时是否答对同一题。"
+                     "「基线答对」层的模型得分**不构成视觉证据**——这些题只看打乱后的动作文本就能答对；"
+                     "视觉证据只能看「基线答错」层以及 A−C / A−D 的配对差值。")
         lines.append("")
         headers = ["条件", "分层", "N", "episodes", "EM", "PA_item", "PA_micro"]
+        label = {"text_solvable": "基线答对", "text_not_solvable": "基线答错", "unlabelled": "未标注"}
         rows = []
         for name, condition in result["conditions"].items():
             for group in ("text_solvable", "text_not_solvable", "unlabelled"):
                 block = condition["tables"]["by_text_solvable"].get(group)
                 if not block:
                     continue
-                rows.append([name, group, block.get("count", ""), block.get("episodes", ""),
+                rows.append([name, label[group], block.get("count", ""), block.get("episodes", ""),
                              format_metric(block.get("EM", "")),
                              format_metric(block.get("PA_item_mean", "")),
                              format_metric(block.get("PA_transition_micro", ""))])
@@ -571,6 +574,9 @@ def main(argv: Optional[List[str]] = None) -> int:
     parser.add_argument("--out-md", default="")
     parser.add_argument("--text-prior", default="",
                         help="text_prior_predictions.jsonl；给了就出'文本可解/不可解'分层")
+    parser.add_argument("--allow-subset", action="store_true",
+                        help="允许某条件的题集是首个条件的真子集（例如条件 D 只有 forward 题）；"
+                             "仍需成员⊆首条件、gt 与状态数在交集上一致，否则仍返回 2")
     args = parser.parse_args(argv)
 
     run_dir = Path(args.run_dir)
@@ -645,9 +651,13 @@ def main(argv: Optional[List[str]] = None) -> int:
         if qid in states_by_condition[baseline_name]
         and states_by_condition[name][qid] != states_by_condition[baseline_name][qid]
     })
+    outside_first = {name: sorted(id_sets[name] - id_sets[baseline_name]) for name in names}
     integrity: Dict[str, Any] = {
         "id_sets_equal": all(id_sets[name] == id_sets[baseline_name] for name in names),
         "id_set_sizes": {name: len(id_sets[name]) for name in names},
+        "ids_outside_first": {name: len(values) for name, values in outside_first.items()},
+        "declared_subset_ok": not any(outside_first.values()),
+        "subset_declared_by_flag": bool(args.allow_subset),
         "gt_conflicts": gt_conflicts,
         "num_states_conflicts": num_states_conflicts,
         "baseline_condition": baseline_name,
@@ -736,7 +746,9 @@ def main(argv: Optional[List[str]] = None) -> int:
         "outputs": {"json": str(out_json), "markdown": str(out_md)},
     }
     print(json.dumps(summary, ensure_ascii=False, indent=2))
-    return 0 if integrity["id_sets_equal"] and not integrity["gt_conflicts"] else 2
+    ids_contract_ok = integrity["id_sets_equal"] or (
+        args.allow_subset and integrity["declared_subset_ok"])
+    return 0 if ids_contract_ok and not integrity["gt_conflicts"] else 2
 
 
 if __name__ == "__main__":

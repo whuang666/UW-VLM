@@ -36,6 +36,13 @@
 - 重新冻结为 `freeze_usim-enact-v0.2_20261027b`：13 组 **1818 文件**（首版 1374 + B 的 images 432 / qa 2 / inputs 4 / baselines 6），payload `6d14fb83…`，`--verify` exit 0、`--self-test-v02` 7/7。
 - 文档：v0.2 构建报告新增 §7.1（B 构建与校验）、条件矩阵与 §9 命令更新、§10 新增"数字放大不增加像素信息"等 2 条限制；协议证据与 README/next_steps 同步冻结与 B 状态。
 
+## 2026-10-28（v0.2 任务总结与统计口径修正）
+
+- 新增 WBW 文档《v0.2 任务总结与验收状态-20261028》：把交付清单、四条件结果、direction×L、全组合配对、基线分层、预算混淆诊断、运行元数据、限制与下一步收敛为一份可验收清单，并指向 10-27 的三份前序文档（不重复其内容）。
+- 修正统计口径：分层由"文本可解／不可解"改称"程序文本基线答对／答错"（它是一次基线行为而非题目属性），表格逐行带 N；`report_stats.py` 文档头里沿用的「70 题 / 7 episode」固定说明改为实际数量。
+- `report_stats.py` 新增 `--allow-subset`：显式声明「某条件是首条件的真子集」（条件 D 只有 forward 题）后，仍需成员 ⊆ 首条件、交集上 gt 与状态数一致才返回 0；`integrity` 记录 `declared_subset_ok`、`ids_outside_first`。此前四条件混跑必然 exit 2、只能靠人记"2 不算失败"。四条件报告已按此重跑，**exit 0**（`gt_conflicts=[]`、`ids_outside_first` 全 0）。
+- README 与 05_next_steps 同步：A/B/C/D 首轮矩阵已完成、当前优先项改为「B/A 输出预算诊断 → 统一高预算重跑 → 预留 test 标注/验收」。
+
 ## 2026-10-27（四条件驱动与 test 首条标注）
 
 - 新增 `ENACT/scripts/usim/run_v02_matrix.py`：一条命令跑完 A/B/C/D（同源同参、固定题集 A=84/B=84/C=84/D=42），把 `run_inference.py`/`evaluate.py` 的 sha 写进 manifest，使"同一源码版本"可外部核对；密钥只从 `VLM_API_KEY` 读取，缺失即拒绝运行。`--dry-run` 四条件全通过。

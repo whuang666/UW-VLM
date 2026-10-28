@@ -1,6 +1,6 @@
 # 下一步工作清单与运行手册
 
-最近更新：2026-10-27（Asia/Shanghai）。**v0.2 数据、120 题 curated 题集、协议冻结及首轮 A/B/C/D 开发矩阵已完成；当前重点为 B/A 预算诊断、统计口径修正和预留 test 标注／验收。** 结果与修正见 [开发矩阵复核](WBW/ENACT-USIM-v0.2开发矩阵复核与下一步-20261027.md)，项目状态汇总见 [docs/README.md](README.md)。
+最近更新：2026-10-28（Asia/Shanghai）。**v0.2 数据、120 题 curated 题集、协议冻结、首轮 A/B/C/D 开发矩阵与统计口径修正已完成；当前重点为 B/A 输出预算诊断、统一高预算重跑和预留 test 标注／验收。** 结果与修正见 [开发矩阵复核](WBW/ENACT-USIM-v0.2开发矩阵复核与下一步-20261027.md)，交付与验收清单见 [v0.2 任务总结与验收状态](WBW/ENACT-USIM-v0.2任务总结与验收状态-20261028.md)，项目状态汇总见 [docs/README.md](README.md)。
 
 这份清单按依赖排序。**GPU 训练仍不在当前阶段。** 数据集已经确定为当前工作区的 USIM（`E:\code\UW-VLM\usim`）。
 
@@ -61,7 +61,8 @@
 - [x] **四条件一键驱动**：`scripts/usim/run_v02_matrix.py` 固定同一 `run_inference.py`/`evaluate.py`（sha 写入 manifest），A=84 / B=84 / C=84 / D=42（dev 过滤），`--dry-run` 四条件全通过；密钥只读 `VLM_API_KEY`，无密钥即拒绝运行（[构建报告 §7.2](WBW/ENACT-USIM-v0.2构建与协议准备-20261027.md)）。
 - [ ] **test_reserve 10 条标注（2/10 通过结构／源帧检查）**：`001078`、`001650` 各 4 帧／3 个可见非空转移；剩余 8 条待形成正式标注，全部仍需独立质量验收。标注写入 `_expansion/annotation_work/test_reserve/`，**不写 v0.2 数据集**。
 - [x] **统计分层初版**：已按 `text_prior` 与 gt 比对形成分层。
-- [ ] **统计口径与子集契约**：改称“程序文本基线答对／答错”；D 的分母为 13/29，A/B/C 为 55/29。A/B/C 按 84 题分析，A/D 按共同 forward 42 题分析；处理预期子集导致的 exit 2，保留真正的重复／缺失／gt 冲突错误。记录分层基线哈希并去除旧 7-episode 固定说明。
+- [x] **统计口径与子集契约（2026-10-28 完成）**：分层改称"程序文本基线答对／答错"并逐行带 N（A/B/C 55/29、D 13/29）；`report_stats.py` 新增 `--allow-subset`，显式声明子集后仍需"成员 ⊆ 首条件 + 交集 gt/状态数一致"才返回 0，`integrity` 记录 `declared_subset_ok` 与 `ids_outside_first`；旧 7-episode/70 题固定说明已改为实际数量。四条件报告重跑后 **exit 0**。
+- [ ] **B/A 输出预算诊断**：B 的 9 条无效中 8 条为 256 token 截断（`finish_reason=length`），A/C/D 为 0。在 dev 上固定少量覆盖方向×长度的题，仅凭停止原因与格式有效率确定新预算（建议从 1024 起），thinking=false 与 prompt 不变；**不得只重试答错题覆盖旧分数**。若要发布统一四条件表，A/B/C/D 须在新预算下以独立 run_id 重跑并两套并列。
 
 ## P3：有了可靠基线后再扩展（2026-10-27：均未开始）
 
