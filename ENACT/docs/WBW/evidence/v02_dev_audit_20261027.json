@@ -1,0 +1,416 @@
+{
+  "checked_at": "2026-10-27T21:18:02+08:00",
+  "scope": "Read-only local audit; no API calls; re-score outputs go to a temporary directory.",
+  "run": "data\\usim_enact\\runs\\qwen3.8-max\\v02_dev_001",
+  "freeze": {
+    "file": "data\\usim_enact\\_protocol\\freeze_usim-enact-v0.2_20261027b.json",
+    "sha256": "3259beafa613645e18aeb27d586649d8e45f1c35d14ee477940c27efa4c3019d",
+    "payload_sha256": "6d14fb83f822a6088f7d9acc4d638971147b90e8f8e1cca6070b333d23c8c10b",
+    "ok": true,
+    "groups": 13,
+    "files": 1818,
+    "errors": []
+  },
+  "dataset": {
+    "episodes": 27,
+    "key_frames": 110,
+    "transitions": 83,
+    "visible_transitions": 81
+  },
+  "conditions": {
+    "A": {
+      "overall": {
+        "count": 84,
+        "valid_permutations": 84,
+        "invalid_or_missing": 0,
+        "invalid_reasons": {},
+        "EM": 0.9286,
+        "semantic_only": 0.0,
+        "TA": 0.9286,
+        "PA_item_mean": 0.9504,
+        "PA_transition_micro": 0.9495,
+        "transitions_total": 218
+      },
+      "episodes": 19,
+      "re_score_identical": true,
+      "run_status": {
+        "state": "completed",
+        "abort_reason": null,
+        "planned": 84,
+        "answered": 84,
+        "success": 84,
+        "truncated": 0,
+        "invalid": 0,
+        "failed": 0,
+        "missing": 0,
+        "finished_at": "2026-10-27T20:41:42+08:00",
+        "config": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\runs\\qwen3.8-max\\v02_dev_001\\A_full_image\\run_config.json"
+      },
+      "decode": {
+        "enable_thinking": false,
+        "temperature": 0.0,
+        "max_completion_tokens": 256
+      },
+      "model_returned": {
+        "qwen3.8-max": 84
+      },
+      "attempts": 84,
+      "attempt_numbers": {
+        "1": 84
+      },
+      "http_status": {
+        "200": 84
+      },
+      "strata": {
+        "prior_correct": {
+          "count": 55,
+          "correct": 54,
+          "EM": 0.9818,
+          "invalid": 0,
+          "identity_gt": 24
+        },
+        "prior_incorrect": {
+          "count": 29,
+          "correct": 24,
+          "EM": 0.8276,
+          "invalid": 0,
+          "identity_gt": 0
+        }
+      },
+      "invalid_items": [],
+      "report_sha256": "37acf8a68f7451105b35aea2314c4c53baa3e0ad1e92452574e5bd0c14b406a3",
+      "predictions_sha256": "8ea28729df4b645a85f2e95684f938ce18c022c76b5830e41416aa2b70095532"
+    },
+    "B": {
+      "overall": {
+        "count": 84,
+        "valid_permutations": 75,
+        "invalid_or_missing": 9,
+        "invalid_reasons": {
+          "extra_text": 8,
+          "wrong_length": 1
+        },
+        "EM": 0.8452,
+        "semantic_only": 0.0,
+        "TA": 0.8452,
+        "PA_item_mean": 0.869,
+        "PA_transition_micro": 0.8486,
+        "transitions_total": 218
+      },
+      "episodes": 19,
+      "re_score_identical": true,
+      "run_status": {
+        "state": "completed_with_failures",
+        "abort_reason": null,
+        "planned": 84,
+        "answered": 84,
+        "success": 76,
+        "truncated": 8,
+        "invalid": 0,
+        "failed": 0,
+        "missing": 0,
+        "finished_at": "2026-10-27T20:47:06+08:00",
+        "config": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\runs\\qwen3.8-max\\v02_dev_001\\B_zoom\\run_config.json"
+      },
+      "decode": {
+        "enable_thinking": false,
+        "temperature": 0.0,
+        "max_completion_tokens": 256
+      },
+      "model_returned": {
+        "qwen3.8-max": 84
+      },
+      "attempts": 84,
+      "attempt_numbers": {
+        "1": 84
+      },
+      "http_status": {
+        "200": 84
+      },
+      "strata": {
+        "prior_correct": {
+          "count": 55,
+          "correct": 55,
+          "EM": 1.0,
+          "invalid": 0,
+          "identity_gt": 24
+        },
+        "prior_incorrect": {
+          "count": 29,
+          "correct": 16,
+          "EM": 0.5517,
+          "invalid": 9,
+          "identity_gt": 0
+        }
+      },
+      "invalid_items": [
+        {
+          "id": "usim_train_episode_000533_forward_world_modeling_3_steps_a3dccb7b",
+          "reason": "wrong_length",
+          "finish_reason": "stop",
+          "completion_tokens": 4,
+          "num_states": 3
+        },
+        {
+          "id": "usim_train_episode_000200_forward_world_modeling_4_steps_ea4ca751",
+          "reason": "extra_text",
+          "finish_reason": "length",
+          "completion_tokens": 256,
+          "num_states": 4
+        },
+        {
+          "id": "usim_train_episode_000552_forward_world_modeling_4_steps_b95e6e61",
+          "reason": "extra_text",
+          "finish_reason": "length",
+          "completion_tokens": 256,
+          "num_states": 4
+        },
+        {
+          "id": "usim_train_episode_000653_forward_world_modeling_4_steps_45a760d1",
+          "reason": "extra_text",
+          "finish_reason": "length",
+          "completion_tokens": 256,
+          "num_states": 4
+        },
+        {
+          "id": "usim_train_episode_000756_forward_world_modeling_4_steps_ceb3c8b7",
+          "reason": "extra_text",
+          "finish_reason": "length",
+          "completion_tokens": 256,
+          "num_states": 4
+        },
+        {
+          "id": "usim_train_episode_001304_forward_world_modeling_4_steps_ccfd8e4e",
+          "reason": "extra_text",
+          "finish_reason": "length",
+          "completion_tokens": 256,
+          "num_states": 4
+        },
+        {
+          "id": "usim_train_episode_001304_forward_world_modeling_4_steps_d7fd42e4",
+          "reason": "extra_text",
+          "finish_reason": "length",
+          "completion_tokens": 256,
+          "num_states": 4
+        },
+        {
+          "id": "usim_train_episode_001304_forward_world_modeling_5_steps_827185aa",
+          "reason": "extra_text",
+          "finish_reason": "length",
+          "completion_tokens": 256,
+          "num_states": 5
+        },
+        {
+          "id": "usim_train_episode_001318_forward_world_modeling_5_steps_a1dcd6d1",
+          "reason": "extra_text",
+          "finish_reason": "length",
+          "completion_tokens": 256,
+          "num_states": 5
+        }
+      ],
+      "report_sha256": "121fdc4e53766fc379779a73425f192417b8974c670fcd53f4e60d072eac95cb",
+      "predictions_sha256": "183edf732db8a2ed445fc03fca633462f78f1b46b3f46717351c96625c9bfc32"
+    },
+    "C": {
+      "overall": {
+        "count": 84,
+        "valid_permutations": 84,
+        "invalid_or_missing": 0,
+        "invalid_reasons": {},
+        "EM": 0.5952,
+        "semantic_only": 0.0,
+        "TA": 0.5952,
+        "PA_item_mean": 0.6359,
+        "PA_transition_micro": 0.6009,
+        "transitions_total": 218
+      },
+      "episodes": 19,
+      "re_score_identical": true,
+      "run_status": {
+        "state": "completed",
+        "abort_reason": null,
+        "planned": 84,
+        "answered": 84,
+        "success": 84,
+        "truncated": 0,
+        "invalid": 0,
+        "failed": 0,
+        "missing": 0,
+        "finished_at": "2026-10-27T20:50:00+08:00",
+        "config": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\runs\\qwen3.8-max\\v02_dev_001\\C_text_only\\run_config.json"
+      },
+      "decode": {
+        "enable_thinking": false,
+        "temperature": 0.0,
+        "max_completion_tokens": 256
+      },
+      "model_returned": {
+        "qwen3.8-max": 84
+      },
+      "attempts": 84,
+      "attempt_numbers": {
+        "1": 84
+      },
+      "http_status": {
+        "200": 84
+      },
+      "strata": {
+        "prior_correct": {
+          "count": 55,
+          "correct": 46,
+          "EM": 0.8364,
+          "invalid": 0,
+          "identity_gt": 24
+        },
+        "prior_incorrect": {
+          "count": 29,
+          "correct": 4,
+          "EM": 0.1379,
+          "invalid": 0,
+          "identity_gt": 0
+        }
+      },
+      "invalid_items": [],
+      "report_sha256": "22332f3b049297333edd32cde1e293b2f6c96e56664a9a55401069e4616ee288",
+      "predictions_sha256": "0b07a7b43ce111942bc5af29ad718e455d19d626fe6e0414cb97fce01d8bf88e"
+    },
+    "D": {
+      "overall": {
+        "count": 42,
+        "valid_permutations": 42,
+        "invalid_or_missing": 0,
+        "invalid_reasons": {},
+        "EM": 0.6905,
+        "semantic_only": 0.0,
+        "TA": 0.6905,
+        "PA_item_mean": 0.7183,
+        "PA_transition_micro": 0.6881,
+        "transitions_total": 109
+      },
+      "episodes": 19,
+      "re_score_identical": true,
+      "run_status": {
+        "state": "completed",
+        "abort_reason": null,
+        "planned": 42,
+        "answered": 42,
+        "success": 42,
+        "truncated": 0,
+        "invalid": 0,
+        "failed": 0,
+        "missing": 0,
+        "finished_at": "2026-10-27T20:52:11+08:00",
+        "config": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\runs\\qwen3.8-max\\v02_dev_001\\D_no_action_text\\run_config.json"
+      },
+      "decode": {
+        "enable_thinking": false,
+        "temperature": 0.0,
+        "max_completion_tokens": 256
+      },
+      "model_returned": {
+        "qwen3.8-max": 42
+      },
+      "attempts": 42,
+      "attempt_numbers": {
+        "1": 42
+      },
+      "http_status": {
+        "200": 42
+      },
+      "strata": {
+        "prior_correct": {
+          "count": 13,
+          "correct": 13,
+          "EM": 1.0,
+          "invalid": 0,
+          "identity_gt": 13
+        },
+        "prior_incorrect": {
+          "count": 29,
+          "correct": 16,
+          "EM": 0.5517,
+          "invalid": 0,
+          "identity_gt": 0
+        }
+      },
+      "invalid_items": [],
+      "report_sha256": "463147ee293aef1d4371848978f8df8f50174ef4f6bff08c426a7b65889e9495",
+      "predictions_sha256": "afeb3534d8c0043ca7c5fdf7cc5e5488120075ee908ccbe2ef8b095553314dc0"
+    }
+  },
+  "text_prior": {
+    "path": "data\\usim_enact\\_protocol\\baselines_v0.2\\text_prior_predictions.jsonl",
+    "sha256": "5ed881b82b8c9bcb3c48e4d81b8afa3dd291fdd8fe86843c40be7c342a5840a1"
+  },
+  "same_source_version": true,
+  "matrix_requests": 294,
+  "D_matched_forward": {
+    "A": {
+      "count": 42,
+      "correct": 36,
+      "EM": 0.8571
+    },
+    "B": {
+      "count": 42,
+      "correct": 29,
+      "EM": 0.6905
+    },
+    "C": {
+      "count": 42,
+      "correct": 13,
+      "EM": 0.3095
+    },
+    "D": {
+      "count": 42,
+      "correct": 29,
+      "EM": 0.6905
+    }
+  },
+  "paired_A_minus_C": {
+    "common_ids": 84,
+    "episodes": 19,
+    "resamples": 2000,
+    "unit": "episode",
+    "EM": {
+      "point": 0.3334,
+      "ci_low": 0.1771,
+      "ci_high": 0.4674
+    },
+    "TA": {
+      "point": 0.3334,
+      "ci_low": 0.1771,
+      "ci_high": 0.4674
+    },
+    "PA_item_mean": {
+      "point": 0.3145,
+      "ci_low": 0.1824,
+      "ci_high": 0.4167
+    },
+    "PA_transition_micro": {
+      "point": 0.3486,
+      "ci_low": 0.2031,
+      "ci_high": 0.4583
+    },
+    "base_seed": 20261024,
+    "exact_delta_EM": 0.3333333333333333
+  },
+  "test_reserve": {
+    "target_episodes": 10,
+    "annotation_files": [
+      "usim_train_episode_001078.json",
+      "usim_train_episode_001650.json"
+    ],
+    "meaning": "Existing annotation files only; independent quality acceptance and final test evaluation are separate steps."
+  },
+  "interpretation": [
+    "Returned model name is an alias; no immutable provider snapshot is established.",
+    "prior_incorrect means the selected program baseline failed, not that text-only reasoning is impossible.",
+    "D strata have 13/29 items; A/B/C strata have 55/29 items.",
+    "All 13 prior-correct D references are identity permutations; their perfect score does not rule out that shortcut.",
+    "B has 8 truncated prose responses and one stopped wrong-length L3 answer; perception and output-budget effects are confounded.",
+    "Matrix exit 0 allows a condition exit 3; it does not mean every answer passed strict scoring.",
+    "Statistics exit 2 is an integrity signal for unequal condition ID sets; use equal-scope A/B/C and forward-only A/D reports."
+  ],
+  "failures": [],
+  "all_checks_pass": true
+}

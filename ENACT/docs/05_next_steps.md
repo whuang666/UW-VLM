@@ -1,6 +1,6 @@
 # 下一步工作清单与运行手册
 
-最近更新：2026-10-27（Asia/Shanghai）。**v0.2 数据、120 题 currated 题集与协议冻结已完成；当前主战场：v0.2 真实模型 A/B/C/D 运行与正式 test（唯一阻塞 = `VLM_API_KEY`）。** v0.1 的数据、题集、评分、真实模型开发集实验与独立标签复核均已完成；数字与证据汇总见 [docs/README.md 的“当前完成到哪里”](README.md)。本文只列状态、依赖与可复跑命令，不重复实验结论。
+最近更新：2026-10-27（Asia/Shanghai）。**v0.2 数据、120 题 curated 题集、协议冻结及首轮 A/B/C/D 开发矩阵已完成；当前重点为 B/A 预算诊断、统计口径修正和预留 test 标注／验收。** 结果与修正见 [开发矩阵复核](WBW/ENACT-USIM-v0.2开发矩阵复核与下一步-20261027.md)，项目状态汇总见 [docs/README.md](README.md)。
 
 这份清单按依赖排序。**GPU 训练仍不在当前阶段。** 数据集已经确定为当前工作区的 USIM（`E:\code\UW-VLM\usim`）。
 
@@ -53,14 +53,15 @@
 - [x] **文本先验与条件 D（v0.2 版）**：`text_prior_baseline.py` 升级双模板（v0.1/v0.2 + NearBox），v0.2 inverse **60/60** 文本可解、forward 19/60、总体 0.6583；条件 D（forward 去动作文本）60 题 / 216 图 / oracle 1.0。**A/B/C/D 尚未跑模型**。[协议证据](WBW/ENACT-USIM-v0.2协议证据-20261027.md)
 - [x] **v0.2 协议冻结**：13 组 **1818 文件**、payload `6d14fb83…`（`freeze_id=20261027b`，含 B 条件）、`--verify` exit 0、self-test 7/7；test_reserve 与 dev/val/条件 D 零重叠。首版 `20261027`（1374 文件 / `d3370ad2…`）保留作对照。[冻结清单](../data/usim_enact/_protocol/freeze_usim-enact-v0.2_20261027b.json)
 - [ ] **正式 test**：冻结后标注 test 预留 10 条、构建 test QA，A/B/C/D 与程序基线各跑一次，只报一次、不得据 test 结果调参（[v0.2 方案 §7](WBR/ENACT-USIM-v0.2评测与正式测试方案-20261027.md)）。
-- [ ] **v0.2 A/B/C/D 模型运行（同版本）**：需 `VLM_API_KEY`；四条件用同一 `run_inference.py` 源码版本，运行后以真实 run 产物重新生成 run 级冻结并重跑 report_stats（A−C/A−D/A−B 配对 + 文本可解分层）。命令见 [v0.2 构建报告 §9](WBW/ENACT-USIM-v0.2构建与协议准备-20261027.md) 与 [协议证据 §7](WBW/ENACT-USIM-v0.2协议证据-20261027.md)。
+- [x] **v0.2 A/B/C/D 首轮模型运行（同版本）**：A/B/C 各 84、D 42，共 294 次请求；A EM 0.9286、B 0.8452、C 0.5952、D 0.6905。离线复核同源码、输入哈希与重新计分均通过；B 为 `completed_with_failures`（8 截断、1 列表长度错误），不把矩阵 exit 0 当全答案合法。
+- [ ] **B/A 预算诊断与新 run**：先冻结少量开发诊断题，保持原 prompt／输入／thinking 设置，按格式和停止原因确定预算；新预算比较在独立 run 中运行 A/B，若发布统一四条件表则四条件同预算重跑。旧 256-token 结果保留，禁止仅补答错题后替换分数。
 - [ ] **P1 遗留：同版本重跑对照**：v0.1 的 A/B/C 三条件用了 **3 个不同版本的 `run_inference.py`**，正式对照必须同一源码版本重跑；冻结清单已记录漂移（[评分契约 §6.2](WBW/ENACT-USIM-评分契约与统计-20261027.md)）。
 - [ ] **思考模式对照**：`enable_thinking=true` + 更大预算，单独 run，不与首轮混分（[执行结果 §11](WBW/ENACT-USIM-qwen3.8-max-执行结果-20261024.md)）。
-- [x] **B 条件（v0.2 局部放大）**：已构建 120 题 / 432 图，左 panel 与 A 逐字节一致、432/432 可被冻结渲染器复现、程序基线与 A 逐位相同；独立校验 `scripts/usim/check_condition_b.py` → `status=pass`（[构建报告 §7.1](WBW/ENACT-USIM-v0.2构建与协议准备-20261027.md)）。**尚未跑模型**。
+- [x] **B 条件（v0.2 局部放大）**：已构建 120 题 / 432 图，左 panel 与 A 逐字节一致、432/432 可被冻结渲染器复现、程序基线与 A 逐位相同；独立校验 `scripts/usim/check_condition_b.py` → `status=pass`；dev 模型已运行，结果见本轮复核。
 - [x] **四条件一键驱动**：`scripts/usim/run_v02_matrix.py` 固定同一 `run_inference.py`/`evaluate.py`（sha 写入 manifest），A=84 / B=84 / C=84 / D=42（dev 过滤），`--dry-run` 四条件全通过；密钥只读 `VLM_API_KEY`，无密钥即拒绝运行（[构建报告 §7.2](WBW/ENACT-USIM-v0.2构建与协议准备-20261027.md)）。
-- [ ] **test_reserve 10 条标注（进行中 1/10）**：`001078` 已完成并过 `annotate_episode --check`（4 帧 / 3 转移全可见 / 0 空转移）；其余 9 条（1384/1650/1734/1259/1273/1145/1497/1549/1378）事件提议与审阅图已生成，待逐帧确认。标注写入 `_expansion/annotation_work/test_reserve/`，**不写 v0.2 数据集**（避免破坏已冻结的 dev/val）。
-- [ ] **统计分层（密钥就位前可做）**：`report_stats.py` 可接受任意 N 个 `--condition`（D 直接加入 A−C/A−D/A−B 配对），但缺"文本可解/不可解"分层；v0.2 inverse 60/60 文本可解，不分层就无法把视觉证据与文本捷径分开。
-- [ ] **API 密钥阻塞**：当前会话无 `VLM_API_KEY` 时推理器只能 `--dry-run`，无法产出正式分数；正式 run/test 需注入密钥（环境变量、不落盘，[v0.2 方案 §7](WBR/ENACT-USIM-v0.2评测与正式测试方案-20261027.md)）。
+- [ ] **test_reserve 10 条标注（2/10 通过结构／源帧检查）**：`001078`、`001650` 各 4 帧／3 个可见非空转移；剩余 8 条待形成正式标注，全部仍需独立质量验收。标注写入 `_expansion/annotation_work/test_reserve/`，**不写 v0.2 数据集**。
+- [x] **统计分层初版**：已按 `text_prior` 与 gt 比对形成分层。
+- [ ] **统计口径与子集契约**：改称“程序文本基线答对／答错”；D 的分母为 13/29，A/B/C 为 55/29。A/B/C 按 84 题分析，A/D 按共同 forward 42 题分析；处理预期子集导致的 exit 2，保留真正的重复／缺失／gt 冲突错误。记录分层基线哈希并去除旧 7-episode 固定说明。
 
 ## P3：有了可靠基线后再扩展（2026-10-27：均未开始）
 

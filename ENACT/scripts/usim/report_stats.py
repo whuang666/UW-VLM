@@ -279,8 +279,28 @@ def load_task_text(data_root: Path) -> Dict[str, str]:
     return mapping
 
 
+def text_solvable_map(prior_path: Path, gt_lookup: Dict[str, Any]) -> Dict[str, bool]:
+    """Which questions a text-only prior already answers correctly.
+
+    v0.2's inverse questions are 60/60 solvable from the shuffled action text alone, so a
+    model's inverse score carries no visual evidence unless it is reported next to this
+    split.  ``solvable`` means the text prior's answer equals gt; anything the prior gets
+    wrong needs more than text, which is where a visual gain would have to show up.
+    """
+    rows = [json.loads(line) for line in prior_path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    solvable: Dict[str, bool] = {}
+    for row in rows:
+        qid = row.get("id")
+        if qid is None or qid not in gt_lookup:
+            continue
+        answer = row.get("answer")
+        solvable[qid] = bool(isinstance(answer, list) and answer == gt_lookup[qid])
+    return solvable
+
+
 def condition_tables(condition: Dict[str, Any], task_text: Dict[str, str],
-                     resamples: int, seed: int) -> Dict[str, Any]:
+                     resamples: int, seed: int,
+                     solvable: Optional[Dict[str, bool]] = None) -> Dict[str, Any]:
     items = condition["items"]
     tables: Dict[str, Any] = {
         "overall": metric_block(items),
@@ -290,6 +310,16 @@ def condition_tables(condition: Dict[str, Any], task_text: Dict[str, str],
         "by_task": {key: metric_block(rows) for key, rows in group_items(
             items, lambda item: task_text.get(item["task_name"], "unknown")).items()},
     }
+    if solvable:
+        def solvable_group(item: Dict[str, Any]) -> str:
+            flag = solvable.get(item["id"])
+            if flag is None:
+                return "unlabelled"
+            return "text_solvable" if flag else "text_not_solvable"
+
+        tables["by_text_solvable"] = {
+            key: metric_block(rows) for key, rows in group_items(items, solvable_group).items()
+        }
     base_seed = stable_seed(seed, f"{condition['name']}:bootstrap")
     bootstrap: Dict[str, Any] = {"overall": cluster_bootstrap(items, resamples, base_seed)}
     bootstrap["by_direction"] = {
@@ -304,6 +334,11 @@ def condition_tables(condition: Dict[str, Any], task_text: Dict[str, str],
         key: cluster_bootstrap(rows, resamples, stable_seed(base_seed, f"episode:{key}"))
         for key, rows in group_items(items, lambda item: item["task_name"]).items()
     }
+    if solvable:
+        bootstrap["by_text_solvable"] = {
+            key: cluster_bootstrap(rows, resamples, stable_seed(base_seed, f"solvable:{key}"))
+            for key, rows in group_items(items, solvable_group).items()
+        }
     tables["bootstrap"] = bootstrap
 
     report = condition["report"]
@@ -458,6 +493,26 @@ def build_markdown(result: Dict[str, Any]) -> str:
     lines.extend(markdown_table(headers, rows))
     lines.append("")
 
+    if any("by_text_solvable" in condition["tables"] for condition in result["conditions"].values()):
+        lines.append("## 5a. 文本可解分层（文本先验答对 = solvable）")
+        lines.append("")
+        lines.append("solvable 层的模型得分**不构成视觉证据**：这些题只看打乱后的动作文本就能答对。"
+                     "视觉证据只能看 not_solvable 层的 A−C / A−D 配对差值。")
+        lines.append("")
+        headers = ["条件", "分层", "N", "episodes", "EM", "PA_item", "PA_micro"]
+        rows = []
+        for name, condition in result["conditions"].items():
+            for group in ("text_solvable", "text_not_solvable", "unlabelled"):
+                block = condition["tables"]["by_text_solvable"].get(group)
+                if not block:
+                    continue
+                rows.append([name, group, block.get("count", ""), block.get("episodes", ""),
+                             format_metric(block.get("EM", "")),
+                             format_metric(block.get("PA_item_mean", "")),
+                             format_metric(block.get("PA_transition_micro", ""))])
+        lines.extend(markdown_table(headers, rows))
+        lines.append("")
+
     lines.append("## 5b. 配对比较 × direction×L（ΔEM = first − second，episode bootstrap 95% CI）")
     lines.append("")
     headers = ["比较", "setting", "common", "first_only", "second_only", "ΔEM [CI]"]
@@ -514,6 +569,8 @@ def main(argv: Optional[List[str]] = None) -> int:
     parser.add_argument("--ci", type=float, default=0.95)
     parser.add_argument("--out-json", default="")
     parser.add_argument("--out-md", default="")
+    parser.add_argument("--text-prior", default="",
+                        help="text_prior_predictions.jsonl；给了就出'文本可解/不可解'分层")
     args = parser.parse_args(argv)
 
     run_dir = Path(args.run_dir)
@@ -544,11 +601,22 @@ def main(argv: Optional[List[str]] = None) -> int:
         return 2
 
     task_text = load_task_text(Path(args.data_root))
+    gt_lookup: Dict[str, Any] = {}
+    for condition in loaded:
+        for item in condition["items"]:
+            gt_lookup.setdefault(item["id"], item["gt"])
+    solvable: Dict[str, bool] = {}
+    if args.text_prior:
+        prior_path = Path(args.text_prior)
+        if not prior_path.exists():
+            print(f"text prior not found: {prior_path}", file=sys.stderr)
+            return 2
+        solvable = text_solvable_map(prior_path, gt_lookup)
     fraction_low = (1.0 - args.ci) / 2.0
     fraction_high = 1.0 - fraction_low
     conditions: Dict[str, Any] = {}
     for condition in loaded:
-        tables = condition_tables(condition, task_text, args.bootstrap, args.seed)
+        tables = condition_tables(condition, task_text, args.bootstrap, args.seed, solvable or None)
         # Patch the CI fractions into every bootstrap block (kept explicit in evidence).
         tables["bootstrap"]["ci"] = args.ci
         conditions[condition["name"]] = {

@@ -1,0 +1,13 @@
+{
+  "state": "completed",
+  "abort_reason": null,
+  "planned": 42,
+  "answered": 42,
+  "success": 42,
+  "truncated": 0,
+  "invalid": 0,
+  "failed": 0,
+  "missing": 0,
+  "finished_at": "2026-10-27T20:52:11+08:00",
+  "config": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\runs\\qwen3.8-max\\v02_dev_001\\D_no_action_text\\run_config.json"
+}
