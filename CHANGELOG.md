@@ -43,6 +43,16 @@
 - 重新冻结为 `freeze_usim-enact-v0.2_20261027b`：13 组 **1818 文件**（首版 1374 + B 的 images 432 / qa 2 / inputs 4 / baselines 6），payload `6d14fb83…`，`--verify` exit 0、`--self-test-v02` 7/7。
 - 文档：v0.2 构建报告新增 §7.1（B 构建与校验）、条件矩阵与 §9 命令更新、§10 新增"数字放大不增加像素信息"等 2 条限制；协议证据与 README/next_steps 同步冻结与 B 状态。
 
+## 2026-10-28（副指标 extractable_permutation_v1）
+
+- 按用户拍板落地路径①：主指标 `usim_strict_v0.3` 不变，新增独立副指标 `extractable_permutation_v1`。
+- 新增 `ENACT/scripts/usim/extractable_v1.py`：仅接受 `stop` 回答；全文唯一方括号列表且位于末尾（其后只允许空白）；内层整数/长度/排列校验与严格解析器同源；多候选/截断/缺失/失败记 0；**签名无 gt 参数**；长度取 `num_states - 1` 并断言与 `len(gt)` 一致。
+- 新增只读分析脚本 `ENACT/scripts/usim/report_extractable_v1.py`，产物显式标注 `post_hoc=true`、`frozen=false`、`affects_budget_gate=false`。
+- 新增 `tools/test_extractable_v1.py`（22 项）：散文+末尾列表、双列表、列表不在末尾、尾随句号、未闭合括号、截断、`finish_reason=None`、空/缺失/非字符串、长度错、浮点、布尔、重复、越界，以及**与 `USIMEvaluator.parse_strict` 在裸列表上的逐例等价**。`unittest discover -s tools` 36 项全通过。
+- 只读复核现有 294+32 条响应：1024 下 B 可解析数 13/16 → **15/16**（`…45a760d1`、`…827185aa`），A 与历史四条件 A/B/C/D 完全不变。与用户侧核对一致。
+- 两处结论收紧：① 1024 仍未通过预算判据（尚余 1 条截断），副指标不把 gate 改判为通过；② "另外 2 条在任何预算下都不会通过"改为"这 2 条**已保存的输出**过不了严格解析，重新请求的行为尚未测量"。
+- 文档：总结文档新增 §14（规则表、实现、测试、事后结果、使用边界），§13 收紧措辞，README 同步。**294 次重跑继续暂缓**。
+
 ## 2026-10-28（1024-token A/B 预算诊断）
 
 - 实跑固定 16 题 × A/B = 32 次逻辑请求（`runs/qwen3.8-max/v02_budget1024_diag_v1`，`plan_sha256=3193f2eb…`，2 分 39 秒，`state=complete`）。
