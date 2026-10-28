@@ -1,0 +1,69 @@
+Loaded task: usim_train_episode_001304 with 5 key frames
+Loaded task: usim_train_episode_000175 with 4 key frames
+Loaded task: usim_train_episode_000287 with 4 key frames
+Loaded task: usim_train_episode_000552 with 4 key frames
+Loaded task: usim_train_episode_000200 with 4 key frames
+Loaded task: usim_train_episode_000653 with 4 key frames
+Loaded task: usim_train_episode_000533 with 4 key frames
+Loaded task: usim_train_episode_000587 with 4 key frames
+Loaded task: usim_train_episode_001318 with 5 key frames
+Loaded task: usim_train_episode_000556 with 4 key frames
+Loaded task: usim_train_episode_000756 with 4 key frames
+Loaded task: usim_train_episode_000104 with 4 key frames
+Loaded task: usim_train_episode_000297 with 4 key frames
+{"count": 16, "valid_permutations": 16, "invalid_or_missing": 0, "invalid_reasons": {}, "EM": 1.0, "semantic_only": 0.0, "TA": 1.0, "PA_item_mean": 1.0, "PA_transition_micro": 1.0, "transitions_total": 46}
+  forward_L3: {'count': 4, 'valid_permutations': 4, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 8}
+  forward_L4: {'count': 4, 'valid_permutations': 4, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 12}
+  forward_L5: {'count': 2, 'valid_permutations': 2, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 8}
+  inverse_L3: {'count': 2, 'valid_permutations': 2, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 4}
+  inverse_L4: {'count': 2, 'valid_permutations': 2, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 6}
+  inverse_L5: {'count': 2, 'valid_permutations': 2, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 8}
+report: E:\code\UW-VLM\ENACT\data\usim_enact\runs\qwen3.8-max\v02_budget1024_diag_v1\_preflight\A\oracle.json
+Loaded task: usim_train_episode_001304 with 5 key frames
+Loaded task: usim_train_episode_000175 with 4 key frames
+Loaded task: usim_train_episode_000287 with 4 key frames
+Loaded task: usim_train_episode_000552 with 4 key frames
+Loaded task: usim_train_episode_000200 with 4 key frames
+Loaded task: usim_train_episode_000653 with 4 key frames
+Loaded task: usim_train_episode_000533 with 4 key frames
+Loaded task: usim_train_episode_000587 with 4 key frames
+Loaded task: usim_train_episode_001318 with 5 key frames
+Loaded task: usim_train_episode_000556 with 4 key frames
+Loaded task: usim_train_episode_000756 with 4 key frames
+Loaded task: usim_train_episode_000104 with 4 key frames
+Loaded task: usim_train_episode_000297 with 4 key frames
+{"count": 16, "valid_permutations": 16, "invalid_or_missing": 0, "invalid_reasons": {}, "EM": 1.0, "semantic_only": 0.0, "TA": 1.0, "PA_item_mean": 1.0, "PA_transition_micro": 1.0, "transitions_total": 46}
+  forward_L3: {'count': 4, 'valid_permutations': 4, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 8}
+  forward_L4: {'count': 4, 'valid_permutations': 4, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 12}
+  forward_L5: {'count': 2, 'valid_permutations': 2, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 8}
+  inverse_L3: {'count': 2, 'valid_permutations': 2, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 4}
+  inverse_L4: {'count': 2, 'valid_permutations': 2, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 6}
+  inverse_L5: {'count': 2, 'valid_permutations': 2, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 8}
+report: E:\code\UW-VLM\ENACT\data\usim_enact\runs\qwen3.8-max\v02_budget1024_diag_v1\_preflight\B\oracle.json
+Loaded task: usim_train_episode_001304 with 5 key frames
+Loaded task: usim_train_episode_000175 with 4 key frames
+Loaded task: usim_train_episode_000287 with 4 key frames
+Loaded task: usim_train_episode_000552 with 4 key frames
+Loaded task: usim_train_episode_000200 with 4 key frames
+Loaded task: usim_train_episode_000653 with 4 key frames
+Loaded task: usim_train_episode_000533 with 4 key frames
+Loaded task: usim_train_episode_000587 with 4 key frames
+Loaded task: usim_train_episode_001318 with 5 key frames
+Loaded task: usim_train_episode_000556 with 4 key frames
+Loaded task: usim_train_episode_000756 with 4 key frames
+Loaded task: usim_train_episode_000104 with 4 key frames
+Loaded task: usim_train_episode_000297 with 4 key frames
+Loaded task: usim_train_episode_001304 with 5 key frames
+Loaded task: usim_train_episode_000175 with 4 key frames
+Loaded task: usim_train_episode_000287 with 4 key frames
+Loaded task: usim_train_episode_000552 with 4 key frames
+Loaded task: usim_train_episode_000200 with 4 key frames
+Loaded task: usim_train_episode_000653 with 4 key frames
+Loaded task: usim_train_episode_000533 with 4 key frames
+Loaded task: usim_train_episode_000587 with 4 key frames
+Loaded task: usim_train_episode_001318 with 5 key frames
+Loaded task: usim_train_episode_000556 with 4 key frames
+Loaded task: usim_train_episode_000756 with 4 key frames
+Loaded task: usim_train_episode_000104 with 4 key frames
+Loaded task: usim_train_episode_000297 with 4 key frames
+{"run_dir": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\runs\\qwen3.8-max\\v02_budget1024_diag_v1", "plan_sha256": "3193f2eb547a4e32d39a29a287d8c9595cbfcfad87d5ffc318cc96d9bb6ae7fc", "questions_per_condition": 16, "logical_requests": 32, "state": "not_run_or_incomplete", "budget_gate": "pending"}

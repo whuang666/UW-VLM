@@ -1,0 +1,19 @@
+{
+  "dry_run": true,
+  "questions": 16,
+  "images_total": 62,
+  "api_url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "model": "qwen3.8-max",
+  "api_key_present": true,
+  "enable_thinking": false,
+  "temperature": 0.0,
+  "max_completion_tokens": 1024,
+  "timeout": 180,
+  "max_attempts": 3,
+  "system_message": "none (option A)",
+  "format_directive_sha256": "987976c339c8e2190672955de1ece5620eab5f223b7d7a926ac695069085e08e",
+  "qa_sha256": "043dc5a3958e1e4f9af82e5e77c494561f4a002d88c6751ca18115b504883b6d",
+  "image_manifest_sha256": "97e1cac404bdb00aecb603c750a44e61c34eae935ee1033c665634319637b0b0",
+  "run_dir": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\runs\\qwen3.8-max\\v02_budget1024_diag_v1\\_preflight\\A"
+}
+dry-run: 未发起任何网络请求。

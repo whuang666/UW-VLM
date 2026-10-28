@@ -1,0 +1,6 @@
+{
+  "authenticated_api_called": false,
+  "dry_run_credential": "placeholder; not an authentication test",
+  "plan_sha256": "3193f2eb547a4e32d39a29a287d8c9595cbfcfad87d5ffc318cc96d9bb6ae7fc",
+  "state": "offline_checks_passed"
+}

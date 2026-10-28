@@ -1,0 +1,88 @@
+{
+  "budget_gate": "fail_on_fixed_subset",
+  "diagnostic_1024": {
+    "A": {
+      "N": 16,
+      "answered": 16,
+      "failed": 0,
+      "finish_reasons": {
+        "stop": 16
+      },
+      "gate_passed": true,
+      "invalid_reasons": {},
+      "max_completion_tokens_observed": 13,
+      "missing": 0,
+      "strict_valid": 16,
+      "strict_valid_rate": 1.0,
+      "truncated": 0,
+      "truncation_rate": 0.0
+    },
+    "B": {
+      "N": 16,
+      "answered": 16,
+      "failed": 0,
+      "finish_reasons": {
+        "length": 1,
+        "stop": 15
+      },
+      "gate_passed": false,
+      "invalid_reasons": {
+        "extra_text": 3
+      },
+      "max_completion_tokens_observed": 1024,
+      "missing": 0,
+      "strict_valid": 13,
+      "strict_valid_rate": 0.8125,
+      "truncated": 1,
+      "truncation_rate": 0.0625
+    }
+  },
+  "historical_256": {
+    "A": {
+      "N": 16,
+      "answered": 16,
+      "failed": 0,
+      "finish_reasons": {
+        "stop": 16
+      },
+      "gate_passed": true,
+      "invalid_reasons": {},
+      "max_completion_tokens_observed": 13,
+      "missing": 0,
+      "strict_valid": 16,
+      "strict_valid_rate": 1.0,
+      "truncated": 0,
+      "truncation_rate": 0.0
+    },
+    "B": {
+      "N": 16,
+      "answered": 16,
+      "failed": 0,
+      "finish_reasons": {
+        "length": 4,
+        "stop": 12
+      },
+      "gate_passed": false,
+      "invalid_reasons": {
+        "extra_text": 4
+      },
+      "max_completion_tokens_observed": 256,
+      "missing": 0,
+      "strict_valid": 12,
+      "strict_valid_rate": 0.75,
+      "truncated": 4,
+      "truncation_rate": 0.25
+    }
+  },
+  "historical_predictions_sha256": {
+    "A": "8ea28729df4b645a85f2e95684f938ce18c022c76b5830e41416aa2b70095532",
+    "B": "183edf732db8a2ed445fc03fca633462f78f1b46b3f46717351c96625c9bfc32"
+  },
+  "limitations": [
+    "256-token responses are historical; alias snapshot/time drift prevents a clean causal estimate.",
+    "Passing only supports this small development subset; it does not prove a universal adequate budget.",
+    "No EM-based budget selection; no final test result."
+  ],
+  "plan_sha256": "3193f2eb547a4e32d39a29a287d8c9595cbfcfad87d5ffc318cc96d9bb6ae7fc",
+  "state": "complete"
+}
