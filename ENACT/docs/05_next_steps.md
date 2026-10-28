@@ -1,6 +1,6 @@
 # 下一步工作清单与运行手册
 
-最近更新：2026-10-28（Asia/Shanghai）。**v0.2 数据、120 题 curated 题集、协议冻结、首轮 A/B/C/D 开发矩阵与统计口径修正已完成；当前重点为 B/A 输出预算诊断、统一高预算重跑和预留 test 标注／验收。** 结果与修正见 [开发矩阵复核](WBW/ENACT-USIM-v0.2开发矩阵复核与下一步-20261027.md)，交付与验收清单见 [v0.2 任务总结与验收状态](WBW/ENACT-USIM-v0.2任务总结与验收状态-20261028.md)，项目状态汇总见 [docs/README.md](README.md)。
+最近更新：2026-10-28（Asia/Shanghai）。**1024-token A/B 小规模诊断已完成但未通过判据；副指标 `extractable_permutation_v1` 已独立冻结。统一预算尚未选定，294 次重跑暂缓；当前重点是后续预算／格式诊断和预留 test 标注／验收。** [补充规则与冻结说明](protocols/extractable_permutation_v1.md)，交付与验收清单见 [v0.2 任务总结与验收状态](WBW/ENACT-USIM-v0.2任务总结与验收状态-20261028.md)，项目状态汇总见 [docs/README.md](README.md)。下列带 2026-10-27 日期的条目保留历史范围，最新状态以本段与任务总结为准。
 
 这份清单按依赖排序。**GPU 训练仍不在当前阶段。** 数据集已经确定为当前工作区的 USIM（`E:\code\UW-VLM\usim`）。
 

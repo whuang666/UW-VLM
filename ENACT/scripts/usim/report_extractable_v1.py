@@ -22,6 +22,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import sys
 from collections import Counter
@@ -47,10 +48,31 @@ def response_text(prediction: Dict) -> Optional[str]:
     return None
 
 
+def unique_rows(rows: List[Dict], source: str) -> Dict[str, Dict]:
+    lookup = {row["id"]: row for row in rows}
+    if len(lookup) != len(rows):
+        raise ValueError(f"Duplicate IDs in {source}")
+    return lookup
+
+
 def analyse(run_dir: Path, name: str, relative: str) -> Dict[str, Any]:
     condition_dir = run_dir / relative
-    predictions = {row["id"]: row for row in load_jsonl(condition_dir / "predictions.jsonl")}
+    prediction_path = condition_dir / "predictions.jsonl"
+    predictions = unique_rows(load_jsonl(prediction_path), str(prediction_path))
     items = load_jsonl(condition_dir / "report.items.jsonl")
+    indexed_items = unique_rows(items, "report.items.jsonl")
+    config_path = condition_dir / "run_config.json"
+    config = json.loads(config_path.read_text(encoding="utf-8"))
+    qa_path = Path(config["qa_path"])
+    if not qa_path.is_absolute():
+        qa_path = ROOT / qa_path
+    if hashlib.sha256(qa_path.read_bytes()).hexdigest() != config["qa_sha256"]:
+        raise ValueError("Frozen QA hash differs from run_config")
+    qa = unique_rows(load_jsonl(qa_path), "frozen QA")
+    if not qa or set(indexed_items) != set(qa):
+        raise ValueError("Scored item IDs do not equal the full frozen QA set")
+    if set(predictions) - set(qa):
+        raise ValueError("Predictions contain unknown IDs")
 
     rows: List[Dict[str, Any]] = []
     for item in items:
@@ -58,9 +80,15 @@ def analyse(run_dir: Path, name: str, relative: str) -> Dict[str, Any]:
         # Length comes from the question structure, not from the answer key: an ordering
         # question over L states asks for a permutation of 1..(L-1) future states.
         expected_length = int(item["num_states"]) - 1
+        if len(qa[item["id"]]["key_frame_ids"]) - 1 != expected_length or qa[item["id"]]["gt_answer"] != item["gt"]:
+            raise ValueError(f"{item['id']}: scored reference differs from frozen QA")
         if len(item["gt"]) != expected_length:  # keeps the no-gt rule honest
             raise SystemExit(f"{item['id']}: len(gt)={len(item['gt'])} != num_states-1={expected_length}")
-        outcome = extract(response_text(prediction), prediction.get("finish_reason"), expected_length)
+        if prediction and prediction.get("status") != "success":
+            outcome = {"status": "zero", "permutation": None,
+                       "reason": f"response_not_success:{prediction.get('status')}"}
+        else:
+            outcome = extract(response_text(prediction), prediction.get("finish_reason"), expected_length)
         correct = (outcome["permutation"] == list(item["gt"])) if outcome["status"] == "ok" else False
         rows.append({
             "id": item["id"],
@@ -80,6 +108,8 @@ def analyse(run_dir: Path, name: str, relative: str) -> Dict[str, Any]:
     return {
         "condition": name,
         "relative_dir": relative,
+        "source_sha256": {str(path): hashlib.sha256(path.read_bytes()).hexdigest() for path in (
+            prediction_path, condition_dir / "report.items.jsonl", config_path, qa_path)},
         "questions": total,
         "extractable": len(extracted),
         "extractable_rate": round(len(extracted) / total, 4) if total else 0.0,
@@ -100,7 +130,8 @@ def markdown(report: Dict[str, Any]) -> str:
     lines = [
         "# extractable_permutation_v1（副指标，事后探索）",
         "",
-        f"- 版本：`{VERSION}`；`post_hoc=true`、`frozen=false`（test 前冻结）；运行目录 `{report['run_dir']}`",
+        f"- 版本：`{VERSION}`；`post_hoc=true`、`frozen={str(report['frozen']).lower()}`；运行目录 `{report['run_dir']}`",
+        "- frozen 表示规则已通过冻结核验；开发集分析始终是事后探索，不会变成事前实验。",
         f"- 规则：{SPEC_TEXT}",
         "- **本表不改变主指标 `usim_strict_v0.3`，也不把任何 gate 改判为通过。**",
         "",
@@ -141,15 +172,21 @@ def main(argv: Optional[List[str]] = None) -> int:
     parser.add_argument("--condition", action="append", default=[], help="NAME=relative_dir，可重复")
     parser.add_argument("--out-json", default="")
     parser.add_argument("--out-md", default="")
+    parser.add_argument("--protocol-freeze", default="", help="verify a separate rule freeze; post_hoc remains true")
     args = parser.parse_args(argv)
 
     run_dir = Path(args.run_dir).resolve()
+    for output in (args.out_json, args.out_md):
+        if output and (Path(output).resolve() == run_dir or run_dir in Path(output).resolve().parents):
+            raise ValueError("Read-only analysis outputs must be outside the source run")
     specs = args.condition or ["A=A_full_image"]
     conditions: Dict[str, Any] = {}
     for spec in specs:
         if "=" not in spec:
             raise SystemExit(f"--condition 需要 NAME=dir 形式：{spec}")
         name, relative = spec.split("=", 1)
+        if name in conditions:
+            raise ValueError(f"Duplicate condition name: {name}")
         conditions[name] = analyse(run_dir, name, relative)
 
     report = {
@@ -163,6 +200,17 @@ def main(argv: Optional[List[str]] = None) -> int:
         "run_dir": str(run_dir),
         "conditions": conditions,
     }
+    if args.protocol_freeze:
+        from scripts.usim.freeze_extractable_v1 import verify_manifest
+
+        freeze_path = Path(args.protocol_freeze)
+        frozen = json.loads(freeze_path.read_text(encoding="utf-8"))
+        verification = verify_manifest(frozen, ROOT.parent)
+        if not verification["ok"]:
+            raise ValueError(f"Rule freeze verification failed: {verification['errors']}")
+        report["frozen"] = True
+        report["rule_freeze"] = {"path": str(freeze_path), "sha256": hashlib.sha256(freeze_path.read_bytes()).hexdigest(),
+                                 "freeze_id": frozen["freeze_id"]}
 
     if args.out_json:
         Path(args.out_json).parent.mkdir(parents=True, exist_ok=True)

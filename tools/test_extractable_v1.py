@@ -10,6 +10,7 @@ import inspect
 from pathlib import Path
 import sys
 import unittest
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / "ENACT/scripts/usim/extractable_v1.py"
@@ -47,6 +48,14 @@ class TrailingListEnvelope(unittest.TestCase):
         result = run("[2, 1, 3].")
         self.assertEqual(result["status"], "zero")
         self.assertEqual(result["reason"], "list_not_at_end")
+
+    def test_full_width_punctuation_is_rejected(self):
+        self.assertEqual(run("[2, 1, 3]。")["reason"], "list_not_at_end")
+
+    def test_extra_or_unclosed_brackets_are_not_skipped(self):
+        for text in ("[[2, 1, 3]", "unclosed [ prose [2, 1, 3]", "] [2, 1, 3]", "[[2, 1, 3]]"):
+            with self.subTest(text=text):
+                self.assertEqual(run(text)["status"], "zero")
 
     def test_two_lists_rejected(self):
         result = run("First guess [1, 2, 3], corrected answer [2, 1, 3]")
@@ -135,6 +144,11 @@ class EquivalenceWithStrictParser(unittest.TestCase):
 
 
 class Contract(unittest.TestCase):
+    def test_candidate_is_delegated_to_primary_parser(self):
+        with patch.object(USIMEvaluator, "parse_strict", return_value=([2, 1, 3], "ok")) as parser:
+            self.assertEqual(run("reasoning [2, 1, 3]")["status"], "ok")
+            parser.assert_called_once_with("[2, 1, 3]", 3)
+
     def test_extract_never_receives_ground_truth(self):
         parameters = list(inspect.signature(extractable.extract).parameters)
         self.assertEqual(parameters, ["text", "finish_reason", "expected_length"])

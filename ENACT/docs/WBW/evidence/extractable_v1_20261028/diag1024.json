@@ -1,0 +1,62 @@
+{
+  "version": "extractable_permutation_v1",
+  "metric": "extractable_permutation_v1 (secondary)",
+  "post_hoc": true,
+  "frozen": true,
+  "primary_metric_unchanged": "usim_strict_v0.3",
+  "affects_budget_gate": false,
+  "spec": "eligible only if the response succeeded and finish_reason=='stop'; the answer must contain exactly one '[' and one ']', forming one list at the end (trailing whitespace only; no punctuation, fences, unmatched or nested brackets); the candidate is passed directly to USIMEvaluator.parse_strict with expected_length=num_states-1, a permutation of 1..(num_states-1); multiple lists, truncation, missing or failed answers score 0; extraction never reads gt; the rule is identical for every condition and every question stays in the denominator",
+  "run_dir": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\runs\\qwen3.8-max\\v02_budget1024_diag_v1",
+  "conditions": {
+    "A": {
+      "condition": "A",
+      "relative_dir": "A_full_image",
+      "source_sha256": {
+        "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\runs\\qwen3.8-max\\v02_budget1024_diag_v1\\A_full_image\\predictions.jsonl": "5ec8f50e0667ebf269b4713468e975f2d3f7ba65aca3c72f678731d4b4facbd6",
+        "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\runs\\qwen3.8-max\\v02_budget1024_diag_v1\\A_full_image\\report.items.jsonl": "5849984f995c8a18030861482c6c584356ebd14d0ff781219080d851130b34ce",
+        "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\runs\\qwen3.8-max\\v02_budget1024_diag_v1\\A_full_image\\run_config.json": "79d38d4ef6ec01cb2085d24dc85a374d37c1cf0953546851a1d42b88a97a084d",
+        "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\runs\\qwen3.8-max\\v02_budget1024_diag_v1\\inputs\\A.jsonl": "043dc5a3958e1e4f9af82e5e77c494561f4a002d88c6751ca18115b504883b6d"
+      },
+      "questions": 16,
+      "extractable": 16,
+      "extractable_rate": 1.0,
+      "strict_valid": 16,
+      "strict_valid_rate": 1.0,
+      "extractable_correct": 14,
+      "EM_extractable": 0.875,
+      "accuracy_among_extracted": 0.875,
+      "zero_reasons": {},
+      "rows_where_only_extractable": []
+    },
+    "B": {
+      "condition": "B",
+      "relative_dir": "B_zoom",
+      "source_sha256": {
+        "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\runs\\qwen3.8-max\\v02_budget1024_diag_v1\\B_zoom\\predictions.jsonl": "9718d15806cb13aa7eb31fa9abe38c882718ea3a33dfa8e8b0c6a0c10e50534d",
+        "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\runs\\qwen3.8-max\\v02_budget1024_diag_v1\\B_zoom\\report.items.jsonl": "7725bc2def686be990c44341d6d2c0d040280c83bd1355ca37715e03c066cdb3",
+        "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\runs\\qwen3.8-max\\v02_budget1024_diag_v1\\B_zoom\\run_config.json": "d0bf32c67d52b188cbe6dbc9420bf5529b90b6c3fc12f921072f24900f89e2d1",
+        "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\runs\\qwen3.8-max\\v02_budget1024_diag_v1\\inputs\\B.jsonl": "09b360906a9061c3ef879ee101727e016f24e39e120187be05620c5751a8fd90"
+      },
+      "questions": 16,
+      "extractable": 15,
+      "extractable_rate": 0.9375,
+      "strict_valid": 13,
+      "strict_valid_rate": 0.8125,
+      "extractable_correct": 14,
+      "EM_extractable": 0.875,
+      "accuracy_among_extracted": 0.9333,
+      "zero_reasons": {
+        "response_not_success:truncated": 1
+      },
+      "rows_where_only_extractable": [
+        "usim_train_episode_000653_forward_world_modeling_4_steps_45a760d1",
+        "usim_train_episode_001304_forward_world_modeling_5_steps_827185aa"
+      ]
+    }
+  },
+  "rule_freeze": {
+    "path": "ENACT\\docs\\protocols\\extractable_permutation_v1.freeze.json",
+    "sha256": "e54a7e3f1110c80738f61b0d86989a45fa40616b7a5db30bfbdf08d48a2156c5",
+    "freeze_id": "20261028_extractable_v1"
+  }
+}
