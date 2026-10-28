@@ -1,0 +1,181 @@
+{
+  "formal_requests": 588,
+  "http_attempts": 588,
+  "retries": 0,
+  "all_http_200": true,
+  "first_request_started": "2026-10-28T19:42:29.210000+08:00",
+  "last_request_finished": "2026-10-28T20:14:55.230000+08:00",
+  "request_span_seconds": 1946.02,
+  "frozen_schedule_matches_actual_order": true,
+  "balanced_first_protocol": {
+    "no_prefill": 147,
+    "prefill": 147
+  },
+  "formal_smoke_separate": true,
+  "prompt_tokens": 412914,
+  "completion_tokens": 6990,
+  "prefix_echo": 0,
+  "paired_items": 294,
+  "B_strict_changes": [
+    {
+      "id": "usim_train_episode_000501_forward_world_modeling_4_steps_0814182a",
+      "condition": "B",
+      "episode": "usim_train_episode_000501",
+      "type": "forward_world_modeling_4_steps",
+      "num_states": 4,
+      "gt": [
+        2,
+        3,
+        1
+      ],
+      "no_prefill": {
+        "parsed": [
+          2,
+          3,
+          1
+        ],
+        "strict_correct": true,
+        "secondary_permutation": [
+          2,
+          3,
+          1
+        ],
+        "secondary_correct": true,
+        "reason": "ok"
+      },
+      "prefill": {
+        "parsed": [
+          2,
+          1,
+          3
+        ],
+        "strict_correct": false,
+        "secondary_permutation": [
+          2,
+          1,
+          3
+        ],
+        "secondary_correct": false,
+        "reason": "ok"
+      }
+    },
+    {
+      "id": "usim_train_episode_000552_inverse_world_modeling_4_steps_b95e6e61",
+      "condition": "B",
+      "episode": "usim_train_episode_000552",
+      "type": "inverse_world_modeling_4_steps",
+      "num_states": 4,
+      "gt": [
+        2,
+        3,
+        1
+      ],
+      "no_prefill": {
+        "parsed": [
+          2,
+          3,
+          1
+        ],
+        "strict_correct": true,
+        "secondary_permutation": [
+          2,
+          3,
+          1
+        ],
+        "secondary_correct": true,
+        "reason": "ok"
+      },
+      "prefill": {
+        "parsed": [
+          2,
+          1,
+          3
+        ],
+        "strict_correct": false,
+        "secondary_permutation": [
+          2,
+          1,
+          3
+        ],
+        "secondary_correct": false,
+        "reason": "ok"
+      }
+    },
+    {
+      "id": "usim_train_episode_000756_forward_world_modeling_4_steps_ceb3c8b7",
+      "condition": "B",
+      "episode": "usim_train_episode_000756",
+      "type": "forward_world_modeling_4_steps",
+      "num_states": 4,
+      "gt": [
+        2,
+        3,
+        1
+      ],
+      "no_prefill": {
+        "parsed": null,
+        "strict_correct": false,
+        "secondary_permutation": null,
+        "secondary_correct": false,
+        "reason": "extra_text"
+      },
+      "prefill": {
+        "parsed": [
+          2,
+          3,
+          1
+        ],
+        "strict_correct": true,
+        "secondary_permutation": [
+          2,
+          3,
+          1
+        ],
+        "secondary_correct": true,
+        "reason": "ok"
+      }
+    },
+    {
+      "id": "usim_train_episode_001304_forward_world_modeling_5_steps_827185aa",
+      "condition": "B",
+      "episode": "usim_train_episode_001304",
+      "type": "forward_world_modeling_5_steps",
+      "num_states": 5,
+      "gt": [
+        4,
+        1,
+        2,
+        3
+      ],
+      "no_prefill": {
+        "parsed": null,
+        "strict_correct": false,
+        "secondary_permutation": [
+          4,
+          1,
+          2,
+          3
+        ],
+        "secondary_correct": true,
+        "reason": "extra_text"
+      },
+      "prefill": {
+        "parsed": [
+          4,
+          1,
+          2,
+          3
+        ],
+        "strict_correct": true,
+        "secondary_permutation": [
+          4,
+          1,
+          2,
+          3
+        ],
+        "secondary_correct": true,
+        "reason": "ok"
+      }
+    }
+  ]
+}

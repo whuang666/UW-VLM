@@ -1,0 +1,27 @@
+Loaded task: usim_train_episode_000104 with 4 key frames
+Loaded task: usim_train_episode_000175 with 4 key frames
+Loaded task: usim_train_episode_000200 with 4 key frames
+Loaded task: usim_train_episode_000201 with 4 key frames
+Loaded task: usim_train_episode_000287 with 4 key frames
+Loaded task: usim_train_episode_000297 with 4 key frames
+Loaded task: usim_train_episode_000501 with 4 key frames
+Loaded task: usim_train_episode_000533 with 4 key frames
+Loaded task: usim_train_episode_000552 with 4 key frames
+Loaded task: usim_train_episode_000553 with 4 key frames
+Loaded task: usim_train_episode_000555 with 4 key frames
+Loaded task: usim_train_episode_000556 with 4 key frames
+Loaded task: usim_train_episode_000587 with 4 key frames
+Loaded task: usim_train_episode_000628 with 4 key frames
+Loaded task: usim_train_episode_000653 with 4 key frames
+Loaded task: usim_train_episode_000756 with 4 key frames
+Loaded task: usim_train_episode_001302 with 4 key frames
+Loaded task: usim_train_episode_001304 with 5 key frames
+Loaded task: usim_train_episode_001318 with 5 key frames
+{"count": 84, "valid_permutations": 84, "invalid_or_missing": 0, "invalid_reasons": {}, "EM": 0.9167, "semantic_only": 0.0, "TA": 0.9167, "PA_item_mean": 0.9425, "PA_transition_micro": 0.9404, "transitions_total": 218}
+  forward_L3: {'count': 19, 'valid_permutations': 19, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 0.8947, 'semantic_only': 0.0, 'TA': 0.8947, 'PA_item_mean': 0.9211, 'PA_transition_micro': 0.9211, 'transitions_total': 38}
+  forward_L4: {'count': 21, 'valid_permutations': 21, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 0.7619, 'semantic_only': 0.0, 'TA': 0.7619, 'PA_item_mean': 0.8413, 'PA_transition_micro': 0.8413, 'transitions_total': 63}
+  forward_L5: {'count': 2, 'valid_permutations': 2, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 8}
+  inverse_L3: {'count': 19, 'valid_permutations': 19, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 38}
+  inverse_L4: {'count': 21, 'valid_permutations': 21, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 63}
+  inverse_L5: {'count': 2, 'valid_permutations': 2, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 8}
+report: E:\code\UW-VLM\ENACT\data\usim_enact\runs\qwen3.8-max\v02_protocol_ablation2048_dev_v1\analysis\no_prefill\A_full_image\report.json

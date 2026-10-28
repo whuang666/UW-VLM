@@ -1,0 +1,31 @@
+{
+  "schema": "usim-ablation-statistical-validation/v1",
+  "analysis_plan_sha256": "fe6af9282fa6a3cd15d20a3bc08cd41d816b1b0aa753bf1494e4018ca7746c3b",
+  "source_sha256": {
+    "ENACT/scripts/usim/report_protocol_ablation_effects.py": "09e3860487778d86f455d44ce973eb2fad1db3f127413733079d018e911597b2",
+    "tools/test_protocol_ablation_effects.py": "7bcbed6e4e3dad5a1313aae42f91a450baf52a782bbc3af7419517d3c38b94c7"
+  },
+  "targeted_tests_passed": 10,
+  "test_names": [
+    "analysis_test_registry.EpisodeBootstrap.test_empty_support_is_rejected",
+    "analysis_test_registry.EpisodeBootstrap.test_identical_paired_outcomes_have_zero_uncertainty_of_difference",
+    "analysis_test_registry.EpisodeBootstrap.test_micro_pa_weights_full_transition_denominator",
+    "analysis_test_registry.EpisodeBootstrap.test_point_is_question_weighted_and_draws_whole_episodes",
+    "analysis_test_registry.EpisodeBootstrap.test_primary_effect_uses_unrounded_counts",
+    "analysis_test_registry.EpisodeBootstrap.test_repeated_seed_gives_identical_result",
+    "analysis_test_registry.PairedScope.test_extractable_wrong_answers_do_not_raise_secondary_em",
+    "analysis_test_registry.PairedScope.test_latency_keeps_retry_time_and_attempt_counts",
+    "analysis_test_registry.PairedScope.test_missing_paired_question_rejected_unless_declared_subset",
+    "analysis_test_registry.PairedScope.test_reference_conflict_rejected"
+  ],
+  "claims": [
+    "question-weighted point estimate; episode resampling unit",
+    "joint paired draws; identical paired outcomes have zero delta interval",
+    "PA_micro includes all frozen transitions",
+    "missing paired IDs rejected; explicit subset allowed",
+    "extractability is distinct from correct answer",
+    "retry wait included in logical latency"
+  ],
+  "new_model_requests_for_analysis": 0,
+  "reporting_code_does_not_change_frozen_execution_sources": true
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "usim-protocol-effects-analysis/v1",
+  "scope": "dev exploratory protocol ablation, not final test",
+  "bootstrap_unit": "task_name/episode",
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261028,
+  "ci": 0.95,
+  "metrics": [
+    "EM",
+    "TA",
+    "PA_item_mean",
+    "PA_transition_micro",
+    "secondary_EM_full_denominator",
+    "strict_valid_rate",
+    "extractable_rate",
+    "truncation_rate"
+  ],
+  "protocol_comparison": "prefill minus no_prefill per input condition",
+  "input_comparisons": [
+    "A-B",
+    "A-C",
+    "A-D on common forward IDs"
+  ],
+  "interaction": "(prefill B - no_prefill B) - (prefill A - no_prefill A)",
+  "strata": [
+    "direction",
+    "num_states",
+    "task_text",
+    "program text baseline correct/incorrect"
+  ],
+  "excluded": [
+    "8 compatibility smoke requests",
+    "val/test predictions"
+  ],
+  "no_equivalence_claim": true,
+  "em_used_for_gate": false
+}

@@ -1,0 +1,107 @@
+{
+  "ok": true,
+  "scope": "complete_run",
+  "execution_verified": true,
+  "errors": [],
+  "file_freeze": {
+    "ok": true,
+    "changed": [],
+    "missing": [],
+    "errors": []
+  },
+  "request_reconstruction": {
+    "expected": 588,
+    "predictions": 588,
+    "bodies_checked": 588,
+    "complete": true,
+    "errors": [],
+    "cells": {
+      "no_prefill/A": {
+        "expected": 84,
+        "present": 84,
+        "strict_valid": 84,
+        "truncated": 0,
+        "failed": 0,
+        "extractable": 84,
+        "format_gate_passed": true,
+        "compatibility_passed": true
+      },
+      "no_prefill/B": {
+        "expected": 84,
+        "present": 84,
+        "strict_valid": 81,
+        "truncated": 0,
+        "failed": 0,
+        "extractable": 82,
+        "format_gate_passed": false,
+        "compatibility_passed": false
+      },
+      "no_prefill/C": {
+        "expected": 84,
+        "present": 84,
+        "strict_valid": 84,
+        "truncated": 0,
+        "failed": 0,
+        "extractable": 84,
+        "format_gate_passed": true,
+        "compatibility_passed": true
+      },
+      "no_prefill/D": {
+        "expected": 42,
+        "present": 42,
+        "strict_valid": 42,
+        "truncated": 0,
+        "failed": 0,
+        "extractable": 42,
+        "format_gate_passed": true,
+        "compatibility_passed": true
+      },
+      "prefill/A": {
+        "expected": 84,
+        "present": 84,
+        "strict_valid": 84,
+        "truncated": 0,
+        "failed": 0,
+        "extractable": 84,
+        "format_gate_passed": true,
+        "compatibility_passed": true
+      },
+      "prefill/B": {
+        "expected": 84,
+        "present": 84,
+        "strict_valid": 84,
+        "truncated": 0,
+        "failed": 0,
+        "extractable": 84,
+        "format_gate_passed": true,
+        "compatibility_passed": true
+      },
+      "prefill/C": {
+        "expected": 84,
+        "present": 84,
+        "strict_valid": 84,
+        "truncated": 0,
+        "failed": 0,
+        "extractable": 84,
+        "format_gate_passed": true,
+        "compatibility_passed": true
+      },
+      "prefill/D": {
+        "expected": 42,
+        "present": 42,
+        "strict_valid": 42,
+        "truncated": 0,
+        "failed": 0,
+        "extractable": 42,
+        "format_gate_passed": true,
+        "compatibility_passed": true
+      }
+    }
+  },
+  "execution_freeze": {
+    "ok": true,
+    "changed": [],
+    "missing": [],
+    "errors": []
+  }
+}

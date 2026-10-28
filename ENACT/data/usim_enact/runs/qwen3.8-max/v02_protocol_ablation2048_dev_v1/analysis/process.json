@@ -1,0 +1,11 @@
+{
+  "pid": 29556,
+  "command": [
+    "C:\\Users\\whuang\\.workbuddy\\binaries\\python\\envs\\default\\Scripts\\python.exe",
+    "-u",
+    "ENACT/scripts/usim/run_v02_protocol_ablation.py",
+    "--execute",
+    "--resume"
+  ],
+  "started_at": "2026-10-28T19:42:03+08:00"
+}

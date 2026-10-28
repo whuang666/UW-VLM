@@ -1,0 +1,9 @@
+{
+  "tests": 94,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "test_process_network_calls": 0,
+  "passed": true,
+  "test_scope": "offline process only; does not patch active experiment process"
+}

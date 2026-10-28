@@ -1,0 +1,147 @@
+{
+  "schema": "usim-protocol-ablation-analysis/v1",
+  "plan_sha256": "0fc846e9dd354b5d2de62678fca072a17c5c04c460c00b2904dad8e20581f3b3",
+  "scope": "development; not final test",
+  "metrics": {
+    "no_prefill/A": {
+      "primary": {
+        "count": 84,
+        "valid_permutations": 84,
+        "invalid_or_missing": 0,
+        "invalid_reasons": {},
+        "EM": 0.9167,
+        "semantic_only": 0.0,
+        "TA": 0.9167,
+        "PA_item_mean": 0.9425,
+        "PA_transition_micro": 0.9404,
+        "transitions_total": 218
+      },
+      "secondary_correct": 77,
+      "secondary_EM": 0.9166666666666666,
+      "N": 84
+    },
+    "no_prefill/B": {
+      "primary": {
+        "count": 84,
+        "valid_permutations": 81,
+        "invalid_or_missing": 3,
+        "invalid_reasons": {
+          "extra_text": 2,
+          "wrong_length": 1
+        },
+        "EM": 0.9048,
+        "semantic_only": 0.0,
+        "TA": 0.9048,
+        "PA_item_mean": 0.9246,
+        "PA_transition_micro": 0.9174,
+        "transitions_total": 218
+      },
+      "secondary_correct": 77,
+      "secondary_EM": 0.9166666666666666,
+      "N": 84
+    },
+    "no_prefill/C": {
+      "primary": {
+        "count": 84,
+        "valid_permutations": 84,
+        "invalid_or_missing": 0,
+        "invalid_reasons": {},
+        "EM": 0.6071,
+        "semantic_only": 0.0,
+        "TA": 0.6071,
+        "PA_item_mean": 0.6518,
+        "PA_transition_micro": 0.6147,
+        "transitions_total": 218
+      },
+      "secondary_correct": 51,
+      "secondary_EM": 0.6071428571428571,
+      "N": 84
+    },
+    "no_prefill/D": {
+      "primary": {
+        "count": 42,
+        "valid_permutations": 42,
+        "invalid_or_missing": 0,
+        "invalid_reasons": {},
+        "EM": 0.6429,
+        "semantic_only": 0.0,
+        "TA": 0.6429,
+        "PA_item_mean": 0.6825,
+        "PA_transition_micro": 0.6606,
+        "transitions_total": 109
+      },
+      "secondary_correct": 27,
+      "secondary_EM": 0.6428571428571429,
+      "N": 42
+    },
+    "prefill/A": {
+      "primary": {
+        "count": 84,
+        "valid_permutations": 84,
+        "invalid_or_missing": 0,
+        "invalid_reasons": {},
+        "EM": 0.9286,
+        "semantic_only": 0.0,
+        "TA": 0.9286,
+        "PA_item_mean": 0.9504,
+        "PA_transition_micro": 0.9495,
+        "transitions_total": 218
+      },
+      "secondary_correct": 78,
+      "secondary_EM": 0.9285714285714286,
+      "N": 84
+    },
+    "prefill/B": {
+      "primary": {
+        "count": 84,
+        "valid_permutations": 84,
+        "invalid_or_missing": 0,
+        "invalid_reasons": {},
+        "EM": 0.9048,
+        "semantic_only": 0.0,
+        "TA": 0.9048,
+        "PA_item_mean": 0.9425,
+        "PA_transition_micro": 0.9404,
+        "transitions_total": 218
+      },
+      "secondary_correct": 76,
+      "secondary_EM": 0.9047619047619048,
+      "N": 84
+    },
+    "prefill/C": {
+      "primary": {
+        "count": 84,
+        "valid_permutations": 84,
+        "invalid_or_missing": 0,
+        "invalid_reasons": {},
+        "EM": 0.5714,
+        "semantic_only": 0.0,
+        "TA": 0.5714,
+        "PA_item_mean": 0.619,
+        "PA_transition_micro": 0.5872,
+        "transitions_total": 218
+      },
+      "secondary_correct": 48,
+      "secondary_EM": 0.5714285714285714,
+      "N": 84
+    },
+    "prefill/D": {
+      "primary": {
+        "count": 42,
+        "valid_permutations": 42,
+        "invalid_or_missing": 0,
+        "invalid_reasons": {},
+        "EM": 0.6429,
+        "semantic_only": 0.0,
+        "TA": 0.6429,
+        "PA_item_mean": 0.6706,
+        "PA_transition_micro": 0.6422,
+        "transitions_total": 109
+      },
+      "secondary_correct": 27,
+      "secondary_EM": 0.6428571428571429,
+      "N": 42
+    }
+  },
+  "em_used_for_format_gate": false
+}

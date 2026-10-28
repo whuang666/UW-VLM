@@ -1,0 +1,8 @@
+{
+  "historical_files_checked": 123,
+  "historical_files_unchanged": true,
+  "mismatches": [],
+  "smoke_included_in_formal_scores": false,
+  "inflight_exists": false,
+  "execution_lock_exists": false
+}
