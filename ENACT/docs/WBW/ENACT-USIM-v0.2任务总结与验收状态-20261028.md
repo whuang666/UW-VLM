@@ -353,3 +353,31 @@ A 与 B 在 2048 上的副指标口径完全一致（均 16/16 可提取、`EM_e
 由此可以下的结论只有一条：**B 的严格分数上升完全来自格式恢复，答案内容没有变化**（预填没有让模型答对更多）。旁证：`stock evaluate.py` 在派生输入上给出同样的 0.875 / 0.75，说明派生评分链与主评分器一致；原预测文件哈希在运行前后不变（`sources_unchanged=true`）。
 
 报告与派生输入：[`evidence/prefill_pilot_accuracy_v1/`](evidence/prefill_pilot_accuracy_v1/report.md)（`post_hoc=true`，不改原格式 gate）。
+
+## 16. 8 次真实兼容性冒烟（2026-10-28 19:34，已通过）
+
+命令 `run_v02_protocol_ablation.py --execute --smoke-only`，用时 53 秒，**新增 8 次逻辑请求**（不计入正式分母）。
+
+| 协议 | 条件 | HTTP | `finish_reason` | tokens | 严格解析 | 答案 |
+|---|---|---|---:|---|---|---|
+| no_prefill | A / B / C / D | 200 | stop | 10 / 10 / 9 / 10 | ok | `[1, 2, 3]` |
+| prefill | A / B / C / D | 200 | stop | 9 / 9 / 8 / 9 | ok | `[1, 2, 3]` |
+
+四件事得到确认：
+
+1. **2 协议 × 4 条件各 1 条全部 200 且正常停止**，零截断、零失败、严格解析全部合法。
+2. **预填续写未回显前缀**：`raw_completion` 为 `"1, 2, 3]"`，拼接后才是 `[1, 2, 3]`。
+3. **C 确实不带图、D 确实去掉了动作块**（C 请求 `images=0`；D 中 "Action" 出现 0 次、A 为 8 次）。
+4. **执行冻结已生成**：`execution.freeze.json`（`freeze_id=protocol_ablation2048_v1:0fc846e9dd35:execution`，payload `6847e135…`），锁定 26 个文件 = candidate + `smoke/acceptance.json` + 8 单元 × (attempts/predictions/responses)。
+
+核验分工保持独立：
+
+| 检查 | 结果 |
+|---|---|
+| `verify --prepared-only` | exit 0，`file_freeze` 无 changed/missing |
+| `verify`（complete_run） | **exit 2**：`file_freeze ok=true`、`execution_freeze ok=true`，但 `request_reconstruction` 报 8 个单元 `incomplete ID coverage` |
+| `--analyse` | exit 2（同样原因），不产出任何成绩 |
+
+**exit 2 是正确行为**：冒烟每单元只有 1 条，正式需要 84/42 条，重建计数不等于 588，因此不能通过。这正是"空结果／不完整结果不能通过"的证据，而不是故障。
+
+冒烟**不证明**的事：它只验证请求形态与解析链路可用，样本是同一道题的 8 种输入形态，**不能**用来推断任何准确率、格式率或协议效果；588 次正式请求为 0。

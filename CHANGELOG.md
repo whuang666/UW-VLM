@@ -2,6 +2,14 @@
 
 只记录有实质影响的变化。逐日检查命令、结果与推送状态见 [docs/daily/](docs/daily/README.md)。
 
+## 2026-10-28（8 次真实兼容性冒烟通过，执行冻结已生成）
+
+- 执行 `run_v02_protocol_ablation.py --execute --smoke-only`：**8 次逻辑请求**（2 协议 × 4 条件各 1 条，同一题 `a53e2cc2`），53 秒。全部 HTTP 200、`finish_reason=stop`、零截断零失败、严格解析 8/8 合法，tokens 8–10。
+- 预填续写未回显前缀（`"1, 2, 3]"`），拼接后 `[1, 2, 3]`；C 请求 `images=0`，D 中 "Action" 出现 0 次（A 为 8 次）。
+- 自动生成 `execution.freeze.json`（`protocol_ablation2048_v1:0fc846e9dd35:execution`，payload `6847e135…`），锁定 26 个文件：candidate + `smoke/acceptance.json` + 8 单元 ×(attempts/predictions/responses)。
+- 独立核验保持拒绝：`verify --prepared-only` exit 0；`verify` 完整范围 exit 2（`file_freeze`/`execution_freeze` 均 ok，但 `request_reconstruction` 报 8 单元 `incomplete ID coverage`）；`--analyse` 同样 exit 2 且不产出成绩。**这是正确行为**——冒烟每单元 1 条、正式需 84/42 条，重建数不等于 588。
+- 588 次正式请求仍为 0。冒烟只证明请求形态与解析链路可用，不构成任何准确率／格式率证据。
+
 ## 2026-10-28（P0双协议运行与严格核验）
 
 - 新增独立离线契约、双协议开发驱动及核验器；准备／执行／分析／核验四入口分离，默认离线。文件冻结与请求重建分别报告，空结果、ID或配置漂移不能通过完整验收。
