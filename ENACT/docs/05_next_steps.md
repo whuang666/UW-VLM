@@ -1,6 +1,6 @@
 # 下一步工作清单与运行手册
 
-最近更新：2026-10-29（Asia/Shanghai）。**588次双协议开发对照与P4统计已完成；test预留10条已有初标，完成独立验收仍为0/10。两条重锚候选为1497@235、1734@395，尚待独立复核。下一步先评审pick／transfer选帧规则、修复原帧与候选帧的证据归属，再统一复核、构建并冻结test输入；未调用val或test。** [onset规则草案与后续约束](../../docs/workbuddyRead/test_lift_onset_pick_transfer_draft_20261029_zh.md)，[裁决v2](WBW/evidence/test_reserve_adjudication_20261029/adjudication.md)，[初标与复核入口](../../docs/workbuddyRead/test_reserve_initial_annotations_20261028_zh.md)，[完整主副指标和配对区间](WBW/ENACT-USIM-双协议2048开发对照结果-20261028.md)。草案仅为文档，未修改标注或生效替换现行规范；下列带早期日期的条目保留历史范围。
+最近更新：2026-10-29（Asia/Shanghai）。**588次双协议开发对照与P4统计已完成；test采用独立的保守候选批次，8条L3、2条L4，Lifted不进入该候选scope。完整链20道诊断题的唯一性与oracle门禁通过；独立人眼验收仍0/10。下一步确定正式QA打乱策略、构建并全量复核实际输入，再做文本基线和独立质量验收；尚无val／test模型成绩。** [本轮审计与证据](../../docs/workbuddyRead/test_reserve_conservative_semantic_20261029_zh.md)，[保守候选](WBW/evidence/test_reserve_conservative_20261029/README.md)，[完整开发指标](WBW/ENACT-USIM-双协议2048开发对照结果-20261028.md)。20道诊断题有固定seed答案偏置，不直接作为正式test；下列带早期日期的条目保留历史范围。
 
 这份清单按依赖排序。**GPU 训练仍不在当前阶段。** 数据集已经确定为当前工作区的 USIM（`E:\code\UW-VLM\usim`）。
 

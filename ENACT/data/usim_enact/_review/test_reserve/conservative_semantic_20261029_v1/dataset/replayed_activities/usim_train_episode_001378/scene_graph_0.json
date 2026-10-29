@@ -1,0 +1,178 @@
+{
+  "60": {
+    "type": "full",
+    "nodes": [
+      {
+        "name": "robot",
+        "category": "agent",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "red_cylinder",
+        "category": "cylinder",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "green_box",
+        "category": "box",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      }
+    ],
+    "edges": []
+  },
+  "176": {
+    "type": "full",
+    "nodes": [
+      {
+        "name": "robot",
+        "category": "agent",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "red_cylinder",
+        "category": "cylinder",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "green_box",
+        "category": "box",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "from": "robot",
+        "to": "red_cylinder",
+        "states": [
+          "NextTo"
+        ]
+      }
+    ]
+  },
+  "206": {
+    "type": "full",
+    "nodes": [
+      {
+        "name": "robot",
+        "category": "agent",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "red_cylinder",
+        "category": "cylinder",
+        "states": [
+          "InGripper"
+        ],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "green_box",
+        "category": "box",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      }
+    ],
+    "edges": []
+  },
+  "448": {
+    "type": "full",
+    "nodes": [
+      {
+        "name": "robot",
+        "category": "agent",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "red_cylinder",
+        "category": "cylinder",
+        "states": [
+          "InGripper"
+        ],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "green_box",
+        "category": "box",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "from": "robot",
+        "to": "green_box",
+        "states": [
+          "NearBox"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,374 @@
+[compiled] usim_train_episode_001078: 3 frames, 2/2 visible transitions
+[compiled] usim_train_episode_001145: 3 frames, 2/2 visible transitions
+[compiled] usim_train_episode_001259: 3 frames, 2/2 visible transitions
+[compiled] usim_train_episode_001273: 3 frames, 2/2 visible transitions
+[compiled] usim_train_episode_001378: 4 frames, 3/3 visible transitions
+[compiled] usim_train_episode_001384: 4 frames, 3/3 visible transitions
+[compiled] usim_train_episode_001497: 3 frames, 2/2 visible transitions
+[compiled] usim_train_episode_001549: 3 frames, 2/2 visible transitions
+[compiled] usim_train_episode_001650: 3 frames, 2/2 visible transitions
+[compiled] usim_train_episode_001734: 3 frames, 2/2 visible transitions
+{"episodes": 10, "key_frames": 32, "transitions": 22, "visible_transitions": 22}
+Phase 1: Building valid transitions graph...
+Building Graph:   0%|          | 0/3 [00:00<?, ?it/s]Building Graph: 100%|██████████| 3/3 [00:00<00:00, 4762.65it/s]
+Phase 2: Counting valid paths with Dynamic Programming...
+DP Path Counting:   0%|          | 0/2 [00:00<?, ?it/s]DP Path Counting: 100%|██████████| 2/2 [00:00<00:00, 31068.92it/s]
+
+DP table computed. Found a total of 1 valid sequences.
+Phase 3: Sampling 1 unique paths using Weighted Random Backtracking...
+Sampling Unique Paths:   0%|          | 0/1 [00:00<?, ?it/s]Sampling Unique Paths: 100%|██████████| 1/1 [00:00<00:00, 8035.07it/s]
+
+Successfully sampled 1 representative sequences.
+Phase 4: Generating QA pairs from 1 sequences...
+Generating Ordering QA pairs:   0%|          | 0/1 [00:00<?, ?it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00,  9.39it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00,  9.37it/s]
+
+Generated 1 multi-step forward world modeling QA pairs.
+Phase 1: Building valid transitions graph...
+Building Graph:   0%|          | 0/3 [00:00<?, ?it/s]Building Graph: 100%|██████████| 3/3 [00:00<00:00, 4376.67it/s]
+Phase 2: Counting valid paths with Dynamic Programming...
+DP Path Counting:   0%|          | 0/2 [00:00<?, ?it/s]DP Path Counting: 100%|██████████| 2/2 [00:00<00:00, 46863.73it/s]
+
+DP table computed. Found a total of 1 valid sequences.
+Phase 3: Sampling 1 unique paths using Weighted Random Backtracking...
+Sampling Unique Paths:   0%|          | 0/1 [00:00<?, ?it/s]Sampling Unique Paths: 100%|██████████| 1/1 [00:00<00:00, 9892.23it/s]
+
+Successfully sampled 1 representative sequences.
+Phase 4: Generating QA pairs from 1 sequences...
+Generating Ordering QA pairs:   0%|          | 0/1 [00:00<?, ?it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00, 12.79it/s]
+
+Generated 1 multi-step inverse world modeling QA pairs.
+Truncating to 25 QA pairs.
+Phase 1: Building valid transitions graph...
+Building Graph:   0%|          | 0/3 [00:00<?, ?it/s]Building Graph: 100%|██████████| 3/3 [00:00<00:00, 3500.11it/s]
+Phase 2: Counting valid paths with Dynamic Programming...
+DP Path Counting:   0%|          | 0/2 [00:00<?, ?it/s]DP Path Counting: 100%|██████████| 2/2 [00:00<00:00, 48489.06it/s]
+
+DP table computed. Found a total of 1 valid sequences.
+Phase 3: Sampling 1 unique paths using Weighted Random Backtracking...
+Sampling Unique Paths:   0%|          | 0/1 [00:00<?, ?it/s]Sampling Unique Paths: 100%|██████████| 1/1 [00:00<00:00, 10305.42it/s]
+
+Successfully sampled 1 representative sequences.
+Phase 4: Generating QA pairs from 1 sequences...
+Generating Ordering QA pairs:   0%|          | 0/1 [00:00<?, ?it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00, 12.71it/s]
+
+Generated 1 multi-step forward world modeling QA pairs.
+Phase 1: Building valid transitions graph...
+Building Graph:   0%|          | 0/3 [00:00<?, ?it/s]Building Graph: 100%|██████████| 3/3 [00:00<00:00, 4903.71it/s]
+Phase 2: Counting valid paths with Dynamic Programming...
+DP Path Counting:   0%|          | 0/2 [00:00<?, ?it/s]DP Path Counting: 100%|██████████| 2/2 [00:00<00:00, 46091.25it/s]
+
+DP table computed. Found a total of 1 valid sequences.
+Phase 3: Sampling 1 unique paths using Weighted Random Backtracking...
+Sampling Unique Paths:   0%|          | 0/1 [00:00<?, ?it/s]Sampling Unique Paths: 100%|██████████| 1/1 [00:00<00:00, 10330.80it/s]
+
+Successfully sampled 1 representative sequences.
+Phase 4: Generating QA pairs from 1 sequences...
+Generating Ordering QA pairs:   0%|          | 0/1 [00:00<?, ?it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00, 12.66it/s]
+
+Generated 1 multi-step inverse world modeling QA pairs.
+Truncating to 25 QA pairs.
+Phase 1: Building valid transitions graph...
+Building Graph:   0%|          | 0/3 [00:00<?, ?it/s]Building Graph: 100%|██████████| 3/3 [00:00<00:00, 5400.39it/s]
+Phase 2: Counting valid paths with Dynamic Programming...
+DP Path Counting:   0%|          | 0/2 [00:00<?, ?it/s]DP Path Counting: 100%|██████████| 2/2 [00:00<00:00, 54120.05it/s]
+
+DP table computed. Found a total of 1 valid sequences.
+Phase 3: Sampling 1 unique paths using Weighted Random Backtracking...
+Sampling Unique Paths:   0%|          | 0/1 [00:00<?, ?it/s]Sampling Unique Paths: 100%|██████████| 1/1 [00:00<00:00, 10255.02it/s]
+
+Successfully sampled 1 representative sequences.
+Phase 4: Generating QA pairs from 1 sequences...
+Generating Ordering QA pairs:   0%|          | 0/1 [00:00<?, ?it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00, 13.09it/s]
+
+Generated 1 multi-step forward world modeling QA pairs.
+Phase 1: Building valid transitions graph...
+Building Graph:   0%|          | 0/3 [00:00<?, ?it/s]Building Graph: 100%|██████████| 3/3 [00:00<00:00, 5017.11it/s]
+Phase 2: Counting valid paths with Dynamic Programming...
+DP Path Counting:   0%|          | 0/2 [00:00<?, ?it/s]DP Path Counting: 100%|██████████| 2/2 [00:00<00:00, 53773.13it/s]
+
+DP table computed. Found a total of 1 valid sequences.
+Phase 3: Sampling 1 unique paths using Weighted Random Backtracking...
+Sampling Unique Paths:   0%|          | 0/1 [00:00<?, ?it/s]Sampling Unique Paths: 100%|██████████| 1/1 [00:00<00:00, 8507.72it/s]
+
+Successfully sampled 1 representative sequences.
+Phase 4: Generating QA pairs from 1 sequences...
+Generating Ordering QA pairs:   0%|          | 0/1 [00:00<?, ?it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00, 13.13it/s]
+
+Generated 1 multi-step inverse world modeling QA pairs.
+Truncating to 25 QA pairs.
+Phase 1: Building valid transitions graph...
+Building Graph:   0%|          | 0/3 [00:00<?, ?it/s]Building Graph: 100%|██████████| 3/3 [00:00<00:00, 4667.25it/s]
+Phase 2: Counting valid paths with Dynamic Programming...
+DP Path Counting:   0%|          | 0/2 [00:00<?, ?it/s]DP Path Counting: 100%|██████████| 2/2 [00:00<00:00, 53092.46it/s]
+
+DP table computed. Found a total of 1 valid sequences.
+Phase 3: Sampling 1 unique paths using Weighted Random Backtracking...
+Sampling Unique Paths:   0%|          | 0/1 [00:00<?, ?it/s]Sampling Unique Paths: 100%|██████████| 1/1 [00:00<00:00, 10782.27it/s]
+
+Successfully sampled 1 representative sequences.
+Phase 4: Generating QA pairs from 1 sequences...
+Generating Ordering QA pairs:   0%|          | 0/1 [00:00<?, ?it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00, 14.13it/s]
+
+Generated 1 multi-step forward world modeling QA pairs.
+Phase 1: Building valid transitions graph...
+Building Graph:   0%|          | 0/3 [00:00<?, ?it/s]Building Graph: 100%|██████████| 3/3 [00:00<00:00, 4641.43it/s]
+Phase 2: Counting valid paths with Dynamic Programming...
+DP Path Counting:   0%|          | 0/2 [00:00<?, ?it/s]DP Path Counting: 100%|██████████| 2/2 [00:00<00:00, 38836.15it/s]
+
+DP table computed. Found a total of 1 valid sequences.
+Phase 3: Sampling 1 unique paths using Weighted Random Backtracking...
+Sampling Unique Paths:   0%|          | 0/1 [00:00<?, ?it/s]Sampling Unique Paths: 100%|██████████| 1/1 [00:00<00:00, 10565.00it/s]
+
+Successfully sampled 1 representative sequences.
+Phase 4: Generating QA pairs from 1 sequences...
+Generating Ordering QA pairs:   0%|          | 0/1 [00:00<?, ?it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00, 13.94it/s]
+
+Generated 1 multi-step inverse world modeling QA pairs.
+Truncating to 25 QA pairs.
+Phase 1: Building valid transitions graph...
+Building Graph:   0%|          | 0/3 [00:00<?, ?it/s]Building Graph: 100%|██████████| 3/3 [00:00<00:00, 5231.98it/s]
+Phase 2: Counting valid paths with Dynamic Programming...
+DP Path Counting:   0%|          | 0/2 [00:00<?, ?it/s]DP Path Counting: 100%|██████████| 2/2 [00:00<00:00, 52428.80it/s]
+
+DP table computed. Found a total of 1 valid sequences.
+Phase 3: Sampling 1 unique paths using Weighted Random Backtracking...
+Sampling Unique Paths:   0%|          | 0/1 [00:00<?, ?it/s]Sampling Unique Paths: 100%|██████████| 1/1 [00:00<00:00, 11008.67it/s]
+
+Successfully sampled 1 representative sequences.
+Phase 4: Generating QA pairs from 1 sequences...
+Generating Ordering QA pairs:   0%|          | 0/1 [00:00<?, ?it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00,  5.80it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00,  5.79it/s]
+
+Generated 1 multi-step forward world modeling QA pairs.
+Phase 1: Building valid transitions graph...
+Building Graph:   0%|          | 0/3 [00:00<?, ?it/s]Building Graph: 100%|██████████| 3/3 [00:00<00:00, 4082.71it/s]
+Phase 2: Counting valid paths with Dynamic Programming...
+DP Path Counting:   0%|          | 0/2 [00:00<?, ?it/s]DP Path Counting: 100%|██████████| 2/2 [00:00<00:00, 50840.05it/s]
+
+DP table computed. Found a total of 1 valid sequences.
+Phase 3: Sampling 1 unique paths using Weighted Random Backtracking...
+Sampling Unique Paths:   0%|          | 0/1 [00:00<?, ?it/s]Sampling Unique Paths: 100%|██████████| 1/1 [00:00<00:00, 9892.23it/s]
+
+Successfully sampled 1 representative sequences.
+Phase 4: Generating QA pairs from 1 sequences...
+Generating Ordering QA pairs:   0%|          | 0/1 [00:00<?, ?it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00, 12.97it/s]
+
+Generated 1 multi-step inverse world modeling QA pairs.
+Truncating to 25 QA pairs.
+Phase 1: Building valid transitions graph...
+Building Graph:   0%|          | 0/3 [00:00<?, ?it/s]Building Graph: 100%|██████████| 3/3 [00:00<00:00, 5131.69it/s]
+Phase 2: Counting valid paths with Dynamic Programming...
+DP Path Counting:   0%|          | 0/2 [00:00<?, ?it/s]DP Path Counting: 100%|██████████| 2/2 [00:00<00:00, 52428.80it/s]
+
+DP table computed. Found a total of 1 valid sequences.
+Phase 3: Sampling 1 unique paths using Weighted Random Backtracking...
+Sampling Unique Paths:   0%|          | 0/1 [00:00<?, ?it/s]Sampling Unique Paths: 100%|██████████| 1/1 [00:00<00:00, 9576.04it/s]
+
+Successfully sampled 1 representative sequences.
+Phase 4: Generating QA pairs from 1 sequences...
+Generating Ordering QA pairs:   0%|          | 0/1 [00:00<?, ?it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00, 13.46it/s]
+
+Generated 1 multi-step forward world modeling QA pairs.
+Phase 1: Building valid transitions graph...
+Building Graph:   0%|          | 0/3 [00:00<?, ?it/s]Building Graph: 100%|██████████| 3/3 [00:00<00:00, 4913.28it/s]
+Phase 2: Counting valid paths with Dynamic Programming...
+DP Path Counting:   0%|          | 0/2 [00:00<?, ?it/s]DP Path Counting: 100%|██████████| 2/2 [00:00<00:00, 51150.05it/s]
+
+DP table computed. Found a total of 1 valid sequences.
+Phase 3: Sampling 1 unique paths using Weighted Random Backtracking...
+Sampling Unique Paths:   0%|          | 0/1 [00:00<?, ?it/s]Sampling Unique Paths: 100%|██████████| 1/1 [00:00<00:00, 11066.77it/s]
+
+Successfully sampled 1 representative sequences.
+Phase 4: Generating QA pairs from 1 sequences...
+Generating Ordering QA pairs:   0%|          | 0/1 [00:00<?, ?it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00, 13.15it/s]
+
+Generated 1 multi-step inverse world modeling QA pairs.
+Truncating to 25 QA pairs.
+Phase 1: Building valid transitions graph...
+Building Graph:   0%|          | 0/3 [00:00<?, ?it/s]Building Graph: 100%|██████████| 3/3 [00:00<00:00, 4221.04it/s]
+Phase 2: Counting valid paths with Dynamic Programming...
+DP Path Counting:   0%|          | 0/2 [00:00<?, ?it/s]DP Path Counting: 100%|██████████| 2/2 [00:00<00:00, 49932.19it/s]
+
+DP table computed. Found a total of 1 valid sequences.
+Phase 3: Sampling 1 unique paths using Weighted Random Backtracking...
+Sampling Unique Paths:   0%|          | 0/1 [00:00<?, ?it/s]Sampling Unique Paths: 100%|██████████| 1/1 [00:00<00:00, 10979.85it/s]
+
+Successfully sampled 1 representative sequences.
+Phase 4: Generating QA pairs from 1 sequences...
+Generating Ordering QA pairs:   0%|          | 0/1 [00:00<?, ?it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00, 13.42it/s]
+
+Generated 1 multi-step forward world modeling QA pairs.
+Phase 1: Building valid transitions graph...
+Building Graph:   0%|          | 0/3 [00:00<?, ?it/s]Building Graph: 100%|██████████| 3/3 [00:00<00:00, 4886.57it/s]
+Phase 2: Counting valid paths with Dynamic Programming...
+DP Path Counting:   0%|          | 0/2 [00:00<?, ?it/s]DP Path Counting: 100%|██████████| 2/2 [00:00<00:00, 36631.48it/s]
+
+DP table computed. Found a total of 1 valid sequences.
+Phase 3: Sampling 1 unique paths using Weighted Random Backtracking...
+Sampling Unique Paths:   0%|          | 0/1 [00:00<?, ?it/s]Sampling Unique Paths: 100%|██████████| 1/1 [00:00<00:00, 10305.42it/s]
+
+Successfully sampled 1 representative sequences.
+Phase 4: Generating QA pairs from 1 sequences...
+Generating Ordering QA pairs:   0%|          | 0/1 [00:00<?, ?it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00, 13.29it/s]
+
+Generated 1 multi-step inverse world modeling QA pairs.
+Truncating to 25 QA pairs.
+Phase 1: Building valid transitions graph...
+Building Graph:   0%|          | 0/3 [00:00<?, ?it/s]Building Graph: 100%|██████████| 3/3 [00:00<00:00, 5125.42it/s]
+Phase 2: Counting valid paths with Dynamic Programming...
+DP Path Counting:   0%|          | 0/2 [00:00<?, ?it/s]DP Path Counting: 100%|██████████| 2/2 [00:00<00:00, 52103.16it/s]
+
+DP table computed. Found a total of 1 valid sequences.
+Phase 3: Sampling 1 unique paths using Weighted Random Backtracking...
+Sampling Unique Paths:   0%|          | 0/1 [00:00<?, ?it/s]Sampling Unique Paths: 100%|██████████| 1/1 [00:00<00:00, 11096.04it/s]
+
+Successfully sampled 1 representative sequences.
+Phase 4: Generating QA pairs from 1 sequences...
+Generating Ordering QA pairs:   0%|          | 0/1 [00:00<?, ?it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00, 13.40it/s]
+
+Generated 1 multi-step forward world modeling QA pairs.
+Phase 1: Building valid transitions graph...
+Building Graph:   0%|          | 0/3 [00:00<?, ?it/s]Building Graph: 100%|██████████| 3/3 [00:00<00:00, 3263.20it/s]
+Phase 2: Counting valid paths with Dynamic Programming...
+DP Path Counting:   0%|          | 0/2 [00:00<?, ?it/s]DP Path Counting: 100%|██████████| 2/2 [00:00<00:00, 31536.12it/s]
+
+DP table computed. Found a total of 1 valid sequences.
+Phase 3: Sampling 1 unique paths using Weighted Random Backtracking...
+Sampling Unique Paths:   0%|          | 0/1 [00:00<?, ?it/s]Sampling Unique Paths: 100%|██████████| 1/1 [00:00<00:00, 8830.11it/s]
+
+Successfully sampled 1 representative sequences.
+Phase 4: Generating QA pairs from 1 sequences...
+Generating Ordering QA pairs:   0%|          | 0/1 [00:00<?, ?it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00, 13.13it/s]
+
+Generated 1 multi-step inverse world modeling QA pairs.
+Truncating to 25 QA pairs.
+Phase 1: Building valid transitions graph...
+Building Graph:   0%|          | 0/4 [00:00<?, ?it/s]Building Graph: 100%|██████████| 4/4 [00:00<00:00, 2814.02it/s]
+Phase 2: Counting valid paths with Dynamic Programming...
+DP Path Counting:   0%|          | 0/3 [00:00<?, ?it/s]DP Path Counting: 100%|██████████| 3/3 [00:00<00:00, 47482.69it/s]
+
+DP table computed. Found a total of 1 valid sequences.
+Phase 3: Sampling 1 unique paths using Weighted Random Backtracking...
+Sampling Unique Paths:   0%|          | 0/1 [00:00<?, ?it/s]Sampling Unique Paths: 100%|██████████| 1/1 [00:00<00:00, 10058.28it/s]
+
+Successfully sampled 1 representative sequences.
+Phase 4: Generating QA pairs from 1 sequences...
+Generating Ordering QA pairs:   0%|          | 0/1 [00:00<?, ?it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00,  9.08it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00,  9.06it/s]
+
+Generated 1 multi-step forward world modeling QA pairs.
+Phase 1: Building valid transitions graph...
+Building Graph:   0%|          | 0/4 [00:00<?, ?it/s]Building Graph: 100%|██████████| 4/4 [00:00<00:00, 2860.08it/s]
+Phase 2: Counting valid paths with Dynamic Programming...
+DP Path Counting:   0%|          | 0/3 [00:00<?, ?it/s]DP Path Counting: 100%|██████████| 3/3 [00:00<00:00, 62601.55it/s]
+
+DP table computed. Found a total of 1 valid sequences.
+Phase 3: Sampling 1 unique paths using Weighted Random Backtracking...
+Sampling Unique Paths:   0%|          | 0/1 [00:00<?, ?it/s]Sampling Unique Paths: 100%|██████████| 1/1 [00:00<00:00, 9642.08it/s]
+
+Successfully sampled 1 representative sequences.
+Phase 4: Generating QA pairs from 1 sequences...
+Generating Ordering QA pairs:   0%|          | 0/1 [00:00<?, ?it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00,  8.91it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00,  8.89it/s]
+
+Generated 1 multi-step inverse world modeling QA pairs.
+Truncating to 25 QA pairs.
+Phase 1: Building valid transitions graph...
+Building Graph:   0%|          | 0/4 [00:00<?, ?it/s]Building Graph: 100%|██████████| 4/4 [00:00<00:00, 2972.05it/s]
+Phase 2: Counting valid paths with Dynamic Programming...
+DP Path Counting:   0%|          | 0/3 [00:00<?, ?it/s]DP Path Counting: 100%|██████████| 3/3 [00:00<00:00, 63872.65it/s]
+
+DP table computed. Found a total of 1 valid sequences.
+Phase 3: Sampling 1 unique paths using Weighted Random Backtracking...
+Sampling Unique Paths:   0%|          | 0/1 [00:00<?, ?it/s]Sampling Unique Paths: 100%|██████████| 1/1 [00:00<00:00, 9939.11it/s]
+
+Successfully sampled 1 representative sequences.
+Phase 4: Generating QA pairs from 1 sequences...
+Generating Ordering QA pairs:   0%|          | 0/1 [00:00<?, ?it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00,  9.40it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00,  9.38it/s]
+
+Generated 1 multi-step forward world modeling QA pairs.
+Phase 1: Building valid transitions graph...
+Building Graph:   0%|          | 0/4 [00:00<?, ?it/s]Building Graph: 100%|██████████| 4/4 [00:00<00:00, 2831.12it/s]
+Phase 2: Counting valid paths with Dynamic Programming...
+DP Path Counting:   0%|          | 0/3 [00:00<?, ?it/s]DP Path Counting: 100%|██████████| 3/3 [00:00<00:00, 46603.38it/s]
+
+DP table computed. Found a total of 1 valid sequences.
+Phase 3: Sampling 1 unique paths using Weighted Random Backtracking...
+Sampling Unique Paths:   0%|          | 0/1 [00:00<?, ?it/s]Sampling Unique Paths: 100%|██████████| 1/1 [00:00<00:00, 10205.12it/s]
+
+Successfully sampled 1 representative sequences.
+Phase 4: Generating QA pairs from 1 sequences...
+Generating Ordering QA pairs:   0%|          | 0/1 [00:00<?, ?it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00,  9.65it/s]Generating Ordering QA pairs: 100%|██████████| 1/1 [00:00<00:00,  9.63it/s]
+
+Generated 1 multi-step inverse world modeling QA pairs.
+Truncating to 25 QA pairs.
+Loaded task: usim_train_episode_001078 with 3 key frames
+Loaded task: usim_train_episode_001650 with 3 key frames
+Loaded task: usim_train_episode_001734 with 3 key frames
+Loaded task: usim_train_episode_001259 with 3 key frames
+Loaded task: usim_train_episode_001273 with 3 key frames
+Loaded task: usim_train_episode_001145 with 3 key frames
+Loaded task: usim_train_episode_001497 with 3 key frames
+Loaded task: usim_train_episode_001549 with 3 key frames
+Loaded task: usim_train_episode_001384 with 4 key frames
+Loaded task: usim_train_episode_001378 with 4 key frames
+{
+  "dataset_version": "test-reserve-conservative-20261029-v1",
+  "questions": 20,
+  "uniform_EM": 0.4333,
+  "uniform_TA": 0.4333,
+  "uniform_PA_item_mean": 0.4667,
+  "uniform_PA_transition_micro": 0.4545,
+  "identity_EM": 0.2,
+  "multi_answer_questions": 0,
+  "accepted_count_histogram": {
+    "1": 20
+  },
+  "empty_reference_transitions": 0,
+  "gt_rejected_questions": 0,
+  "by_setting": {
+    "forward_L3": {
+      "count": 8,
+      "uniform_EM": 0.5,
+      "uniform_TA": 0.5,
+      "multi": 0
+    },
+    "forward_L4": {
+      "count": 2,
+      "uniform_EM": 0.1667,
+      "uniform_TA": 0.1667,
+      "multi": 0
+    },
+    "inverse_L3": {
+      "count": 8,
+      "uniform_EM": 0.5,
+      "uniform_TA": 0.5,
+      "multi": 0
+    },
+    "inverse_L4": {
+      "count": 2,
+      "uniform_EM": 0.1667,
+      "uniform_TA": 0.1667,
+      "multi": 0
+    }
+  },
+  "synthetic_baselines": {},
+  "stored_baselines_match": true,
+  "cross_checks_pass": null,
+  "all_validity_checks_pass": true,
+  "hard_errors": [],
+  "evidence": "E:\\code\\UW-VLM\\ENACT\\docs\\WBW\\evidence\\test_reserve_conservative_semantic_20261029_v1\\permutation_audit.json"
+}
+Loaded task: usim_train_episode_001078 with 3 key frames
+Loaded task: usim_train_episode_001650 with 3 key frames
+Loaded task: usim_train_episode_001734 with 3 key frames
+Loaded task: usim_train_episode_001259 with 3 key frames
+Loaded task: usim_train_episode_001273 with 3 key frames
+Loaded task: usim_train_episode_001145 with 3 key frames
+Loaded task: usim_train_episode_001497 with 3 key frames
+Loaded task: usim_train_episode_001549 with 3 key frames
+Loaded task: usim_train_episode_001384 with 4 key frames
+Loaded task: usim_train_episode_001378 with 4 key frames
+{"count": 20, "valid_permutations": 20, "invalid_or_missing": 0, "invalid_reasons": {}, "EM": 1.0, "semantic_only": 0.0, "TA": 1.0, "PA_item_mean": 1.0, "PA_transition_micro": 1.0, "transitions_total": 44}
+  forward_L3: {'count': 8, 'valid_permutations': 8, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 16}
+  forward_L4: {'count': 2, 'valid_permutations': 2, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 6}
+  inverse_L3: {'count': 8, 'valid_permutations': 8, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 16}
+  inverse_L4: {'count': 2, 'valid_permutations': 2, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 6}
+report: E:\code\UW-VLM\ENACT\docs\WBW\evidence\test_reserve_conservative_semantic_20261029_v1\oracle.json

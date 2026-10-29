@@ -1,0 +1,1181 @@
+{
+  "audit": "qa_validity_permutation_enumeration",
+  "audited_at": "2026-10-29T14:13:04+08:00",
+  "python": "3.13.14",
+  "dataset_version": "test-reserve-conservative-20261029-v1",
+  "data_root": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\_review\\test_reserve\\conservative_semantic_20261029_v1\\dataset",
+  "qa_file": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\_review\\test_reserve\\conservative_semantic_20261029_v1\\diagnostic_full_chain_qa.jsonl",
+  "qa_sha256": "a4dc74184f02d0620a2f3630d3c2c099f6236f377c95edf74a517f0546f82312",
+  "manifest_sha256": "eb0132cc85f32e66ba8a7e792d5ed495f28efd2f9f0287fbb973a65b552d3af0",
+  "evaluation_protocol": "usim_strict_v0.3",
+  "verifier": "enact.core.evaluators.TaskWiseOrderingVerifier (via scripts.usim.evaluate.USIMVerifier)",
+  "method": "enumerate all (L-1)! permutations per question and record the TA/EM/PA the real verifier returns",
+  "counts": {
+    "questions": 20,
+    "unique_ids": 20,
+    "episodes": [
+      "usim_train_episode_001078",
+      "usim_train_episode_001145",
+      "usim_train_episode_001259",
+      "usim_train_episode_001273",
+      "usim_train_episode_001378",
+      "usim_train_episode_001384",
+      "usim_train_episode_001497",
+      "usim_train_episode_001549",
+      "usim_train_episode_001650",
+      "usim_train_episode_001734"
+    ],
+    "by_type": {
+      "forward_world_modeling_3_steps": 8,
+      "forward_world_modeling_4_steps": 2,
+      "inverse_world_modeling_3_steps": 8,
+      "inverse_world_modeling_4_steps": 2
+    }
+  },
+  "overall": {
+    "count": 20,
+    "transitions_total": 44,
+    "uniform_EM": 0.4333,
+    "uniform_TA": 0.4333,
+    "uniform_PA_item_mean": 0.4667,
+    "uniform_PA_transition_micro": 0.4545,
+    "identity_EM": 0.2,
+    "identity_accepted_rate": 0.2,
+    "multi_answer_questions": 0,
+    "accepted_count_histogram": {
+      "1": 20
+    },
+    "gt_rejected_questions": 0,
+    "empty_reference_questions": 0,
+    "empty_reference_transitions": 0
+  },
+  "by_setting": {
+    "forward_L3": {
+      "count": 8,
+      "transitions_total": 16,
+      "uniform_EM": 0.5,
+      "uniform_TA": 0.5,
+      "uniform_PA_item_mean": 0.5,
+      "uniform_PA_transition_micro": 0.5,
+      "identity_EM": 0.0,
+      "identity_accepted_rate": 0.0,
+      "multi_answer_questions": 0,
+      "accepted_count_histogram": {
+        "1": 8
+      },
+      "gt_rejected_questions": 0,
+      "empty_reference_questions": 0,
+      "empty_reference_transitions": 0
+    },
+    "forward_L4": {
+      "count": 2,
+      "transitions_total": 6,
+      "uniform_EM": 0.1667,
+      "uniform_TA": 0.1667,
+      "uniform_PA_item_mean": 0.3333,
+      "uniform_PA_transition_micro": 0.3333,
+      "identity_EM": 1.0,
+      "identity_accepted_rate": 1.0,
+      "multi_answer_questions": 0,
+      "accepted_count_histogram": {
+        "1": 2
+      },
+      "gt_rejected_questions": 0,
+      "empty_reference_questions": 0,
+      "empty_reference_transitions": 0
+    },
+    "inverse_L3": {
+      "count": 8,
+      "transitions_total": 16,
+      "uniform_EM": 0.5,
+      "uniform_TA": 0.5,
+      "uniform_PA_item_mean": 0.5,
+      "uniform_PA_transition_micro": 0.5,
+      "identity_EM": 0.0,
+      "identity_accepted_rate": 0.0,
+      "multi_answer_questions": 0,
+      "accepted_count_histogram": {
+        "1": 8
+      },
+      "gt_rejected_questions": 0,
+      "empty_reference_questions": 0,
+      "empty_reference_transitions": 0
+    },
+    "inverse_L4": {
+      "count": 2,
+      "transitions_total": 6,
+      "uniform_EM": 0.1667,
+      "uniform_TA": 0.1667,
+      "uniform_PA_item_mean": 0.3333,
+      "uniform_PA_transition_micro": 0.3333,
+      "identity_EM": 1.0,
+      "identity_accepted_rate": 1.0,
+      "multi_answer_questions": 0,
+      "accepted_count_histogram": {
+        "1": 2
+      },
+      "gt_rejected_questions": 0,
+      "empty_reference_questions": 0,
+      "empty_reference_transitions": 0
+    }
+  },
+  "questions": [
+    {
+      "id": "conservative_semantic_v1_usim_train_episode_001078_forward_world_modeling_3_steps_bbcf2e3f",
+      "task_name": "usim_train_episode_001078",
+      "type": "forward_world_modeling_3_steps",
+      "direction": "forward",
+      "num_states": 3,
+      "num_transitions": 2,
+      "gt": [
+        2,
+        1
+      ],
+      "reference_signatures": [
+        [
+          "edge_add_the robot_the pipe_NextTo"
+        ],
+        [
+          "edge_remove_the robot_the pipe_NextTo",
+          "node_add_the pipe_InGripper"
+        ]
+      ],
+      "reference_natural_language": [
+        "The robot becomes in position for the pre-grasp approach beside the pipe.",
+        "The pipe becomes grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the pipe."
+      ],
+      "empty_reference_transitions": [],
+      "permutations_total": 2,
+      "accepted_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "accepted_count": 1,
+      "exact_match_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "gt_accepted": true,
+      "identity": [
+        1,
+        2
+      ],
+      "identity_accepted": false,
+      "identity_exact": false,
+      "expected_EM": 0.5,
+      "expected_TA": 0.5,
+      "expected_PA_item": 0.5,
+      "expected_PA_micro_contribution": 0.5
+    },
+    {
+      "id": "conservative_semantic_v1_usim_train_episode_001078_inverse_world_modeling_3_steps_bbcf2e3f",
+      "task_name": "usim_train_episode_001078",
+      "type": "inverse_world_modeling_3_steps",
+      "direction": "inverse",
+      "num_states": 3,
+      "num_transitions": 2,
+      "gt": [
+        2,
+        1
+      ],
+      "reference_signatures": [
+        [
+          "edge_add_the robot_the pipe_NextTo"
+        ],
+        [
+          "edge_remove_the robot_the pipe_NextTo",
+          "node_add_the pipe_InGripper"
+        ]
+      ],
+      "reference_natural_language": [
+        "The robot changes to be in position for the pre-grasp approach beside the pipe.",
+        "The pipe is now grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the pipe."
+      ],
+      "empty_reference_transitions": [],
+      "permutations_total": 2,
+      "accepted_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "accepted_count": 1,
+      "exact_match_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "gt_accepted": true,
+      "identity": [
+        1,
+        2
+      ],
+      "identity_accepted": false,
+      "identity_exact": false,
+      "expected_EM": 0.5,
+      "expected_TA": 0.5,
+      "expected_PA_item": 0.5,
+      "expected_PA_micro_contribution": 0.5
+    },
+    {
+      "id": "conservative_semantic_v1_usim_train_episode_001650_forward_world_modeling_3_steps_f095dbf8",
+      "task_name": "usim_train_episode_001650",
+      "type": "forward_world_modeling_3_steps",
+      "direction": "forward",
+      "num_states": 3,
+      "num_transitions": 2,
+      "gt": [
+        2,
+        1
+      ],
+      "reference_signatures": [
+        [
+          "edge_add_the robot_the pipe_NextTo"
+        ],
+        [
+          "edge_remove_the robot_the pipe_NextTo",
+          "node_add_the pipe_InGripper"
+        ]
+      ],
+      "reference_natural_language": [
+        "The robot changes to be in position for the pre-grasp approach beside the pipe.",
+        "The pipe becomes grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the pipe."
+      ],
+      "empty_reference_transitions": [],
+      "permutations_total": 2,
+      "accepted_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "accepted_count": 1,
+      "exact_match_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "gt_accepted": true,
+      "identity": [
+        1,
+        2
+      ],
+      "identity_accepted": false,
+      "identity_exact": false,
+      "expected_EM": 0.5,
+      "expected_TA": 0.5,
+      "expected_PA_item": 0.5,
+      "expected_PA_micro_contribution": 0.5
+    },
+    {
+      "id": "conservative_semantic_v1_usim_train_episode_001650_inverse_world_modeling_3_steps_f095dbf8",
+      "task_name": "usim_train_episode_001650",
+      "type": "inverse_world_modeling_3_steps",
+      "direction": "inverse",
+      "num_states": 3,
+      "num_transitions": 2,
+      "gt": [
+        2,
+        1
+      ],
+      "reference_signatures": [
+        [
+          "edge_add_the robot_the pipe_NextTo"
+        ],
+        [
+          "edge_remove_the robot_the pipe_NextTo",
+          "node_add_the pipe_InGripper"
+        ]
+      ],
+      "reference_natural_language": [
+        "The robot transitions to be in position for the pre-grasp approach beside the pipe.",
+        "The pipe is now grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the pipe."
+      ],
+      "empty_reference_transitions": [],
+      "permutations_total": 2,
+      "accepted_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "accepted_count": 1,
+      "exact_match_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "gt_accepted": true,
+      "identity": [
+        1,
+        2
+      ],
+      "identity_accepted": false,
+      "identity_exact": false,
+      "expected_EM": 0.5,
+      "expected_TA": 0.5,
+      "expected_PA_item": 0.5,
+      "expected_PA_micro_contribution": 0.5
+    },
+    {
+      "id": "conservative_semantic_v1_usim_train_episode_001734_forward_world_modeling_3_steps_f32f5399",
+      "task_name": "usim_train_episode_001734",
+      "type": "forward_world_modeling_3_steps",
+      "direction": "forward",
+      "num_states": 3,
+      "num_transitions": 2,
+      "gt": [
+        2,
+        1
+      ],
+      "reference_signatures": [
+        [
+          "edge_add_the robot_the pipe_NextTo"
+        ],
+        [
+          "edge_remove_the robot_the pipe_NextTo",
+          "node_add_the pipe_InGripper"
+        ]
+      ],
+      "reference_natural_language": [
+        "The robot becomes in position for the pre-grasp approach beside the pipe.",
+        "The pipe becomes grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the pipe."
+      ],
+      "empty_reference_transitions": [],
+      "permutations_total": 2,
+      "accepted_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "accepted_count": 1,
+      "exact_match_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "gt_accepted": true,
+      "identity": [
+        1,
+        2
+      ],
+      "identity_accepted": false,
+      "identity_exact": false,
+      "expected_EM": 0.5,
+      "expected_TA": 0.5,
+      "expected_PA_item": 0.5,
+      "expected_PA_micro_contribution": 0.5
+    },
+    {
+      "id": "conservative_semantic_v1_usim_train_episode_001734_inverse_world_modeling_3_steps_f32f5399",
+      "task_name": "usim_train_episode_001734",
+      "type": "inverse_world_modeling_3_steps",
+      "direction": "inverse",
+      "num_states": 3,
+      "num_transitions": 2,
+      "gt": [
+        2,
+        1
+      ],
+      "reference_signatures": [
+        [
+          "edge_add_the robot_the pipe_NextTo"
+        ],
+        [
+          "edge_remove_the robot_the pipe_NextTo",
+          "node_add_the pipe_InGripper"
+        ]
+      ],
+      "reference_natural_language": [
+        "The robot becomes in position for the pre-grasp approach beside the pipe.",
+        "The pipe is now grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the pipe."
+      ],
+      "empty_reference_transitions": [],
+      "permutations_total": 2,
+      "accepted_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "accepted_count": 1,
+      "exact_match_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "gt_accepted": true,
+      "identity": [
+        1,
+        2
+      ],
+      "identity_accepted": false,
+      "identity_exact": false,
+      "expected_EM": 0.5,
+      "expected_TA": 0.5,
+      "expected_PA_item": 0.5,
+      "expected_PA_micro_contribution": 0.5
+    },
+    {
+      "id": "conservative_semantic_v1_usim_train_episode_001259_forward_world_modeling_3_steps_68e9ca71",
+      "task_name": "usim_train_episode_001259",
+      "type": "forward_world_modeling_3_steps",
+      "direction": "forward",
+      "num_states": 3,
+      "num_transitions": 2,
+      "gt": [
+        2,
+        1
+      ],
+      "reference_signatures": [
+        [
+          "edge_add_the robot_the blue cylinder_NextTo"
+        ],
+        [
+          "edge_remove_the robot_the blue cylinder_NextTo",
+          "node_add_the blue cylinder_InGripper"
+        ]
+      ],
+      "reference_natural_language": [
+        "The robot becomes in position for the pre-grasp approach beside the blue cylinder.",
+        "The blue cylinder becomes grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the blue cylinder."
+      ],
+      "empty_reference_transitions": [],
+      "permutations_total": 2,
+      "accepted_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "accepted_count": 1,
+      "exact_match_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "gt_accepted": true,
+      "identity": [
+        1,
+        2
+      ],
+      "identity_accepted": false,
+      "identity_exact": false,
+      "expected_EM": 0.5,
+      "expected_TA": 0.5,
+      "expected_PA_item": 0.5,
+      "expected_PA_micro_contribution": 0.5
+    },
+    {
+      "id": "conservative_semantic_v1_usim_train_episode_001259_inverse_world_modeling_3_steps_68e9ca71",
+      "task_name": "usim_train_episode_001259",
+      "type": "inverse_world_modeling_3_steps",
+      "direction": "inverse",
+      "num_states": 3,
+      "num_transitions": 2,
+      "gt": [
+        2,
+        1
+      ],
+      "reference_signatures": [
+        [
+          "edge_add_the robot_the blue cylinder_NextTo"
+        ],
+        [
+          "edge_remove_the robot_the blue cylinder_NextTo",
+          "node_add_the blue cylinder_InGripper"
+        ]
+      ],
+      "reference_natural_language": [
+        "The robot becomes in position for the pre-grasp approach beside the blue cylinder.",
+        "The blue cylinder is now grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the blue cylinder."
+      ],
+      "empty_reference_transitions": [],
+      "permutations_total": 2,
+      "accepted_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "accepted_count": 1,
+      "exact_match_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "gt_accepted": true,
+      "identity": [
+        1,
+        2
+      ],
+      "identity_accepted": false,
+      "identity_exact": false,
+      "expected_EM": 0.5,
+      "expected_TA": 0.5,
+      "expected_PA_item": 0.5,
+      "expected_PA_micro_contribution": 0.5
+    },
+    {
+      "id": "conservative_semantic_v1_usim_train_episode_001273_forward_world_modeling_3_steps_a9bcd10c",
+      "task_name": "usim_train_episode_001273",
+      "type": "forward_world_modeling_3_steps",
+      "direction": "forward",
+      "num_states": 3,
+      "num_transitions": 2,
+      "gt": [
+        2,
+        1
+      ],
+      "reference_signatures": [
+        [
+          "edge_add_the robot_the blue cylinder_NextTo"
+        ],
+        [
+          "edge_remove_the robot_the blue cylinder_NextTo",
+          "node_add_the blue cylinder_InGripper"
+        ]
+      ],
+      "reference_natural_language": [
+        "The robot becomes in position for the pre-grasp approach beside the blue cylinder.",
+        "The blue cylinder is now grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the blue cylinder."
+      ],
+      "empty_reference_transitions": [],
+      "permutations_total": 2,
+      "accepted_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "accepted_count": 1,
+      "exact_match_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "gt_accepted": true,
+      "identity": [
+        1,
+        2
+      ],
+      "identity_accepted": false,
+      "identity_exact": false,
+      "expected_EM": 0.5,
+      "expected_TA": 0.5,
+      "expected_PA_item": 0.5,
+      "expected_PA_micro_contribution": 0.5
+    },
+    {
+      "id": "conservative_semantic_v1_usim_train_episode_001273_inverse_world_modeling_3_steps_a9bcd10c",
+      "task_name": "usim_train_episode_001273",
+      "type": "inverse_world_modeling_3_steps",
+      "direction": "inverse",
+      "num_states": 3,
+      "num_transitions": 2,
+      "gt": [
+        2,
+        1
+      ],
+      "reference_signatures": [
+        [
+          "edge_add_the robot_the blue cylinder_NextTo"
+        ],
+        [
+          "edge_remove_the robot_the blue cylinder_NextTo",
+          "node_add_the blue cylinder_InGripper"
+        ]
+      ],
+      "reference_natural_language": [
+        "The robot transitions to be in position for the pre-grasp approach beside the blue cylinder.",
+        "The blue cylinder becomes grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the blue cylinder."
+      ],
+      "empty_reference_transitions": [],
+      "permutations_total": 2,
+      "accepted_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "accepted_count": 1,
+      "exact_match_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "gt_accepted": true,
+      "identity": [
+        1,
+        2
+      ],
+      "identity_accepted": false,
+      "identity_exact": false,
+      "expected_EM": 0.5,
+      "expected_TA": 0.5,
+      "expected_PA_item": 0.5,
+      "expected_PA_micro_contribution": 0.5
+    },
+    {
+      "id": "conservative_semantic_v1_usim_train_episode_001145_forward_world_modeling_3_steps_d54869c3",
+      "task_name": "usim_train_episode_001145",
+      "type": "forward_world_modeling_3_steps",
+      "direction": "forward",
+      "num_states": 3,
+      "num_transitions": 2,
+      "gt": [
+        2,
+        1
+      ],
+      "reference_signatures": [
+        [
+          "edge_add_the robot_the red cylinder_NextTo"
+        ],
+        [
+          "edge_remove_the robot_the red cylinder_NextTo",
+          "node_add_the red cylinder_InGripper"
+        ]
+      ],
+      "reference_natural_language": [
+        "The robot becomes in position for the pre-grasp approach beside the red cylinder.",
+        "The red cylinder becomes grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the red cylinder."
+      ],
+      "empty_reference_transitions": [],
+      "permutations_total": 2,
+      "accepted_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "accepted_count": 1,
+      "exact_match_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "gt_accepted": true,
+      "identity": [
+        1,
+        2
+      ],
+      "identity_accepted": false,
+      "identity_exact": false,
+      "expected_EM": 0.5,
+      "expected_TA": 0.5,
+      "expected_PA_item": 0.5,
+      "expected_PA_micro_contribution": 0.5
+    },
+    {
+      "id": "conservative_semantic_v1_usim_train_episode_001145_inverse_world_modeling_3_steps_d54869c3",
+      "task_name": "usim_train_episode_001145",
+      "type": "inverse_world_modeling_3_steps",
+      "direction": "inverse",
+      "num_states": 3,
+      "num_transitions": 2,
+      "gt": [
+        2,
+        1
+      ],
+      "reference_signatures": [
+        [
+          "edge_add_the robot_the red cylinder_NextTo"
+        ],
+        [
+          "edge_remove_the robot_the red cylinder_NextTo",
+          "node_add_the red cylinder_InGripper"
+        ]
+      ],
+      "reference_natural_language": [
+        "The robot becomes in position for the pre-grasp approach beside the red cylinder.",
+        "The red cylinder becomes grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the red cylinder."
+      ],
+      "empty_reference_transitions": [],
+      "permutations_total": 2,
+      "accepted_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "accepted_count": 1,
+      "exact_match_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "gt_accepted": true,
+      "identity": [
+        1,
+        2
+      ],
+      "identity_accepted": false,
+      "identity_exact": false,
+      "expected_EM": 0.5,
+      "expected_TA": 0.5,
+      "expected_PA_item": 0.5,
+      "expected_PA_micro_contribution": 0.5
+    },
+    {
+      "id": "conservative_semantic_v1_usim_train_episode_001497_forward_world_modeling_3_steps_f64735b4",
+      "task_name": "usim_train_episode_001497",
+      "type": "forward_world_modeling_3_steps",
+      "direction": "forward",
+      "num_states": 3,
+      "num_transitions": 2,
+      "gt": [
+        2,
+        1
+      ],
+      "reference_signatures": [
+        [
+          "edge_add_the robot_the red cylinder_NextTo"
+        ],
+        [
+          "edge_remove_the robot_the red cylinder_NextTo",
+          "node_add_the red cylinder_InGripper"
+        ]
+      ],
+      "reference_natural_language": [
+        "The robot now becomes in position for the pre-grasp approach beside the red cylinder.",
+        "The red cylinder is now grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the red cylinder."
+      ],
+      "empty_reference_transitions": [],
+      "permutations_total": 2,
+      "accepted_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "accepted_count": 1,
+      "exact_match_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "gt_accepted": true,
+      "identity": [
+        1,
+        2
+      ],
+      "identity_accepted": false,
+      "identity_exact": false,
+      "expected_EM": 0.5,
+      "expected_TA": 0.5,
+      "expected_PA_item": 0.5,
+      "expected_PA_micro_contribution": 0.5
+    },
+    {
+      "id": "conservative_semantic_v1_usim_train_episode_001497_inverse_world_modeling_3_steps_f64735b4",
+      "task_name": "usim_train_episode_001497",
+      "type": "inverse_world_modeling_3_steps",
+      "direction": "inverse",
+      "num_states": 3,
+      "num_transitions": 2,
+      "gt": [
+        2,
+        1
+      ],
+      "reference_signatures": [
+        [
+          "edge_add_the robot_the red cylinder_NextTo"
+        ],
+        [
+          "edge_remove_the robot_the red cylinder_NextTo",
+          "node_add_the red cylinder_InGripper"
+        ]
+      ],
+      "reference_natural_language": [
+        "The robot becomes in position for the pre-grasp approach beside the red cylinder.",
+        "The red cylinder becomes grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the red cylinder."
+      ],
+      "empty_reference_transitions": [],
+      "permutations_total": 2,
+      "accepted_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "accepted_count": 1,
+      "exact_match_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "gt_accepted": true,
+      "identity": [
+        1,
+        2
+      ],
+      "identity_accepted": false,
+      "identity_exact": false,
+      "expected_EM": 0.5,
+      "expected_TA": 0.5,
+      "expected_PA_item": 0.5,
+      "expected_PA_micro_contribution": 0.5
+    },
+    {
+      "id": "conservative_semantic_v1_usim_train_episode_001549_forward_world_modeling_3_steps_429ee8fc",
+      "task_name": "usim_train_episode_001549",
+      "type": "forward_world_modeling_3_steps",
+      "direction": "forward",
+      "num_states": 3,
+      "num_transitions": 2,
+      "gt": [
+        2,
+        1
+      ],
+      "reference_signatures": [
+        [
+          "edge_add_the robot_the red cylinder_NextTo"
+        ],
+        [
+          "edge_remove_the robot_the red cylinder_NextTo",
+          "node_add_the red cylinder_InGripper"
+        ]
+      ],
+      "reference_natural_language": [
+        "The robot changes to be in position for the pre-grasp approach beside the red cylinder.",
+        "The red cylinder becomes grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the red cylinder."
+      ],
+      "empty_reference_transitions": [],
+      "permutations_total": 2,
+      "accepted_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "accepted_count": 1,
+      "exact_match_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "gt_accepted": true,
+      "identity": [
+        1,
+        2
+      ],
+      "identity_accepted": false,
+      "identity_exact": false,
+      "expected_EM": 0.5,
+      "expected_TA": 0.5,
+      "expected_PA_item": 0.5,
+      "expected_PA_micro_contribution": 0.5
+    },
+    {
+      "id": "conservative_semantic_v1_usim_train_episode_001549_inverse_world_modeling_3_steps_429ee8fc",
+      "task_name": "usim_train_episode_001549",
+      "type": "inverse_world_modeling_3_steps",
+      "direction": "inverse",
+      "num_states": 3,
+      "num_transitions": 2,
+      "gt": [
+        2,
+        1
+      ],
+      "reference_signatures": [
+        [
+          "edge_add_the robot_the red cylinder_NextTo"
+        ],
+        [
+          "edge_remove_the robot_the red cylinder_NextTo",
+          "node_add_the red cylinder_InGripper"
+        ]
+      ],
+      "reference_natural_language": [
+        "The robot changes to be in position for the pre-grasp approach beside the red cylinder.",
+        "The red cylinder becomes grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the red cylinder."
+      ],
+      "empty_reference_transitions": [],
+      "permutations_total": 2,
+      "accepted_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "accepted_count": 1,
+      "exact_match_permutations": [
+        [
+          2,
+          1
+        ]
+      ],
+      "gt_accepted": true,
+      "identity": [
+        1,
+        2
+      ],
+      "identity_accepted": false,
+      "identity_exact": false,
+      "expected_EM": 0.5,
+      "expected_TA": 0.5,
+      "expected_PA_item": 0.5,
+      "expected_PA_micro_contribution": 0.5
+    },
+    {
+      "id": "conservative_semantic_v1_usim_train_episode_001384_forward_world_modeling_4_steps_67ba5330",
+      "task_name": "usim_train_episode_001384",
+      "type": "forward_world_modeling_4_steps",
+      "direction": "forward",
+      "num_states": 4,
+      "num_transitions": 3,
+      "gt": [
+        1,
+        2,
+        3
+      ],
+      "reference_signatures": [
+        [
+          "edge_add_the robot_the red cylinder_NextTo"
+        ],
+        [
+          "edge_remove_the robot_the red cylinder_NextTo",
+          "node_add_the red cylinder_InGripper"
+        ],
+        [
+          "edge_add_the robot_the green box_NearBox"
+        ]
+      ],
+      "reference_natural_language": [
+        "The robot becomes in position for the pre-grasp approach beside the red cylinder.",
+        "The red cylinder is now grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the red cylinder.",
+        "The robot becomes near the green box."
+      ],
+      "empty_reference_transitions": [],
+      "permutations_total": 6,
+      "accepted_permutations": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "accepted_count": 1,
+      "exact_match_permutations": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "gt_accepted": true,
+      "identity": [
+        1,
+        2,
+        3
+      ],
+      "identity_accepted": true,
+      "identity_exact": true,
+      "expected_EM": 0.166667,
+      "expected_TA": 0.166667,
+      "expected_PA_item": 0.333333,
+      "expected_PA_micro_contribution": 0.333333
+    },
+    {
+      "id": "conservative_semantic_v1_usim_train_episode_001384_inverse_world_modeling_4_steps_67ba5330",
+      "task_name": "usim_train_episode_001384",
+      "type": "inverse_world_modeling_4_steps",
+      "direction": "inverse",
+      "num_states": 4,
+      "num_transitions": 3,
+      "gt": [
+        1,
+        2,
+        3
+      ],
+      "reference_signatures": [
+        [
+          "edge_add_the robot_the red cylinder_NextTo"
+        ],
+        [
+          "edge_remove_the robot_the red cylinder_NextTo",
+          "node_add_the red cylinder_InGripper"
+        ],
+        [
+          "edge_add_the robot_the green box_NearBox"
+        ]
+      ],
+      "reference_natural_language": [
+        "The robot now becomes in position for the pre-grasp approach beside the red cylinder.",
+        "The red cylinder becomes grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the red cylinder.",
+        "The robot now becomes near the green box."
+      ],
+      "empty_reference_transitions": [],
+      "permutations_total": 6,
+      "accepted_permutations": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "accepted_count": 1,
+      "exact_match_permutations": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "gt_accepted": true,
+      "identity": [
+        1,
+        2,
+        3
+      ],
+      "identity_accepted": true,
+      "identity_exact": true,
+      "expected_EM": 0.166667,
+      "expected_TA": 0.166667,
+      "expected_PA_item": 0.333333,
+      "expected_PA_micro_contribution": 0.333333
+    },
+    {
+      "id": "conservative_semantic_v1_usim_train_episode_001378_forward_world_modeling_4_steps_6bdb4e9a",
+      "task_name": "usim_train_episode_001378",
+      "type": "forward_world_modeling_4_steps",
+      "direction": "forward",
+      "num_states": 4,
+      "num_transitions": 3,
+      "gt": [
+        1,
+        2,
+        3
+      ],
+      "reference_signatures": [
+        [
+          "edge_add_the robot_the red cylinder_NextTo"
+        ],
+        [
+          "edge_remove_the robot_the red cylinder_NextTo",
+          "node_add_the red cylinder_InGripper"
+        ],
+        [
+          "edge_add_the robot_the green box_NearBox"
+        ]
+      ],
+      "reference_natural_language": [
+        "The robot becomes in position for the pre-grasp approach beside the red cylinder.",
+        "The red cylinder is now grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the red cylinder.",
+        "The robot changes to be near the green box."
+      ],
+      "empty_reference_transitions": [],
+      "permutations_total": 6,
+      "accepted_permutations": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "accepted_count": 1,
+      "exact_match_permutations": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "gt_accepted": true,
+      "identity": [
+        1,
+        2,
+        3
+      ],
+      "identity_accepted": true,
+      "identity_exact": true,
+      "expected_EM": 0.166667,
+      "expected_TA": 0.166667,
+      "expected_PA_item": 0.333333,
+      "expected_PA_micro_contribution": 0.333333
+    },
+    {
+      "id": "conservative_semantic_v1_usim_train_episode_001378_inverse_world_modeling_4_steps_6bdb4e9a",
+      "task_name": "usim_train_episode_001378",
+      "type": "inverse_world_modeling_4_steps",
+      "direction": "inverse",
+      "num_states": 4,
+      "num_transitions": 3,
+      "gt": [
+        1,
+        2,
+        3
+      ],
+      "reference_signatures": [
+        [
+          "edge_add_the robot_the red cylinder_NextTo"
+        ],
+        [
+          "edge_remove_the robot_the red cylinder_NextTo",
+          "node_add_the red cylinder_InGripper"
+        ],
+        [
+          "edge_add_the robot_the green box_NearBox"
+        ]
+      ],
+      "reference_natural_language": [
+        "The robot now becomes in position for the pre-grasp approach beside the red cylinder.",
+        "The red cylinder is now grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the red cylinder.",
+        "The robot now becomes near the green box."
+      ],
+      "empty_reference_transitions": [],
+      "permutations_total": 6,
+      "accepted_permutations": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "accepted_count": 1,
+      "exact_match_permutations": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "gt_accepted": true,
+      "identity": [
+        1,
+        2,
+        3
+      ],
+      "identity_accepted": true,
+      "identity_exact": true,
+      "expected_EM": 0.166667,
+      "expected_TA": 0.166667,
+      "expected_PA_item": 0.333333,
+      "expected_PA_micro_contribution": 0.333333
+    }
+  ],
+  "synthetic_baselines_recomputed": {},
+  "stored_baseline_comparison": {},
+  "cross_checks_v0_1": {},
+  "hard_errors": [],
+  "all_validity_checks_pass": true
+}

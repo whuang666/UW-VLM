@@ -1,0 +1,183 @@
+{
+  "protocol_version": "usim-enact-v0.2",
+  "episode_key": "usim_train_episode_001273",
+  "source_split": "train",
+  "episode_index": 1273,
+  "task_index": 2,
+  "task_text": "Pick up the blue cylinder",
+  "label_source": "agent_visual_review",
+  "annotation_status": "conservative_candidate_pending_independent_review",
+  "notes": "First-pass test-reserve annotation batch test-reserve-initial-20261028-v1. No model output was consulted. Ego images were reviewed before and after choosing stable render poses; wrist is auxiliary only. The boolean facts are draft interpretations, not accepted final-test labels. All ten episodes still require an independent reviewer. In particular ground support at grasp and the half-object-width lift threshold must be confirmed before this draft can enter test. DVL minimum is used only as an explicit anchoring proposal, not as visual truth. Ignore the moving appendages at the left edge when tracking the purple target. Floor contact and half-width separation need independent review at native320x240. | conservative_20261029_v1: truncated for verification (pick max L3, transfer max L4); Lifted removed from scope; at_box kept but does not imply lift; original annotation untouched.",
+  "objects": [
+    {
+      "object_id": "robot",
+      "category": "agent",
+      "description": "the robot"
+    },
+    {
+      "object_id": "blue_cylinder",
+      "category": "cylinder",
+      "color": "blue",
+      "description": "the blue cylinder, rendered purple in the ego stream"
+    }
+  ],
+  "relations": [
+    [
+      "OnSeabed",
+      "blue_cylinder"
+    ],
+    [
+      "InGripper",
+      "blue_cylinder"
+    ],
+    [
+      "NextTo",
+      "robot",
+      "blue_cylinder"
+    ]
+  ],
+  "frames": [
+    {
+      "frame_index": 179,
+      "timestamp_seconds": 17.9,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": true,
+          "evidence": "initial_visual_review_pending_independent"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "initial_visual_review_pending_independent"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "initial_visual_review_pending_independent"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "start (initial candidate): The purple target is visibly below and separated from the open gripper on the seabed; nearby appendages and background objects are distractors, not target changes."
+    },
+    {
+      "frame_index": 261,
+      "timestamp_seconds": 26.1,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": true,
+          "evidence": "initial_visual_review_pending_independent"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "initial_visual_review_pending_independent"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "blue_cylinder"
+          ],
+          "value": true,
+          "evidence": "initial_visual_review_pending_independent"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "approach (initial candidate): The open fingertips align around the target before the close at271. The target remains uncarried on the local sand."
+    },
+    {
+      "frame_index": 288,
+      "timestamp_seconds": 28.8,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": true,
+          "evidence": "initial_visual_review_pending_independent"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "blue_cylinder"
+          ],
+          "value": true,
+          "evidence": "initial_visual_review_pending_independent"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "blue_cylinder"
+          ],
+          "value": false,
+          "evidence": "initial_visual_review_pending_independent"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "grasp (initial candidate): The purple target is now across the closed fingertips, with the local floor still at its low grasp-stage pose. Ground support is an initial reading requiring independent confirmation."
+    }
+  ],
+  "conservative_version": "test-reserve-conservative-20261029-v1",
+  "removed_from_scope": {
+    "Lifted": "lift 判据在现有 ego 材料下未取得阳性验收，本版不纳入未确认的 Lifted"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schema": "usim-conservative-semantic-result/v1",
+  "candidate_version": "test-reserve-conservative-20261029-v1",
+  "questions": 20,
+  "episodes": 10,
+  "by_setting": {
+    "forward_L3": {
+      "count": 8,
+      "transitions_total": 16,
+      "uniform_EM": 0.5,
+      "uniform_TA": 0.5,
+      "uniform_PA_item_mean": 0.5,
+      "uniform_PA_transition_micro": 0.5,
+      "identity_EM": 0.0,
+      "identity_accepted_rate": 0.0,
+      "multi_answer_questions": 0,
+      "accepted_count_histogram": {
+        "1": 8
+      },
+      "gt_rejected_questions": 0,
+      "empty_reference_questions": 0,
+      "empty_reference_transitions": 0
+    },
+    "forward_L4": {
+      "count": 2,
+      "transitions_total": 6,
+      "uniform_EM": 0.1667,
+      "uniform_TA": 0.1667,
+      "uniform_PA_item_mean": 0.3333,
+      "uniform_PA_transition_micro": 0.3333,
+      "identity_EM": 1.0,
+      "identity_accepted_rate": 1.0,
+      "multi_answer_questions": 0,
+      "accepted_count_histogram": {
+        "1": 2
+      },
+      "gt_rejected_questions": 0,
+      "empty_reference_questions": 0,
+      "empty_reference_transitions": 0
+    },
+    "inverse_L3": {
+      "count": 8,
+      "transitions_total": 16,
+      "uniform_EM": 0.5,
+      "uniform_TA": 0.5,
+      "uniform_PA_item_mean": 0.5,
+      "uniform_PA_transition_micro": 0.5,
+      "identity_EM": 0.0,
+      "identity_accepted_rate": 0.0,
+      "multi_answer_questions": 0,
+      "accepted_count_histogram": {
+        "1": 8
+      },
+      "gt_rejected_questions": 0,
+      "empty_reference_questions": 0,
+      "empty_reference_transitions": 0
+    },
+    "inverse_L4": {
+      "count": 2,
+      "transitions_total": 6,
+      "uniform_EM": 0.1667,
+      "uniform_TA": 0.1667,
+      "uniform_PA_item_mean": 0.3333,
+      "uniform_PA_transition_micro": 0.3333,
+      "identity_EM": 1.0,
+      "identity_accepted_rate": 1.0,
+      "multi_answer_questions": 0,
+      "accepted_count_histogram": {
+        "1": 2
+      },
+      "gt_rejected_questions": 0,
+      "empty_reference_questions": 0,
+      "empty_reference_transitions": 0
+    }
+  },
+  "source_hash_checks": 20,
+  "native_source_frames_verified": 32,
+  "permutation_instances_evaluated": 56,
+  "accepted_count_histogram": {
+    "1": 20
+  },
+  "unique_gate_passed": true,
+  "non_unique_or_invalid_ids": [],
+  "empty_reference_transitions": 0,
+  "gt_rejected_questions": 0,
+  "oracle": {
+    "count": 20,
+    "valid_permutations": 20,
+    "invalid_or_missing": 0,
+    "invalid_reasons": {},
+    "EM": 1.0,
+    "semantic_only": 0.0,
+    "TA": 1.0,
+    "PA_item_mean": 1.0,
+    "PA_transition_micro": 1.0,
+    "transitions_total": 44
+  },
+  "oracle_gate_passed": true,
+  "uniform_random_EM_exact": "13/30",
+  "answer_distribution": {
+    "[2, 1]": 16,
+    "[1, 2, 3]": 4
+  },
+  "diagnostic_qa_sha256": "a4dc74184f02d0620a2f3630d3c2c099f6236f377c95edf74a517f0546f82312",
+  "diagnostic_qa_path": "ENACT/data/usim_enact/_review/test_reserve/conservative_semantic_20261029_v1/diagnostic_full_chain_qa.jsonl",
+  "dataset_path": "ENACT/data/usim_enact/_review/test_reserve/conservative_semantic_20261029_v1/dataset",
+  "mechanical_gate_passed": true,
+  "visual_semantic_truth_validated": false,
+  "transfer_ego_adjudication_complete": false,
+  "independent_acceptance": "0/10",
+  "formal_test_release": false,
+  "model_api_calls": 0
+}

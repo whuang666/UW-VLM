@@ -6,7 +6,7 @@
 
 ENACT 的“动作”是可见场景状态的变化，不是 USIM 的 13 维控制向量。v0.2 数据、题集、冻结及588次双协议开发对照已完成；当前重点是 **预留 test 的选帧规则修订与独立质量验收**。
 
-2026-10-29 最新交接：[dev501单条样板链尝试](../../docs/workbuddyRead/dev_lift_chain_ep000501_20261029_zh.md)。本地140帧双视图取证未获阳性样板，卡在局部地面参照与物理观察时间；原[19条dev试跑](../../docs/workbuddyRead/dev_lift_onset_feasibility_20261029_zh.md)结论“暂不替换旧硬窗口”保持。1302的18帧已明确为违反旧规范的既有缺陷。test独立验收仍0/10；原草案、标签及历史结果保留各自版本。
+2026-10-29 最新交接：[保守候选唯一性与oracle审计](../../docs/workbuddyRead/test_reserve_conservative_semantic_20261029_zh.md)。8条L3与2条L4完整链生成20道诊断题，56个排列全部枚举，每题恰好1个合法答案，oracle全1。固定seed导致答案分布偏置，这20题不直接用于正式test；正式QA、文本基线及独立人眼验收仍待完成（0/10）。[501取证](../../docs/workbuddyRead/dev_lift_chain_ep000501_20261029_zh.md)与历史标签／成绩保留原版本。
 
 ## 阅读入口
 

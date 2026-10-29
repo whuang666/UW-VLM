@@ -1,0 +1,78 @@
+{
+  "schema": "usim-conservative-transfer-pair-review/v1",
+  "candidate_version": "test-reserve-conservative-20261029-v1",
+  "items": [
+    {
+      "episode": 1378,
+      "source_frame_pair": [
+        206,
+        448
+      ],
+      "native_images": [
+        {
+          "role": "grasp",
+          "frame": 206,
+          "path": "ENACT/data/usim_enact/_review/test_reserve/conservative_semantic_20261029_v1/dataset/replayed_activities/usim_train_episode_001378/external_sensor1/00206.png",
+          "sha256": "cf240ac1c8e06cf0bc51ca80295234e2c6ad5c15c5d5cd4c679e0bdb188b72a0"
+        },
+        {
+          "role": "at_box",
+          "frame": 448,
+          "path": "ENACT/data/usim_enact/_review/test_reserve/conservative_semantic_20261029_v1/dataset/replayed_activities/usim_train_episode_001378/external_sensor1/00448.png",
+          "sha256": "f987fce2b529d93371fbf61672490f19c8b91aa9802b819e05cb7ba4ec709a2b"
+        }
+      ],
+      "compiled_reference_signature": [
+        "edge_add_the robot_the green box_NearBox"
+      ],
+      "compiled_reference_text": "The robot changes to be near the green box.",
+      "candidate_effect": "NearBox false -> true; InGripper remains true; no Lifted or OnSeabed in scope",
+      "release_signal_frame": 463,
+      "at_box_before_release_frames": 15,
+      "technical_visual_observation": "Red target remains visible at the gripper in both endpoint images; green box becomes larger and changes position relative to the robot/effector. This is consistent with a move toward the box.",
+      "technical_endpoint_pair_readable": true,
+      "near_box_release_position_independently_confirmed": null,
+      "intervening_motion_visually_audited": false,
+      "independent_ego_acceptance": "pending",
+      "reviewer": "Codex AI agent, technical endpoint review; not independent human annotation",
+      "lift_claim_inferred": false
+    },
+    {
+      "episode": 1384,
+      "source_frame_pair": [
+        239,
+        486
+      ],
+      "native_images": [
+        {
+          "role": "grasp",
+          "frame": 239,
+          "path": "ENACT/data/usim_enact/_review/test_reserve/conservative_semantic_20261029_v1/dataset/replayed_activities/usim_train_episode_001384/external_sensor1/00239.png",
+          "sha256": "5ab55db234d53289bf69db0c758c478f745d19d14256fe016fc9d959261c3fb6"
+        },
+        {
+          "role": "at_box",
+          "frame": 486,
+          "path": "ENACT/data/usim_enact/_review/test_reserve/conservative_semantic_20261029_v1/dataset/replayed_activities/usim_train_episode_001384/external_sensor1/00486.png",
+          "sha256": "9d725170f87836892b1cd945ca12403ca1881ecdb01ea465d7fa0746b1f21e82"
+        }
+      ],
+      "compiled_reference_signature": [
+        "edge_add_the robot_the green box_NearBox"
+      ],
+      "compiled_reference_text": "The robot becomes near the green box.",
+      "candidate_effect": "NearBox false -> true; InGripper remains true; no Lifted or OnSeabed in scope",
+      "release_signal_frame": 501,
+      "at_box_before_release_frames": 15,
+      "technical_visual_observation": "Red target remains visible at the gripper in both endpoint images; green box becomes larger and changes position relative to the robot/effector. This is consistent with a move toward the box.",
+      "technical_endpoint_pair_readable": true,
+      "near_box_release_position_independently_confirmed": null,
+      "intervening_motion_visually_audited": false,
+      "independent_ego_acceptance": "pending",
+      "reviewer": "Codex AI agent, technical endpoint review; not independent human annotation",
+      "lift_claim_inferred": false
+    }
+  ],
+  "independent_acceptance": "0/10",
+  "model_api_calls": 0
+}

@@ -1,0 +1,72 @@
+{
+  "schema": "usim-conservative-semantic-plan/v1",
+  "candidate_version": "test-reserve-conservative-20261029-v1",
+  "audit_version": "conservative-semantic-20261029-v1",
+  "candidate_manifest_sha256": "65989922a2d16e45429fc01fcba065f120560585642e410b9042ac3725c9340d",
+  "candidate_annotation_sha256": {
+    "usim_train_episode_001078": "b4e821ca9ad5020d3c808eca42ed6e23e67847c4980a667a3ebc631b99672b9c",
+    "usim_train_episode_001650": "1c0380e6f98cbd8baaa00cbc72456715e95da3972436013936946c62629564d5",
+    "usim_train_episode_001734": "1546a120ef45994c0e420bb9fcf92476dff21b0b1e7eb2691d6ca194da0724e3",
+    "usim_train_episode_001259": "d4bb62fef0cfdb381b138f6691471cca1ae001f675bea90336a023caa7ff1583",
+    "usim_train_episode_001273": "2a403389f39d0c8b95a76aeeebd27dffd2f3bbdf82599d439605283ed2718d3f",
+    "usim_train_episode_001145": "adf053c253686fda3bb3613ee2904307d772284f33e86441b0ebc92b29a12486",
+    "usim_train_episode_001497": "eddde311e35f519ac02f928ffe87b50bc34db1e4f63bdb3b00dc4535f2ed4b91",
+    "usim_train_episode_001549": "e8cfa4b7901bf0d30e3e64f5fbf3eeda678808a3116c8ecd225ac7e1a88410d3",
+    "usim_train_episode_001384": "ae449a25aee7e41951f90c717aa35e8ea3ccdceab3522d68e1ff379ae1157b1a",
+    "usim_train_episode_001378": "54023b4712b8b9dde3e969ad0641768966c933c508420ad230906ddd7dfc69e1"
+  },
+  "raw_source_sha256": {
+    "train/data/chunk-001/episode_001078.parquet": "b21ccbc3a4917a325c1fae061f851e055f08e72f707aa439e6c096e2d0ebbf65",
+    "train/videos/chunk-001/observation.images.ego/episode_001078.mp4": "7310d1ed9ea0b2156ad31382d755ef4c68e442525c9e7d6cd3740bde8922a0c6",
+    "train/data/chunk-001/episode_001650.parquet": "9d2b30b48dafb622834d965d1a2d0155f4abb4476e8c9d98abbdb1f38b2acdc3",
+    "train/videos/chunk-001/observation.images.ego/episode_001650.mp4": "b955bb1c6c9e896ac8825f01564b85d0f50147daebeea10fbb9c889d806d4e95",
+    "train/data/chunk-001/episode_001734.parquet": "67d947eba151375de3e96e715d66a3594bb0bacd01c49d774a6c6ac4cdd0efd2",
+    "train/videos/chunk-001/observation.images.ego/episode_001734.mp4": "c2864051f717c2dbff28a17cf71f248cc9cc3b8646d2815a5b140d127e7c26ed",
+    "train/data/chunk-001/episode_001259.parquet": "b2a409c2ed3c857a438f8b6fd2abeb29c657edeee0c44eb3037d6acc25c02d50",
+    "train/videos/chunk-001/observation.images.ego/episode_001259.mp4": "c52644ba7bcf2678f1fa20ef08070a19a8ad8bf652cc9faab6d4dabcd8168934",
+    "train/data/chunk-001/episode_001273.parquet": "aa10636176a828493e1b256cd4d8741dd57db15799809f3477238cae2c613cf0",
+    "train/videos/chunk-001/observation.images.ego/episode_001273.mp4": "0446bff82edcef9c4d7faffaa89ca4b7673047b9defbfae366ce76c14b2c7d0d",
+    "train/data/chunk-001/episode_001145.parquet": "5aea5e251e6a47c4ac2c9b78a1695acfe4fb313bd68e882e0b0e4b2740682314",
+    "train/videos/chunk-001/observation.images.ego/episode_001145.mp4": "93805373fca445f5b459510570ce3a95c3c514bd488ec8c35fce139bb5016dba",
+    "train/data/chunk-001/episode_001497.parquet": "b6b677fbe1e956d271690a2410be79a78f788de5221798454dcb71909a7d1b0c",
+    "train/videos/chunk-001/observation.images.ego/episode_001497.mp4": "314b3fe49dd62cad6f8b046d0ce0b9b460cb4dfe734c2b13d792a7ea26e28dcf",
+    "train/data/chunk-001/episode_001549.parquet": "fee5573dea378e5e4751a5ae5fa067bc61991f8e892d3c0c31e30573a010c716",
+    "train/videos/chunk-001/observation.images.ego/episode_001549.mp4": "9c16c69072f1ed1d18adcd2da550a7fbb52aee5580496548c155bd923f6c3043",
+    "train/data/chunk-001/episode_001384.parquet": "7a841a6e8bca21aac6ea46972943df40693865a8ba012b34dc0847792d1a2bee",
+    "train/videos/chunk-001/observation.images.ego/episode_001384.mp4": "94fe97e473eac8ab46038446bfbd09947dbf05f452be6536f00772030ef02e3e",
+    "train/data/chunk-001/episode_001378.parquet": "961a901fec28f02ea9e73381c2e304b621cc2797ba5c4c963360d4b1c7bf1345",
+    "train/videos/chunk-001/observation.images.ego/episode_001378.mp4": "c4ee44ac475cf07f3d7af13862aae6ac4f3cba64f51d52ee8dc215bd82b58a4e"
+  },
+  "source_commit": "88c3612bf99d10652f19ec531052a38c04f0202e",
+  "adapter_protocol_versions": [
+    "usim-enact-v0.2"
+  ],
+  "code_sha256": {
+    "ENACT/scripts/usim/audit_conservative_candidates.py": "8aada440d3902aeea46faaa5931391f04d9155ac1dcf1432a1cbe84f7e2e0768",
+    "ENACT/scripts/usim/build_dataset.py": "e0973e34929960e26926121c7f9ddeb1b4effe8f89b5c8964cb486205dade053",
+    "ENACT/scripts/usim/build_qa.py": "708734995ddc854936c4e8d9e381a60b5480952f050a25233c131297d9f7bad5",
+    "ENACT/scripts/usim/audit_qa_validity.py": "dd2d1cc50b2e959368a660d610f24d79e82595b1fba3ab2400c32d9c6d1970cf",
+    "ENACT/scripts/usim/evaluate.py": "f18086e0afcedc45229c3247ceb73cd70090017b133fce6ddf5a3c1165a86a6a",
+    "ENACT/enact/core/evaluators.py": "b69c18604e0572ebbeefeeb9b801b0d5745f79454c0cc20aa7b9b77f12222572",
+    "ENACT/enact/core/forward_world_modeling.py": "839ad343a5e96249c00ccb245f1a910694d8b7f7e65a3269908fe60f374a87b0",
+    "ENACT/enact/core/inverse_world_modeling.py": "1341720f9e5eb99466673e8d6997c10f901a27578ee7d56e9f82986cbfea270a"
+  },
+  "planned_questions": 20,
+  "directions": [
+    "forward",
+    "inverse"
+  ],
+  "frame_selection": "all retained frames, one diagnostic QA per episode/direction; no subpaths",
+  "generator_randomness": "stock per-call seed42 retained; diagnostic answer distribution is not a test design",
+  "gates": [
+    "all 10 episodes",
+    "20 distinct full-chain questions",
+    "nonempty reference transitions",
+    "reference accepted",
+    "exactly one accepted permutation per question",
+    "oracle all metrics 1"
+  ],
+  "model_api_calls": 0,
+  "original_annotation_writes": 0,
+  "formal_test_release": false
+}

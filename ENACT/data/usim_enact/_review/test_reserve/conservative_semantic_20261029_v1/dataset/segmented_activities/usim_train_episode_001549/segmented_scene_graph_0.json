@@ -1,0 +1,101 @@
+{
+  "75": {
+    "type": "full",
+    "nodes": [
+      {
+        "name": "robot",
+        "category": "agent",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "red_cylinder",
+        "category": "cylinder",
+        "states": [
+          "OnSeabed"
+        ],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      }
+    ],
+    "edges": []
+  },
+  "183": {
+    "type": "full",
+    "nodes": [
+      {
+        "name": "robot",
+        "category": "agent",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "red_cylinder",
+        "category": "cylinder",
+        "states": [
+          "OnSeabed"
+        ],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "from": "robot",
+        "to": "red_cylinder",
+        "states": [
+          "NextTo"
+        ]
+      }
+    ]
+  },
+  "219": {
+    "type": "full",
+    "nodes": [
+      {
+        "name": "robot",
+        "category": "agent",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "red_cylinder",
+        "category": "cylinder",
+        "states": [
+          "InGripper",
+          "OnSeabed"
+        ],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      }
+    ],
+    "edges": []
+  }
+}

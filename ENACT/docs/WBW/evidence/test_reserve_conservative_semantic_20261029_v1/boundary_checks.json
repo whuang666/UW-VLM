@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "reject_frozen_output": 1,
+    "reject_existing_work": 1,
+    "reject_existing_evidence": 1
+  },
+  "passed": 3,
+  "unused_guard_directory_created": false,
+  "source_compiles": true
+}

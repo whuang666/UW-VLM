@@ -1,0 +1,183 @@
+{
+  "protocol_version": "usim-enact-v0.2",
+  "episode_key": "usim_train_episode_001549",
+  "source_split": "train",
+  "episode_index": 1549,
+  "task_index": 6,
+  "task_text": "Pick up the red cylinder",
+  "label_source": "agent_visual_review",
+  "annotation_status": "conservative_candidate_pending_independent_review",
+  "notes": "First-pass test-reserve annotation batch test-reserve-initial-20261028-v1. No model output was consulted. Ego images were reviewed before and after choosing stable render poses; wrist is auxiliary only. The boolean facts are draft interpretations, not accepted final-test labels. All ten episodes still require an independent reviewer. In particular ground support at grasp and the half-object-width lift threshold must be confirmed before this draft can enter test. DVL minimum is used only as an explicit anchoring proposal, not as visual truth. Initial frames with no reliable target view are excluded. Nativeego clearance and preceding ground support still require independent adjudication. | conservative_20261029_v1: truncated for verification (pick max L3, transfer max L4); Lifted removed from scope; at_box kept but does not imply lift; original annotation untouched.",
+  "objects": [
+    {
+      "object_id": "robot",
+      "category": "agent",
+      "description": "the robot"
+    },
+    {
+      "object_id": "red_cylinder",
+      "category": "cylinder",
+      "color": "red",
+      "description": "the red cylinder below the gripper"
+    }
+  ],
+  "relations": [
+    [
+      "OnSeabed",
+      "red_cylinder"
+    ],
+    [
+      "InGripper",
+      "red_cylinder"
+    ],
+    [
+      "NextTo",
+      "robot",
+      "red_cylinder"
+    ]
+  ],
+  "frames": [
+    {
+      "frame_index": 75,
+      "timestamp_seconds": 7.5,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "initial_visual_review_pending_independent"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "initial_visual_review_pending_independent"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "initial_visual_review_pending_independent"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "start (initial candidate): The red target is visible on the lit seabed to the right of and separated from the open jaws. Earlier f0 lacks a reliable view of the target and was rejected."
+    },
+    {
+      "frame_index": 183,
+      "timestamp_seconds": 18.3,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "initial_visual_review_pending_independent"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "initial_visual_review_pending_independent"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "initial_visual_review_pending_independent"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "approach (initial candidate): The open jaws are in position next to the red cylinder before the close at199; the target is not carried yet."
+    },
+    {
+      "frame_index": 219,
+      "timestamp_seconds": 21.9,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "initial_visual_review_pending_independent"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "initial_visual_review_pending_independent"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "initial_visual_review_pending_independent"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "grasp (initial candidate): The red target crosses the closed fingertips in a stable render pose while the robot DVL is close to its minimum; support is an initial visual interpretation, not a deduction from that minimum."
+    }
+  ],
+  "conservative_version": "test-reserve-conservative-20261029-v1",
+  "removed_from_scope": {
+    "Lifted": "lift 判据在现有 ego 材料下未取得阳性验收，本版不纳入未确认的 Lifted"
+  }
+}

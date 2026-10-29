@@ -1,0 +1,182 @@
+{
+  "protocol_version": "usim-enact-v0.2",
+  "episode_key": "usim_train_episode_001650",
+  "source_split": "train",
+  "episode_index": 1650,
+  "task_index": 1,
+  "task_text": "Pick up the pipe",
+  "label_source": "agent_visual_review",
+  "annotation_status": "conservative_candidate_pending_independent_review",
+  "notes": "test_reserve episode, annotated after the protocol freeze (freeze_id 20261027b). Task 'Pick up the pipe', 278 frames, single gripper close at 204, no reopen. OnSeabed uses v0.2 physical-support semantics (grasp frame stays true). Key frames: approach = close-14, grasp = close+15, lift = ascent onset+44. | conservative_20261029_v1: truncated for verification (pick max L3, transfer max L4); Lifted removed from scope; at_box kept but does not imply lift; original annotation untouched.",
+  "objects": [
+    {
+      "object_id": "robot",
+      "category": "agent",
+      "description": "the robot"
+    },
+    {
+      "object_id": "pipe",
+      "category": "pipe",
+      "description": "the grey segmented pipe"
+    }
+  ],
+  "relations": [
+    [
+      "OnSeabed",
+      "pipe"
+    ],
+    [
+      "InGripper",
+      "pipe"
+    ],
+    [
+      "NextTo",
+      "robot",
+      "pipe"
+    ]
+  ],
+  "frames": [
+    {
+      "frame_index": 0,
+      "timestamp_seconds": 0.0,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "pipe"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "pipe"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "pipe"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "start: pipe lying on the seabed, gripper open and away at the upper left"
+    },
+    {
+      "frame_index": 190,
+      "timestamp_seconds": 19.0,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "pipe"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "pipe"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "pipe"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "approach: gripper in position at the pipe (close event is at 204), jaws still open with gripper signal 0.000"
+    },
+    {
+      "frame_index": 219,
+      "timestamp_seconds": 21.9,
+      "facts": [
+        {
+          "predicate": "OnSeabed",
+          "arguments": [
+            "pipe"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "pipe"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "pipe"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "grasp: jaws closed on the pipe but it is still supported by the seabed (dvl_h at its minimum 0.233 at frame 226, ascent starts after)"
+    }
+  ],
+  "conservative_version": "test-reserve-conservative-20261029-v1",
+  "removed_from_scope": {
+    "Lifted": "lift 判据在现有 ego 材料下未取得阳性验收，本版不纳入未确认的 Lifted"
+  }
+}

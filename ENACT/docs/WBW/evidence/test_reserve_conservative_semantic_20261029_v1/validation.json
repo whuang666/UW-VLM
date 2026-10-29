@@ -1,0 +1,16 @@
+{
+  "questions_checked": 20,
+  "answer_permutations_checked": 56,
+  "unique_accepted_per_question": true,
+  "oracle_all_metrics_one": true,
+  "reference_transitions": 44,
+  "candidate_annotation_hashes_match": 10,
+  "code_hashes_match": 8,
+  "input_asset_files": 160,
+  "input_png_files": 128,
+  "local_links_checked": 23,
+  "broken_links": [],
+  "old_files_unchanged": 513,
+  "model_api_calls": 0,
+  "independent_acceptance": "0/10"
+}

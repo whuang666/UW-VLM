@@ -1,0 +1,265 @@
+{
+  "protocol_version": "usim-enact-v0.2",
+  "episode_key": "usim_train_episode_001384",
+  "source_split": "train",
+  "episode_index": 1384,
+  "task_index": 7,
+  "task_text": "Pick up the red cylinder and transfer it to the box",
+  "label_source": "agent_visual_review",
+  "annotation_status": "conservative_candidate_pending_independent_review",
+  "notes": "test_reserve transfer episode, annotated after the protocol freeze (freeze_id 20261027b), L=5 via the at_box channel approved on 2026-10-27. Events: single close at 224, single open at 501 (framewise gripper signal). dvl_h minimum 0.231 at 248. Key frames follow the v0.2 anchoring rules: approach = close-15, grasp = close+15, lift = ascent onset+45, at_box = release-15. Green box visible in all five frames; robot-box relative position changes only between lift and at_box, which is what NearBox asserts. InBox is deliberately not claimed (the object is never shown inside the box before release). | conservative_20261029_v1: truncated for verification (pick max L3, transfer max L4); Lifted removed from scope; at_box kept but does not imply lift; original annotation untouched.",
+  "objects": [
+    {
+      "object_id": "robot",
+      "category": "agent",
+      "description": "the robot"
+    },
+    {
+      "object_id": "red_cylinder",
+      "category": "cylinder",
+      "color": "red",
+      "description": "the red cylinder (target object for this episode)"
+    },
+    {
+      "object_id": "green_box",
+      "category": "box",
+      "color": "green",
+      "description": "the green box"
+    }
+  ],
+  "relations": [
+    [
+      "InGripper",
+      "red_cylinder"
+    ],
+    [
+      "NextTo",
+      "robot",
+      "red_cylinder"
+    ],
+    [
+      "NearBox",
+      "robot",
+      "green_box"
+    ]
+  ],
+  "frames": [
+    {
+      "frame_index": 164,
+      "timestamp_seconds": 16.4,
+      "facts": [
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NearBox",
+          "arguments": [
+            "robot",
+            "green_box"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "start: red cylinder on the seabed, gripper open and away at the upper left, green box visible at the top"
+    },
+    {
+      "frame_index": 209,
+      "timestamp_seconds": 20.9,
+      "facts": [
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NearBox",
+          "arguments": [
+            "robot",
+            "green_box"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "approach: gripper in position above the cylinder (close event is at 224), jaws still open and not holding"
+    },
+    {
+      "frame_index": 239,
+      "timestamp_seconds": 23.9,
+      "facts": [
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NearBox",
+          "arguments": [
+            "robot",
+            "green_box"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "grasp: jaws closed on the cylinder but it is still supported by the seabed (dvl_h 0.236, minimum 0.231 at frame 248)"
+    },
+    {
+      "frame_index": 486,
+      "timestamp_seconds": 48.6,
+      "facts": [
+        {
+          "predicate": "InGripper",
+          "arguments": [
+            "red_cylinder"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NextTo",
+          "arguments": [
+            "robot",
+            "red_cylinder"
+          ],
+          "value": false,
+          "evidence": "frame_review"
+        },
+        {
+          "predicate": "NearBox",
+          "arguments": [
+            "robot",
+            "green_box"
+          ],
+          "value": true,
+          "evidence": "frame_review"
+        }
+      ],
+      "visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "note": "at_box: gripper and held cylinder at the green box release position (first release is at 501, so this is release-15; render hold [486,503]); object still held and lifted; InBox is NOT claimed"
+    }
+  ],
+  "conservative_version": "test-reserve-conservative-20261029-v1",
+  "removed_from_scope": {
+    "Lifted": "lift 判据在现有 ego 材料下未取得阳性验收，本版不纳入未确认的 Lifted",
+    "OnSeabed": "at_box 处物体支撑状态不可判，故整条 episode 移出 OnSeabed scope"
+  }
+}

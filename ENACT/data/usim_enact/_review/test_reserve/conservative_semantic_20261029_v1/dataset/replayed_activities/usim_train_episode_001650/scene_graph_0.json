@@ -1,0 +1,101 @@
+{
+  "0": {
+    "type": "full",
+    "nodes": [
+      {
+        "name": "robot",
+        "category": "agent",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "pipe",
+        "category": "pipe",
+        "states": [
+          "OnSeabed"
+        ],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      }
+    ],
+    "edges": []
+  },
+  "190": {
+    "type": "full",
+    "nodes": [
+      {
+        "name": "robot",
+        "category": "agent",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "pipe",
+        "category": "pipe",
+        "states": [
+          "OnSeabed"
+        ],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "from": "robot",
+        "to": "pipe",
+        "states": [
+          "NextTo"
+        ]
+      }
+    ]
+  },
+  "219": {
+    "type": "full",
+    "nodes": [
+      {
+        "name": "robot",
+        "category": "agent",
+        "states": [],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      },
+      {
+        "name": "pipe",
+        "category": "pipe",
+        "states": [
+          "InGripper",
+          "OnSeabed"
+        ],
+        "visibility": {
+          "external_sensor1": {
+            "method": "agent_visual_review",
+            "value": true
+          }
+        }
+      }
+    ],
+    "edges": []
+  }
+}
