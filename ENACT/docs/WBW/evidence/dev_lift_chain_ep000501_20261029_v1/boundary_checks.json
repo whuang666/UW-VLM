@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "reject_test_reserve": 2,
+    "reject_workspace_output": 1,
+    "reject_existing_packet": 1
+  },
+  "passed": 3,
+  "source_files_compile": 2,
+  "model_api_calls": 0
+}

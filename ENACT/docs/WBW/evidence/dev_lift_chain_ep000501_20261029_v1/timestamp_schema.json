@@ -1,0 +1,54 @@
+{
+  "columns": [
+    "observation.state",
+    "action",
+    "target_pos",
+    "timestamp",
+    "frame_index",
+    "episode_index",
+    "index",
+    "task_index"
+  ],
+  "timestamp_columns": [
+    "timestamp"
+  ],
+  "per_camera_capture_timestamp_present": false,
+  "rows": [
+    {
+      "frame": 204,
+      "timestamp": 20.399999618530273
+    },
+    {
+      "frame": 211,
+      "timestamp": 21.100000381469727
+    },
+    {
+      "frame": 225,
+      "timestamp": 22.5
+    },
+    {
+      "frame": 226,
+      "timestamp": 22.600000381469727
+    },
+    {
+      "frame": 227,
+      "timestamp": 22.700000762939453
+    },
+    {
+      "frame": 239,
+      "timestamp": 23.899999618530273
+    },
+    {
+      "frame": 240,
+      "timestamp": 24.0
+    },
+    {
+      "frame": 248,
+      "timestamp": 24.799999237060547
+    },
+    {
+      "frame": 259,
+      "timestamp": 25.899999618530273
+    }
+  ]
+}

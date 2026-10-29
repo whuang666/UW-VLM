@@ -1,0 +1,6034 @@
+{
+  "schema": "usim-dev-lift-image-trace/v1",
+  "episode": 501,
+  "trace_code_sha256": "0ae822df68cf4b91c8a827dd27ec40622802724314cc3346e83756e20f419d1b",
+  "coordinate_convention": "zero-based native ego pixels; image bottom is not calibrated physical lowest point",
+  "method": {
+    "purple_mask": "OpenCV HSV H120..165, S>=65, V>=45; largest component in x[72,170), y[82,200)",
+    "short_side": "minAreaRect of visible component; occlusion-sensitive, not physical diameter",
+    "ground_reference": "unresolved; no verified floor contact edge or projection",
+    "null_semantics": "unobserved/unconfirmed, not false or zero"
+  },
+  "frames": [
+    {
+      "frame": 180,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00180.png",
+      "ego_png_sha256": "909e7fdd5f988401dd6956ac28bdf718c7d307320b9ef1e35d24f147ef1e2b86",
+      "dvl": 0.3136119842529297,
+      "gripper": 4.2511172068770975e-05,
+      "ego_motion_hold": {
+        "index": 21,
+        "start": 166,
+        "end": 181,
+        "length": 16
+      },
+      "ego_exact_pixel_run": {
+        "index": 21,
+        "start": 166,
+        "end": 181,
+        "length": 16
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        110,
+        142,
+        18,
+        30
+      ],
+      "purple_mask_pixel_count": 239,
+      "image_bottom_xy": [
+        114.5,
+        171
+      ],
+      "visible_mask_short_side_px": 8.356289863586426,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 181,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00181.png",
+      "ego_png_sha256": "909e7fdd5f988401dd6956ac28bdf718c7d307320b9ef1e35d24f147ef1e2b86",
+      "dvl": 0.30553147196769714,
+      "gripper": 4.2511172068770975e-05,
+      "ego_motion_hold": {
+        "index": 21,
+        "start": 166,
+        "end": 181,
+        "length": 16
+      },
+      "ego_exact_pixel_run": {
+        "index": 21,
+        "start": 166,
+        "end": 181,
+        "length": 16
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        110,
+        142,
+        18,
+        30
+      ],
+      "purple_mask_pixel_count": 239,
+      "image_bottom_xy": [
+        114.5,
+        171
+      ],
+      "visible_mask_short_side_px": 8.356289863586426,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 182,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00182.png",
+      "ego_png_sha256": "4a274965d0ad8f76a41c93395fe84c76c774e9641a99a985ffc187d0a7aced08",
+      "dvl": 0.30553147196769714,
+      "gripper": 4.2511172068770975e-05,
+      "ego_motion_hold": {
+        "index": 22,
+        "start": 182,
+        "end": 182,
+        "length": 1
+      },
+      "ego_exact_pixel_run": {
+        "index": 22,
+        "start": 182,
+        "end": 182,
+        "length": 1
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        110,
+        142,
+        18,
+        30
+      ],
+      "purple_mask_pixel_count": 237,
+      "image_bottom_xy": [
+        114.5,
+        171
+      ],
+      "visible_mask_short_side_px": 8.356289863586426,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 183,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00183.png",
+      "ego_png_sha256": "654b2ba4fc40065567c721e15864742d951438ded825104f172b63bd95ae7edf",
+      "dvl": 0.3002197742462158,
+      "gripper": 4.2511172068770975e-05,
+      "ego_motion_hold": {
+        "index": 23,
+        "start": 183,
+        "end": 183,
+        "length": 1
+      },
+      "ego_exact_pixel_run": {
+        "index": 23,
+        "start": 183,
+        "end": 183,
+        "length": 1
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        108,
+        140,
+        20,
+        31
+      ],
+      "purple_mask_pixel_count": 252,
+      "image_bottom_xy": [
+        112.5,
+        170
+      ],
+      "visible_mask_short_side_px": 8.944271087646484,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 184,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00184.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "dvl": 0.3002197742462158,
+      "gripper": 4.2511172068770975e-05,
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        108,
+        140,
+        20,
+        31
+      ],
+      "purple_mask_pixel_count": 246,
+      "image_bottom_xy": [
+        113.0,
+        170
+      ],
+      "visible_mask_short_side_px": 8.497057914733887,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 185,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00185.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "dvl": 0.2918693423271179,
+      "gripper": 4.2511172068770975e-05,
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        108,
+        140,
+        20,
+        31
+      ],
+      "purple_mask_pixel_count": 246,
+      "image_bottom_xy": [
+        113.0,
+        170
+      ],
+      "visible_mask_short_side_px": 8.497057914733887,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 186,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00186.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "dvl": 0.2918693423271179,
+      "gripper": 4.2511172068770975e-05,
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        108,
+        140,
+        20,
+        31
+      ],
+      "purple_mask_pixel_count": 246,
+      "image_bottom_xy": [
+        113.0,
+        170
+      ],
+      "visible_mask_short_side_px": 8.497057914733887,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 187,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00187.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "dvl": 0.2845752537250519,
+      "gripper": 4.2511172068770975e-05,
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        108,
+        140,
+        20,
+        31
+      ],
+      "purple_mask_pixel_count": 246,
+      "image_bottom_xy": [
+        113.0,
+        170
+      ],
+      "visible_mask_short_side_px": 8.497057914733887,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 188,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00188.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "dvl": 0.2845752537250519,
+      "gripper": 4.2511172068770975e-05,
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        108,
+        140,
+        20,
+        31
+      ],
+      "purple_mask_pixel_count": 246,
+      "image_bottom_xy": [
+        113.0,
+        170
+      ],
+      "visible_mask_short_side_px": 8.497057914733887,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 189,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00189.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "dvl": 0.2786591053009033,
+      "gripper": 4.2511172068770975e-05,
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        108,
+        140,
+        20,
+        31
+      ],
+      "purple_mask_pixel_count": 246,
+      "image_bottom_xy": [
+        113.0,
+        170
+      ],
+      "visible_mask_short_side_px": 8.497057914733887,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 190,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00190.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "dvl": 0.2786591053009033,
+      "gripper": 4.2511172068770975e-05,
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        108,
+        140,
+        20,
+        31
+      ],
+      "purple_mask_pixel_count": 246,
+      "image_bottom_xy": [
+        113.0,
+        170
+      ],
+      "visible_mask_short_side_px": 8.497057914733887,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 191,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00191.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "dvl": 0.2732108235359192,
+      "gripper": 4.2511172068770975e-05,
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        108,
+        140,
+        20,
+        31
+      ],
+      "purple_mask_pixel_count": 246,
+      "image_bottom_xy": [
+        113.0,
+        170
+      ],
+      "visible_mask_short_side_px": 8.497057914733887,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 192,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00192.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "dvl": 0.2732108235359192,
+      "gripper": 4.2511172068770975e-05,
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        108,
+        140,
+        20,
+        31
+      ],
+      "purple_mask_pixel_count": 246,
+      "image_bottom_xy": [
+        113.0,
+        170
+      ],
+      "visible_mask_short_side_px": 8.497057914733887,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 193,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00193.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "dvl": 0.26774173974990845,
+      "gripper": 4.2511172068770975e-05,
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        108,
+        140,
+        20,
+        31
+      ],
+      "purple_mask_pixel_count": 246,
+      "image_bottom_xy": [
+        113.0,
+        170
+      ],
+      "visible_mask_short_side_px": 8.497057914733887,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 194,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00194.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "dvl": 0.26774173974990845,
+      "gripper": 4.2511172068770975e-05,
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        108,
+        140,
+        20,
+        31
+      ],
+      "purple_mask_pixel_count": 246,
+      "image_bottom_xy": [
+        113.0,
+        170
+      ],
+      "visible_mask_short_side_px": 8.497057914733887,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 195,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00195.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "dvl": 0.2614309787750244,
+      "gripper": 4.2511172068770975e-05,
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        108,
+        140,
+        20,
+        31
+      ],
+      "purple_mask_pixel_count": 246,
+      "image_bottom_xy": [
+        113.0,
+        170
+      ],
+      "visible_mask_short_side_px": 8.497057914733887,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 196,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00196.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "dvl": 0.2614309787750244,
+      "gripper": 4.2511172068770975e-05,
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        108,
+        140,
+        20,
+        31
+      ],
+      "purple_mask_pixel_count": 246,
+      "image_bottom_xy": [
+        113.0,
+        170
+      ],
+      "visible_mask_short_side_px": 8.497057914733887,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 197,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00197.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "dvl": 0.25916236639022827,
+      "gripper": 4.2511172068770975e-05,
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        108,
+        140,
+        20,
+        31
+      ],
+      "purple_mask_pixel_count": 246,
+      "image_bottom_xy": [
+        113.0,
+        170
+      ],
+      "visible_mask_short_side_px": 8.497057914733887,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 198,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00198.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "dvl": 0.25916236639022827,
+      "gripper": 4.400191392051056e-05,
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        108,
+        140,
+        20,
+        31
+      ],
+      "purple_mask_pixel_count": 246,
+      "image_bottom_xy": [
+        113.0,
+        170
+      ],
+      "visible_mask_short_side_px": 8.497057914733887,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 199,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00199.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "dvl": 0.2531607151031494,
+      "gripper": 4.226907913107425e-05,
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        108,
+        140,
+        20,
+        31
+      ],
+      "purple_mask_pixel_count": 246,
+      "image_bottom_xy": [
+        113.0,
+        170
+      ],
+      "visible_mask_short_side_px": 8.497057914733887,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 200,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00200.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "dvl": 0.2531607151031494,
+      "gripper": 4.2352181480964646e-05,
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        108,
+        140,
+        20,
+        31
+      ],
+      "purple_mask_pixel_count": 246,
+      "image_bottom_xy": [
+        113.0,
+        170
+      ],
+      "visible_mask_short_side_px": 8.497057914733887,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 201,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00201.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "dvl": 0.2519066631793976,
+      "gripper": 4.2374798795208335e-05,
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        108,
+        140,
+        20,
+        31
+      ],
+      "purple_mask_pixel_count": 246,
+      "image_bottom_xy": [
+        113.0,
+        170
+      ],
+      "visible_mask_short_side_px": 8.497057914733887,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 202,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00202.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "dvl": 0.2519066631793976,
+      "gripper": 4.236555832903832e-05,
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        108,
+        140,
+        20,
+        31
+      ],
+      "purple_mask_pixel_count": 246,
+      "image_bottom_xy": [
+        113.0,
+        170
+      ],
+      "visible_mask_short_side_px": 8.497057914733887,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 203,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00203.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "dvl": 0.24849195778369904,
+      "gripper": 4.2354273318778723e-05,
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        108,
+        140,
+        20,
+        31
+      ],
+      "purple_mask_pixel_count": 246,
+      "image_bottom_xy": [
+        113.0,
+        170
+      ],
+      "visible_mask_short_side_px": 8.497057914733887,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 204,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00204.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "dvl": 0.24849195778369904,
+      "gripper": 4.2352847231086344e-05,
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        104,
+        112,
+        21,
+        27
+      ],
+      "purple_mask_pixel_count": 223,
+      "image_bottom_xy": [
+        109.0,
+        138
+      ],
+      "visible_mask_short_side_px": 9.15255355834961,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 205,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00205.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "dvl": 0.24593256413936615,
+      "gripper": 4.238012479618192e-05,
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        104,
+        112,
+        21,
+        27
+      ],
+      "purple_mask_pixel_count": 223,
+      "image_bottom_xy": [
+        109.0,
+        138
+      ],
+      "visible_mask_short_side_px": 9.15255355834961,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 206,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00206.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "dvl": 0.24593256413936615,
+      "gripper": 4.245149466441944e-05,
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        104,
+        112,
+        21,
+        27
+      ],
+      "purple_mask_pixel_count": 223,
+      "image_bottom_xy": [
+        109.0,
+        138
+      ],
+      "visible_mask_short_side_px": 9.15255355834961,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 207,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00207.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "dvl": 0.24429214000701904,
+      "gripper": 4.254630766808987e-05,
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        104,
+        112,
+        21,
+        27
+      ],
+      "purple_mask_pixel_count": 223,
+      "image_bottom_xy": [
+        109.0,
+        138
+      ],
+      "visible_mask_short_side_px": 9.15255355834961,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 208,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00208.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "dvl": 0.24429214000701904,
+      "gripper": 4.2683797801146284e-05,
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        104,
+        112,
+        21,
+        27
+      ],
+      "purple_mask_pixel_count": 223,
+      "image_bottom_xy": [
+        109.0,
+        138
+      ],
+      "visible_mask_short_side_px": 9.15255355834961,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 209,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00209.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "dvl": 0.24073226749897003,
+      "gripper": 4.2818919609999284e-05,
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        104,
+        112,
+        21,
+        27
+      ],
+      "purple_mask_pixel_count": 223,
+      "image_bottom_xy": [
+        109.0,
+        138
+      ],
+      "visible_mask_short_side_px": 9.15255355834961,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 210,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00210.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "dvl": 0.24073226749897003,
+      "gripper": 0.0009326661820523441,
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        104,
+        112,
+        21,
+        27
+      ],
+      "purple_mask_pixel_count": 223,
+      "image_bottom_xy": [
+        109.0,
+        138
+      ],
+      "visible_mask_short_side_px": 9.15255355834961,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 211,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00211.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "dvl": 0.24048186838626862,
+      "gripper": 0.006445327308028936,
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        104,
+        112,
+        21,
+        27
+      ],
+      "purple_mask_pixel_count": 223,
+      "image_bottom_xy": [
+        109.0,
+        138
+      ],
+      "visible_mask_short_side_px": 9.15255355834961,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 212,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00212.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "dvl": 0.24048186838626862,
+      "gripper": 0.01293969713151455,
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        104,
+        112,
+        21,
+        27
+      ],
+      "purple_mask_pixel_count": 223,
+      "image_bottom_xy": [
+        109.0,
+        138
+      ],
+      "visible_mask_short_side_px": 9.15255355834961,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 213,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00213.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "dvl": 0.2375708371400833,
+      "gripper": 0.014906671829521656,
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        104,
+        112,
+        21,
+        27
+      ],
+      "purple_mask_pixel_count": 223,
+      "image_bottom_xy": [
+        109.0,
+        138
+      ],
+      "visible_mask_short_side_px": 9.15255355834961,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 214,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00214.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "dvl": 0.2375708371400833,
+      "gripper": 0.014907143078744411,
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        104,
+        112,
+        21,
+        27
+      ],
+      "purple_mask_pixel_count": 223,
+      "image_bottom_xy": [
+        109.0,
+        138
+      ],
+      "visible_mask_short_side_px": 9.15255355834961,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 215,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00215.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "dvl": 0.23646444082260132,
+      "gripper": 0.014905587770044804,
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        104,
+        112,
+        21,
+        27
+      ],
+      "purple_mask_pixel_count": 223,
+      "image_bottom_xy": [
+        109.0,
+        138
+      ],
+      "visible_mask_short_side_px": 9.15255355834961,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 216,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00216.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "dvl": 0.23646444082260132,
+      "gripper": 0.014910146594047546,
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        104,
+        112,
+        21,
+        27
+      ],
+      "purple_mask_pixel_count": 223,
+      "image_bottom_xy": [
+        109.0,
+        138
+      ],
+      "visible_mask_short_side_px": 9.15255355834961,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 217,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00217.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "dvl": 0.23725028336048126,
+      "gripper": 0.014904947951436043,
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        104,
+        112,
+        21,
+        27
+      ],
+      "purple_mask_pixel_count": 223,
+      "image_bottom_xy": [
+        109.0,
+        138
+      ],
+      "visible_mask_short_side_px": 9.15255355834961,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 218,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00218.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "dvl": 0.23725028336048126,
+      "gripper": 0.014905194751918316,
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 22,
+        "start": 218,
+        "end": 218,
+        "length": 1
+      },
+      "purple_silhouette_bbox_xywh": [
+        104,
+        112,
+        21,
+        27
+      ],
+      "purple_mask_pixel_count": 223,
+      "image_bottom_xy": [
+        109.0,
+        138
+      ],
+      "visible_mask_short_side_px": 9.15255355834961,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 219,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00219.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "dvl": 0.23798677325248718,
+      "gripper": 0.014910242520272732,
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 23,
+        "start": 219,
+        "end": 219,
+        "length": 1
+      },
+      "purple_silhouette_bbox_xywh": [
+        104,
+        112,
+        21,
+        27
+      ],
+      "purple_mask_pixel_count": 223,
+      "image_bottom_xy": [
+        109.0,
+        138
+      ],
+      "visible_mask_short_side_px": 9.15255355834961,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 220,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00220.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "dvl": 0.23798677325248718,
+      "gripper": 0.014909893274307251,
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        104,
+        112,
+        21,
+        27
+      ],
+      "purple_mask_pixel_count": 223,
+      "image_bottom_xy": [
+        109.0,
+        138
+      ],
+      "visible_mask_short_side_px": 9.15255355834961,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 221,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00221.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "dvl": 0.23676656186580658,
+      "gripper": 0.014909688383340836,
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        104,
+        112,
+        21,
+        27
+      ],
+      "purple_mask_pixel_count": 223,
+      "image_bottom_xy": [
+        109.0,
+        138
+      ],
+      "visible_mask_short_side_px": 9.15255355834961,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 222,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00222.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "dvl": 0.23676656186580658,
+      "gripper": 0.014909432269632816,
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        104,
+        112,
+        21,
+        27
+      ],
+      "purple_mask_pixel_count": 223,
+      "image_bottom_xy": [
+        109.0,
+        138
+      ],
+      "visible_mask_short_side_px": 9.15255355834961,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 223,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00223.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "dvl": 0.23580220341682434,
+      "gripper": 0.014908617362380028,
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        104,
+        112,
+        21,
+        27
+      ],
+      "purple_mask_pixel_count": 223,
+      "image_bottom_xy": [
+        109.0,
+        138
+      ],
+      "visible_mask_short_side_px": 9.15255355834961,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 224,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00224.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "dvl": 0.23580220341682434,
+      "gripper": 0.01490749977529049,
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        104,
+        112,
+        21,
+        27
+      ],
+      "purple_mask_pixel_count": 223,
+      "image_bottom_xy": [
+        109.0,
+        138
+      ],
+      "visible_mask_short_side_px": 9.15255355834961,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 225,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00225.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "dvl": 0.2361522763967514,
+      "gripper": 0.014906812459230423,
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        104,
+        112,
+        21,
+        27
+      ],
+      "purple_mask_pixel_count": 223,
+      "image_bottom_xy": [
+        109.0,
+        138
+      ],
+      "visible_mask_short_side_px": 9.15255355834961,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 226,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00226.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "dvl": 0.2361522763967514,
+      "gripper": 0.014908771961927414,
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        98,
+        110,
+        14,
+        18
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        104.0,
+        127
+      ],
+      "visible_mask_short_side_px": 11.31370735168457,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 227,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00227.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "dvl": 0.23446859419345856,
+      "gripper": 0.014907678589224815,
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        98,
+        110,
+        14,
+        18
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        104.0,
+        127
+      ],
+      "visible_mask_short_side_px": 11.31370735168457,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 228,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00228.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "dvl": 0.23446859419345856,
+      "gripper": 0.014904817566275597,
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        98,
+        110,
+        14,
+        18
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        104.0,
+        127
+      ],
+      "visible_mask_short_side_px": 11.31370735168457,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 229,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00229.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "dvl": 0.23549911379814148,
+      "gripper": 0.014910060912370682,
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        98,
+        110,
+        14,
+        18
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        104.0,
+        127
+      ],
+      "visible_mask_short_side_px": 11.31370735168457,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 230,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00230.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "dvl": 0.23549911379814148,
+      "gripper": 0.014910138212144375,
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        98,
+        110,
+        14,
+        18
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        104.0,
+        127
+      ],
+      "visible_mask_short_side_px": 11.31370735168457,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 231,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00231.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "dvl": 0.2376449853181839,
+      "gripper": 0.014910164289176464,
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        98,
+        110,
+        14,
+        18
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        104.0,
+        127
+      ],
+      "visible_mask_short_side_px": 11.31370735168457,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 232,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00232.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "dvl": 0.2376449853181839,
+      "gripper": 0.014910191297531128,
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        98,
+        110,
+        14,
+        18
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        104.0,
+        127
+      ],
+      "visible_mask_short_side_px": 11.31370735168457,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 233,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00233.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "dvl": 0.2367359697818756,
+      "gripper": 0.014910142868757248,
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        98,
+        110,
+        14,
+        18
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        104.0,
+        127
+      ],
+      "visible_mask_short_side_px": 11.31370735168457,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 234,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00234.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "dvl": 0.2367359697818756,
+      "gripper": 0.014910109341144562,
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        98,
+        110,
+        14,
+        18
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        104.0,
+        127
+      ],
+      "visible_mask_short_side_px": 11.31370735168457,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 235,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00235.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "dvl": 0.23891235888004303,
+      "gripper": 0.014906258322298527,
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        98,
+        110,
+        14,
+        18
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        104.0,
+        127
+      ],
+      "visible_mask_short_side_px": 11.31370735168457,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 236,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00236.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "dvl": 0.23891235888004303,
+      "gripper": 0.01490831095725298,
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        98,
+        110,
+        14,
+        18
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        104.0,
+        127
+      ],
+      "visible_mask_short_side_px": 11.31370735168457,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 237,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00237.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "dvl": 0.2383328378200531,
+      "gripper": 0.014909082092344761,
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        98,
+        110,
+        14,
+        18
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        104.0,
+        127
+      ],
+      "visible_mask_short_side_px": 11.31370735168457,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 238,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00238.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "dvl": 0.2383328378200531,
+      "gripper": 0.014909941703081131,
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        98,
+        110,
+        14,
+        18
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        104.0,
+        127
+      ],
+      "visible_mask_short_side_px": 11.31370735168457,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 239,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00239.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "dvl": 0.23855511844158173,
+      "gripper": 0.01491061132401228,
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        98,
+        110,
+        14,
+        18
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        104.0,
+        127
+      ],
+      "visible_mask_short_side_px": 11.31370735168457,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 240,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00240.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "dvl": 0.23855511844158173,
+      "gripper": 0.014909637160599232,
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 25,
+        "start": 240,
+        "end": 240,
+        "length": 1
+      },
+      "purple_silhouette_bbox_xywh": [
+        98,
+        110,
+        14,
+        18
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        104.0,
+        127
+      ],
+      "visible_mask_short_side_px": 11.31370735168457,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 241,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00241.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "dvl": 0.23913168907165527,
+      "gripper": 0.014909239485859871,
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 26,
+        "start": 241,
+        "end": 241,
+        "length": 1
+      },
+      "purple_silhouette_bbox_xywh": [
+        98,
+        110,
+        14,
+        18
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        104.0,
+        127
+      ],
+      "visible_mask_short_side_px": 11.31370735168457,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 242,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00242.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "dvl": 0.23913168907165527,
+      "gripper": 0.014909354038536549,
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        98,
+        110,
+        14,
+        18
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        104.0,
+        127
+      ],
+      "visible_mask_short_side_px": 11.31370735168457,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 243,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00243.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "dvl": 0.24371066689491272,
+      "gripper": 0.014910023659467697,
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        98,
+        110,
+        14,
+        18
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        104.0,
+        127
+      ],
+      "visible_mask_short_side_px": 11.31370735168457,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 244,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00244.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "dvl": 0.24371066689491272,
+      "gripper": 0.014910012483596802,
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        98,
+        110,
+        14,
+        18
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        104.0,
+        127
+      ],
+      "visible_mask_short_side_px": 11.31370735168457,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 245,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00245.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "dvl": 0.24231809377670288,
+      "gripper": 0.014910003170371056,
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        98,
+        110,
+        14,
+        18
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        104.0,
+        127
+      ],
+      "visible_mask_short_side_px": 11.31370735168457,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 246,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00246.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "dvl": 0.24231809377670288,
+      "gripper": 0.014909995719790459,
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        98,
+        110,
+        14,
+        18
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        104.0,
+        127
+      ],
+      "visible_mask_short_side_px": 11.31370735168457,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 247,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00247.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "dvl": 0.2420850247144699,
+      "gripper": 0.014909710735082626,
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        98,
+        110,
+        14,
+        18
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        104.0,
+        127
+      ],
+      "visible_mask_short_side_px": 11.31370735168457,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 248,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00248.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.2420850247144699,
+      "gripper": 0.014910001307725906,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 249,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00249.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.2447095513343811,
+      "gripper": 0.014909950084984303,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 250,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00250.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.2447095513343811,
+      "gripper": 0.014909811317920685,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 251,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00251.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.25094154477119446,
+      "gripper": 0.014909849502146244,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 252,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00252.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.25094154477119446,
+      "gripper": 0.014909936115145683,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 253,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00253.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.26097550988197327,
+      "gripper": 0.014909936115145683,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 254,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00254.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.26097550988197327,
+      "gripper": 0.014909914694726467,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 255,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00255.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.27177736163139343,
+      "gripper": 0.014909898862242699,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 256,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00256.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.27177736163139343,
+      "gripper": 0.014909891411662102,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 257,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00257.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.2833012044429779,
+      "gripper": 0.014909889549016953,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 258,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00258.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.2833012044429779,
+      "gripper": 0.014909888617694378,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 259,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00259.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.2917780578136444,
+      "gripper": 0.014909889549016953,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 260,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00260.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.2917780578136444,
+      "gripper": 0.014909891411662102,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 261,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00261.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.2998598515987396,
+      "gripper": 0.014909753575921059,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 262,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00262.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.2998598515987396,
+      "gripper": 0.014909756369888783,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 28,
+        "start": 262,
+        "end": 262,
+        "length": 1
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 263,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00263.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.31074658036231995,
+      "gripper": 0.014909760095179081,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 29,
+        "start": 263,
+        "end": 263,
+        "length": 1
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 264,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00264.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.31074658036231995,
+      "gripper": 0.014909764751791954,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 265,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00265.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.3147544264793396,
+      "gripper": 0.014909769408404827,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 266,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00266.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.3147544264793396,
+      "gripper": 0.014909774996340275,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 267,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00267.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.3257952630519867,
+      "gripper": 0.014909910038113594,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 268,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00268.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.3257952630519867,
+      "gripper": 0.014909913763403893,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 269,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00269.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.3328394293785095,
+      "gripper": 0.014909916557371616,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 270,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00270.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.3328394293785095,
+      "gripper": 0.01490992121398449,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 271,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00271.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "dvl": 0.34062501788139343,
+      "gripper": 0.014909924939274788,
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      },
+      "purple_silhouette_bbox_xywh": [
+        97,
+        110,
+        15,
+        18
+      ],
+      "purple_mask_pixel_count": 156,
+      "image_bottom_xy": [
+        102.0,
+        127
+      ],
+      "visible_mask_short_side_px": 10.606600761413574,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 272,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00272.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "dvl": 0.34062501788139343,
+      "gripper": 0.014909930527210236,
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.261953353881836,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 273,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00273.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "dvl": 0.3502689301967621,
+      "gripper": 0.014909936115145683,
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.261953353881836,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 274,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00274.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "dvl": 0.3502689301967621,
+      "gripper": 0.014909941703081131,
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.261953353881836,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 275,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00275.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "dvl": 0.3563334047794342,
+      "gripper": 0.014909947291016579,
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.261953353881836,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 276,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00276.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "dvl": 0.3563334047794342,
+      "gripper": 0.014909952878952026,
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.261953353881836,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 277,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00277.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "dvl": 0.3623853623867035,
+      "gripper": 0.01490979827940464,
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.261953353881836,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 278,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00278.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "dvl": 0.3623853623867035,
+      "gripper": 0.01490979827940464,
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.261953353881836,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 279,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00279.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "dvl": 0.3686899244785309,
+      "gripper": 0.014909799210727215,
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.261953353881836,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 280,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00280.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "dvl": 0.3686899244785309,
+      "gripper": 0.01490980014204979,
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.261953353881836,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 281,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00281.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "dvl": 0.3772037923336029,
+      "gripper": 0.014909801073372364,
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.261953353881836,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 282,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00282.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "dvl": 0.3772037923336029,
+      "gripper": 0.014909802936017513,
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.261953353881836,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 283,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00283.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "dvl": 0.3819899559020996,
+      "gripper": 0.014909803867340088,
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.261953353881836,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 284,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00284.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "dvl": 0.3819899559020996,
+      "gripper": 0.014909986406564713,
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.261953353881836,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 285,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00285.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "dvl": 0.3871990740299225,
+      "gripper": 0.014909988269209862,
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.261953353881836,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 286,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00286.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "dvl": 0.3871990740299225,
+      "gripper": 0.014909990131855011,
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 31,
+        "start": 286,
+        "end": 286,
+        "length": 1
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.261953353881836,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 287,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00287.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "dvl": 0.3894190192222595,
+      "gripper": 0.01490999199450016,
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 32,
+        "start": 287,
+        "end": 287,
+        "length": 1
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.261953353881836,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 288,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00288.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "dvl": 0.3894190192222595,
+      "gripper": 0.014909992925822735,
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.261953353881836,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 289,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00289.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "dvl": 0.3962835669517517,
+      "gripper": 0.01490999385714531,
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.261953353881836,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 290,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00290.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "dvl": 0.3962835669517517,
+      "gripper": 0.01490999385714531,
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.261953353881836,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 291,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00291.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "dvl": 0.40048155188560486,
+      "gripper": 0.014909994788467884,
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.261953353881836,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 292,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00292.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "dvl": 0.40048155188560486,
+      "gripper": 0.014909995719790459,
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.261953353881836,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 293,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00293.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "dvl": 0.4015418589115143,
+      "gripper": 0.014909995719790459,
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.261953353881836,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 294,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00294.png",
+      "ego_png_sha256": "48c76a8fa42c68c8b40b6dbc3d455a7affe5482dedc578a11b70822fd5948717",
+      "dvl": 0.4015418589115143,
+      "gripper": 0.014909995719790459,
+      "ego_motion_hold": {
+        "index": 29,
+        "start": 294,
+        "end": 294,
+        "length": 1
+      },
+      "ego_exact_pixel_run": {
+        "index": 29,
+        "start": 294,
+        "end": 294,
+        "length": 1
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 161,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.77599048614502,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 295,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00295.png",
+      "ego_png_sha256": "35529194952e829158a054dd1b1e7f90aa0e41e59119e07e6297f3cd0b5dcddb",
+      "dvl": 0.4050089716911316,
+      "gripper": 0.014909837394952774,
+      "ego_motion_hold": {
+        "index": 30,
+        "start": 295,
+        "end": 295,
+        "length": 1
+      },
+      "ego_exact_pixel_run": {
+        "index": 30,
+        "start": 295,
+        "end": 295,
+        "length": 1
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 160,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.816654205322266,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 296,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00296.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.4050089716911316,
+      "gripper": 0.014909842051565647,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 297,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00297.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.4084603190422058,
+      "gripper": 0.014909845776855946,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 298,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00298.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.4084603190422058,
+      "gripper": 0.014909850433468819,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 299,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00299.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.4123791754245758,
+      "gripper": 0.014909854158759117,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 300,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00300.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.4123791754245758,
+      "gripper": 0.014909857884049416,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 301,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00301.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.4155980348587036,
+      "gripper": 0.01491000410169363,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 302,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00302.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.4155980348587036,
+      "gripper": 0.01491000596433878,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 303,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00303.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.4172961115837097,
+      "gripper": 0.014910008758306503,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 304,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00304.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.4172961115837097,
+      "gripper": 0.014910011552274227,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 305,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00305.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.4197523891925812,
+      "gripper": 0.014910014346241951,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 306,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00306.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.4197523891925812,
+      "gripper": 0.014910017140209675,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 307,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00307.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.4226013422012329,
+      "gripper": 0.014910019934177399,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 308,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00308.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.4226013422012329,
+      "gripper": 0.014910022728145123,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 309,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00309.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.4275355637073517,
+      "gripper": 0.014910026453435421,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 310,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00310.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.4275355637073517,
+      "gripper": 0.014910029247403145,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 311,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00311.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.4270099699497223,
+      "gripper": 0.01490988302975893,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 312,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00312.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.4270099699497223,
+      "gripper": 0.014909883961081505,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 34,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 313,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00313.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.42907625436782837,
+      "gripper": 0.01490988489240408,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 34,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 314,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00314.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.42907625436782837,
+      "gripper": 0.014909886755049229,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 34,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 315,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00315.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.4326464533805847,
+      "gripper": 0.014909887686371803,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 34,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 316,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00316.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.4326464533805847,
+      "gripper": 0.014909888617694378,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 34,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 317,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00317.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.43390601873397827,
+      "gripper": 0.014910048805177212,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 34,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 318,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00318.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.43390601873397827,
+      "gripper": 0.014910051599144936,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 34,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    },
+    {
+      "frame": 319,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1b/ego/f00319.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "dvl": 0.4345841109752655,
+      "gripper": 0.014910053461790085,
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 34,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      },
+      "purple_silhouette_bbox_xywh": [
+        96,
+        110,
+        14,
+        19
+      ],
+      "purple_mask_pixel_count": 157,
+      "image_bottom_xy": [
+        101.5,
+        128
+      ],
+      "visible_mask_short_side_px": 10.600000381469727,
+      "local_seabed_reference_xy": null,
+      "object_to_seabed_gap_px": null,
+      "gap_to_object_width_ratio": null,
+      "physical_support": null,
+      "physical_departure": null,
+      "half_width_gap_confirmed": null
+    }
+  ]
+}

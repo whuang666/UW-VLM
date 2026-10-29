@@ -1,0 +1,69 @@
+{
+  "schema": "usim-structure-recheck/v1",
+  "items": [
+    {
+      "episode": 533,
+      "video": "usim/train/videos/chunk-000/observation.images.ego/episode_000533.mp4",
+      "video_sha256": "68893cca2c06b1bf709789d02f550bb2f947341ecbe91e332ce383cc3cea050e",
+      "source_hash_matches": true,
+      "annotation_sha256": "54a1a21ebe1c68018d8042eca8d0495b28dc64a25c2b01d4933f72b61e9d6572",
+      "frames": [
+        90,
+        236,
+        260,
+        306
+      ],
+      "pair": [
+        236,
+        260
+      ],
+      "frame_gap": 24,
+      "below_old_numeric_min20": false,
+      "below_draft_min25": true
+    },
+    {
+      "episode": 1302,
+      "video": "usim/train/videos/chunk-001/observation.images.ego/episode_001302.mp4",
+      "video_sha256": "f0e7763165e3af3cb96299d23fae6ce633b6fa624175913407474ac63816ee26",
+      "source_hash_matches": true,
+      "annotation_sha256": "3f261c0040cc0b8daa857111f925e31518bdb5a886927c0e616533d8cd268bdf",
+      "frames": [
+        150,
+        168,
+        196,
+        415
+      ],
+      "pair": [
+        150,
+        168
+      ],
+      "frame_gap": 18,
+      "below_old_numeric_min20": true,
+      "below_draft_min25": true
+    },
+    {
+      "episode": 553,
+      "video": "usim/train/videos/chunk-000/observation.images.ego/episode_000553.mp4",
+      "video_sha256": "22cfd630194e9f731afb3fb829204f98dd95d31c5bcd649aaa75cae79c73e606",
+      "source_hash_matches": true,
+      "annotation_sha256": "87e849dbc19fc370cb60e4fb454b06533550abd7939cc626d0352949a96902b4",
+      "frames": [
+        110,
+        140,
+        168,
+        248
+      ],
+      "exact_decoded_pixel_run_at110": [
+        110,
+        110
+      ],
+      "exact_run_length": 1,
+      "adjacent_gray_mad": {
+        "109_to110": 0.8453255208333333,
+        "110_to111": 4.210065104166667
+      },
+      "renderer_update_count_inferred": false
+    }
+  ],
+  "annotation_writes": 0
+}

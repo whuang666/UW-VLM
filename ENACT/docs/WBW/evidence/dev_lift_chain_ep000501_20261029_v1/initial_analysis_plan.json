@@ -1,0 +1,42 @@
+{
+  "schema": "usim-dev-lift-chain-plan/v1",
+  "version": "dev-lift-chain-ep000501-v1",
+  "episode_key": "usim_train_episode_000501",
+  "split": "dev",
+  "source_commit": "88c3612bf99d10652f19ec531052a38c04f0202e",
+  "source_files": {
+    "ego": {
+      "path": "usim/train/videos/chunk-000/observation.images.ego/episode_000501.mp4",
+      "sha256": "c366d98d000f12bf7cde77b6a951882e2d9eda0dffb162177c5e53aa37e98af5",
+      "pinned_hash_match": true
+    },
+    "wrist_aux": {
+      "path": "usim/train/videos/chunk-000/observation.images.wrist/episode_000501.mp4",
+      "sha256": "60ec09b3d7758d82d66c19bf11a60f9b47be60ec124d9a5083aa9f840030d60c",
+      "pinned_hash_match": true
+    },
+    "parquet": {
+      "path": "usim/train/data/chunk-000/episode_000501.parquet",
+      "sha256": "07f0866f42467b4aa0cef8c3ffdc8dae8c4e0c13b45ab7b41c45835e5dff0391",
+      "pinned_hash_match": true
+    }
+  },
+  "script_sha256": "1fbd060f51defeca80e3e327f20dd95886e093994a20d5d4e20942a646b154fa",
+  "probe_dependency_sha256": "4893bde27ae8ea0530da11d96d9a13f44d6d55e8689bb7f90046c77b53f9e2e6",
+  "split_manifest_sha256": "6dfe7fdc04d4a4eb659005facb9b875c30d081aa3fef2e822d88f713e4bd7370",
+  "review_frames_inclusive": [
+    180,
+    319
+  ],
+  "selection_reason": "Single-close, single-target, ordinary blue-cylinder pick in already used dev; no transfer, no accuracy-based selection",
+  "posthoc_feasibility_example": true,
+  "blind_review_claimed": false,
+  "rule_change_applied": false,
+  "annotation_writes": 0,
+  "model_api_calls": 0,
+  "ego_primary": true,
+  "wrist_auxiliary_only": true,
+  "coordinate_convention": "Zero-based native pixels; crop boxes are half-open; resized views use nearest-neighbor only",
+  "exact_pixel_definition": "Adjacent complete decoded BGR arrays equal in every byte; not compressed video packet bytes",
+  "motion_hold_definition": "Adjacent decoded grayscale mean absolute difference <=0.5"
+}

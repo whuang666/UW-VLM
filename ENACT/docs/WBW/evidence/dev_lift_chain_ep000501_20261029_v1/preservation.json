@@ -1,0 +1,17 @@
+{
+  "schema": "usim-dev-exemplar-preservation/v1",
+  "source_head": "ed5a64344411dc02b08abe91d6bc1a82fede077d",
+  "old_files_checked": 498,
+  "changed": [],
+  "authorized_new_review_metadata": [
+    "ENACT\\data\\usim_enact\\_review\\dev_lift_onset\\exemplar_ep000501_20261029_v1\\analysis_plan.json",
+    "ENACT\\data\\usim_enact\\_review\\dev_lift_onset\\exemplar_ep000501_20261029_v1\\frame_inventory.json",
+    "ENACT\\data\\usim_enact\\_review\\dev_lift_onset\\exemplar_ep000501_20261029_v1b\\analysis_plan.json",
+    "ENACT\\data\\usim_enact\\_review\\dev_lift_onset\\exemplar_ep000501_20261029_v1b\\frame_inventory.json"
+  ],
+  "unexpected_new_metadata": [],
+  "old_material_preserved": true,
+  "original_annotation_writes": 0,
+  "prediction_writes": 0,
+  "model_api_calls": 0
+}

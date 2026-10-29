@@ -1,0 +1,135 @@
+{
+  "schema": "usim-dev-lift-chain-assessment/v1",
+  "rule_version": "dev-lift-chain-ep000501-v1",
+  "source_head": "ed5a64344411dc02b08abe91d6bc1a82fede077d",
+  "episode": 501,
+  "split": "dev",
+  "selected_by_model_accuracy": false,
+  "reviewer": "Codex AI agent; technical case study; prior metadata and coarse images seen",
+  "independent_double_annotation": false,
+  "primary_camera": "ego",
+  "auxiliary_camera": "wrist",
+  "scope": {
+    "source_files_verified": 3,
+    "aligned_frames_per_stream": 320,
+    "review_interval_inclusive": [
+      180,
+      319
+    ],
+    "indexed_review_frames": 140,
+    "exported_native_pngs": 280,
+    "stable_overview_frames": [
+      180,
+      193,
+      214,
+      236,
+      259,
+      282,
+      307
+    ],
+    "per_frame_human_acceptance_claimed": false
+  },
+  "stage_A": {
+    "role": "last physically supported state",
+    "inspection_frames": [
+      193,
+      214
+    ],
+    "last_supported_frame": null,
+    "support_confirmed": false,
+    "reason": "Target contour visible, but the local supporting seabed point/contact edge is not identifiable from this technical review. Unheld pose is not a support measurement."
+  },
+  "stage_B": {
+    "role": "first physical departure",
+    "observed_pose_update_between": [
+      225,
+      226
+    ],
+    "ego_previous_display_run": [
+      204,
+      225
+    ],
+    "ego_next_display_run": [
+      226,
+      247
+    ],
+    "physical_departure_bracket": null,
+    "physical_departure_confirmed": false,
+    "reason": "The held pose changes across the ego update boundary. Cached duplicate frames do not establish support through frame225 or physical departure after225."
+  },
+  "stage_C": {
+    "role": "first stable half-width-clearance state",
+    "inspection_frame": 282,
+    "ego_display_run": [
+      272,
+      293
+    ],
+    "image_bottom_xy": [
+      101.5,
+      128
+    ],
+    "visible_component_short_side_px": 10.261953353881836,
+    "illustrative_half_visible_width_px": 5.130976676940918,
+    "calibrated_physical_diameter": null,
+    "local_seabed_reference_xy": null,
+    "clearance_px": null,
+    "clearance_ratio": null,
+    "first_qualifying_frame": null,
+    "half_width_gap_confirmed": false,
+    "reason": "Only a visible color-component width is available; missing local floor reference leaves clearance and its ratio undefined."
+  },
+  "camera_observation_timing": {
+    "same_video_frame_count": true,
+    "ego_image_changes_225_to226": true,
+    "wrist_image_changes_225_to226": false,
+    "wrist_same_pixel_run": [
+      220,
+      239
+    ],
+    "fixed_camera_time_offset_estimated": false,
+    "interpretation": "Equal source frame indices and row counts do not certify equal effective scene observation times. Display-run end is not a physical-event timestamp."
+  },
+  "signal_diagnostic": {
+    "events": [
+      {
+        "frame": 211,
+        "event": "close"
+      }
+    ],
+    "main_close_signal_candidate": 211,
+    "main_close_visually_confirmed": false,
+    "release_after_main_close": null,
+    "baseline_search_half_open": [
+      191,
+      320
+    ],
+    "minimum_frame": 227,
+    "minimum_value": 0.23446859419345856,
+    "robot_rise_proxy_frame": 259,
+    "proxy_window_raw": [
+      299,
+      319
+    ],
+    "proxy_window_available": [
+      299,
+      319
+    ]
+  },
+  "outcome": "exemplar_attempt_not_passed",
+  "first_blocking_gate": "A_local_support_reference_unconfirmed",
+  "complete_positive_exemplar": false,
+  "decision": {
+    "expand_to_batch_now": false,
+    "replace_old_window_now": false,
+    "new_data_needed": "A recheckable local floor/contact reference or calibrated geometry/contact evidence for the selected event; auxiliary wrist here also lacks a reliable contact reference."
+  },
+  "qualification": "These are review states; unconfirmed support/clearance is not a false physical label, and this single failed example is not a claim that all dev episodes are unobservable.",
+  "model_api_calls": 0,
+  "annotation_writes": 0,
+  "test_review_performed": false,
+  "test_independent_acceptance": "0/10",
+  "preparation_replay": {
+    "ego_and_wrist_png_pairs_identical": 140,
+    "signal_and_exact_run_metadata_identical": true
+  }
+}

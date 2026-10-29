@@ -1,0 +1,5613 @@
+{
+  "schema": "usim-dev-lift-chain-inventory/v1",
+  "episode_key": "usim_train_episode_000501",
+  "plan_sha256": "029fca1e9d9b139e0971e0dd2c3f92a5507e0cbcbb94dd588db96f4806bfd0ee",
+  "source_files": {
+    "ego": {
+      "path": "usim/train/videos/chunk-000/observation.images.ego/episode_000501.mp4",
+      "sha256": "c366d98d000f12bf7cde77b6a951882e2d9eda0dffb162177c5e53aa37e98af5",
+      "pinned_hash_match": true
+    },
+    "wrist_aux": {
+      "path": "usim/train/videos/chunk-000/observation.images.wrist/episode_000501.mp4",
+      "sha256": "60ec09b3d7758d82d66c19bf11a60f9b47be60ec124d9a5083aa9f840030d60c",
+      "pinned_hash_match": true
+    },
+    "parquet": {
+      "path": "usim/train/data/chunk-000/episode_000501.parquet",
+      "sha256": "07f0866f42467b4aa0cef8c3ffdc8dae8c4e0c13b45ab7b41c45835e5dff0391",
+      "pinned_hash_match": true
+    }
+  },
+  "decoded_frames": {
+    "ego": 320,
+    "wrist_aux": 320,
+    "parquet": 320
+  },
+  "signal": {
+    "events": [
+      {
+        "frame": 211,
+        "event": "close"
+      }
+    ],
+    "main_close_signal_candidate": 211,
+    "main_close_visually_confirmed": false,
+    "release_after_main_close": null,
+    "baseline_search_half_open": [
+      191,
+      320
+    ],
+    "minimum_frame": 227,
+    "minimum_value": 0.23446859419345856,
+    "robot_rise_proxy_frame": 259,
+    "proxy_window_raw": [
+      299,
+      319
+    ],
+    "proxy_window_available": [
+      299,
+      319
+    ]
+  },
+  "review_frames_inclusive": [
+    180,
+    319
+  ],
+  "frames": [
+    {
+      "frame": 180,
+      "dvl": 0.3136119842529297,
+      "gripper": 4.2511172068770975e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00180.png",
+      "ego_png_sha256": "909e7fdd5f988401dd6956ac28bdf718c7d307320b9ef1e35d24f147ef1e2b86",
+      "ego_decoded_pixel_sha256": "42d0c15bf94d07dc9d26830e850d65ab158ebc55632300b9978e98b10ce759d0",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00180.png",
+      "wrist_aux_png_sha256": "686ef3298f21844ad0615ca1bba84274b11e76ccfb70194eb9f0f54441f71bf6",
+      "ego_motion_hold": {
+        "index": 21,
+        "start": 166,
+        "end": 181,
+        "length": 16
+      },
+      "ego_exact_pixel_run": {
+        "index": 21,
+        "start": 166,
+        "end": 181,
+        "length": 16
+      },
+      "wrist_motion_hold": {
+        "index": 19,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      }
+    },
+    {
+      "frame": 181,
+      "dvl": 0.30553147196769714,
+      "gripper": 4.2511172068770975e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00181.png",
+      "ego_png_sha256": "909e7fdd5f988401dd6956ac28bdf718c7d307320b9ef1e35d24f147ef1e2b86",
+      "ego_decoded_pixel_sha256": "42d0c15bf94d07dc9d26830e850d65ab158ebc55632300b9978e98b10ce759d0",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00181.png",
+      "wrist_aux_png_sha256": "686ef3298f21844ad0615ca1bba84274b11e76ccfb70194eb9f0f54441f71bf6",
+      "ego_motion_hold": {
+        "index": 21,
+        "start": 166,
+        "end": 181,
+        "length": 16
+      },
+      "ego_exact_pixel_run": {
+        "index": 21,
+        "start": 166,
+        "end": 181,
+        "length": 16
+      },
+      "wrist_motion_hold": {
+        "index": 19,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      }
+    },
+    {
+      "frame": 182,
+      "dvl": 0.30553147196769714,
+      "gripper": 4.2511172068770975e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00182.png",
+      "ego_png_sha256": "4a274965d0ad8f76a41c93395fe84c76c774e9641a99a985ffc187d0a7aced08",
+      "ego_decoded_pixel_sha256": "a2801520ae6ccc9fd99eb201cdf902e996bd8ac61afd50bfb4acfaa0325bfd9b",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00182.png",
+      "wrist_aux_png_sha256": "686ef3298f21844ad0615ca1bba84274b11e76ccfb70194eb9f0f54441f71bf6",
+      "ego_motion_hold": {
+        "index": 22,
+        "start": 182,
+        "end": 182,
+        "length": 1
+      },
+      "ego_exact_pixel_run": {
+        "index": 22,
+        "start": 182,
+        "end": 182,
+        "length": 1
+      },
+      "wrist_motion_hold": {
+        "index": 19,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      }
+    },
+    {
+      "frame": 183,
+      "dvl": 0.3002197742462158,
+      "gripper": 4.2511172068770975e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00183.png",
+      "ego_png_sha256": "654b2ba4fc40065567c721e15864742d951438ded825104f172b63bd95ae7edf",
+      "ego_decoded_pixel_sha256": "5c86abb123b6df94888f61bd7112bd483151ea31cd0a3ab50cb4af9cd44ecf2e",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00183.png",
+      "wrist_aux_png_sha256": "686ef3298f21844ad0615ca1bba84274b11e76ccfb70194eb9f0f54441f71bf6",
+      "ego_motion_hold": {
+        "index": 23,
+        "start": 183,
+        "end": 183,
+        "length": 1
+      },
+      "ego_exact_pixel_run": {
+        "index": 23,
+        "start": 183,
+        "end": 183,
+        "length": 1
+      },
+      "wrist_motion_hold": {
+        "index": 19,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      }
+    },
+    {
+      "frame": 184,
+      "dvl": 0.3002197742462158,
+      "gripper": 4.2511172068770975e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00184.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "ego_decoded_pixel_sha256": "4c6630d717bcf0cf1b5e89ade2aa6a596de4d9657ccddb08eb133d29db2a7e7c",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00184.png",
+      "wrist_aux_png_sha256": "686ef3298f21844ad0615ca1bba84274b11e76ccfb70194eb9f0f54441f71bf6",
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_motion_hold": {
+        "index": 19,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      }
+    },
+    {
+      "frame": 185,
+      "dvl": 0.2918693423271179,
+      "gripper": 4.2511172068770975e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00185.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "ego_decoded_pixel_sha256": "4c6630d717bcf0cf1b5e89ade2aa6a596de4d9657ccddb08eb133d29db2a7e7c",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00185.png",
+      "wrist_aux_png_sha256": "686ef3298f21844ad0615ca1bba84274b11e76ccfb70194eb9f0f54441f71bf6",
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_motion_hold": {
+        "index": 19,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      }
+    },
+    {
+      "frame": 186,
+      "dvl": 0.2918693423271179,
+      "gripper": 4.2511172068770975e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00186.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "ego_decoded_pixel_sha256": "4c6630d717bcf0cf1b5e89ade2aa6a596de4d9657ccddb08eb133d29db2a7e7c",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00186.png",
+      "wrist_aux_png_sha256": "686ef3298f21844ad0615ca1bba84274b11e76ccfb70194eb9f0f54441f71bf6",
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_motion_hold": {
+        "index": 19,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      }
+    },
+    {
+      "frame": 187,
+      "dvl": 0.2845752537250519,
+      "gripper": 4.2511172068770975e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00187.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "ego_decoded_pixel_sha256": "4c6630d717bcf0cf1b5e89ade2aa6a596de4d9657ccddb08eb133d29db2a7e7c",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00187.png",
+      "wrist_aux_png_sha256": "686ef3298f21844ad0615ca1bba84274b11e76ccfb70194eb9f0f54441f71bf6",
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_motion_hold": {
+        "index": 19,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      }
+    },
+    {
+      "frame": 188,
+      "dvl": 0.2845752537250519,
+      "gripper": 4.2511172068770975e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00188.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "ego_decoded_pixel_sha256": "4c6630d717bcf0cf1b5e89ade2aa6a596de4d9657ccddb08eb133d29db2a7e7c",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00188.png",
+      "wrist_aux_png_sha256": "686ef3298f21844ad0615ca1bba84274b11e76ccfb70194eb9f0f54441f71bf6",
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_motion_hold": {
+        "index": 19,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      }
+    },
+    {
+      "frame": 189,
+      "dvl": 0.2786591053009033,
+      "gripper": 4.2511172068770975e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00189.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "ego_decoded_pixel_sha256": "4c6630d717bcf0cf1b5e89ade2aa6a596de4d9657ccddb08eb133d29db2a7e7c",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00189.png",
+      "wrist_aux_png_sha256": "686ef3298f21844ad0615ca1bba84274b11e76ccfb70194eb9f0f54441f71bf6",
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_motion_hold": {
+        "index": 19,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      }
+    },
+    {
+      "frame": 190,
+      "dvl": 0.2786591053009033,
+      "gripper": 4.2511172068770975e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00190.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "ego_decoded_pixel_sha256": "4c6630d717bcf0cf1b5e89ade2aa6a596de4d9657ccddb08eb133d29db2a7e7c",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00190.png",
+      "wrist_aux_png_sha256": "686ef3298f21844ad0615ca1bba84274b11e76ccfb70194eb9f0f54441f71bf6",
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_motion_hold": {
+        "index": 19,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      }
+    },
+    {
+      "frame": 191,
+      "dvl": 0.2732108235359192,
+      "gripper": 4.2511172068770975e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00191.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "ego_decoded_pixel_sha256": "4c6630d717bcf0cf1b5e89ade2aa6a596de4d9657ccddb08eb133d29db2a7e7c",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00191.png",
+      "wrist_aux_png_sha256": "686ef3298f21844ad0615ca1bba84274b11e76ccfb70194eb9f0f54441f71bf6",
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_motion_hold": {
+        "index": 19,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      }
+    },
+    {
+      "frame": 192,
+      "dvl": 0.2732108235359192,
+      "gripper": 4.2511172068770975e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00192.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "ego_decoded_pixel_sha256": "4c6630d717bcf0cf1b5e89ade2aa6a596de4d9657ccddb08eb133d29db2a7e7c",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00192.png",
+      "wrist_aux_png_sha256": "686ef3298f21844ad0615ca1bba84274b11e76ccfb70194eb9f0f54441f71bf6",
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_motion_hold": {
+        "index": 19,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      }
+    },
+    {
+      "frame": 193,
+      "dvl": 0.26774173974990845,
+      "gripper": 4.2511172068770975e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00193.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "ego_decoded_pixel_sha256": "4c6630d717bcf0cf1b5e89ade2aa6a596de4d9657ccddb08eb133d29db2a7e7c",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00193.png",
+      "wrist_aux_png_sha256": "686ef3298f21844ad0615ca1bba84274b11e76ccfb70194eb9f0f54441f71bf6",
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_motion_hold": {
+        "index": 19,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      }
+    },
+    {
+      "frame": 194,
+      "dvl": 0.26774173974990845,
+      "gripper": 4.2511172068770975e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00194.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "ego_decoded_pixel_sha256": "4c6630d717bcf0cf1b5e89ade2aa6a596de4d9657ccddb08eb133d29db2a7e7c",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00194.png",
+      "wrist_aux_png_sha256": "686ef3298f21844ad0615ca1bba84274b11e76ccfb70194eb9f0f54441f71bf6",
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_motion_hold": {
+        "index": 19,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      }
+    },
+    {
+      "frame": 195,
+      "dvl": 0.2614309787750244,
+      "gripper": 4.2511172068770975e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00195.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "ego_decoded_pixel_sha256": "4c6630d717bcf0cf1b5e89ade2aa6a596de4d9657ccddb08eb133d29db2a7e7c",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00195.png",
+      "wrist_aux_png_sha256": "686ef3298f21844ad0615ca1bba84274b11e76ccfb70194eb9f0f54441f71bf6",
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_motion_hold": {
+        "index": 19,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      }
+    },
+    {
+      "frame": 196,
+      "dvl": 0.2614309787750244,
+      "gripper": 4.2511172068770975e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00196.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "ego_decoded_pixel_sha256": "4c6630d717bcf0cf1b5e89ade2aa6a596de4d9657ccddb08eb133d29db2a7e7c",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00196.png",
+      "wrist_aux_png_sha256": "686ef3298f21844ad0615ca1bba84274b11e76ccfb70194eb9f0f54441f71bf6",
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_motion_hold": {
+        "index": 19,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      }
+    },
+    {
+      "frame": 197,
+      "dvl": 0.25916236639022827,
+      "gripper": 4.2511172068770975e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00197.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "ego_decoded_pixel_sha256": "4c6630d717bcf0cf1b5e89ade2aa6a596de4d9657ccddb08eb133d29db2a7e7c",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00197.png",
+      "wrist_aux_png_sha256": "686ef3298f21844ad0615ca1bba84274b11e76ccfb70194eb9f0f54441f71bf6",
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_motion_hold": {
+        "index": 19,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 20,
+        "start": 178,
+        "end": 197,
+        "length": 20
+      }
+    },
+    {
+      "frame": 198,
+      "dvl": 0.25916236639022827,
+      "gripper": 4.400191392051056e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00198.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "ego_decoded_pixel_sha256": "4c6630d717bcf0cf1b5e89ade2aa6a596de4d9657ccddb08eb133d29db2a7e7c",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00198.png",
+      "wrist_aux_png_sha256": "8ad1ca4af3fc02b63b50cf9d7152e2ae5dcb4611a5625ddf314b2fa013ec676e",
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_motion_hold": {
+        "index": 20,
+        "start": 198,
+        "end": 218,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      }
+    },
+    {
+      "frame": 199,
+      "dvl": 0.2531607151031494,
+      "gripper": 4.226907913107425e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00199.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "ego_decoded_pixel_sha256": "4c6630d717bcf0cf1b5e89ade2aa6a596de4d9657ccddb08eb133d29db2a7e7c",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00199.png",
+      "wrist_aux_png_sha256": "8ad1ca4af3fc02b63b50cf9d7152e2ae5dcb4611a5625ddf314b2fa013ec676e",
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_motion_hold": {
+        "index": 20,
+        "start": 198,
+        "end": 218,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      }
+    },
+    {
+      "frame": 200,
+      "dvl": 0.2531607151031494,
+      "gripper": 4.2352181480964646e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00200.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "ego_decoded_pixel_sha256": "4c6630d717bcf0cf1b5e89ade2aa6a596de4d9657ccddb08eb133d29db2a7e7c",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00200.png",
+      "wrist_aux_png_sha256": "8ad1ca4af3fc02b63b50cf9d7152e2ae5dcb4611a5625ddf314b2fa013ec676e",
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_motion_hold": {
+        "index": 20,
+        "start": 198,
+        "end": 218,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      }
+    },
+    {
+      "frame": 201,
+      "dvl": 0.2519066631793976,
+      "gripper": 4.2374798795208335e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00201.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "ego_decoded_pixel_sha256": "4c6630d717bcf0cf1b5e89ade2aa6a596de4d9657ccddb08eb133d29db2a7e7c",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00201.png",
+      "wrist_aux_png_sha256": "8ad1ca4af3fc02b63b50cf9d7152e2ae5dcb4611a5625ddf314b2fa013ec676e",
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_motion_hold": {
+        "index": 20,
+        "start": 198,
+        "end": 218,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      }
+    },
+    {
+      "frame": 202,
+      "dvl": 0.2519066631793976,
+      "gripper": 4.236555832903832e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00202.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "ego_decoded_pixel_sha256": "4c6630d717bcf0cf1b5e89ade2aa6a596de4d9657ccddb08eb133d29db2a7e7c",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00202.png",
+      "wrist_aux_png_sha256": "8ad1ca4af3fc02b63b50cf9d7152e2ae5dcb4611a5625ddf314b2fa013ec676e",
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_motion_hold": {
+        "index": 20,
+        "start": 198,
+        "end": 218,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      }
+    },
+    {
+      "frame": 203,
+      "dvl": 0.24849195778369904,
+      "gripper": 4.2354273318778723e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00203.png",
+      "ego_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023",
+      "ego_decoded_pixel_sha256": "4c6630d717bcf0cf1b5e89ade2aa6a596de4d9657ccddb08eb133d29db2a7e7c",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00203.png",
+      "wrist_aux_png_sha256": "8ad1ca4af3fc02b63b50cf9d7152e2ae5dcb4611a5625ddf314b2fa013ec676e",
+      "ego_motion_hold": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "ego_exact_pixel_run": {
+        "index": 24,
+        "start": 184,
+        "end": 203,
+        "length": 20
+      },
+      "wrist_motion_hold": {
+        "index": 20,
+        "start": 198,
+        "end": 218,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      }
+    },
+    {
+      "frame": 204,
+      "dvl": 0.24849195778369904,
+      "gripper": 4.2352847231086344e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00204.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "ego_decoded_pixel_sha256": "bb0e38c00ff6c2016ddbafe94fa285bb6dc0517bec58cd971a1e87448aa38500",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00204.png",
+      "wrist_aux_png_sha256": "8ad1ca4af3fc02b63b50cf9d7152e2ae5dcb4611a5625ddf314b2fa013ec676e",
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 20,
+        "start": 198,
+        "end": 218,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      }
+    },
+    {
+      "frame": 205,
+      "dvl": 0.24593256413936615,
+      "gripper": 4.238012479618192e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00205.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "ego_decoded_pixel_sha256": "bb0e38c00ff6c2016ddbafe94fa285bb6dc0517bec58cd971a1e87448aa38500",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00205.png",
+      "wrist_aux_png_sha256": "8ad1ca4af3fc02b63b50cf9d7152e2ae5dcb4611a5625ddf314b2fa013ec676e",
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 20,
+        "start": 198,
+        "end": 218,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      }
+    },
+    {
+      "frame": 206,
+      "dvl": 0.24593256413936615,
+      "gripper": 4.245149466441944e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00206.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "ego_decoded_pixel_sha256": "bb0e38c00ff6c2016ddbafe94fa285bb6dc0517bec58cd971a1e87448aa38500",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00206.png",
+      "wrist_aux_png_sha256": "8ad1ca4af3fc02b63b50cf9d7152e2ae5dcb4611a5625ddf314b2fa013ec676e",
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 20,
+        "start": 198,
+        "end": 218,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      }
+    },
+    {
+      "frame": 207,
+      "dvl": 0.24429214000701904,
+      "gripper": 4.254630766808987e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00207.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "ego_decoded_pixel_sha256": "bb0e38c00ff6c2016ddbafe94fa285bb6dc0517bec58cd971a1e87448aa38500",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00207.png",
+      "wrist_aux_png_sha256": "8ad1ca4af3fc02b63b50cf9d7152e2ae5dcb4611a5625ddf314b2fa013ec676e",
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 20,
+        "start": 198,
+        "end": 218,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      }
+    },
+    {
+      "frame": 208,
+      "dvl": 0.24429214000701904,
+      "gripper": 4.2683797801146284e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00208.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "ego_decoded_pixel_sha256": "bb0e38c00ff6c2016ddbafe94fa285bb6dc0517bec58cd971a1e87448aa38500",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00208.png",
+      "wrist_aux_png_sha256": "8ad1ca4af3fc02b63b50cf9d7152e2ae5dcb4611a5625ddf314b2fa013ec676e",
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 20,
+        "start": 198,
+        "end": 218,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      }
+    },
+    {
+      "frame": 209,
+      "dvl": 0.24073226749897003,
+      "gripper": 4.2818919609999284e-05,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00209.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "ego_decoded_pixel_sha256": "bb0e38c00ff6c2016ddbafe94fa285bb6dc0517bec58cd971a1e87448aa38500",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00209.png",
+      "wrist_aux_png_sha256": "8ad1ca4af3fc02b63b50cf9d7152e2ae5dcb4611a5625ddf314b2fa013ec676e",
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 20,
+        "start": 198,
+        "end": 218,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      }
+    },
+    {
+      "frame": 210,
+      "dvl": 0.24073226749897003,
+      "gripper": 0.0009326661820523441,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00210.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "ego_decoded_pixel_sha256": "bb0e38c00ff6c2016ddbafe94fa285bb6dc0517bec58cd971a1e87448aa38500",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00210.png",
+      "wrist_aux_png_sha256": "8ad1ca4af3fc02b63b50cf9d7152e2ae5dcb4611a5625ddf314b2fa013ec676e",
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 20,
+        "start": 198,
+        "end": 218,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      }
+    },
+    {
+      "frame": 211,
+      "dvl": 0.24048186838626862,
+      "gripper": 0.006445327308028936,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00211.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "ego_decoded_pixel_sha256": "bb0e38c00ff6c2016ddbafe94fa285bb6dc0517bec58cd971a1e87448aa38500",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00211.png",
+      "wrist_aux_png_sha256": "8ad1ca4af3fc02b63b50cf9d7152e2ae5dcb4611a5625ddf314b2fa013ec676e",
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 20,
+        "start": 198,
+        "end": 218,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      }
+    },
+    {
+      "frame": 212,
+      "dvl": 0.24048186838626862,
+      "gripper": 0.01293969713151455,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00212.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "ego_decoded_pixel_sha256": "bb0e38c00ff6c2016ddbafe94fa285bb6dc0517bec58cd971a1e87448aa38500",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00212.png",
+      "wrist_aux_png_sha256": "8ad1ca4af3fc02b63b50cf9d7152e2ae5dcb4611a5625ddf314b2fa013ec676e",
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 20,
+        "start": 198,
+        "end": 218,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      }
+    },
+    {
+      "frame": 213,
+      "dvl": 0.2375708371400833,
+      "gripper": 0.014906671829521656,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00213.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "ego_decoded_pixel_sha256": "bb0e38c00ff6c2016ddbafe94fa285bb6dc0517bec58cd971a1e87448aa38500",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00213.png",
+      "wrist_aux_png_sha256": "8ad1ca4af3fc02b63b50cf9d7152e2ae5dcb4611a5625ddf314b2fa013ec676e",
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 20,
+        "start": 198,
+        "end": 218,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      }
+    },
+    {
+      "frame": 214,
+      "dvl": 0.2375708371400833,
+      "gripper": 0.014907143078744411,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00214.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "ego_decoded_pixel_sha256": "bb0e38c00ff6c2016ddbafe94fa285bb6dc0517bec58cd971a1e87448aa38500",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00214.png",
+      "wrist_aux_png_sha256": "8ad1ca4af3fc02b63b50cf9d7152e2ae5dcb4611a5625ddf314b2fa013ec676e",
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 20,
+        "start": 198,
+        "end": 218,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      }
+    },
+    {
+      "frame": 215,
+      "dvl": 0.23646444082260132,
+      "gripper": 0.014905587770044804,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00215.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "ego_decoded_pixel_sha256": "bb0e38c00ff6c2016ddbafe94fa285bb6dc0517bec58cd971a1e87448aa38500",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00215.png",
+      "wrist_aux_png_sha256": "8ad1ca4af3fc02b63b50cf9d7152e2ae5dcb4611a5625ddf314b2fa013ec676e",
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 20,
+        "start": 198,
+        "end": 218,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      }
+    },
+    {
+      "frame": 216,
+      "dvl": 0.23646444082260132,
+      "gripper": 0.014910146594047546,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00216.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "ego_decoded_pixel_sha256": "bb0e38c00ff6c2016ddbafe94fa285bb6dc0517bec58cd971a1e87448aa38500",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00216.png",
+      "wrist_aux_png_sha256": "8ad1ca4af3fc02b63b50cf9d7152e2ae5dcb4611a5625ddf314b2fa013ec676e",
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 20,
+        "start": 198,
+        "end": 218,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      }
+    },
+    {
+      "frame": 217,
+      "dvl": 0.23725028336048126,
+      "gripper": 0.014904947951436043,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00217.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "ego_decoded_pixel_sha256": "bb0e38c00ff6c2016ddbafe94fa285bb6dc0517bec58cd971a1e87448aa38500",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00217.png",
+      "wrist_aux_png_sha256": "8ad1ca4af3fc02b63b50cf9d7152e2ae5dcb4611a5625ddf314b2fa013ec676e",
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 20,
+        "start": 198,
+        "end": 218,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 21,
+        "start": 198,
+        "end": 217,
+        "length": 20
+      }
+    },
+    {
+      "frame": 218,
+      "dvl": 0.23725028336048126,
+      "gripper": 0.014905194751918316,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00218.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "ego_decoded_pixel_sha256": "bb0e38c00ff6c2016ddbafe94fa285bb6dc0517bec58cd971a1e87448aa38500",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00218.png",
+      "wrist_aux_png_sha256": "382427afeb2e421d283a107297cd023e8c8647261091c86b4ebfafa072625a81",
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 20,
+        "start": 198,
+        "end": 218,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 22,
+        "start": 218,
+        "end": 218,
+        "length": 1
+      }
+    },
+    {
+      "frame": 219,
+      "dvl": 0.23798677325248718,
+      "gripper": 0.014910242520272732,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00219.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "ego_decoded_pixel_sha256": "bb0e38c00ff6c2016ddbafe94fa285bb6dc0517bec58cd971a1e87448aa38500",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00219.png",
+      "wrist_aux_png_sha256": "40af7f0f14568e9cb3e43f288f42a46c9cfec6d60495b578f69eb90bc94442fc",
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 21,
+        "start": 219,
+        "end": 219,
+        "length": 1
+      },
+      "wrist_exact_pixel_run": {
+        "index": 23,
+        "start": 219,
+        "end": 219,
+        "length": 1
+      }
+    },
+    {
+      "frame": 220,
+      "dvl": 0.23798677325248718,
+      "gripper": 0.014909893274307251,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00220.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "ego_decoded_pixel_sha256": "bb0e38c00ff6c2016ddbafe94fa285bb6dc0517bec58cd971a1e87448aa38500",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00220.png",
+      "wrist_aux_png_sha256": "6e844a2d50522d7f4037b19a8c3396ccd94d9c42d39b1340ca1e8ffeb4ffe0a5",
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 22,
+        "start": 220,
+        "end": 240,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      }
+    },
+    {
+      "frame": 221,
+      "dvl": 0.23676656186580658,
+      "gripper": 0.014909688383340836,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00221.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "ego_decoded_pixel_sha256": "bb0e38c00ff6c2016ddbafe94fa285bb6dc0517bec58cd971a1e87448aa38500",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00221.png",
+      "wrist_aux_png_sha256": "6e844a2d50522d7f4037b19a8c3396ccd94d9c42d39b1340ca1e8ffeb4ffe0a5",
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 22,
+        "start": 220,
+        "end": 240,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      }
+    },
+    {
+      "frame": 222,
+      "dvl": 0.23676656186580658,
+      "gripper": 0.014909432269632816,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00222.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "ego_decoded_pixel_sha256": "bb0e38c00ff6c2016ddbafe94fa285bb6dc0517bec58cd971a1e87448aa38500",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00222.png",
+      "wrist_aux_png_sha256": "6e844a2d50522d7f4037b19a8c3396ccd94d9c42d39b1340ca1e8ffeb4ffe0a5",
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 22,
+        "start": 220,
+        "end": 240,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      }
+    },
+    {
+      "frame": 223,
+      "dvl": 0.23580220341682434,
+      "gripper": 0.014908617362380028,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00223.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "ego_decoded_pixel_sha256": "bb0e38c00ff6c2016ddbafe94fa285bb6dc0517bec58cd971a1e87448aa38500",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00223.png",
+      "wrist_aux_png_sha256": "6e844a2d50522d7f4037b19a8c3396ccd94d9c42d39b1340ca1e8ffeb4ffe0a5",
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 22,
+        "start": 220,
+        "end": 240,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      }
+    },
+    {
+      "frame": 224,
+      "dvl": 0.23580220341682434,
+      "gripper": 0.01490749977529049,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00224.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "ego_decoded_pixel_sha256": "bb0e38c00ff6c2016ddbafe94fa285bb6dc0517bec58cd971a1e87448aa38500",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00224.png",
+      "wrist_aux_png_sha256": "6e844a2d50522d7f4037b19a8c3396ccd94d9c42d39b1340ca1e8ffeb4ffe0a5",
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 22,
+        "start": 220,
+        "end": 240,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      }
+    },
+    {
+      "frame": 225,
+      "dvl": 0.2361522763967514,
+      "gripper": 0.014906812459230423,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00225.png",
+      "ego_png_sha256": "754bf480262c3accfba1eaab85b9aa90313f4005afeacb9c56c3bbd51975d1c2",
+      "ego_decoded_pixel_sha256": "bb0e38c00ff6c2016ddbafe94fa285bb6dc0517bec58cd971a1e87448aa38500",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00225.png",
+      "wrist_aux_png_sha256": "6e844a2d50522d7f4037b19a8c3396ccd94d9c42d39b1340ca1e8ffeb4ffe0a5",
+      "ego_motion_hold": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 25,
+        "start": 204,
+        "end": 225,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 22,
+        "start": 220,
+        "end": 240,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      }
+    },
+    {
+      "frame": 226,
+      "dvl": 0.2361522763967514,
+      "gripper": 0.014908771961927414,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00226.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "ego_decoded_pixel_sha256": "cb383ebb38f353b720ab74153154eb6da4872f1c1b18bc2f64faa36cbf3c29cd",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00226.png",
+      "wrist_aux_png_sha256": "6e844a2d50522d7f4037b19a8c3396ccd94d9c42d39b1340ca1e8ffeb4ffe0a5",
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 22,
+        "start": 220,
+        "end": 240,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      }
+    },
+    {
+      "frame": 227,
+      "dvl": 0.23446859419345856,
+      "gripper": 0.014907678589224815,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00227.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "ego_decoded_pixel_sha256": "cb383ebb38f353b720ab74153154eb6da4872f1c1b18bc2f64faa36cbf3c29cd",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00227.png",
+      "wrist_aux_png_sha256": "6e844a2d50522d7f4037b19a8c3396ccd94d9c42d39b1340ca1e8ffeb4ffe0a5",
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 22,
+        "start": 220,
+        "end": 240,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      }
+    },
+    {
+      "frame": 228,
+      "dvl": 0.23446859419345856,
+      "gripper": 0.014904817566275597,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00228.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "ego_decoded_pixel_sha256": "cb383ebb38f353b720ab74153154eb6da4872f1c1b18bc2f64faa36cbf3c29cd",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00228.png",
+      "wrist_aux_png_sha256": "6e844a2d50522d7f4037b19a8c3396ccd94d9c42d39b1340ca1e8ffeb4ffe0a5",
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 22,
+        "start": 220,
+        "end": 240,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      }
+    },
+    {
+      "frame": 229,
+      "dvl": 0.23549911379814148,
+      "gripper": 0.014910060912370682,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00229.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "ego_decoded_pixel_sha256": "cb383ebb38f353b720ab74153154eb6da4872f1c1b18bc2f64faa36cbf3c29cd",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00229.png",
+      "wrist_aux_png_sha256": "6e844a2d50522d7f4037b19a8c3396ccd94d9c42d39b1340ca1e8ffeb4ffe0a5",
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 22,
+        "start": 220,
+        "end": 240,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      }
+    },
+    {
+      "frame": 230,
+      "dvl": 0.23549911379814148,
+      "gripper": 0.014910138212144375,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00230.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "ego_decoded_pixel_sha256": "cb383ebb38f353b720ab74153154eb6da4872f1c1b18bc2f64faa36cbf3c29cd",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00230.png",
+      "wrist_aux_png_sha256": "6e844a2d50522d7f4037b19a8c3396ccd94d9c42d39b1340ca1e8ffeb4ffe0a5",
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 22,
+        "start": 220,
+        "end": 240,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      }
+    },
+    {
+      "frame": 231,
+      "dvl": 0.2376449853181839,
+      "gripper": 0.014910164289176464,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00231.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "ego_decoded_pixel_sha256": "cb383ebb38f353b720ab74153154eb6da4872f1c1b18bc2f64faa36cbf3c29cd",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00231.png",
+      "wrist_aux_png_sha256": "6e844a2d50522d7f4037b19a8c3396ccd94d9c42d39b1340ca1e8ffeb4ffe0a5",
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 22,
+        "start": 220,
+        "end": 240,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      }
+    },
+    {
+      "frame": 232,
+      "dvl": 0.2376449853181839,
+      "gripper": 0.014910191297531128,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00232.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "ego_decoded_pixel_sha256": "cb383ebb38f353b720ab74153154eb6da4872f1c1b18bc2f64faa36cbf3c29cd",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00232.png",
+      "wrist_aux_png_sha256": "6e844a2d50522d7f4037b19a8c3396ccd94d9c42d39b1340ca1e8ffeb4ffe0a5",
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 22,
+        "start": 220,
+        "end": 240,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      }
+    },
+    {
+      "frame": 233,
+      "dvl": 0.2367359697818756,
+      "gripper": 0.014910142868757248,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00233.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "ego_decoded_pixel_sha256": "cb383ebb38f353b720ab74153154eb6da4872f1c1b18bc2f64faa36cbf3c29cd",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00233.png",
+      "wrist_aux_png_sha256": "6e844a2d50522d7f4037b19a8c3396ccd94d9c42d39b1340ca1e8ffeb4ffe0a5",
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 22,
+        "start": 220,
+        "end": 240,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      }
+    },
+    {
+      "frame": 234,
+      "dvl": 0.2367359697818756,
+      "gripper": 0.014910109341144562,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00234.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "ego_decoded_pixel_sha256": "cb383ebb38f353b720ab74153154eb6da4872f1c1b18bc2f64faa36cbf3c29cd",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00234.png",
+      "wrist_aux_png_sha256": "6e844a2d50522d7f4037b19a8c3396ccd94d9c42d39b1340ca1e8ffeb4ffe0a5",
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 22,
+        "start": 220,
+        "end": 240,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      }
+    },
+    {
+      "frame": 235,
+      "dvl": 0.23891235888004303,
+      "gripper": 0.014906258322298527,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00235.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "ego_decoded_pixel_sha256": "cb383ebb38f353b720ab74153154eb6da4872f1c1b18bc2f64faa36cbf3c29cd",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00235.png",
+      "wrist_aux_png_sha256": "6e844a2d50522d7f4037b19a8c3396ccd94d9c42d39b1340ca1e8ffeb4ffe0a5",
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 22,
+        "start": 220,
+        "end": 240,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      }
+    },
+    {
+      "frame": 236,
+      "dvl": 0.23891235888004303,
+      "gripper": 0.01490831095725298,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00236.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "ego_decoded_pixel_sha256": "cb383ebb38f353b720ab74153154eb6da4872f1c1b18bc2f64faa36cbf3c29cd",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00236.png",
+      "wrist_aux_png_sha256": "6e844a2d50522d7f4037b19a8c3396ccd94d9c42d39b1340ca1e8ffeb4ffe0a5",
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 22,
+        "start": 220,
+        "end": 240,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      }
+    },
+    {
+      "frame": 237,
+      "dvl": 0.2383328378200531,
+      "gripper": 0.014909082092344761,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00237.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "ego_decoded_pixel_sha256": "cb383ebb38f353b720ab74153154eb6da4872f1c1b18bc2f64faa36cbf3c29cd",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00237.png",
+      "wrist_aux_png_sha256": "6e844a2d50522d7f4037b19a8c3396ccd94d9c42d39b1340ca1e8ffeb4ffe0a5",
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 22,
+        "start": 220,
+        "end": 240,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      }
+    },
+    {
+      "frame": 238,
+      "dvl": 0.2383328378200531,
+      "gripper": 0.014909941703081131,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00238.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "ego_decoded_pixel_sha256": "cb383ebb38f353b720ab74153154eb6da4872f1c1b18bc2f64faa36cbf3c29cd",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00238.png",
+      "wrist_aux_png_sha256": "6e844a2d50522d7f4037b19a8c3396ccd94d9c42d39b1340ca1e8ffeb4ffe0a5",
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 22,
+        "start": 220,
+        "end": 240,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      }
+    },
+    {
+      "frame": 239,
+      "dvl": 0.23855511844158173,
+      "gripper": 0.01491061132401228,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00239.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "ego_decoded_pixel_sha256": "cb383ebb38f353b720ab74153154eb6da4872f1c1b18bc2f64faa36cbf3c29cd",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00239.png",
+      "wrist_aux_png_sha256": "6e844a2d50522d7f4037b19a8c3396ccd94d9c42d39b1340ca1e8ffeb4ffe0a5",
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 22,
+        "start": 220,
+        "end": 240,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 24,
+        "start": 220,
+        "end": 239,
+        "length": 20
+      }
+    },
+    {
+      "frame": 240,
+      "dvl": 0.23855511844158173,
+      "gripper": 0.014909637160599232,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00240.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "ego_decoded_pixel_sha256": "cb383ebb38f353b720ab74153154eb6da4872f1c1b18bc2f64faa36cbf3c29cd",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00240.png",
+      "wrist_aux_png_sha256": "e9858140130b43f6cfa038202d63224df1ba2bfcb9296894f3a5deacfb42950a",
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 22,
+        "start": 220,
+        "end": 240,
+        "length": 21
+      },
+      "wrist_exact_pixel_run": {
+        "index": 25,
+        "start": 240,
+        "end": 240,
+        "length": 1
+      }
+    },
+    {
+      "frame": 241,
+      "dvl": 0.23913168907165527,
+      "gripper": 0.014909239485859871,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00241.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "ego_decoded_pixel_sha256": "cb383ebb38f353b720ab74153154eb6da4872f1c1b18bc2f64faa36cbf3c29cd",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00241.png",
+      "wrist_aux_png_sha256": "cba641c6d41f7ba2f514f07c1c6f4bc543eff723081a85af8f1fa66897171f30",
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 23,
+        "start": 241,
+        "end": 241,
+        "length": 1
+      },
+      "wrist_exact_pixel_run": {
+        "index": 26,
+        "start": 241,
+        "end": 241,
+        "length": 1
+      }
+    },
+    {
+      "frame": 242,
+      "dvl": 0.23913168907165527,
+      "gripper": 0.014909354038536549,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00242.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "ego_decoded_pixel_sha256": "cb383ebb38f353b720ab74153154eb6da4872f1c1b18bc2f64faa36cbf3c29cd",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00242.png",
+      "wrist_aux_png_sha256": "af14769d24349d81396e4718182dca3953798649d87113b43cb9f4de69c97f54",
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 24,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      }
+    },
+    {
+      "frame": 243,
+      "dvl": 0.24371066689491272,
+      "gripper": 0.014910023659467697,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00243.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "ego_decoded_pixel_sha256": "cb383ebb38f353b720ab74153154eb6da4872f1c1b18bc2f64faa36cbf3c29cd",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00243.png",
+      "wrist_aux_png_sha256": "af14769d24349d81396e4718182dca3953798649d87113b43cb9f4de69c97f54",
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 24,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      }
+    },
+    {
+      "frame": 244,
+      "dvl": 0.24371066689491272,
+      "gripper": 0.014910012483596802,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00244.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "ego_decoded_pixel_sha256": "cb383ebb38f353b720ab74153154eb6da4872f1c1b18bc2f64faa36cbf3c29cd",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00244.png",
+      "wrist_aux_png_sha256": "af14769d24349d81396e4718182dca3953798649d87113b43cb9f4de69c97f54",
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 24,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      }
+    },
+    {
+      "frame": 245,
+      "dvl": 0.24231809377670288,
+      "gripper": 0.014910003170371056,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00245.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "ego_decoded_pixel_sha256": "cb383ebb38f353b720ab74153154eb6da4872f1c1b18bc2f64faa36cbf3c29cd",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00245.png",
+      "wrist_aux_png_sha256": "af14769d24349d81396e4718182dca3953798649d87113b43cb9f4de69c97f54",
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 24,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      }
+    },
+    {
+      "frame": 246,
+      "dvl": 0.24231809377670288,
+      "gripper": 0.014909995719790459,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00246.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "ego_decoded_pixel_sha256": "cb383ebb38f353b720ab74153154eb6da4872f1c1b18bc2f64faa36cbf3c29cd",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00246.png",
+      "wrist_aux_png_sha256": "af14769d24349d81396e4718182dca3953798649d87113b43cb9f4de69c97f54",
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 24,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      }
+    },
+    {
+      "frame": 247,
+      "dvl": 0.2420850247144699,
+      "gripper": 0.014909710735082626,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00247.png",
+      "ego_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd",
+      "ego_decoded_pixel_sha256": "cb383ebb38f353b720ab74153154eb6da4872f1c1b18bc2f64faa36cbf3c29cd",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00247.png",
+      "wrist_aux_png_sha256": "af14769d24349d81396e4718182dca3953798649d87113b43cb9f4de69c97f54",
+      "ego_motion_hold": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 26,
+        "start": 226,
+        "end": 247,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 24,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      }
+    },
+    {
+      "frame": 248,
+      "dvl": 0.2420850247144699,
+      "gripper": 0.014910001307725906,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00248.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00248.png",
+      "wrist_aux_png_sha256": "af14769d24349d81396e4718182dca3953798649d87113b43cb9f4de69c97f54",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 24,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      }
+    },
+    {
+      "frame": 249,
+      "dvl": 0.2447095513343811,
+      "gripper": 0.014909950084984303,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00249.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00249.png",
+      "wrist_aux_png_sha256": "af14769d24349d81396e4718182dca3953798649d87113b43cb9f4de69c97f54",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 24,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      }
+    },
+    {
+      "frame": 250,
+      "dvl": 0.2447095513343811,
+      "gripper": 0.014909811317920685,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00250.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00250.png",
+      "wrist_aux_png_sha256": "af14769d24349d81396e4718182dca3953798649d87113b43cb9f4de69c97f54",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 24,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      }
+    },
+    {
+      "frame": 251,
+      "dvl": 0.25094154477119446,
+      "gripper": 0.014909849502146244,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00251.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00251.png",
+      "wrist_aux_png_sha256": "af14769d24349d81396e4718182dca3953798649d87113b43cb9f4de69c97f54",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 24,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      }
+    },
+    {
+      "frame": 252,
+      "dvl": 0.25094154477119446,
+      "gripper": 0.014909936115145683,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00252.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00252.png",
+      "wrist_aux_png_sha256": "af14769d24349d81396e4718182dca3953798649d87113b43cb9f4de69c97f54",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 24,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      }
+    },
+    {
+      "frame": 253,
+      "dvl": 0.26097550988197327,
+      "gripper": 0.014909936115145683,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00253.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00253.png",
+      "wrist_aux_png_sha256": "af14769d24349d81396e4718182dca3953798649d87113b43cb9f4de69c97f54",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 24,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      }
+    },
+    {
+      "frame": 254,
+      "dvl": 0.26097550988197327,
+      "gripper": 0.014909914694726467,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00254.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00254.png",
+      "wrist_aux_png_sha256": "af14769d24349d81396e4718182dca3953798649d87113b43cb9f4de69c97f54",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 24,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      }
+    },
+    {
+      "frame": 255,
+      "dvl": 0.27177736163139343,
+      "gripper": 0.014909898862242699,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00255.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00255.png",
+      "wrist_aux_png_sha256": "af14769d24349d81396e4718182dca3953798649d87113b43cb9f4de69c97f54",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 24,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      }
+    },
+    {
+      "frame": 256,
+      "dvl": 0.27177736163139343,
+      "gripper": 0.014909891411662102,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00256.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00256.png",
+      "wrist_aux_png_sha256": "af14769d24349d81396e4718182dca3953798649d87113b43cb9f4de69c97f54",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 24,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      }
+    },
+    {
+      "frame": 257,
+      "dvl": 0.2833012044429779,
+      "gripper": 0.014909889549016953,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00257.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00257.png",
+      "wrist_aux_png_sha256": "af14769d24349d81396e4718182dca3953798649d87113b43cb9f4de69c97f54",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 24,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      }
+    },
+    {
+      "frame": 258,
+      "dvl": 0.2833012044429779,
+      "gripper": 0.014909888617694378,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00258.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00258.png",
+      "wrist_aux_png_sha256": "af14769d24349d81396e4718182dca3953798649d87113b43cb9f4de69c97f54",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 24,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      }
+    },
+    {
+      "frame": 259,
+      "dvl": 0.2917780578136444,
+      "gripper": 0.014909889549016953,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00259.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00259.png",
+      "wrist_aux_png_sha256": "af14769d24349d81396e4718182dca3953798649d87113b43cb9f4de69c97f54",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 24,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      }
+    },
+    {
+      "frame": 260,
+      "dvl": 0.2917780578136444,
+      "gripper": 0.014909891411662102,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00260.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00260.png",
+      "wrist_aux_png_sha256": "af14769d24349d81396e4718182dca3953798649d87113b43cb9f4de69c97f54",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 24,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      }
+    },
+    {
+      "frame": 261,
+      "dvl": 0.2998598515987396,
+      "gripper": 0.014909753575921059,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00261.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00261.png",
+      "wrist_aux_png_sha256": "af14769d24349d81396e4718182dca3953798649d87113b43cb9f4de69c97f54",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 24,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      },
+      "wrist_exact_pixel_run": {
+        "index": 27,
+        "start": 242,
+        "end": 261,
+        "length": 20
+      }
+    },
+    {
+      "frame": 262,
+      "dvl": 0.2998598515987396,
+      "gripper": 0.014909756369888783,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00262.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00262.png",
+      "wrist_aux_png_sha256": "bc21aaa9b2549cb2173ecdfbd18486143c773f61f289302e78519b9f09d61429",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 25,
+        "start": 262,
+        "end": 263,
+        "length": 2
+      },
+      "wrist_exact_pixel_run": {
+        "index": 28,
+        "start": 262,
+        "end": 262,
+        "length": 1
+      }
+    },
+    {
+      "frame": 263,
+      "dvl": 0.31074658036231995,
+      "gripper": 0.014909760095179081,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00263.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00263.png",
+      "wrist_aux_png_sha256": "dfdb94e4caa63a92cdb3e5dfd6ad7eaaf8639cb204b7aeb768744dc83b87392c",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 25,
+        "start": 262,
+        "end": 263,
+        "length": 2
+      },
+      "wrist_exact_pixel_run": {
+        "index": 29,
+        "start": 263,
+        "end": 263,
+        "length": 1
+      }
+    },
+    {
+      "frame": 264,
+      "dvl": 0.31074658036231995,
+      "gripper": 0.014909764751791954,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00264.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00264.png",
+      "wrist_aux_png_sha256": "e970aa3c61bd3fefe6d8e2ec2c4f4ab9aa2bd35636da3c19d5ccbb2ab48fe738",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      }
+    },
+    {
+      "frame": 265,
+      "dvl": 0.3147544264793396,
+      "gripper": 0.014909769408404827,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00265.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00265.png",
+      "wrist_aux_png_sha256": "e970aa3c61bd3fefe6d8e2ec2c4f4ab9aa2bd35636da3c19d5ccbb2ab48fe738",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      }
+    },
+    {
+      "frame": 266,
+      "dvl": 0.3147544264793396,
+      "gripper": 0.014909774996340275,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00266.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00266.png",
+      "wrist_aux_png_sha256": "e970aa3c61bd3fefe6d8e2ec2c4f4ab9aa2bd35636da3c19d5ccbb2ab48fe738",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      }
+    },
+    {
+      "frame": 267,
+      "dvl": 0.3257952630519867,
+      "gripper": 0.014909910038113594,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00267.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00267.png",
+      "wrist_aux_png_sha256": "e970aa3c61bd3fefe6d8e2ec2c4f4ab9aa2bd35636da3c19d5ccbb2ab48fe738",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      }
+    },
+    {
+      "frame": 268,
+      "dvl": 0.3257952630519867,
+      "gripper": 0.014909913763403893,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00268.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00268.png",
+      "wrist_aux_png_sha256": "e970aa3c61bd3fefe6d8e2ec2c4f4ab9aa2bd35636da3c19d5ccbb2ab48fe738",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      }
+    },
+    {
+      "frame": 269,
+      "dvl": 0.3328394293785095,
+      "gripper": 0.014909916557371616,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00269.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00269.png",
+      "wrist_aux_png_sha256": "e970aa3c61bd3fefe6d8e2ec2c4f4ab9aa2bd35636da3c19d5ccbb2ab48fe738",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      }
+    },
+    {
+      "frame": 270,
+      "dvl": 0.3328394293785095,
+      "gripper": 0.01490992121398449,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00270.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00270.png",
+      "wrist_aux_png_sha256": "e970aa3c61bd3fefe6d8e2ec2c4f4ab9aa2bd35636da3c19d5ccbb2ab48fe738",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      }
+    },
+    {
+      "frame": 271,
+      "dvl": 0.34062501788139343,
+      "gripper": 0.014909924939274788,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00271.png",
+      "ego_png_sha256": "e755d5b2b0ce1490b90289f9d1e8144e077759292fc63c8de6332b3a0d8f9fc6",
+      "ego_decoded_pixel_sha256": "a6026564020f57648d096582fcf18c9b1c1b4e72243905545c936ae2fd8da166",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00271.png",
+      "wrist_aux_png_sha256": "e970aa3c61bd3fefe6d8e2ec2c4f4ab9aa2bd35636da3c19d5ccbb2ab48fe738",
+      "ego_motion_hold": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 27,
+        "start": 248,
+        "end": 271,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      }
+    },
+    {
+      "frame": 272,
+      "dvl": 0.34062501788139343,
+      "gripper": 0.014909930527210236,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00272.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "ego_decoded_pixel_sha256": "cb63b9a7c93e9a944bc41e992ab9e2872be8fd5027c94f21888ed5689d7c3332",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00272.png",
+      "wrist_aux_png_sha256": "e970aa3c61bd3fefe6d8e2ec2c4f4ab9aa2bd35636da3c19d5ccbb2ab48fe738",
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      }
+    },
+    {
+      "frame": 273,
+      "dvl": 0.3502689301967621,
+      "gripper": 0.014909936115145683,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00273.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "ego_decoded_pixel_sha256": "cb63b9a7c93e9a944bc41e992ab9e2872be8fd5027c94f21888ed5689d7c3332",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00273.png",
+      "wrist_aux_png_sha256": "e970aa3c61bd3fefe6d8e2ec2c4f4ab9aa2bd35636da3c19d5ccbb2ab48fe738",
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      }
+    },
+    {
+      "frame": 274,
+      "dvl": 0.3502689301967621,
+      "gripper": 0.014909941703081131,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00274.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "ego_decoded_pixel_sha256": "cb63b9a7c93e9a944bc41e992ab9e2872be8fd5027c94f21888ed5689d7c3332",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00274.png",
+      "wrist_aux_png_sha256": "e970aa3c61bd3fefe6d8e2ec2c4f4ab9aa2bd35636da3c19d5ccbb2ab48fe738",
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      }
+    },
+    {
+      "frame": 275,
+      "dvl": 0.3563334047794342,
+      "gripper": 0.014909947291016579,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00275.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "ego_decoded_pixel_sha256": "cb63b9a7c93e9a944bc41e992ab9e2872be8fd5027c94f21888ed5689d7c3332",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00275.png",
+      "wrist_aux_png_sha256": "e970aa3c61bd3fefe6d8e2ec2c4f4ab9aa2bd35636da3c19d5ccbb2ab48fe738",
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      }
+    },
+    {
+      "frame": 276,
+      "dvl": 0.3563334047794342,
+      "gripper": 0.014909952878952026,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00276.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "ego_decoded_pixel_sha256": "cb63b9a7c93e9a944bc41e992ab9e2872be8fd5027c94f21888ed5689d7c3332",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00276.png",
+      "wrist_aux_png_sha256": "e970aa3c61bd3fefe6d8e2ec2c4f4ab9aa2bd35636da3c19d5ccbb2ab48fe738",
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      }
+    },
+    {
+      "frame": 277,
+      "dvl": 0.3623853623867035,
+      "gripper": 0.01490979827940464,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00277.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "ego_decoded_pixel_sha256": "cb63b9a7c93e9a944bc41e992ab9e2872be8fd5027c94f21888ed5689d7c3332",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00277.png",
+      "wrist_aux_png_sha256": "e970aa3c61bd3fefe6d8e2ec2c4f4ab9aa2bd35636da3c19d5ccbb2ab48fe738",
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      }
+    },
+    {
+      "frame": 278,
+      "dvl": 0.3623853623867035,
+      "gripper": 0.01490979827940464,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00278.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "ego_decoded_pixel_sha256": "cb63b9a7c93e9a944bc41e992ab9e2872be8fd5027c94f21888ed5689d7c3332",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00278.png",
+      "wrist_aux_png_sha256": "e970aa3c61bd3fefe6d8e2ec2c4f4ab9aa2bd35636da3c19d5ccbb2ab48fe738",
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      }
+    },
+    {
+      "frame": 279,
+      "dvl": 0.3686899244785309,
+      "gripper": 0.014909799210727215,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00279.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "ego_decoded_pixel_sha256": "cb63b9a7c93e9a944bc41e992ab9e2872be8fd5027c94f21888ed5689d7c3332",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00279.png",
+      "wrist_aux_png_sha256": "e970aa3c61bd3fefe6d8e2ec2c4f4ab9aa2bd35636da3c19d5ccbb2ab48fe738",
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      }
+    },
+    {
+      "frame": 280,
+      "dvl": 0.3686899244785309,
+      "gripper": 0.01490980014204979,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00280.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "ego_decoded_pixel_sha256": "cb63b9a7c93e9a944bc41e992ab9e2872be8fd5027c94f21888ed5689d7c3332",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00280.png",
+      "wrist_aux_png_sha256": "e970aa3c61bd3fefe6d8e2ec2c4f4ab9aa2bd35636da3c19d5ccbb2ab48fe738",
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      }
+    },
+    {
+      "frame": 281,
+      "dvl": 0.3772037923336029,
+      "gripper": 0.014909801073372364,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00281.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "ego_decoded_pixel_sha256": "cb63b9a7c93e9a944bc41e992ab9e2872be8fd5027c94f21888ed5689d7c3332",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00281.png",
+      "wrist_aux_png_sha256": "e970aa3c61bd3fefe6d8e2ec2c4f4ab9aa2bd35636da3c19d5ccbb2ab48fe738",
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      }
+    },
+    {
+      "frame": 282,
+      "dvl": 0.3772037923336029,
+      "gripper": 0.014909802936017513,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00282.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "ego_decoded_pixel_sha256": "cb63b9a7c93e9a944bc41e992ab9e2872be8fd5027c94f21888ed5689d7c3332",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00282.png",
+      "wrist_aux_png_sha256": "e970aa3c61bd3fefe6d8e2ec2c4f4ab9aa2bd35636da3c19d5ccbb2ab48fe738",
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      }
+    },
+    {
+      "frame": 283,
+      "dvl": 0.3819899559020996,
+      "gripper": 0.014909803867340088,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00283.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "ego_decoded_pixel_sha256": "cb63b9a7c93e9a944bc41e992ab9e2872be8fd5027c94f21888ed5689d7c3332",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00283.png",
+      "wrist_aux_png_sha256": "e970aa3c61bd3fefe6d8e2ec2c4f4ab9aa2bd35636da3c19d5ccbb2ab48fe738",
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      }
+    },
+    {
+      "frame": 284,
+      "dvl": 0.3819899559020996,
+      "gripper": 0.014909986406564713,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00284.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "ego_decoded_pixel_sha256": "cb63b9a7c93e9a944bc41e992ab9e2872be8fd5027c94f21888ed5689d7c3332",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00284.png",
+      "wrist_aux_png_sha256": "e970aa3c61bd3fefe6d8e2ec2c4f4ab9aa2bd35636da3c19d5ccbb2ab48fe738",
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      }
+    },
+    {
+      "frame": 285,
+      "dvl": 0.3871990740299225,
+      "gripper": 0.014909988269209862,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00285.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "ego_decoded_pixel_sha256": "cb63b9a7c93e9a944bc41e992ab9e2872be8fd5027c94f21888ed5689d7c3332",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00285.png",
+      "wrist_aux_png_sha256": "e970aa3c61bd3fefe6d8e2ec2c4f4ab9aa2bd35636da3c19d5ccbb2ab48fe738",
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 30,
+        "start": 264,
+        "end": 285,
+        "length": 22
+      }
+    },
+    {
+      "frame": 286,
+      "dvl": 0.3871990740299225,
+      "gripper": 0.014909990131855011,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00286.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "ego_decoded_pixel_sha256": "cb63b9a7c93e9a944bc41e992ab9e2872be8fd5027c94f21888ed5689d7c3332",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00286.png",
+      "wrist_aux_png_sha256": "ae708e1599a25772346985dbb80609f8f9105ccda07609f9e52d5a8274e9d8df",
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 26,
+        "start": 264,
+        "end": 286,
+        "length": 23
+      },
+      "wrist_exact_pixel_run": {
+        "index": 31,
+        "start": 286,
+        "end": 286,
+        "length": 1
+      }
+    },
+    {
+      "frame": 287,
+      "dvl": 0.3894190192222595,
+      "gripper": 0.01490999199450016,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00287.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "ego_decoded_pixel_sha256": "cb63b9a7c93e9a944bc41e992ab9e2872be8fd5027c94f21888ed5689d7c3332",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00287.png",
+      "wrist_aux_png_sha256": "4e739c78b2862ca0eec5c364606fc3fc377c2f0f028a7c3337e91cd0903a05c9",
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 27,
+        "start": 287,
+        "end": 287,
+        "length": 1
+      },
+      "wrist_exact_pixel_run": {
+        "index": 32,
+        "start": 287,
+        "end": 287,
+        "length": 1
+      }
+    },
+    {
+      "frame": 288,
+      "dvl": 0.3894190192222595,
+      "gripper": 0.014909992925822735,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00288.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "ego_decoded_pixel_sha256": "cb63b9a7c93e9a944bc41e992ab9e2872be8fd5027c94f21888ed5689d7c3332",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00288.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 289,
+      "dvl": 0.3962835669517517,
+      "gripper": 0.01490999385714531,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00289.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "ego_decoded_pixel_sha256": "cb63b9a7c93e9a944bc41e992ab9e2872be8fd5027c94f21888ed5689d7c3332",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00289.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 290,
+      "dvl": 0.3962835669517517,
+      "gripper": 0.01490999385714531,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00290.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "ego_decoded_pixel_sha256": "cb63b9a7c93e9a944bc41e992ab9e2872be8fd5027c94f21888ed5689d7c3332",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00290.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 291,
+      "dvl": 0.40048155188560486,
+      "gripper": 0.014909994788467884,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00291.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "ego_decoded_pixel_sha256": "cb63b9a7c93e9a944bc41e992ab9e2872be8fd5027c94f21888ed5689d7c3332",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00291.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 292,
+      "dvl": 0.40048155188560486,
+      "gripper": 0.014909995719790459,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00292.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "ego_decoded_pixel_sha256": "cb63b9a7c93e9a944bc41e992ab9e2872be8fd5027c94f21888ed5689d7c3332",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00292.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 293,
+      "dvl": 0.4015418589115143,
+      "gripper": 0.014909995719790459,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00293.png",
+      "ego_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+      "ego_decoded_pixel_sha256": "cb63b9a7c93e9a944bc41e992ab9e2872be8fd5027c94f21888ed5689d7c3332",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00293.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "ego_exact_pixel_run": {
+        "index": 28,
+        "start": 272,
+        "end": 293,
+        "length": 22
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 294,
+      "dvl": 0.4015418589115143,
+      "gripper": 0.014909995719790459,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00294.png",
+      "ego_png_sha256": "48c76a8fa42c68c8b40b6dbc3d455a7affe5482dedc578a11b70822fd5948717",
+      "ego_decoded_pixel_sha256": "8f39b8de10e9153afea43cc88e73823c3d909169e994b4c795ffa98fb1d73d03",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00294.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 29,
+        "start": 294,
+        "end": 294,
+        "length": 1
+      },
+      "ego_exact_pixel_run": {
+        "index": 29,
+        "start": 294,
+        "end": 294,
+        "length": 1
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 295,
+      "dvl": 0.4050089716911316,
+      "gripper": 0.014909837394952774,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00295.png",
+      "ego_png_sha256": "35529194952e829158a054dd1b1e7f90aa0e41e59119e07e6297f3cd0b5dcddb",
+      "ego_decoded_pixel_sha256": "d2d1d7d6bc89a9fa4102be28dc2fb9ad00e4367ad0bb47dea40214927dd245d2",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00295.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 30,
+        "start": 295,
+        "end": 295,
+        "length": 1
+      },
+      "ego_exact_pixel_run": {
+        "index": 30,
+        "start": 295,
+        "end": 295,
+        "length": 1
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 296,
+      "dvl": 0.4050089716911316,
+      "gripper": 0.014909842051565647,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00296.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00296.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 297,
+      "dvl": 0.4084603190422058,
+      "gripper": 0.014909845776855946,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00297.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00297.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 298,
+      "dvl": 0.4084603190422058,
+      "gripper": 0.014909850433468819,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00298.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00298.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 299,
+      "dvl": 0.4123791754245758,
+      "gripper": 0.014909854158759117,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00299.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00299.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 300,
+      "dvl": 0.4123791754245758,
+      "gripper": 0.014909857884049416,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00300.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00300.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 301,
+      "dvl": 0.4155980348587036,
+      "gripper": 0.01491000410169363,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00301.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00301.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 302,
+      "dvl": 0.4155980348587036,
+      "gripper": 0.01491000596433878,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00302.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00302.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 303,
+      "dvl": 0.4172961115837097,
+      "gripper": 0.014910008758306503,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00303.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00303.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 304,
+      "dvl": 0.4172961115837097,
+      "gripper": 0.014910011552274227,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00304.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00304.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 305,
+      "dvl": 0.4197523891925812,
+      "gripper": 0.014910014346241951,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00305.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00305.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 306,
+      "dvl": 0.4197523891925812,
+      "gripper": 0.014910017140209675,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00306.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00306.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 307,
+      "dvl": 0.4226013422012329,
+      "gripper": 0.014910019934177399,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00307.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00307.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 308,
+      "dvl": 0.4226013422012329,
+      "gripper": 0.014910022728145123,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00308.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00308.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 309,
+      "dvl": 0.4275355637073517,
+      "gripper": 0.014910026453435421,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00309.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00309.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 310,
+      "dvl": 0.4275355637073517,
+      "gripper": 0.014910029247403145,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00310.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00310.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 311,
+      "dvl": 0.4270099699497223,
+      "gripper": 0.01490988302975893,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00311.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00311.png",
+      "wrist_aux_png_sha256": "ff2c899b6060e1022b67e7fc18a1b55d34f3db4af1d99bca561a60fbe34f77b8",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 28,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      },
+      "wrist_exact_pixel_run": {
+        "index": 33,
+        "start": 288,
+        "end": 311,
+        "length": 24
+      }
+    },
+    {
+      "frame": 312,
+      "dvl": 0.4270099699497223,
+      "gripper": 0.014909883961081505,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00312.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00312.png",
+      "wrist_aux_png_sha256": "7fffe176422203fa64761361c8ee8ca849f7e5d4782c265ae13eb52870f8d672",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 29,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      },
+      "wrist_exact_pixel_run": {
+        "index": 34,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      }
+    },
+    {
+      "frame": 313,
+      "dvl": 0.42907625436782837,
+      "gripper": 0.01490988489240408,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00313.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00313.png",
+      "wrist_aux_png_sha256": "7fffe176422203fa64761361c8ee8ca849f7e5d4782c265ae13eb52870f8d672",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 29,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      },
+      "wrist_exact_pixel_run": {
+        "index": 34,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      }
+    },
+    {
+      "frame": 314,
+      "dvl": 0.42907625436782837,
+      "gripper": 0.014909886755049229,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00314.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00314.png",
+      "wrist_aux_png_sha256": "7fffe176422203fa64761361c8ee8ca849f7e5d4782c265ae13eb52870f8d672",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 29,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      },
+      "wrist_exact_pixel_run": {
+        "index": 34,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      }
+    },
+    {
+      "frame": 315,
+      "dvl": 0.4326464533805847,
+      "gripper": 0.014909887686371803,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00315.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00315.png",
+      "wrist_aux_png_sha256": "7fffe176422203fa64761361c8ee8ca849f7e5d4782c265ae13eb52870f8d672",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 29,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      },
+      "wrist_exact_pixel_run": {
+        "index": 34,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      }
+    },
+    {
+      "frame": 316,
+      "dvl": 0.4326464533805847,
+      "gripper": 0.014909888617694378,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00316.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00316.png",
+      "wrist_aux_png_sha256": "7fffe176422203fa64761361c8ee8ca849f7e5d4782c265ae13eb52870f8d672",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 29,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      },
+      "wrist_exact_pixel_run": {
+        "index": 34,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      }
+    },
+    {
+      "frame": 317,
+      "dvl": 0.43390601873397827,
+      "gripper": 0.014910048805177212,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00317.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00317.png",
+      "wrist_aux_png_sha256": "7fffe176422203fa64761361c8ee8ca849f7e5d4782c265ae13eb52870f8d672",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 29,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      },
+      "wrist_exact_pixel_run": {
+        "index": 34,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      }
+    },
+    {
+      "frame": 318,
+      "dvl": 0.43390601873397827,
+      "gripper": 0.014910051599144936,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00318.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00318.png",
+      "wrist_aux_png_sha256": "7fffe176422203fa64761361c8ee8ca849f7e5d4782c265ae13eb52870f8d672",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 29,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      },
+      "wrist_exact_pixel_run": {
+        "index": 34,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      }
+    },
+    {
+      "frame": 319,
+      "dvl": 0.4345841109752655,
+      "gripper": 0.014910053461790085,
+      "ego_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/ego/f00319.png",
+      "ego_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d",
+      "ego_decoded_pixel_sha256": "178fe3189448cb18cc119fb167d32d409b3046dfcc65843c5f286eba20f275ac",
+      "wrist_aux_png": "ENACT/data/usim_enact/_review/dev_lift_onset/exemplar_ep000501_20261029_v1/wrist_aux/f00319.png",
+      "wrist_aux_png_sha256": "7fffe176422203fa64761361c8ee8ca849f7e5d4782c265ae13eb52870f8d672",
+      "ego_motion_hold": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "ego_exact_pixel_run": {
+        "index": 31,
+        "start": 296,
+        "end": 319,
+        "length": 24
+      },
+      "wrist_motion_hold": {
+        "index": 29,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      },
+      "wrist_exact_pixel_run": {
+        "index": 34,
+        "start": 312,
+        "end": 319,
+        "length": 8
+      }
+    }
+  ],
+  "ego_motion_holds": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 9,
+      "length": 10
+    },
+    {
+      "index": 1,
+      "start": 10,
+      "end": 10,
+      "length": 1
+    },
+    {
+      "index": 2,
+      "start": 11,
+      "end": 11,
+      "length": 1
+    },
+    {
+      "index": 3,
+      "start": 12,
+      "end": 27,
+      "length": 16
+    },
+    {
+      "index": 4,
+      "start": 28,
+      "end": 43,
+      "length": 16
+    },
+    {
+      "index": 5,
+      "start": 44,
+      "end": 44,
+      "length": 1
+    },
+    {
+      "index": 6,
+      "start": 45,
+      "end": 45,
+      "length": 1
+    },
+    {
+      "index": 7,
+      "start": 46,
+      "end": 63,
+      "length": 18
+    },
+    {
+      "index": 8,
+      "start": 64,
+      "end": 83,
+      "length": 20
+    },
+    {
+      "index": 9,
+      "start": 84,
+      "end": 84,
+      "length": 1
+    },
+    {
+      "index": 10,
+      "start": 85,
+      "end": 85,
+      "length": 1
+    },
+    {
+      "index": 11,
+      "start": 86,
+      "end": 101,
+      "length": 16
+    },
+    {
+      "index": 12,
+      "start": 102,
+      "end": 102,
+      "length": 1
+    },
+    {
+      "index": 13,
+      "start": 103,
+      "end": 103,
+      "length": 1
+    },
+    {
+      "index": 14,
+      "start": 104,
+      "end": 121,
+      "length": 18
+    },
+    {
+      "index": 15,
+      "start": 122,
+      "end": 122,
+      "length": 1
+    },
+    {
+      "index": 16,
+      "start": 123,
+      "end": 123,
+      "length": 1
+    },
+    {
+      "index": 17,
+      "start": 124,
+      "end": 143,
+      "length": 20
+    },
+    {
+      "index": 18,
+      "start": 144,
+      "end": 144,
+      "length": 1
+    },
+    {
+      "index": 19,
+      "start": 145,
+      "end": 145,
+      "length": 1
+    },
+    {
+      "index": 20,
+      "start": 146,
+      "end": 165,
+      "length": 20
+    },
+    {
+      "index": 21,
+      "start": 166,
+      "end": 181,
+      "length": 16
+    },
+    {
+      "index": 22,
+      "start": 182,
+      "end": 182,
+      "length": 1
+    },
+    {
+      "index": 23,
+      "start": 183,
+      "end": 183,
+      "length": 1
+    },
+    {
+      "index": 24,
+      "start": 184,
+      "end": 203,
+      "length": 20
+    },
+    {
+      "index": 25,
+      "start": 204,
+      "end": 225,
+      "length": 22
+    },
+    {
+      "index": 26,
+      "start": 226,
+      "end": 247,
+      "length": 22
+    },
+    {
+      "index": 27,
+      "start": 248,
+      "end": 271,
+      "length": 24
+    },
+    {
+      "index": 28,
+      "start": 272,
+      "end": 293,
+      "length": 22
+    },
+    {
+      "index": 29,
+      "start": 294,
+      "end": 294,
+      "length": 1
+    },
+    {
+      "index": 30,
+      "start": 295,
+      "end": 295,
+      "length": 1
+    },
+    {
+      "index": 31,
+      "start": 296,
+      "end": 319,
+      "length": 24
+    }
+  ],
+  "ego_exact_pixel_runs": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 9,
+      "length": 10
+    },
+    {
+      "index": 1,
+      "start": 10,
+      "end": 10,
+      "length": 1
+    },
+    {
+      "index": 2,
+      "start": 11,
+      "end": 11,
+      "length": 1
+    },
+    {
+      "index": 3,
+      "start": 12,
+      "end": 27,
+      "length": 16
+    },
+    {
+      "index": 4,
+      "start": 28,
+      "end": 43,
+      "length": 16
+    },
+    {
+      "index": 5,
+      "start": 44,
+      "end": 44,
+      "length": 1
+    },
+    {
+      "index": 6,
+      "start": 45,
+      "end": 45,
+      "length": 1
+    },
+    {
+      "index": 7,
+      "start": 46,
+      "end": 63,
+      "length": 18
+    },
+    {
+      "index": 8,
+      "start": 64,
+      "end": 83,
+      "length": 20
+    },
+    {
+      "index": 9,
+      "start": 84,
+      "end": 84,
+      "length": 1
+    },
+    {
+      "index": 10,
+      "start": 85,
+      "end": 85,
+      "length": 1
+    },
+    {
+      "index": 11,
+      "start": 86,
+      "end": 101,
+      "length": 16
+    },
+    {
+      "index": 12,
+      "start": 102,
+      "end": 102,
+      "length": 1
+    },
+    {
+      "index": 13,
+      "start": 103,
+      "end": 103,
+      "length": 1
+    },
+    {
+      "index": 14,
+      "start": 104,
+      "end": 121,
+      "length": 18
+    },
+    {
+      "index": 15,
+      "start": 122,
+      "end": 122,
+      "length": 1
+    },
+    {
+      "index": 16,
+      "start": 123,
+      "end": 123,
+      "length": 1
+    },
+    {
+      "index": 17,
+      "start": 124,
+      "end": 143,
+      "length": 20
+    },
+    {
+      "index": 18,
+      "start": 144,
+      "end": 144,
+      "length": 1
+    },
+    {
+      "index": 19,
+      "start": 145,
+      "end": 145,
+      "length": 1
+    },
+    {
+      "index": 20,
+      "start": 146,
+      "end": 165,
+      "length": 20
+    },
+    {
+      "index": 21,
+      "start": 166,
+      "end": 181,
+      "length": 16
+    },
+    {
+      "index": 22,
+      "start": 182,
+      "end": 182,
+      "length": 1
+    },
+    {
+      "index": 23,
+      "start": 183,
+      "end": 183,
+      "length": 1
+    },
+    {
+      "index": 24,
+      "start": 184,
+      "end": 203,
+      "length": 20
+    },
+    {
+      "index": 25,
+      "start": 204,
+      "end": 225,
+      "length": 22
+    },
+    {
+      "index": 26,
+      "start": 226,
+      "end": 247,
+      "length": 22
+    },
+    {
+      "index": 27,
+      "start": 248,
+      "end": 271,
+      "length": 24
+    },
+    {
+      "index": 28,
+      "start": 272,
+      "end": 293,
+      "length": 22
+    },
+    {
+      "index": 29,
+      "start": 294,
+      "end": 294,
+      "length": 1
+    },
+    {
+      "index": 30,
+      "start": 295,
+      "end": 295,
+      "length": 1
+    },
+    {
+      "index": 31,
+      "start": 296,
+      "end": 319,
+      "length": 24
+    }
+  ],
+  "wrist_motion_holds": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 5,
+      "length": 6
+    },
+    {
+      "index": 1,
+      "start": 6,
+      "end": 23,
+      "length": 18
+    },
+    {
+      "index": 2,
+      "start": 24,
+      "end": 41,
+      "length": 18
+    },
+    {
+      "index": 3,
+      "start": 42,
+      "end": 42,
+      "length": 1
+    },
+    {
+      "index": 4,
+      "start": 43,
+      "end": 43,
+      "length": 1
+    },
+    {
+      "index": 5,
+      "start": 44,
+      "end": 55,
+      "length": 12
+    },
+    {
+      "index": 6,
+      "start": 56,
+      "end": 77,
+      "length": 22
+    },
+    {
+      "index": 7,
+      "start": 78,
+      "end": 96,
+      "length": 19
+    },
+    {
+      "index": 8,
+      "start": 97,
+      "end": 97,
+      "length": 1
+    },
+    {
+      "index": 9,
+      "start": 98,
+      "end": 115,
+      "length": 18
+    },
+    {
+      "index": 10,
+      "start": 116,
+      "end": 116,
+      "length": 1
+    },
+    {
+      "index": 11,
+      "start": 117,
+      "end": 117,
+      "length": 1
+    },
+    {
+      "index": 12,
+      "start": 118,
+      "end": 137,
+      "length": 20
+    },
+    {
+      "index": 13,
+      "start": 138,
+      "end": 138,
+      "length": 1
+    },
+    {
+      "index": 14,
+      "start": 139,
+      "end": 139,
+      "length": 1
+    },
+    {
+      "index": 15,
+      "start": 140,
+      "end": 163,
+      "length": 24
+    },
+    {
+      "index": 16,
+      "start": 164,
+      "end": 175,
+      "length": 12
+    },
+    {
+      "index": 17,
+      "start": 176,
+      "end": 176,
+      "length": 1
+    },
+    {
+      "index": 18,
+      "start": 177,
+      "end": 177,
+      "length": 1
+    },
+    {
+      "index": 19,
+      "start": 178,
+      "end": 197,
+      "length": 20
+    },
+    {
+      "index": 20,
+      "start": 198,
+      "end": 218,
+      "length": 21
+    },
+    {
+      "index": 21,
+      "start": 219,
+      "end": 219,
+      "length": 1
+    },
+    {
+      "index": 22,
+      "start": 220,
+      "end": 240,
+      "length": 21
+    },
+    {
+      "index": 23,
+      "start": 241,
+      "end": 241,
+      "length": 1
+    },
+    {
+      "index": 24,
+      "start": 242,
+      "end": 261,
+      "length": 20
+    },
+    {
+      "index": 25,
+      "start": 262,
+      "end": 263,
+      "length": 2
+    },
+    {
+      "index": 26,
+      "start": 264,
+      "end": 286,
+      "length": 23
+    },
+    {
+      "index": 27,
+      "start": 287,
+      "end": 287,
+      "length": 1
+    },
+    {
+      "index": 28,
+      "start": 288,
+      "end": 311,
+      "length": 24
+    },
+    {
+      "index": 29,
+      "start": 312,
+      "end": 319,
+      "length": 8
+    }
+  ],
+  "wrist_exact_pixel_runs": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 5,
+      "length": 6
+    },
+    {
+      "index": 1,
+      "start": 6,
+      "end": 23,
+      "length": 18
+    },
+    {
+      "index": 2,
+      "start": 24,
+      "end": 41,
+      "length": 18
+    },
+    {
+      "index": 3,
+      "start": 42,
+      "end": 42,
+      "length": 1
+    },
+    {
+      "index": 4,
+      "start": 43,
+      "end": 43,
+      "length": 1
+    },
+    {
+      "index": 5,
+      "start": 44,
+      "end": 55,
+      "length": 12
+    },
+    {
+      "index": 6,
+      "start": 56,
+      "end": 77,
+      "length": 22
+    },
+    {
+      "index": 7,
+      "start": 78,
+      "end": 95,
+      "length": 18
+    },
+    {
+      "index": 8,
+      "start": 96,
+      "end": 96,
+      "length": 1
+    },
+    {
+      "index": 9,
+      "start": 97,
+      "end": 97,
+      "length": 1
+    },
+    {
+      "index": 10,
+      "start": 98,
+      "end": 115,
+      "length": 18
+    },
+    {
+      "index": 11,
+      "start": 116,
+      "end": 116,
+      "length": 1
+    },
+    {
+      "index": 12,
+      "start": 117,
+      "end": 117,
+      "length": 1
+    },
+    {
+      "index": 13,
+      "start": 118,
+      "end": 137,
+      "length": 20
+    },
+    {
+      "index": 14,
+      "start": 138,
+      "end": 138,
+      "length": 1
+    },
+    {
+      "index": 15,
+      "start": 139,
+      "end": 139,
+      "length": 1
+    },
+    {
+      "index": 16,
+      "start": 140,
+      "end": 163,
+      "length": 24
+    },
+    {
+      "index": 17,
+      "start": 164,
+      "end": 175,
+      "length": 12
+    },
+    {
+      "index": 18,
+      "start": 176,
+      "end": 176,
+      "length": 1
+    },
+    {
+      "index": 19,
+      "start": 177,
+      "end": 177,
+      "length": 1
+    },
+    {
+      "index": 20,
+      "start": 178,
+      "end": 197,
+      "length": 20
+    },
+    {
+      "index": 21,
+      "start": 198,
+      "end": 217,
+      "length": 20
+    },
+    {
+      "index": 22,
+      "start": 218,
+      "end": 218,
+      "length": 1
+    },
+    {
+      "index": 23,
+      "start": 219,
+      "end": 219,
+      "length": 1
+    },
+    {
+      "index": 24,
+      "start": 220,
+      "end": 239,
+      "length": 20
+    },
+    {
+      "index": 25,
+      "start": 240,
+      "end": 240,
+      "length": 1
+    },
+    {
+      "index": 26,
+      "start": 241,
+      "end": 241,
+      "length": 1
+    },
+    {
+      "index": 27,
+      "start": 242,
+      "end": 261,
+      "length": 20
+    },
+    {
+      "index": 28,
+      "start": 262,
+      "end": 262,
+      "length": 1
+    },
+    {
+      "index": 29,
+      "start": 263,
+      "end": 263,
+      "length": 1
+    },
+    {
+      "index": 30,
+      "start": 264,
+      "end": 285,
+      "length": 22
+    },
+    {
+      "index": 31,
+      "start": 286,
+      "end": 286,
+      "length": 1
+    },
+    {
+      "index": 32,
+      "start": 287,
+      "end": 287,
+      "length": 1
+    },
+    {
+      "index": 33,
+      "start": 288,
+      "end": 311,
+      "length": 24
+    },
+    {
+      "index": 34,
+      "start": 312,
+      "end": 319,
+      "length": 8
+    }
+  ],
+  "gallery_frame_ids": [
+    180,
+    193,
+    214,
+    236,
+    259,
+    282,
+    307
+  ],
+  "labels_assigned": false,
+  "annotation_writes": 0,
+  "model_api_calls": 0
+}
