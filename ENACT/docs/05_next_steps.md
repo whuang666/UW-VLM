@@ -1,6 +1,6 @@
 # 下一步工作清单与运行手册
 
-最近更新：2026-10-28（Asia/Shanghai）。**588次双协议开发对照与P4统计已完成；test预留10条初标候选现已齐备，结构／源帧检查通过，但独立质量验收未完成。下一步由独立复核者裁决支撑、lift间隙与ascent onset，随后冻结最终选定协议及test输入；未调用val或test。** [初标与复核入口](../../docs/workbuddyRead/test_reserve_initial_annotations_20261028_zh.md)，[完整主副指标和配对区间](WBW/ENACT-USIM-双协议2048开发对照结果-20261028.md)，[v0.2任务总结](WBW/ENACT-USIM-v0.2任务总结与验收状态-20261028.md)。下列带早期日期的条目保留历史范围，最新状态以本段与任务总结为准。
+最近更新：2026-10-29（Asia/Shanghai）。**588次双协议开发对照与P4统计已完成；test预留10条已有初标，完成独立验收仍为0/10。两条重锚候选为1497@235、1734@395，尚待独立复核。下一步先评审pick／transfer选帧规则、修复原帧与候选帧的证据归属，再统一复核、构建并冻结test输入；未调用val或test。** [onset规则草案与后续约束](../../docs/workbuddyRead/test_lift_onset_pick_transfer_draft_20261029_zh.md)，[裁决v2](WBW/evidence/test_reserve_adjudication_20261029/adjudication.md)，[初标与复核入口](../../docs/workbuddyRead/test_reserve_initial_annotations_20261028_zh.md)，[完整主副指标和配对区间](WBW/ENACT-USIM-双协议2048开发对照结果-20261028.md)。草案仅为文档，未修改标注或生效替换现行规范；下列带早期日期的条目保留历史范围。
 
 这份清单按依赖排序。**GPU 训练仍不在当前阶段。** 数据集已经确定为当前工作区的 USIM（`E:\code\UW-VLM\usim`）。
 

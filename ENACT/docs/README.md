@@ -1,10 +1,12 @@
 # ENACT 复现与 USIM 水下数据迁移文档
 
-最近更新：2026-10-28（Asia/Shanghai）。整理日期：2026-10-23（Asia/Shanghai）。目标：理解 ENACT，在当前工作区的 **USIM 水下仿真数据**上重建同类前向、逆向世界建模评测。
+最近更新：2026-10-29（Asia/Shanghai）。整理日期：2026-10-23（Asia/Shanghai）。目标：理解 ENACT，在当前工作区的 **USIM 水下仿真数据**上重建同类前向、逆向世界建模评测。
 
 当前执行入口（2026-10-28）：[v0.2 任务总结与验收状态](WBW/ENACT-USIM-v0.2任务总结与验收状态-20261028.md) → [下一步工作清单与运行手册](05_next_steps.md)。四条件结果与预算诊断见 [v0.2 开发矩阵复核与下一步](WBW/ENACT-USIM-v0.2开发矩阵复核与下一步-20261027.md)；构建与冻结依据见 [v0.2 构建与协议准备](WBW/ENACT-USIM-v0.2构建与协议准备-20261027.md)、[v0.2 协议证据](WBW/ENACT-USIM-v0.2协议证据-20261027.md)。v0.1 现状与证据见 [评分契约与统计](WBW/ENACT-USIM-评分契约与统计-20261027.md) 与 [qwen3.8-max 执行结果](WBW/ENACT-USIM-qwen3.8-max-执行结果-20261024.md)。2026-10-24 的 [DashScope 实施方案](WBR/ENACT-USIM-DashScope-API完整实施方案-20261024.md) 与 [API 方案重写记录](WBW/ENACT-USIM-API方案重写记录-20261024.md) 保留为历史接口验证记录。
 
-ENACT 的“动作”是可见场景状态的变化，不是 USIM 的 13 维控制向量。v0.2 数据、题集、冻结及首轮真实模型开发矩阵已完成；当前重点是 **B/A 输出预算诊断、统一高预算重跑、预留 test 标注／验收**。
+ENACT 的“动作”是可见场景状态的变化，不是 USIM 的 13 维控制向量。v0.2 数据、题集、冻结及588次双协议开发对照已完成；当前重点是 **预留 test 的选帧规则修订与独立质量验收**。
+
+2026-10-29 最新交接：[pick / transfer 的 lift onset 草案](../../docs/workbuddyRead/test_lift_onset_pick_transfer_draft_20261029_zh.md)。草案区分物体视觉离底、DVL信号定位及最终选帧，尚未实施；[裁决v2](WBW/evidence/test_reserve_adjudication_20261029/adjudication.md)仍为技术状态，独立验收0/10。当前候选存在原帧／新帧证据混用及批次元数据待修项，见草案§7。下列带日期的历史条目不代表新增准入结论。
 
 ## 阅读入口
 

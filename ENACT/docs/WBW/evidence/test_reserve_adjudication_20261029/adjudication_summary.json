@@ -151,5 +151,37 @@
     "lift 转移未确认时改 pending",
     "1378 降级改为删 lift 保留 at_box",
     "验收口径 0/10"
-  ]
+  ],
+  "onset_search_range_dependency": {
+    "episode": 1259,
+    "global_min_frame": 182,
+    "global_min_value": 0.247,
+    "note": "f182 属第一次失败抓取，早于主 close 190；以全局最低点起算 onset=218，从主 close 起算 onset=222",
+    "onset_global": 218,
+    "window_global": [
+      258,
+      278
+    ],
+    "onset_from_main_close": 222,
+    "window_from_main_close": [
+      262,
+      282
+    ],
+    "impact": "两种口径下标注 lift f238 均早于窗口，裁决不受影响；但 onset 定义必须写明最低点搜索起点"
+  },
+  "bound_candidate_frames": [
+    {
+      "episode": 1497,
+      "original": 183,
+      "candidate": 235,
+      "batch": "reauthored_20261029_v1"
+    },
+    {
+      "episode": 1734,
+      "original": 359,
+      "candidate": 395,
+      "batch": "reauthored_20261029_v1"
+    }
+  ],
+  "frame_binding_fix": "两份 worksheet 的 3->4 转移回退为 pending；候选帧单列 candidate_binding"
 }

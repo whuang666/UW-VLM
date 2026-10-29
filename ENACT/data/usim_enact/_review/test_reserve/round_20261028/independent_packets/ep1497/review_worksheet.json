@@ -64,14 +64,26 @@
   {
    "left_slot": 3,
    "right_slot": 4,
-   "ego_decidable": true,
-   "decision": "accepted",
-   "reason": "lift 证据确认：clear_at_235"
+   "ego_decidable": false,
+   "decision": "pending",
+   "reason": "原帧 f183 lift 未确认（frame_evidence_insufficient）；候选 f235 见 candidate_binding，不得放行原帧"
   }
  ],
  "final_acceptance": null,
  "review_is_technical_not_human_double_annotation": true,
- "verdict": "reanchor_ready",
- "verdict_reason": "窗口 217-237；f235（onset+58）目检明确离底（原 f242 在窗口外）",
- "independent_acceptance_complete": false
+ "verdict": "candidate_pending_independent_review",
+ "verdict_reason": "原帧 f183 的 lift 未确认；候选帧 f235 属新批次 reauthored_20261029_v1，**不得用于放行原帧**",
+ "independent_acceptance_complete": false,
+ "candidate_binding": {
+  "original_frame": 183,
+  "original_frame_transition_decision": "pending",
+  "candidate_frame": 235,
+  "candidate_batch": "reauthored_20261029_v1",
+  "candidate_hold": [
+   232,
+   241
+  ],
+  "candidate_status": "candidate_pending_independent_review",
+  "note": "候选帧证据只对候选版本有效；原帧判定保持 pending，未因候选而改变"
+ }
 }
