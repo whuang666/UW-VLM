@@ -1,0 +1,1085 @@
+{
+  "schema": "usim-test-reserve-initial-inventory/v1",
+  "first_pass_annotations": 10,
+  "total_key_frames": 42,
+  "graph_nonempty_transitions": 32,
+  "all_structural_and_source_frame_checks_passed": true,
+  "independent_visual_reviews_completed_this_action": 0,
+  "independent_visual_acceptance": "pending",
+  "eligible_for_final_test_release": false,
+  "model_api_calls": 0,
+  "episodes": [
+    {
+      "episode_key": "usim_train_episode_001078",
+      "protocol_version": "usim-enact-v0.2",
+      "key_frames": 4,
+      "frame_indices": [
+        0,
+        189,
+        214,
+        270
+      ],
+      "relations": [
+        [
+          "OnSeabed",
+          "pipe"
+        ],
+        [
+          "InGripper",
+          "pipe"
+        ],
+        [
+          "Lifted",
+          "pipe"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "pipe"
+        ]
+      ],
+      "transitions": 3,
+      "visible_transitions": 3,
+      "empty_transitions": [],
+      "transition_texts": [
+        {
+          "from": "0",
+          "to": "189",
+          "visible": true,
+          "text": "The robot now becomes in position for the pre-grasp approach beside the pipe."
+        },
+        {
+          "from": "189",
+          "to": "214",
+          "visible": true,
+          "text": "The pipe becomes grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the pipe."
+        },
+        {
+          "from": "214",
+          "to": "270",
+          "visible": true,
+          "text": "The pipe becomes lifted above the seabed. The pipe is no longer on the seabed."
+        }
+      ],
+      "ok": true,
+      "source_frame_check": {
+        "episode_key": "usim_train_episode_001078",
+        "camera": "ego",
+        "checked": 4,
+        "ok": true,
+        "frames": [
+          {
+            "frame_index": 0,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 189,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 214,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 270,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          }
+        ]
+      },
+      "path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\usim_train_episode_001078.json",
+      "sha256": "71e444c2aceb0e897c04990c270c0bf6e2febae7df52a84d6f38e15d1c43e966",
+      "annotation_status": "reviewed",
+      "independent_visual_acceptance": "pending",
+      "release_eligible": false
+    },
+    {
+      "episode_key": "usim_train_episode_001384",
+      "protocol_version": "usim-enact-v0.2",
+      "key_frames": 5,
+      "frame_indices": [
+        164,
+        209,
+        239,
+        293,
+        486
+      ],
+      "relations": [
+        [
+          "OnSeabed",
+          "red_cylinder"
+        ],
+        [
+          "InGripper",
+          "red_cylinder"
+        ],
+        [
+          "Lifted",
+          "red_cylinder"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "red_cylinder"
+        ],
+        [
+          "NearBox",
+          "robot",
+          "green_box"
+        ]
+      ],
+      "transitions": 4,
+      "visible_transitions": 4,
+      "empty_transitions": [],
+      "transition_texts": [
+        {
+          "from": "164",
+          "to": "209",
+          "visible": true,
+          "text": "The robot transitions to be in position for the pre-grasp approach beside the red cylinder."
+        },
+        {
+          "from": "209",
+          "to": "239",
+          "visible": true,
+          "text": "The red cylinder becomes grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the red cylinder."
+        },
+        {
+          "from": "239",
+          "to": "293",
+          "visible": true,
+          "text": "The red cylinder becomes lifted above the seabed. The red cylinder is no longer on the seabed."
+        },
+        {
+          "from": "293",
+          "to": "486",
+          "visible": true,
+          "text": "The robot transitions to be near the green box."
+        }
+      ],
+      "ok": true,
+      "source_frame_check": {
+        "episode_key": "usim_train_episode_001384",
+        "camera": "ego",
+        "checked": 5,
+        "ok": true,
+        "frames": [
+          {
+            "frame_index": 164,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 209,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 239,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 293,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 486,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          }
+        ]
+      },
+      "path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\usim_train_episode_001384.json",
+      "sha256": "a497712ef575f0fc55a5a6d479313a4bc27af0b652f123265c8d38e9bc129db9",
+      "annotation_status": "reviewed",
+      "independent_visual_acceptance": "pending",
+      "release_eligible": false
+    },
+    {
+      "episode_key": "usim_train_episode_001650",
+      "protocol_version": "usim-enact-v0.2",
+      "key_frames": 4,
+      "frame_indices": [
+        0,
+        190,
+        219,
+        270
+      ],
+      "relations": [
+        [
+          "OnSeabed",
+          "pipe"
+        ],
+        [
+          "InGripper",
+          "pipe"
+        ],
+        [
+          "Lifted",
+          "pipe"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "pipe"
+        ]
+      ],
+      "transitions": 3,
+      "visible_transitions": 3,
+      "empty_transitions": [],
+      "transition_texts": [
+        {
+          "from": "0",
+          "to": "190",
+          "visible": true,
+          "text": "The robot transitions to be in position for the pre-grasp approach beside the pipe."
+        },
+        {
+          "from": "190",
+          "to": "219",
+          "visible": true,
+          "text": "The pipe is now grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the pipe."
+        },
+        {
+          "from": "219",
+          "to": "270",
+          "visible": true,
+          "text": "The pipe is now lifted above the seabed. The pipe is no longer on the seabed."
+        }
+      ],
+      "ok": true,
+      "source_frame_check": {
+        "episode_key": "usim_train_episode_001650",
+        "camera": "ego",
+        "checked": 4,
+        "ok": true,
+        "frames": [
+          {
+            "frame_index": 0,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 190,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 219,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 270,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          }
+        ]
+      },
+      "path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\usim_train_episode_001650.json",
+      "sha256": "5d0db342f6b529459bbf7773c4fab904d1dbef8a888bf526f0d4170ff44fbe86",
+      "annotation_status": "reviewed",
+      "independent_visual_acceptance": "pending",
+      "release_eligible": false
+    },
+    {
+      "episode_key": "usim_train_episode_001378",
+      "protocol_version": "usim-enact-v0.2",
+      "key_frames": 5,
+      "frame_indices": [
+        60,
+        176,
+        206,
+        250,
+        448
+      ],
+      "relations": [
+        [
+          "OnSeabed",
+          "red_cylinder"
+        ],
+        [
+          "InGripper",
+          "red_cylinder"
+        ],
+        [
+          "Lifted",
+          "red_cylinder"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "red_cylinder"
+        ],
+        [
+          "NearBox",
+          "robot",
+          "green_box"
+        ]
+      ],
+      "transitions": 4,
+      "visible_transitions": 4,
+      "empty_transitions": [],
+      "transition_texts": [
+        {
+          "from": "60",
+          "to": "176",
+          "visible": true,
+          "text": "The robot transitions to be in position for the pre-grasp approach beside the red cylinder."
+        },
+        {
+          "from": "176",
+          "to": "206",
+          "visible": true,
+          "text": "The red cylinder becomes grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the red cylinder."
+        },
+        {
+          "from": "206",
+          "to": "250",
+          "visible": true,
+          "text": "The red cylinder becomes lifted above the seabed. The red cylinder is not on the seabed anymore."
+        },
+        {
+          "from": "250",
+          "to": "448",
+          "visible": true,
+          "text": "The robot transitions to be near the green box."
+        }
+      ],
+      "ok": true,
+      "source_frame_check": {
+        "episode_key": "usim_train_episode_001378",
+        "camera": "ego",
+        "checked": 5,
+        "ok": true,
+        "frames": [
+          {
+            "frame_index": 60,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 176,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 206,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 250,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 448,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          }
+        ]
+      },
+      "path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\usim_train_episode_001378.json",
+      "sha256": "f921640a1d3ed7ef28b223d137d981794570caf7b3fd039492cd96f2e3bdd5ef",
+      "annotation_status": "reviewed",
+      "independent_visual_acceptance": "pending",
+      "release_eligible": false
+    },
+    {
+      "episode_key": "usim_train_episode_001734",
+      "protocol_version": "usim-enact-v0.2",
+      "key_frames": 4,
+      "frame_indices": [
+        150,
+        274,
+        312,
+        359
+      ],
+      "relations": [
+        [
+          "OnSeabed",
+          "pipe"
+        ],
+        [
+          "InGripper",
+          "pipe"
+        ],
+        [
+          "Lifted",
+          "pipe"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "pipe"
+        ]
+      ],
+      "transitions": 3,
+      "visible_transitions": 3,
+      "empty_transitions": [],
+      "transition_texts": [
+        {
+          "from": "150",
+          "to": "274",
+          "visible": true,
+          "text": "The robot becomes in position for the pre-grasp approach beside the pipe."
+        },
+        {
+          "from": "274",
+          "to": "312",
+          "visible": true,
+          "text": "The pipe is now grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the pipe."
+        },
+        {
+          "from": "312",
+          "to": "359",
+          "visible": true,
+          "text": "The pipe becomes lifted above the seabed. The pipe is not on the seabed anymore."
+        }
+      ],
+      "ok": true,
+      "source_frame_check": {
+        "episode_key": "usim_train_episode_001734",
+        "camera": "ego",
+        "checked": 4,
+        "ok": true,
+        "frames": [
+          {
+            "frame_index": 150,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 274,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 312,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 359,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          }
+        ]
+      },
+      "path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\usim_train_episode_001734.json",
+      "sha256": "03d38df48de051b06d83c6ebc01c8af5e85308d6cb1e456ab8d5fb0c49ed623e",
+      "annotation_status": "initial_review_pending_independent",
+      "independent_visual_acceptance": "pending",
+      "release_eligible": false
+    },
+    {
+      "episode_key": "usim_train_episode_001259",
+      "protocol_version": "usim-enact-v0.2",
+      "key_frames": 4,
+      "frame_indices": [
+        57,
+        170,
+        203,
+        238
+      ],
+      "relations": [
+        [
+          "OnSeabed",
+          "blue_cylinder"
+        ],
+        [
+          "InGripper",
+          "blue_cylinder"
+        ],
+        [
+          "Lifted",
+          "blue_cylinder"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "blue_cylinder"
+        ]
+      ],
+      "transitions": 3,
+      "visible_transitions": 3,
+      "empty_transitions": [],
+      "transition_texts": [
+        {
+          "from": "57",
+          "to": "170",
+          "visible": true,
+          "text": "The robot now becomes in position for the pre-grasp approach beside the blue cylinder."
+        },
+        {
+          "from": "170",
+          "to": "203",
+          "visible": true,
+          "text": "The blue cylinder is now grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the blue cylinder."
+        },
+        {
+          "from": "203",
+          "to": "238",
+          "visible": true,
+          "text": "The blue cylinder is now lifted above the seabed. The blue cylinder is not on the seabed anymore."
+        }
+      ],
+      "ok": true,
+      "source_frame_check": {
+        "episode_key": "usim_train_episode_001259",
+        "camera": "ego",
+        "checked": 4,
+        "ok": true,
+        "frames": [
+          {
+            "frame_index": 57,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 170,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 203,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 238,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          }
+        ]
+      },
+      "path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\usim_train_episode_001259.json",
+      "sha256": "fc2ccb94fd98cfa7169d7ad2265b5266e0f9f7fa7b796f3719625ac909123db3",
+      "annotation_status": "initial_review_pending_independent",
+      "independent_visual_acceptance": "pending",
+      "release_eligible": false
+    },
+    {
+      "episode_key": "usim_train_episode_001273",
+      "protocol_version": "usim-enact-v0.2",
+      "key_frames": 4,
+      "frame_indices": [
+        179,
+        261,
+        288,
+        348
+      ],
+      "relations": [
+        [
+          "OnSeabed",
+          "blue_cylinder"
+        ],
+        [
+          "InGripper",
+          "blue_cylinder"
+        ],
+        [
+          "Lifted",
+          "blue_cylinder"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "blue_cylinder"
+        ]
+      ],
+      "transitions": 3,
+      "visible_transitions": 3,
+      "empty_transitions": [],
+      "transition_texts": [
+        {
+          "from": "179",
+          "to": "261",
+          "visible": true,
+          "text": "The robot transitions to be in position for the pre-grasp approach beside the blue cylinder."
+        },
+        {
+          "from": "261",
+          "to": "288",
+          "visible": true,
+          "text": "The blue cylinder becomes grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the blue cylinder."
+        },
+        {
+          "from": "288",
+          "to": "348",
+          "visible": true,
+          "text": "The blue cylinder is now lifted above the seabed. The blue cylinder is no longer on the seabed."
+        }
+      ],
+      "ok": true,
+      "source_frame_check": {
+        "episode_key": "usim_train_episode_001273",
+        "camera": "ego",
+        "checked": 4,
+        "ok": true,
+        "frames": [
+          {
+            "frame_index": 179,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 261,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 288,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 348,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          }
+        ]
+      },
+      "path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\usim_train_episode_001273.json",
+      "sha256": "6479caee39539e8adfac0a951b0fcb9e938c13f11922ed6ae0310e8eddef295d",
+      "annotation_status": "initial_review_pending_independent",
+      "independent_visual_acceptance": "pending",
+      "release_eligible": false
+    },
+    {
+      "episode_key": "usim_train_episode_001145",
+      "protocol_version": "usim-enact-v0.2",
+      "key_frames": 4,
+      "frame_indices": [
+        88,
+        128,
+        161,
+        192
+      ],
+      "relations": [
+        [
+          "OnSeabed",
+          "red_cylinder"
+        ],
+        [
+          "InGripper",
+          "red_cylinder"
+        ],
+        [
+          "Lifted",
+          "red_cylinder"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "red_cylinder"
+        ]
+      ],
+      "transitions": 3,
+      "visible_transitions": 3,
+      "empty_transitions": [],
+      "transition_texts": [
+        {
+          "from": "88",
+          "to": "128",
+          "visible": true,
+          "text": "The robot becomes in position for the pre-grasp approach beside the red cylinder."
+        },
+        {
+          "from": "128",
+          "to": "161",
+          "visible": true,
+          "text": "The red cylinder is now grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the red cylinder."
+        },
+        {
+          "from": "161",
+          "to": "192",
+          "visible": true,
+          "text": "The red cylinder is now lifted above the seabed. The red cylinder is not on the seabed anymore."
+        }
+      ],
+      "ok": true,
+      "source_frame_check": {
+        "episode_key": "usim_train_episode_001145",
+        "camera": "ego",
+        "checked": 4,
+        "ok": true,
+        "frames": [
+          {
+            "frame_index": 88,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 128,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 161,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 192,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          }
+        ]
+      },
+      "path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\usim_train_episode_001145.json",
+      "sha256": "1f36c04ac8dbe0ef0246d6e2c430d154d2c06924f2624ac37645498d2fe00b6b",
+      "annotation_status": "initial_review_pending_independent",
+      "independent_visual_acceptance": "pending",
+      "release_eligible": false
+    },
+    {
+      "episode_key": "usim_train_episode_001497",
+      "protocol_version": "usim-enact-v0.2",
+      "key_frames": 4,
+      "frame_indices": [
+        42,
+        111,
+        145,
+        183
+      ],
+      "relations": [
+        [
+          "OnSeabed",
+          "red_cylinder"
+        ],
+        [
+          "InGripper",
+          "red_cylinder"
+        ],
+        [
+          "Lifted",
+          "red_cylinder"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "red_cylinder"
+        ]
+      ],
+      "transitions": 3,
+      "visible_transitions": 3,
+      "empty_transitions": [],
+      "transition_texts": [
+        {
+          "from": "42",
+          "to": "111",
+          "visible": true,
+          "text": "The robot becomes in position for the pre-grasp approach beside the red cylinder."
+        },
+        {
+          "from": "111",
+          "to": "145",
+          "visible": true,
+          "text": "The red cylinder becomes grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the red cylinder."
+        },
+        {
+          "from": "145",
+          "to": "183",
+          "visible": true,
+          "text": "The red cylinder becomes lifted above the seabed. The red cylinder is not on the seabed anymore."
+        }
+      ],
+      "ok": true,
+      "source_frame_check": {
+        "episode_key": "usim_train_episode_001497",
+        "camera": "ego",
+        "checked": 4,
+        "ok": true,
+        "frames": [
+          {
+            "frame_index": 42,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 111,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 145,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 183,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          }
+        ]
+      },
+      "path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\usim_train_episode_001497.json",
+      "sha256": "14805cd1e3e244ab0a446089653613347e296d8876139f980ef631a7e6ebd225",
+      "annotation_status": "initial_review_pending_independent",
+      "independent_visual_acceptance": "pending",
+      "release_eligible": false
+    },
+    {
+      "episode_key": "usim_train_episode_001549",
+      "protocol_version": "usim-enact-v0.2",
+      "key_frames": 4,
+      "frame_indices": [
+        75,
+        183,
+        219,
+        277
+      ],
+      "relations": [
+        [
+          "OnSeabed",
+          "red_cylinder"
+        ],
+        [
+          "InGripper",
+          "red_cylinder"
+        ],
+        [
+          "Lifted",
+          "red_cylinder"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "red_cylinder"
+        ]
+      ],
+      "transitions": 3,
+      "visible_transitions": 3,
+      "empty_transitions": [],
+      "transition_texts": [
+        {
+          "from": "75",
+          "to": "183",
+          "visible": true,
+          "text": "The robot changes to be in position for the pre-grasp approach beside the red cylinder."
+        },
+        {
+          "from": "183",
+          "to": "219",
+          "visible": true,
+          "text": "The red cylinder becomes grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the red cylinder."
+        },
+        {
+          "from": "219",
+          "to": "277",
+          "visible": true,
+          "text": "The red cylinder becomes lifted above the seabed. The red cylinder is no longer on the seabed."
+        }
+      ],
+      "ok": true,
+      "source_frame_check": {
+        "episode_key": "usim_train_episode_001549",
+        "camera": "ego",
+        "checked": 4,
+        "ok": true,
+        "frames": [
+          {
+            "frame_index": 75,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 183,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 219,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          },
+          {
+            "frame_index": 277,
+            "ok": true,
+            "shape": [
+              240,
+              320,
+              3
+            ]
+          }
+        ]
+      },
+      "path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\usim_train_episode_001549.json",
+      "sha256": "f6f4f30467f536b73534e6e27b808b997ff2ef3d93a12f1813a335e3aa8d5667",
+      "annotation_status": "initial_review_pending_independent",
+      "independent_visual_acceptance": "pending",
+      "release_eligible": false
+    }
+  ]
+}

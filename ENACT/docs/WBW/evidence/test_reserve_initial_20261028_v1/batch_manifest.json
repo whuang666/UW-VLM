@@ -1,0 +1,131 @@
+{
+  "schema": "usim-test-initial-annotations/v1",
+  "batch_version": "test-reserve-initial-20261028-v1",
+  "created_at": "2026-10-28T21:00:44+08:00",
+  "scope": "single-annotator first-pass candidates; not accepted final-test ground truth",
+  "model_api_calls": 0,
+  "independent_review_completed": false,
+  "release_eligible": false,
+  "existing_annotations_sha256": {
+    "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\usim_train_episode_001078.json": "71e444c2aceb0e897c04990c270c0bf6e2febae7df52a84d6f38e15d1c43e966",
+    "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\usim_train_episode_001650.json": "5d0db342f6b529459bbf7773c4fab904d1dbef8a888bf526f0d4170ff44fbe86",
+    "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\usim_train_episode_001384.json": "a497712ef575f0fc55a5a6d479313a4bc27af0b652f123265c8d38e9bc129db9",
+    "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\usim_train_episode_001378.json": "f921640a1d3ed7ef28b223d137d981794570caf7b3fd039492cd96f2e3bdd5ef"
+  },
+  "episodes": [
+    {
+      "episode": 1734,
+      "frames": [
+        150,
+        274,
+        312,
+        359
+      ],
+      "key_frames": 4,
+      "graph_nonempty_transitions": 3,
+      "structure_pass": true,
+      "source_frames_pass": true,
+      "independent_visual_acceptance": "pending",
+      "release_eligible": false,
+      "spec_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\spec_001734.json",
+      "annotation_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\usim_train_episode_001734.json",
+      "spec_sha256": "84ecbc04f9183ad6460e3807c0ae8ef8eeb1c900a39e5277b498168eadd9b3d1",
+      "annotation_sha256": "03d38df48de051b06d83c6ebc01c8af5e85308d6cb1e456ab8d5fb0c49ed623e"
+    },
+    {
+      "episode": 1259,
+      "frames": [
+        57,
+        170,
+        203,
+        238
+      ],
+      "key_frames": 4,
+      "graph_nonempty_transitions": 3,
+      "structure_pass": true,
+      "source_frames_pass": true,
+      "independent_visual_acceptance": "pending",
+      "release_eligible": false,
+      "spec_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\spec_001259.json",
+      "annotation_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\usim_train_episode_001259.json",
+      "spec_sha256": "e8824cc9eec3aa4b54cc0e1efda486782b73037e749682a5661b6f43848fccf3",
+      "annotation_sha256": "fc2ccb94fd98cfa7169d7ad2265b5266e0f9f7fa7b796f3719625ac909123db3"
+    },
+    {
+      "episode": 1273,
+      "frames": [
+        179,
+        261,
+        288,
+        348
+      ],
+      "key_frames": 4,
+      "graph_nonempty_transitions": 3,
+      "structure_pass": true,
+      "source_frames_pass": true,
+      "independent_visual_acceptance": "pending",
+      "release_eligible": false,
+      "spec_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\spec_001273.json",
+      "annotation_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\usim_train_episode_001273.json",
+      "spec_sha256": "9d4f7177e648e910a710276c0cbbd2d79fc7e3c4b342739c354829bcc69dc549",
+      "annotation_sha256": "6479caee39539e8adfac0a951b0fcb9e938c13f11922ed6ae0310e8eddef295d"
+    },
+    {
+      "episode": 1145,
+      "frames": [
+        88,
+        128,
+        161,
+        192
+      ],
+      "key_frames": 4,
+      "graph_nonempty_transitions": 3,
+      "structure_pass": true,
+      "source_frames_pass": true,
+      "independent_visual_acceptance": "pending",
+      "release_eligible": false,
+      "spec_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\spec_001145.json",
+      "annotation_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\usim_train_episode_001145.json",
+      "spec_sha256": "14b249e464b6a5a247473a252e9bff73ebe894ae50a32472d810f80b673fe905",
+      "annotation_sha256": "1f36c04ac8dbe0ef0246d6e2c430d154d2c06924f2624ac37645498d2fe00b6b"
+    },
+    {
+      "episode": 1497,
+      "frames": [
+        42,
+        111,
+        145,
+        183
+      ],
+      "key_frames": 4,
+      "graph_nonempty_transitions": 3,
+      "structure_pass": true,
+      "source_frames_pass": true,
+      "independent_visual_acceptance": "pending",
+      "release_eligible": false,
+      "spec_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\spec_001497.json",
+      "annotation_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\usim_train_episode_001497.json",
+      "spec_sha256": "668a87bbbc632c08e293026b9c1737e8a18c61efcb369b3b4c0fbb99b9c6d63c",
+      "annotation_sha256": "14805cd1e3e244ab0a446089653613347e296d8876139f980ef631a7e6ebd225"
+    },
+    {
+      "episode": 1549,
+      "frames": [
+        75,
+        183,
+        219,
+        277
+      ],
+      "key_frames": 4,
+      "graph_nonempty_transitions": 3,
+      "structure_pass": true,
+      "source_frames_pass": true,
+      "independent_visual_acceptance": "pending",
+      "release_eligible": false,
+      "spec_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\spec_001549.json",
+      "annotation_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\usim_train_episode_001549.json",
+      "spec_sha256": "c4785a373a8603a6e2b6dd223ba82a895895851980bb36871c42454bd6517b80",
+      "annotation_sha256": "f6f4f30467f536b73534e6e27b808b997ff2ef3d93a12f1813a335e3aa8d5667"
+    }
+  ]
+}

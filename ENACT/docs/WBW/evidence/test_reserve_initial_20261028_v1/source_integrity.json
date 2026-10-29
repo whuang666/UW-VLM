@@ -1,0 +1,218 @@
+{
+  "source_files_checked": 30,
+  "all_match": true,
+  "read_only": true,
+  "model_api_calls": 0,
+  "sources": [
+    {
+      "episode": 1078,
+      "kind": "ego_video",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.ego\\episode_001078.mp4",
+      "sha256": "7310d1ed9ea0b2156ad31382d755ef4c68e442525c9e7d6cd3740bde8922a0c6",
+      "matches": true
+    },
+    {
+      "episode": 1078,
+      "kind": "wrist_video",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.wrist\\episode_001078.mp4",
+      "sha256": "319e1cd6e51e2da06f3bce3d87ee4320ad768998a05f3daa85b7dc111f989e97",
+      "matches": true
+    },
+    {
+      "episode": 1078,
+      "kind": "parquet",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\data\\chunk-001\\episode_001078.parquet",
+      "sha256": "b21ccbc3a4917a325c1fae061f851e055f08e72f707aa439e6c096e2d0ebbf65",
+      "matches": true
+    },
+    {
+      "episode": 1384,
+      "kind": "ego_video",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.ego\\episode_001384.mp4",
+      "sha256": "94fe97e473eac8ab46038446bfbd09947dbf05f452be6536f00772030ef02e3e",
+      "matches": true
+    },
+    {
+      "episode": 1384,
+      "kind": "wrist_video",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.wrist\\episode_001384.mp4",
+      "sha256": "5a5f925ea54bd106fe2bef4b549ce7814d12cd09668f3f196683da05bee201d4",
+      "matches": true
+    },
+    {
+      "episode": 1384,
+      "kind": "parquet",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\data\\chunk-001\\episode_001384.parquet",
+      "sha256": "7a841a6e8bca21aac6ea46972943df40693865a8ba012b34dc0847792d1a2bee",
+      "matches": true
+    },
+    {
+      "episode": 1650,
+      "kind": "ego_video",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.ego\\episode_001650.mp4",
+      "sha256": "b955bb1c6c9e896ac8825f01564b85d0f50147daebeea10fbb9c889d806d4e95",
+      "matches": true
+    },
+    {
+      "episode": 1650,
+      "kind": "wrist_video",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.wrist\\episode_001650.mp4",
+      "sha256": "ecf82e8af1cd2849715a8a0bcae79f904758c66bb09df350bec3e3b6cf733f0c",
+      "matches": true
+    },
+    {
+      "episode": 1650,
+      "kind": "parquet",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\data\\chunk-001\\episode_001650.parquet",
+      "sha256": "9d2b30b48dafb622834d965d1a2d0155f4abb4476e8c9d98abbdb1f38b2acdc3",
+      "matches": true
+    },
+    {
+      "episode": 1734,
+      "kind": "ego_video",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.ego\\episode_001734.mp4",
+      "sha256": "c2864051f717c2dbff28a17cf71f248cc9cc3b8646d2815a5b140d127e7c26ed",
+      "matches": true
+    },
+    {
+      "episode": 1734,
+      "kind": "wrist_video",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.wrist\\episode_001734.mp4",
+      "sha256": "05d481b4fb11b22733acee81d7b68605d4e784bf21b3d8d9f38c14da9bafb311",
+      "matches": true
+    },
+    {
+      "episode": 1734,
+      "kind": "parquet",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\data\\chunk-001\\episode_001734.parquet",
+      "sha256": "67d947eba151375de3e96e715d66a3594bb0bacd01c49d774a6c6ac4cdd0efd2",
+      "matches": true
+    },
+    {
+      "episode": 1259,
+      "kind": "ego_video",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.ego\\episode_001259.mp4",
+      "sha256": "c52644ba7bcf2678f1fa20ef08070a19a8ad8bf652cc9faab6d4dabcd8168934",
+      "matches": true
+    },
+    {
+      "episode": 1259,
+      "kind": "wrist_video",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.wrist\\episode_001259.mp4",
+      "sha256": "247fae5f16a4a987e4cbe3b2c5470b7e3f9e268f7084bdbb3d6be808b0eb68e0",
+      "matches": true
+    },
+    {
+      "episode": 1259,
+      "kind": "parquet",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\data\\chunk-001\\episode_001259.parquet",
+      "sha256": "b2a409c2ed3c857a438f8b6fd2abeb29c657edeee0c44eb3037d6acc25c02d50",
+      "matches": true
+    },
+    {
+      "episode": 1273,
+      "kind": "ego_video",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.ego\\episode_001273.mp4",
+      "sha256": "0446bff82edcef9c4d7faffaa89ca4b7673047b9defbfae366ce76c14b2c7d0d",
+      "matches": true
+    },
+    {
+      "episode": 1273,
+      "kind": "wrist_video",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.wrist\\episode_001273.mp4",
+      "sha256": "cc7598ef9afd4040fde4f7503d2e9a30c82436a233b9eeaef93570397092fda9",
+      "matches": true
+    },
+    {
+      "episode": 1273,
+      "kind": "parquet",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\data\\chunk-001\\episode_001273.parquet",
+      "sha256": "aa10636176a828493e1b256cd4d8741dd57db15799809f3477238cae2c613cf0",
+      "matches": true
+    },
+    {
+      "episode": 1145,
+      "kind": "ego_video",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.ego\\episode_001145.mp4",
+      "sha256": "93805373fca445f5b459510570ce3a95c3c514bd488ec8c35fce139bb5016dba",
+      "matches": true
+    },
+    {
+      "episode": 1145,
+      "kind": "wrist_video",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.wrist\\episode_001145.mp4",
+      "sha256": "c679b7743c8b9117d6828115f9c41573a209f248af727eb73d389b9ed07b8c09",
+      "matches": true
+    },
+    {
+      "episode": 1145,
+      "kind": "parquet",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\data\\chunk-001\\episode_001145.parquet",
+      "sha256": "5aea5e251e6a47c4ac2c9b78a1695acfe4fb313bd68e882e0b0e4b2740682314",
+      "matches": true
+    },
+    {
+      "episode": 1497,
+      "kind": "ego_video",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.ego\\episode_001497.mp4",
+      "sha256": "314b3fe49dd62cad6f8b046d0ce0b9b460cb4dfe734c2b13d792a7ea26e28dcf",
+      "matches": true
+    },
+    {
+      "episode": 1497,
+      "kind": "wrist_video",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.wrist\\episode_001497.mp4",
+      "sha256": "226e2a39e747967344a9ca97914e4c13913a010d8e688991fb7dff0cba3840b3",
+      "matches": true
+    },
+    {
+      "episode": 1497,
+      "kind": "parquet",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\data\\chunk-001\\episode_001497.parquet",
+      "sha256": "b6b677fbe1e956d271690a2410be79a78f788de5221798454dcb71909a7d1b0c",
+      "matches": true
+    },
+    {
+      "episode": 1549,
+      "kind": "ego_video",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.ego\\episode_001549.mp4",
+      "sha256": "9c16c69072f1ed1d18adcd2da550a7fbb52aee5580496548c155bd923f6c3043",
+      "matches": true
+    },
+    {
+      "episode": 1549,
+      "kind": "wrist_video",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.wrist\\episode_001549.mp4",
+      "sha256": "4cf1c75b58536dbe7fc7d71082f20cb6d482ff79e2ded8d2dbbfbec55dbeb55a",
+      "matches": true
+    },
+    {
+      "episode": 1549,
+      "kind": "parquet",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\data\\chunk-001\\episode_001549.parquet",
+      "sha256": "fee5573dea378e5e4751a5ae5fa067bc61991f8e892d3c0c31e30573a010c716",
+      "matches": true
+    },
+    {
+      "episode": 1378,
+      "kind": "ego_video",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.ego\\episode_001378.mp4",
+      "sha256": "c4ee44ac475cf07f3d7af13862aae6ac4f3cba64f51d52ee8dc215bd82b58a4e",
+      "matches": true
+    },
+    {
+      "episode": 1378,
+      "kind": "wrist_video",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.wrist\\episode_001378.mp4",
+      "sha256": "dc7978546ae46e11363b51384f22d306aec2a8f6aa3ee24ba1c1cbf70bc0a86b",
+      "matches": true
+    },
+    {
+      "episode": 1378,
+      "kind": "parquet",
+      "path": "E:\\code\\UW-VLM\\usim\\train\\data\\chunk-001\\episode_001378.parquet",
+      "sha256": "961a901fec28f02ea9e73381c2e304b621cc2797ba5c4c963360d4b1c7bf1345",
+      "matches": true
+    }
+  ]
+}

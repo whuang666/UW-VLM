@@ -1,0 +1,41 @@
+{
+  "selection_rule": "After visual selection of a stable render pose, choose its upper-middle frame clipped to the pre-existing role window; no labels inferred from signals.",
+  "frames": {
+    "1734": [
+      150,
+      274,
+      312,
+      359
+    ],
+    "1259": [
+      57,
+      170,
+      203,
+      238
+    ],
+    "1273": [
+      179,
+      261,
+      288,
+      348
+    ],
+    "1145": [
+      88,
+      128,
+      161,
+      192
+    ],
+    "1497": [
+      42,
+      111,
+      145,
+      183
+    ],
+    "1549": [
+      75,
+      183,
+      219,
+      277
+    ]
+  }
+}

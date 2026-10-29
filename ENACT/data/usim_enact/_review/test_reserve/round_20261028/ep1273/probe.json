@@ -1,0 +1,517 @@
+{
+  "schema": "usim-test-annotation-probe/v1",
+  "episode": 1273,
+  "task_text": "Pick up the blue cylinder",
+  "source_package": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\_expansion\\packages\\usim_train_episode_001273\\package.json",
+  "source_package_sha256": "8d96cebadf13b25dcabb69bdcd488586de862d93394e300621ae6fbaae69941c",
+  "source_files": {
+    "parquet": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\data\\chunk-001\\episode_001273.parquet",
+      "sha256": "aa10636176a828493e1b256cd4d8741dd57db15799809f3477238cae2c613cf0"
+    },
+    "ego_video": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.ego\\episode_001273.mp4",
+      "sha256": "0446bff82edcef9c4d7faffaa89ca4b7673047b9defbfae366ce76c14b2c7d0d"
+    },
+    "wrist_video": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.wrist\\episode_001273.mp4",
+      "sha256": "cc7598ef9afd4040fde4f7503d2e9a30c82436a233b9eeaef93570397092fda9"
+    },
+    "parquet_rows": 385,
+    "decoded_ego_frames": 385
+  },
+  "decoded_frames": 385,
+  "events": [
+    {
+      "event": "close",
+      "frame": 271
+    }
+  ],
+  "main_close_candidate": 271,
+  "first_close": 271,
+  "dvl_minimum_frame": 299,
+  "dvl_minimum": 0.24847635626792908,
+  "ascent_window_proposal": [
+    339,
+    359
+  ],
+  "onset_note": "DVL minimum followed by rise is only an anchoring proposal; ego evidence decides the label",
+  "hold_motion_threshold": 0.5,
+  "hold_motion_measure": "mean absolute gray-level difference",
+  "hold_runs": [
+    {
+      "start": 0,
+      "end": 9,
+      "length": 10
+    },
+    {
+      "start": 10,
+      "end": 10,
+      "length": 1
+    },
+    {
+      "start": 11,
+      "end": 11,
+      "length": 1
+    },
+    {
+      "start": 12,
+      "end": 27,
+      "length": 16
+    },
+    {
+      "start": 28,
+      "end": 43,
+      "length": 16
+    },
+    {
+      "start": 44,
+      "end": 65,
+      "length": 22
+    },
+    {
+      "start": 66,
+      "end": 66,
+      "length": 1
+    },
+    {
+      "start": 67,
+      "end": 67,
+      "length": 1
+    },
+    {
+      "start": 68,
+      "end": 87,
+      "length": 20
+    },
+    {
+      "start": 88,
+      "end": 99,
+      "length": 12
+    },
+    {
+      "start": 100,
+      "end": 107,
+      "length": 8
+    },
+    {
+      "start": 108,
+      "end": 108,
+      "length": 1
+    },
+    {
+      "start": 109,
+      "end": 109,
+      "length": 1
+    },
+    {
+      "start": 110,
+      "end": 117,
+      "length": 8
+    },
+    {
+      "start": 118,
+      "end": 127,
+      "length": 10
+    },
+    {
+      "start": 128,
+      "end": 128,
+      "length": 1
+    },
+    {
+      "start": 129,
+      "end": 129,
+      "length": 1
+    },
+    {
+      "start": 130,
+      "end": 137,
+      "length": 8
+    },
+    {
+      "start": 138,
+      "end": 147,
+      "length": 10
+    },
+    {
+      "start": 148,
+      "end": 148,
+      "length": 1
+    },
+    {
+      "start": 149,
+      "end": 149,
+      "length": 1
+    },
+    {
+      "start": 150,
+      "end": 157,
+      "length": 8
+    },
+    {
+      "start": 158,
+      "end": 158,
+      "length": 1
+    },
+    {
+      "start": 159,
+      "end": 159,
+      "length": 1
+    },
+    {
+      "start": 160,
+      "end": 169,
+      "length": 10
+    },
+    {
+      "start": 170,
+      "end": 170,
+      "length": 1
+    },
+    {
+      "start": 171,
+      "end": 171,
+      "length": 1
+    },
+    {
+      "start": 172,
+      "end": 185,
+      "length": 14
+    },
+    {
+      "start": 186,
+      "end": 186,
+      "length": 1
+    },
+    {
+      "start": 187,
+      "end": 187,
+      "length": 1
+    },
+    {
+      "start": 188,
+      "end": 199,
+      "length": 12
+    },
+    {
+      "start": 200,
+      "end": 209,
+      "length": 10
+    },
+    {
+      "start": 210,
+      "end": 210,
+      "length": 1
+    },
+    {
+      "start": 211,
+      "end": 211,
+      "length": 1
+    },
+    {
+      "start": 212,
+      "end": 227,
+      "length": 16
+    },
+    {
+      "start": 228,
+      "end": 245,
+      "length": 18
+    },
+    {
+      "start": 246,
+      "end": 255,
+      "length": 10
+    },
+    {
+      "start": 256,
+      "end": 267,
+      "length": 12
+    },
+    {
+      "start": 268,
+      "end": 279,
+      "length": 12
+    },
+    {
+      "start": 280,
+      "end": 280,
+      "length": 1
+    },
+    {
+      "start": 281,
+      "end": 281,
+      "length": 1
+    },
+    {
+      "start": 282,
+      "end": 293,
+      "length": 12
+    },
+    {
+      "start": 294,
+      "end": 307,
+      "length": 14
+    },
+    {
+      "start": 308,
+      "end": 308,
+      "length": 1
+    },
+    {
+      "start": 309,
+      "end": 309,
+      "length": 1
+    },
+    {
+      "start": 310,
+      "end": 321,
+      "length": 12
+    },
+    {
+      "start": 322,
+      "end": 322,
+      "length": 1
+    },
+    {
+      "start": 323,
+      "end": 323,
+      "length": 1
+    },
+    {
+      "start": 324,
+      "end": 339,
+      "length": 16
+    },
+    {
+      "start": 340,
+      "end": 355,
+      "length": 16
+    },
+    {
+      "start": 356,
+      "end": 356,
+      "length": 1
+    },
+    {
+      "start": 357,
+      "end": 357,
+      "length": 1
+    },
+    {
+      "start": 358,
+      "end": 369,
+      "length": 12
+    },
+    {
+      "start": 370,
+      "end": 370,
+      "length": 1
+    },
+    {
+      "start": 371,
+      "end": 371,
+      "length": 1
+    },
+    {
+      "start": 372,
+      "end": 381,
+      "length": 10
+    },
+    {
+      "start": 382,
+      "end": 383,
+      "length": 2
+    },
+    {
+      "start": 384,
+      "end": 384,
+      "length": 1
+    }
+  ],
+  "candidate_frames": [
+    {
+      "frame": 0,
+      "hold": {
+        "start": 0,
+        "end": 9,
+        "length": 10
+      },
+      "dvl_h": 0.5692729353904724,
+      "gripper_signal": 0.0,
+      "closed_signal": false,
+      "native_png_sha256": "3eb3ec7e1ff9cc545e1c87ae2472a31c27c93bea83320bce489bf8afde527ff9"
+    },
+    {
+      "frame": 88,
+      "hold": {
+        "start": 88,
+        "end": 99,
+        "length": 12
+      },
+      "dvl_h": 0.2277972251176834,
+      "gripper_signal": 5.769783092546277e-05,
+      "closed_signal": false,
+      "native_png_sha256": "26c3be302d630d428023b90d3783277d00cae3e5640f5fde68b2150e0a2307dd"
+    },
+    {
+      "frame": 181,
+      "hold": {
+        "start": 172,
+        "end": 185,
+        "length": 14
+      },
+      "dvl_h": 0.30518704652786255,
+      "gripper_signal": 9.230499563273042e-05,
+      "closed_signal": false,
+      "native_png_sha256": "547b2b9baaae826c7d82c2bd445134c1bd1c105fe57670056fff9c33bb45fd9d"
+    },
+    {
+      "frame": 211,
+      "hold": {
+        "start": 211,
+        "end": 211,
+        "length": 1
+      },
+      "dvl_h": 0.3152734935283661,
+      "gripper_signal": 9.230499563273042e-05,
+      "closed_signal": false,
+      "native_png_sha256": "da49fcfe7d6635ec7ecfb5fc9a0d42576a5633d72f501825e0176b739072ea8e"
+    },
+    {
+      "frame": 251,
+      "hold": {
+        "start": 246,
+        "end": 255,
+        "length": 10
+      },
+      "dvl_h": 0.27444180846214294,
+      "gripper_signal": 7.126852869987488e-05,
+      "closed_signal": false,
+      "native_png_sha256": "bf9aca1346be986a777c0865890b69db2fd561ddde6b5628b61f681c2bd3e64e"
+    },
+    {
+      "frame": 256,
+      "hold": {
+        "start": 256,
+        "end": 267,
+        "length": 12
+      },
+      "dvl_h": 0.2695986032485962,
+      "gripper_signal": 7.126852869987488e-05,
+      "closed_signal": false,
+      "native_png_sha256": "c7660b2a05a7a313232599421a46482595041518fb8b3c7d90f1a28b4f133705"
+    },
+    {
+      "frame": 261,
+      "hold": {
+        "start": 256,
+        "end": 267,
+        "length": 12
+      },
+      "dvl_h": 0.26437827944755554,
+      "gripper_signal": 7.126852869987488e-05,
+      "closed_signal": false,
+      "native_png_sha256": "c7660b2a05a7a313232599421a46482595041518fb8b3c7d90f1a28b4f133705"
+    },
+    {
+      "frame": 281,
+      "hold": {
+        "start": 281,
+        "end": 281,
+        "length": 1
+      },
+      "dvl_h": 0.25058650970458984,
+      "gripper_signal": 0.01490806881338358,
+      "closed_signal": true,
+      "native_png_sha256": "804e7715e898f6ad15a9e19601b1c91db380918289750a3678519c37ea893e99"
+    },
+    {
+      "frame": 286,
+      "hold": {
+        "start": 282,
+        "end": 293,
+        "length": 12
+      },
+      "dvl_h": 0.24864880740642548,
+      "gripper_signal": 0.01490834355354309,
+      "closed_signal": true,
+      "native_png_sha256": "6f79494af32ab23a889a390e523618981950ef2172bdc8b0d16db43f638727d5"
+    },
+    {
+      "frame": 291,
+      "hold": {
+        "start": 282,
+        "end": 293,
+        "length": 12
+      },
+      "dvl_h": 0.24854996800422668,
+      "gripper_signal": 0.014908897690474987,
+      "closed_signal": true,
+      "native_png_sha256": "6f79494af32ab23a889a390e523618981950ef2172bdc8b0d16db43f638727d5"
+    },
+    {
+      "frame": 339,
+      "hold": {
+        "start": 324,
+        "end": 339,
+        "length": 16
+      },
+      "dvl_h": 0.35268762707710266,
+      "gripper_signal": 0.014906099066138268,
+      "closed_signal": true,
+      "native_png_sha256": "8a19682fc41642502344096aa6dac2f183d9bc729a36eb11eab6727334b96d25"
+    },
+    {
+      "frame": 344,
+      "hold": {
+        "start": 340,
+        "end": 355,
+        "length": 16
+      },
+      "dvl_h": 0.3634854257106781,
+      "gripper_signal": 0.014906094409525394,
+      "closed_signal": true,
+      "native_png_sha256": "7080f6afa629c5bce2b2df6c6018f25f29935d4d3b2134b2688aa3ab1d0c7ad4"
+    },
+    {
+      "frame": 349,
+      "hold": {
+        "start": 340,
+        "end": 355,
+        "length": 16
+      },
+      "dvl_h": 0.37624391913414,
+      "gripper_signal": 0.014904671348631382,
+      "closed_signal": true,
+      "native_png_sha256": "7080f6afa629c5bce2b2df6c6018f25f29935d4d3b2134b2688aa3ab1d0c7ad4"
+    },
+    {
+      "frame": 354,
+      "hold": {
+        "start": 340,
+        "end": 355,
+        "length": 16
+      },
+      "dvl_h": 0.3850539028644562,
+      "gripper_signal": 0.014904635027050972,
+      "closed_signal": true,
+      "native_png_sha256": "7080f6afa629c5bce2b2df6c6018f25f29935d4d3b2134b2688aa3ab1d0c7ad4"
+    },
+    {
+      "frame": 359,
+      "hold": {
+        "start": 358,
+        "end": 369,
+        "length": 12
+      },
+      "dvl_h": 0.3938760757446289,
+      "gripper_signal": 0.014904535375535488,
+      "closed_signal": true,
+      "native_png_sha256": "2477f37f325a9b3cc59c7940b4188aa56161aeefb644d7c8bc4e5016c638a611"
+    }
+  ],
+  "labels_assigned": false,
+  "model_api_calls": 0
+}

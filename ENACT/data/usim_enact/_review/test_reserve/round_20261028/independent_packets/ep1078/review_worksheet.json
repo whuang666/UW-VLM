@@ -1,0 +1,76 @@
+{
+ "episode": 1078,
+ "task_text": "Pick up the pipe",
+ "reviewer_identity": "AI agent (星舟 / WorkBuddy), technical re-derivation in a separate session",
+ "reviewer_independent_of_first_pass": false,
+ "review_complete": true,
+ "frame_reviews": [
+  {
+   "slot": 1,
+   "own_predicate_values": {
+    "held_judgement_from_image": "管平铺沙面，夹爪张开且远离 → start 可用"
+   },
+   "ego_visibility": true,
+   "physical_support_evidence": "rests_on_sand",
+   "gap_at_least_half_object_width": null,
+   "comment": "管平铺沙面，夹爪张开且远离 → start 可用"
+  },
+  {
+   "slot": 2,
+   "own_predicate_values": {
+    "held_judgement_from_image": "爪跨于管上，张开未持 → approach"
+   },
+   "ego_visibility": true,
+   "physical_support_evidence": null,
+   "gap_at_least_half_object_width": null,
+   "comment": "爪跨于管上，张开未持 → approach"
+  },
+  {
+   "slot": 3,
+   "own_predicate_values": {
+    "held_judgement_from_image": "闭合夹住，管仍贴底 → grasp"
+   },
+   "ego_visibility": true,
+   "physical_support_evidence": "rests_on_sand",
+   "gap_at_least_half_object_width": null,
+   "comment": "闭合夹住，管仍贴底 → grasp"
+  },
+  {
+   "slot": 4,
+   "own_predicate_values": {
+    "held_judgement_from_image": "斜持抬升，最低端仍近贴沙面 → 半宽间隙未确认"
+   },
+   "ego_visibility": true,
+   "physical_support_evidence": null,
+   "gap_at_least_half_object_width": false,
+   "comment": "斜持抬升，最低端仍近贴沙面 → 半宽间隙未确认"
+  }
+ ],
+ "transition_reviews": [
+  {
+   "left_slot": 1,
+   "right_slot": 2,
+   "ego_decidable": true,
+   "decision": "accepted",
+   "reason": "slots 1->2: 爪跨于管上，张开未持 → approach"
+  },
+  {
+   "left_slot": 2,
+   "right_slot": 3,
+   "ego_decidable": true,
+   "decision": "accepted",
+   "reason": "slots 2->3: 闭合夹住，管仍贴底 → grasp"
+  },
+  {
+   "left_slot": 3,
+   "right_slot": 4,
+   "ego_decidable": true,
+   "decision": "accepted",
+   "reason": "slots 3->4: 斜持抬升，最低端仍近贴沙面 → 半宽间隙未确认"
+  }
+ ],
+ "final_acceptance": null,
+ "review_is_technical_not_human_double_annotation": true,
+ "verdict": "conditional",
+ "verdict_reason": "pipe 斜持，最低端贴近沙面，其下未见裸露沙面；dvl +0.121 只能辅助"
+}

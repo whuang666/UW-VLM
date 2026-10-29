@@ -1,0 +1,209 @@
+{
+  "episode": 1497,
+  "batch_version": "test-reserve-initial-20261028-v1",
+  "structural_check": {
+    "episode_key": "usim_train_episode_001497",
+    "protocol_version": "usim-enact-v0.2",
+    "key_frames": 4,
+    "frame_indices": [
+      42,
+      111,
+      145,
+      183
+    ],
+    "relations": [
+      [
+        "OnSeabed",
+        "red_cylinder"
+      ],
+      [
+        "InGripper",
+        "red_cylinder"
+      ],
+      [
+        "Lifted",
+        "red_cylinder"
+      ],
+      [
+        "NextTo",
+        "robot",
+        "red_cylinder"
+      ]
+    ],
+    "transitions": 3,
+    "visible_transitions": 3,
+    "empty_transitions": [],
+    "transition_texts": [
+      {
+        "from": "42",
+        "to": "111",
+        "visible": true,
+        "text": "The robot becomes in position for the pre-grasp approach beside the red cylinder."
+      },
+      {
+        "from": "111",
+        "to": "145",
+        "visible": true,
+        "text": "The red cylinder is now grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the red cylinder."
+      },
+      {
+        "from": "145",
+        "to": "183",
+        "visible": true,
+        "text": "The red cylinder is now lifted above the seabed. The red cylinder is no longer on the seabed."
+      }
+    ],
+    "ok": true,
+    "source_frames": {
+      "episode_key": "usim_train_episode_001497",
+      "camera": "ego",
+      "checked": 4,
+      "ok": true,
+      "frames": [
+        {
+          "frame_index": 42,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame_index": 111,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame_index": 145,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame_index": 183,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        }
+      ]
+    }
+  },
+  "review_status": "single_annotator_initial_review_only",
+  "independent_quality_acceptance": "pending",
+  "release_eligible": false,
+  "source_files": {
+    "parquet": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\data\\chunk-001\\episode_001497.parquet",
+      "sha256": "b6b677fbe1e956d271690a2410be79a78f788de5221798454dcb71909a7d1b0c"
+    },
+    "ego_video": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.ego\\episode_001497.mp4",
+      "sha256": "314b3fe49dd62cad6f8b046d0ce0b9b460cb4dfe734c2b13d792a7ea26e28dcf"
+    },
+    "wrist_video": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.wrist\\episode_001497.mp4",
+      "sha256": "226e2a39e747967344a9ca97914e4c13913a010d8e688991fb7dff0cba3840b3"
+    },
+    "parquet_rows": 243,
+    "decoded_ego_frames": 243
+  },
+  "events": [
+    {
+      "event": "close",
+      "frame": 129
+    }
+  ],
+  "main_close": 129,
+  "first_close": 129,
+  "dvl_minimum_frame_anchor_proposal": 125,
+  "nominal_anchor_offsets": {
+    "approach": -18,
+    "grasp": 16,
+    "lift_after_minimum_proxy": 58
+  },
+  "normative_ascent_onset_independently_confirmed": false,
+  "frames": [
+    {
+      "role": "start",
+      "frame": 42,
+      "render_hold": {
+        "start": 36,
+        "end": 47,
+        "length": 12
+      },
+      "dvl_h_auxiliary": 0.44821617007255554,
+      "gripper_signal_auxiliary": 1.4931608347978909e-05,
+      "ego_png_sha256": "b7caa5573f41884f1ef48388cf87d0ea9161a9c9ebb2f7300c2daf819b364f13",
+      "wrist_png_sha256": "be0893996b88f947159dfc4168d675b178df7c3ba02d73f37755da7aaa6daeba",
+      "ego_observation": "The small red target lies on the illuminated floor below the open gripper; the seaweed is a background distractor.",
+      "physical_support_or_half_width_clearance_independently_confirmed": null
+    },
+    {
+      "role": "approach",
+      "frame": 111,
+      "render_hold": {
+        "start": 104,
+        "end": 117,
+        "length": 14
+      },
+      "dvl_h_auxiliary": 0.23945052921772003,
+      "gripper_signal_auxiliary": 3.553439455572516e-05,
+      "ego_png_sha256": "238d7c66122021995f217019628ad2663e48cd142eab9990951eb52b8cba3d67",
+      "wrist_png_sha256": "1ac6bd3c804d918b83f934c8d9de0868fe7d47fb50ebe308efa913f0dd9d1cee",
+      "ego_observation": "The red cylinder is beside the open fingertips on the sand, before the close at129.",
+      "physical_support_or_half_width_clearance_independently_confirmed": null
+    },
+    {
+      "role": "grasp",
+      "frame": 145,
+      "render_hold": {
+        "start": 136,
+        "end": 153,
+        "length": 18
+      },
+      "dvl_h_auxiliary": 0.23926912248134613,
+      "gripper_signal_auxiliary": 0.014911570586264133,
+      "ego_png_sha256": "1303a2015b0e06973d81a30254b9acad17404ac6e6551a1f9a5180cc97d0699b",
+      "wrist_png_sha256": "c2865465a5ac79bd34550ba9018fd032fb9a31f9e2d29305a39ff0a5470f4f5e",
+      "ego_observation": "The red cylinder is across the closed fingertips; the target has rotated relative to the ungrasped approach frame. Ground support remains an unconfirmed first-review interpretation.",
+      "physical_support_or_half_width_clearance_independently_confirmed": false
+    },
+    {
+      "role": "lift",
+      "frame": 183,
+      "render_hold": {
+        "start": 174,
+        "end": 191,
+        "length": 18
+      },
+      "dvl_h_auxiliary": 0.3036142587661743,
+      "gripper_signal_auxiliary": 0.01491159200668335,
+      "ego_png_sha256": "31e4f6424bec800e071c246d228ce43240ffd1fd7b8d94ef6c23a558d7b685f6",
+      "wrist_png_sha256": "69d0abf98e0d4e6efd26fac072394330925c858f38762df9016626cf60e5ebd1",
+      "ego_observation": "The target remains at the jaws while the scene shifts, but the floor-clearance cue is weak. The first review does not establish a gap of at least half the object width; keep this candidate blocked for visual adjudication.",
+      "physical_support_or_half_width_clearance_independently_confirmed": false
+    }
+  ],
+  "minimum_frame_gap": 34,
+  "minimum_render_update_gap": 2,
+  "flags": [
+    "Weak lift evidence, similar in kind to the existing1378 dispute.",
+    "DVL increase is auxiliary and cannot prove the object-floor gap."
+  ],
+  "spec_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\spec_001497.json",
+  "annotation_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\usim_train_episode_001497.json",
+  "spec_sha256": "668a87bbbc632c08e293026b9c1737e8a18c61efcb369b3b4c0fbb99b9c6d63c",
+  "annotation_sha256": "14805cd1e3e244ab0a446089653613347e296d8876139f980ef631a7e6ebd225",
+  "model_api_calls": 0
+}

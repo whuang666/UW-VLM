@@ -1,0 +1,209 @@
+{
+  "episode": 1734,
+  "batch_version": "test-reserve-initial-20261028-v1",
+  "structural_check": {
+    "episode_key": "usim_train_episode_001734",
+    "protocol_version": "usim-enact-v0.2",
+    "key_frames": 4,
+    "frame_indices": [
+      150,
+      274,
+      312,
+      359
+    ],
+    "relations": [
+      [
+        "OnSeabed",
+        "pipe"
+      ],
+      [
+        "InGripper",
+        "pipe"
+      ],
+      [
+        "Lifted",
+        "pipe"
+      ],
+      [
+        "NextTo",
+        "robot",
+        "pipe"
+      ]
+    ],
+    "transitions": 3,
+    "visible_transitions": 3,
+    "empty_transitions": [],
+    "transition_texts": [
+      {
+        "from": "150",
+        "to": "274",
+        "visible": true,
+        "text": "The robot becomes in position for the pre-grasp approach beside the pipe."
+      },
+      {
+        "from": "274",
+        "to": "312",
+        "visible": true,
+        "text": "The pipe becomes grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the pipe."
+      },
+      {
+        "from": "312",
+        "to": "359",
+        "visible": true,
+        "text": "The pipe is now lifted above the seabed. The pipe is not on the seabed anymore."
+      }
+    ],
+    "ok": true,
+    "source_frames": {
+      "episode_key": "usim_train_episode_001734",
+      "camera": "ego",
+      "checked": 4,
+      "ok": true,
+      "frames": [
+        {
+          "frame_index": 150,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame_index": 274,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame_index": 312,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame_index": 359,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        }
+      ]
+    }
+  },
+  "review_status": "single_annotator_initial_review_only",
+  "independent_quality_acceptance": "pending",
+  "release_eligible": false,
+  "source_files": {
+    "parquet": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\data\\chunk-001\\episode_001734.parquet",
+      "sha256": "67d947eba151375de3e96e715d66a3594bb0bacd01c49d774a6c6ac4cdd0efd2"
+    },
+    "ego_video": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.ego\\episode_001734.mp4",
+      "sha256": "c2864051f717c2dbff28a17cf71f248cc9cc3b8646d2815a5b140d127e7c26ed"
+    },
+    "wrist_video": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.wrist\\episode_001734.mp4",
+      "sha256": "05d481b4fb11b22733acee81d7b68605d4e784bf21b3d8d9f38c14da9bafb311"
+    },
+    "parquet_rows": 403,
+    "decoded_ego_frames": 403
+  },
+  "events": [
+    {
+      "event": "close",
+      "frame": 294
+    }
+  ],
+  "main_close": 294,
+  "first_close": 294,
+  "dvl_minimum_frame_anchor_proposal": 302,
+  "nominal_anchor_offsets": {
+    "approach": -20,
+    "grasp": 18,
+    "lift_after_minimum_proxy": 57
+  },
+  "normative_ascent_onset_independently_confirmed": false,
+  "frames": [
+    {
+      "role": "start",
+      "frame": 150,
+      "render_hold": {
+        "start": 140,
+        "end": 159,
+        "length": 20
+      },
+      "dvl_h_auxiliary": 0.2929190993309021,
+      "gripper_signal_auxiliary": 4.01190081902314e-05,
+      "ego_png_sha256": "348ce3027bc03624b26eca78838975b6c6f8cb183e15bc5ebc37cb39ae17061b",
+      "wrist_png_sha256": "9a79ee728dfb86cbb894c6af84da14b41aa1a20fca9f5f224c0aa8b25e372a26",
+      "ego_observation": "The complete grey pipe is visible on the lit seabed while the open jaws are above and separated from it. Earlier f0/f80/f100 are obscured by foreground vehicle geometry and were rejected.",
+      "physical_support_or_half_width_clearance_independently_confirmed": null
+    },
+    {
+      "role": "approach",
+      "frame": 274,
+      "render_hold": {
+        "start": 264,
+        "end": 281,
+        "length": 18
+      },
+      "dvl_h_auxiliary": 0.272727906703949,
+      "gripper_signal_auxiliary": 4.15396316384431e-05,
+      "ego_png_sha256": "d12bf8a4eb19e4d9fd261d50ef9fbfef8e786313e29bba42b0a4679903f73457",
+      "wrist_png_sha256": "3ae488432c1a42ad471f5b140a2e28e7320710bbecfe951d8b6020b1e0bbd050",
+      "ego_observation": "The open jaws are aligned immediately beside the pipe; the pipe remains along the sand rather than carried across the closed fingertips.",
+      "physical_support_or_half_width_clearance_independently_confirmed": null
+    },
+    {
+      "role": "grasp",
+      "frame": 312,
+      "render_hold": {
+        "start": 302,
+        "end": 321,
+        "length": 20
+      },
+      "dvl_h_auxiliary": 0.23741111159324646,
+      "gripper_signal_auxiliary": 0.014928768388926983,
+      "ego_png_sha256": "3241b584aae3dafe440989c8a04be067f687da46f06ba6a249c94ea7d6ff7494",
+      "wrist_png_sha256": "4688e2ee10bd61e8f8cd7a756abc6dec7910b4e49ab359cdb6cf03fa3a52c338",
+      "ego_observation": "The fingertips are narrower and contact the pipe, which changes pose relative to the approach image. Ground support at this low grasp stage is an initial interpretation; independently check it rather than infer support from DVL.",
+      "physical_support_or_half_width_clearance_independently_confirmed": false
+    },
+    {
+      "role": "lift",
+      "frame": 359,
+      "render_hold": {
+        "start": 348,
+        "end": 369,
+        "length": 22
+      },
+      "dvl_h_auxiliary": 0.35226723551750183,
+      "gripper_signal_auxiliary": 0.014928617514669895,
+      "ego_png_sha256": "5110e6136fd8786dfdc1700f810acb7279e666d9b05bbd318316f8410cd8ccdc",
+      "wrist_png_sha256": "4f834138a5011a619d5895a436b1d0805af1aed97f7a2cdb7c742bcf3fc3647b",
+      "ego_observation": "The pipe remains with the jaws while its pose relative to the local seabed and background changes. This is a lift candidate; the half-object-width clearance threshold has not been measured and remains an independent visual review item.",
+      "physical_support_or_half_width_clearance_independently_confirmed": false
+    }
+  ],
+  "minimum_frame_gap": 38,
+  "minimum_render_update_gap": 2,
+  "flags": [
+    "Foreground vehicle occludes earlier start candidates; f150 keeps the whole pipe visible.",
+    "Grasp-to-lift floor clearance in the nearly textureless sand needs independent confirmation."
+  ],
+  "spec_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\spec_001734.json",
+  "annotation_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\usim_train_episode_001734.json",
+  "spec_sha256": "84ecbc04f9183ad6460e3807c0ae8ef8eeb1c900a39e5277b498168eadd9b3d1",
+  "annotation_sha256": "03d38df48de051b06d83c6ebc01c8af5e85308d6cb1e456ab8d5fb0c49ed623e",
+  "model_api_calls": 0
+}

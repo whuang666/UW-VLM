@@ -1,0 +1,209 @@
+{
+  "episode": 1145,
+  "batch_version": "test-reserve-initial-20261028-v1",
+  "structural_check": {
+    "episode_key": "usim_train_episode_001145",
+    "protocol_version": "usim-enact-v0.2",
+    "key_frames": 4,
+    "frame_indices": [
+      88,
+      128,
+      161,
+      192
+    ],
+    "relations": [
+      [
+        "OnSeabed",
+        "red_cylinder"
+      ],
+      [
+        "InGripper",
+        "red_cylinder"
+      ],
+      [
+        "Lifted",
+        "red_cylinder"
+      ],
+      [
+        "NextTo",
+        "robot",
+        "red_cylinder"
+      ]
+    ],
+    "transitions": 3,
+    "visible_transitions": 3,
+    "empty_transitions": [],
+    "transition_texts": [
+      {
+        "from": "88",
+        "to": "128",
+        "visible": true,
+        "text": "The robot changes to be in position for the pre-grasp approach beside the red cylinder."
+      },
+      {
+        "from": "128",
+        "to": "161",
+        "visible": true,
+        "text": "The red cylinder becomes grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the red cylinder."
+      },
+      {
+        "from": "161",
+        "to": "192",
+        "visible": true,
+        "text": "The red cylinder becomes lifted above the seabed. The red cylinder is not on the seabed anymore."
+      }
+    ],
+    "ok": true,
+    "source_frames": {
+      "episode_key": "usim_train_episode_001145",
+      "camera": "ego",
+      "checked": 4,
+      "ok": true,
+      "frames": [
+        {
+          "frame_index": 88,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame_index": 128,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame_index": 161,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame_index": 192,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        }
+      ]
+    }
+  },
+  "review_status": "single_annotator_initial_review_only",
+  "independent_quality_acceptance": "pending",
+  "release_eligible": false,
+  "source_files": {
+    "parquet": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\data\\chunk-001\\episode_001145.parquet",
+      "sha256": "5aea5e251e6a47c4ac2c9b78a1695acfe4fb313bd68e882e0b0e4b2740682314"
+    },
+    "ego_video": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.ego\\episode_001145.mp4",
+      "sha256": "93805373fca445f5b459510570ce3a95c3c514bd488ec8c35fce139bb5016dba"
+    },
+    "wrist_video": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.wrist\\episode_001145.mp4",
+      "sha256": "c679b7743c8b9117d6828115f9c41573a209f248af727eb73d389b9ed07b8c09"
+    },
+    "parquet_rows": 221,
+    "decoded_ego_frames": 221
+  },
+  "events": [
+    {
+      "event": "close",
+      "frame": 141
+    }
+  ],
+  "main_close": 141,
+  "first_close": 141,
+  "dvl_minimum_frame_anchor_proposal": 144,
+  "nominal_anchor_offsets": {
+    "approach": -13,
+    "grasp": 20,
+    "lift_after_minimum_proxy": 48
+  },
+  "normative_ascent_onset_independently_confirmed": false,
+  "frames": [
+    {
+      "role": "start",
+      "frame": 88,
+      "render_hold": {
+        "start": 78,
+        "end": 97,
+        "length": 20
+      },
+      "dvl_h_auxiliary": 0.3099707067012787,
+      "gripper_signal_auxiliary": 8.263927884399891e-05,
+      "ego_png_sha256": "f7e03bdadf4f05777fbdadf50d0544b7c85a3f99fa83c2978ec42e2075330497",
+      "wrist_png_sha256": "cfbe88a8c1054e7c58aaea86a9713bb4c0cc6cc7cd2ef7ea06a3659ef2a0bab2",
+      "ego_observation": "The red target is on the sand below and away from the open gripper. The large blue/purple cylinder at the bottom-left is a distractor.",
+      "physical_support_or_half_width_clearance_independently_confirmed": null
+    },
+    {
+      "role": "approach",
+      "frame": 128,
+      "render_hold": {
+        "start": 118,
+        "end": 137,
+        "length": 20
+      },
+      "dvl_h_auxiliary": 0.24745067954063416,
+      "gripper_signal_auxiliary": 8.263927884399891e-05,
+      "ego_png_sha256": "45d08fea9f938927b13131247f8dfda3223c14b8e5611e58093ab82dcf384499",
+      "wrist_png_sha256": "0f0c1cabd400ebc97d52f9cf0c1c70b97c9e4e5f0a5054f826f9cfa50571a1f5",
+      "ego_observation": "The rendered open jaws are immediately above/beside the red target, before the close at141; the blue cylinder remains outside the annotation scope.",
+      "physical_support_or_half_width_clearance_independently_confirmed": null
+    },
+    {
+      "role": "grasp",
+      "frame": 161,
+      "render_hold": {
+        "start": 156,
+        "end": 171,
+        "length": 16
+      },
+      "dvl_h_auxiliary": 0.24921098351478577,
+      "gripper_signal_auxiliary": 0.014903069473803043,
+      "ego_png_sha256": "b4720a21ebb30dec4ff7fab477c7ef4dd98d31e1e3f2642d3d8b5133f39889e9",
+      "wrist_png_sha256": "981c1f81afcdcc18988fc240222f0e9454928dc2d97c8a1850dbde8158ce4358",
+      "ego_observation": "The red target crosses the closed fingertips and has changed orientation relative to approach. The draft retains physical support at grasp rather than equating a close command with lift.",
+      "physical_support_or_half_width_clearance_independently_confirmed": false
+    },
+    {
+      "role": "lift",
+      "frame": 192,
+      "render_hold": {
+        "start": 184,
+        "end": 199,
+        "length": 16
+      },
+      "dvl_h_auxiliary": 0.3045520484447479,
+      "gripper_signal_auxiliary": 0.01490289531648159,
+      "ego_png_sha256": "5ff5e60e7a0246b4db41f5ab451ef5f606be703f366ff1922aee50dbbcf40e8d",
+      "wrist_png_sha256": "65703ebb176a7971e83eacd20504df5f2a001e286338d3e5fbf92c1c0e2a360f",
+      "ego_observation": "The red target stays with the jaws while its orientation and relation to the lit floor change. Clearance is a first-review hypothesis, not a measured half-width guarantee.",
+      "physical_support_or_half_width_clearance_independently_confirmed": false
+    }
+  ],
+  "minimum_frame_gap": 31,
+  "minimum_render_update_gap": 2,
+  "flags": [
+    "The blue/purple distractor must not be assigned target facts.",
+    "The grasp-to-lift difference is modest in ego; independently inspect actual support and clearance."
+  ],
+  "spec_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\spec_001145.json",
+  "annotation_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\usim_train_episode_001145.json",
+  "spec_sha256": "14b249e464b6a5a247473a252e9bff73ebe894ae50a32472d810f80b673fe905",
+  "annotation_sha256": "1f36c04ac8dbe0ef0246d6e2c430d154d2c06924f2624ac37645498d2fe00b6b",
+  "model_api_calls": 0
+}

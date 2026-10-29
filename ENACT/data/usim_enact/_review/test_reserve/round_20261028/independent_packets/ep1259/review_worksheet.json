@@ -1,0 +1,76 @@
+{
+ "episode": 1259,
+ "task_text": "Pick up the blue cylinder",
+ "reviewer_identity": "AI agent (星舟 / WorkBuddy), technical re-derivation in a separate session",
+ "reviewer_independent_of_first_pass": false,
+ "review_complete": true,
+ "frame_reviews": [
+  {
+   "slot": 1,
+   "own_predicate_values": {
+    "held_judgement_from_image": "圆柱平铺，夹爪张开远离 → start"
+   },
+   "ego_visibility": true,
+   "physical_support_evidence": "rests_on_sand",
+   "gap_at_least_half_object_width": null,
+   "comment": "圆柱平铺，夹爪张开远离 → start"
+  },
+  {
+   "slot": 2,
+   "own_predicate_values": {
+    "held_judgement_from_image": "爪位于圆柱两侧、张开未持（早于首次 open 186）→ approach，非 grasp"
+   },
+   "ego_visibility": true,
+   "physical_support_evidence": null,
+   "gap_at_least_half_object_width": null,
+   "comment": "爪位于圆柱两侧、张开未持（早于首次 open 186）→ approach，非 grasp"
+  },
+  {
+   "slot": 3,
+   "own_predicate_values": {
+    "held_judgement_from_image": "第二次 close 后闭合夹住，仍贴底 → grasp"
+   },
+   "ego_visibility": true,
+   "physical_support_evidence": "rests_on_sand",
+   "gap_at_least_half_object_width": null,
+   "comment": "第二次 close 后闭合夹住，仍贴底 → grasp"
+  },
+  {
+   "slot": 4,
+   "own_predicate_values": {
+    "held_judgement_from_image": "明显离底，其下可见沙面 → lift"
+   },
+   "ego_visibility": true,
+   "physical_support_evidence": null,
+   "gap_at_least_half_object_width": true,
+   "comment": "明显离底，其下可见沙面 → lift"
+  }
+ ],
+ "transition_reviews": [
+  {
+   "left_slot": 1,
+   "right_slot": 2,
+   "ego_decidable": true,
+   "decision": "accepted",
+   "reason": "slots 1->2: 爪位于圆柱两侧、张开未持（早于首次 open 186）→ approach，非 grasp"
+  },
+  {
+   "left_slot": 2,
+   "right_slot": 3,
+   "ego_decidable": true,
+   "decision": "accepted",
+   "reason": "slots 2->3: 第二次 close 后闭合夹住，仍贴底 → grasp"
+  },
+  {
+   "left_slot": 3,
+   "right_slot": 4,
+   "ego_decidable": true,
+   "decision": "accepted",
+   "reason": "slots 3->4: 明显离底，其下可见沙面 → lift"
+  }
+ ],
+ "final_acceptance": null,
+ "review_is_technical_not_human_double_annotation": true,
+ "verdict": "pass",
+ "verdict_reason": "两次 close（159/186 open/190），主线取最后 close；f238 圆柱与沙面间可见沙面"
+}

@@ -1,0 +1,147 @@
+{
+  "schema": "usim-test-reserve-adjudication/v1",
+  "date": "2026-10-29",
+  "api_requests": 0,
+  "reviewer": "AI agent (星舟 / WorkBuddy), technical re-derivation in a separate session",
+  "reviewer_independent_of_first_pass": false,
+  "qualification": "本记录是同操作者的技术复核，不满足规范要求的独立双标（独立标注者）",
+  "criteria": {
+    "structure": "关键帧在 >=8 帧渲染保持段内，帧间距 >=25",
+    "gap": "ego 中物体最低点与沙面之间存在裸露沙面，且 >= 物体短边半宽",
+    "support": "物体与沙面接触可见；DVL 仅辅助"
+  },
+  "items": [
+    {
+      "episode": 1078,
+      "task": "Pick up the pipe",
+      "slots": [
+        0,
+        189,
+        214,
+        270
+      ],
+      "verdict": "conditional",
+      "lift": "marginal",
+      "note": "pipe 斜持，最低端贴近沙面，其下未见裸露沙面；dvl +0.121 只能辅助"
+    },
+    {
+      "episode": 1384,
+      "task": "Pick up the red cylinder and transfer it to the box",
+      "slots": [
+        164,
+        209,
+        239,
+        293,
+        486
+      ],
+      "verdict": "pass",
+      "lift": "clear",
+      "note": "L=5 via at_box；f486 夹爪在绿箱释放位、物体仍被持有，未声称 InBox"
+    },
+    {
+      "episode": 1650,
+      "task": "Pick up the pipe",
+      "slots": [
+        0,
+        190,
+        219,
+        270
+      ],
+      "verdict": "conditional",
+      "lift": "marginal",
+      "note": "同 1078：管斜持，最低端近沙面；修订 onset 后窗口越过 episode 末尾（278 帧）"
+    },
+    {
+      "episode": 1734,
+      "task": "Pick up the pipe",
+      "slots": [
+        150,
+        274,
+        312,
+        359
+      ],
+      "verdict": "conditional",
+      "lift": "marginal_at_annotated_frame_clear_later",
+      "note": "f359 半宽间隙不成立；f395（onset 修订后 +93）可见明显离底 → 应重锚而非剔除"
+    },
+    {
+      "episode": 1259,
+      "task": "Pick up the blue cylinder",
+      "slots": [
+        57,
+        170,
+        203,
+        238
+      ],
+      "verdict": "pass",
+      "lift": "clear",
+      "note": "两次 close（159/186 open/190），主线取最后 close；f238 圆柱与沙面间可见沙面"
+    },
+    {
+      "episode": 1273,
+      "task": "Pick up the blue cylinder",
+      "slots": [
+        179,
+        261,
+        288,
+        348
+      ],
+      "verdict": "pass",
+      "lift": "clear",
+      "note": "f348 圆柱与沙面间可见沙面，dvl +0.160"
+    },
+    {
+      "episode": 1145,
+      "task": "Pick up the red cylinder",
+      "slots": [
+        88,
+        128,
+        161,
+        192
+      ],
+      "verdict": "conditional",
+      "lift": "weak_at_annotated_frame_clear_later",
+      "note": "f192 间隙明显不足（dvl 仅 +0.061）；f220（+0.142）可见离底 → 应重锚"
+    },
+    {
+      "episode": 1497,
+      "task": "Pick up the red cylinder",
+      "slots": [
+        42,
+        111,
+        145,
+        183
+      ],
+      "verdict": "conditional",
+      "lift": "weak_at_annotated_frame_clear_later",
+      "note": "f183 间隙不足（+0.070）；f242（+0.175）明确离底 → 应重锚"
+    },
+    {
+      "episode": 1549,
+      "task": "Pick up the red cylinder",
+      "slots": [
+        75,
+        183,
+        219,
+        277
+      ],
+      "verdict": "pass",
+      "lift": "clear",
+      "note": "f277 圆柱与沙面间可见沙面，dvl +0.145"
+    },
+    {
+      "episode": 1378,
+      "task": "Pick up the red cylinder and transfer it to the box",
+      "slots": [
+        60,
+        176,
+        206,
+        250,
+        448
+      ],
+      "verdict": "hold",
+      "lift": "weak_at_annotated_frame",
+      "note": "f250 半宽间隙未确认（既有争议），at_box 成立；lift 需重锚或独立人眼裁决"
+    }
+  ]
+}

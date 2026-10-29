@@ -1,0 +1,21 @@
+[check] usim_train_episode_001549: 4 key frames [75, 183, 219, 277], 3 transitions, 3 visible, 0 empty
+  [OK ] 75 -> 183: The robot becomes in position for the pre-grasp approach beside the red cylinder.
+  [OK ] 183 -> 219: The red cylinder is now grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the red cylinder.
+  [OK ] 219 -> 277: The red cylinder becomes lifted above the seabed. The red cylinder is not on the seabed anymore.
+  relations: [['OnSeabed', 'red_cylinder'], ['InGripper', 'red_cylinder'], ['Lifted', 'red_cylinder'], ['NextTo', 'robot', 'red_cylinder']]
+{
+  "checked": 1,
+  "ok": 1,
+  "key_frames": 4,
+  "transitions": 3,
+  "visible_transitions": 3,
+  "episodes": [
+    {
+      "episode_key": "usim_train_episode_001549",
+      "key_frames": 4,
+      "transitions": 3,
+      "visible_transitions": 3,
+      "ok": true
+    }
+  ]
+}

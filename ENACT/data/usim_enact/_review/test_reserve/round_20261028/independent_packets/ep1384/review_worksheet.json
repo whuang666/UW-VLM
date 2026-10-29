@@ -1,0 +1,93 @@
+{
+ "episode": 1384,
+ "task_text": "Pick up the red cylinder and transfer it to the box",
+ "reviewer_identity": "AI agent (星舟 / WorkBuddy), technical re-derivation in a separate session",
+ "reviewer_independent_of_first_pass": false,
+ "review_complete": true,
+ "frame_reviews": [
+  {
+   "slot": 1,
+   "own_predicate_values": {
+    "held_judgement_from_image": "圆柱平铺，夹爪张开远离，绿箱可见 → start"
+   },
+   "ego_visibility": true,
+   "physical_support_evidence": "rests_on_sand",
+   "gap_at_least_half_object_width": null,
+   "comment": "圆柱平铺，夹爪张开远离，绿箱可见 → start"
+  },
+  {
+   "slot": 2,
+   "own_predicate_values": {
+    "held_judgement_from_image": "接近，未持，绿箱可见 → approach"
+   },
+   "ego_visibility": true,
+   "physical_support_evidence": null,
+   "gap_at_least_half_object_width": null,
+   "comment": "接近，未持，绿箱可见 → approach"
+  },
+  {
+   "slot": 3,
+   "own_predicate_values": {
+    "held_judgement_from_image": "闭合夹住，仍贴底 → grasp"
+   },
+   "ego_visibility": true,
+   "physical_support_evidence": "rests_on_sand",
+   "gap_at_least_half_object_width": null,
+   "comment": "闭合夹住，仍贴底 → grasp"
+  },
+  {
+   "slot": 4,
+   "own_predicate_values": {
+    "held_judgement_from_image": "明显离底 → lift"
+   },
+   "ego_visibility": true,
+   "physical_support_evidence": null,
+   "gap_at_least_half_object_width": true,
+   "comment": "明显离底 → lift"
+  },
+  {
+   "slot": 5,
+   "own_predicate_values": {
+    "held_judgement_from_image": "夹爪与所持圆柱位于绿箱释放位，相对位置较 lift 明显改变 → at_box"
+   },
+   "ego_visibility": true,
+   "physical_support_evidence": null,
+   "gap_at_least_half_object_width": null,
+   "comment": "夹爪与所持圆柱位于绿箱释放位，相对位置较 lift 明显改变 → at_box"
+  }
+ ],
+ "transition_reviews": [
+  {
+   "left_slot": 1,
+   "right_slot": 2,
+   "ego_decidable": true,
+   "decision": "accepted",
+   "reason": "slots 1->2: 接近，未持，绿箱可见 → approach"
+  },
+  {
+   "left_slot": 2,
+   "right_slot": 3,
+   "ego_decidable": true,
+   "decision": "accepted",
+   "reason": "slots 2->3: 闭合夹住，仍贴底 → grasp"
+  },
+  {
+   "left_slot": 3,
+   "right_slot": 4,
+   "ego_decidable": true,
+   "decision": "accepted",
+   "reason": "slots 3->4: 明显离底 → lift"
+  },
+  {
+   "left_slot": 4,
+   "right_slot": 5,
+   "ego_decidable": true,
+   "decision": "accepted",
+   "reason": "slots 4->5: 夹爪与所持圆柱位于绿箱释放位，相对位置较 lift 明显改变 → at_box"
+  }
+ ],
+ "final_acceptance": null,
+ "review_is_technical_not_human_double_annotation": true,
+ "verdict": "pass",
+ "verdict_reason": "L=5 via at_box；f486 夹爪在绿箱释放位、物体仍被持有，未声称 InBox"
+}

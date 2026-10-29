@@ -1,0 +1,76 @@
+{
+ "episode": 1273,
+ "task_text": "Pick up the blue cylinder",
+ "reviewer_identity": "AI agent (星舟 / WorkBuddy), technical re-derivation in a separate session",
+ "reviewer_independent_of_first_pass": false,
+ "review_complete": true,
+ "frame_reviews": [
+  {
+   "slot": 1,
+   "own_predicate_values": {
+    "held_judgement_from_image": "圆柱平铺，夹爪张开远离 → start"
+   },
+   "ego_visibility": true,
+   "physical_support_evidence": "rests_on_sand",
+   "gap_at_least_half_object_width": null,
+   "comment": "圆柱平铺，夹爪张开远离 → start"
+  },
+  {
+   "slot": 2,
+   "own_predicate_values": {
+    "held_judgement_from_image": "爪跨圆柱，张开 → approach"
+   },
+   "ego_visibility": true,
+   "physical_support_evidence": null,
+   "gap_at_least_half_object_width": null,
+   "comment": "爪跨圆柱，张开 → approach"
+  },
+  {
+   "slot": 3,
+   "own_predicate_values": {
+    "held_judgement_from_image": "闭合夹住，贴底 → grasp"
+   },
+   "ego_visibility": true,
+   "physical_support_evidence": "rests_on_sand",
+   "gap_at_least_half_object_width": null,
+   "comment": "闭合夹住，贴底 → grasp"
+  },
+  {
+   "slot": 4,
+   "own_predicate_values": {
+    "held_judgement_from_image": "明显离底，±半宽间隙成立 → lift"
+   },
+   "ego_visibility": true,
+   "physical_support_evidence": null,
+   "gap_at_least_half_object_width": true,
+   "comment": "明显离底，±半宽间隙成立 → lift"
+  }
+ ],
+ "transition_reviews": [
+  {
+   "left_slot": 1,
+   "right_slot": 2,
+   "ego_decidable": true,
+   "decision": "accepted",
+   "reason": "slots 1->2: 爪跨圆柱，张开 → approach"
+  },
+  {
+   "left_slot": 2,
+   "right_slot": 3,
+   "ego_decidable": true,
+   "decision": "accepted",
+   "reason": "slots 2->3: 闭合夹住，贴底 → grasp"
+  },
+  {
+   "left_slot": 3,
+   "right_slot": 4,
+   "ego_decidable": true,
+   "decision": "accepted",
+   "reason": "slots 3->4: 明显离底，±半宽间隙成立 → lift"
+  }
+ ],
+ "final_acceptance": null,
+ "review_is_technical_not_human_double_annotation": true,
+ "verdict": "pass",
+ "verdict_reason": "f348 圆柱与沙面间可见沙面，dvl +0.160"
+}

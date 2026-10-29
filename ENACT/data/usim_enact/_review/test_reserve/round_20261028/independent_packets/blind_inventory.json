@@ -1,0 +1,721 @@
+{
+  "schema": "usim-blind-test-review-packet/v1",
+  "model_api_calls": 0,
+  "proposal_facts_included": false,
+  "review_complete": false,
+  "episodes": [
+    {
+      "episode": 1078,
+      "task_text": "Pick up the pipe",
+      "objects": [
+        {
+          "object_id": "robot",
+          "category": "agent",
+          "description": "the robot"
+        },
+        {
+          "object_id": "pipe",
+          "category": "pipe",
+          "description": "the grey segmented pipe"
+        }
+      ],
+      "frames": [
+        {
+          "slot": 1,
+          "source_frame": 0,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1078\\ego_slot_01.png",
+            "sha256": "6ddd1ca85add020f1a28b3c0b0a58c91ce55f935484b20c48fe0983d41cc9553"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1078\\wrist_slot_01.png",
+            "sha256": "21c671b6070e84e7b6760156eb0be8bdfa1afa6a64ea8a710c9e5a7fb1e86a3d"
+          }
+        },
+        {
+          "slot": 2,
+          "source_frame": 189,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1078\\ego_slot_02.png",
+            "sha256": "29bd4d6871126c80469a323fe0489db63dcb4a839f55ed838845b0103f0cf9a8"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1078\\wrist_slot_02.png",
+            "sha256": "dbb5a38bd8a58e8e680a42efc1e35ef8ee5c7acd1d0c465a89d6755e1723b100"
+          }
+        },
+        {
+          "slot": 3,
+          "source_frame": 214,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1078\\ego_slot_03.png",
+            "sha256": "ed377fd2f7b1affafd973a4815d2d749449c4aebc5717e31ad092c3491df6201"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1078\\wrist_slot_03.png",
+            "sha256": "8646c9b863ed888284fe4d5909d68e4fd817eb85dedbf52e98ce722686378eda"
+          }
+        },
+        {
+          "slot": 4,
+          "source_frame": 270,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1078\\ego_slot_04.png",
+            "sha256": "a5032d9bc49fb92049a82314a75d3573633a5b62ca8efcf1ffa88ae7be00cbf8"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1078\\wrist_slot_04.png",
+            "sha256": "51051563bcb59f2b6febde3fd3007a4e7400123a8a477cea3684e3efc6cb34de"
+          }
+        }
+      ],
+      "proposed_facts_included": false
+    },
+    {
+      "episode": 1384,
+      "task_text": "Pick up the red cylinder and transfer it to the box",
+      "objects": [
+        {
+          "object_id": "robot",
+          "category": "agent",
+          "description": "the robot"
+        },
+        {
+          "object_id": "red_cylinder",
+          "category": "cylinder",
+          "color": "red",
+          "description": "the red cylinder (target object for this episode)"
+        },
+        {
+          "object_id": "green_box",
+          "category": "box",
+          "color": "green",
+          "description": "the green box"
+        }
+      ],
+      "frames": [
+        {
+          "slot": 1,
+          "source_frame": 164,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1384\\ego_slot_01.png",
+            "sha256": "f14c2e4d656b2885ead6d9d53c4c0983fcf2f5a4e68adbc23f81634302065859"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1384\\wrist_slot_01.png",
+            "sha256": "bbd940425811a2aa8d46f7697b9018f84d9c7aa0295d7a273262b4a653f7bf84"
+          }
+        },
+        {
+          "slot": 2,
+          "source_frame": 209,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1384\\ego_slot_02.png",
+            "sha256": "b7d0e8d4673aa5d926b9ae2a9c1fdb0c951ea5696bc4c77b271b0a3e1d04735d"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1384\\wrist_slot_02.png",
+            "sha256": "3bdd154bad9b45025026f1b7b45744e042f82d15c2e6a7e39f27e995d48f4fbf"
+          }
+        },
+        {
+          "slot": 3,
+          "source_frame": 239,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1384\\ego_slot_03.png",
+            "sha256": "b4a97ee983907a07fee68c02c04798acab11e264484a18347c02019b7cf5cc56"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1384\\wrist_slot_03.png",
+            "sha256": "435fc1012d082330539bd5a856104a6d038887a8dfad4658005a1565a7ca7afb"
+          }
+        },
+        {
+          "slot": 4,
+          "source_frame": 293,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1384\\ego_slot_04.png",
+            "sha256": "37074c3262fa091acf799a92a97d662157c282c2739ae05986e41285a34f7874"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1384\\wrist_slot_04.png",
+            "sha256": "044cba4391f8fc4629af3fe7fd6a2305cd42323da613d75ee6bb2aa61cdc4730"
+          }
+        },
+        {
+          "slot": 5,
+          "source_frame": 486,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1384\\ego_slot_05.png",
+            "sha256": "78ba9dee0ef57ac787ef9ad98b7d4fbf4bd5bebae256774f0e5ce072fd7c0be5"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1384\\wrist_slot_05.png",
+            "sha256": "b21fdc557de0bc470999991de53e5ad6b6c77a8d6d54a9fb256a81ff937823e0"
+          }
+        }
+      ],
+      "proposed_facts_included": false
+    },
+    {
+      "episode": 1650,
+      "task_text": "Pick up the pipe",
+      "objects": [
+        {
+          "object_id": "robot",
+          "category": "agent",
+          "description": "the robot"
+        },
+        {
+          "object_id": "pipe",
+          "category": "pipe",
+          "description": "the grey segmented pipe"
+        }
+      ],
+      "frames": [
+        {
+          "slot": 1,
+          "source_frame": 0,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1650\\ego_slot_01.png",
+            "sha256": "444fce098b35391755bb1c1c8f818b51206bc7dca22ffce03f26bf4780099e33"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1650\\wrist_slot_01.png",
+            "sha256": "053f7d6d61bf09a80c8747013470a006656bbd975dfe5cd0ef05c54024352e9d"
+          }
+        },
+        {
+          "slot": 2,
+          "source_frame": 190,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1650\\ego_slot_02.png",
+            "sha256": "32f0b896967566701c30a8de723f37251e063a06fcda32350b008d2d8fed28d8"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1650\\wrist_slot_02.png",
+            "sha256": "93e84aed15d35dcd474255a1fe39e70f9d6a7b84de100f781562c9b5a18083b3"
+          }
+        },
+        {
+          "slot": 3,
+          "source_frame": 219,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1650\\ego_slot_03.png",
+            "sha256": "32f0b896967566701c30a8de723f37251e063a06fcda32350b008d2d8fed28d8"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1650\\wrist_slot_03.png",
+            "sha256": "75569cbb3deaa77f6126b7d5eeabed89f0a025486a55f02c4c5d7afaab2f5eca"
+          }
+        },
+        {
+          "slot": 4,
+          "source_frame": 270,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1650\\ego_slot_04.png",
+            "sha256": "a11943d09f3956ae1dd19886e6850f26c87dc00032ea10a07977beaef4aeec32"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1650\\wrist_slot_04.png",
+            "sha256": "db2e870ecbe18cf5022bc549ed9da8b74530b319a3dd635a3c7525e42a1d48f4"
+          }
+        }
+      ],
+      "proposed_facts_included": false
+    },
+    {
+      "episode": 1734,
+      "task_text": "Pick up the pipe",
+      "objects": [
+        {
+          "object_id": "robot",
+          "category": "agent",
+          "description": "the robot"
+        },
+        {
+          "object_id": "pipe",
+          "category": "pipe",
+          "description": "the grey segmented pipe"
+        }
+      ],
+      "frames": [
+        {
+          "slot": 1,
+          "source_frame": 150,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1734\\ego_slot_01.png",
+            "sha256": "348ce3027bc03624b26eca78838975b6c6f8cb183e15bc5ebc37cb39ae17061b"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1734\\wrist_slot_01.png",
+            "sha256": "9a79ee728dfb86cbb894c6af84da14b41aa1a20fca9f5f224c0aa8b25e372a26"
+          }
+        },
+        {
+          "slot": 2,
+          "source_frame": 274,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1734\\ego_slot_02.png",
+            "sha256": "d12bf8a4eb19e4d9fd261d50ef9fbfef8e786313e29bba42b0a4679903f73457"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1734\\wrist_slot_02.png",
+            "sha256": "3ae488432c1a42ad471f5b140a2e28e7320710bbecfe951d8b6020b1e0bbd050"
+          }
+        },
+        {
+          "slot": 3,
+          "source_frame": 312,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1734\\ego_slot_03.png",
+            "sha256": "3241b584aae3dafe440989c8a04be067f687da46f06ba6a249c94ea7d6ff7494"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1734\\wrist_slot_03.png",
+            "sha256": "4688e2ee10bd61e8f8cd7a756abc6dec7910b4e49ab359cdb6cf03fa3a52c338"
+          }
+        },
+        {
+          "slot": 4,
+          "source_frame": 359,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1734\\ego_slot_04.png",
+            "sha256": "5110e6136fd8786dfdc1700f810acb7279e666d9b05bbd318316f8410cd8ccdc"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1734\\wrist_slot_04.png",
+            "sha256": "4f834138a5011a619d5895a436b1d0805af1aed97f7a2cdb7c742bcf3fc3647b"
+          }
+        }
+      ],
+      "proposed_facts_included": false
+    },
+    {
+      "episode": 1259,
+      "task_text": "Pick up the blue cylinder",
+      "objects": [
+        {
+          "object_id": "robot",
+          "category": "agent",
+          "description": "the robot"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "category": "cylinder",
+          "color": "blue",
+          "description": "the blue cylinder, rendered purple in the ego stream"
+        }
+      ],
+      "frames": [
+        {
+          "slot": 1,
+          "source_frame": 57,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1259\\ego_slot_01.png",
+            "sha256": "6f54a0eb997e8f0819b8d5c06efd6a13f35fe415fab8ddf833098692a8b79506"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1259\\wrist_slot_01.png",
+            "sha256": "573f963b2124bae21ab7d113862189f045de3b4722105f778b6b4bd51c6500ce"
+          }
+        },
+        {
+          "slot": 2,
+          "source_frame": 170,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1259\\ego_slot_02.png",
+            "sha256": "d745ed529b0040cc05f7a0c57bd7f9b46fa38902b8b5b14e97654009971aac2d"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1259\\wrist_slot_02.png",
+            "sha256": "b6ddfbacbf642f37fdb0ce97f698790144a4afea1de16384e3e7d591e24010e6"
+          }
+        },
+        {
+          "slot": 3,
+          "source_frame": 203,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1259\\ego_slot_03.png",
+            "sha256": "676395def223fd22159978a737df0dfb84f03d152670d818d1d8b88548e90fea"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1259\\wrist_slot_03.png",
+            "sha256": "d90ac22733653c7e7b89a31d9005f5ba42da86828aeb46b610b7793918a463c9"
+          }
+        },
+        {
+          "slot": 4,
+          "source_frame": 238,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1259\\ego_slot_04.png",
+            "sha256": "fc81f4a3e1eea7afdd95fabaef2608d8469a62ff95423cdc07be73dd6917bc9e"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1259\\wrist_slot_04.png",
+            "sha256": "973fbc3b06f4a69067e937bcf3549908151b461e97b7a020c954b7196c87f288"
+          }
+        }
+      ],
+      "proposed_facts_included": false
+    },
+    {
+      "episode": 1273,
+      "task_text": "Pick up the blue cylinder",
+      "objects": [
+        {
+          "object_id": "robot",
+          "category": "agent",
+          "description": "the robot"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "category": "cylinder",
+          "color": "blue",
+          "description": "the blue cylinder, rendered purple in the ego stream"
+        }
+      ],
+      "frames": [
+        {
+          "slot": 1,
+          "source_frame": 179,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1273\\ego_slot_01.png",
+            "sha256": "547b2b9baaae826c7d82c2bd445134c1bd1c105fe57670056fff9c33bb45fd9d"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1273\\wrist_slot_01.png",
+            "sha256": "6272b28f8b32dbc2dcbc124d5acea8274743bb82568c7411eb9b873b7ce56c42"
+          }
+        },
+        {
+          "slot": 2,
+          "source_frame": 261,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1273\\ego_slot_02.png",
+            "sha256": "c7660b2a05a7a313232599421a46482595041518fb8b3c7d90f1a28b4f133705"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1273\\wrist_slot_02.png",
+            "sha256": "d419190f19706eb54a1d166b9a338506dfad95d5ee2d89cc48cb42433d2733ca"
+          }
+        },
+        {
+          "slot": 3,
+          "source_frame": 288,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1273\\ego_slot_03.png",
+            "sha256": "6f79494af32ab23a889a390e523618981950ef2172bdc8b0d16db43f638727d5"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1273\\wrist_slot_03.png",
+            "sha256": "d1b6802477827e03d96f6e4172abfdf365db362a4ff7d709489dbac6885a09d1"
+          }
+        },
+        {
+          "slot": 4,
+          "source_frame": 348,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1273\\ego_slot_04.png",
+            "sha256": "7080f6afa629c5bce2b2df6c6018f25f29935d4d3b2134b2688aa3ab1d0c7ad4"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1273\\wrist_slot_04.png",
+            "sha256": "5dac82d4dbcba595693139c2fe49ab205364c62d23ad3789361a301e1fdf3ae7"
+          }
+        }
+      ],
+      "proposed_facts_included": false
+    },
+    {
+      "episode": 1145,
+      "task_text": "Pick up the red cylinder",
+      "objects": [
+        {
+          "object_id": "robot",
+          "category": "agent",
+          "description": "the robot"
+        },
+        {
+          "object_id": "red_cylinder",
+          "category": "cylinder",
+          "color": "red",
+          "description": "the red cylinder in front of the gripper"
+        }
+      ],
+      "frames": [
+        {
+          "slot": 1,
+          "source_frame": 88,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1145\\ego_slot_01.png",
+            "sha256": "f7e03bdadf4f05777fbdadf50d0544b7c85a3f99fa83c2978ec42e2075330497"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1145\\wrist_slot_01.png",
+            "sha256": "cfbe88a8c1054e7c58aaea86a9713bb4c0cc6cc7cd2ef7ea06a3659ef2a0bab2"
+          }
+        },
+        {
+          "slot": 2,
+          "source_frame": 128,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1145\\ego_slot_02.png",
+            "sha256": "45d08fea9f938927b13131247f8dfda3223c14b8e5611e58093ab82dcf384499"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1145\\wrist_slot_02.png",
+            "sha256": "0f0c1cabd400ebc97d52f9cf0c1c70b97c9e4e5f0a5054f826f9cfa50571a1f5"
+          }
+        },
+        {
+          "slot": 3,
+          "source_frame": 161,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1145\\ego_slot_03.png",
+            "sha256": "b4720a21ebb30dec4ff7fab477c7ef4dd98d31e1e3f2642d3d8b5133f39889e9"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1145\\wrist_slot_03.png",
+            "sha256": "981c1f81afcdcc18988fc240222f0e9454928dc2d97c8a1850dbde8158ce4358"
+          }
+        },
+        {
+          "slot": 4,
+          "source_frame": 192,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1145\\ego_slot_04.png",
+            "sha256": "5ff5e60e7a0246b4db41f5ab451ef5f606be703f366ff1922aee50dbbcf40e8d"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1145\\wrist_slot_04.png",
+            "sha256": "65703ebb176a7971e83eacd20504df5f2a001e286338d3e5fbf92c1c0e2a360f"
+          }
+        }
+      ],
+      "proposed_facts_included": false
+    },
+    {
+      "episode": 1497,
+      "task_text": "Pick up the red cylinder",
+      "objects": [
+        {
+          "object_id": "robot",
+          "category": "agent",
+          "description": "the robot"
+        },
+        {
+          "object_id": "red_cylinder",
+          "category": "cylinder",
+          "color": "red",
+          "description": "the red cylinder tracked into the gripper"
+        }
+      ],
+      "frames": [
+        {
+          "slot": 1,
+          "source_frame": 42,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1497\\ego_slot_01.png",
+            "sha256": "b7caa5573f41884f1ef48388cf87d0ea9161a9c9ebb2f7300c2daf819b364f13"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1497\\wrist_slot_01.png",
+            "sha256": "be0893996b88f947159dfc4168d675b178df7c3ba02d73f37755da7aaa6daeba"
+          }
+        },
+        {
+          "slot": 2,
+          "source_frame": 111,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1497\\ego_slot_02.png",
+            "sha256": "238d7c66122021995f217019628ad2663e48cd142eab9990951eb52b8cba3d67"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1497\\wrist_slot_02.png",
+            "sha256": "1ac6bd3c804d918b83f934c8d9de0868fe7d47fb50ebe308efa913f0dd9d1cee"
+          }
+        },
+        {
+          "slot": 3,
+          "source_frame": 145,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1497\\ego_slot_03.png",
+            "sha256": "1303a2015b0e06973d81a30254b9acad17404ac6e6551a1f9a5180cc97d0699b"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1497\\wrist_slot_03.png",
+            "sha256": "c2865465a5ac79bd34550ba9018fd032fb9a31f9e2d29305a39ff0a5470f4f5e"
+          }
+        },
+        {
+          "slot": 4,
+          "source_frame": 183,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1497\\ego_slot_04.png",
+            "sha256": "31e4f6424bec800e071c246d228ce43240ffd1fd7b8d94ef6c23a558d7b685f6"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1497\\wrist_slot_04.png",
+            "sha256": "69d0abf98e0d4e6efd26fac072394330925c858f38762df9016626cf60e5ebd1"
+          }
+        }
+      ],
+      "proposed_facts_included": false
+    },
+    {
+      "episode": 1549,
+      "task_text": "Pick up the red cylinder",
+      "objects": [
+        {
+          "object_id": "robot",
+          "category": "agent",
+          "description": "the robot"
+        },
+        {
+          "object_id": "red_cylinder",
+          "category": "cylinder",
+          "color": "red",
+          "description": "the red cylinder below the gripper"
+        }
+      ],
+      "frames": [
+        {
+          "slot": 1,
+          "source_frame": 75,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1549\\ego_slot_01.png",
+            "sha256": "558d2a21586ea3acada254357bd2932280a210fcd767bb2d0b210e576fcded32"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1549\\wrist_slot_01.png",
+            "sha256": "7a0ad7fd1301f3dc5a73470268edb16e9f9eae7a9b3c407877e6738139563a17"
+          }
+        },
+        {
+          "slot": 2,
+          "source_frame": 183,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1549\\ego_slot_02.png",
+            "sha256": "743dcd5c8433aeec61b304575935d94e91016e6bca5af558e508d5dc171c0b4c"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1549\\wrist_slot_02.png",
+            "sha256": "693658d863f9d006bdcd0f51b6aad704270c17cce0907f68c01713b17ab2cada"
+          }
+        },
+        {
+          "slot": 3,
+          "source_frame": 219,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1549\\ego_slot_03.png",
+            "sha256": "706f06499f20d210e97c8d165c32586b5fe072d124a1b210a4277069ff0c5e4f"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1549\\wrist_slot_03.png",
+            "sha256": "ee05e7bf2586bb7931e52fa2551bd26325a3e8a1331cce489cdfcf2cd775fbaf"
+          }
+        },
+        {
+          "slot": 4,
+          "source_frame": 277,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1549\\ego_slot_04.png",
+            "sha256": "bd954ec09bfa38151621662451ac8981bc65614285e6cb0b617b2bddad67580a"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1549\\wrist_slot_04.png",
+            "sha256": "b11ba3ffd29a4cc3f41fdfb8d4f69d0bd0e7280d2ad6ff953db530c4b6edf7df"
+          }
+        }
+      ],
+      "proposed_facts_included": false
+    },
+    {
+      "episode": 1378,
+      "task_text": "Pick up the red cylinder and transfer it to the box",
+      "objects": [
+        {
+          "object_id": "robot",
+          "category": "agent",
+          "description": "the robot"
+        },
+        {
+          "object_id": "red_cylinder",
+          "category": "cylinder",
+          "color": "red",
+          "description": "the red cylinder (target object for this episode)"
+        },
+        {
+          "object_id": "green_box",
+          "category": "box",
+          "color": "green",
+          "description": "the green box"
+        }
+      ],
+      "frames": [
+        {
+          "slot": 1,
+          "source_frame": 60,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1378\\ego_slot_01.png",
+            "sha256": "b5354a5999b54a95e9ee59a8beb98947ffefdb22cfa403edfdaebce36d179cd7"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1378\\wrist_slot_01.png",
+            "sha256": "d53cbfffbf180da8bd6c779fa8b64baa2334f1c6a96c7a1e2f25ff0ed310955c"
+          }
+        },
+        {
+          "slot": 2,
+          "source_frame": 176,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1378\\ego_slot_02.png",
+            "sha256": "18c53803690aea7275f78bafcda5248fca37e7516d4517520d68f3cfcb95ad96"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1378\\wrist_slot_02.png",
+            "sha256": "528281818d3a64aaf7129bfb934eee197a7d14e75e7c774959b354d0b2c77699"
+          }
+        },
+        {
+          "slot": 3,
+          "source_frame": 206,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1378\\ego_slot_03.png",
+            "sha256": "be58a35a112a6fb47ae9d2f7ac57c9aa7d4e5eede55be2fd90c9fcc962326cb4"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1378\\wrist_slot_03.png",
+            "sha256": "816f0f3d9f80f2b5705b19822b2bfc28117f0d0f079bd99045e45c4ac9fe8509"
+          }
+        },
+        {
+          "slot": 4,
+          "source_frame": 250,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1378\\ego_slot_04.png",
+            "sha256": "c56e9314fb912f0a5effa7bc1e08cb2d6eaae138b728a918b1f259ac5d575875"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1378\\wrist_slot_04.png",
+            "sha256": "9105ef278438ced8f6a14f9d8bc9aadd9837207e82e616b2bea6dd775fce390a"
+          }
+        },
+        {
+          "slot": 5,
+          "source_frame": 448,
+          "ego": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1378\\ego_slot_05.png",
+            "sha256": "384725eedb7cca01c38959d11ed02116e022dce64a357a81ab68ef49f40b047a"
+          },
+          "wrist_auxiliary": {
+            "path": "ENACT\\data\\usim_enact\\_review\\test_reserve\\round_20261028\\independent_packets\\ep1378\\wrist_slot_05.png",
+            "sha256": "2e6570d510675ed7f3b7b94a64941086a9cf5259373809ff8f2bef5eeaa3c8cd"
+          }
+        }
+      ],
+      "proposed_facts_included": false
+    }
+  ]
+}

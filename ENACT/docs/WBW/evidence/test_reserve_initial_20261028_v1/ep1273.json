@@ -1,0 +1,209 @@
+{
+  "episode": 1273,
+  "batch_version": "test-reserve-initial-20261028-v1",
+  "structural_check": {
+    "episode_key": "usim_train_episode_001273",
+    "protocol_version": "usim-enact-v0.2",
+    "key_frames": 4,
+    "frame_indices": [
+      179,
+      261,
+      288,
+      348
+    ],
+    "relations": [
+      [
+        "OnSeabed",
+        "blue_cylinder"
+      ],
+      [
+        "InGripper",
+        "blue_cylinder"
+      ],
+      [
+        "Lifted",
+        "blue_cylinder"
+      ],
+      [
+        "NextTo",
+        "robot",
+        "blue_cylinder"
+      ]
+    ],
+    "transitions": 3,
+    "visible_transitions": 3,
+    "empty_transitions": [],
+    "transition_texts": [
+      {
+        "from": "179",
+        "to": "261",
+        "visible": true,
+        "text": "The robot transitions to be in position for the pre-grasp approach beside the blue cylinder."
+      },
+      {
+        "from": "261",
+        "to": "288",
+        "visible": true,
+        "text": "The blue cylinder is now grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the blue cylinder."
+      },
+      {
+        "from": "288",
+        "to": "348",
+        "visible": true,
+        "text": "The blue cylinder is now lifted above the seabed. The blue cylinder is not on the seabed anymore."
+      }
+    ],
+    "ok": true,
+    "source_frames": {
+      "episode_key": "usim_train_episode_001273",
+      "camera": "ego",
+      "checked": 4,
+      "ok": true,
+      "frames": [
+        {
+          "frame_index": 179,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame_index": 261,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame_index": 288,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame_index": 348,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        }
+      ]
+    }
+  },
+  "review_status": "single_annotator_initial_review_only",
+  "independent_quality_acceptance": "pending",
+  "release_eligible": false,
+  "source_files": {
+    "parquet": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\data\\chunk-001\\episode_001273.parquet",
+      "sha256": "aa10636176a828493e1b256cd4d8741dd57db15799809f3477238cae2c613cf0"
+    },
+    "ego_video": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.ego\\episode_001273.mp4",
+      "sha256": "0446bff82edcef9c4d7faffaa89ca4b7673047b9defbfae366ce76c14b2c7d0d"
+    },
+    "wrist_video": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.wrist\\episode_001273.mp4",
+      "sha256": "cc7598ef9afd4040fde4f7503d2e9a30c82436a233b9eeaef93570397092fda9"
+    },
+    "parquet_rows": 385,
+    "decoded_ego_frames": 385
+  },
+  "events": [
+    {
+      "event": "close",
+      "frame": 271
+    }
+  ],
+  "main_close": 271,
+  "first_close": 271,
+  "dvl_minimum_frame_anchor_proposal": 299,
+  "nominal_anchor_offsets": {
+    "approach": -10,
+    "grasp": 17,
+    "lift_after_minimum_proxy": 49
+  },
+  "normative_ascent_onset_independently_confirmed": false,
+  "frames": [
+    {
+      "role": "start",
+      "frame": 179,
+      "render_hold": {
+        "start": 172,
+        "end": 185,
+        "length": 14
+      },
+      "dvl_h_auxiliary": 0.302400141954422,
+      "gripper_signal_auxiliary": 9.230499563273042e-05,
+      "ego_png_sha256": "547b2b9baaae826c7d82c2bd445134c1bd1c105fe57670056fff9c33bb45fd9d",
+      "wrist_png_sha256": "6272b28f8b32dbc2dcbc124d5acea8274743bb82568c7411eb9b873b7ce56c42",
+      "ego_observation": "The purple target is visibly below and separated from the open gripper on the seabed; nearby appendages and background objects are distractors, not target changes.",
+      "physical_support_or_half_width_clearance_independently_confirmed": null
+    },
+    {
+      "role": "approach",
+      "frame": 261,
+      "render_hold": {
+        "start": 256,
+        "end": 267,
+        "length": 12
+      },
+      "dvl_h_auxiliary": 0.26437827944755554,
+      "gripper_signal_auxiliary": 7.126852869987488e-05,
+      "ego_png_sha256": "c7660b2a05a7a313232599421a46482595041518fb8b3c7d90f1a28b4f133705",
+      "wrist_png_sha256": "d419190f19706eb54a1d166b9a338506dfad95d5ee2d89cc48cb42433d2733ca",
+      "ego_observation": "The open fingertips align around the target before the close at271. The target remains uncarried on the local sand.",
+      "physical_support_or_half_width_clearance_independently_confirmed": null
+    },
+    {
+      "role": "grasp",
+      "frame": 288,
+      "render_hold": {
+        "start": 282,
+        "end": 293,
+        "length": 12
+      },
+      "dvl_h_auxiliary": 0.24958615005016327,
+      "gripper_signal_auxiliary": 0.014908631332218647,
+      "ego_png_sha256": "6f79494af32ab23a889a390e523618981950ef2172bdc8b0d16db43f638727d5",
+      "wrist_png_sha256": "d1b6802477827e03d96f6e4172abfdf365db362a4ff7d709489dbac6885a09d1",
+      "ego_observation": "The purple target is now across the closed fingertips, with the local floor still at its low grasp-stage pose. Ground support is an initial reading requiring independent confirmation.",
+      "physical_support_or_half_width_clearance_independently_confirmed": false
+    },
+    {
+      "role": "lift",
+      "frame": 348,
+      "render_hold": {
+        "start": 340,
+        "end": 355,
+        "length": 16
+      },
+      "dvl_h_auxiliary": 0.3749983012676239,
+      "gripper_signal_auxiliary": 0.01490473747253418,
+      "ego_png_sha256": "7080f6afa629c5bce2b2df6c6018f25f29935d4d3b2134b2688aa3ab1d0c7ad4",
+      "wrist_png_sha256": "5dac82d4dbcba595693139c2fe49ab205364c62d23ad3789361a301e1fdf3ae7",
+      "ego_observation": "The target stays at the jaws as the seabed illumination boundary and background shift downward. This is consistent with lift; independent review must verify the stipulated minimum visual clearance.",
+      "physical_support_or_half_width_clearance_independently_confirmed": false
+    }
+  ],
+  "minimum_frame_gap": 27,
+  "minimum_render_update_gap": 4,
+  "flags": [
+    "Ignore the moving appendages at the left edge when tracking the purple target.",
+    "Floor contact and half-width separation need independent review at native320x240."
+  ],
+  "spec_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\spec_001273.json",
+  "annotation_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\usim_train_episode_001273.json",
+  "spec_sha256": "9d4f7177e648e910a710276c0cbbd2d79fc7e3c4b342739c354829bcc69dc549",
+  "annotation_sha256": "6479caee39539e8adfac0a951b0fcb9e938c13f11922ed6ae0310e8eddef295d",
+  "model_api_calls": 0
+}

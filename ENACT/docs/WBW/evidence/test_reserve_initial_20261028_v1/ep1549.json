@@ -1,0 +1,209 @@
+{
+  "episode": 1549,
+  "batch_version": "test-reserve-initial-20261028-v1",
+  "structural_check": {
+    "episode_key": "usim_train_episode_001549",
+    "protocol_version": "usim-enact-v0.2",
+    "key_frames": 4,
+    "frame_indices": [
+      75,
+      183,
+      219,
+      277
+    ],
+    "relations": [
+      [
+        "OnSeabed",
+        "red_cylinder"
+      ],
+      [
+        "InGripper",
+        "red_cylinder"
+      ],
+      [
+        "Lifted",
+        "red_cylinder"
+      ],
+      [
+        "NextTo",
+        "robot",
+        "red_cylinder"
+      ]
+    ],
+    "transitions": 3,
+    "visible_transitions": 3,
+    "empty_transitions": [],
+    "transition_texts": [
+      {
+        "from": "75",
+        "to": "183",
+        "visible": true,
+        "text": "The robot changes to be in position for the pre-grasp approach beside the red cylinder."
+      },
+      {
+        "from": "183",
+        "to": "219",
+        "visible": true,
+        "text": "The red cylinder is now grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the red cylinder."
+      },
+      {
+        "from": "219",
+        "to": "277",
+        "visible": true,
+        "text": "The red cylinder becomes lifted above the seabed. The red cylinder is no longer on the seabed."
+      }
+    ],
+    "ok": true,
+    "source_frames": {
+      "episode_key": "usim_train_episode_001549",
+      "camera": "ego",
+      "checked": 4,
+      "ok": true,
+      "frames": [
+        {
+          "frame_index": 75,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame_index": 183,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame_index": 219,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame_index": 277,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        }
+      ]
+    }
+  },
+  "review_status": "single_annotator_initial_review_only",
+  "independent_quality_acceptance": "pending",
+  "release_eligible": false,
+  "source_files": {
+    "parquet": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\data\\chunk-001\\episode_001549.parquet",
+      "sha256": "fee5573dea378e5e4751a5ae5fa067bc61991f8e892d3c0c31e30573a010c716"
+    },
+    "ego_video": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.ego\\episode_001549.mp4",
+      "sha256": "9c16c69072f1ed1d18adcd2da550a7fbb52aee5580496548c155bd923f6c3043"
+    },
+    "wrist_video": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.wrist\\episode_001549.mp4",
+      "sha256": "4cf1c75b58536dbe7fc7d71082f20cb6d482ff79e2ded8d2dbbfbec55dbeb55a"
+    },
+    "parquet_rows": 309,
+    "decoded_ego_frames": 309
+  },
+  "events": [
+    {
+      "event": "close",
+      "frame": 199
+    }
+  ],
+  "main_close": 199,
+  "first_close": 199,
+  "dvl_minimum_frame_anchor_proposal": 217,
+  "nominal_anchor_offsets": {
+    "approach": -16,
+    "grasp": 20,
+    "lift_after_minimum_proxy": 60
+  },
+  "normative_ascent_onset_independently_confirmed": false,
+  "frames": [
+    {
+      "role": "start",
+      "frame": 75,
+      "render_hold": {
+        "start": 64,
+        "end": 85,
+        "length": 22
+      },
+      "dvl_h_auxiliary": 0.28909873962402344,
+      "gripper_signal_auxiliary": 4.596705548465252e-05,
+      "ego_png_sha256": "558d2a21586ea3acada254357bd2932280a210fcd767bb2d0b210e576fcded32",
+      "wrist_png_sha256": "7a0ad7fd1301f3dc5a73470268edb16e9f9eae7a9b3c407877e6738139563a17",
+      "ego_observation": "The red target is visible on the lit seabed to the right of and separated from the open jaws. Earlier f0 lacks a reliable view of the target and was rejected.",
+      "physical_support_or_half_width_clearance_independently_confirmed": null
+    },
+    {
+      "role": "approach",
+      "frame": 183,
+      "render_hold": {
+        "start": 172,
+        "end": 193,
+        "length": 22
+      },
+      "dvl_h_auxiliary": 0.278034508228302,
+      "gripper_signal_auxiliary": 5.0953676691278815e-05,
+      "ego_png_sha256": "743dcd5c8433aeec61b304575935d94e91016e6bca5af558e508d5dc171c0b4c",
+      "wrist_png_sha256": "693658d863f9d006bdcd0f51b6aad704270c17cce0907f68c01713b17ab2cada",
+      "ego_observation": "The open jaws are in position next to the red cylinder before the close at199; the target is not carried yet.",
+      "physical_support_or_half_width_clearance_independently_confirmed": null
+    },
+    {
+      "role": "grasp",
+      "frame": 219,
+      "render_hold": {
+        "start": 214,
+        "end": 233,
+        "length": 20
+      },
+      "dvl_h_auxiliary": 0.2278500497341156,
+      "gripper_signal_auxiliary": 0.014907880686223507,
+      "ego_png_sha256": "706f06499f20d210e97c8d165c32586b5fe072d124a1b210a4277069ff0c5e4f",
+      "wrist_png_sha256": "ee05e7bf2586bb7931e52fa2551bd26325a3e8a1331cce489cdfcf2cd775fbaf",
+      "ego_observation": "The red target crosses the closed fingertips in a stable render pose while the robot DVL is close to its minimum; support is an initial visual interpretation, not a deduction from that minimum.",
+      "physical_support_or_half_width_clearance_independently_confirmed": false
+    },
+    {
+      "role": "lift",
+      "frame": 277,
+      "render_hold": {
+        "start": 270,
+        "end": 287,
+        "length": 18
+      },
+      "dvl_h_auxiliary": 0.37269097566604614,
+      "gripper_signal_auxiliary": 0.014906940050423145,
+      "ego_png_sha256": "bd954ec09bfa38151621662451ac8981bc65614285e6cb0b617b2bddad67580a",
+      "wrist_png_sha256": "b11ba3ffd29a4cc3f41fdfb8d4f69d0bd0e7280d2ad6ff953db530c4b6edf7df",
+      "ego_observation": "The target becomes more horizontal and stays with the gripper as the floor/background shifts. Treat the inferred lift as pending independent confirmation of actual visual separation.",
+      "physical_support_or_half_width_clearance_independently_confirmed": false
+    }
+  ],
+  "minimum_frame_gap": 36,
+  "minimum_render_update_gap": 4,
+  "flags": [
+    "Initial frames with no reliable target view are excluded.",
+    "Nativeego clearance and preceding ground support still require independent adjudication."
+  ],
+  "spec_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\spec_001549.json",
+  "annotation_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\usim_train_episode_001549.json",
+  "spec_sha256": "c4785a373a8603a6e2b6dd223ba82a895895851980bb36871c42454bd6517b80",
+  "annotation_sha256": "f6f4f30467f536b73534e6e27b808b997ff2ef3d93a12f1813a335e3aa8d5667",
+  "model_api_calls": 0
+}

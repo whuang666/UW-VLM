@@ -1,0 +1,367 @@
+{
+  "schema": "usim-test-annotation-probe/v1",
+  "episode": 1497,
+  "task_text": "Pick up the red cylinder",
+  "source_package": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\_expansion\\packages\\usim_train_episode_001497\\package.json",
+  "source_package_sha256": "9119b70155e66cdc6416bc6e5faa56234e38e5ce79affb7a1ab8cbab27df4035",
+  "source_files": {
+    "parquet": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\data\\chunk-001\\episode_001497.parquet",
+      "sha256": "b6b677fbe1e956d271690a2410be79a78f788de5221798454dcb71909a7d1b0c"
+    },
+    "ego_video": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.ego\\episode_001497.mp4",
+      "sha256": "314b3fe49dd62cad6f8b046d0ce0b9b460cb4dfe734c2b13d792a7ea26e28dcf"
+    },
+    "wrist_video": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.wrist\\episode_001497.mp4",
+      "sha256": "226e2a39e747967344a9ca97914e4c13913a010d8e688991fb7dff0cba3840b3"
+    },
+    "parquet_rows": 243,
+    "decoded_ego_frames": 243
+  },
+  "decoded_frames": 243,
+  "events": [
+    {
+      "event": "close",
+      "frame": 129
+    }
+  ],
+  "main_close_candidate": 129,
+  "first_close": 129,
+  "dvl_minimum_frame": 125,
+  "dvl_minimum": 0.2329685240983963,
+  "ascent_window_proposal": [
+    165,
+    185
+  ],
+  "onset_note": "DVL minimum followed by rise is only an anchoring proposal; ego evidence decides the label",
+  "hold_motion_threshold": 0.5,
+  "hold_motion_measure": "mean absolute gray-level difference",
+  "hold_runs": [
+    {
+      "start": 0,
+      "end": 7,
+      "length": 8
+    },
+    {
+      "start": 8,
+      "end": 19,
+      "length": 12
+    },
+    {
+      "start": 20,
+      "end": 33,
+      "length": 14
+    },
+    {
+      "start": 34,
+      "end": 34,
+      "length": 1
+    },
+    {
+      "start": 35,
+      "end": 35,
+      "length": 1
+    },
+    {
+      "start": 36,
+      "end": 47,
+      "length": 12
+    },
+    {
+      "start": 48,
+      "end": 69,
+      "length": 22
+    },
+    {
+      "start": 70,
+      "end": 87,
+      "length": 18
+    },
+    {
+      "start": 88,
+      "end": 101,
+      "length": 14
+    },
+    {
+      "start": 102,
+      "end": 102,
+      "length": 1
+    },
+    {
+      "start": 103,
+      "end": 103,
+      "length": 1
+    },
+    {
+      "start": 104,
+      "end": 117,
+      "length": 14
+    },
+    {
+      "start": 118,
+      "end": 135,
+      "length": 18
+    },
+    {
+      "start": 136,
+      "end": 153,
+      "length": 18
+    },
+    {
+      "start": 154,
+      "end": 171,
+      "length": 18
+    },
+    {
+      "start": 172,
+      "end": 172,
+      "length": 1
+    },
+    {
+      "start": 173,
+      "end": 173,
+      "length": 1
+    },
+    {
+      "start": 174,
+      "end": 191,
+      "length": 18
+    },
+    {
+      "start": 192,
+      "end": 192,
+      "length": 1
+    },
+    {
+      "start": 193,
+      "end": 193,
+      "length": 1
+    },
+    {
+      "start": 194,
+      "end": 209,
+      "length": 16
+    },
+    {
+      "start": 210,
+      "end": 210,
+      "length": 1
+    },
+    {
+      "start": 211,
+      "end": 211,
+      "length": 1
+    },
+    {
+      "start": 212,
+      "end": 229,
+      "length": 18
+    },
+    {
+      "start": 230,
+      "end": 230,
+      "length": 1
+    },
+    {
+      "start": 231,
+      "end": 231,
+      "length": 1
+    },
+    {
+      "start": 232,
+      "end": 241,
+      "length": 10
+    },
+    {
+      "start": 242,
+      "end": 242,
+      "length": 1
+    }
+  ],
+  "candidate_frames": [
+    {
+      "frame": 0,
+      "hold": {
+        "start": 0,
+        "end": 7,
+        "length": 8
+      },
+      "dvl_h": 0.556917667388916,
+      "gripper_signal": 0.0,
+      "closed_signal": false,
+      "native_png_sha256": "b063edeacca1e7dbaa7ab652b1614d9ed4a601edc5e6792ac78e5963a12ac2b1"
+    },
+    {
+      "frame": 39,
+      "hold": {
+        "start": 36,
+        "end": 47,
+        "length": 12
+      },
+      "dvl_h": 0.45815837383270264,
+      "gripper_signal": 1.4931608347978909e-05,
+      "closed_signal": false,
+      "native_png_sha256": "b7caa5573f41884f1ef48388cf87d0ea9161a9c9ebb2f7300c2daf819b364f13"
+    },
+    {
+      "frame": 69,
+      "hold": {
+        "start": 48,
+        "end": 69,
+        "length": 22
+      },
+      "dvl_h": 0.33707135915756226,
+      "gripper_signal": 1.4931608347978909e-05,
+      "closed_signal": false,
+      "native_png_sha256": "28158e30ad12032f5f7eb523bc5c7c4a126d06bcf4b204c721e4477700af1f31"
+    },
+    {
+      "frame": 72,
+      "hold": {
+        "start": 70,
+        "end": 87,
+        "length": 18
+      },
+      "dvl_h": 0.3316831588745117,
+      "gripper_signal": 3.523584746289998e-05,
+      "closed_signal": false,
+      "native_png_sha256": "11aecca1a73f0ee4d9c426d122535cba6a55d11b4749da76598973e7131633dc"
+    },
+    {
+      "frame": 109,
+      "hold": {
+        "start": 104,
+        "end": 117,
+        "length": 14
+      },
+      "dvl_h": 0.24003300070762634,
+      "gripper_signal": 3.571966226445511e-05,
+      "closed_signal": false,
+      "native_png_sha256": "238d7c66122021995f217019628ad2663e48cd142eab9990951eb52b8cba3d67"
+    },
+    {
+      "frame": 114,
+      "hold": {
+        "start": 104,
+        "end": 117,
+        "length": 14
+      },
+      "dvl_h": 0.23704132437705994,
+      "gripper_signal": 3.605406163842417e-05,
+      "closed_signal": false,
+      "native_png_sha256": "238d7c66122021995f217019628ad2663e48cd142eab9990951eb52b8cba3d67"
+    },
+    {
+      "frame": 119,
+      "hold": {
+        "start": 118,
+        "end": 135,
+        "length": 18
+      },
+      "dvl_h": 0.2354642003774643,
+      "gripper_signal": 3.551185363903642e-05,
+      "closed_signal": false,
+      "native_png_sha256": "7a054baaab25b0e7a7af3ef43c72f7119e4af34f5354a5f34f9b6defe4ed20fd"
+    },
+    {
+      "frame": 139,
+      "hold": {
+        "start": 136,
+        "end": 153,
+        "length": 18
+      },
+      "dvl_h": 0.2386968433856964,
+      "gripper_signal": 0.01491156592965126,
+      "closed_signal": true,
+      "native_png_sha256": "1303a2015b0e06973d81a30254b9acad17404ac6e6551a1f9a5180cc97d0699b"
+    },
+    {
+      "frame": 144,
+      "hold": {
+        "start": 136,
+        "end": 153,
+        "length": 18
+      },
+      "dvl_h": 0.23596666753292084,
+      "gripper_signal": 0.014911568723618984,
+      "closed_signal": true,
+      "native_png_sha256": "1303a2015b0e06973d81a30254b9acad17404ac6e6551a1f9a5180cc97d0699b"
+    },
+    {
+      "frame": 149,
+      "hold": {
+        "start": 136,
+        "end": 153,
+        "length": 18
+      },
+      "dvl_h": 0.24096214771270752,
+      "gripper_signal": 0.014911575242877007,
+      "closed_signal": true,
+      "native_png_sha256": "1303a2015b0e06973d81a30254b9acad17404ac6e6551a1f9a5180cc97d0699b"
+    },
+    {
+      "frame": 165,
+      "hold": {
+        "start": 154,
+        "end": 171,
+        "length": 18
+      },
+      "dvl_h": 0.24784588813781738,
+      "gripper_signal": 0.014911580830812454,
+      "closed_signal": true,
+      "native_png_sha256": "b59f10978640ad7d2249dfd4943e79788c47a66b6f09702ce069e7b90eabfc12"
+    },
+    {
+      "frame": 170,
+      "hold": {
+        "start": 154,
+        "end": 171,
+        "length": 18
+      },
+      "dvl_h": 0.2568269968032837,
+      "gripper_signal": 0.014911439269781113,
+      "closed_signal": true,
+      "native_png_sha256": "b59f10978640ad7d2249dfd4943e79788c47a66b6f09702ce069e7b90eabfc12"
+    },
+    {
+      "frame": 175,
+      "hold": {
+        "start": 174,
+        "end": 191,
+        "length": 18
+      },
+      "dvl_h": 0.27599775791168213,
+      "gripper_signal": 0.014911566860973835,
+      "closed_signal": true,
+      "native_png_sha256": "31e4f6424bec800e071c246d228ce43240ffd1fd7b8d94ef6c23a558d7b685f6"
+    },
+    {
+      "frame": 180,
+      "hold": {
+        "start": 174,
+        "end": 191,
+        "length": 18
+      },
+      "dvl_h": 0.29236388206481934,
+      "gripper_signal": 0.014911585487425327,
+      "closed_signal": true,
+      "native_png_sha256": "31e4f6424bec800e071c246d228ce43240ffd1fd7b8d94ef6c23a558d7b685f6"
+    },
+    {
+      "frame": 185,
+      "hold": {
+        "start": 174,
+        "end": 191,
+        "length": 18
+      },
+      "dvl_h": 0.30999669432640076,
+      "gripper_signal": 0.014911591075360775,
+      "closed_signal": true,
+      "native_png_sha256": "31e4f6424bec800e071c246d228ce43240ffd1fd7b8d94ef6c23a558d7b685f6"
+    }
+  ],
+  "labels_assigned": false,
+  "model_api_calls": 0
+}

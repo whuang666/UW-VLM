@@ -1,0 +1,218 @@
+{
+  "episode": 1259,
+  "batch_version": "test-reserve-initial-20261028-v1",
+  "structural_check": {
+    "episode_key": "usim_train_episode_001259",
+    "protocol_version": "usim-enact-v0.2",
+    "key_frames": 4,
+    "frame_indices": [
+      57,
+      170,
+      203,
+      238
+    ],
+    "relations": [
+      [
+        "OnSeabed",
+        "blue_cylinder"
+      ],
+      [
+        "InGripper",
+        "blue_cylinder"
+      ],
+      [
+        "Lifted",
+        "blue_cylinder"
+      ],
+      [
+        "NextTo",
+        "robot",
+        "blue_cylinder"
+      ]
+    ],
+    "transitions": 3,
+    "visible_transitions": 3,
+    "empty_transitions": [],
+    "transition_texts": [
+      {
+        "from": "57",
+        "to": "170",
+        "visible": true,
+        "text": "The robot transitions to be in position for the pre-grasp approach beside the blue cylinder."
+      },
+      {
+        "from": "170",
+        "to": "203",
+        "visible": true,
+        "text": "The blue cylinder becomes grasped by the robot. The robot stopped being in position for the pre-grasp approach beside the blue cylinder."
+      },
+      {
+        "from": "203",
+        "to": "238",
+        "visible": true,
+        "text": "The blue cylinder is now lifted above the seabed. The blue cylinder is no longer on the seabed."
+      }
+    ],
+    "ok": true,
+    "source_frames": {
+      "episode_key": "usim_train_episode_001259",
+      "camera": "ego",
+      "checked": 4,
+      "ok": true,
+      "frames": [
+        {
+          "frame_index": 57,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame_index": 170,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame_index": 203,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        },
+        {
+          "frame_index": 238,
+          "ok": true,
+          "shape": [
+            240,
+            320,
+            3
+          ]
+        }
+      ]
+    }
+  },
+  "review_status": "single_annotator_initial_review_only",
+  "independent_quality_acceptance": "pending",
+  "release_eligible": false,
+  "source_files": {
+    "parquet": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\data\\chunk-001\\episode_001259.parquet",
+      "sha256": "b2a409c2ed3c857a438f8b6fd2abeb29c657edeee0c44eb3037d6acc25c02d50"
+    },
+    "ego_video": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.ego\\episode_001259.mp4",
+      "sha256": "c52644ba7bcf2678f1fa20ef08070a19a8ad8bf652cc9faab6d4dabcd8168934"
+    },
+    "wrist_video": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.wrist\\episode_001259.mp4",
+      "sha256": "247fae5f16a4a987e4cbe3b2c5470b7e3f9e268f7084bdbb3d6be808b0eb68e0"
+    },
+    "parquet_rows": 304,
+    "decoded_ego_frames": 304
+  },
+  "events": [
+    {
+      "event": "close",
+      "frame": 159
+    },
+    {
+      "event": "open",
+      "frame": 186
+    },
+    {
+      "event": "close",
+      "frame": 190
+    }
+  ],
+  "main_close": 190,
+  "first_close": 159,
+  "dvl_minimum_frame_anchor_proposal": 182,
+  "nominal_anchor_offsets": {
+    "approach": -20,
+    "grasp": 13,
+    "lift_after_minimum_proxy": 56
+  },
+  "normative_ascent_onset_independently_confirmed": false,
+  "frames": [
+    {
+      "role": "start",
+      "frame": 57,
+      "render_hold": {
+        "start": 44,
+        "end": 69,
+        "length": 26
+      },
+      "dvl_h_auxiliary": 0.35642457008361816,
+      "gripper_signal_auxiliary": 5.195122503209859e-05,
+      "ego_png_sha256": "6f54a0eb997e8f0819b8d5c06efd6a13f35fe415fab8ddf833098692a8b79506",
+      "wrist_png_sha256": "573f963b2124bae21ab7d113862189f045de3b4722105f778b6b4bd51c6500ce",
+      "ego_observation": "The purple cylinder rests on the lit seabed to the right of the open gripper; a red cylinder to the left is a distractor. This frame precedes the first close at159.",
+      "physical_support_or_half_width_clearance_independently_confirmed": null
+    },
+    {
+      "role": "approach",
+      "frame": 170,
+      "render_hold": {
+        "start": 162,
+        "end": 177,
+        "length": 16
+      },
+      "dvl_h_auxiliary": 0.24888832867145538,
+      "gripper_signal_auxiliary": 0.014926286414265633,
+      "ego_png_sha256": "d745ed529b0040cc05f7a0c57bd7f9b46fa38902b8b5b14e97654009971aac2d",
+      "wrist_png_sha256": "b6ddfbacbf642f37fdb0ce97f698790144a4afea1de16384e3e7d591e24010e6",
+      "ego_observation": "The rendered fingers are still spread beside the purple cylinder and do not visibly carry it, despite the proprioceptive signal already being high after the failed first close. Use the image rather than the close signal as the ownership evidence.",
+      "physical_support_or_half_width_clearance_independently_confirmed": null
+    },
+    {
+      "role": "grasp",
+      "frame": 203,
+      "render_hold": {
+        "start": 196,
+        "end": 209,
+        "length": 14
+      },
+      "dvl_h_auxiliary": 0.2717391550540924,
+      "gripper_signal_auxiliary": 0.0149290282279253,
+      "ego_png_sha256": "676395def223fd22159978a737df0dfb84f03d152670d818d1d8b88548e90fea",
+      "wrist_png_sha256": "d90ac22733653c7e7b89a31d9005f5ba42da86828aeb46b610b7793918a463c9",
+      "ego_observation": "After the reopen at186 and second close at190, the cylinder crosses the closed fingertips and remains at the gripper. Whether its lower surface is still supported by the floor at this frame is not established by the +0.029m robot-height change alone.",
+      "physical_support_or_half_width_clearance_independently_confirmed": false
+    },
+    {
+      "role": "lift",
+      "frame": 238,
+      "render_hold": {
+        "start": 230,
+        "end": 245,
+        "length": 16
+      },
+      "dvl_h_auxiliary": 0.3606046438217163,
+      "gripper_signal_auxiliary": 0.014929356053471565,
+      "ego_png_sha256": "fc81f4a3e1eea7afdd95fabaef2608d8469a62ff95423cdc07be73dd6917bc9e",
+      "wrist_png_sha256": "973fbc3b06f4a69067e937bcf3549908151b461e97b7a020c954b7196c87f288",
+      "ego_observation": "The purple target remains carried by the closed jaws during the later upward scene displacement. A greater clearance is proposed, but quantitative ego clearance and the previous support-to-lift distinction require adjudication.",
+      "physical_support_or_half_width_clearance_independently_confirmed": false
+    }
+  ],
+  "minimum_frame_gap": 33,
+  "minimum_render_update_gap": 4,
+  "flags": [
+    "Mainline is the last close at190, not the first at159.",
+    "The approach frame lies in the failed first attempt: the close signal is high but the rendered fingers remain open.",
+    "Independent reviewer must confirm InGripper=false at approach and ground support at grasp; do not accept from event timing alone."
+  ],
+  "spec_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\spec_001259.json",
+  "annotation_path": "ENACT\\data\\usim_enact\\_expansion\\annotation_work\\test_reserve\\initial_20261028_v1\\usim_train_episode_001259.json",
+  "spec_sha256": "e8824cc9eec3aa4b54cc0e1efda486782b73037e749682a5661b6f43848fccf3",
+  "annotation_sha256": "fc2ccb94fd98cfa7169d7ad2265b5266e0f9f7fa7b796f3719625ac909123db3",
+  "model_api_calls": 0
+}

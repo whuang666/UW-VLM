@@ -1,0 +1,327 @@
+{
+  "schema": "usim-test-annotation-probe/v1",
+  "episode": 1145,
+  "task_text": "Pick up the red cylinder",
+  "source_package": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\_expansion\\packages\\usim_train_episode_001145\\package.json",
+  "source_package_sha256": "de14c7b573ab76ad875ef9e013061c3586edc936090736fd65db495055a4920f",
+  "source_files": {
+    "parquet": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\data\\chunk-001\\episode_001145.parquet",
+      "sha256": "5aea5e251e6a47c4ac2c9b78a1695acfe4fb313bd68e882e0b0e4b2740682314"
+    },
+    "ego_video": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.ego\\episode_001145.mp4",
+      "sha256": "93805373fca445f5b459510570ce3a95c3c514bd488ec8c35fce139bb5016dba"
+    },
+    "wrist_video": {
+      "path": "E:\\code\\UW-VLM\\usim\\train\\videos\\chunk-001\\observation.images.wrist\\episode_001145.mp4",
+      "sha256": "c679b7743c8b9117d6828115f9c41573a209f248af727eb73d389b9ed07b8c09"
+    },
+    "parquet_rows": 221,
+    "decoded_ego_frames": 221
+  },
+  "decoded_frames": 221,
+  "events": [
+    {
+      "event": "close",
+      "frame": 141
+    }
+  ],
+  "main_close_candidate": 141,
+  "first_close": 141,
+  "dvl_minimum_frame": 144,
+  "dvl_minimum": 0.2438565343618393,
+  "ascent_window_proposal": [
+    184,
+    204
+  ],
+  "onset_note": "DVL minimum followed by rise is only an anchoring proposal; ego evidence decides the label",
+  "hold_motion_threshold": 0.5,
+  "hold_motion_measure": "mean absolute gray-level difference",
+  "hold_runs": [
+    {
+      "start": 0,
+      "end": 15,
+      "length": 16
+    },
+    {
+      "start": 16,
+      "end": 35,
+      "length": 20
+    },
+    {
+      "start": 36,
+      "end": 55,
+      "length": 20
+    },
+    {
+      "start": 56,
+      "end": 75,
+      "length": 20
+    },
+    {
+      "start": 76,
+      "end": 76,
+      "length": 1
+    },
+    {
+      "start": 77,
+      "end": 77,
+      "length": 1
+    },
+    {
+      "start": 78,
+      "end": 97,
+      "length": 20
+    },
+    {
+      "start": 98,
+      "end": 117,
+      "length": 20
+    },
+    {
+      "start": 118,
+      "end": 137,
+      "length": 20
+    },
+    {
+      "start": 138,
+      "end": 138,
+      "length": 1
+    },
+    {
+      "start": 139,
+      "end": 139,
+      "length": 1
+    },
+    {
+      "start": 140,
+      "end": 155,
+      "length": 16
+    },
+    {
+      "start": 156,
+      "end": 171,
+      "length": 16
+    },
+    {
+      "start": 172,
+      "end": 181,
+      "length": 10
+    },
+    {
+      "start": 182,
+      "end": 182,
+      "length": 1
+    },
+    {
+      "start": 183,
+      "end": 183,
+      "length": 1
+    },
+    {
+      "start": 184,
+      "end": 199,
+      "length": 16
+    },
+    {
+      "start": 200,
+      "end": 217,
+      "length": 18
+    },
+    {
+      "start": 218,
+      "end": 219,
+      "length": 2
+    },
+    {
+      "start": 220,
+      "end": 220,
+      "length": 1
+    }
+  ],
+  "candidate_frames": [
+    {
+      "frame": 0,
+      "hold": {
+        "start": 0,
+        "end": 15,
+        "length": 16
+      },
+      "dvl_h": 0.6396782994270325,
+      "gripper_signal": 0.0,
+      "closed_signal": false,
+      "native_png_sha256": "3715b80b02ef1dda6ce1e62336b1c52447170c2678eba38ddbf93502e34f6a47"
+    },
+    {
+      "frame": 51,
+      "hold": {
+        "start": 36,
+        "end": 55,
+        "length": 20
+      },
+      "dvl_h": 0.4771376848220825,
+      "gripper_signal": 2.595797377580311e-05,
+      "closed_signal": false,
+      "native_png_sha256": "3881b8e3f048b66571572a90eec5ba075d36c8b89bd8d546877e5b765760b0d3"
+    },
+    {
+      "frame": 80,
+      "hold": {
+        "start": 78,
+        "end": 97,
+        "length": 20
+      },
+      "dvl_h": 0.3339844346046448,
+      "gripper_signal": 8.263927884399891e-05,
+      "closed_signal": false,
+      "native_png_sha256": "f7e03bdadf4f05777fbdadf50d0544b7c85a3f99fa83c2978ec42e2075330497"
+    },
+    {
+      "frame": 81,
+      "hold": {
+        "start": 78,
+        "end": 97,
+        "length": 20
+      },
+      "dvl_h": 0.3339844346046448,
+      "gripper_signal": 8.263927884399891e-05,
+      "closed_signal": false,
+      "native_png_sha256": "f7e03bdadf4f05777fbdadf50d0544b7c85a3f99fa83c2978ec42e2075330497"
+    },
+    {
+      "frame": 121,
+      "hold": {
+        "start": 118,
+        "end": 137,
+        "length": 20
+      },
+      "dvl_h": 0.2513347268104553,
+      "gripper_signal": 8.263927884399891e-05,
+      "closed_signal": false,
+      "native_png_sha256": "45d08fea9f938927b13131247f8dfda3223c14b8e5611e58093ab82dcf384499"
+    },
+    {
+      "frame": 126,
+      "hold": {
+        "start": 118,
+        "end": 137,
+        "length": 20
+      },
+      "dvl_h": 0.24946175515651703,
+      "gripper_signal": 8.263927884399891e-05,
+      "closed_signal": false,
+      "native_png_sha256": "45d08fea9f938927b13131247f8dfda3223c14b8e5611e58093ab82dcf384499"
+    },
+    {
+      "frame": 131,
+      "hold": {
+        "start": 118,
+        "end": 137,
+        "length": 20
+      },
+      "dvl_h": 0.24862949550151825,
+      "gripper_signal": 8.263927884399891e-05,
+      "closed_signal": false,
+      "native_png_sha256": "45d08fea9f938927b13131247f8dfda3223c14b8e5611e58093ab82dcf384499"
+    },
+    {
+      "frame": 151,
+      "hold": {
+        "start": 140,
+        "end": 155,
+        "length": 16
+      },
+      "dvl_h": 0.24544280767440796,
+      "gripper_signal": 0.014903033152222633,
+      "closed_signal": true,
+      "native_png_sha256": "e4491071dfa7201717658b5c277d7ee2ff477dea9c687a5a6c316beed4a83023"
+    },
+    {
+      "frame": 156,
+      "hold": {
+        "start": 156,
+        "end": 171,
+        "length": 16
+      },
+      "dvl_h": 0.24854598939418793,
+      "gripper_signal": 0.01490305457264185,
+      "closed_signal": true,
+      "native_png_sha256": "b4720a21ebb30dec4ff7fab477c7ef4dd98d31e1e3f2642d3d8b5133f39889e9"
+    },
+    {
+      "frame": 161,
+      "hold": {
+        "start": 156,
+        "end": 171,
+        "length": 16
+      },
+      "dvl_h": 0.24921098351478577,
+      "gripper_signal": 0.014903069473803043,
+      "closed_signal": true,
+      "native_png_sha256": "b4720a21ebb30dec4ff7fab477c7ef4dd98d31e1e3f2642d3d8b5133f39889e9"
+    },
+    {
+      "frame": 184,
+      "hold": {
+        "start": 184,
+        "end": 199,
+        "length": 16
+      },
+      "dvl_h": 0.27333199977874756,
+      "gripper_signal": 0.014903103932738304,
+      "closed_signal": true,
+      "native_png_sha256": "5ff5e60e7a0246b4db41f5ab451ef5f606be703f366ff1922aee50dbbcf40e8d"
+    },
+    {
+      "frame": 189,
+      "hold": {
+        "start": 184,
+        "end": 199,
+        "length": 16
+      },
+      "dvl_h": 0.28806090354919434,
+      "gripper_signal": 0.014902896247804165,
+      "closed_signal": true,
+      "native_png_sha256": "5ff5e60e7a0246b4db41f5ab451ef5f606be703f366ff1922aee50dbbcf40e8d"
+    },
+    {
+      "frame": 194,
+      "hold": {
+        "start": 184,
+        "end": 199,
+        "length": 16
+      },
+      "dvl_h": 0.3105754852294922,
+      "gripper_signal": 0.014903017319738865,
+      "closed_signal": true,
+      "native_png_sha256": "5ff5e60e7a0246b4db41f5ab451ef5f606be703f366ff1922aee50dbbcf40e8d"
+    },
+    {
+      "frame": 199,
+      "hold": {
+        "start": 184,
+        "end": 199,
+        "length": 16
+      },
+      "dvl_h": 0.3249633312225342,
+      "gripper_signal": 0.014902994967997074,
+      "closed_signal": true,
+      "native_png_sha256": "5ff5e60e7a0246b4db41f5ab451ef5f606be703f366ff1922aee50dbbcf40e8d"
+    },
+    {
+      "frame": 204,
+      "hold": {
+        "start": 200,
+        "end": 217,
+        "length": 18
+      },
+      "dvl_h": 0.3443915545940399,
+      "gripper_signal": 0.014902863651514053,
+      "closed_signal": true,
+      "native_png_sha256": "b7bbcf47bd3e4eb3403f0defce4c9fd65adb708c4c7e3f15171c58f5de16db4c"
+    }
+  ],
+  "labels_assigned": false,
+  "model_api_calls": 0
+}

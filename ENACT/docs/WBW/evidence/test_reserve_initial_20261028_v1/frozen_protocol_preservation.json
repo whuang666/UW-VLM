@@ -1,0 +1,9 @@
+{
+  "primary_freeze_ok": true,
+  "primary_groups": 13,
+  "primary_errors": [],
+  "secondary_freeze_ok": true,
+  "secondary_errors": [],
+  "primary_scoring_contract_all_pass": true,
+  "model_api_calls": 0
+}

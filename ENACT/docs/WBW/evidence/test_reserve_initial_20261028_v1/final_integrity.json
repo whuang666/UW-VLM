@@ -1,0 +1,12 @@
+{
+  "new_initial_annotations": 6,
+  "existing_annotations_preserved": 4,
+  "new_annotations_in_reserved_split": true,
+  "overlap_with_dev_or_val": 0,
+  "all_new_annotations_pending_independent_review": true,
+  "ready_for_final_test_release": false,
+  "blank_independent_review_worksheets": 10,
+  "existing_588_result_files_unchanged": 106,
+  "new_model_api_calls": 0,
+  "evidence_helper_sha256": "a8828fb85f7a8c373d555618cdad145fe4b08b155c4c2f38fa6757a2191cad08"
+}

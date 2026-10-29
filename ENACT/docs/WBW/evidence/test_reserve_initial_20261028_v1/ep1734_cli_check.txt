@@ -1,0 +1,21 @@
+[check] usim_train_episode_001734: 4 key frames [150, 274, 312, 359], 3 transitions, 3 visible, 0 empty
+  [OK ] 150 -> 274: The robot now becomes in position for the pre-grasp approach beside the pipe.
+  [OK ] 274 -> 312: The pipe is now grasped by the robot. The robot is no longer in position for the pre-grasp approach beside the pipe.
+  [OK ] 312 -> 359: The pipe is now lifted above the seabed. The pipe is no longer on the seabed.
+  relations: [['OnSeabed', 'pipe'], ['InGripper', 'pipe'], ['Lifted', 'pipe'], ['NextTo', 'robot', 'pipe']]
+{
+  "checked": 1,
+  "ok": 1,
+  "key_frames": 4,
+  "transitions": 3,
+  "visible_transitions": 3,
+  "episodes": [
+    {
+      "episode_key": "usim_train_episode_001734",
+      "key_frames": 4,
+      "transitions": 3,
+      "visible_transitions": 3,
+      "ok": true
+    }
+  ]
+}
