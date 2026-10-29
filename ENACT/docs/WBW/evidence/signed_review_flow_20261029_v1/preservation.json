@@ -1,0 +1,12 @@
+{
+  "schema": "usim-signed-flow-preservation/v1",
+  "source_head": "a6cdc81e7898c8ed73a98d7c70de4a2e51f316e5",
+  "old_files_checked": 551,
+  "changed": [],
+  "added_under_original_review_scopes": [],
+  "original_packets_annotations_qa_predictions_preserved": true,
+  "actual_signed_reviews_supplied": false,
+  "actual_new_test_dataset_created": false,
+  "actual_independent_acceptance": "0/10",
+  "model_api_calls": 0
+}

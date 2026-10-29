@@ -1,0 +1,1415 @@
+{
+  "schema": "usim-human-review-bundle/v1",
+  "packet_version": "test-human-acceptance-workpack-20261029-v2",
+  "packet_manifest_sha256": "78b9673f3830ac14d653efaca8f6f4ad23eee77c5b1f46fbe5c352298917ac07",
+  "reviewer_identity": "",
+  "reviewer_is_human": null,
+  "reviewer_independent_of_first_pass": null,
+  "prior_answer_exposure": null,
+  "worksheets": [
+    {
+      "episode_key": "usim_train_episode_001078",
+      "source_annotation_sha256": "b4e821ca9ad5020d3c808eca42ed6e23e67847c4980a667a3ebc631b99672b9c",
+      "frames": [
+        {
+          "source_frame": 0,
+          "native_png_sha256": "b3e8d08e359b4a040f765f3c663689e47f6e90f5763fadca2b8fb23363a8adfd",
+          "visibility": {
+            "robot": null,
+            "pipe": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "pipe"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "pipe"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "pipe"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        },
+        {
+          "source_frame": 189,
+          "native_png_sha256": "264ec1c236cdc98a9394fe9e46a10f074f2a95ebed887652acda656f94dc2e15",
+          "visibility": {
+            "robot": null,
+            "pipe": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "pipe"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "pipe"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "pipe"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        },
+        {
+          "source_frame": 214,
+          "native_png_sha256": "e2e2ad9a5c82804d84e2e916bd8aeb35087ceb12ee94751787cd3420235752b3",
+          "visibility": {
+            "robot": null,
+            "pipe": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "pipe"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "pipe"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "pipe"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        }
+      ],
+      "transitions": [
+        {
+          "from_frame": 0,
+          "to_frame": 189,
+          "ego_decidable": null,
+          "evidence_note": ""
+        },
+        {
+          "from_frame": 189,
+          "to_frame": 214,
+          "ego_decidable": null,
+          "evidence_note": ""
+        }
+      ],
+      "criteria": {
+        "all_scope_objects_identifiable": null,
+        "all_scope_facts_decidable": null,
+        "all_transitions_ego_decidable": null,
+        "frame_selection_rules_satisfied": null
+      },
+      "decision": null,
+      "decision_reason": "",
+      "review_complete": false,
+      "signature_name": "",
+      "signed_at": "",
+      "attestation": ""
+    },
+    {
+      "episode_key": "usim_train_episode_001145",
+      "source_annotation_sha256": "adf053c253686fda3bb3613ee2904307d772284f33e86441b0ebc92b29a12486",
+      "frames": [
+        {
+          "source_frame": 88,
+          "native_png_sha256": "97c6a7d16ddfeb6c738eb67511c349f3818fe799843ced8af20173b83b18bf8b",
+          "visibility": {
+            "robot": null,
+            "red_cylinder": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "red_cylinder"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        },
+        {
+          "source_frame": 128,
+          "native_png_sha256": "089c3f2ced2729e281bcc7aab785ad11c6a052f8de918a0d328d39af59ccc015",
+          "visibility": {
+            "robot": null,
+            "red_cylinder": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "red_cylinder"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        },
+        {
+          "source_frame": 161,
+          "native_png_sha256": "c2172fa26cb611fb0f686a676f4d0a3238505cb8021e9191edb8ef55c0fc2305",
+          "visibility": {
+            "robot": null,
+            "red_cylinder": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "red_cylinder"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        }
+      ],
+      "transitions": [
+        {
+          "from_frame": 88,
+          "to_frame": 128,
+          "ego_decidable": null,
+          "evidence_note": ""
+        },
+        {
+          "from_frame": 128,
+          "to_frame": 161,
+          "ego_decidable": null,
+          "evidence_note": ""
+        }
+      ],
+      "criteria": {
+        "all_scope_objects_identifiable": null,
+        "all_scope_facts_decidable": null,
+        "all_transitions_ego_decidable": null,
+        "frame_selection_rules_satisfied": null
+      },
+      "decision": null,
+      "decision_reason": "",
+      "review_complete": false,
+      "signature_name": "",
+      "signed_at": "",
+      "attestation": ""
+    },
+    {
+      "episode_key": "usim_train_episode_001259",
+      "source_annotation_sha256": "d4bb62fef0cfdb381b138f6691471cca1ae001f675bea90336a023caa7ff1583",
+      "frames": [
+        {
+          "source_frame": 57,
+          "native_png_sha256": "54ca33069621cb08797288670426becca2259d3f0442108836a671e16d2db147",
+          "visibility": {
+            "robot": null,
+            "blue_cylinder": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "blue_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "blue_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "blue_cylinder"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        },
+        {
+          "source_frame": 170,
+          "native_png_sha256": "6c46aa79037333426ff779b4f28b4dc66f692569035b75bedfa900ad8f46cdd8",
+          "visibility": {
+            "robot": null,
+            "blue_cylinder": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "blue_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "blue_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "blue_cylinder"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        },
+        {
+          "source_frame": 203,
+          "native_png_sha256": "e223e33929e3b3e7af0a097709ab219dda15d808843b737f5f0ef85eb3477b0a",
+          "visibility": {
+            "robot": null,
+            "blue_cylinder": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "blue_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "blue_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "blue_cylinder"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        }
+      ],
+      "transitions": [
+        {
+          "from_frame": 57,
+          "to_frame": 170,
+          "ego_decidable": null,
+          "evidence_note": ""
+        },
+        {
+          "from_frame": 170,
+          "to_frame": 203,
+          "ego_decidable": null,
+          "evidence_note": ""
+        }
+      ],
+      "criteria": {
+        "all_scope_objects_identifiable": null,
+        "all_scope_facts_decidable": null,
+        "all_transitions_ego_decidable": null,
+        "frame_selection_rules_satisfied": null
+      },
+      "decision": null,
+      "decision_reason": "",
+      "review_complete": false,
+      "signature_name": "",
+      "signed_at": "",
+      "attestation": ""
+    },
+    {
+      "episode_key": "usim_train_episode_001273",
+      "source_annotation_sha256": "2a403389f39d0c8b95a76aeeebd27dffd2f3bbdf82599d439605283ed2718d3f",
+      "frames": [
+        {
+          "source_frame": 179,
+          "native_png_sha256": "5c547391dbb3d9615d9dc2ea401e012b9c40e37928935d71f44d83f11600a2cb",
+          "visibility": {
+            "robot": null,
+            "blue_cylinder": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "blue_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "blue_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "blue_cylinder"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        },
+        {
+          "source_frame": 261,
+          "native_png_sha256": "0e54ca5a09c5329c9774b9787d2b41d2429c557eee808dc71af96bfb6c5fabd9",
+          "visibility": {
+            "robot": null,
+            "blue_cylinder": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "blue_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "blue_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "blue_cylinder"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        },
+        {
+          "source_frame": 288,
+          "native_png_sha256": "6111a576173135bebbc4cea0e54977de596b94494e22ea0ea5499a8008bd8338",
+          "visibility": {
+            "robot": null,
+            "blue_cylinder": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "blue_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "blue_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "blue_cylinder"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        }
+      ],
+      "transitions": [
+        {
+          "from_frame": 179,
+          "to_frame": 261,
+          "ego_decidable": null,
+          "evidence_note": ""
+        },
+        {
+          "from_frame": 261,
+          "to_frame": 288,
+          "ego_decidable": null,
+          "evidence_note": ""
+        }
+      ],
+      "criteria": {
+        "all_scope_objects_identifiable": null,
+        "all_scope_facts_decidable": null,
+        "all_transitions_ego_decidable": null,
+        "frame_selection_rules_satisfied": null
+      },
+      "decision": null,
+      "decision_reason": "",
+      "review_complete": false,
+      "signature_name": "",
+      "signed_at": "",
+      "attestation": ""
+    },
+    {
+      "episode_key": "usim_train_episode_001378",
+      "source_annotation_sha256": "54023b4712b8b9dde3e969ad0641768966c933c508420ad230906ddd7dfc69e1",
+      "frames": [
+        {
+          "source_frame": 60,
+          "native_png_sha256": "7b0ac4f1142a938526d0742f32463a4046e8f6dfb611f50a7a537fc0f4410ee8",
+          "visibility": {
+            "robot": null,
+            "red_cylinder": null,
+            "green_box": null
+          },
+          "facts": [
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NearBox",
+              "arguments": [
+                "robot",
+                "green_box"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        },
+        {
+          "source_frame": 176,
+          "native_png_sha256": "3a5684b1b007bd64b946e56d5dcf99cc6a5f211cda81a9f53eeae9e1b60502d2",
+          "visibility": {
+            "robot": null,
+            "red_cylinder": null,
+            "green_box": null
+          },
+          "facts": [
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NearBox",
+              "arguments": [
+                "robot",
+                "green_box"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        },
+        {
+          "source_frame": 206,
+          "native_png_sha256": "cf240ac1c8e06cf0bc51ca80295234e2c6ad5c15c5d5cd4c679e0bdb188b72a0",
+          "visibility": {
+            "robot": null,
+            "red_cylinder": null,
+            "green_box": null
+          },
+          "facts": [
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NearBox",
+              "arguments": [
+                "robot",
+                "green_box"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        },
+        {
+          "source_frame": 448,
+          "native_png_sha256": "f987fce2b529d93371fbf61672490f19c8b91aa9802b819e05cb7ba4ec709a2b",
+          "visibility": {
+            "robot": null,
+            "red_cylinder": null,
+            "green_box": null
+          },
+          "facts": [
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NearBox",
+              "arguments": [
+                "robot",
+                "green_box"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        }
+      ],
+      "transitions": [
+        {
+          "from_frame": 60,
+          "to_frame": 176,
+          "ego_decidable": null,
+          "evidence_note": ""
+        },
+        {
+          "from_frame": 176,
+          "to_frame": 206,
+          "ego_decidable": null,
+          "evidence_note": ""
+        },
+        {
+          "from_frame": 206,
+          "to_frame": 448,
+          "ego_decidable": null,
+          "evidence_note": ""
+        }
+      ],
+      "criteria": {
+        "all_scope_objects_identifiable": null,
+        "all_scope_facts_decidable": null,
+        "all_transitions_ego_decidable": null,
+        "frame_selection_rules_satisfied": null
+      },
+      "decision": null,
+      "decision_reason": "",
+      "review_complete": false,
+      "signature_name": "",
+      "signed_at": "",
+      "attestation": ""
+    },
+    {
+      "episode_key": "usim_train_episode_001384",
+      "source_annotation_sha256": "ae449a25aee7e41951f90c717aa35e8ea3ccdceab3522d68e1ff379ae1157b1a",
+      "frames": [
+        {
+          "source_frame": 164,
+          "native_png_sha256": "3e5764f429977829c7b387c992fe92c72e21532e61623f4d5d31cc563d7fb980",
+          "visibility": {
+            "robot": null,
+            "red_cylinder": null,
+            "green_box": null
+          },
+          "facts": [
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NearBox",
+              "arguments": [
+                "robot",
+                "green_box"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        },
+        {
+          "source_frame": 209,
+          "native_png_sha256": "4ffc325b15aada13b486ac8579b737d9ae6a0bc086d5d8005221a6fefd55835a",
+          "visibility": {
+            "robot": null,
+            "red_cylinder": null,
+            "green_box": null
+          },
+          "facts": [
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NearBox",
+              "arguments": [
+                "robot",
+                "green_box"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        },
+        {
+          "source_frame": 239,
+          "native_png_sha256": "5ab55db234d53289bf69db0c758c478f745d19d14256fe016fc9d959261c3fb6",
+          "visibility": {
+            "robot": null,
+            "red_cylinder": null,
+            "green_box": null
+          },
+          "facts": [
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NearBox",
+              "arguments": [
+                "robot",
+                "green_box"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        },
+        {
+          "source_frame": 486,
+          "native_png_sha256": "9d725170f87836892b1cd945ca12403ca1881ecdb01ea465d7fa0746b1f21e82",
+          "visibility": {
+            "robot": null,
+            "red_cylinder": null,
+            "green_box": null
+          },
+          "facts": [
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NearBox",
+              "arguments": [
+                "robot",
+                "green_box"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        }
+      ],
+      "transitions": [
+        {
+          "from_frame": 164,
+          "to_frame": 209,
+          "ego_decidable": null,
+          "evidence_note": ""
+        },
+        {
+          "from_frame": 209,
+          "to_frame": 239,
+          "ego_decidable": null,
+          "evidence_note": ""
+        },
+        {
+          "from_frame": 239,
+          "to_frame": 486,
+          "ego_decidable": null,
+          "evidence_note": ""
+        }
+      ],
+      "criteria": {
+        "all_scope_objects_identifiable": null,
+        "all_scope_facts_decidable": null,
+        "all_transitions_ego_decidable": null,
+        "frame_selection_rules_satisfied": null
+      },
+      "decision": null,
+      "decision_reason": "",
+      "review_complete": false,
+      "signature_name": "",
+      "signed_at": "",
+      "attestation": ""
+    },
+    {
+      "episode_key": "usim_train_episode_001497",
+      "source_annotation_sha256": "eddde311e35f519ac02f928ffe87b50bc34db1e4f63bdb3b00dc4535f2ed4b91",
+      "frames": [
+        {
+          "source_frame": 42,
+          "native_png_sha256": "41b0ce2758b1ab879e2769a09c3cefbb9a9f10479c50b02f9c7a404a9225578b",
+          "visibility": {
+            "robot": null,
+            "red_cylinder": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "red_cylinder"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        },
+        {
+          "source_frame": 111,
+          "native_png_sha256": "d539dd52185745e1637a6ba31f63e2f691ab709a935cedad2c93ba51b1bc96b2",
+          "visibility": {
+            "robot": null,
+            "red_cylinder": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "red_cylinder"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        },
+        {
+          "source_frame": 145,
+          "native_png_sha256": "6b8e4fef5ba099746d4711e00253cb35cdb8f510d1bf8d41c9b28922af3f1bac",
+          "visibility": {
+            "robot": null,
+            "red_cylinder": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "red_cylinder"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        }
+      ],
+      "transitions": [
+        {
+          "from_frame": 42,
+          "to_frame": 111,
+          "ego_decidable": null,
+          "evidence_note": ""
+        },
+        {
+          "from_frame": 111,
+          "to_frame": 145,
+          "ego_decidable": null,
+          "evidence_note": ""
+        }
+      ],
+      "criteria": {
+        "all_scope_objects_identifiable": null,
+        "all_scope_facts_decidable": null,
+        "all_transitions_ego_decidable": null,
+        "frame_selection_rules_satisfied": null
+      },
+      "decision": null,
+      "decision_reason": "",
+      "review_complete": false,
+      "signature_name": "",
+      "signed_at": "",
+      "attestation": ""
+    },
+    {
+      "episode_key": "usim_train_episode_001549",
+      "source_annotation_sha256": "e8cfa4b7901bf0d30e3e64f5fbf3eeda678808a3116c8ecd225ac7e1a88410d3",
+      "frames": [
+        {
+          "source_frame": 75,
+          "native_png_sha256": "d9495f21a0746da0ca55db8c63c0622e75c02aa0b84831d72dfa498da720deb0",
+          "visibility": {
+            "robot": null,
+            "red_cylinder": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "red_cylinder"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        },
+        {
+          "source_frame": 183,
+          "native_png_sha256": "174dc833eb9dd530a8161e6ebb854c2176d4ab4b35c14827ab1d9467d010a2b7",
+          "visibility": {
+            "robot": null,
+            "red_cylinder": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "red_cylinder"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        },
+        {
+          "source_frame": 219,
+          "native_png_sha256": "d75af5ad5977f3917adb48c07c5588d04f0d91578007768e3c2a379ba956e7c9",
+          "visibility": {
+            "robot": null,
+            "red_cylinder": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "red_cylinder"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "red_cylinder"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        }
+      ],
+      "transitions": [
+        {
+          "from_frame": 75,
+          "to_frame": 183,
+          "ego_decidable": null,
+          "evidence_note": ""
+        },
+        {
+          "from_frame": 183,
+          "to_frame": 219,
+          "ego_decidable": null,
+          "evidence_note": ""
+        }
+      ],
+      "criteria": {
+        "all_scope_objects_identifiable": null,
+        "all_scope_facts_decidable": null,
+        "all_transitions_ego_decidable": null,
+        "frame_selection_rules_satisfied": null
+      },
+      "decision": null,
+      "decision_reason": "",
+      "review_complete": false,
+      "signature_name": "",
+      "signed_at": "",
+      "attestation": ""
+    },
+    {
+      "episode_key": "usim_train_episode_001650",
+      "source_annotation_sha256": "1c0380e6f98cbd8baaa00cbc72456715e95da3972436013936946c62629564d5",
+      "frames": [
+        {
+          "source_frame": 0,
+          "native_png_sha256": "18d1b4d7c33900d5bad615c9f22f152bcb2a922bea391d10f1bd8c43c8f40e36",
+          "visibility": {
+            "robot": null,
+            "pipe": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "pipe"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "pipe"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "pipe"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        },
+        {
+          "source_frame": 190,
+          "native_png_sha256": "a30c868cd91b68dc1dfab209d94e2454e117d3f15011ce655163ba289085abd0",
+          "visibility": {
+            "robot": null,
+            "pipe": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "pipe"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "pipe"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "pipe"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        },
+        {
+          "source_frame": 219,
+          "native_png_sha256": "a30c868cd91b68dc1dfab209d94e2454e117d3f15011ce655163ba289085abd0",
+          "visibility": {
+            "robot": null,
+            "pipe": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "pipe"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "pipe"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "pipe"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        }
+      ],
+      "transitions": [
+        {
+          "from_frame": 0,
+          "to_frame": 190,
+          "ego_decidable": null,
+          "evidence_note": ""
+        },
+        {
+          "from_frame": 190,
+          "to_frame": 219,
+          "ego_decidable": null,
+          "evidence_note": ""
+        }
+      ],
+      "criteria": {
+        "all_scope_objects_identifiable": null,
+        "all_scope_facts_decidable": null,
+        "all_transitions_ego_decidable": null,
+        "frame_selection_rules_satisfied": null
+      },
+      "decision": null,
+      "decision_reason": "",
+      "review_complete": false,
+      "signature_name": "",
+      "signed_at": "",
+      "attestation": ""
+    },
+    {
+      "episode_key": "usim_train_episode_001734",
+      "source_annotation_sha256": "1546a120ef45994c0e420bb9fcf92476dff21b0b1e7eb2691d6ca194da0724e3",
+      "frames": [
+        {
+          "source_frame": 150,
+          "native_png_sha256": "a77e4b6e68f4af5bfb9fa3eb79d8f9a75d67155b33a239a21a1f53a501a34368",
+          "visibility": {
+            "robot": null,
+            "pipe": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "pipe"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "pipe"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "pipe"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        },
+        {
+          "source_frame": 274,
+          "native_png_sha256": "edf361da820af3bb1e84b701b798bc006d6a79ec685bded001bea5d6395ff07c",
+          "visibility": {
+            "robot": null,
+            "pipe": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "pipe"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "pipe"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "pipe"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        },
+        {
+          "source_frame": 312,
+          "native_png_sha256": "10323bdf3a2bff477946c715c05e377649d9c368ef4b7185f07b71f5de29ed54",
+          "visibility": {
+            "robot": null,
+            "pipe": null
+          },
+          "facts": [
+            {
+              "predicate": "OnSeabed",
+              "arguments": [
+                "pipe"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "InGripper",
+              "arguments": [
+                "pipe"
+              ],
+              "value": null
+            },
+            {
+              "predicate": "NextTo",
+              "arguments": [
+                "robot",
+                "pipe"
+              ],
+              "value": null
+            }
+          ],
+          "evidence_note": ""
+        }
+      ],
+      "transitions": [
+        {
+          "from_frame": 150,
+          "to_frame": 274,
+          "ego_decidable": null,
+          "evidence_note": ""
+        },
+        {
+          "from_frame": 274,
+          "to_frame": 312,
+          "ego_decidable": null,
+          "evidence_note": ""
+        }
+      ],
+      "criteria": {
+        "all_scope_objects_identifiable": null,
+        "all_scope_facts_decidable": null,
+        "all_transitions_ego_decidable": null,
+        "frame_selection_rules_satisfied": null
+      },
+      "decision": null,
+      "decision_reason": "",
+      "review_complete": false,
+      "signature_name": "",
+      "signed_at": "",
+      "attestation": ""
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "schema": "usim-signed-flow-smoke/v1",
+  "actual_unsigned_run_exit": 2,
+  "actual_selected_episodes": 0,
+  "actual_new_dataset_created": false,
+  "synthetic_only_positive_fixture": true,
+  "synthetic_episodes": 9,
+  "synthetic_questions": 18,
+  "synthetic_presented_images": 58,
+  "synthetic_accepted_permutations": {
+    "1": 18
+  },
+  "synthetic_permutation_checks": 52,
+  "synthetic_chance_exact": "23/54",
+  "synthetic_best_length_constant": "4/9",
+  "synthetic_best_direction_length_constant": "5/9",
+  "synthetic_oracle": {
+    "count": 18,
+    "valid_permutations": 18,
+    "invalid_or_missing": 0,
+    "invalid_reasons": {},
+    "EM": 1.0,
+    "semantic_only": 0.0,
+    "TA": 1.0,
+    "PA_item_mean": 1.0,
+    "PA_transition_micro": 1.0,
+    "transitions_total": 40
+  },
+  "synthetic_text_baseline": {
+    "overall": {
+      "count": 18,
+      "transitions_total": 40,
+      "EM": 0.7778,
+      "TA": 0.7778,
+      "PA_item_mean": 0.8148,
+      "PA_transition_micro": 0.825,
+      "invalid_or_missing": 0,
+      "invalid_reasons": {},
+      "identity_answer_rate": 0.6667
+    },
+    "by_direction": {
+      "forward": {
+        "count": 9,
+        "transitions_total": 20,
+        "EM": 0.5556,
+        "TA": 0.5556,
+        "PA_item_mean": 0.6296,
+        "PA_transition_micro": 0.65,
+        "invalid_or_missing": 0,
+        "invalid_reasons": {},
+        "identity_answer_rate": 1.0
+      },
+      "inverse": {
+        "count": 9,
+        "transitions_total": 20,
+        "EM": 1.0,
+        "TA": 1.0,
+        "PA_item_mean": 1.0,
+        "PA_transition_micro": 1.0,
+        "invalid_or_missing": 0,
+        "invalid_reasons": {},
+        "identity_answer_rate": 0.3333
+      }
+    },
+    "by_setting": {
+      "forward_L3": {
+        "count": 7,
+        "transitions_total": 14,
+        "EM": 0.5714,
+        "TA": 0.5714,
+        "PA_item_mean": 0.5714,
+        "PA_transition_micro": 0.5714,
+        "invalid_or_missing": 0,
+        "invalid_reasons": {},
+        "identity_answer_rate": 1.0
+      },
+      "forward_L4": {
+        "count": 2,
+        "transitions_total": 6,
+        "EM": 0.5,
+        "TA": 0.5,
+        "PA_item_mean": 0.8333,
+        "PA_transition_micro": 0.8333,
+        "invalid_or_missing": 0,
+        "invalid_reasons": {},
+        "identity_answer_rate": 1.0
+      },
+      "inverse_L3": {
+        "count": 7,
+        "transitions_total": 14,
+        "EM": 1.0,
+        "TA": 1.0,
+        "PA_item_mean": 1.0,
+        "PA_transition_micro": 1.0,
+        "invalid_or_missing": 0,
+        "invalid_reasons": {},
+        "identity_answer_rate": 0.4286
+      },
+      "inverse_L4": {
+        "count": 2,
+        "transitions_total": 6,
+        "EM": 1.0,
+        "TA": 1.0,
+        "PA_item_mean": 1.0,
+        "PA_transition_micro": 1.0,
+        "invalid_or_missing": 0,
+        "invalid_reasons": {},
+        "identity_answer_rate": 0.0
+      }
+    }
+  },
+  "synthetic_asset_file_count": 146,
+  "synthetic_snapshot_file_hashes_match": true,
+  "synthetic_work_dir": "ENACT/data/usim_enact/_review/test_reserve/signed_flow_smoke_20261029_final/tools_out",
+  "builder_sha256": "bb60bf3c3798b21cb05b7de93bdb175c7eb599a7df32e9171766f7aa0b9a67d8",
+  "actual_independent_acceptance": "0/10",
+  "model_api_calls": 0,
+  "release_eligible": false
+}

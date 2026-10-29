@@ -1,0 +1,147 @@
+{
+  "selected": [],
+  "excluded": [],
+  "changes_required": [],
+  "unresolved": [
+    {
+      "episode_key": "usim_train_episode_001078",
+      "decision": null,
+      "decision_reason": "",
+      "review_errors": [
+        "Review incomplete",
+        "Decision missing or unsupported",
+        "Decision reason missing",
+        "Named reviewer signature/attestation missing or inconsistent",
+        "Valid signed_at with timezone missing"
+      ],
+      "source_annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/annotations/episodes/usim_train_episode_001078.json",
+      "source_annotation_sha256": "b4e821ca9ad5020d3c808eca42ed6e23e67847c4980a667a3ebc631b99672b9c"
+    },
+    {
+      "episode_key": "usim_train_episode_001145",
+      "decision": null,
+      "decision_reason": "",
+      "review_errors": [
+        "Review incomplete",
+        "Decision missing or unsupported",
+        "Decision reason missing",
+        "Named reviewer signature/attestation missing or inconsistent",
+        "Valid signed_at with timezone missing"
+      ],
+      "source_annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/annotations/episodes/usim_train_episode_001145.json",
+      "source_annotation_sha256": "adf053c253686fda3bb3613ee2904307d772284f33e86441b0ebc92b29a12486"
+    },
+    {
+      "episode_key": "usim_train_episode_001259",
+      "decision": null,
+      "decision_reason": "",
+      "review_errors": [
+        "Review incomplete",
+        "Decision missing or unsupported",
+        "Decision reason missing",
+        "Named reviewer signature/attestation missing or inconsistent",
+        "Valid signed_at with timezone missing"
+      ],
+      "source_annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/annotations/episodes/usim_train_episode_001259.json",
+      "source_annotation_sha256": "d4bb62fef0cfdb381b138f6691471cca1ae001f675bea90336a023caa7ff1583"
+    },
+    {
+      "episode_key": "usim_train_episode_001273",
+      "decision": null,
+      "decision_reason": "",
+      "review_errors": [
+        "Review incomplete",
+        "Decision missing or unsupported",
+        "Decision reason missing",
+        "Named reviewer signature/attestation missing or inconsistent",
+        "Valid signed_at with timezone missing"
+      ],
+      "source_annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/annotations/episodes/usim_train_episode_001273.json",
+      "source_annotation_sha256": "2a403389f39d0c8b95a76aeeebd27dffd2f3bbdf82599d439605283ed2718d3f"
+    },
+    {
+      "episode_key": "usim_train_episode_001378",
+      "decision": null,
+      "decision_reason": "",
+      "review_errors": [
+        "Review incomplete",
+        "Decision missing or unsupported",
+        "Decision reason missing",
+        "Named reviewer signature/attestation missing or inconsistent",
+        "Valid signed_at with timezone missing"
+      ],
+      "source_annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/annotations/episodes/usim_train_episode_001378.json",
+      "source_annotation_sha256": "54023b4712b8b9dde3e969ad0641768966c933c508420ad230906ddd7dfc69e1"
+    },
+    {
+      "episode_key": "usim_train_episode_001384",
+      "decision": null,
+      "decision_reason": "",
+      "review_errors": [
+        "Review incomplete",
+        "Decision missing or unsupported",
+        "Decision reason missing",
+        "Named reviewer signature/attestation missing or inconsistent",
+        "Valid signed_at with timezone missing"
+      ],
+      "source_annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/annotations/episodes/usim_train_episode_001384.json",
+      "source_annotation_sha256": "ae449a25aee7e41951f90c717aa35e8ea3ccdceab3522d68e1ff379ae1157b1a"
+    },
+    {
+      "episode_key": "usim_train_episode_001497",
+      "decision": null,
+      "decision_reason": "",
+      "review_errors": [
+        "Review incomplete",
+        "Decision missing or unsupported",
+        "Decision reason missing",
+        "Named reviewer signature/attestation missing or inconsistent",
+        "Valid signed_at with timezone missing"
+      ],
+      "source_annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/annotations/episodes/usim_train_episode_001497.json",
+      "source_annotation_sha256": "eddde311e35f519ac02f928ffe87b50bc34db1e4f63bdb3b00dc4535f2ed4b91"
+    },
+    {
+      "episode_key": "usim_train_episode_001549",
+      "decision": null,
+      "decision_reason": "",
+      "review_errors": [
+        "Review incomplete",
+        "Decision missing or unsupported",
+        "Decision reason missing",
+        "Named reviewer signature/attestation missing or inconsistent",
+        "Valid signed_at with timezone missing"
+      ],
+      "source_annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/annotations/episodes/usim_train_episode_001549.json",
+      "source_annotation_sha256": "e8cfa4b7901bf0d30e3e64f5fbf3eeda678808a3116c8ecd225ac7e1a88410d3"
+    },
+    {
+      "episode_key": "usim_train_episode_001650",
+      "decision": null,
+      "decision_reason": "",
+      "review_errors": [
+        "Review incomplete",
+        "Decision missing or unsupported",
+        "Decision reason missing",
+        "Named reviewer signature/attestation missing or inconsistent",
+        "Valid signed_at with timezone missing"
+      ],
+      "source_annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/annotations/episodes/usim_train_episode_001650.json",
+      "source_annotation_sha256": "1c0380e6f98cbd8baaa00cbc72456715e95da3972436013936946c62629564d5"
+    },
+    {
+      "episode_key": "usim_train_episode_001734",
+      "decision": null,
+      "decision_reason": "",
+      "review_errors": [
+        "Review incomplete",
+        "Decision missing or unsupported",
+        "Decision reason missing",
+        "Named reviewer signature/attestation missing or inconsistent",
+        "Valid signed_at with timezone missing"
+      ],
+      "source_annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/annotations/episodes/usim_train_episode_001734.json",
+      "source_annotation_sha256": "1546a120ef45994c0e420bb9fcf92476dff21b0b1e7eb2691d6ca194da0724e3"
+    }
+  ]
+}

@@ -1,0 +1,1702 @@
+{
+  "schema": "usim-human-review-packet/v1",
+  "version": "test-human-acceptance-workpack-20261029-v2",
+  "candidate_qa_version": "test-reserve-balanced-qa-20261029-v1",
+  "candidate_snapshot_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/candidate_input_snapshot.json",
+  "candidate_snapshot_sha256": "6cc699908ffb78134795645203893cf36abec97449ee070f0f56722492358835",
+  "dataset_root": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1",
+  "episodes": [
+    {
+      "episode_key": "usim_train_episode_001078",
+      "episode": 1078,
+      "task_text": "Pick up the pipe",
+      "family": "pick",
+      "objects": [
+        {
+          "object_id": "robot",
+          "category": "agent",
+          "description": "the robot"
+        },
+        {
+          "object_id": "pipe",
+          "category": "pipe",
+          "description": "the grey segmented pipe"
+        }
+      ],
+      "scope": [
+        [
+          "OnSeabed",
+          "pipe"
+        ],
+        [
+          "InGripper",
+          "pipe"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "pipe"
+        ]
+      ],
+      "frames": [
+        {
+          "slot": 1,
+          "source_frame": 0,
+          "path": "images/ep001078_slot01.png",
+          "sha256": "b3e8d08e359b4a040f765f3c663689e47f6e90f5763fadca2b8fb23363a8adfd",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001078/external_sensor1/00000.png",
+          "motion_hold": {
+            "index": 0,
+            "start": 0,
+            "end": 7,
+            "length": 8
+          },
+          "context": [
+            {
+              "relation": "following",
+              "source_frame": 14,
+              "path": "images/ep001078_slot01_following.png",
+              "sha256": "4b88c37cbb7a17bd631d38bac0b7d9f207bff07f2313b3290047d64cb3fba955",
+              "motion_hold": {
+                "index": 1,
+                "start": 8,
+                "end": 21,
+                "length": 14
+              }
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "source_frame": 189,
+          "path": "images/ep001078_slot02.png",
+          "sha256": "264ec1c236cdc98a9394fe9e46a10f074f2a95ebed887652acda656f94dc2e15",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001078/external_sensor1/00189.png",
+          "motion_hold": {
+            "index": 24,
+            "start": 182,
+            "end": 193,
+            "length": 12
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 174,
+              "path": "images/ep001078_slot02_previous.png",
+              "sha256": "9bea7e78889a7f8955c8bfdbe29221e13b4fb1465a081d8c0bbe9ce57867afda",
+              "motion_hold": {
+                "index": 23,
+                "start": 168,
+                "end": 181,
+                "length": 14
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 201,
+              "path": "images/ep001078_slot02_following.png",
+              "sha256": "e3eb1b1d664ab07350e42582f12b15fd7ab2605c8e19be2f5a2eae5da37a0906",
+              "motion_hold": {
+                "index": 27,
+                "start": 196,
+                "end": 207,
+                "length": 12
+              }
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "source_frame": 214,
+          "path": "images/ep001078_slot03.png",
+          "sha256": "e2e2ad9a5c82804d84e2e916bd8aeb35087ceb12ee94751787cd3420235752b3",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001078/external_sensor1/00214.png",
+          "motion_hold": {
+            "index": 28,
+            "start": 208,
+            "end": 221,
+            "length": 14
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 201,
+              "path": "images/ep001078_slot03_previous.png",
+              "sha256": "e3eb1b1d664ab07350e42582f12b15fd7ab2605c8e19be2f5a2eae5da37a0906",
+              "motion_hold": {
+                "index": 27,
+                "start": 196,
+                "end": 207,
+                "length": 12
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 228,
+              "path": "images/ep001078_slot03_following.png",
+              "sha256": "fd99e5292b121f1f96d2f282b208fc0714c21e4b0b0ab0836c01fc0b431950ef",
+              "motion_hold": {
+                "index": 29,
+                "start": 222,
+                "end": 235,
+                "length": 14
+              }
+            }
+          ]
+        }
+      ],
+      "source_annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/annotations/episodes/usim_train_episode_001078.json",
+      "source_annotation_sha256": "b4e821ca9ad5020d3c808eca42ed6e23e67847c4980a667a3ebc631b99672b9c",
+      "source_video_sha256": "7310d1ed9ea0b2156ad31382d755ef4c68e442525c9e7d6cd3740bde8922a0c6",
+      "frame_gaps": [
+        189,
+        25
+      ],
+      "video_frames": 308,
+      "proposal_facts_included": false
+    },
+    {
+      "episode_key": "usim_train_episode_001145",
+      "episode": 1145,
+      "task_text": "Pick up the red cylinder",
+      "family": "pick",
+      "objects": [
+        {
+          "object_id": "robot",
+          "category": "agent",
+          "description": "the robot"
+        },
+        {
+          "object_id": "red_cylinder",
+          "category": "cylinder",
+          "color": "red",
+          "description": "the red cylinder in front of the gripper"
+        }
+      ],
+      "scope": [
+        [
+          "OnSeabed",
+          "red_cylinder"
+        ],
+        [
+          "InGripper",
+          "red_cylinder"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "red_cylinder"
+        ]
+      ],
+      "frames": [
+        {
+          "slot": 1,
+          "source_frame": 88,
+          "path": "images/ep001145_slot01.png",
+          "sha256": "97c6a7d16ddfeb6c738eb67511c349f3818fe799843ced8af20173b83b18bf8b",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001145/external_sensor1/00088.png",
+          "motion_hold": {
+            "index": 6,
+            "start": 78,
+            "end": 97,
+            "length": 20
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 65,
+              "path": "images/ep001145_slot01_previous.png",
+              "sha256": "6f41fec490696cb9707d6dcf154232f32ce7ee1b5b8238ce1bc69400c307d940",
+              "motion_hold": {
+                "index": 3,
+                "start": 56,
+                "end": 75,
+                "length": 20
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 107,
+              "path": "images/ep001145_slot01_following.png",
+              "sha256": "754a71bd4d714f244d7a74b451b41b6028a71830d7f2e2bf4d1216c5026a84fa",
+              "motion_hold": {
+                "index": 7,
+                "start": 98,
+                "end": 117,
+                "length": 20
+              }
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "source_frame": 128,
+          "path": "images/ep001145_slot02.png",
+          "sha256": "089c3f2ced2729e281bcc7aab785ad11c6a052f8de918a0d328d39af59ccc015",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001145/external_sensor1/00128.png",
+          "motion_hold": {
+            "index": 8,
+            "start": 118,
+            "end": 137,
+            "length": 20
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 107,
+              "path": "images/ep001145_slot02_previous.png",
+              "sha256": "754a71bd4d714f244d7a74b451b41b6028a71830d7f2e2bf4d1216c5026a84fa",
+              "motion_hold": {
+                "index": 7,
+                "start": 98,
+                "end": 117,
+                "length": 20
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 147,
+              "path": "images/ep001145_slot02_following.png",
+              "sha256": "b0b40a80048f9d0df0c12f2dc2ace04e89aa65a3a9439efd98ceedb6346b5921",
+              "motion_hold": {
+                "index": 11,
+                "start": 140,
+                "end": 155,
+                "length": 16
+              }
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "source_frame": 161,
+          "path": "images/ep001145_slot03.png",
+          "sha256": "c2172fa26cb611fb0f686a676f4d0a3238505cb8021e9191edb8ef55c0fc2305",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001145/external_sensor1/00161.png",
+          "motion_hold": {
+            "index": 12,
+            "start": 156,
+            "end": 171,
+            "length": 16
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 147,
+              "path": "images/ep001145_slot03_previous.png",
+              "sha256": "b0b40a80048f9d0df0c12f2dc2ace04e89aa65a3a9439efd98ceedb6346b5921",
+              "motion_hold": {
+                "index": 11,
+                "start": 140,
+                "end": 155,
+                "length": 16
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 176,
+              "path": "images/ep001145_slot03_following.png",
+              "sha256": "e0ab359dc9c653ce957ef0e553b0d2a590a4067a36116d39bcf4205d21d9ed29",
+              "motion_hold": {
+                "index": 13,
+                "start": 172,
+                "end": 181,
+                "length": 10
+              }
+            }
+          ]
+        }
+      ],
+      "source_annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/annotations/episodes/usim_train_episode_001145.json",
+      "source_annotation_sha256": "adf053c253686fda3bb3613ee2904307d772284f33e86441b0ebc92b29a12486",
+      "source_video_sha256": "93805373fca445f5b459510570ce3a95c3c514bd488ec8c35fce139bb5016dba",
+      "frame_gaps": [
+        40,
+        33
+      ],
+      "video_frames": 221,
+      "proposal_facts_included": false
+    },
+    {
+      "episode_key": "usim_train_episode_001259",
+      "episode": 1259,
+      "task_text": "Pick up the blue cylinder",
+      "family": "pick",
+      "objects": [
+        {
+          "object_id": "robot",
+          "category": "agent",
+          "description": "the robot"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "category": "cylinder",
+          "color": "blue",
+          "description": "the blue cylinder, rendered purple in the ego stream"
+        }
+      ],
+      "scope": [
+        [
+          "OnSeabed",
+          "blue_cylinder"
+        ],
+        [
+          "InGripper",
+          "blue_cylinder"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "blue_cylinder"
+        ]
+      ],
+      "frames": [
+        {
+          "slot": 1,
+          "source_frame": 57,
+          "path": "images/ep001259_slot01.png",
+          "sha256": "54ca33069621cb08797288670426becca2259d3f0442108836a671e16d2db147",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001259/external_sensor1/00057.png",
+          "motion_hold": {
+            "index": 6,
+            "start": 44,
+            "end": 69,
+            "length": 26
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 36,
+              "path": "images/ep001259_slot01_previous.png",
+              "sha256": "c8ac880273555c22114f057a6375688fa15161e9e9a7909ed75edc4c68b8ce3f",
+              "motion_hold": {
+                "index": 5,
+                "start": 30,
+                "end": 43,
+                "length": 14
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 73,
+              "path": "images/ep001259_slot01_following.png",
+              "sha256": "9c626a4943c126735562d68966380207f76e72cae5426da2e35ccada7a041306",
+              "motion_hold": {
+                "index": 7,
+                "start": 70,
+                "end": 77,
+                "length": 8
+              }
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "source_frame": 170,
+          "path": "images/ep001259_slot02.png",
+          "sha256": "6c46aa79037333426ff779b4f28b4dc66f692569035b75bedfa900ad8f46cdd8",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001259/external_sensor1/00170.png",
+          "motion_hold": {
+            "index": 18,
+            "start": 162,
+            "end": 177,
+            "length": 16
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 150,
+              "path": "images/ep001259_slot02_previous.png",
+              "sha256": "ff4deb759f28c579577906a6827d003774bf2878481f4ac723d25a0cadae3d22",
+              "motion_hold": {
+                "index": 15,
+                "start": 142,
+                "end": 159,
+                "length": 18
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 185,
+              "path": "images/ep001259_slot02_following.png",
+              "sha256": "1cfe5acc7cd2e4ebb9029c5987838a51a21ca75e1689ac4c98a562e402f54660",
+              "motion_hold": {
+                "index": 19,
+                "start": 178,
+                "end": 193,
+                "length": 16
+              }
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "source_frame": 203,
+          "path": "images/ep001259_slot03.png",
+          "sha256": "e223e33929e3b3e7af0a097709ab219dda15d808843b737f5f0ef85eb3477b0a",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001259/external_sensor1/00203.png",
+          "motion_hold": {
+            "index": 22,
+            "start": 196,
+            "end": 209,
+            "length": 14
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 185,
+              "path": "images/ep001259_slot03_previous.png",
+              "sha256": "1cfe5acc7cd2e4ebb9029c5987838a51a21ca75e1689ac4c98a562e402f54660",
+              "motion_hold": {
+                "index": 19,
+                "start": 178,
+                "end": 193,
+                "length": 16
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 219,
+              "path": "images/ep001259_slot03_following.png",
+              "sha256": "b346b40e5f0b1362e7ae43da513a6348bd4877b3db1f0b4c834e9e9aad092fc3",
+              "motion_hold": {
+                "index": 25,
+                "start": 212,
+                "end": 227,
+                "length": 16
+              }
+            }
+          ]
+        }
+      ],
+      "source_annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/annotations/episodes/usim_train_episode_001259.json",
+      "source_annotation_sha256": "d4bb62fef0cfdb381b138f6691471cca1ae001f675bea90336a023caa7ff1583",
+      "source_video_sha256": "c52644ba7bcf2678f1fa20ef08070a19a8ad8bf652cc9faab6d4dabcd8168934",
+      "frame_gaps": [
+        113,
+        33
+      ],
+      "video_frames": 304,
+      "proposal_facts_included": false
+    },
+    {
+      "episode_key": "usim_train_episode_001273",
+      "episode": 1273,
+      "task_text": "Pick up the blue cylinder",
+      "family": "pick",
+      "objects": [
+        {
+          "object_id": "robot",
+          "category": "agent",
+          "description": "the robot"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "category": "cylinder",
+          "color": "blue",
+          "description": "the blue cylinder, rendered purple in the ego stream"
+        }
+      ],
+      "scope": [
+        [
+          "OnSeabed",
+          "blue_cylinder"
+        ],
+        [
+          "InGripper",
+          "blue_cylinder"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "blue_cylinder"
+        ]
+      ],
+      "frames": [
+        {
+          "slot": 1,
+          "source_frame": 179,
+          "path": "images/ep001273_slot01.png",
+          "sha256": "5c547391dbb3d9615d9dc2ea401e012b9c40e37928935d71f44d83f11600a2cb",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001273/external_sensor1/00179.png",
+          "motion_hold": {
+            "index": 27,
+            "start": 172,
+            "end": 185,
+            "length": 14
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 164,
+              "path": "images/ep001273_slot01_previous.png",
+              "sha256": "a0c704a19e126e268fb63bb988741f4fdf97ef77f8ca66228d7b83d095250786",
+              "motion_hold": {
+                "index": 24,
+                "start": 160,
+                "end": 169,
+                "length": 10
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 193,
+              "path": "images/ep001273_slot01_following.png",
+              "sha256": "8624a25475cccc7eb65af887501b9a1deee73d29c14debd13da140b36f90e1d6",
+              "motion_hold": {
+                "index": 30,
+                "start": 188,
+                "end": 199,
+                "length": 12
+              }
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "source_frame": 261,
+          "path": "images/ep001273_slot02.png",
+          "sha256": "0e54ca5a09c5329c9774b9787d2b41d2429c557eee808dc71af96bfb6c5fabd9",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001273/external_sensor1/00261.png",
+          "motion_hold": {
+            "index": 37,
+            "start": 256,
+            "end": 267,
+            "length": 12
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 250,
+              "path": "images/ep001273_slot02_previous.png",
+              "sha256": "7f048b7bcc6e2d0fad246ae7bc942a563f5620273d170a6e5f61f2cfd66f0902",
+              "motion_hold": {
+                "index": 36,
+                "start": 246,
+                "end": 255,
+                "length": 10
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 273,
+              "path": "images/ep001273_slot02_following.png",
+              "sha256": "e44c5f0669810895f021ab13459c209443811b35c6b9a4505084734cc6a1d4d8",
+              "motion_hold": {
+                "index": 38,
+                "start": 268,
+                "end": 279,
+                "length": 12
+              }
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "source_frame": 288,
+          "path": "images/ep001273_slot03.png",
+          "sha256": "6111a576173135bebbc4cea0e54977de596b94494e22ea0ea5499a8008bd8338",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001273/external_sensor1/00288.png",
+          "motion_hold": {
+            "index": 41,
+            "start": 282,
+            "end": 293,
+            "length": 12
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 273,
+              "path": "images/ep001273_slot03_previous.png",
+              "sha256": "e44c5f0669810895f021ab13459c209443811b35c6b9a4505084734cc6a1d4d8",
+              "motion_hold": {
+                "index": 38,
+                "start": 268,
+                "end": 279,
+                "length": 12
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 300,
+              "path": "images/ep001273_slot03_following.png",
+              "sha256": "0d2e6e0440d1b18679a8c1b0f6a8ac5bca92bb423f71ef6d639f2b2ba73da6de",
+              "motion_hold": {
+                "index": 42,
+                "start": 294,
+                "end": 307,
+                "length": 14
+              }
+            }
+          ]
+        }
+      ],
+      "source_annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/annotations/episodes/usim_train_episode_001273.json",
+      "source_annotation_sha256": "2a403389f39d0c8b95a76aeeebd27dffd2f3bbdf82599d439605283ed2718d3f",
+      "source_video_sha256": "0446bff82edcef9c4d7faffaa89ca4b7673047b9defbfae366ce76c14b2c7d0d",
+      "frame_gaps": [
+        82,
+        27
+      ],
+      "video_frames": 385,
+      "proposal_facts_included": false
+    },
+    {
+      "episode_key": "usim_train_episode_001378",
+      "episode": 1378,
+      "task_text": "Pick up the red cylinder and transfer it to the box",
+      "family": "transfer",
+      "objects": [
+        {
+          "object_id": "robot",
+          "category": "agent",
+          "description": "the robot"
+        },
+        {
+          "object_id": "red_cylinder",
+          "category": "cylinder",
+          "color": "red",
+          "description": "the red cylinder (target object for this episode)"
+        },
+        {
+          "object_id": "green_box",
+          "category": "box",
+          "color": "green",
+          "description": "the green box"
+        }
+      ],
+      "scope": [
+        [
+          "InGripper",
+          "red_cylinder"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "red_cylinder"
+        ],
+        [
+          "NearBox",
+          "robot",
+          "green_box"
+        ]
+      ],
+      "frames": [
+        {
+          "slot": 1,
+          "source_frame": 60,
+          "path": "images/ep001378_slot01.png",
+          "sha256": "7b0ac4f1142a938526d0742f32463a4046e8f6dfb611f50a7a537fc0f4410ee8",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001378/external_sensor1/00060.png",
+          "motion_hold": {
+            "index": 6,
+            "start": 56,
+            "end": 71,
+            "length": 16
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 46,
+              "path": "images/ep001378_slot01_previous.png",
+              "sha256": "3fc0922dba5b50604512efeefd2a488afc7f7fd80a9e5622102fede15b0f11da",
+              "motion_hold": {
+                "index": 5,
+                "start": 38,
+                "end": 55,
+                "length": 18
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 80,
+              "path": "images/ep001378_slot01_following.png",
+              "sha256": "d1b6204f064aaeb7400621a40cb9d15c029ff7b6c5ddc500c250d971d68e68f4",
+              "motion_hold": {
+                "index": 9,
+                "start": 74,
+                "end": 87,
+                "length": 14
+              }
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "source_frame": 176,
+          "path": "images/ep001378_slot02.png",
+          "sha256": "3a5684b1b007bd64b946e56d5dcf99cc6a5f211cda81a9f53eeae9e1b60502d2",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001378/external_sensor1/00176.png",
+          "motion_hold": {
+            "index": 24,
+            "start": 164,
+            "end": 181,
+            "length": 18
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 153,
+              "path": "images/ep001378_slot02_previous.png",
+              "sha256": "eb68700ae6229861929c633aac50cb7e1257650baa7f8a6082c2b58f2d33bd19",
+              "motion_hold": {
+                "index": 21,
+                "start": 146,
+                "end": 161,
+                "length": 16
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 189,
+              "path": "images/ep001378_slot02_following.png",
+              "sha256": "cdefb0b90c2c0e13f980ab9e075e6a23596a7d05705753b3eeb0342b497df38b",
+              "motion_hold": {
+                "index": 25,
+                "start": 182,
+                "end": 197,
+                "length": 16
+              }
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "source_frame": 206,
+          "path": "images/ep001378_slot03.png",
+          "sha256": "cf240ac1c8e06cf0bc51ca80295234e2c6ad5c15c5d5cd4c679e0bdb188b72a0",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001378/external_sensor1/00206.png",
+          "motion_hold": {
+            "index": 28,
+            "start": 200,
+            "end": 215,
+            "length": 16
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 189,
+              "path": "images/ep001378_slot03_previous.png",
+              "sha256": "cdefb0b90c2c0e13f980ab9e075e6a23596a7d05705753b3eeb0342b497df38b",
+              "motion_hold": {
+                "index": 25,
+                "start": 182,
+                "end": 197,
+                "length": 16
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 226,
+              "path": "images/ep001378_slot03_following.png",
+              "sha256": "c6986d5b1209768c69804be4fd2983c99492f289cf769dfc8759eba595d13e96",
+              "motion_hold": {
+                "index": 31,
+                "start": 218,
+                "end": 235,
+                "length": 18
+              }
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "source_frame": 448,
+          "path": "images/ep001378_slot04.png",
+          "sha256": "f987fce2b529d93371fbf61672490f19c8b91aa9802b819e05cb7ba4ec709a2b",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001378/external_sensor1/00448.png",
+          "motion_hold": {
+            "index": 51,
+            "start": 438,
+            "end": 453,
+            "length": 16
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 426,
+              "path": "images/ep001378_slot04_previous.png",
+              "sha256": "755731466258cd2d5d1d020bd502f3c548f24bd56b136db3e2841271f5fcc287",
+              "motion_hold": {
+                "index": 48,
+                "start": 418,
+                "end": 435,
+                "length": 18
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 463,
+              "path": "images/ep001378_slot04_following.png",
+              "sha256": "a3590870fcce276bded77e29d69493cdb69a31ce6fb97c06ab47fad43dc38a61",
+              "motion_hold": {
+                "index": 54,
+                "start": 456,
+                "end": 471,
+                "length": 16
+              }
+            }
+          ]
+        }
+      ],
+      "source_annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/annotations/episodes/usim_train_episode_001378.json",
+      "source_annotation_sha256": "54023b4712b8b9dde3e969ad0641768966c933c508420ad230906ddd7dfc69e1",
+      "source_video_sha256": "c4ee44ac475cf07f3d7af13862aae6ac4f3cba64f51d52ee8dc215bd82b58a4e",
+      "frame_gaps": [
+        116,
+        30,
+        242
+      ],
+      "video_frames": 480,
+      "proposal_facts_included": false
+    },
+    {
+      "episode_key": "usim_train_episode_001384",
+      "episode": 1384,
+      "task_text": "Pick up the red cylinder and transfer it to the box",
+      "family": "transfer",
+      "objects": [
+        {
+          "object_id": "robot",
+          "category": "agent",
+          "description": "the robot"
+        },
+        {
+          "object_id": "red_cylinder",
+          "category": "cylinder",
+          "color": "red",
+          "description": "the red cylinder (target object for this episode)"
+        },
+        {
+          "object_id": "green_box",
+          "category": "box",
+          "color": "green",
+          "description": "the green box"
+        }
+      ],
+      "scope": [
+        [
+          "InGripper",
+          "red_cylinder"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "red_cylinder"
+        ],
+        [
+          "NearBox",
+          "robot",
+          "green_box"
+        ]
+      ],
+      "frames": [
+        {
+          "slot": 1,
+          "source_frame": 164,
+          "path": "images/ep001384_slot01.png",
+          "sha256": "3e5764f429977829c7b387c992fe92c72e21532e61623f4d5d31cc563d7fb980",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001384/external_sensor1/00164.png",
+          "motion_hold": {
+            "index": 18,
+            "start": 150,
+            "end": 167,
+            "length": 18
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 142,
+              "path": "images/ep001384_slot01_previous.png",
+              "sha256": "7311325bd87168adbaa443f5713bedde195c14fbb3db495d9148b3797b8ce82e",
+              "motion_hold": {
+                "index": 17,
+                "start": 136,
+                "end": 149,
+                "length": 14
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 177,
+              "path": "images/ep001384_slot01_following.png",
+              "sha256": "c720c5bc56785769695624be2b02be3a5928fb56fec851504716c8738a9576e5",
+              "motion_hold": {
+                "index": 19,
+                "start": 168,
+                "end": 187,
+                "length": 20
+              }
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "source_frame": 209,
+          "path": "images/ep001384_slot02.png",
+          "sha256": "4ffc325b15aada13b486ac8579b737d9ae6a0bc086d5d8005221a6fefd55835a",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001384/external_sensor1/00209.png",
+          "motion_hold": {
+            "index": 25,
+            "start": 206,
+            "end": 213,
+            "length": 8
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 196,
+              "path": "images/ep001384_slot02_previous.png",
+              "sha256": "f3ed7002cb20766f4f8198b10555c2e6db1738ed53f2f856c17b663dd3c3a000",
+              "motion_hold": {
+                "index": 22,
+                "start": 190,
+                "end": 203,
+                "length": 14
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 221,
+              "path": "images/ep001384_slot02_following.png",
+              "sha256": "2944cba59fde49fac66a7678f76b66203765a5012ee1af7ff6c891d4ea2f4f8c",
+              "motion_hold": {
+                "index": 26,
+                "start": 214,
+                "end": 229,
+                "length": 16
+              }
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "source_frame": 239,
+          "path": "images/ep001384_slot03.png",
+          "sha256": "5ab55db234d53289bf69db0c758c478f745d19d14256fe016fc9d959261c3fb6",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001384/external_sensor1/00239.png",
+          "motion_hold": {
+            "index": 27,
+            "start": 230,
+            "end": 245,
+            "length": 16
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 221,
+              "path": "images/ep001384_slot03_previous.png",
+              "sha256": "2944cba59fde49fac66a7678f76b66203765a5012ee1af7ff6c891d4ea2f4f8c",
+              "motion_hold": {
+                "index": 26,
+                "start": 214,
+                "end": 229,
+                "length": 16
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 255,
+              "path": "images/ep001384_slot03_following.png",
+              "sha256": "a4596880398abec919add86648f7c1175ff1191379812c38de032b04d93224dd",
+              "motion_hold": {
+                "index": 30,
+                "start": 248,
+                "end": 263,
+                "length": 16
+              }
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "source_frame": 486,
+          "path": "images/ep001384_slot04.png",
+          "sha256": "9d725170f87836892b1cd945ca12403ca1881ecdb01ea465d7fa0746b1f21e82",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001384/external_sensor1/00486.png",
+          "motion_hold": {
+            "index": 52,
+            "start": 486,
+            "end": 503,
+            "length": 18
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 473,
+              "path": "images/ep001384_slot04_previous.png",
+              "sha256": "db8a81530dcbe03078b4a490cb7a88d631e4049d8d79af5f5cfe38f24ca36ef1",
+              "motion_hold": {
+                "index": 51,
+                "start": 462,
+                "end": 485,
+                "length": 24
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 511,
+              "path": "images/ep001384_slot04_following.png",
+              "sha256": "2c98a1633282c5f9b6509b7445cd64cc2cc7dea53f6dda45de26d6f5ac3b3f42",
+              "motion_hold": {
+                "index": 55,
+                "start": 506,
+                "end": 517,
+                "length": 12
+              }
+            }
+          ]
+        }
+      ],
+      "source_annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/annotations/episodes/usim_train_episode_001384.json",
+      "source_annotation_sha256": "ae449a25aee7e41951f90c717aa35e8ea3ccdceab3522d68e1ff379ae1157b1a",
+      "source_video_sha256": "94fe97e473eac8ab46038446bfbd09947dbf05f452be6536f00772030ef02e3e",
+      "frame_gaps": [
+        45,
+        30,
+        247
+      ],
+      "video_frames": 519,
+      "proposal_facts_included": false
+    },
+    {
+      "episode_key": "usim_train_episode_001497",
+      "episode": 1497,
+      "task_text": "Pick up the red cylinder",
+      "family": "pick",
+      "objects": [
+        {
+          "object_id": "robot",
+          "category": "agent",
+          "description": "the robot"
+        },
+        {
+          "object_id": "red_cylinder",
+          "category": "cylinder",
+          "color": "red",
+          "description": "the red cylinder tracked into the gripper"
+        }
+      ],
+      "scope": [
+        [
+          "OnSeabed",
+          "red_cylinder"
+        ],
+        [
+          "InGripper",
+          "red_cylinder"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "red_cylinder"
+        ]
+      ],
+      "frames": [
+        {
+          "slot": 1,
+          "source_frame": 42,
+          "path": "images/ep001497_slot01.png",
+          "sha256": "41b0ce2758b1ab879e2769a09c3cefbb9a9f10479c50b02f9c7a404a9225578b",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001497/external_sensor1/00042.png",
+          "motion_hold": {
+            "index": 5,
+            "start": 36,
+            "end": 47,
+            "length": 12
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 26,
+              "path": "images/ep001497_slot01_previous.png",
+              "sha256": "b6194f29069bb99fc17ed36627a82947916e0f974bb469004f2b67b188d92f98",
+              "motion_hold": {
+                "index": 2,
+                "start": 20,
+                "end": 33,
+                "length": 14
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 58,
+              "path": "images/ep001497_slot01_following.png",
+              "sha256": "601e3af3a74dac4eb15d40ca97897f8ec7b0b5869e1c7d37e0cc147992aeb992",
+              "motion_hold": {
+                "index": 6,
+                "start": 48,
+                "end": 69,
+                "length": 22
+              }
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "source_frame": 111,
+          "path": "images/ep001497_slot02.png",
+          "sha256": "d539dd52185745e1637a6ba31f63e2f691ab709a935cedad2c93ba51b1bc96b2",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001497/external_sensor1/00111.png",
+          "motion_hold": {
+            "index": 11,
+            "start": 104,
+            "end": 117,
+            "length": 14
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 94,
+              "path": "images/ep001497_slot02_previous.png",
+              "sha256": "3bf2be5b1c40d3c5de741a002315582e3205ccc1d32387a3629454c857dffa84",
+              "motion_hold": {
+                "index": 8,
+                "start": 88,
+                "end": 101,
+                "length": 14
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 126,
+              "path": "images/ep001497_slot02_following.png",
+              "sha256": "9a170eab639eecc0633cd1567ea49d937652288fdeba1b0ffc512be344ab5286",
+              "motion_hold": {
+                "index": 12,
+                "start": 118,
+                "end": 135,
+                "length": 18
+              }
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "source_frame": 145,
+          "path": "images/ep001497_slot03.png",
+          "sha256": "6b8e4fef5ba099746d4711e00253cb35cdb8f510d1bf8d41c9b28922af3f1bac",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001497/external_sensor1/00145.png",
+          "motion_hold": {
+            "index": 13,
+            "start": 136,
+            "end": 153,
+            "length": 18
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 126,
+              "path": "images/ep001497_slot03_previous.png",
+              "sha256": "9a170eab639eecc0633cd1567ea49d937652288fdeba1b0ffc512be344ab5286",
+              "motion_hold": {
+                "index": 12,
+                "start": 118,
+                "end": 135,
+                "length": 18
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 162,
+              "path": "images/ep001497_slot03_following.png",
+              "sha256": "930a9a74277cea9bb9b2c89ca17fa4249b6213f0694b95165a5251e03c5f165b",
+              "motion_hold": {
+                "index": 14,
+                "start": 154,
+                "end": 171,
+                "length": 18
+              }
+            }
+          ]
+        }
+      ],
+      "source_annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/annotations/episodes/usim_train_episode_001497.json",
+      "source_annotation_sha256": "eddde311e35f519ac02f928ffe87b50bc34db1e4f63bdb3b00dc4535f2ed4b91",
+      "source_video_sha256": "314b3fe49dd62cad6f8b046d0ce0b9b460cb4dfe734c2b13d792a7ea26e28dcf",
+      "frame_gaps": [
+        69,
+        34
+      ],
+      "video_frames": 243,
+      "proposal_facts_included": false
+    },
+    {
+      "episode_key": "usim_train_episode_001549",
+      "episode": 1549,
+      "task_text": "Pick up the red cylinder",
+      "family": "pick",
+      "objects": [
+        {
+          "object_id": "robot",
+          "category": "agent",
+          "description": "the robot"
+        },
+        {
+          "object_id": "red_cylinder",
+          "category": "cylinder",
+          "color": "red",
+          "description": "the red cylinder below the gripper"
+        }
+      ],
+      "scope": [
+        [
+          "OnSeabed",
+          "red_cylinder"
+        ],
+        [
+          "InGripper",
+          "red_cylinder"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "red_cylinder"
+        ]
+      ],
+      "frames": [
+        {
+          "slot": 1,
+          "source_frame": 75,
+          "path": "images/ep001549_slot01.png",
+          "sha256": "d9495f21a0746da0ca55db8c63c0622e75c02aa0b84831d72dfa498da720deb0",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001549/external_sensor1/00075.png",
+          "motion_hold": {
+            "index": 8,
+            "start": 64,
+            "end": 85,
+            "length": 22
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 53,
+              "path": "images/ep001549_slot01_previous.png",
+              "sha256": "b2a109d09d85fa0cb2cb30de273d4faac9e0232ee420922e12c23c9a522156f9",
+              "motion_hold": {
+                "index": 7,
+                "start": 44,
+                "end": 63,
+                "length": 20
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 93,
+              "path": "images/ep001549_slot01_following.png",
+              "sha256": "f52ce9ff7891777b69795cc64a7e1f79148b6fe0444b7754035538b856126fd6",
+              "motion_hold": {
+                "index": 9,
+                "start": 86,
+                "end": 101,
+                "length": 16
+              }
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "source_frame": 183,
+          "path": "images/ep001549_slot02.png",
+          "sha256": "174dc833eb9dd530a8161e6ebb854c2176d4ab4b35c14827ab1d9467d010a2b7",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001549/external_sensor1/00183.png",
+          "motion_hold": {
+            "index": 18,
+            "start": 172,
+            "end": 193,
+            "length": 22
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 162,
+              "path": "images/ep001549_slot02_previous.png",
+              "sha256": "1d8008eb8f21bda61acf72d19978f57d0840c553f0aa31462d306f433e212a65",
+              "motion_hold": {
+                "index": 17,
+                "start": 154,
+                "end": 171,
+                "length": 18
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 204,
+              "path": "images/ep001549_slot02_following.png",
+              "sha256": "f79ad7476e09e68e68c528c1f1e8d6a82c2f79b48aaa850ef2515f0ddfe75dc9",
+              "motion_hold": {
+                "index": 21,
+                "start": 196,
+                "end": 213,
+                "length": 18
+              }
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "source_frame": 219,
+          "path": "images/ep001549_slot03.png",
+          "sha256": "d75af5ad5977f3917adb48c07c5588d04f0d91578007768e3c2a379ba956e7c9",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001549/external_sensor1/00219.png",
+          "motion_hold": {
+            "index": 22,
+            "start": 214,
+            "end": 233,
+            "length": 20
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 204,
+              "path": "images/ep001549_slot03_previous.png",
+              "sha256": "f79ad7476e09e68e68c528c1f1e8d6a82c2f79b48aaa850ef2515f0ddfe75dc9",
+              "motion_hold": {
+                "index": 21,
+                "start": 196,
+                "end": 213,
+                "length": 18
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 243,
+              "path": "images/ep001549_slot03_following.png",
+              "sha256": "692231a6c47ea88b580ccb60b883db50aaedfa0952a757326634620c6c1feb5d",
+              "motion_hold": {
+                "index": 25,
+                "start": 236,
+                "end": 251,
+                "length": 16
+              }
+            }
+          ]
+        }
+      ],
+      "source_annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/annotations/episodes/usim_train_episode_001549.json",
+      "source_annotation_sha256": "e8cfa4b7901bf0d30e3e64f5fbf3eeda678808a3116c8ecd225ac7e1a88410d3",
+      "source_video_sha256": "9c16c69072f1ed1d18adcd2da550a7fbb52aee5580496548c155bd923f6c3043",
+      "frame_gaps": [
+        108,
+        36
+      ],
+      "video_frames": 309,
+      "proposal_facts_included": false
+    },
+    {
+      "episode_key": "usim_train_episode_001650",
+      "episode": 1650,
+      "task_text": "Pick up the pipe",
+      "family": "pick",
+      "objects": [
+        {
+          "object_id": "robot",
+          "category": "agent",
+          "description": "the robot"
+        },
+        {
+          "object_id": "pipe",
+          "category": "pipe",
+          "description": "the grey segmented pipe"
+        }
+      ],
+      "scope": [
+        [
+          "OnSeabed",
+          "pipe"
+        ],
+        [
+          "InGripper",
+          "pipe"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "pipe"
+        ]
+      ],
+      "frames": [
+        {
+          "slot": 1,
+          "source_frame": 0,
+          "path": "images/ep001650_slot01.png",
+          "sha256": "18d1b4d7c33900d5bad615c9f22f152bcb2a922bea391d10f1bd8c43c8f40e36",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001650/external_sensor1/00000.png",
+          "motion_hold": {
+            "index": 0,
+            "start": 0,
+            "end": 9,
+            "length": 10
+          },
+          "context": [
+            {
+              "relation": "following",
+              "source_frame": 20,
+              "path": "images/ep001650_slot01_following.png",
+              "sha256": "0f1bf78952bc4d097e2f9c7ebe9c3bbc2fd541092dd6f0cdfec039cdd4c9a737",
+              "motion_hold": {
+                "index": 3,
+                "start": 12,
+                "end": 29,
+                "length": 18
+              }
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "source_frame": 190,
+          "path": "images/ep001650_slot02.png",
+          "sha256": "a30c868cd91b68dc1dfab209d94e2454e117d3f15011ce655163ba289085abd0",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001650/external_sensor1/00190.png",
+          "motion_hold": {
+            "index": 21,
+            "start": 190,
+            "end": 219,
+            "length": 30
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 180,
+              "path": "images/ep001650_slot02_previous.png",
+              "sha256": "7554e9f0c0a16fe1def6b3871a219ac0f625e7995fa6996d11357a77f62102ab",
+              "motion_hold": {
+                "index": 20,
+                "start": 172,
+                "end": 189,
+                "length": 18
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 231,
+              "path": "images/ep001650_slot02_following.png",
+              "sha256": "cce0f74563646dba5d9a261bd90069b9f1076950fced19363d76afea12df009b",
+              "motion_hold": {
+                "index": 22,
+                "start": 220,
+                "end": 243,
+                "length": 24
+              }
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "source_frame": 219,
+          "path": "images/ep001650_slot03.png",
+          "sha256": "a30c868cd91b68dc1dfab209d94e2454e117d3f15011ce655163ba289085abd0",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001650/external_sensor1/00219.png",
+          "motion_hold": {
+            "index": 21,
+            "start": 190,
+            "end": 219,
+            "length": 30
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 180,
+              "path": "images/ep001650_slot03_previous.png",
+              "sha256": "7554e9f0c0a16fe1def6b3871a219ac0f625e7995fa6996d11357a77f62102ab",
+              "motion_hold": {
+                "index": 20,
+                "start": 172,
+                "end": 189,
+                "length": 18
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 231,
+              "path": "images/ep001650_slot03_following.png",
+              "sha256": "cce0f74563646dba5d9a261bd90069b9f1076950fced19363d76afea12df009b",
+              "motion_hold": {
+                "index": 22,
+                "start": 220,
+                "end": 243,
+                "length": 24
+              }
+            }
+          ]
+        }
+      ],
+      "source_annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/annotations/episodes/usim_train_episode_001650.json",
+      "source_annotation_sha256": "1c0380e6f98cbd8baaa00cbc72456715e95da3972436013936946c62629564d5",
+      "source_video_sha256": "b955bb1c6c9e896ac8825f01564b85d0f50147daebeea10fbb9c889d806d4e95",
+      "frame_gaps": [
+        190,
+        29
+      ],
+      "video_frames": 278,
+      "proposal_facts_included": false
+    },
+    {
+      "episode_key": "usim_train_episode_001734",
+      "episode": 1734,
+      "task_text": "Pick up the pipe",
+      "family": "pick",
+      "objects": [
+        {
+          "object_id": "robot",
+          "category": "agent",
+          "description": "the robot"
+        },
+        {
+          "object_id": "pipe",
+          "category": "pipe",
+          "description": "the grey segmented pipe"
+        }
+      ],
+      "scope": [
+        [
+          "OnSeabed",
+          "pipe"
+        ],
+        [
+          "InGripper",
+          "pipe"
+        ],
+        [
+          "NextTo",
+          "robot",
+          "pipe"
+        ]
+      ],
+      "frames": [
+        {
+          "slot": 1,
+          "source_frame": 150,
+          "path": "images/ep001734_slot01.png",
+          "sha256": "a77e4b6e68f4af5bfb9fa3eb79d8f9a75d67155b33a239a21a1f53a501a34368",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001734/external_sensor1/00150.png",
+          "motion_hold": {
+            "index": 17,
+            "start": 140,
+            "end": 159,
+            "length": 20
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 125,
+              "path": "images/ep001734_slot01_previous.png",
+              "sha256": "4ebcfcd7a6b055eac9bea6c97f2c9bcb7c99a5a4168c1b62fc91b78ce7474565",
+              "motion_hold": {
+                "index": 14,
+                "start": 114,
+                "end": 137,
+                "length": 24
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 169,
+              "path": "images/ep001734_slot01_following.png",
+              "sha256": "44869ed7ea4b76f7b03a7e5fa9b75430279015b08804b632fcc2c0ea54b15df6",
+              "motion_hold": {
+                "index": 18,
+                "start": 160,
+                "end": 179,
+                "length": 20
+              }
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "source_frame": 274,
+          "path": "images/ep001734_slot02.png",
+          "sha256": "edf361da820af3bb1e84b701b798bc006d6a79ec685bded001bea5d6395ff07c",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001734/external_sensor1/00274.png",
+          "motion_hold": {
+            "index": 29,
+            "start": 264,
+            "end": 281,
+            "length": 18
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 251,
+              "path": "images/ep001734_slot02_previous.png",
+              "sha256": "36139fa8889c3573b221d55dff209a2cd5904dce7d9c94813d3c1ad7f085f265",
+              "motion_hold": {
+                "index": 26,
+                "start": 242,
+                "end": 261,
+                "length": 20
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 291,
+              "path": "images/ep001734_slot02_following.png",
+              "sha256": "b7d8bf1349047911c0de97c22ea3e69fd762bd0728044c79998e0aa2e213b998",
+              "motion_hold": {
+                "index": 30,
+                "start": 282,
+                "end": 301,
+                "length": 20
+              }
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "source_frame": 312,
+          "path": "images/ep001734_slot03.png",
+          "sha256": "10323bdf3a2bff477946c715c05e377649d9c368ef4b7185f07b71f5de29ed54",
+          "dataset_source_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/replayed_activities/usim_train_episode_001734/external_sensor1/00312.png",
+          "motion_hold": {
+            "index": 31,
+            "start": 302,
+            "end": 321,
+            "length": 20
+          },
+          "context": [
+            {
+              "relation": "previous",
+              "source_frame": 291,
+              "path": "images/ep001734_slot03_previous.png",
+              "sha256": "b7d8bf1349047911c0de97c22ea3e69fd762bd0728044c79998e0aa2e213b998",
+              "motion_hold": {
+                "index": 30,
+                "start": 282,
+                "end": 301,
+                "length": 20
+              }
+            },
+            {
+              "relation": "following",
+              "source_frame": 335,
+              "path": "images/ep001734_slot03_following.png",
+              "sha256": "c32e58408cf85f90b6b6098486d1c46f0d0c8682ef9b37ade08c1970dced1947",
+              "motion_hold": {
+                "index": 34,
+                "start": 324,
+                "end": 347,
+                "length": 24
+              }
+            }
+          ]
+        }
+      ],
+      "source_annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1/annotations/episodes/usim_train_episode_001734.json",
+      "source_annotation_sha256": "1546a120ef45994c0e420bb9fcf92476dff21b0b1e7eb2691d6ca194da0724e3",
+      "source_video_sha256": "c2864051f717c2dbff28a17cf71f248cc9cc3b8646d2815a5b140d127e7c26ed",
+      "frame_gaps": [
+        124,
+        38
+      ],
+      "video_frames": 403,
+      "proposal_facts_included": false
+    }
+  ],
+  "model_api_calls": 0,
+  "proposal_facts_included": false,
+  "scope_includes_lifted": false,
+  "independent_acceptance": "0/10",
+  "segmentation_note": "Gray MAD<=0.5 segments propose display holds; they are not exact physical-event times or certified render counts"
+}

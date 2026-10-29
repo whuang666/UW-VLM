@@ -2,6 +2,8 @@
 
 日期：2026-10-29（Asia/Shanghai）。当前工作包版本：`test-human-acceptance-workpack-20261029-v2`。绑定候选：`test-reserve-balanced-qa-20261029-v1`。v1原件保留；[真实浏览器交互及导入修复记录](acceptance_ui_interaction_20261029_zh.md)。
 
+签字后可直接使用[自动处置与QA重建脚本](signed_review_flow_20261029_zh.md)：重新核验签名JSON及packet／源hash，按实际裁决输出清单，允许时重建独立QA版本及全部程序门禁；不固定18题，也不因typed签名自动认定真人身份或完成最终执行冻结。
+
 **复核者可直接打开[离线填写页v2](../../ENACT/data/usim_enact/_review/test_reserve/acceptance_workpack_20261029_v2/review.html)，查看原生ego图及相邻画面，填写后导出JSON。** 10份表全部留空，独立验收仍 **0/10**。v2已实际验证试填／导出／导入／下游读取，损坏文件导入不会丢失先前进度；自动化试填记录单独保存，没有代替真实验收。
 
 页面暂存当前填写内容，导出文件才会保存；导出的JSON可以重新导入继续填写。本地工作包包含94张图：32个候选关键帧、62张相邻稳定画面；没有初标谓词取值、模型预测或参考排列。它绑定当前10条候选，不把后续排除／改帧方案提前当成最终test。

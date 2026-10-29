@@ -2,6 +2,8 @@
 
 最近更新：2026-10-29（Asia/Shanghai）。整理日期：2026-10-23（Asia/Shanghai）。目标：理解 ENACT，在当前工作区的 **USIM 水下仿真数据**上重建同类前向、逆向世界建模评测。
 
+签字后自动入口：[处置清单与QA重建](../../docs/workbuddyRead/signed_review_flow_20261029_zh.md)。按实际裁决和源hash输出选择，允许时新建QA／图片并重跑均衡、唯一性、oracle及基线；真实空表仍拒绝，真人验收0/10，最终执行冻结另行完成。
+
 验收页当前使用v2：[真实交互测试与修复](../../docs/workbuddyRead/acceptance_ui_interaction_20261029_zh.md)。试填一份、下载JSON、重新导入及Python下游读取已通过；异常导入先校验完整结构，失败保留旧进度。自动化烟测不计独立验收，当前0/10。
 
 独立验收入口：[离线工作包与签字后流程](../../docs/workbuddyRead/test_human_acceptance_workpack_20261029_zh.md)。10份空表、32个关键帧及相邻原生图已备，可离线填写／导出／校验；1650@f0阻塞保留，独立验收0/10。新数据集PNG已加入忽略规则，文字清单与重建证据继续可入库。

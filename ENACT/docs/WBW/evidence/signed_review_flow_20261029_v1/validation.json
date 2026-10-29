@@ -1,0 +1,23 @@
+{
+  "schema": "usim-signed-flow-final-validation/v1",
+  "actual_unsigned_reviews_rejected": true,
+  "actual_selected_episodes": 0,
+  "actual_new_dataset_created": false,
+  "synthetic_positive_fixture_questions": 18,
+  "synthetic_positive_fixture_presented_images": 58,
+  "synthetic_unique_permutation_checks": 52,
+  "synthetic_chance_exact": "23/54",
+  "dynamic_counts_tested": [
+    18,
+    16
+  ],
+  "unit_tests_passed": 132,
+  "source_dependency_hashes_checked": 7,
+  "old_files_unchanged": 551,
+  "old_freeze_files_passed": 1818,
+  "local_links_checked": 14,
+  "broken_links": [],
+  "real_independent_acceptance": "0/10",
+  "model_api_calls": 0,
+  "release_eligible": false
+}

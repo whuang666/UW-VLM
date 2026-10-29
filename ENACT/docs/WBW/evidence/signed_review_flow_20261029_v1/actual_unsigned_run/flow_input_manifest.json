@@ -1,0 +1,17 @@
+{
+  "qa_version": "test-reviewed-qa-20261029-v1",
+  "review_bundle_sha256": "585a9377d7c7ea046b8a194f7c60ac8310741265f4b5cc0e45f26e17661455ce",
+  "packet_manifest_sha256": "78b9673f3830ac14d653efaca8f6f4ad23eee77c5b1f46fbe5c352298917ac07",
+  "source_candidate_snapshot_sha256": "6cc699908ffb78134795645203893cf36abec97449ee070f0f56722492358835",
+  "code_sha256": {
+    "ENACT/scripts/usim/advance_signed_candidates.py": "430026dbecf88f99e268dc9e43827e8ce3b62c1f1417ade1ca8acfdf1ef3beb1",
+    "ENACT/scripts/usim/validate_acceptance_reviews.py": "25692aa4a0f24d6fe853279b8493703e1dd8283d29e1cf7edac3cbe5dea33973",
+    "ENACT/scripts/usim/build_conservative_balanced_qa.py": "7b2c2d6362e6488fd353bb6f657a6ed8ccc210b614533a19fa20b0480b30692f",
+    "ENACT/scripts/usim/evaluate.py": "f18086e0afcedc45229c3247ceb73cd70090017b133fce6ddf5a3c1165a86a6a",
+    "ENACT/scripts/usim/audit_qa_validity.py": "dd2d1cc50b2e959368a660d610f24d79e82595b1fba3ab2400c32d9c6d1970cf",
+    "ENACT/scripts/usim/text_prior_baseline.py": "b5b098f2620aa5e0680a37671fba34ec573612d095fda5fe981a8d2e03a318f0",
+    "ENACT/enact/core/evaluators.py": "b69c18604e0572ebbeefeeb9b801b0d5745f79454c0cc20aa7b9b77f12222572"
+  },
+  "typed_signature_is_identity_authentication": false,
+  "release_eligible": false
+}
