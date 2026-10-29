@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>USIM 独立验收工作包</title>
+<style>
+body{font:16px/1.6 system-ui,"Microsoft YaHei",sans-serif;background:#f4f6f8;color:#172431;margin:0}main{max-width:1100px;margin:auto;padding:24px}h1{font-size:26px}h2{font-size:21px}h3{font-size:18px}section,.identity{background:white;border:1px solid #cdd5dc;border-radius:10px;padding:20px;margin:18px 0}.row{display:flex;flex-wrap:wrap;gap:16px}.frame{flex:1 1 320px;border-top:2px solid #ccd8df;padding-top:12px}img{display:block;max-width:100%;height:auto;width:320px;image-rendering:auto;border:1px solid #dce1e5}label{display:block;margin:9px 0}select,input,textarea,button{font:inherit;padding:7px;border:1px solid #98a8b4;border-radius:5px}textarea{display:block;width:95%;min-height:62px}button{cursor:pointer;background:#174e76;color:white;margin:8px 8px 8px 0}small,.muted{color:#4d6575}.notice{border-left:4px solid #b35e00;background:#fff4df;padding:12px}.facts label{font-size:14px}nav{position:sticky;top:0;background:#f4f6f8;padding:8px;z-index:2}a{color:#155886}.context{display:flex;gap:12px;flex-wrap:wrap}.context img{width:240px}.error{color:#a01b1b}details{margin:10px 0}input[type=checkbox]{width:18px;height:18px}code{word-break:break-all}
+</style>
+<main>
+<h1>USIM 独立验收工作包</h1>
+<p>先看原生 ego 图和相邻独立画面，形成自己的谓词与转移判断，再对照初标。这里没有初标答案或模型答案。所有选择默认留空，无法判断可保留“未定”。</p>
+<p class="notice">当前只是候选，独立验收 0/10。导出的是你填写的复核记录，不会自动修改数据或发布测试。所填身份与签名是本人声明，工具不能核实现实身份。</p>
+<details><summary>先读：4 个问题与谓词定义</summary>
+<ol><li>各帧 scope 内的目标及对象能否清楚辨认？</li><li>每个保留谓词在每帧能否独立判断？</li><li>各相邻帧对是否有 ego 可判、非空的语义变化？</li><li>选帧是否稳定，符合现行时间窗及至少 20 帧／2 个真实渲染更新要求？阈值段编号不能直接代替更新数。</li></ol>
+<p><b>OnSeabed</b>：实际受海床支撑；夹住但仍受支撑可以为真，不从 DVL 或未持有推断。<b>InGripper</b>：接触／夹持并有相邻画面共同运动证据，不只看闭合命令。<b>NextTo</b>：抓取前接近阶段，持有后为假。<b>NearBox</b>：在箱体释放位置附近且仍持有；不只是箱可见，不隐含已离底。Lifted不在本批scope。</p>
+</details>
+<div class="identity">
+<label>复核者姓名／身份 <input id="identity" autocomplete="off"></label>
+<label>本人是真人复核者 <select id="human"></select></label>
+<label>本人独立于初标者 <select id="independent"></select></label>
+<label>本轮判断前是否读过初标／模型答案 <select id="exposure"></select></label>
+<p class="muted">独立会话不等于独立标注者。此前读过答案需如实记录，不能声称新的盲核。</p>
+</div>
+<nav><button id="export">导出全部复核 JSON</button><label style="display:inline-block">继续填写：导入此前 JSON <input id="import" type="file" accept="application/json"></label><span id="status"></span></nav>
+<div id="episodes"></div>
+<p class="muted">本页面离线工作，不调用网络；修改暂存在当前页面中，请导出文件保存。相邻图只是辅助证据，保持段末帧不是精确物理事件时刻。</p>
+</main>
+<script>
+const DATA=__PACKET_DATA__;
+let bundle=structuredClone(DATA.bundle);
+const names={all_scope_objects_identifiable:"1. 所有scope对象在各帧均可辨？",all_scope_facts_decidable:"2. 各保留谓词逐帧均可判？",all_transitions_ego_decidable:"3. 各转移ego可判且非空？",frame_selection_rules_satisfied:"4. 稳定性／选帧规则均满足？"};
+function el(tag,text,cls){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;}
+function tri(select,value,set){select.replaceChildren();for(const [v,label] of [["","未定"],["true","是／真"],["false","否／假"]]){const o=el("option",label);o.value=v;select.append(o);}select.value=value===null?"":String(value);select.onchange=()=>set(select.value===""?null:select.value==="true");return select;}
+function field(label,node){const l=el("label",label+" ");l.append(node);return l;}
+function note(value,set,placeholder){const t=el("textarea");t.value=value;t.placeholder=placeholder;t.oninput=()=>set(t.value);return t;}
+function image(frame){const box=el("div");const im=el("img");im.src=frame.path;im.alt="原生 ego 帧 "+frame.source_frame;const a=el("a");a.href=frame.path;a.target="_blank";a.append(im);box.append(a,el("small","源帧 "+frame.source_frame+"；点击查看原生图"));return box;}
+function validateImportedBundle(value){
+ const immutable=new Set(["schema","packet_version","packet_manifest_sha256","episode_key","source_annotation_sha256","native_png_sha256","predicate"]);
+ function walk(reference,actual,path,key){
+  if(reference===null){
+   if(key==="decision"){if(actual!==null&&!["accept_current_snapshot","changes_required","exclude"].includes(actual))throw Error(path+" 的处置值无效");}
+   else if(actual!==null&&typeof actual!=="boolean")throw Error(path+" 必须为 true／false／null");
+   return;
+  }
+  if(Array.isArray(reference)){if(!Array.isArray(actual)||actual.length!==reference.length)throw Error(path+" 的列表长度不符");reference.forEach((v,i)=>walk(v,actual[i],path+"["+i+"]",key));return;}
+  if(typeof reference==="object"){
+   if(actual===null||Array.isArray(actual)||typeof actual!=="object"||Object.keys(actual).sort().join("\u0000")!==Object.keys(reference).sort().join("\u0000"))throw Error(path+" 的字段结构不符");
+   Object.keys(reference).forEach(k=>walk(reference[k],actual[k],path+"."+k,k));return;
+  }
+  if(typeof actual!==typeof reference)throw Error(path+" 的类型不符");
+  if((typeof reference==="number"||immutable.has(key)||key==="arguments")&&actual!==reference)throw Error(path+" 对应不同的源帧、谓词或工作包");
+ }
+ walk(DATA.bundle,value,"review","");
+}
+function render(){
+ const root=document.getElementById("episodes");root.replaceChildren();
+ document.getElementById("identity").value=bundle.reviewer_identity;
+ document.getElementById("identity").oninput=e=>bundle.reviewer_identity=e.target.value;
+ tri(document.getElementById("human"),bundle.reviewer_is_human,v=>bundle.reviewer_is_human=v);
+ tri(document.getElementById("independent"),bundle.reviewer_independent_of_first_pass,v=>bundle.reviewer_independent_of_first_pass=v);
+ tri(document.getElementById("exposure"),bundle.prior_answer_exposure,v=>bundle.prior_answer_exposure=v);
+ DATA.packet.episodes.forEach((episode,index)=>{
+  const w=bundle.worksheets[index];const section=el("section");section.append(el("h2",episode.episode_key+" · "+episode.task_text));
+  section.append(el("p","帧号："+episode.frames.map(f=>f.source_frame).join(" / ")+"；帧间距："+episode.frame_gaps.join(" / ")));
+  const row=el("div",undefined,"row");episode.frames.forEach((frame,i)=>{
+   const f=w.frames[i],box=el("div",undefined,"frame");box.append(el("h3","Frame "+(i+1)),image(frame));
+   box.append(el("small","灰度阈值段 "+frame.motion_hold.start+"–"+frame.motion_hold.end+"，长度 "+frame.motion_hold.length+"；只作结构线索"));
+   const details=el("details");details.append(el("summary","查看相邻稳定画面（持有／支撑辅助）"));const context=el("div",undefined,"context");frame.context.forEach(c=>context.append(image(c)));details.append(context);box.append(details);
+   Object.keys(f.visibility).forEach(object=>box.append(field("可辨："+object,tri(el("select"),f.visibility[object],v=>f.visibility[object]=v))));
+   const facts=el("div",undefined,"facts");f.facts.forEach(fact=>facts.append(field(fact.predicate+"("+fact.arguments.join(",")+")",tri(el("select"),fact.value,v=>fact.value=v))));box.append(facts,note(f.evidence_note,v=>f.evidence_note=v,"记录目标位置、接触／沙面参照、未知与邻帧依据"));row.append(box);
+  });section.append(row);
+  w.transitions.forEach(t=>{const b=el("div");b.append(field("转移 "+t.from_frame+" → "+t.to_frame+"：ego可判？",tri(el("select"),t.ego_decidable,v=>t.ego_decidable=v)),note(t.evidence_note,v=>t.evidence_note=v,"具体改变了什么？仅凭信号或窗口不能证明视觉可判。"));section.append(b);});
+  Object.keys(w.criteria).forEach(k=>section.append(field(names[k],tri(el("select"),w.criteria[k],v=>w.criteria[k]=v))));
+  const decision=el("select");[["","尚未裁决"],["accept_current_snapshot","接受当前帧与scope"],["changes_required","需要改帧／scope／降级"],["exclude","排除该episode"]].forEach(([v,t])=>{const o=el("option",t);o.value=v;decision.append(o);});decision.value=w.decision||"";decision.onchange=()=>w.decision=decision.value||null;section.append(field("处置",decision),note(w.decision_reason,v=>w.decision_reason=v,"填写依据；接受也需说明，判否时指出改帧、移除scope或排除原因。"));
+  const signature=el("input");signature.value=w.signature_name;signature.oninput=()=>w.signature_name=signature.value;section.append(field("本人签名（与身份一致）",signature));
+  const signed=el("input");signed.type="checkbox";signed.checked=w.review_complete;signed.onchange=()=>{w.review_complete=signed.checked;w.attestation=signed.checked?DATA.attestation:"";w.signed_at=signed.checked?new Date().toISOString():"";};section.append(field(DATA.attestation,signed));root.append(section);
+ });
+}
+document.getElementById("export").onclick=()=>{
+ const blob=new Blob([JSON.stringify(bundle,null,2)+"\n"],{type:"application/json"});const a=el("a");a.href=URL.createObjectURL(blob);a.download="completed_reviews.json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);document.getElementById("status").textContent="已导出；导出不代表验收通过，请运行校验器。";
+};
+document.getElementById("import").onchange=async event=>{
+ const file=event.target.files[0];if(!file)return;
+ try{
+  const value=JSON.parse(await file.text());validateImportedBundle(value);
+  const previous=bundle;
+  try{bundle=structuredClone(value);render();}
+  catch(error){bundle=previous;render();throw error;}
+  document.getElementById("status").textContent="已载入本地填写记录";
+ }catch(error){document.getElementById("status").textContent="导入失败，原填写内容已保留："+String(error);}
+ finally{document.getElementById("import").value="";}
+};
+render();
+</script>
+</html>

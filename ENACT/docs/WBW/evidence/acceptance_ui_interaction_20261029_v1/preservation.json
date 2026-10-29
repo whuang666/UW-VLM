@@ -1,0 +1,22 @@
+{
+  "schema": "usim-acceptance-ui-preservation/v1",
+  "source_head": "150ca74",
+  "baseline_files_checked": 548,
+  "unchanged_original_packet_and_data_files": 546,
+  "intentionally_revised_source_files": [
+    "ENACT\\scripts\\usim\\templates\\acceptance_workpack.html",
+    "ENACT\\scripts\\usim\\validate_acceptance_reviews.py"
+  ],
+  "new_v2_packet_files": [
+    "ENACT\\data\\usim_enact\\_review\\test_reserve\\acceptance_workpack_20261029_v2\\adjudication_focus.json",
+    "ENACT\\data\\usim_enact\\_review\\test_reserve\\acceptance_workpack_20261029_v2\\packet_manifest.json",
+    "ENACT\\data\\usim_enact\\_review\\test_reserve\\acceptance_workpack_20261029_v2\\review.html",
+    "ENACT\\data\\usim_enact\\_review\\test_reserve\\acceptance_workpack_20261029_v2\\review_templates.json"
+  ],
+  "unexpected_changes": [],
+  "unexpected_added_files": [],
+  "original_workpack_v1_preserved": true,
+  "original_annotations_and_predictions_preserved": true,
+  "actual_human_acceptance": "0/10",
+  "model_api_calls": 0
+}

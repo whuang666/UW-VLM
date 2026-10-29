@@ -1,0 +1,31 @@
+{
+  "schema": "usim-acceptance-ui-smoke/v1",
+  "test_identity": "AUTOMATED_UI_TEST_NOT_A_HUMAN_REVIEW",
+  "synthetic_only": true,
+  "page_sha256": "4f54d449e007cde389fe3ee5d53bda67d4bf60fdf1a00dd51ea15b2cbb98c6df",
+  "playwright_browser": "Microsoft Edge headless",
+  "human_acceptance_asserted": false,
+  "model_api_calls": 0,
+  "tests": {
+    "initial_export_exactly_matches_blank_template": true,
+    "rendered_episode_count": 10,
+    "decoded_browser_images": 94,
+    "filled_all_first_worksheet_controls": true,
+    "export_preserves_all_template_fields": true,
+    "nine_other_worksheets_stay_blank": true,
+    "downstream_rejects_automated_nonhuman_test": {
+      "exit": 2,
+      "accepted": 0,
+      "report_sha256": "4ebb583eb10cce390f578132e4a3cafd6b15f809aa4f52f3bda699b0a6456292"
+    },
+    "import_export_roundtrip_byte_equivalent_json": true,
+    "wrong_packet_import_rejected_without_data_loss": true,
+    "malformed_nested_import_preserves_previous_state": false,
+    "malformed_nested_import_keeps_10_rendered_episodes": false
+  },
+  "browser_page_errors": [],
+  "http_requests_intercepted": [],
+  "source_packet_hashes_unchanged": true,
+  "passed": false,
+  "harness_correction": "Boolean False was initially counted as an int by the success aggregation; corrected summary records the two failed nested-import assertions."
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "usim-acceptance-ui-smoke/v1",
+  "test_identity": "AUTOMATED_UI_TEST_NOT_A_HUMAN_REVIEW",
+  "synthetic_only": true,
+  "page_sha256": "48ab4586a05b2c4c7bf6e62bf669318863557339b518a2dd02b22a8082be4d00",
+  "playwright_browser": "Microsoft Edge headless",
+  "human_acceptance_asserted": false,
+  "model_api_calls": 0,
+  "tests": {
+    "initial_export_exactly_matches_blank_template": true,
+    "rendered_episode_count": 10,
+    "decoded_browser_images": 94,
+    "filled_all_first_worksheet_controls": true,
+    "export_preserves_all_template_fields": true,
+    "nine_other_worksheets_stay_blank": true,
+    "downstream_rejects_automated_nonhuman_test": {
+      "exit": 2,
+      "accepted": 0,
+      "report_sha256": "7637f60f217cd633b5d499eb64073f877cd2ad92b652e491701bd5c3335ed3dc"
+    },
+    "import_export_roundtrip_exact_json_values": true,
+    "wrong_packet_import_rejected_without_data_loss": true,
+    "malformed_nested_import_preserves_previous_state": true,
+    "malformed_nested_import_keeps_10_rendered_episodes": true,
+    "malformed_nested_import_downstream_rejection": {
+      "exit": 2,
+      "accepted": 0,
+      "report_sha256": "cb0f41d6907767a0ad1f511f4a308d3d78344adbab104403751c7cdf82c5e051"
+    },
+    "bad_types_missing_keys_and_frame_changes_keep_state": true,
+    "valid_reimport_after_failed_imports": true
+  },
+  "browser_page_errors": [],
+  "http_requests_intercepted": [],
+  "source_packet_hashes_unchanged": true,
+  "passed": true
+}

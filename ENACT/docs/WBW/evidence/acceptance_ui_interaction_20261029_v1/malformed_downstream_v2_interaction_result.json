@@ -1,0 +1,23 @@
+{
+  "schema": "usim-human-review-validation/v1",
+  "packet_version": "test-human-acceptance-workpack-20261029-v2",
+  "declared_reviewer_identity": "",
+  "identity_independently_authenticated": false,
+  "reviewer_declaration_valid": false,
+  "prior_answer_exposure": null,
+  "complete_review_declarations": 0,
+  "accepted_current_snapshot_episodes": 0,
+  "all_dispositions_complete": false,
+  "all_current_snapshot_episodes_accepted": false,
+  "candidate_rebuild_needed": false,
+  "episodes": [],
+  "errors": [
+    "worksheet[0].frames must be a list"
+  ],
+  "release_eligible": false,
+  "final_execution_protocol_frozen": false,
+  "model_api_calls": 0,
+  "packet_manifest_sha256": "78b9673f3830ac14d653efaca8f6f4ad23eee77c5b1f46fbe5c352298917ac07",
+  "review_bundle_sha256": "c44bd8275747c3c8dcf94025368b9aa7784a18c17576d0e1e8e065ce1963993b",
+  "candidate_snapshot_sha256": "6cc699908ffb78134795645203893cf36abec97449ee070f0f56722492358835"
+}

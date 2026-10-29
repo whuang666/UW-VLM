@@ -1,0 +1,15 @@
+{
+  "schema": "usim-human-workpack-build/v1",
+  "packet_version": "test-human-acceptance-workpack-20261029-v2",
+  "packet_manifest_sha256": "78b9673f3830ac14d653efaca8f6f4ad23eee77c5b1f46fbe5c352298917ac07",
+  "html_sha256": "48ab4586a05b2c4c7bf6e62bf669318863557339b518a2dd02b22a8082be4d00",
+  "template_sha256": "f30c25390a227feb28851ea656cc4f1b23af79315e08c766af561725b47d23f3",
+  "builder_sha256": "83414244148b0eb70d8fa9be915bd8d565e29b91e046795efef397af50485044",
+  "local_packet": "ENACT/data/usim_enact/_review/test_reserve/acceptance_workpack_20261029_v2",
+  "episode_count": 10,
+  "keyframes": 32,
+  "blank_worksheets": 10,
+  "independent_acceptance": "0/10",
+  "model_api_calls": 0,
+  "release_eligible": false
+}

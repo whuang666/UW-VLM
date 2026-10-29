@@ -1,8 +1,8 @@
 # 保守test候选：独立验收工作包与签字后流程
 
-日期：2026-10-29（Asia/Shanghai）。工作包版本：`test-human-acceptance-workpack-20261029-v1`。绑定候选：`test-reserve-balanced-qa-20261029-v1`。
+日期：2026-10-29（Asia/Shanghai）。当前工作包版本：`test-human-acceptance-workpack-20261029-v2`。绑定候选：`test-reserve-balanced-qa-20261029-v1`。v1原件保留；[真实浏览器交互及导入修复记录](acceptance_ui_interaction_20261029_zh.md)。
 
-**复核者可直接打开[离线填写页](../../ENACT/data/usim_enact/_review/test_reserve/acceptance_workpack_20261029_v1/review.html)，查看原生ego图及相邻画面，填写后导出JSON。** 10份表全部留空，独立验收仍 **0/10**。本轮没有代填身份、谓词或签名，没有改动旧标签，也没有发送模型请求。
+**复核者可直接打开[离线填写页v2](../../ENACT/data/usim_enact/_review/test_reserve/acceptance_workpack_20261029_v2/review.html)，查看原生ego图及相邻画面，填写后导出JSON。** 10份表全部留空，独立验收仍 **0/10**。v2已实际验证试填／导出／导入／下游读取，损坏文件导入不会丢失先前进度；自动化试填记录单独保存，没有代替真实验收。
 
 页面暂存当前填写内容，导出文件才会保存；导出的JSON可以重新导入继续填写。本地工作包包含94张图：32个候选关键帧、62张相邻稳定画面；没有初标谓词取值、模型预测或参考排列。它绑定当前10条候选，不把后续排除／改帧方案提前当成最终test。
 
@@ -12,14 +12,14 @@
 
 | 文件 | 用途 |
 |---|---|
-| [review.html](../../ENACT/data/usim_enact/_review/test_reserve/acceptance_workpack_20261029_v1/review.html) | 离线逐帧、逐谓词填写页；含原生图与相邻画面 |
-| [空白JSON模板](../../ENACT/docs/WBW/evidence/test_human_acceptance_20261029_v1/review_templates.json) | 偏好直接编辑JSON时使用；值默认null |
-| [中立帧清单](../../ENACT/docs/WBW/evidence/test_human_acceptance_20261029_v1/packet_manifest.json) | episode／源帧／图片哈希／scope绑定；不含初标事实取值 |
-| [争议提示](../../ENACT/docs/WBW/evidence/test_human_acceptance_20261029_v1/adjudication_focus.json) | **先形成自己的判断再看**：1650@f0、1259多次抓取、transfer的释放位置 |
+| [review.html v2](../../ENACT/data/usim_enact/_review/test_reserve/acceptance_workpack_20261029_v2/review.html) | 离线逐帧、逐谓词填写页；含原生图与相邻画面 |
+| [空白JSON模板v2](../../ENACT/docs/WBW/evidence/test_human_acceptance_20261029_v2/review_templates.json) | 偏好直接编辑JSON时使用；值默认null |
+| [中立帧清单v2](../../ENACT/docs/WBW/evidence/test_human_acceptance_20261029_v2/packet_manifest.json) | episode／源帧／图片哈希／scope绑定；不含初标事实取值 |
+| [争议提示v2](../../ENACT/docs/WBW/evidence/test_human_acceptance_20261029_v2/adjudication_focus.json) | **先形成自己的判断再看**：1650@f0、1259多次抓取、transfer的释放位置 |
 | [现行标注规范](../../ENACT/docs/WBR/ENACT-USIM-v0.2标注与关键帧规范-20261027.md) | 支撑、持有、approach、稳定性及时间窗定义 |
 | [保守候选说明](../../ENACT/docs/WBW/evidence/test_reserve_conservative_20261029/README.md) | 对照阶段再看：本批移除了哪些scope；不将Lifted带回 |
 
-原生PNG在本地 `_review/test_reserve/acceptance_workpack_20261029_v1/images/`；它们是复核材料，按既有忽略规则不入库。文本清单、空表、构建脚本与输入哈希可保存。全新克隆需先恢复候选输入及原USIM材料，再运行工作包构建器。
+原生PNG在本地 `_review/test_reserve/acceptance_workpack_20261029_v2/images/`；它们是复核材料，按既有忽略规则不入库。文本清单、空表、构建脚本与输入哈希可保存。全新克隆需先恢复候选输入及原USIM材料，再运行工作包构建器。
 
 ## 2. 每条只围绕4个问题裁决
 
@@ -58,8 +58,9 @@
 ```powershell
 $py = 'C:\Users\whuang\.workbuddy\binaries\python\envs\default\Scripts\python.exe'
 & $py -X utf8 ENACT/scripts/usim/validate_acceptance_reviews.py `
+  --packet-dir ENACT/data/usim_enact/_review/test_reserve/acceptance_workpack_20261029_v2 `
   --reviews 'C:\path\to\completed_reviews.json' `
-  --out ENACT/docs/WBW/evidence/test_human_acceptance_20261029_v1/review_validation_completed.json
+  --out ENACT/docs/WBW/evidence/test_human_acceptance_20261029_v2/review_validation_completed.json
 ```
 
 脚本不修改复核表或数据。exit2表示记录不完整／不合规；exit0只表示10条处置记录齐备。**“完成复核处置”与“当前10条都accepted”分开报告**：9条接受、1条排除时，也需要先重建9条新版本；exit0不等于可以跑正式test。

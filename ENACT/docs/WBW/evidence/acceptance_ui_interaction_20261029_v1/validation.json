@@ -1,0 +1,17 @@
+{
+  "schema": "usim-acceptance-ui-final-validation/v1",
+  "browser_normal_roundtrip_passed": true,
+  "v1_progress_loss_reproduced": true,
+  "v2_bad_imports_preserve_progress": true,
+  "real_blank_worksheets_untouched": 10,
+  "independent_acceptance": "0/10",
+  "source_packet_v1_preserved": true,
+  "unchanged_historical_packet_and_data_files": 546,
+  "unit_tests_passed": 118,
+  "old_freeze_files_passed": 1818,
+  "historical_pngs_still_tracked": 504,
+  "local_links_checked": 24,
+  "broken_links": [],
+  "model_api_calls": 0,
+  "staged_or_committed_this_turn": false
+}

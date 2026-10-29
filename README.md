@@ -28,6 +28,8 @@
 
 独立复核者可直接使用[离线验收工作包](docs/workbuddyRead/test_human_acceptance_workpack_20261029_zh.md)：10份空表、原生与相邻图、4项判断、导出JSON及校验流程已备。图片策略采用新／未跟踪数据集PNG留本地，annotation／QA／清单及重建证据保留；v0.1已有PNG不取消跟踪。
 
+验收页已补做[真实浏览器交互验证](docs/workbuddyRead/acceptance_ui_interaction_20261029_zh.md)并升级v2：正常试填／导出／导入／下游读取通过，损坏嵌套JSON导入会丢失旧进度的缺陷已修复。v1原件与候选输入保留，测试身份明确非人类，独立验收仍0/10。
+
 ## 目录与阅读入口
 
 | 路径 | 用途 |

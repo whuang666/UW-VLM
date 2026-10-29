@@ -1,0 +1,30 @@
+{
+  "source_head": "150ca74",
+  "core_source_files": [
+    {
+      "path": "ENACT/scripts/usim/prepare_acceptance_workpack.py",
+      "exists": true,
+      "sha256": "83414244148b0eb70d8fa9be915bd8d565e29b91e046795efef397af50485044",
+      "tracked_at_source_head": false
+    },
+    {
+      "path": "ENACT/scripts/usim/templates/acceptance_workpack.html",
+      "exists": true,
+      "sha256": "f30c25390a227feb28851ea656cc4f1b23af79315e08c766af561725b47d23f3",
+      "tracked_at_source_head": false
+    },
+    {
+      "path": "ENACT/scripts/usim/validate_acceptance_reviews.py",
+      "exists": true,
+      "sha256": "25692aa4a0f24d6fe853279b8493703e1dd8283d29e1cf7edac3cbe5dea33973",
+      "tracked_at_source_head": false
+    },
+    {
+      "path": "tools/test_acceptance_reviews.py",
+      "exists": true,
+      "sha256": "dde1e0799a96d4ce3cbcae0f65b80f50e95b0820239fcea16cd0054c0897c93a",
+      "tracked_at_source_head": false
+    }
+  ],
+  "git_stage_or_commit_performed": false
+}
