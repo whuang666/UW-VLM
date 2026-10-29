@@ -1,0 +1,12 @@
+{
+  "qa_version": "test-reserve-balanced-qa-20261029-v1",
+  "snapshot_payload_and_file_set_match": true,
+  "snapshot_files_checked": 160,
+  "new_ids_disjoint_from_diagnostics": true,
+  "agreed_mappings_checked": 20,
+  "stock_rerendered_images_match": 64,
+  "native_frames_match_parent_audit": true,
+  "inverse_chronological_action_content_preserved": true,
+  "independent_human_review": false,
+  "model_api_calls": 0
+}

@@ -1,0 +1,1107 @@
+{
+  "schema": "usim_text_prior_baseline/v2",
+  "rule_version": "text_lifecycle_v2",
+  "rule_script_sha256": "b5b098f2620aa5e0680a37671fba34ec573612d095fda5fe981a8d2e03a318f0",
+  "rule_script_path": "scripts/usim/text_prior_baseline.py",
+  "generated_at": "2026-10-29T17:19:38+08:00",
+  "dataset_version": "test-reserve-balanced-qa-20261029-v1",
+  "qa_file": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\usim-enact-v0.2-conservative-balanced-20261029-v1\\QA\\candidate\\enact_ordering_balanced.jsonl",
+  "qa_sha256": "0fbb36bccf994d5ee4daa05376021c77e944fa1b43b033a5aeea8d92134051c4",
+  "evaluation_protocol": "usim_strict_v0.3",
+  "predictions_out": {
+    "path": "docs/WBW/evidence/test_reserve_balanced_qa_20261029_v1/text_baseline_answers.jsonl",
+    "sha256": "14e489c90b53f1f64af5b5d8fce8c6c001614e898a8f86f814800321d1d58ec2",
+    "rows": 20
+  },
+  "scored_by": "scripts/usim/evaluate.py USIMVerifier (real verifier, same path as the model conditions)",
+  "template_compatibility": {
+    "rule_version": "text_lifecycle_v2",
+    "probes_total": 14,
+    "generations_covered": [
+      "v0.1",
+      "v0.2"
+    ],
+    "rows": [
+      {
+        "generation": "v0.1",
+        "predicate": "NextTo",
+        "text": "The robot now becomes next to the blue cylinder.",
+        "expected_rank": 10,
+        "actual_rank": 10,
+        "evidence_predicates": [
+          "NextTo"
+        ],
+        "pass": true
+      },
+      {
+        "generation": "v0.2",
+        "predicate": "NextTo",
+        "text": "The robot is now in position for the pre-grasp approach beside the blue cylinder.",
+        "expected_rank": 10,
+        "actual_rank": 10,
+        "evidence_predicates": [
+          "NextTo"
+        ],
+        "pass": true
+      },
+      {
+        "generation": "v0.2",
+        "predicate": "NextTo",
+        "text": "The robot becomes in position for the pre-grasp approach beside the red cylinder.",
+        "expected_rank": 10,
+        "actual_rank": 10,
+        "evidence_predicates": [
+          "NextTo"
+        ],
+        "pass": true
+      },
+      {
+        "generation": "v0.1",
+        "predicate": "Touching",
+        "text": "The robot is now touching the blue cylinder.",
+        "expected_rank": 15,
+        "actual_rank": 15,
+        "evidence_predicates": [
+          "Touching"
+        ],
+        "pass": true
+      },
+      {
+        "generation": "v0.2",
+        "predicate": "Touching",
+        "text": "The robot is now in contact with the blue cylinder.",
+        "expected_rank": 15,
+        "actual_rank": 15,
+        "evidence_predicates": [
+          "Touching"
+        ],
+        "pass": true
+      },
+      {
+        "generation": "v0.1",
+        "predicate": "InGripper",
+        "text": "The blue cylinder becomes grasped by the robot.",
+        "expected_rank": 20,
+        "actual_rank": 20,
+        "evidence_predicates": [
+          "InGripper"
+        ],
+        "pass": true
+      },
+      {
+        "generation": "v0.2",
+        "predicate": "InGripper",
+        "text": "The blue cylinder is now grasped by the robot.",
+        "expected_rank": 20,
+        "actual_rank": 20,
+        "evidence_predicates": [
+          "InGripper"
+        ],
+        "pass": true
+      },
+      {
+        "generation": "v0.1",
+        "predicate": "Lifted",
+        "text": "The blue cylinder is now lifted above the seabed.",
+        "expected_rank": 30,
+        "actual_rank": 30,
+        "evidence_predicates": [
+          "Lifted"
+        ],
+        "pass": true
+      },
+      {
+        "generation": "v0.2",
+        "predicate": "InBox",
+        "text": "The red cylinder is now inside the green box.",
+        "expected_rank": 40,
+        "actual_rank": 40,
+        "evidence_predicates": [
+          "InBox"
+        ],
+        "pass": true
+      },
+      {
+        "generation": "v0.2",
+        "predicate": "NearBox",
+        "text": "The robot is now near the green box.",
+        "expected_rank": 35,
+        "actual_rank": 35,
+        "evidence_predicates": [
+          "NearBox"
+        ],
+        "pass": true
+      },
+      {
+        "generation": "v0.2",
+        "predicate": "NearBox",
+        "text": "The robot is no longer near the green box.",
+        "expected_rank": null,
+        "actual_rank": null,
+        "evidence_predicates": [],
+        "pass": true
+      },
+      {
+        "generation": "v0.2",
+        "predicate": "NextTo",
+        "text": "The robot is no longer in position for the pre-grasp approach beside the blue cylinder.",
+        "expected_rank": null,
+        "actual_rank": null,
+        "evidence_predicates": [],
+        "pass": true
+      },
+      {
+        "generation": "v0.2",
+        "predicate": "Touching",
+        "text": "The robot is not in contact with the blue cylinder anymore.",
+        "expected_rank": null,
+        "actual_rank": null,
+        "evidence_predicates": [],
+        "pass": true
+      },
+      {
+        "generation": "v0.1",
+        "predicate": "OnSeabed",
+        "text": "The blue cylinder is not on the seabed anymore.",
+        "expected_rank": null,
+        "actual_rank": null,
+        "evidence_predicates": [],
+        "pass": true
+      }
+    ],
+    "all_pass": true
+  },
+  "synthetic_order_probes": {
+    "probes_total": 4,
+    "rows": [
+      {
+        "name": "v0.1_generation_order",
+        "expected_prediction": [
+          2,
+          1,
+          3
+        ],
+        "actual_prediction": [
+          2,
+          1,
+          3
+        ],
+        "stages": {
+          "1": 20,
+          "2": 10,
+          "3": 30
+        },
+        "stage_evidence": {
+          "1": [
+            "InGripper"
+          ],
+          "2": [
+            "NextTo"
+          ],
+          "3": [
+            "Lifted"
+          ]
+        },
+        "unresolved_labels": [],
+        "pass": true
+      },
+      {
+        "name": "v0.2_generation_order",
+        "expected_prediction": [
+          2,
+          1,
+          3
+        ],
+        "actual_prediction": [
+          2,
+          1,
+          3
+        ],
+        "stages": {
+          "1": 20,
+          "2": 10,
+          "3": 30
+        },
+        "stage_evidence": {
+          "1": [
+            "InGripper"
+          ],
+          "2": [
+            "NextTo"
+          ],
+          "3": [
+            "Lifted"
+          ]
+        },
+        "unresolved_labels": [],
+        "pass": true
+      },
+      {
+        "name": "v0.2_touching_phase_order",
+        "expected_prediction": [
+          2,
+          3,
+          1
+        ],
+        "actual_prediction": [
+          2,
+          3,
+          1
+        ],
+        "stages": {
+          "1": 30,
+          "2": 15,
+          "3": 20
+        },
+        "stage_evidence": {
+          "1": [
+            "Lifted"
+          ],
+          "2": [
+            "Touching"
+          ],
+          "3": [
+            "InGripper"
+          ]
+        },
+        "unresolved_labels": [],
+        "pass": true
+      },
+      {
+        "name": "v0.2_full_l5_chain_order",
+        "expected_prediction": [
+          3,
+          1,
+          4,
+          2
+        ],
+        "actual_prediction": [
+          3,
+          1,
+          4,
+          2
+        ],
+        "stages": {
+          "1": 30,
+          "2": 40,
+          "3": 10,
+          "4": 35
+        },
+        "stage_evidence": {
+          "1": [
+            "Lifted"
+          ],
+          "2": [
+            "InBox"
+          ],
+          "3": [
+            "NextTo"
+          ],
+          "4": [
+            "NearBox"
+          ]
+        },
+        "unresolved_labels": [],
+        "pass": true
+      }
+    ],
+    "all_pass": true
+  },
+  "question_template_generations": {
+    "v0.2": 20
+  },
+  "rules": {
+    "target": "predict the answer permutation from the question text only",
+    "forbidden_inputs": [
+      "gt_answer",
+      "images",
+      "key_frame_ids",
+      "model predictions"
+    ],
+    "stage_ranks": {
+      "OnSeabed": 0,
+      "NextTo": 10,
+      "Touching": 15,
+      "InGripper": 20,
+      "Lifted": 30,
+      "NearBox": 35,
+      "InBox": 40
+    },
+    "lifecycle_without_touching": "OnSeabed(0) < NextTo(10) < InGripper(20) < Lifted(30) < InBox(40)",
+    "touching_rank": "Touching(15) sits between NextTo(10) and InGripper(20) per the v0.2 guideline ('contact before holding')",
+    "stage_patterns": [
+      {
+        "rank": 0,
+        "predicate": "OnSeabed",
+        "regex": "\\bon the seabed\\b",
+        "template_generation": "v0.1+v0.2"
+      },
+      {
+        "rank": 10,
+        "predicate": "NextTo",
+        "regex": "\\bnext to\\b",
+        "template_generation": "v0.1"
+      },
+      {
+        "rank": 10,
+        "predicate": "NextTo",
+        "regex": "\\bin position for the (?:pre-grasp )?approach beside\\b",
+        "template_generation": "v0.2"
+      },
+      {
+        "rank": 15,
+        "predicate": "Touching",
+        "regex": "\\btouching\\b",
+        "template_generation": "v0.1"
+      },
+      {
+        "rank": 15,
+        "predicate": "Touching",
+        "regex": "\\bin contact with\\b",
+        "template_generation": "v0.2"
+      },
+      {
+        "rank": 20,
+        "predicate": "InGripper",
+        "regex": "\\bgrasped by the robot\\b",
+        "template_generation": "v0.1+v0.2"
+      },
+      {
+        "rank": 30,
+        "predicate": "Lifted",
+        "regex": "\\blifted above the seabed\\b",
+        "template_generation": "v0.1+v0.2"
+      },
+      {
+        "rank": 35,
+        "predicate": "NearBox",
+        "regex": "\\bnear\\b",
+        "template_generation": "v0.2"
+      },
+      {
+        "rank": 40,
+        "predicate": "InBox",
+        "regex": "\\binside the (?:green )?box\\b",
+        "template_generation": "v0.1+v0.2"
+      }
+    ],
+    "negation_guard": {
+      "patterns": [
+        "\\bno longer\\b",
+        "\\bnot\\b.{0,60}?\\banymore\\b",
+        "\\bstopped being\\b",
+        "\\bnever\\b",
+        "\\bno more\\b"
+      ],
+      "effect": "negated sentences do not contribute a stage"
+    },
+    "inverse_rule": "parse [Action N] lines; rank(N)=max positive lifecycle rank; order labels by (rank asc, label asc)",
+    "forward_rule": "identity permutation (fixed label prior); the text gives no action->future-image-label mapping",
+    "rule_source": [
+      "enact/adapters/usim_translator.py USIM_STATE_TEMPLATES (v0.1 'next to'/'touching'; v0.2 'in position for the pre-grasp approach beside'/'in contact with')",
+      "docs/WBR/ENACT-USIM-v0.2标注与关键帧规范-20261027.md §2.1-2.2 (NextTo approach semantics, Touching before grasp), §9.6 (template changes)",
+      "docs/06_data_and_evaluation_contract.md §4"
+    ],
+    "tie_break": "ascending label order"
+  },
+  "counts": {
+    "questions": 20,
+    "by_type": {
+      "forward_world_modeling_3_steps": 8,
+      "forward_world_modeling_4_steps": 2,
+      "inverse_world_modeling_3_steps": 8,
+      "inverse_world_modeling_4_steps": 2
+    }
+  },
+  "predictions": {
+    "balanced20261029_v1_c183f1530ec5fa6701ba": {
+      "id": "balanced20261029_v1_c183f1530ec5fa6701ba",
+      "type": "forward_world_modeling_3_steps",
+      "direction": "forward",
+      "num_states": 3,
+      "gt": [
+        2,
+        1
+      ],
+      "baseline_prediction": [
+        1,
+        2
+      ],
+      "unresolved_labels": [],
+      "action_header": "## Actions in Order",
+      "question_template_generation": "v0.2",
+      "stages": {
+        "1": 10,
+        "2": 20
+      },
+      "action_list_is_chronological": true,
+      "label_mapping_available_in_text": false
+    },
+    "balanced20261029_v1_ffc8be87ea4491d0a5f2": {
+      "id": "balanced20261029_v1_ffc8be87ea4491d0a5f2",
+      "type": "forward_world_modeling_3_steps",
+      "direction": "forward",
+      "num_states": 3,
+      "gt": [
+        1,
+        2
+      ],
+      "baseline_prediction": [
+        1,
+        2
+      ],
+      "unresolved_labels": [],
+      "action_header": "## Actions in Order",
+      "question_template_generation": "v0.2",
+      "stages": {
+        "1": 10,
+        "2": 20
+      },
+      "action_list_is_chronological": true,
+      "label_mapping_available_in_text": false
+    },
+    "balanced20261029_v1_c1c084f63156a1e668be": {
+      "id": "balanced20261029_v1_c1c084f63156a1e668be",
+      "type": "forward_world_modeling_3_steps",
+      "direction": "forward",
+      "num_states": 3,
+      "gt": [
+        2,
+        1
+      ],
+      "baseline_prediction": [
+        1,
+        2
+      ],
+      "unresolved_labels": [],
+      "action_header": "## Actions in Order",
+      "question_template_generation": "v0.2",
+      "stages": {
+        "1": 10,
+        "2": 20
+      },
+      "action_list_is_chronological": true,
+      "label_mapping_available_in_text": false
+    },
+    "balanced20261029_v1_7c97e55c5e7d212fd810": {
+      "id": "balanced20261029_v1_7c97e55c5e7d212fd810",
+      "type": "forward_world_modeling_3_steps",
+      "direction": "forward",
+      "num_states": 3,
+      "gt": [
+        1,
+        2
+      ],
+      "baseline_prediction": [
+        1,
+        2
+      ],
+      "unresolved_labels": [],
+      "action_header": "## Actions in Order",
+      "question_template_generation": "v0.2",
+      "stages": {
+        "1": 10,
+        "2": 20
+      },
+      "action_list_is_chronological": true,
+      "label_mapping_available_in_text": false
+    },
+    "balanced20261029_v1_fab39116826d6f071329": {
+      "id": "balanced20261029_v1_fab39116826d6f071329",
+      "type": "forward_world_modeling_3_steps",
+      "direction": "forward",
+      "num_states": 3,
+      "gt": [
+        2,
+        1
+      ],
+      "baseline_prediction": [
+        1,
+        2
+      ],
+      "unresolved_labels": [],
+      "action_header": "## Actions in Order",
+      "question_template_generation": "v0.2",
+      "stages": {
+        "1": 10,
+        "2": 20
+      },
+      "action_list_is_chronological": true,
+      "label_mapping_available_in_text": false
+    },
+    "balanced20261029_v1_393346e283b5007860a3": {
+      "id": "balanced20261029_v1_393346e283b5007860a3",
+      "type": "forward_world_modeling_3_steps",
+      "direction": "forward",
+      "num_states": 3,
+      "gt": [
+        1,
+        2
+      ],
+      "baseline_prediction": [
+        1,
+        2
+      ],
+      "unresolved_labels": [],
+      "action_header": "## Actions in Order",
+      "question_template_generation": "v0.2",
+      "stages": {
+        "1": 10,
+        "2": 20
+      },
+      "action_list_is_chronological": true,
+      "label_mapping_available_in_text": false
+    },
+    "balanced20261029_v1_66fa1f1239f5e2c2b0e5": {
+      "id": "balanced20261029_v1_66fa1f1239f5e2c2b0e5",
+      "type": "forward_world_modeling_3_steps",
+      "direction": "forward",
+      "num_states": 3,
+      "gt": [
+        2,
+        1
+      ],
+      "baseline_prediction": [
+        1,
+        2
+      ],
+      "unresolved_labels": [],
+      "action_header": "## Actions in Order",
+      "question_template_generation": "v0.2",
+      "stages": {
+        "1": 10,
+        "2": 20
+      },
+      "action_list_is_chronological": true,
+      "label_mapping_available_in_text": false
+    },
+    "balanced20261029_v1_357b46d88ea085881952": {
+      "id": "balanced20261029_v1_357b46d88ea085881952",
+      "type": "forward_world_modeling_3_steps",
+      "direction": "forward",
+      "num_states": 3,
+      "gt": [
+        1,
+        2
+      ],
+      "baseline_prediction": [
+        1,
+        2
+      ],
+      "unresolved_labels": [],
+      "action_header": "## Actions in Order",
+      "question_template_generation": "v0.2",
+      "stages": {
+        "1": 10,
+        "2": 20
+      },
+      "action_list_is_chronological": true,
+      "label_mapping_available_in_text": false
+    },
+    "balanced20261029_v1_cc4749d7ea89949db3de": {
+      "id": "balanced20261029_v1_cc4749d7ea89949db3de",
+      "type": "inverse_world_modeling_3_steps",
+      "direction": "inverse",
+      "num_states": 3,
+      "gt": [
+        2,
+        1
+      ],
+      "baseline_prediction": [
+        2,
+        1
+      ],
+      "unresolved_labels": [],
+      "action_header": "## Shuffled Actions",
+      "question_template_generation": "v0.2",
+      "stages": {
+        "1": 20,
+        "2": 10
+      },
+      "stage_evidence": {
+        "1": [
+          "InGripper"
+        ],
+        "2": [
+          "NextTo"
+        ]
+      },
+      "tie_groups": []
+    },
+    "balanced20261029_v1_9d1bb3a4fc75528f760d": {
+      "id": "balanced20261029_v1_9d1bb3a4fc75528f760d",
+      "type": "inverse_world_modeling_3_steps",
+      "direction": "inverse",
+      "num_states": 3,
+      "gt": [
+        1,
+        2
+      ],
+      "baseline_prediction": [
+        1,
+        2
+      ],
+      "unresolved_labels": [],
+      "action_header": "## Shuffled Actions",
+      "question_template_generation": "v0.2",
+      "stages": {
+        "1": 10,
+        "2": 20
+      },
+      "stage_evidence": {
+        "1": [
+          "NextTo"
+        ],
+        "2": [
+          "InGripper"
+        ]
+      },
+      "tie_groups": []
+    },
+    "balanced20261029_v1_3441d8070448389ae491": {
+      "id": "balanced20261029_v1_3441d8070448389ae491",
+      "type": "inverse_world_modeling_3_steps",
+      "direction": "inverse",
+      "num_states": 3,
+      "gt": [
+        2,
+        1
+      ],
+      "baseline_prediction": [
+        2,
+        1
+      ],
+      "unresolved_labels": [],
+      "action_header": "## Shuffled Actions",
+      "question_template_generation": "v0.2",
+      "stages": {
+        "1": 20,
+        "2": 10
+      },
+      "stage_evidence": {
+        "1": [
+          "InGripper"
+        ],
+        "2": [
+          "NextTo"
+        ]
+      },
+      "tie_groups": []
+    },
+    "balanced20261029_v1_c111bada6b42eec9970e": {
+      "id": "balanced20261029_v1_c111bada6b42eec9970e",
+      "type": "inverse_world_modeling_3_steps",
+      "direction": "inverse",
+      "num_states": 3,
+      "gt": [
+        1,
+        2
+      ],
+      "baseline_prediction": [
+        1,
+        2
+      ],
+      "unresolved_labels": [],
+      "action_header": "## Shuffled Actions",
+      "question_template_generation": "v0.2",
+      "stages": {
+        "1": 10,
+        "2": 20
+      },
+      "stage_evidence": {
+        "1": [
+          "NextTo"
+        ],
+        "2": [
+          "InGripper"
+        ]
+      },
+      "tie_groups": []
+    },
+    "balanced20261029_v1_7912e9a7387d953be8f2": {
+      "id": "balanced20261029_v1_7912e9a7387d953be8f2",
+      "type": "inverse_world_modeling_3_steps",
+      "direction": "inverse",
+      "num_states": 3,
+      "gt": [
+        2,
+        1
+      ],
+      "baseline_prediction": [
+        2,
+        1
+      ],
+      "unresolved_labels": [],
+      "action_header": "## Shuffled Actions",
+      "question_template_generation": "v0.2",
+      "stages": {
+        "1": 20,
+        "2": 10
+      },
+      "stage_evidence": {
+        "1": [
+          "InGripper"
+        ],
+        "2": [
+          "NextTo"
+        ]
+      },
+      "tie_groups": []
+    },
+    "balanced20261029_v1_22ff9684f0f503ac2394": {
+      "id": "balanced20261029_v1_22ff9684f0f503ac2394",
+      "type": "inverse_world_modeling_3_steps",
+      "direction": "inverse",
+      "num_states": 3,
+      "gt": [
+        1,
+        2
+      ],
+      "baseline_prediction": [
+        1,
+        2
+      ],
+      "unresolved_labels": [],
+      "action_header": "## Shuffled Actions",
+      "question_template_generation": "v0.2",
+      "stages": {
+        "1": 10,
+        "2": 20
+      },
+      "stage_evidence": {
+        "1": [
+          "NextTo"
+        ],
+        "2": [
+          "InGripper"
+        ]
+      },
+      "tie_groups": []
+    },
+    "balanced20261029_v1_06d77b51183eb6aceae7": {
+      "id": "balanced20261029_v1_06d77b51183eb6aceae7",
+      "type": "inverse_world_modeling_3_steps",
+      "direction": "inverse",
+      "num_states": 3,
+      "gt": [
+        2,
+        1
+      ],
+      "baseline_prediction": [
+        2,
+        1
+      ],
+      "unresolved_labels": [],
+      "action_header": "## Shuffled Actions",
+      "question_template_generation": "v0.2",
+      "stages": {
+        "1": 20,
+        "2": 10
+      },
+      "stage_evidence": {
+        "1": [
+          "InGripper"
+        ],
+        "2": [
+          "NextTo"
+        ]
+      },
+      "tie_groups": []
+    },
+    "balanced20261029_v1_bd8ea5eceb3b374902b1": {
+      "id": "balanced20261029_v1_bd8ea5eceb3b374902b1",
+      "type": "inverse_world_modeling_3_steps",
+      "direction": "inverse",
+      "num_states": 3,
+      "gt": [
+        1,
+        2
+      ],
+      "baseline_prediction": [
+        1,
+        2
+      ],
+      "unresolved_labels": [],
+      "action_header": "## Shuffled Actions",
+      "question_template_generation": "v0.2",
+      "stages": {
+        "1": 10,
+        "2": 20
+      },
+      "stage_evidence": {
+        "1": [
+          "NextTo"
+        ],
+        "2": [
+          "InGripper"
+        ]
+      },
+      "tie_groups": []
+    },
+    "balanced20261029_v1_1ccf70addfc7cca6c2d5": {
+      "id": "balanced20261029_v1_1ccf70addfc7cca6c2d5",
+      "type": "forward_world_modeling_4_steps",
+      "direction": "forward",
+      "num_states": 4,
+      "gt": [
+        3,
+        1,
+        2
+      ],
+      "baseline_prediction": [
+        1,
+        2,
+        3
+      ],
+      "unresolved_labels": [],
+      "action_header": "## Actions in Order",
+      "question_template_generation": "v0.2",
+      "stages": {
+        "1": 10,
+        "2": 20,
+        "3": 35
+      },
+      "action_list_is_chronological": true,
+      "label_mapping_available_in_text": false
+    },
+    "balanced20261029_v1_8a75f9f3c5dd14b1df6c": {
+      "id": "balanced20261029_v1_8a75f9f3c5dd14b1df6c",
+      "type": "forward_world_modeling_4_steps",
+      "direction": "forward",
+      "num_states": 4,
+      "gt": [
+        1,
+        2,
+        3
+      ],
+      "baseline_prediction": [
+        1,
+        2,
+        3
+      ],
+      "unresolved_labels": [],
+      "action_header": "## Actions in Order",
+      "question_template_generation": "v0.2",
+      "stages": {
+        "1": 10,
+        "2": 20,
+        "3": 35
+      },
+      "action_list_is_chronological": true,
+      "label_mapping_available_in_text": false
+    },
+    "balanced20261029_v1_cd95553ea82a79730d87": {
+      "id": "balanced20261029_v1_cd95553ea82a79730d87",
+      "type": "inverse_world_modeling_4_steps",
+      "direction": "inverse",
+      "num_states": 4,
+      "gt": [
+        2,
+        1,
+        3
+      ],
+      "baseline_prediction": [
+        2,
+        1,
+        3
+      ],
+      "unresolved_labels": [],
+      "action_header": "## Shuffled Actions",
+      "question_template_generation": "v0.2",
+      "stages": {
+        "1": 20,
+        "2": 10,
+        "3": 35
+      },
+      "stage_evidence": {
+        "1": [
+          "InGripper"
+        ],
+        "2": [
+          "NextTo"
+        ],
+        "3": [
+          "NearBox"
+        ]
+      },
+      "tie_groups": []
+    },
+    "balanced20261029_v1_61fed175faa432039649": {
+      "id": "balanced20261029_v1_61fed175faa432039649",
+      "type": "inverse_world_modeling_4_steps",
+      "direction": "inverse",
+      "num_states": 4,
+      "gt": [
+        2,
+        3,
+        1
+      ],
+      "baseline_prediction": [
+        2,
+        3,
+        1
+      ],
+      "unresolved_labels": [],
+      "action_header": "## Shuffled Actions",
+      "question_template_generation": "v0.2",
+      "stages": {
+        "1": 35,
+        "2": 10,
+        "3": 20
+      },
+      "stage_evidence": {
+        "1": [
+          "NearBox"
+        ],
+        "2": [
+          "NextTo"
+        ],
+        "3": [
+          "InGripper"
+        ]
+      },
+      "tie_groups": []
+    }
+  },
+  "metrics": {
+    "overall": {
+      "count": 20,
+      "transitions_total": 44,
+      "EM": 0.75,
+      "TA": 0.75,
+      "PA_item_mean": 0.75,
+      "PA_transition_micro": 0.75,
+      "invalid_or_missing": 0,
+      "invalid_reasons": {},
+      "identity_answer_rate": 0.7
+    },
+    "by_direction": {
+      "forward": {
+        "count": 10,
+        "transitions_total": 22,
+        "EM": 0.5,
+        "TA": 0.5,
+        "PA_item_mean": 0.5,
+        "PA_transition_micro": 0.5,
+        "invalid_or_missing": 0,
+        "invalid_reasons": {},
+        "identity_answer_rate": 1.0
+      },
+      "inverse": {
+        "count": 10,
+        "transitions_total": 22,
+        "EM": 1.0,
+        "TA": 1.0,
+        "PA_item_mean": 1.0,
+        "PA_transition_micro": 1.0,
+        "invalid_or_missing": 0,
+        "invalid_reasons": {},
+        "identity_answer_rate": 0.4
+      }
+    },
+    "by_setting": {
+      "forward_L3": {
+        "count": 8,
+        "transitions_total": 16,
+        "EM": 0.5,
+        "TA": 0.5,
+        "PA_item_mean": 0.5,
+        "PA_transition_micro": 0.5,
+        "invalid_or_missing": 0,
+        "invalid_reasons": {},
+        "identity_answer_rate": 1.0
+      },
+      "forward_L4": {
+        "count": 2,
+        "transitions_total": 6,
+        "EM": 0.5,
+        "TA": 0.5,
+        "PA_item_mean": 0.5,
+        "PA_transition_micro": 0.5,
+        "invalid_or_missing": 0,
+        "invalid_reasons": {},
+        "identity_answer_rate": 1.0
+      },
+      "inverse_L3": {
+        "count": 8,
+        "transitions_total": 16,
+        "EM": 1.0,
+        "TA": 1.0,
+        "PA_item_mean": 1.0,
+        "PA_transition_micro": 1.0,
+        "invalid_or_missing": 0,
+        "invalid_reasons": {},
+        "identity_answer_rate": 0.5
+      },
+      "inverse_L4": {
+        "count": 2,
+        "transitions_total": 6,
+        "EM": 1.0,
+        "TA": 1.0,
+        "PA_item_mean": 1.0,
+        "PA_transition_micro": 1.0,
+        "invalid_or_missing": 0,
+        "invalid_reasons": {},
+        "identity_answer_rate": 0.0
+      }
+    }
+  },
+  "identity": {
+    "overall": {
+      "identity_answer_rate": 0.7,
+      "identity_reference_rate": 0.45
+    },
+    "by_setting": {
+      "forward_L3": {
+        "identity_answer_rate": 1.0,
+        "identity_reference_rate": 0.5
+      },
+      "forward_L4": {
+        "identity_answer_rate": 1.0,
+        "identity_reference_rate": 0.5
+      },
+      "inverse_L3": {
+        "identity_answer_rate": 0.5,
+        "identity_reference_rate": 0.5
+      },
+      "inverse_L4": {
+        "identity_answer_rate": 0.0,
+        "identity_reference_rate": 0.0
+      }
+    }
+  },
+  "chance": {
+    "uniform_permutation_EM": 0.4333,
+    "identity_answer_EM": 0.45,
+    "by_setting": {
+      "forward_L3": {
+        "count": 8,
+        "uniform_EM": 0.5,
+        "identity_EM": 0.5
+      },
+      "forward_L4": {
+        "count": 2,
+        "uniform_EM": 0.1667,
+        "identity_EM": 0.5
+      },
+      "inverse_L3": {
+        "count": 8,
+        "uniform_EM": 0.5,
+        "identity_EM": 0.5
+      },
+      "inverse_L4": {
+        "count": 2,
+        "uniform_EM": 0.1667,
+        "identity_EM": 0.0
+      }
+    }
+  },
+  "comparison_condition_c": {
+    "skipped": "no matching condition-C items provided (pass --condition-c-items with the report.items.jsonl of a run on this exact QA set)"
+  },
+  "observations": [
+    "规则 text_lifecycle_v2 同时支持 v0.1/v0.2 两套动作文本模板；模板自检 14/14 通过；合成 inverse 排序自检 4/4 通过；本轮 question 模板代际分布 {'v0.2': 20}。",
+    "inverse 文本基线 EM = 10/10：动作行按生命周期词序即可唯一排序，该组题在无图条件下是文本可解的。",
+    "forward 文本基线采用恒等先验：10 题中动作列表全部按时间顺序给出，但题目不含 future-image 标签到动作的映射，文本无法消解标签顺序；forward EM = 5/10（等于恒等参考率）。"
+  ]
+}

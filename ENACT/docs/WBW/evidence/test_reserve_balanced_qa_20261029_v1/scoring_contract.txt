@@ -1,0 +1,110 @@
+Loaded task: usim_train_episode_000200 with 4 key frames
+{
+  "mixed_valid_missing": {
+    "expected_PA_transition_micro": 0.4,
+    "actual": {
+      "count": 2,
+      "valid_permutations": 1,
+      "invalid_or_missing": 1,
+      "invalid_reasons": {
+        "missing": 1
+      },
+      "EM": 0.5,
+      "semantic_only": 0.0,
+      "TA": 0.5,
+      "PA_item_mean": 0.5,
+      "PA_transition_micro": 0.4,
+      "transitions_total": 5
+    },
+    "pass": true
+  },
+  "missing_asset": {
+    "precheck_raises": true,
+    "message": "资产预检查失败，拒绝评分：",
+    "pass": true
+  },
+  "strict_parser": {
+    "cases": {
+      "[1, 2]": {
+        "reason": "ok",
+        "value": [
+          1,
+          2
+        ],
+        "expected_reason": "ok",
+        "pass": true
+      },
+      "  [2, 1]  ": {
+        "reason": "ok",
+        "value": [
+          2,
+          1
+        ],
+        "expected_reason": "ok",
+        "pass": true
+      },
+      "Explanation: [1, 2]": {
+        "reason": "extra_text",
+        "value": null,
+        "expected_reason": "extra_text",
+        "pass": true
+      },
+      "[2, 1] then [1, 2]": {
+        "reason": "unparsable",
+        "value": null,
+        "expected_reason": "unparsable",
+        "pass": true
+      },
+      "[0, 1]": {
+        "reason": "not_a_permutation",
+        "value": null,
+        "expected_reason": "not_a_permutation",
+        "pass": true
+      },
+      "[1, 1]": {
+        "reason": "not_a_permutation",
+        "value": null,
+        "expected_reason": "not_a_permutation",
+        "pass": true
+      },
+      "[1, 2, 3]": {
+        "reason": "wrong_length",
+        "value": null,
+        "expected_reason": "wrong_length",
+        "pass": true
+      },
+      "[true, 1]": {
+        "reason": "non_integer",
+        "value": null,
+        "expected_reason": "non_integer",
+        "pass": true
+      },
+      "[1, ": {
+        "reason": "unparsable",
+        "value": null,
+        "expected_reason": "unparsable",
+        "pass": true
+      },
+      "": {
+        "reason": "empty",
+        "value": null,
+        "expected_reason": "empty",
+        "pass": true
+      },
+      "no answer": {
+        "reason": "extra_text",
+        "value": null,
+        "expected_reason": "extra_text",
+        "pass": true
+      }
+    },
+    "pass": true
+  },
+  "duplicate_predictions": {
+    "duplicates_detected": [
+      "usim_train_episode_000200_forward_world_modeling_3_steps_0f3c71f2"
+    ],
+    "pass": true
+  }
+}
+all_pass=True  evidence=E:\code\UW-VLM\ENACT\docs\WBW\evidence\test_reserve_balanced_qa_20261029_v1\scoring_contract.json

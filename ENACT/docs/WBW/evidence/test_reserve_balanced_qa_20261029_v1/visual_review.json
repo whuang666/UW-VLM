@@ -1,0 +1,61 @@
+{
+  "schema": "usim-balanced-qa-visual-qa/v1",
+  "qa_version": "test-reserve-balanced-qa-20261029-v1",
+  "reviewer": "Codex AI agent in current chat; technical artifact inspection, not independent human annotation",
+  "contact_sheet_pages_viewed": 5,
+  "questions_viewed": 20,
+  "presented_images_viewed": 64,
+  "native_frames_additionally_inspected": [
+    "usim_train_episode_001650@0",
+    "usim_train_episode_001078@0"
+  ],
+  "labels_readable": true,
+  "new_label_occlusion_of_target_observed": false,
+  "source_visibility_issues": [
+    {
+      "qa_id": "balanced20261029_v1_c183f1530ec5fa6701ba",
+      "source_frame": 0,
+      "source_png": "replayed_activities/usim_train_episode_001650/external_sensor1/00000.png",
+      "source_sha256": "18d1b4d7c33900d5bad615c9f22f152bcb2a922bea391d10f1bd8c43c8f40e36",
+      "candidate_annotation_target_visibility": true,
+      "technical_target_identifiable": false,
+      "review_status": "visibility_disputed_pending_independent_adjudication",
+      "note_zh": "原生1650@f0图中未辨认出管子；新编号仅改变画面顶部文字，无法确认的区域未被编号遮挡。本轮保留源事实，不回填最终验收。"
+    },
+    {
+      "qa_id": "balanced20261029_v1_22ff9684f0f503ac2394",
+      "source_frame": 0,
+      "source_png": "replayed_activities/usim_train_episode_001650/external_sensor1/00000.png",
+      "source_sha256": "18d1b4d7c33900d5bad615c9f22f152bcb2a922bea391d10f1bd8c43c8f40e36",
+      "candidate_annotation_target_visibility": true,
+      "technical_target_identifiable": false,
+      "review_status": "visibility_disputed_pending_independent_adjudication",
+      "note_zh": "原生1650@f0图中未辨认出管子；新编号仅改变画面顶部文字，无法确认的区域未被编号遮挡。本轮保留源事实，不回填最终验收。"
+    }
+  ],
+  "source_truth_or_worksheet_modified": false,
+  "galleries": [
+    {
+      "path": "ENACT/data/usim_enact/_review/test_reserve/balanced_qa_visual_20261029_v1/page_01.png",
+      "sha256": "cf21007e0c3390c8b0a7d7c5361f5003e6b30d4f0736e3afa07f9ae3e587e174"
+    },
+    {
+      "path": "ENACT/data/usim_enact/_review/test_reserve/balanced_qa_visual_20261029_v1/page_02.png",
+      "sha256": "86aab4617ca5b0ca0d0c1abf0a2e46f938c9541204646614d44c27a16d6eaf8f"
+    },
+    {
+      "path": "ENACT/data/usim_enact/_review/test_reserve/balanced_qa_visual_20261029_v1/page_03.png",
+      "sha256": "f398c44466395562ea765d84ae4ab61164324b9e92dcd0fa4e232ee8c08ad28c"
+    },
+    {
+      "path": "ENACT/data/usim_enact/_review/test_reserve/balanced_qa_visual_20261029_v1/page_04.png",
+      "sha256": "d5845d9e2bf3b534c627d309073cb3daaa737e41ef5e35d048c3b7ebfe89cb33"
+    },
+    {
+      "path": "ENACT/data/usim_enact/_review/test_reserve/balanced_qa_visual_20261029_v1/page_05.png",
+      "sha256": "ab42d2dfcb397bdcd9da5ac28c0e8fa0137ab6fa228671d134d0d07f7ec30f7f"
+    }
+  ],
+  "independent_acceptance": "0/10",
+  "model_api_calls": 0
+}

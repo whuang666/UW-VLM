@@ -1,0 +1,21 @@
+{
+  "schema": "usim-balanced-qa-release-gates/v1",
+  "qa_version": "test-reserve-balanced-qa-20261029-v1",
+  "mechanical_build_passed": true,
+  "actual_qa_unique_gate_passed": true,
+  "finite_sample_balance_gate_passed": true,
+  "oracle_gate_passed": true,
+  "snapshot_verified": true,
+  "candidate_source_visibility_fully_accepted": false,
+  "technical_visibility_blockers": [
+    {
+      "episode": 1650,
+      "source_frame": 0,
+      "affected_questions": 2
+    }
+  ],
+  "independent_acceptance": "0/10",
+  "release_eligible": false,
+  "final_test_execution_protocol_frozen": false,
+  "model_api_calls": 0
+}

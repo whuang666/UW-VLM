@@ -1,0 +1,335 @@
+[compiled] usim_train_episode_001078: 3 frames, 2/2 visible transitions
+[compiled] usim_train_episode_001145: 3 frames, 2/2 visible transitions
+[compiled] usim_train_episode_001259: 3 frames, 2/2 visible transitions
+[compiled] usim_train_episode_001273: 3 frames, 2/2 visible transitions
+[compiled] usim_train_episode_001378: 4 frames, 3/3 visible transitions
+[compiled] usim_train_episode_001384: 4 frames, 3/3 visible transitions
+[compiled] usim_train_episode_001497: 3 frames, 2/2 visible transitions
+[compiled] usim_train_episode_001549: 3 frames, 2/2 visible transitions
+[compiled] usim_train_episode_001650: 3 frames, 2/2 visible transitions
+[compiled] usim_train_episode_001734: 3 frames, 2/2 visible transitions
+{"episodes": 10, "key_frames": 32, "transitions": 22, "visible_transitions": 22}
+Loaded task: usim_train_episode_001650 with 3 key frames
+Loaded task: usim_train_episode_001259 with 3 key frames
+Loaded task: usim_train_episode_001734 with 3 key frames
+Loaded task: usim_train_episode_001145 with 3 key frames
+Loaded task: usim_train_episode_001497 with 3 key frames
+Loaded task: usim_train_episode_001273 with 3 key frames
+Loaded task: usim_train_episode_001549 with 3 key frames
+Loaded task: usim_train_episode_001078 with 3 key frames
+Loaded task: usim_train_episode_001384 with 4 key frames
+Loaded task: usim_train_episode_001378 with 4 key frames
+{
+  "dataset_version": "test-reserve-balanced-qa-20261029-v1",
+  "questions": 20,
+  "uniform_EM": 0.4333,
+  "uniform_TA": 0.4333,
+  "uniform_PA_item_mean": 0.4667,
+  "uniform_PA_transition_micro": 0.4545,
+  "identity_EM": 0.45,
+  "multi_answer_questions": 0,
+  "accepted_count_histogram": {
+    "1": 20
+  },
+  "empty_reference_transitions": 0,
+  "gt_rejected_questions": 0,
+  "by_setting": {
+    "forward_L3": {
+      "count": 8,
+      "uniform_EM": 0.5,
+      "uniform_TA": 0.5,
+      "multi": 0
+    },
+    "forward_L4": {
+      "count": 2,
+      "uniform_EM": 0.1667,
+      "uniform_TA": 0.1667,
+      "multi": 0
+    },
+    "inverse_L3": {
+      "count": 8,
+      "uniform_EM": 0.5,
+      "uniform_TA": 0.5,
+      "multi": 0
+    },
+    "inverse_L4": {
+      "count": 2,
+      "uniform_EM": 0.1667,
+      "uniform_TA": 0.1667,
+      "multi": 0
+    }
+  },
+  "synthetic_baselines": {},
+  "stored_baselines_match": true,
+  "cross_checks_pass": null,
+  "all_validity_checks_pass": true,
+  "hard_errors": [],
+  "evidence": "E:\\code\\UW-VLM\\ENACT\\docs\\WBW\\evidence\\test_reserve_balanced_qa_20261029_v1\\permutation_audit.json"
+}
+Loaded task: usim_train_episode_001650 with 3 key frames
+Loaded task: usim_train_episode_001259 with 3 key frames
+Loaded task: usim_train_episode_001734 with 3 key frames
+Loaded task: usim_train_episode_001145 with 3 key frames
+Loaded task: usim_train_episode_001497 with 3 key frames
+Loaded task: usim_train_episode_001273 with 3 key frames
+Loaded task: usim_train_episode_001549 with 3 key frames
+Loaded task: usim_train_episode_001078 with 3 key frames
+Loaded task: usim_train_episode_001384 with 4 key frames
+Loaded task: usim_train_episode_001378 with 4 key frames
+{"count": 20, "valid_permutations": 20, "invalid_or_missing": 0, "invalid_reasons": {}, "EM": 1.0, "semantic_only": 0.0, "TA": 1.0, "PA_item_mean": 1.0, "PA_transition_micro": 1.0, "transitions_total": 44}
+  forward_L3: {'count': 8, 'valid_permutations': 8, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 16}
+  forward_L4: {'count': 2, 'valid_permutations': 2, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 6}
+  inverse_L3: {'count': 8, 'valid_permutations': 8, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 16}
+  inverse_L4: {'count': 2, 'valid_permutations': 2, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 1.0, 'semantic_only': 0.0, 'TA': 1.0, 'PA_item_mean': 1.0, 'PA_transition_micro': 1.0, 'transitions_total': 6}
+report: E:\code\UW-VLM\ENACT\docs\WBW\evidence\test_reserve_balanced_qa_20261029_v1\oracle.json
+Loaded task: usim_train_episode_001650 with 3 key frames
+Loaded task: usim_train_episode_001259 with 3 key frames
+Loaded task: usim_train_episode_001734 with 3 key frames
+Loaded task: usim_train_episode_001145 with 3 key frames
+Loaded task: usim_train_episode_001497 with 3 key frames
+Loaded task: usim_train_episode_001273 with 3 key frames
+Loaded task: usim_train_episode_001549 with 3 key frames
+Loaded task: usim_train_episode_001078 with 3 key frames
+Loaded task: usim_train_episode_001384 with 4 key frames
+Loaded task: usim_train_episode_001378 with 4 key frames
+{"count": 20, "valid_permutations": 20, "invalid_or_missing": 0, "invalid_reasons": {}, "EM": 0.45, "semantic_only": 0.0, "TA": 0.45, "PA_item_mean": 0.4667, "PA_transition_micro": 0.4545, "transitions_total": 44}
+  forward_L3: {'count': 8, 'valid_permutations': 8, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 0.5, 'semantic_only': 0.0, 'TA': 0.5, 'PA_item_mean': 0.5, 'PA_transition_micro': 0.5, 'transitions_total': 16}
+  forward_L4: {'count': 2, 'valid_permutations': 2, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 0.5, 'semantic_only': 0.0, 'TA': 0.5, 'PA_item_mean': 0.5, 'PA_transition_micro': 0.5, 'transitions_total': 6}
+  inverse_L3: {'count': 8, 'valid_permutations': 8, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 0.5, 'semantic_only': 0.0, 'TA': 0.5, 'PA_item_mean': 0.5, 'PA_transition_micro': 0.5, 'transitions_total': 16}
+  inverse_L4: {'count': 2, 'valid_permutations': 2, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 0.0, 'semantic_only': 0.0, 'TA': 0.0, 'PA_item_mean': 0.1667, 'PA_transition_micro': 0.1667, 'transitions_total': 6}
+report: E:\code\UW-VLM\ENACT\docs\WBW\evidence\test_reserve_balanced_qa_20261029_v1\identity.json
+Loaded task: usim_train_episode_001650 with 3 key frames
+Loaded task: usim_train_episode_001259 with 3 key frames
+Loaded task: usim_train_episode_001734 with 3 key frames
+Loaded task: usim_train_episode_001145 with 3 key frames
+Loaded task: usim_train_episode_001497 with 3 key frames
+Loaded task: usim_train_episode_001273 with 3 key frames
+Loaded task: usim_train_episode_001549 with 3 key frames
+Loaded task: usim_train_episode_001078 with 3 key frames
+Loaded task: usim_train_episode_001384 with 4 key frames
+Loaded task: usim_train_episode_001378 with 4 key frames
+{"count": 20, "valid_permutations": 20, "invalid_or_missing": 0, "invalid_reasons": {}, "EM": 0.4, "semantic_only": 0.0, "TA": 0.4, "PA_item_mean": 0.45, "PA_transition_micro": 0.4318, "transitions_total": 44}
+  forward_L3: {'count': 8, 'valid_permutations': 8, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 0.5, 'semantic_only': 0.0, 'TA': 0.5, 'PA_item_mean': 0.5, 'PA_transition_micro': 0.5, 'transitions_total': 16}
+  forward_L4: {'count': 2, 'valid_permutations': 2, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 0.0, 'semantic_only': 0.0, 'TA': 0.0, 'PA_item_mean': 0.3333, 'PA_transition_micro': 0.3333, 'transitions_total': 6}
+  inverse_L3: {'count': 8, 'valid_permutations': 8, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 0.5, 'semantic_only': 0.0, 'TA': 0.5, 'PA_item_mean': 0.5, 'PA_transition_micro': 0.5, 'transitions_total': 16}
+  inverse_L4: {'count': 2, 'valid_permutations': 2, 'invalid_or_missing': 0, 'invalid_reasons': {}, 'EM': 0.0, 'semantic_only': 0.0, 'TA': 0.0, 'PA_item_mean': 0.1667, 'PA_transition_micro': 0.1667, 'transitions_total': 6}
+report: E:\code\UW-VLM\ENACT\docs\WBW\evidence\test_reserve_balanced_qa_20261029_v1\reverse.json
+Loaded task: usim_train_episode_001650 with 3 key frames
+Loaded task: usim_train_episode_001259 with 3 key frames
+Loaded task: usim_train_episode_001734 with 3 key frames
+Loaded task: usim_train_episode_001145 with 3 key frames
+Loaded task: usim_train_episode_001497 with 3 key frames
+Loaded task: usim_train_episode_001273 with 3 key frames
+Loaded task: usim_train_episode_001549 with 3 key frames
+Loaded task: usim_train_episode_001078 with 3 key frames
+Loaded task: usim_train_episode_001384 with 4 key frames
+Loaded task: usim_train_episode_001378 with 4 key frames
+Loaded task: usim_train_episode_001650 with 3 key frames
+Loaded task: usim_train_episode_001259 with 3 key frames
+Loaded task: usim_train_episode_001734 with 3 key frames
+Loaded task: usim_train_episode_001145 with 3 key frames
+Loaded task: usim_train_episode_001497 with 3 key frames
+Loaded task: usim_train_episode_001273 with 3 key frames
+Loaded task: usim_train_episode_001549 with 3 key frames
+Loaded task: usim_train_episode_001078 with 3 key frames
+Loaded task: usim_train_episode_001384 with 4 key frames
+Loaded task: usim_train_episode_001378 with 4 key frames
+{
+  "dataset_version": "test-reserve-balanced-qa-20261029-v1",
+  "rule_version": "text_lifecycle_v2",
+  "rule_script_sha256": "b5b098f2620aa5e0680a37671fba34ec573612d095fda5fe981a8d2e03a318f0",
+  "template_compatibility": {
+    "all_pass": true,
+    "probes": 14,
+    "generations_covered": [
+      "v0.1",
+      "v0.2"
+    ]
+  },
+  "synthetic_order_probes": {
+    "all_pass": true,
+    "probes": 4,
+    "rows": [
+      {
+        "name": "v0.1_generation_order",
+        "pass": true,
+        "expected": [
+          2,
+          1,
+          3
+        ],
+        "actual": [
+          2,
+          1,
+          3
+        ]
+      },
+      {
+        "name": "v0.2_generation_order",
+        "pass": true,
+        "expected": [
+          2,
+          1,
+          3
+        ],
+        "actual": [
+          2,
+          1,
+          3
+        ]
+      },
+      {
+        "name": "v0.2_touching_phase_order",
+        "pass": true,
+        "expected": [
+          2,
+          3,
+          1
+        ],
+        "actual": [
+          2,
+          3,
+          1
+        ]
+      },
+      {
+        "name": "v0.2_full_l5_chain_order",
+        "pass": true,
+        "expected": [
+          3,
+          1,
+          4,
+          2
+        ],
+        "actual": [
+          3,
+          1,
+          4,
+          2
+        ]
+      }
+    ]
+  },
+  "question_template_generations": {
+    "v0.2": 20
+  },
+  "baseline_overall": {
+    "count": 20,
+    "transitions_total": 44,
+    "EM": 0.75,
+    "TA": 0.75,
+    "PA_item_mean": 0.75,
+    "PA_transition_micro": 0.75,
+    "invalid_or_missing": 0,
+    "invalid_reasons": {},
+    "identity_answer_rate": 0.7
+  },
+  "by_setting": {
+    "forward_L3": {
+      "count": 8,
+      "transitions_total": 16,
+      "EM": 0.5,
+      "TA": 0.5,
+      "PA_item_mean": 0.5,
+      "PA_transition_micro": 0.5,
+      "invalid_or_missing": 0,
+      "invalid_reasons": {},
+      "identity_answer_rate": 1.0
+    },
+    "forward_L4": {
+      "count": 2,
+      "transitions_total": 6,
+      "EM": 0.5,
+      "TA": 0.5,
+      "PA_item_mean": 0.5,
+      "PA_transition_micro": 0.5,
+      "invalid_or_missing": 0,
+      "invalid_reasons": {},
+      "identity_answer_rate": 1.0
+    },
+    "inverse_L3": {
+      "count": 8,
+      "transitions_total": 16,
+      "EM": 1.0,
+      "TA": 1.0,
+      "PA_item_mean": 1.0,
+      "PA_transition_micro": 1.0,
+      "invalid_or_missing": 0,
+      "invalid_reasons": {},
+      "identity_answer_rate": 0.5
+    },
+    "inverse_L4": {
+      "count": 2,
+      "transitions_total": 6,
+      "EM": 1.0,
+      "TA": 1.0,
+      "PA_item_mean": 1.0,
+      "PA_transition_micro": 1.0,
+      "invalid_or_missing": 0,
+      "invalid_reasons": {},
+      "identity_answer_rate": 0.0
+    }
+  },
+  "identity": {
+    "overall": {
+      "identity_answer_rate": 0.7,
+      "identity_reference_rate": 0.45
+    },
+    "by_setting": {
+      "forward_L3": {
+        "identity_answer_rate": 1.0,
+        "identity_reference_rate": 0.5
+      },
+      "forward_L4": {
+        "identity_answer_rate": 1.0,
+        "identity_reference_rate": 0.5
+      },
+      "inverse_L3": {
+        "identity_answer_rate": 0.5,
+        "identity_reference_rate": 0.5
+      },
+      "inverse_L4": {
+        "identity_answer_rate": 0.0,
+        "identity_reference_rate": 0.0
+      }
+    }
+  },
+  "chance": {
+    "uniform_permutation_EM": 0.4333,
+    "identity_answer_EM": 0.45,
+    "by_setting": {
+      "forward_L3": {
+        "count": 8,
+        "uniform_EM": 0.5,
+        "identity_EM": 0.5
+      },
+      "forward_L4": {
+        "count": 2,
+        "uniform_EM": 0.1667,
+        "identity_EM": 0.5
+      },
+      "inverse_L3": {
+        "count": 8,
+        "uniform_EM": 0.5,
+        "identity_EM": 0.5
+      },
+      "inverse_L4": {
+        "count": 2,
+        "uniform_EM": 0.1667,
+        "identity_EM": 0.0
+      }
+    }
+  },
+  "condition_c": {
+    "overall_EM": null,
+    "delta_baseline_minus_C": null,
+    "paired": null,
+    "by_setting": null
+  },
+  "observations": [
+    "规则 text_lifecycle_v2 同时支持 v0.1/v0.2 两套动作文本模板；模板自检 14/14 通过；合成 inverse 排序自检 4/4 通过；本轮 question 模板代际分布 {'v0.2': 20}。",
+    "inverse 文本基线 EM = 10/10：动作行按生命周期词序即可唯一排序，该组题在无图条件下是文本可解的。",
+    "forward 文本基线采用恒等先验：10 题中动作列表全部按时间顺序给出，但题目不含 future-image 标签到动作的映射，文本无法消解标签顺序；forward EM = 5/10（等于恒等参考率）。"
+  ],
+  "evidence": "E:\\code\\UW-VLM\\ENACT\\docs\\WBW\\evidence\\test_reserve_balanced_qa_20261029_v1\\text_baseline.json"
+}

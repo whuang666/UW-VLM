@@ -1,0 +1,184 @@
+{
+  "length": {
+    "cells": {
+      "L3": {
+        "N": 16,
+        "M": 2,
+        "histogram": {
+          "[1, 2]": 8,
+          "[2, 1]": 8
+        },
+        "distinct_answers": 2,
+        "best_constant_EM": "1/2",
+        "minimum_possible_best_constant_EM": "1/2",
+        "uniform_random_EM": "1/2",
+        "chronological_item_by_display_slot_counts": [
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "EM_step_percentage_points": "25/4"
+      },
+      "L4": {
+        "N": 4,
+        "M": 6,
+        "histogram": {
+          "[1, 2, 3]": 1,
+          "[1, 3, 2]": 0,
+          "[2, 1, 3]": 1,
+          "[2, 3, 1]": 1,
+          "[3, 1, 2]": 1,
+          "[3, 2, 1]": 0
+        },
+        "distinct_answers": 4,
+        "best_constant_EM": "1/4",
+        "minimum_possible_best_constant_EM": "1/4",
+        "uniform_random_EM": "1/6",
+        "chronological_item_by_display_slot_counts": [
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            2
+          ]
+        ],
+        "EM_step_percentage_points": "25"
+      }
+    },
+    "best_constant_overall_EM": "9/20"
+  },
+  "direction_length": {
+    "cells": {
+      "forward_L3": {
+        "N": 8,
+        "M": 2,
+        "histogram": {
+          "[1, 2]": 4,
+          "[2, 1]": 4
+        },
+        "distinct_answers": 2,
+        "best_constant_EM": "1/2",
+        "minimum_possible_best_constant_EM": "1/2",
+        "uniform_random_EM": "1/2",
+        "chronological_item_by_display_slot_counts": [
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "EM_step_percentage_points": "25/2"
+      },
+      "forward_L4": {
+        "N": 2,
+        "M": 6,
+        "histogram": {
+          "[1, 2, 3]": 1,
+          "[1, 3, 2]": 0,
+          "[2, 1, 3]": 0,
+          "[2, 3, 1]": 0,
+          "[3, 1, 2]": 1,
+          "[3, 2, 1]": 0
+        },
+        "distinct_answers": 2,
+        "best_constant_EM": "1/2",
+        "minimum_possible_best_constant_EM": "1/2",
+        "uniform_random_EM": "1/6",
+        "chronological_item_by_display_slot_counts": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "EM_step_percentage_points": "50"
+      },
+      "inverse_L3": {
+        "N": 8,
+        "M": 2,
+        "histogram": {
+          "[1, 2]": 4,
+          "[2, 1]": 4
+        },
+        "distinct_answers": 2,
+        "best_constant_EM": "1/2",
+        "minimum_possible_best_constant_EM": "1/2",
+        "uniform_random_EM": "1/2",
+        "chronological_item_by_display_slot_counts": [
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "EM_step_percentage_points": "25/2"
+      },
+      "inverse_L4": {
+        "N": 2,
+        "M": 6,
+        "histogram": {
+          "[1, 2, 3]": 0,
+          "[1, 3, 2]": 0,
+          "[2, 1, 3]": 1,
+          "[2, 3, 1]": 1,
+          "[3, 1, 2]": 0,
+          "[3, 2, 1]": 0
+        },
+        "distinct_answers": 2,
+        "best_constant_EM": "1/2",
+        "minimum_possible_best_constant_EM": "1/2",
+        "uniform_random_EM": "1/6",
+        "chronological_item_by_display_slot_counts": [
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        "EM_step_percentage_points": "50"
+      }
+    },
+    "best_constant_overall_EM": "1/2"
+  },
+  "uniform_random_EM": "13/30"
+}

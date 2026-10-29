@@ -2,11 +2,13 @@
 
 最近更新：2026-10-29（Asia/Shanghai）。整理日期：2026-10-23（Asia/Shanghai）。目标：理解 ENACT，在当前工作区的 **USIM 水下仿真数据**上重建同类前向、逆向世界建模评测。
 
+当前最新产物：[均衡QA候选v1构建与门禁](../../docs/workbuddyRead/test_reserve_balanced_qa_build_20261029_zh.md)。新版本20题、64张标号图与输入快照已完成，唯一性／oracle／有限样本频数门禁通过；文本基线仍0.75，且1650@f0目标可见性待裁决。105项测试通过，独立人眼验收0/10。下方方案与历史产物段落保留各自时点。
+
 当前执行入口（2026-10-28）：[v0.2 任务总结与验收状态](WBW/ENACT-USIM-v0.2任务总结与验收状态-20261028.md) → [下一步工作清单与运行手册](05_next_steps.md)。四条件结果与预算诊断见 [v0.2 开发矩阵复核与下一步](WBW/ENACT-USIM-v0.2开发矩阵复核与下一步-20261027.md)；构建与冻结依据见 [v0.2 构建与协议准备](WBW/ENACT-USIM-v0.2构建与协议准备-20261027.md)、[v0.2 协议证据](WBW/ENACT-USIM-v0.2协议证据-20261027.md)。v0.1 现状与证据见 [评分契约与统计](WBW/ENACT-USIM-评分契约与统计-20261027.md) 与 [qwen3.8-max 执行结果](WBW/ENACT-USIM-qwen3.8-max-执行结果-20261024.md)。2026-10-24 的 [DashScope 实施方案](WBR/ENACT-USIM-DashScope-API完整实施方案-20261024.md) 与 [API 方案重写记录](WBW/ENACT-USIM-API方案重写记录-20261024.md) 保留为历史接口验证记录。
 
 ENACT 的“动作”是可见场景状态的变化，不是 USIM 的 13 维控制向量。v0.2 数据、题集、冻结及588次双协议开发对照已完成；当前重点是 **预留 test 的选帧规则修订与独立质量验收**。
 
-2026-10-29 最新交接：[保守候选唯一性与oracle审计](../../docs/workbuddyRead/test_reserve_conservative_semantic_20261029_zh.md)。8条L3与2条L4完整链生成20道诊断题，56个排列全部枚举，每题恰好1个合法答案，oracle全1。固定seed导致答案分布偏置，这20题不直接用于正式test；正式QA、文本基线及独立人眼验收仍待完成（0/10）。[501取证](../../docs/workbuddyRead/dev_lift_chain_ep000501_20261029_zh.md)与历史标签／成绩保留原版本。
+2026-10-29 最新交接：[排列策略方案与图文影响](../../docs/workbuddyRead/test_reserve_permutation_strategy_20261029_zh.md)。已生成20题均衡标签草案，保留恒等排列，明确L4小样本的常量下限；真实verifier合成反例证明“转移互异”不能替代唯一性枚举。原[保守候选审计](../../docs/workbuddyRead/test_reserve_conservative_semantic_20261029_zh.md)的固定答案夹具仍不能用于正式test；新QA／图片尚未重建，独立人眼验收0/10。
 
 ## 阅读入口
 

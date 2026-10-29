@@ -24,6 +24,8 @@
 
 2026-10-29补充：保守test候选（8条L3、2条L4）已通过完整链排列唯一性及合成oracle审计：20道诊断题、56次排列枚举，每题唯一合法答案，oracle指标全1。这是程序自检；诊断题答案分布偏置，正式QA仍需重排并全量复核，独立人眼验收仍0/10。[结果与后续入口](docs/workbuddyRead/test_reserve_conservative_semantic_20261029_zh.md)。
 
+后续[均衡QA候选v1已建成](docs/workbuddyRead/test_reserve_balanced_qa_build_20261029_zh.md)：独立版本20题／64张标号图，实际唯一性、oracle及图文绑定通过；长度常量0.45、方向×长度常量0.50，文本基线0.75（inverse10/10）。105项测试、原1818文件冻结通过，0次API。源帧1650@f0的管子可见性仍有争议，独立验收0/10，当前不能作为最终test放行。
+
 ## 目录与阅读入口
 
 | 路径 | 用途 |

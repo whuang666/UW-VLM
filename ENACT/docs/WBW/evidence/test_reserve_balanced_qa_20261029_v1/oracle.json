@@ -1,0 +1,80 @@
+{
+  "dataset_version": "test-reserve-balanced-qa-20261029-v1",
+  "evaluation_protocol": "usim_strict_v0.3",
+  "qa_file": "E:\\code\\UW-VLM\\ENACT\\data\\usim_enact\\usim-enact-v0.2-conservative-balanced-20261029-v1\\QA\\candidate\\enact_ordering_balanced.jsonl",
+  "name": "baseline_oracle",
+  "total_questions": 20,
+  "answered": 20,
+  "reference_transition_gate": {
+    "enforced": true,
+    "checked_questions": 20,
+    "empty_reference_transitions": 0
+  },
+  "by_setting": {
+    "forward_L3": {
+      "count": 8,
+      "valid_permutations": 8,
+      "invalid_or_missing": 0,
+      "invalid_reasons": {},
+      "EM": 1.0,
+      "semantic_only": 0.0,
+      "TA": 1.0,
+      "PA_item_mean": 1.0,
+      "PA_transition_micro": 1.0,
+      "transitions_total": 16
+    },
+    "forward_L4": {
+      "count": 2,
+      "valid_permutations": 2,
+      "invalid_or_missing": 0,
+      "invalid_reasons": {},
+      "EM": 1.0,
+      "semantic_only": 0.0,
+      "TA": 1.0,
+      "PA_item_mean": 1.0,
+      "PA_transition_micro": 1.0,
+      "transitions_total": 6
+    },
+    "inverse_L3": {
+      "count": 8,
+      "valid_permutations": 8,
+      "invalid_or_missing": 0,
+      "invalid_reasons": {},
+      "EM": 1.0,
+      "semantic_only": 0.0,
+      "TA": 1.0,
+      "PA_item_mean": 1.0,
+      "PA_transition_micro": 1.0,
+      "transitions_total": 16
+    },
+    "inverse_L4": {
+      "count": 2,
+      "valid_permutations": 2,
+      "invalid_or_missing": 0,
+      "invalid_reasons": {},
+      "EM": 1.0,
+      "semantic_only": 0.0,
+      "TA": 1.0,
+      "PA_item_mean": 1.0,
+      "PA_transition_micro": 1.0,
+      "transitions_total": 6
+    }
+  },
+  "overall": {
+    "count": 20,
+    "valid_permutations": 20,
+    "invalid_or_missing": 0,
+    "invalid_reasons": {},
+    "EM": 1.0,
+    "semantic_only": 0.0,
+    "TA": 1.0,
+    "PA_item_mean": 1.0,
+    "PA_transition_micro": 1.0,
+    "transitions_total": 44
+  },
+  "identity_reference_rate": 0.45,
+  "answer_lengths": {
+    "2": 16,
+    "3": 4
+  }
+}

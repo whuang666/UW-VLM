@@ -1,0 +1,2218 @@
+{
+  "schema": "usim-balanced-image-bindings/v1",
+  "qa_version": "test-reserve-balanced-qa-20261029-v1",
+  "bindings": [
+    {
+      "qa_id": "balanced20261029_v1_c183f1530ec5fa6701ba",
+      "direction": "forward",
+      "slot": 0,
+      "source_frame": 0,
+      "source_png": "replayed_activities/usim_train_episode_001650/external_sensor1/00000.png",
+      "source_sha256": "18d1b4d7c33900d5bad615c9f22f152bcb2a922bea391d10f1bd8c43c8f40e36",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001650/balanced20261029_v1_c183f1530ec5fa6701ba_slot_00.png",
+      "presented_sha256": "e30ec1407a1f81d96bfdad2c43829cfd4335b8e39a38d4d878a67d82528f55f2",
+      "label": "Current State",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        161,
+        30
+      ],
+      "annotation_sha256": "1c0380e6f98cbd8baaa00cbc72456715e95da3972436013936946c62629564d5",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_c183f1530ec5fa6701ba",
+      "direction": "forward",
+      "slot": 1,
+      "source_frame": 219,
+      "source_png": "replayed_activities/usim_train_episode_001650/external_sensor1/00219.png",
+      "source_sha256": "a30c868cd91b68dc1dfab209d94e2454e117d3f15011ce655163ba289085abd0",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001650/balanced20261029_v1_c183f1530ec5fa6701ba_slot_01.png",
+      "presented_sha256": "89ff2eb7f2fb515a11db85f63cefa87c21ad31666310ae61af237cd8975a17b7",
+      "label": "Next State 1",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "1c0380e6f98cbd8baaa00cbc72456715e95da3972436013936946c62629564d5",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_c183f1530ec5fa6701ba",
+      "direction": "forward",
+      "slot": 2,
+      "source_frame": 190,
+      "source_png": "replayed_activities/usim_train_episode_001650/external_sensor1/00190.png",
+      "source_sha256": "a30c868cd91b68dc1dfab209d94e2454e117d3f15011ce655163ba289085abd0",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001650/balanced20261029_v1_c183f1530ec5fa6701ba_slot_02.png",
+      "presented_sha256": "f1e18e44b146667ff669844a6e2cfb4a01123d29a30c0b5ec72793d4efb73ff5",
+      "label": "Next State 2",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "1c0380e6f98cbd8baaa00cbc72456715e95da3972436013936946c62629564d5",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_ffc8be87ea4491d0a5f2",
+      "direction": "forward",
+      "slot": 0,
+      "source_frame": 57,
+      "source_png": "replayed_activities/usim_train_episode_001259/external_sensor1/00057.png",
+      "source_sha256": "54ca33069621cb08797288670426becca2259d3f0442108836a671e16d2db147",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001259/balanced20261029_v1_ffc8be87ea4491d0a5f2_slot_00.png",
+      "presented_sha256": "db24f73e02ca3df04e48f4c3bd4b3157eb6366ec94cbfe2d1065255dd8b57f2a",
+      "label": "Current State",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        161,
+        30
+      ],
+      "annotation_sha256": "d4bb62fef0cfdb381b138f6691471cca1ae001f675bea90336a023caa7ff1583",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_ffc8be87ea4491d0a5f2",
+      "direction": "forward",
+      "slot": 1,
+      "source_frame": 170,
+      "source_png": "replayed_activities/usim_train_episode_001259/external_sensor1/00170.png",
+      "source_sha256": "6c46aa79037333426ff779b4f28b4dc66f692569035b75bedfa900ad8f46cdd8",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001259/balanced20261029_v1_ffc8be87ea4491d0a5f2_slot_01.png",
+      "presented_sha256": "8553c3bab2c062594a6d2ec64d9becf3f7cdbeee16aa1ca1988d9e7b5b38734e",
+      "label": "Next State 1",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "d4bb62fef0cfdb381b138f6691471cca1ae001f675bea90336a023caa7ff1583",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_ffc8be87ea4491d0a5f2",
+      "direction": "forward",
+      "slot": 2,
+      "source_frame": 203,
+      "source_png": "replayed_activities/usim_train_episode_001259/external_sensor1/00203.png",
+      "source_sha256": "e223e33929e3b3e7af0a097709ab219dda15d808843b737f5f0ef85eb3477b0a",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001259/balanced20261029_v1_ffc8be87ea4491d0a5f2_slot_02.png",
+      "presented_sha256": "fe956f7529e708ee229aee391fb5e855acf75de69bc064e4e8ccbcaa1237bf84",
+      "label": "Next State 2",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "d4bb62fef0cfdb381b138f6691471cca1ae001f675bea90336a023caa7ff1583",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_c1c084f63156a1e668be",
+      "direction": "forward",
+      "slot": 0,
+      "source_frame": 150,
+      "source_png": "replayed_activities/usim_train_episode_001734/external_sensor1/00150.png",
+      "source_sha256": "a77e4b6e68f4af5bfb9fa3eb79d8f9a75d67155b33a239a21a1f53a501a34368",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001734/balanced20261029_v1_c1c084f63156a1e668be_slot_00.png",
+      "presented_sha256": "95b3743b863388e2b6630ef41fe0e656e24e3bbd96c816646d732953528eace3",
+      "label": "Current State",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        161,
+        30
+      ],
+      "annotation_sha256": "1546a120ef45994c0e420bb9fcf92476dff21b0b1e7eb2691d6ca194da0724e3",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_c1c084f63156a1e668be",
+      "direction": "forward",
+      "slot": 1,
+      "source_frame": 312,
+      "source_png": "replayed_activities/usim_train_episode_001734/external_sensor1/00312.png",
+      "source_sha256": "10323bdf3a2bff477946c715c05e377649d9c368ef4b7185f07b71f5de29ed54",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001734/balanced20261029_v1_c1c084f63156a1e668be_slot_01.png",
+      "presented_sha256": "b7efe278d8aff4d16f1d1019e81e19f4bb4a4665be669972606886f887276abb",
+      "label": "Next State 1",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "1546a120ef45994c0e420bb9fcf92476dff21b0b1e7eb2691d6ca194da0724e3",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_c1c084f63156a1e668be",
+      "direction": "forward",
+      "slot": 2,
+      "source_frame": 274,
+      "source_png": "replayed_activities/usim_train_episode_001734/external_sensor1/00274.png",
+      "source_sha256": "edf361da820af3bb1e84b701b798bc006d6a79ec685bded001bea5d6395ff07c",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001734/balanced20261029_v1_c1c084f63156a1e668be_slot_02.png",
+      "presented_sha256": "c00fbd589cb801eef012b1e5b78546e576b4cd0203ede83654b658ad802e069f",
+      "label": "Next State 2",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "1546a120ef45994c0e420bb9fcf92476dff21b0b1e7eb2691d6ca194da0724e3",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_7c97e55c5e7d212fd810",
+      "direction": "forward",
+      "slot": 0,
+      "source_frame": 88,
+      "source_png": "replayed_activities/usim_train_episode_001145/external_sensor1/00088.png",
+      "source_sha256": "97c6a7d16ddfeb6c738eb67511c349f3818fe799843ced8af20173b83b18bf8b",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001145/balanced20261029_v1_7c97e55c5e7d212fd810_slot_00.png",
+      "presented_sha256": "97762f765f292999e00b973dafe857e6fda0bf3d0d492b3625a457abea53d33e",
+      "label": "Current State",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        161,
+        30
+      ],
+      "annotation_sha256": "adf053c253686fda3bb3613ee2904307d772284f33e86441b0ebc92b29a12486",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_7c97e55c5e7d212fd810",
+      "direction": "forward",
+      "slot": 1,
+      "source_frame": 128,
+      "source_png": "replayed_activities/usim_train_episode_001145/external_sensor1/00128.png",
+      "source_sha256": "089c3f2ced2729e281bcc7aab785ad11c6a052f8de918a0d328d39af59ccc015",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001145/balanced20261029_v1_7c97e55c5e7d212fd810_slot_01.png",
+      "presented_sha256": "fca51df064e80b1c3124fe198e27d966a8356b2acec757969b18dfaa156c8889",
+      "label": "Next State 1",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "adf053c253686fda3bb3613ee2904307d772284f33e86441b0ebc92b29a12486",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_7c97e55c5e7d212fd810",
+      "direction": "forward",
+      "slot": 2,
+      "source_frame": 161,
+      "source_png": "replayed_activities/usim_train_episode_001145/external_sensor1/00161.png",
+      "source_sha256": "c2172fa26cb611fb0f686a676f4d0a3238505cb8021e9191edb8ef55c0fc2305",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001145/balanced20261029_v1_7c97e55c5e7d212fd810_slot_02.png",
+      "presented_sha256": "8e380087b5604ffbc03e1a018d7f5316ac56c5fdcf8d5b17f59dd08a3ae21832",
+      "label": "Next State 2",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "adf053c253686fda3bb3613ee2904307d772284f33e86441b0ebc92b29a12486",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_fab39116826d6f071329",
+      "direction": "forward",
+      "slot": 0,
+      "source_frame": 42,
+      "source_png": "replayed_activities/usim_train_episode_001497/external_sensor1/00042.png",
+      "source_sha256": "41b0ce2758b1ab879e2769a09c3cefbb9a9f10479c50b02f9c7a404a9225578b",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001497/balanced20261029_v1_fab39116826d6f071329_slot_00.png",
+      "presented_sha256": "7747b2c54b0a676e76325f9c8697f4bd3d7c02cb4277ae133bea6424a6a44db6",
+      "label": "Current State",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        161,
+        30
+      ],
+      "annotation_sha256": "eddde311e35f519ac02f928ffe87b50bc34db1e4f63bdb3b00dc4535f2ed4b91",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_fab39116826d6f071329",
+      "direction": "forward",
+      "slot": 1,
+      "source_frame": 145,
+      "source_png": "replayed_activities/usim_train_episode_001497/external_sensor1/00145.png",
+      "source_sha256": "6b8e4fef5ba099746d4711e00253cb35cdb8f510d1bf8d41c9b28922af3f1bac",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001497/balanced20261029_v1_fab39116826d6f071329_slot_01.png",
+      "presented_sha256": "e83472957102832f58fc9b5bcbf62d37322ced171678f29ad23b9e0a62a97dc0",
+      "label": "Next State 1",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "eddde311e35f519ac02f928ffe87b50bc34db1e4f63bdb3b00dc4535f2ed4b91",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_fab39116826d6f071329",
+      "direction": "forward",
+      "slot": 2,
+      "source_frame": 111,
+      "source_png": "replayed_activities/usim_train_episode_001497/external_sensor1/00111.png",
+      "source_sha256": "d539dd52185745e1637a6ba31f63e2f691ab709a935cedad2c93ba51b1bc96b2",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001497/balanced20261029_v1_fab39116826d6f071329_slot_02.png",
+      "presented_sha256": "7080e478a5322f928e3499b7660b8c8134de30209f02c3a8589fe9aea65e2a18",
+      "label": "Next State 2",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "eddde311e35f519ac02f928ffe87b50bc34db1e4f63bdb3b00dc4535f2ed4b91",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_393346e283b5007860a3",
+      "direction": "forward",
+      "slot": 0,
+      "source_frame": 179,
+      "source_png": "replayed_activities/usim_train_episode_001273/external_sensor1/00179.png",
+      "source_sha256": "5c547391dbb3d9615d9dc2ea401e012b9c40e37928935d71f44d83f11600a2cb",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001273/balanced20261029_v1_393346e283b5007860a3_slot_00.png",
+      "presented_sha256": "4c8ece75bd8766345dbf554c0b04a6e1b70ba381b1dc93b65529448dadaf17af",
+      "label": "Current State",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        161,
+        30
+      ],
+      "annotation_sha256": "2a403389f39d0c8b95a76aeeebd27dffd2f3bbdf82599d439605283ed2718d3f",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_393346e283b5007860a3",
+      "direction": "forward",
+      "slot": 1,
+      "source_frame": 261,
+      "source_png": "replayed_activities/usim_train_episode_001273/external_sensor1/00261.png",
+      "source_sha256": "0e54ca5a09c5329c9774b9787d2b41d2429c557eee808dc71af96bfb6c5fabd9",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001273/balanced20261029_v1_393346e283b5007860a3_slot_01.png",
+      "presented_sha256": "f5742b4cffdc3aa42753e98b70523c6832688f7daf5479070d1ce596a286273b",
+      "label": "Next State 1",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "2a403389f39d0c8b95a76aeeebd27dffd2f3bbdf82599d439605283ed2718d3f",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_393346e283b5007860a3",
+      "direction": "forward",
+      "slot": 2,
+      "source_frame": 288,
+      "source_png": "replayed_activities/usim_train_episode_001273/external_sensor1/00288.png",
+      "source_sha256": "6111a576173135bebbc4cea0e54977de596b94494e22ea0ea5499a8008bd8338",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001273/balanced20261029_v1_393346e283b5007860a3_slot_02.png",
+      "presented_sha256": "1dafcb398543018f6897d8a2c3fb0f91637e1a95e90827eb3d5f49b628c1232b",
+      "label": "Next State 2",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "2a403389f39d0c8b95a76aeeebd27dffd2f3bbdf82599d439605283ed2718d3f",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_66fa1f1239f5e2c2b0e5",
+      "direction": "forward",
+      "slot": 0,
+      "source_frame": 75,
+      "source_png": "replayed_activities/usim_train_episode_001549/external_sensor1/00075.png",
+      "source_sha256": "d9495f21a0746da0ca55db8c63c0622e75c02aa0b84831d72dfa498da720deb0",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001549/balanced20261029_v1_66fa1f1239f5e2c2b0e5_slot_00.png",
+      "presented_sha256": "48884e1292414dc4223961979d64ca3029418a9ecf0e98518fdb7a2cd91ba319",
+      "label": "Current State",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        161,
+        30
+      ],
+      "annotation_sha256": "e8cfa4b7901bf0d30e3e64f5fbf3eeda678808a3116c8ecd225ac7e1a88410d3",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_66fa1f1239f5e2c2b0e5",
+      "direction": "forward",
+      "slot": 1,
+      "source_frame": 219,
+      "source_png": "replayed_activities/usim_train_episode_001549/external_sensor1/00219.png",
+      "source_sha256": "d75af5ad5977f3917adb48c07c5588d04f0d91578007768e3c2a379ba956e7c9",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001549/balanced20261029_v1_66fa1f1239f5e2c2b0e5_slot_01.png",
+      "presented_sha256": "6050e399ce6a7c0944c5d0e3be4f5ebcd78ec6f29e9571494aa19c84bea5cf11",
+      "label": "Next State 1",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "e8cfa4b7901bf0d30e3e64f5fbf3eeda678808a3116c8ecd225ac7e1a88410d3",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_66fa1f1239f5e2c2b0e5",
+      "direction": "forward",
+      "slot": 2,
+      "source_frame": 183,
+      "source_png": "replayed_activities/usim_train_episode_001549/external_sensor1/00183.png",
+      "source_sha256": "174dc833eb9dd530a8161e6ebb854c2176d4ab4b35c14827ab1d9467d010a2b7",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001549/balanced20261029_v1_66fa1f1239f5e2c2b0e5_slot_02.png",
+      "presented_sha256": "d0dc17812c65b23a68d6b4d162b0ad905b1b0e9ae91c020aff877c110bf893a7",
+      "label": "Next State 2",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "e8cfa4b7901bf0d30e3e64f5fbf3eeda678808a3116c8ecd225ac7e1a88410d3",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_357b46d88ea085881952",
+      "direction": "forward",
+      "slot": 0,
+      "source_frame": 0,
+      "source_png": "replayed_activities/usim_train_episode_001078/external_sensor1/00000.png",
+      "source_sha256": "b3e8d08e359b4a040f765f3c663689e47f6e90f5763fadca2b8fb23363a8adfd",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001078/balanced20261029_v1_357b46d88ea085881952_slot_00.png",
+      "presented_sha256": "bc2ede07defaf39fa8edd87fce717d382210f8ae39c54608d08c55412ef5e77b",
+      "label": "Current State",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        161,
+        30
+      ],
+      "annotation_sha256": "b4e821ca9ad5020d3c808eca42ed6e23e67847c4980a667a3ebc631b99672b9c",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_357b46d88ea085881952",
+      "direction": "forward",
+      "slot": 1,
+      "source_frame": 189,
+      "source_png": "replayed_activities/usim_train_episode_001078/external_sensor1/00189.png",
+      "source_sha256": "264ec1c236cdc98a9394fe9e46a10f074f2a95ebed887652acda656f94dc2e15",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001078/balanced20261029_v1_357b46d88ea085881952_slot_01.png",
+      "presented_sha256": "eb0a9f780597197afe71f49a7dcb02a2c2beaec8dcb8c2b96411c0130b47d9be",
+      "label": "Next State 1",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "b4e821ca9ad5020d3c808eca42ed6e23e67847c4980a667a3ebc631b99672b9c",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_357b46d88ea085881952",
+      "direction": "forward",
+      "slot": 2,
+      "source_frame": 214,
+      "source_png": "replayed_activities/usim_train_episode_001078/external_sensor1/00214.png",
+      "source_sha256": "e2e2ad9a5c82804d84e2e916bd8aeb35087ceb12ee94751787cd3420235752b3",
+      "presented_png": "QA/images/forward_world_modeling_3_steps/usim_train_episode_001078/balanced20261029_v1_357b46d88ea085881952_slot_02.png",
+      "presented_sha256": "56210be155706e1a3f919e447cb4c722e9ac298ae20eb9535ecff3a799f2ba54",
+      "label": "Next State 2",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "b4e821ca9ad5020d3c808eca42ed6e23e67847c4980a667a3ebc631b99672b9c",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_cc4749d7ea89949db3de",
+      "direction": "inverse",
+      "slot": 0,
+      "source_frame": 150,
+      "source_png": "replayed_activities/usim_train_episode_001734/external_sensor1/00150.png",
+      "source_sha256": "a77e4b6e68f4af5bfb9fa3eb79d8f9a75d67155b33a239a21a1f53a501a34368",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001734/balanced20261029_v1_cc4749d7ea89949db3de_slot_00.png",
+      "presented_sha256": "95b3743b863388e2b6630ef41fe0e656e24e3bbd96c816646d732953528eace3",
+      "label": "Current State",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        161,
+        30
+      ],
+      "annotation_sha256": "1546a120ef45994c0e420bb9fcf92476dff21b0b1e7eb2691d6ca194da0724e3",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_cc4749d7ea89949db3de",
+      "direction": "inverse",
+      "slot": 1,
+      "source_frame": 274,
+      "source_png": "replayed_activities/usim_train_episode_001734/external_sensor1/00274.png",
+      "source_sha256": "edf361da820af3bb1e84b701b798bc006d6a79ec685bded001bea5d6395ff07c",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001734/balanced20261029_v1_cc4749d7ea89949db3de_slot_01.png",
+      "presented_sha256": "8fc4fb43a2b2653d0dbb8203e71f6ed029fdae0b693c5defabc514f13bd05683",
+      "label": "Next State 1",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "1546a120ef45994c0e420bb9fcf92476dff21b0b1e7eb2691d6ca194da0724e3",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_cc4749d7ea89949db3de",
+      "direction": "inverse",
+      "slot": 2,
+      "source_frame": 312,
+      "source_png": "replayed_activities/usim_train_episode_001734/external_sensor1/00312.png",
+      "source_sha256": "10323bdf3a2bff477946c715c05e377649d9c368ef4b7185f07b71f5de29ed54",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001734/balanced20261029_v1_cc4749d7ea89949db3de_slot_02.png",
+      "presented_sha256": "0e29346589b61a3e2728f2a6ca837c4caedc2e1d2cc591a08fc07d1cde0a207b",
+      "label": "Next State 2",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "1546a120ef45994c0e420bb9fcf92476dff21b0b1e7eb2691d6ca194da0724e3",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_9d1bb3a4fc75528f760d",
+      "direction": "inverse",
+      "slot": 0,
+      "source_frame": 42,
+      "source_png": "replayed_activities/usim_train_episode_001497/external_sensor1/00042.png",
+      "source_sha256": "41b0ce2758b1ab879e2769a09c3cefbb9a9f10479c50b02f9c7a404a9225578b",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001497/balanced20261029_v1_9d1bb3a4fc75528f760d_slot_00.png",
+      "presented_sha256": "7747b2c54b0a676e76325f9c8697f4bd3d7c02cb4277ae133bea6424a6a44db6",
+      "label": "Current State",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        161,
+        30
+      ],
+      "annotation_sha256": "eddde311e35f519ac02f928ffe87b50bc34db1e4f63bdb3b00dc4535f2ed4b91",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_9d1bb3a4fc75528f760d",
+      "direction": "inverse",
+      "slot": 1,
+      "source_frame": 111,
+      "source_png": "replayed_activities/usim_train_episode_001497/external_sensor1/00111.png",
+      "source_sha256": "d539dd52185745e1637a6ba31f63e2f691ab709a935cedad2c93ba51b1bc96b2",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001497/balanced20261029_v1_9d1bb3a4fc75528f760d_slot_01.png",
+      "presented_sha256": "9abe2abe41bd0b03b8badca1d954461cf34436409123e24df0ec0c77602d5d45",
+      "label": "Next State 1",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "eddde311e35f519ac02f928ffe87b50bc34db1e4f63bdb3b00dc4535f2ed4b91",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_9d1bb3a4fc75528f760d",
+      "direction": "inverse",
+      "slot": 2,
+      "source_frame": 145,
+      "source_png": "replayed_activities/usim_train_episode_001497/external_sensor1/00145.png",
+      "source_sha256": "6b8e4fef5ba099746d4711e00253cb35cdb8f510d1bf8d41c9b28922af3f1bac",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001497/balanced20261029_v1_9d1bb3a4fc75528f760d_slot_02.png",
+      "presented_sha256": "4d3d61c492bd5b98147b9d55c2579888b17b1547c1865d24ef237f0556acbd24",
+      "label": "Next State 2",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "eddde311e35f519ac02f928ffe87b50bc34db1e4f63bdb3b00dc4535f2ed4b91",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_3441d8070448389ae491",
+      "direction": "inverse",
+      "slot": 0,
+      "source_frame": 0,
+      "source_png": "replayed_activities/usim_train_episode_001078/external_sensor1/00000.png",
+      "source_sha256": "b3e8d08e359b4a040f765f3c663689e47f6e90f5763fadca2b8fb23363a8adfd",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001078/balanced20261029_v1_3441d8070448389ae491_slot_00.png",
+      "presented_sha256": "bc2ede07defaf39fa8edd87fce717d382210f8ae39c54608d08c55412ef5e77b",
+      "label": "Current State",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        161,
+        30
+      ],
+      "annotation_sha256": "b4e821ca9ad5020d3c808eca42ed6e23e67847c4980a667a3ebc631b99672b9c",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_3441d8070448389ae491",
+      "direction": "inverse",
+      "slot": 1,
+      "source_frame": 189,
+      "source_png": "replayed_activities/usim_train_episode_001078/external_sensor1/00189.png",
+      "source_sha256": "264ec1c236cdc98a9394fe9e46a10f074f2a95ebed887652acda656f94dc2e15",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001078/balanced20261029_v1_3441d8070448389ae491_slot_01.png",
+      "presented_sha256": "eb0a9f780597197afe71f49a7dcb02a2c2beaec8dcb8c2b96411c0130b47d9be",
+      "label": "Next State 1",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "b4e821ca9ad5020d3c808eca42ed6e23e67847c4980a667a3ebc631b99672b9c",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_3441d8070448389ae491",
+      "direction": "inverse",
+      "slot": 2,
+      "source_frame": 214,
+      "source_png": "replayed_activities/usim_train_episode_001078/external_sensor1/00214.png",
+      "source_sha256": "e2e2ad9a5c82804d84e2e916bd8aeb35087ceb12ee94751787cd3420235752b3",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001078/balanced20261029_v1_3441d8070448389ae491_slot_02.png",
+      "presented_sha256": "56210be155706e1a3f919e447cb4c722e9ac298ae20eb9535ecff3a799f2ba54",
+      "label": "Next State 2",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "b4e821ca9ad5020d3c808eca42ed6e23e67847c4980a667a3ebc631b99672b9c",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_c111bada6b42eec9970e",
+      "direction": "inverse",
+      "slot": 0,
+      "source_frame": 75,
+      "source_png": "replayed_activities/usim_train_episode_001549/external_sensor1/00075.png",
+      "source_sha256": "d9495f21a0746da0ca55db8c63c0622e75c02aa0b84831d72dfa498da720deb0",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001549/balanced20261029_v1_c111bada6b42eec9970e_slot_00.png",
+      "presented_sha256": "48884e1292414dc4223961979d64ca3029418a9ecf0e98518fdb7a2cd91ba319",
+      "label": "Current State",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        161,
+        30
+      ],
+      "annotation_sha256": "e8cfa4b7901bf0d30e3e64f5fbf3eeda678808a3116c8ecd225ac7e1a88410d3",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_c111bada6b42eec9970e",
+      "direction": "inverse",
+      "slot": 1,
+      "source_frame": 183,
+      "source_png": "replayed_activities/usim_train_episode_001549/external_sensor1/00183.png",
+      "source_sha256": "174dc833eb9dd530a8161e6ebb854c2176d4ab4b35c14827ab1d9467d010a2b7",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001549/balanced20261029_v1_c111bada6b42eec9970e_slot_01.png",
+      "presented_sha256": "5655a2b6c8c106ccf6add2e92a9c4bbd2ef66cb94e48269bfdd59dece193915f",
+      "label": "Next State 1",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "e8cfa4b7901bf0d30e3e64f5fbf3eeda678808a3116c8ecd225ac7e1a88410d3",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_c111bada6b42eec9970e",
+      "direction": "inverse",
+      "slot": 2,
+      "source_frame": 219,
+      "source_png": "replayed_activities/usim_train_episode_001549/external_sensor1/00219.png",
+      "source_sha256": "d75af5ad5977f3917adb48c07c5588d04f0d91578007768e3c2a379ba956e7c9",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001549/balanced20261029_v1_c111bada6b42eec9970e_slot_02.png",
+      "presented_sha256": "98779e47a6946f054ea7304f5eda2c7d397bb121efc2917c2baf8820b9bd46b6",
+      "label": "Next State 2",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "e8cfa4b7901bf0d30e3e64f5fbf3eeda678808a3116c8ecd225ac7e1a88410d3",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_7912e9a7387d953be8f2",
+      "direction": "inverse",
+      "slot": 0,
+      "source_frame": 57,
+      "source_png": "replayed_activities/usim_train_episode_001259/external_sensor1/00057.png",
+      "source_sha256": "54ca33069621cb08797288670426becca2259d3f0442108836a671e16d2db147",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001259/balanced20261029_v1_7912e9a7387d953be8f2_slot_00.png",
+      "presented_sha256": "db24f73e02ca3df04e48f4c3bd4b3157eb6366ec94cbfe2d1065255dd8b57f2a",
+      "label": "Current State",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        161,
+        30
+      ],
+      "annotation_sha256": "d4bb62fef0cfdb381b138f6691471cca1ae001f675bea90336a023caa7ff1583",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_7912e9a7387d953be8f2",
+      "direction": "inverse",
+      "slot": 1,
+      "source_frame": 170,
+      "source_png": "replayed_activities/usim_train_episode_001259/external_sensor1/00170.png",
+      "source_sha256": "6c46aa79037333426ff779b4f28b4dc66f692569035b75bedfa900ad8f46cdd8",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001259/balanced20261029_v1_7912e9a7387d953be8f2_slot_01.png",
+      "presented_sha256": "8553c3bab2c062594a6d2ec64d9becf3f7cdbeee16aa1ca1988d9e7b5b38734e",
+      "label": "Next State 1",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "d4bb62fef0cfdb381b138f6691471cca1ae001f675bea90336a023caa7ff1583",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_7912e9a7387d953be8f2",
+      "direction": "inverse",
+      "slot": 2,
+      "source_frame": 203,
+      "source_png": "replayed_activities/usim_train_episode_001259/external_sensor1/00203.png",
+      "source_sha256": "e223e33929e3b3e7af0a097709ab219dda15d808843b737f5f0ef85eb3477b0a",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001259/balanced20261029_v1_7912e9a7387d953be8f2_slot_02.png",
+      "presented_sha256": "fe956f7529e708ee229aee391fb5e855acf75de69bc064e4e8ccbcaa1237bf84",
+      "label": "Next State 2",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "d4bb62fef0cfdb381b138f6691471cca1ae001f675bea90336a023caa7ff1583",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_22ff9684f0f503ac2394",
+      "direction": "inverse",
+      "slot": 0,
+      "source_frame": 0,
+      "source_png": "replayed_activities/usim_train_episode_001650/external_sensor1/00000.png",
+      "source_sha256": "18d1b4d7c33900d5bad615c9f22f152bcb2a922bea391d10f1bd8c43c8f40e36",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001650/balanced20261029_v1_22ff9684f0f503ac2394_slot_00.png",
+      "presented_sha256": "e30ec1407a1f81d96bfdad2c43829cfd4335b8e39a38d4d878a67d82528f55f2",
+      "label": "Current State",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        161,
+        30
+      ],
+      "annotation_sha256": "1c0380e6f98cbd8baaa00cbc72456715e95da3972436013936946c62629564d5",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_22ff9684f0f503ac2394",
+      "direction": "inverse",
+      "slot": 1,
+      "source_frame": 190,
+      "source_png": "replayed_activities/usim_train_episode_001650/external_sensor1/00190.png",
+      "source_sha256": "a30c868cd91b68dc1dfab209d94e2454e117d3f15011ce655163ba289085abd0",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001650/balanced20261029_v1_22ff9684f0f503ac2394_slot_01.png",
+      "presented_sha256": "89ff2eb7f2fb515a11db85f63cefa87c21ad31666310ae61af237cd8975a17b7",
+      "label": "Next State 1",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "1c0380e6f98cbd8baaa00cbc72456715e95da3972436013936946c62629564d5",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_22ff9684f0f503ac2394",
+      "direction": "inverse",
+      "slot": 2,
+      "source_frame": 219,
+      "source_png": "replayed_activities/usim_train_episode_001650/external_sensor1/00219.png",
+      "source_sha256": "a30c868cd91b68dc1dfab209d94e2454e117d3f15011ce655163ba289085abd0",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001650/balanced20261029_v1_22ff9684f0f503ac2394_slot_02.png",
+      "presented_sha256": "f1e18e44b146667ff669844a6e2cfb4a01123d29a30c0b5ec72793d4efb73ff5",
+      "label": "Next State 2",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "1c0380e6f98cbd8baaa00cbc72456715e95da3972436013936946c62629564d5",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "pipe",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_06d77b51183eb6aceae7",
+      "direction": "inverse",
+      "slot": 0,
+      "source_frame": 179,
+      "source_png": "replayed_activities/usim_train_episode_001273/external_sensor1/00179.png",
+      "source_sha256": "5c547391dbb3d9615d9dc2ea401e012b9c40e37928935d71f44d83f11600a2cb",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001273/balanced20261029_v1_06d77b51183eb6aceae7_slot_00.png",
+      "presented_sha256": "4c8ece75bd8766345dbf554c0b04a6e1b70ba381b1dc93b65529448dadaf17af",
+      "label": "Current State",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        161,
+        30
+      ],
+      "annotation_sha256": "2a403389f39d0c8b95a76aeeebd27dffd2f3bbdf82599d439605283ed2718d3f",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_06d77b51183eb6aceae7",
+      "direction": "inverse",
+      "slot": 1,
+      "source_frame": 261,
+      "source_png": "replayed_activities/usim_train_episode_001273/external_sensor1/00261.png",
+      "source_sha256": "0e54ca5a09c5329c9774b9787d2b41d2429c557eee808dc71af96bfb6c5fabd9",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001273/balanced20261029_v1_06d77b51183eb6aceae7_slot_01.png",
+      "presented_sha256": "f5742b4cffdc3aa42753e98b70523c6832688f7daf5479070d1ce596a286273b",
+      "label": "Next State 1",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "2a403389f39d0c8b95a76aeeebd27dffd2f3bbdf82599d439605283ed2718d3f",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_06d77b51183eb6aceae7",
+      "direction": "inverse",
+      "slot": 2,
+      "source_frame": 288,
+      "source_png": "replayed_activities/usim_train_episode_001273/external_sensor1/00288.png",
+      "source_sha256": "6111a576173135bebbc4cea0e54977de596b94494e22ea0ea5499a8008bd8338",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001273/balanced20261029_v1_06d77b51183eb6aceae7_slot_02.png",
+      "presented_sha256": "1dafcb398543018f6897d8a2c3fb0f91637e1a95e90827eb3d5f49b628c1232b",
+      "label": "Next State 2",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "2a403389f39d0c8b95a76aeeebd27dffd2f3bbdf82599d439605283ed2718d3f",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "blue_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_bd8ea5eceb3b374902b1",
+      "direction": "inverse",
+      "slot": 0,
+      "source_frame": 88,
+      "source_png": "replayed_activities/usim_train_episode_001145/external_sensor1/00088.png",
+      "source_sha256": "97c6a7d16ddfeb6c738eb67511c349f3818fe799843ced8af20173b83b18bf8b",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001145/balanced20261029_v1_bd8ea5eceb3b374902b1_slot_00.png",
+      "presented_sha256": "97762f765f292999e00b973dafe857e6fda0bf3d0d492b3625a457abea53d33e",
+      "label": "Current State",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        161,
+        30
+      ],
+      "annotation_sha256": "adf053c253686fda3bb3613ee2904307d772284f33e86441b0ebc92b29a12486",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_bd8ea5eceb3b374902b1",
+      "direction": "inverse",
+      "slot": 1,
+      "source_frame": 128,
+      "source_png": "replayed_activities/usim_train_episode_001145/external_sensor1/00128.png",
+      "source_sha256": "089c3f2ced2729e281bcc7aab785ad11c6a052f8de918a0d328d39af59ccc015",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001145/balanced20261029_v1_bd8ea5eceb3b374902b1_slot_01.png",
+      "presented_sha256": "fca51df064e80b1c3124fe198e27d966a8356b2acec757969b18dfaa156c8889",
+      "label": "Next State 1",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "adf053c253686fda3bb3613ee2904307d772284f33e86441b0ebc92b29a12486",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_bd8ea5eceb3b374902b1",
+      "direction": "inverse",
+      "slot": 2,
+      "source_frame": 161,
+      "source_png": "replayed_activities/usim_train_episode_001145/external_sensor1/00161.png",
+      "source_sha256": "c2172fa26cb611fb0f686a676f4d0a3238505cb8021e9191edb8ef55c0fc2305",
+      "presented_png": "QA/images/inverse_world_modeling_3_steps/usim_train_episode_001145/balanced20261029_v1_bd8ea5eceb3b374902b1_slot_02.png",
+      "presented_sha256": "8e380087b5604ffbc03e1a018d7f5316ac56c5fdcf8d5b17f59dd08a3ae21832",
+      "label": "Next State 2",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "adf053c253686fda3bb3613ee2904307d772284f33e86441b0ebc92b29a12486",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_1ccf70addfc7cca6c2d5",
+      "direction": "forward",
+      "slot": 0,
+      "source_frame": 164,
+      "source_png": "replayed_activities/usim_train_episode_001384/external_sensor1/00164.png",
+      "source_sha256": "3e5764f429977829c7b387c992fe92c72e21532e61623f4d5d31cc563d7fb980",
+      "presented_png": "QA/images/forward_world_modeling_4_steps/usim_train_episode_001384/balanced20261029_v1_1ccf70addfc7cca6c2d5_slot_00.png",
+      "presented_sha256": "a5b704f7813587f9337cdcab2a89f52eb908190fdd62d4c8705e544ca53b904c",
+      "label": "Current State",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        161,
+        30
+      ],
+      "annotation_sha256": "ae449a25aee7e41951f90c717aa35e8ea3ccdceab3522d68e1ff379ae1157b1a",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_1ccf70addfc7cca6c2d5",
+      "direction": "forward",
+      "slot": 1,
+      "source_frame": 239,
+      "source_png": "replayed_activities/usim_train_episode_001384/external_sensor1/00239.png",
+      "source_sha256": "5ab55db234d53289bf69db0c758c478f745d19d14256fe016fc9d959261c3fb6",
+      "presented_png": "QA/images/forward_world_modeling_4_steps/usim_train_episode_001384/balanced20261029_v1_1ccf70addfc7cca6c2d5_slot_01.png",
+      "presented_sha256": "d5add449f55950abff51eb1c99ad211ac4805742dbbf0ed72cd52ffafdb99dd6",
+      "label": "Next State 1",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "ae449a25aee7e41951f90c717aa35e8ea3ccdceab3522d68e1ff379ae1157b1a",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_1ccf70addfc7cca6c2d5",
+      "direction": "forward",
+      "slot": 2,
+      "source_frame": 486,
+      "source_png": "replayed_activities/usim_train_episode_001384/external_sensor1/00486.png",
+      "source_sha256": "9d725170f87836892b1cd945ca12403ca1881ecdb01ea465d7fa0746b1f21e82",
+      "presented_png": "QA/images/forward_world_modeling_4_steps/usim_train_episode_001384/balanced20261029_v1_1ccf70addfc7cca6c2d5_slot_02.png",
+      "presented_sha256": "797a584af71d6f8f7c89d1055c22b928906ef25654106deee5ef61d6a59b55b3",
+      "label": "Next State 2",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "ae449a25aee7e41951f90c717aa35e8ea3ccdceab3522d68e1ff379ae1157b1a",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_1ccf70addfc7cca6c2d5",
+      "direction": "forward",
+      "slot": 3,
+      "source_frame": 209,
+      "source_png": "replayed_activities/usim_train_episode_001384/external_sensor1/00209.png",
+      "source_sha256": "4ffc325b15aada13b486ac8579b737d9ae6a0bc086d5d8005221a6fefd55835a",
+      "presented_png": "QA/images/forward_world_modeling_4_steps/usim_train_episode_001384/balanced20261029_v1_1ccf70addfc7cca6c2d5_slot_03.png",
+      "presented_sha256": "43d2f7cb9f557df142a182f884f102143a01e3a72ef2acd126bdde747ae0c016",
+      "label": "Next State 3",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "ae449a25aee7e41951f90c717aa35e8ea3ccdceab3522d68e1ff379ae1157b1a",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_8a75f9f3c5dd14b1df6c",
+      "direction": "forward",
+      "slot": 0,
+      "source_frame": 60,
+      "source_png": "replayed_activities/usim_train_episode_001378/external_sensor1/00060.png",
+      "source_sha256": "7b0ac4f1142a938526d0742f32463a4046e8f6dfb611f50a7a537fc0f4410ee8",
+      "presented_png": "QA/images/forward_world_modeling_4_steps/usim_train_episode_001378/balanced20261029_v1_8a75f9f3c5dd14b1df6c_slot_00.png",
+      "presented_sha256": "f070da8c3f58aa34f32464a78489d7b38c9da6fbf4b632ab415a0ecceddd10a0",
+      "label": "Current State",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        161,
+        30
+      ],
+      "annotation_sha256": "54023b4712b8b9dde3e969ad0641768966c933c508420ad230906ddd7dfc69e1",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_8a75f9f3c5dd14b1df6c",
+      "direction": "forward",
+      "slot": 1,
+      "source_frame": 176,
+      "source_png": "replayed_activities/usim_train_episode_001378/external_sensor1/00176.png",
+      "source_sha256": "3a5684b1b007bd64b946e56d5dcf99cc6a5f211cda81a9f53eeae9e1b60502d2",
+      "presented_png": "QA/images/forward_world_modeling_4_steps/usim_train_episode_001378/balanced20261029_v1_8a75f9f3c5dd14b1df6c_slot_01.png",
+      "presented_sha256": "a40d0b514d9f50d54037d0ee6e3bb24beedb87bcaf47af56935e0659743872da",
+      "label": "Next State 1",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "54023b4712b8b9dde3e969ad0641768966c933c508420ad230906ddd7dfc69e1",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_8a75f9f3c5dd14b1df6c",
+      "direction": "forward",
+      "slot": 2,
+      "source_frame": 206,
+      "source_png": "replayed_activities/usim_train_episode_001378/external_sensor1/00206.png",
+      "source_sha256": "cf240ac1c8e06cf0bc51ca80295234e2c6ad5c15c5d5cd4c679e0bdb188b72a0",
+      "presented_png": "QA/images/forward_world_modeling_4_steps/usim_train_episode_001378/balanced20261029_v1_8a75f9f3c5dd14b1df6c_slot_02.png",
+      "presented_sha256": "20d957794406284a3382cf5efcce5e66269af5f4adae6de6a0b1262ef089a9d6",
+      "label": "Next State 2",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "54023b4712b8b9dde3e969ad0641768966c933c508420ad230906ddd7dfc69e1",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_8a75f9f3c5dd14b1df6c",
+      "direction": "forward",
+      "slot": 3,
+      "source_frame": 448,
+      "source_png": "replayed_activities/usim_train_episode_001378/external_sensor1/00448.png",
+      "source_sha256": "f987fce2b529d93371fbf61672490f19c8b91aa9802b819e05cb7ba4ec709a2b",
+      "presented_png": "QA/images/forward_world_modeling_4_steps/usim_train_episode_001378/balanced20261029_v1_8a75f9f3c5dd14b1df6c_slot_03.png",
+      "presented_sha256": "1e436420b8654e75f65cc3eb997779e79d8a7810e1fe57876b92f2fb4a85f9e4",
+      "label": "Next State 3",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "54023b4712b8b9dde3e969ad0641768966c933c508420ad230906ddd7dfc69e1",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_cd95553ea82a79730d87",
+      "direction": "inverse",
+      "slot": 0,
+      "source_frame": 164,
+      "source_png": "replayed_activities/usim_train_episode_001384/external_sensor1/00164.png",
+      "source_sha256": "3e5764f429977829c7b387c992fe92c72e21532e61623f4d5d31cc563d7fb980",
+      "presented_png": "QA/images/inverse_world_modeling_4_steps/usim_train_episode_001384/balanced20261029_v1_cd95553ea82a79730d87_slot_00.png",
+      "presented_sha256": "a5b704f7813587f9337cdcab2a89f52eb908190fdd62d4c8705e544ca53b904c",
+      "label": "Current State",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        161,
+        30
+      ],
+      "annotation_sha256": "ae449a25aee7e41951f90c717aa35e8ea3ccdceab3522d68e1ff379ae1157b1a",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_cd95553ea82a79730d87",
+      "direction": "inverse",
+      "slot": 1,
+      "source_frame": 209,
+      "source_png": "replayed_activities/usim_train_episode_001384/external_sensor1/00209.png",
+      "source_sha256": "4ffc325b15aada13b486ac8579b737d9ae6a0bc086d5d8005221a6fefd55835a",
+      "presented_png": "QA/images/inverse_world_modeling_4_steps/usim_train_episode_001384/balanced20261029_v1_cd95553ea82a79730d87_slot_01.png",
+      "presented_sha256": "930047237202de1bb7ec44ecb03596dc10244962de814f9a93396c153f5625da",
+      "label": "Next State 1",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "ae449a25aee7e41951f90c717aa35e8ea3ccdceab3522d68e1ff379ae1157b1a",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_cd95553ea82a79730d87",
+      "direction": "inverse",
+      "slot": 2,
+      "source_frame": 239,
+      "source_png": "replayed_activities/usim_train_episode_001384/external_sensor1/00239.png",
+      "source_sha256": "5ab55db234d53289bf69db0c758c478f745d19d14256fe016fc9d959261c3fb6",
+      "presented_png": "QA/images/inverse_world_modeling_4_steps/usim_train_episode_001384/balanced20261029_v1_cd95553ea82a79730d87_slot_02.png",
+      "presented_sha256": "612cf1d5af0ad52ab7696773c77be35cd9c5f3701bcb1f65b7fc796c02ac9dcf",
+      "label": "Next State 2",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "ae449a25aee7e41951f90c717aa35e8ea3ccdceab3522d68e1ff379ae1157b1a",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_cd95553ea82a79730d87",
+      "direction": "inverse",
+      "slot": 3,
+      "source_frame": 486,
+      "source_png": "replayed_activities/usim_train_episode_001384/external_sensor1/00486.png",
+      "source_sha256": "9d725170f87836892b1cd945ca12403ca1881ecdb01ea465d7fa0746b1f21e82",
+      "presented_png": "QA/images/inverse_world_modeling_4_steps/usim_train_episode_001384/balanced20261029_v1_cd95553ea82a79730d87_slot_03.png",
+      "presented_sha256": "143c5047cc07d8e5dbc0672d7750361ee9218c7258673d9d6098a688d3bb98c7",
+      "label": "Next State 3",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "ae449a25aee7e41951f90c717aa35e8ea3ccdceab3522d68e1ff379ae1157b1a",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_61fed175faa432039649",
+      "direction": "inverse",
+      "slot": 0,
+      "source_frame": 60,
+      "source_png": "replayed_activities/usim_train_episode_001378/external_sensor1/00060.png",
+      "source_sha256": "7b0ac4f1142a938526d0742f32463a4046e8f6dfb611f50a7a537fc0f4410ee8",
+      "presented_png": "QA/images/inverse_world_modeling_4_steps/usim_train_episode_001378/balanced20261029_v1_61fed175faa432039649_slot_00.png",
+      "presented_sha256": "f070da8c3f58aa34f32464a78489d7b38c9da6fbf4b632ab415a0ecceddd10a0",
+      "label": "Current State",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        161,
+        30
+      ],
+      "annotation_sha256": "54023b4712b8b9dde3e969ad0641768966c933c508420ad230906ddd7dfc69e1",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_61fed175faa432039649",
+      "direction": "inverse",
+      "slot": 1,
+      "source_frame": 176,
+      "source_png": "replayed_activities/usim_train_episode_001378/external_sensor1/00176.png",
+      "source_sha256": "3a5684b1b007bd64b946e56d5dcf99cc6a5f211cda81a9f53eeae9e1b60502d2",
+      "presented_png": "QA/images/inverse_world_modeling_4_steps/usim_train_episode_001378/balanced20261029_v1_61fed175faa432039649_slot_01.png",
+      "presented_sha256": "a40d0b514d9f50d54037d0ee6e3bb24beedb87bcaf47af56935e0659743872da",
+      "label": "Next State 1",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "54023b4712b8b9dde3e969ad0641768966c933c508420ad230906ddd7dfc69e1",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_61fed175faa432039649",
+      "direction": "inverse",
+      "slot": 2,
+      "source_frame": 206,
+      "source_png": "replayed_activities/usim_train_episode_001378/external_sensor1/00206.png",
+      "source_sha256": "cf240ac1c8e06cf0bc51ca80295234e2c6ad5c15c5d5cd4c679e0bdb188b72a0",
+      "presented_png": "QA/images/inverse_world_modeling_4_steps/usim_train_episode_001378/balanced20261029_v1_61fed175faa432039649_slot_02.png",
+      "presented_sha256": "20d957794406284a3382cf5efcce5e66269af5f4adae6de6a0b1262ef089a9d6",
+      "label": "Next State 2",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "54023b4712b8b9dde3e969ad0641768966c933c508420ad230906ddd7dfc69e1",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    },
+    {
+      "qa_id": "balanced20261029_v1_61fed175faa432039649",
+      "direction": "inverse",
+      "slot": 3,
+      "source_frame": 448,
+      "source_png": "replayed_activities/usim_train_episode_001378/external_sensor1/00448.png",
+      "source_sha256": "f987fce2b529d93371fbf61672490f19c8b91aa9802b819e05cb7ba4ec709a2b",
+      "presented_png": "QA/images/inverse_world_modeling_4_steps/usim_train_episode_001378/balanced20261029_v1_61fed175faa432039649_slot_03.png",
+      "presented_sha256": "1e436420b8654e75f65cc3eb997779e79d8a7810e1fe57876b92f2fb4a85f9e4",
+      "label": "Next State 3",
+      "label_bbox_xyxy": [
+        6,
+        9,
+        146,
+        30
+      ],
+      "annotation_sha256": "54023b4712b8b9dde3e969ad0641768966c933c508420ad230906ddd7dfc69e1",
+      "candidate_visibility": [
+        {
+          "object_id": "robot",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "red_cylinder",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        },
+        {
+          "object_id": "green_box",
+          "camera": "ego",
+          "value": true,
+          "method": "agent_visual_review"
+        }
+      ],
+      "independent_visibility_acceptance": "pending"
+    }
+  ],
+  "presented_images": 64,
+  "outside_label_pixels_preserved": true,
+  "source_annotation_visibility_preserved": true,
+  "independent_visual_acceptance": "0/10"
+}

@@ -1,0 +1,19 @@
+{
+  "qa_version": "test-reserve-balanced-qa-20261029-v1",
+  "actual_questions": 20,
+  "bound_presented_images": 64,
+  "snapshot_input_files": 160,
+  "unique_answers_checked": 20,
+  "permutations_checked": 56,
+  "uniform_random_EM": "13/30",
+  "length_constant_EM": 0.45,
+  "direction_length_constant_EM": 0.5,
+  "text_baseline_EM": 0.75,
+  "unit_tests_passed": 105,
+  "old_files_unchanged": 545,
+  "local_links_checked": 27,
+  "broken_links": [],
+  "release_eligible": false,
+  "independent_acceptance": "0/10",
+  "model_api_calls": 0
+}

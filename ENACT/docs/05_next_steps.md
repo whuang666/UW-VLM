@@ -1,8 +1,12 @@
 # 下一步工作清单与运行手册
 
+最新构建进度（2026-10-29）：[均衡QA候选v1](../../docs/workbuddyRead/test_reserve_balanced_qa_build_20261029_zh.md)已按20行既定映射落地，图像／题面／答案与输入快照可复核；程序门禁通过。下一步裁决1650@f0的目标可见性、完成独立验收，再准备条件派生与最终执行冻结。文本基线inverse10/10，不能把该方向高分当视觉证据；此前“尚未重建”的段落为前序快照。
+
 最近更新：2026-10-29（Asia/Shanghai）。**588次双协议开发对照与P4统计已完成；test采用独立的保守候选批次，8条L3、2条L4，Lifted不进入该候选scope。完整链20道诊断题的唯一性与oracle门禁通过；独立人眼验收仍0/10。下一步确定正式QA打乱策略、构建并全量复核实际输入，再做文本基线和独立质量验收；尚无val／test模型成绩。** [本轮审计与证据](../../docs/workbuddyRead/test_reserve_conservative_semantic_20261029_zh.md)，[保守候选](WBW/evidence/test_reserve_conservative_20261029/README.md)，[完整开发指标](WBW/ENACT-USIM-双协议2048开发对照结果-20261028.md)。20道诊断题有固定seed答案偏置，不直接作为正式test；下列带早期日期的条目保留历史范围。
 
 这份清单按依赖排序。**GPU 训练仍不在当前阶段。** 数据集已经确定为当前工作区的 USIM（`E:\code\UW-VLM\usim`）。
+
+排列策略已有[可审阅方案与20行映射预览](../../docs/workbuddyRead/test_reserve_permutation_strategy_20261029_zh.md)：全部排列（含恒等）按方向×长度均衡，实际verifier枚举继续作为唯一性门禁。L4每方向仅2题，最佳常量下限0.5，不宣称降至1/6。下一项按该版本实现独立QA／图片重建及频数、图文绑定、oracle等门禁；当前没有重写正式输入。
 
 2026-10-29 dev只读试跑已完成：[规则可操作性结果与逐条入口](../../docs/workbuddyRead/dev_lift_onset_feasibility_20261029_zh.md)。19条／84题、38份源文件哈希与时间对齐通过；16条有视觉细核入口，未确认首个合格半宽离底状态。另发现533／1302旧帧距及553起始稳定性问题。下一步继续在dev补齐A/B证据与间隙参照，暂不将草案升级为正式test协议；0次API调用，历史数据和test标注保留。
 

@@ -1,0 +1,14 @@
+{
+  "schema": "usim-balanced-qa-preservation/v1",
+  "source_head": "4d5ec41723092a3f7aef6b06235e5504decdfe6e",
+  "old_files_checked": 545,
+  "changed": [],
+  "added_to_protected_scopes": [],
+  "old_material_preserved": true,
+  "new_dataset": "ENACT/data/usim_enact/usim-enact-v0.2-conservative-balanced-20261029-v1",
+  "new_qa_version": "test-reserve-balanced-qa-20261029-v1",
+  "old_annotation_writes": 0,
+  "old_diagnostic_qa_writes": 0,
+  "model_prediction_writes": 0,
+  "model_api_calls": 0
+}
