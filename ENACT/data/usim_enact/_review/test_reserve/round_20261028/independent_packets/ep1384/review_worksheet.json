@@ -76,7 +76,7 @@
    "right_slot": 4,
    "ego_decidable": true,
    "decision": "accepted",
-   "reason": "slots 3->4: 明显离底 → lift"
+   "reason": "lift 证据确认：clear"
   },
   {
    "left_slot": 4,
@@ -88,6 +88,7 @@
  ],
  "final_acceptance": null,
  "review_is_technical_not_human_double_annotation": true,
- "verdict": "pass",
- "verdict_reason": "L=5 via at_box；f486 夹爪在绿箱释放位、物体仍被持有，未声称 InBox"
+ "verdict": "pass_at_annotated",
+ "verdict_reason": "L=5；f293 明确离底，f486 at_box 成立",
+ "independent_acceptance_complete": false
 }

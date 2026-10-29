@@ -64,13 +64,14 @@
   {
    "left_slot": 3,
    "right_slot": 4,
-   "ego_decidable": true,
-   "decision": "accepted",
-   "reason": "slots 3->4: f192 间隙不足；同 episode f220 明确离底"
+   "ego_decidable": false,
+   "decision": "pending",
+   "reason": "lift 未确认，不得记为 accepted：修订 onset=190 → 窗口 230-250，视频仅 221 帧，窗口完全不可用"
   }
  ],
  "final_acceptance": null,
  "review_is_technical_not_human_double_annotation": true,
- "verdict": "conditional",
- "verdict_reason": "f192 间隙明显不足（dvl 仅 +0.061）；f220（+0.142）可见离底 → 应重锚"
+ "verdict": "not_applicable",
+ "verdict_reason": "修订 onset=190 → 窗口 230-250，视频仅 221 帧，窗口完全不可用",
+ "independent_acceptance_complete": false
 }

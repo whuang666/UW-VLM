@@ -20,9 +20,9 @@
         214,
         270
       ],
-      "verdict": "conditional",
-      "lift": "marginal",
-      "note": "pipe 斜持，最低端贴近沙面，其下未见裸露沙面；dvl +0.121 只能辅助"
+      "verdict": "not_applicable",
+      "lift": "unresolved_in_window",
+      "note": "修订窗口 289-307，f299 管端出画、最低点不可判"
     },
     {
       "episode": 1384,
@@ -34,9 +34,9 @@
         293,
         486
       ],
-      "verdict": "pass",
+      "verdict": "pass_at_annotated",
       "lift": "clear",
-      "note": "L=5 via at_box；f486 夹爪在绿箱释放位、物体仍被持有，未声称 InBox"
+      "note": "L=5；f293 离底，f486 at_box 成立"
     },
     {
       "episode": 1650,
@@ -47,9 +47,9 @@
         219,
         270
       ],
-      "verdict": "conditional",
-      "lift": "marginal",
-      "note": "同 1078：管斜持，最低端近沙面；修订 onset 后窗口越过 episode 末尾（278 帧）"
+      "verdict": "not_applicable",
+      "lift": "no_compliant_window",
+      "note": "窗口 292-312 越过视频末尾 278"
     },
     {
       "episode": 1734,
@@ -60,9 +60,9 @@
         312,
         359
       ],
-      "verdict": "conditional",
-      "lift": "marginal_at_annotated_frame_clear_later",
-      "note": "f359 半宽间隙不成立；f395（onset 修订后 +93）可见明显离底 → 应重锚而非剔除"
+      "verdict": "reanchor_ready",
+      "lift": "clear_at_395",
+      "note": "窗口 383-402，f395 明确离底"
     },
     {
       "episode": 1259,
@@ -73,9 +73,9 @@
         203,
         238
       ],
-      "verdict": "pass",
+      "verdict": "pass_at_annotated",
       "lift": "clear",
-      "note": "两次 close（159/186 open/190），主线取最后 close；f238 圆柱与沙面间可见沙面"
+      "note": "f238 明确离底（原帧先于修订窗口）"
     },
     {
       "episode": 1273,
@@ -86,9 +86,9 @@
         288,
         348
       ],
-      "verdict": "pass",
+      "verdict": "pass_at_annotated",
       "lift": "clear",
-      "note": "f348 圆柱与沙面间可见沙面，dvl +0.160"
+      "note": "f348 明确离底（同上）"
     },
     {
       "episode": 1145,
@@ -99,9 +99,9 @@
         161,
         192
       ],
-      "verdict": "conditional",
-      "lift": "weak_at_annotated_frame_clear_later",
-      "note": "f192 间隙明显不足（dvl 仅 +0.061）；f220（+0.142）可见离底 → 应重锚"
+      "verdict": "not_applicable",
+      "lift": "no_compliant_window",
+      "note": "窗口 230-250 越过视频末尾 221"
     },
     {
       "episode": 1497,
@@ -112,9 +112,9 @@
         145,
         183
       ],
-      "verdict": "conditional",
-      "lift": "weak_at_annotated_frame_clear_later",
-      "note": "f183 间隙不足（+0.070）；f242（+0.175）明确离底 → 应重锚"
+      "verdict": "reanchor_ready",
+      "lift": "clear_at_235",
+      "note": "窗口 217-237，f235 明确离底（f242 在窗口外）"
     },
     {
       "episode": 1549,
@@ -125,9 +125,9 @@
         219,
         277
       ],
-      "verdict": "pass",
+      "verdict": "pass_at_annotated",
       "lift": "clear",
-      "note": "f277 圆柱与沙面间可见沙面，dvl +0.145"
+      "note": "f277 明确离底（同上）"
     },
     {
       "episode": 1378,
@@ -140,8 +140,16 @@
         448
       ],
       "verdict": "hold",
-      "lift": "weak_at_annotated_frame",
-      "note": "f250 半宽间隙未确认（既有争议），at_box 成立；lift 需重锚或独立人眼裁决"
+      "lift": "fails_both_definitions",
+      "note": "f250 不足；窗口内 f290 更差；建议删 lift 保留 at_box 成 L=4"
     }
+  ],
+  "version": "v2",
+  "supersedes": "adjudication_v1_superseded.md",
+  "independent_acceptance_complete": "0/10",
+  "corrections": [
+    "lift 转移未确认时改 pending",
+    "1378 降级改为删 lift 保留 at_box",
+    "验收口径 0/10"
   ]
 }

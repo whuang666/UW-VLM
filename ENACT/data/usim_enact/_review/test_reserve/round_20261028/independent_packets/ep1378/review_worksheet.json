@@ -74,9 +74,9 @@
   {
    "left_slot": 3,
    "right_slot": 4,
-   "ego_decidable": true,
-   "decision": "accepted",
-   "reason": "slots 3->4: f250 间隙偏弱，半宽未确认"
+   "ego_decidable": false,
+   "decision": "pending",
+   "reason": "lift 未确认，不得记为 accepted：原帧 f250 不足；窗口内 f290 更差（机器人转向箱子时下降）→ 建议删 lift、保留 at_box 构成 L=4，需先验收 grasp→at_box "
   },
   {
    "left_slot": 4,
@@ -89,5 +89,6 @@
  "final_acceptance": null,
  "review_is_technical_not_human_double_annotation": true,
  "verdict": "hold",
- "verdict_reason": "f250 半宽间隙未确认（既有争议），at_box 成立；lift 需重锚或独立人眼裁决"
+ "verdict_reason": "原帧 f250 不足；窗口内 f290 更差（机器人转向箱子时下降）→ 建议删 lift、保留 at_box 构成 L=4，需先验收 grasp→at_box 转移",
+ "independent_acceptance_complete": false
 }

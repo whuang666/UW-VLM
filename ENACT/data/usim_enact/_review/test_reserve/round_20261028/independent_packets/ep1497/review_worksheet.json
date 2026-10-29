@@ -66,11 +66,12 @@
    "right_slot": 4,
    "ego_decidable": true,
    "decision": "accepted",
-   "reason": "slots 3->4: f183 间隙不足；f242 明确离底"
+   "reason": "lift 证据确认：clear_at_235"
   }
  ],
  "final_acceptance": null,
  "review_is_technical_not_human_double_annotation": true,
- "verdict": "conditional",
- "verdict_reason": "f183 间隙不足（+0.070）；f242（+0.175）明确离底 → 应重锚"
+ "verdict": "reanchor_ready",
+ "verdict_reason": "窗口 217-237；f235（onset+58）目检明确离底（原 f242 在窗口外）",
+ "independent_acceptance_complete": false
 }

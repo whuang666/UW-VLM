@@ -66,11 +66,12 @@
    "right_slot": 4,
    "ego_decidable": true,
    "decision": "accepted",
-   "reason": "slots 3->4: f359 最低端近沙面；同 episode f395 明确离底"
+   "reason": "lift 证据确认：clear_at_395"
   }
  ],
  "final_acceptance": null,
  "review_is_technical_not_human_double_annotation": true,
- "verdict": "conditional",
- "verdict_reason": "f359 半宽间隙不成立；f395（onset 修订后 +93）可见明显离底 → 应重锚而非剔除"
+ "verdict": "reanchor_ready",
+ "verdict_reason": "窗口 383-402；f395（onset+52）目检明确离底 → 可重锚",
+ "independent_acceptance_complete": false
 }

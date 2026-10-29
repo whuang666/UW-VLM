@@ -66,11 +66,12 @@
    "right_slot": 4,
    "ego_decidable": true,
    "decision": "accepted",
-   "reason": "slots 3->4: 明显离底，±半宽间隙成立 → lift"
+   "reason": "lift 证据确认：clear"
   }
  ],
  "final_acceptance": null,
  "review_is_technical_not_human_double_annotation": true,
- "verdict": "pass",
- "verdict_reason": "f348 圆柱与沙面间可见沙面，dvl +0.160"
+ "verdict": "pass_at_annotated",
+ "verdict_reason": "f348 明确离底（同上）",
+ "independent_acceptance_complete": false
 }

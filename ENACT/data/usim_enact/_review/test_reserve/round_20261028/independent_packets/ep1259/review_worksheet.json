@@ -66,11 +66,12 @@
    "right_slot": 4,
    "ego_decidable": true,
    "decision": "accepted",
-   "reason": "slots 3->4: 明显离底，其下可见沙面 → lift"
+   "reason": "lift 证据确认：clear"
   }
  ],
  "final_acceptance": null,
  "review_is_technical_not_human_double_annotation": true,
- "verdict": "pass",
- "verdict_reason": "两次 close（159/186 open/190），主线取最后 close；f238 圆柱与沙面间可见沙面"
+ "verdict": "pass_at_annotated",
+ "verdict_reason": "f238 明确离底（原帧先于修订窗口，见定义分歧）",
+ "independent_acceptance_complete": false
 }

@@ -64,13 +64,14 @@
   {
    "left_slot": 3,
    "right_slot": 4,
-   "ego_decidable": true,
-   "decision": "accepted",
-   "reason": "slots 3->4: 斜持抬升，最低端仍近贴沙面 → 半宽间隙未确认"
+   "ego_decidable": false,
+   "decision": "pending",
+   "reason": "lift 未确认，不得记为 accepted：修订 onset=249 → 窗口 289-307（视频 307 帧）。f299 处管端已出画，最低点不可判 → 无法在合规窗口内确认，不得为凑帧外移"
   }
  ],
  "final_acceptance": null,
  "review_is_technical_not_human_double_annotation": true,
- "verdict": "conditional",
- "verdict_reason": "pipe 斜持，最低端贴近沙面，其下未见裸露沙面；dvl +0.121 只能辅助"
+ "verdict": "not_applicable",
+ "verdict_reason": "修订 onset=249 → 窗口 289-307（视频 307 帧）。f299 处管端已出画，最低点不可判 → 无法在合规窗口内确认，不得为凑帧外移",
+ "independent_acceptance_complete": false
 }

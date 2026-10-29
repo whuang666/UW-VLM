@@ -64,13 +64,14 @@
   {
    "left_slot": 3,
    "right_slot": 4,
-   "ego_decidable": true,
-   "decision": "accepted",
-   "reason": "slots 3->4: 斜持抬升，最低端近沙面 → 半宽间隙未确认"
+   "ego_decidable": false,
+   "decision": "pending",
+   "reason": "lift 未确认，不得记为 accepted：修订 onset=252 → 窗口 292-312，视频仅 277 帧，窗口完全不可用"
   }
  ],
  "final_acceptance": null,
  "review_is_technical_not_human_double_annotation": true,
- "verdict": "conditional",
- "verdict_reason": "同 1078：管斜持，最低端近沙面；修订 onset 后窗口越过 episode 末尾（278 帧）"
+ "verdict": "not_applicable",
+ "verdict_reason": "修订 onset=252 → 窗口 292-312，视频仅 277 帧，窗口完全不可用",
+ "independent_acceptance_complete": false
 }
