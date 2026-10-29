@@ -1,0 +1,565 @@
+{
+  "schema": "usim-balanced-label-plan/v1",
+  "version": "test-reserve-balanced-labels-draft-v1",
+  "seed": 20261029,
+  "status": "draft plan, no QA or image rewrite",
+  "question_count": 20,
+  "episode_count": 10,
+  "selection_space": "all (L-1)! permutations including identity",
+  "algorithm": "SHA256 rank of permutation space; independently hash-rank episodes per direction/length; circular slots continue between directions",
+  "by_direction_length": {
+    "forward_L3": {
+      "N": 8,
+      "permutation_space": 2,
+      "answer_histogram": {
+        "[1, 2]": 4,
+        "[2, 1]": 4
+      },
+      "distinct_answers": 2,
+      "counts_including_unobserved": [
+        4,
+        4
+      ],
+      "best_observed_constant_EM": "1/2",
+      "finite_sample_minimum_possible_best_constant_EM": "1/2",
+      "uniform_random_EM": "1/2"
+    },
+    "forward_L4": {
+      "N": 2,
+      "permutation_space": 6,
+      "answer_histogram": {
+        "[1, 2, 3]": 1,
+        "[3, 1, 2]": 1
+      },
+      "distinct_answers": 2,
+      "counts_including_unobserved": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "best_observed_constant_EM": "1/2",
+      "finite_sample_minimum_possible_best_constant_EM": "1/2",
+      "uniform_random_EM": "1/6"
+    },
+    "inverse_L3": {
+      "N": 8,
+      "permutation_space": 2,
+      "answer_histogram": {
+        "[1, 2]": 4,
+        "[2, 1]": 4
+      },
+      "distinct_answers": 2,
+      "counts_including_unobserved": [
+        4,
+        4
+      ],
+      "best_observed_constant_EM": "1/2",
+      "finite_sample_minimum_possible_best_constant_EM": "1/2",
+      "uniform_random_EM": "1/2"
+    },
+    "inverse_L4": {
+      "N": 2,
+      "permutation_space": 6,
+      "answer_histogram": {
+        "[2, 1, 3]": 1,
+        "[2, 3, 1]": 1
+      },
+      "distinct_answers": 2,
+      "counts_including_unobserved": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "best_observed_constant_EM": "1/2",
+      "finite_sample_minimum_possible_best_constant_EM": "1/2",
+      "uniform_random_EM": "1/6"
+    }
+  },
+  "by_length": {
+    "L3": {
+      "N": 16,
+      "permutation_space": 2,
+      "answer_histogram": {
+        "[1, 2]": 8,
+        "[2, 1]": 8
+      },
+      "distinct_answers": 2,
+      "counts_including_unobserved": [
+        8,
+        8
+      ],
+      "best_observed_constant_EM": "1/2",
+      "finite_sample_minimum_possible_best_constant_EM": "1/2",
+      "uniform_random_EM": "1/2"
+    },
+    "L4": {
+      "N": 4,
+      "permutation_space": 6,
+      "answer_histogram": {
+        "[1, 2, 3]": 1,
+        "[2, 1, 3]": 1,
+        "[2, 3, 1]": 1,
+        "[3, 1, 2]": 1
+      },
+      "distinct_answers": 4,
+      "counts_including_unobserved": [
+        1,
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "best_observed_constant_EM": "1/4",
+      "finite_sample_minimum_possible_best_constant_EM": "1/4",
+      "uniform_random_EM": "1/6"
+    }
+  },
+  "uniform_random_EM": "13/30",
+  "best_length_constant_EM": "9/20",
+  "best_direction_length_constant_EM": "1/2",
+  "schedule": [
+    {
+      "parent_diagnostic_id": "conservative_semantic_v1_usim_train_episode_001650_forward_world_modeling_3_steps_f095dbf8",
+      "episode_key": "usim_train_episode_001650",
+      "direction": "forward",
+      "L": 3,
+      "chronological_frame_ids": [
+        "0",
+        "190",
+        "219"
+      ],
+      "proposed_gt": [
+        2,
+        1
+      ],
+      "chronological_item_indices_at_numbered_slots": [
+        2,
+        1
+      ],
+      "draft_binding_sha256": "b5b58a0480fabc966819bdf9bbf23849c1a345ec2f0c8c6a2087f91694ec99c0",
+      "draft_only": true
+    },
+    {
+      "parent_diagnostic_id": "conservative_semantic_v1_usim_train_episode_001259_forward_world_modeling_3_steps_68e9ca71",
+      "episode_key": "usim_train_episode_001259",
+      "direction": "forward",
+      "L": 3,
+      "chronological_frame_ids": [
+        "57",
+        "170",
+        "203"
+      ],
+      "proposed_gt": [
+        1,
+        2
+      ],
+      "chronological_item_indices_at_numbered_slots": [
+        1,
+        2
+      ],
+      "draft_binding_sha256": "674c998c3cfc125373117737ad577a1bf7f805edc57f9a6d33478f0b69580a2f",
+      "draft_only": true
+    },
+    {
+      "parent_diagnostic_id": "conservative_semantic_v1_usim_train_episode_001734_forward_world_modeling_3_steps_f32f5399",
+      "episode_key": "usim_train_episode_001734",
+      "direction": "forward",
+      "L": 3,
+      "chronological_frame_ids": [
+        "150",
+        "274",
+        "312"
+      ],
+      "proposed_gt": [
+        2,
+        1
+      ],
+      "chronological_item_indices_at_numbered_slots": [
+        2,
+        1
+      ],
+      "draft_binding_sha256": "3d3347164e497b847901701ccad07221026ef64d9d5770e550e3bdc71b34042e",
+      "draft_only": true
+    },
+    {
+      "parent_diagnostic_id": "conservative_semantic_v1_usim_train_episode_001145_forward_world_modeling_3_steps_d54869c3",
+      "episode_key": "usim_train_episode_001145",
+      "direction": "forward",
+      "L": 3,
+      "chronological_frame_ids": [
+        "88",
+        "128",
+        "161"
+      ],
+      "proposed_gt": [
+        1,
+        2
+      ],
+      "chronological_item_indices_at_numbered_slots": [
+        1,
+        2
+      ],
+      "draft_binding_sha256": "fc1fd8184821b1e970d0bd758d25ba7a737268312199c97de7485844395ffe59",
+      "draft_only": true
+    },
+    {
+      "parent_diagnostic_id": "conservative_semantic_v1_usim_train_episode_001497_forward_world_modeling_3_steps_f64735b4",
+      "episode_key": "usim_train_episode_001497",
+      "direction": "forward",
+      "L": 3,
+      "chronological_frame_ids": [
+        "42",
+        "111",
+        "145"
+      ],
+      "proposed_gt": [
+        2,
+        1
+      ],
+      "chronological_item_indices_at_numbered_slots": [
+        2,
+        1
+      ],
+      "draft_binding_sha256": "7257a4fda7ce37107c205d11dd7ae545ce7335d72ed6aea08b6d4eec2707522e",
+      "draft_only": true
+    },
+    {
+      "parent_diagnostic_id": "conservative_semantic_v1_usim_train_episode_001273_forward_world_modeling_3_steps_a9bcd10c",
+      "episode_key": "usim_train_episode_001273",
+      "direction": "forward",
+      "L": 3,
+      "chronological_frame_ids": [
+        "179",
+        "261",
+        "288"
+      ],
+      "proposed_gt": [
+        1,
+        2
+      ],
+      "chronological_item_indices_at_numbered_slots": [
+        1,
+        2
+      ],
+      "draft_binding_sha256": "0e5b12d5ac368b22247cb11ba8fd3128cb13f4196e4252561fb86d6a6d66dff2",
+      "draft_only": true
+    },
+    {
+      "parent_diagnostic_id": "conservative_semantic_v1_usim_train_episode_001549_forward_world_modeling_3_steps_429ee8fc",
+      "episode_key": "usim_train_episode_001549",
+      "direction": "forward",
+      "L": 3,
+      "chronological_frame_ids": [
+        "75",
+        "183",
+        "219"
+      ],
+      "proposed_gt": [
+        2,
+        1
+      ],
+      "chronological_item_indices_at_numbered_slots": [
+        2,
+        1
+      ],
+      "draft_binding_sha256": "1f4d70bcdd6f37bfb651161490c046d79f35cfe7f61313f607eb65d4b65f922f",
+      "draft_only": true
+    },
+    {
+      "parent_diagnostic_id": "conservative_semantic_v1_usim_train_episode_001078_forward_world_modeling_3_steps_bbcf2e3f",
+      "episode_key": "usim_train_episode_001078",
+      "direction": "forward",
+      "L": 3,
+      "chronological_frame_ids": [
+        "0",
+        "189",
+        "214"
+      ],
+      "proposed_gt": [
+        1,
+        2
+      ],
+      "chronological_item_indices_at_numbered_slots": [
+        1,
+        2
+      ],
+      "draft_binding_sha256": "2a738a5152ff2497cba8a4548ef3ad287206f5fe301705e5bb46a24975c6d412",
+      "draft_only": true
+    },
+    {
+      "parent_diagnostic_id": "conservative_semantic_v1_usim_train_episode_001734_inverse_world_modeling_3_steps_f32f5399",
+      "episode_key": "usim_train_episode_001734",
+      "direction": "inverse",
+      "L": 3,
+      "chronological_frame_ids": [
+        "150",
+        "274",
+        "312"
+      ],
+      "proposed_gt": [
+        2,
+        1
+      ],
+      "chronological_item_indices_at_numbered_slots": [
+        2,
+        1
+      ],
+      "draft_binding_sha256": "76d366af78f9623c447557f1ea7f4423135e55cd7da4962cd775c7428b87fe6f",
+      "draft_only": true
+    },
+    {
+      "parent_diagnostic_id": "conservative_semantic_v1_usim_train_episode_001497_inverse_world_modeling_3_steps_f64735b4",
+      "episode_key": "usim_train_episode_001497",
+      "direction": "inverse",
+      "L": 3,
+      "chronological_frame_ids": [
+        "42",
+        "111",
+        "145"
+      ],
+      "proposed_gt": [
+        1,
+        2
+      ],
+      "chronological_item_indices_at_numbered_slots": [
+        1,
+        2
+      ],
+      "draft_binding_sha256": "6f972d59c09266dc9eeed3aba7b10dca53fa7a831dd20f8f2d45be2db5873e9a",
+      "draft_only": true
+    },
+    {
+      "parent_diagnostic_id": "conservative_semantic_v1_usim_train_episode_001078_inverse_world_modeling_3_steps_bbcf2e3f",
+      "episode_key": "usim_train_episode_001078",
+      "direction": "inverse",
+      "L": 3,
+      "chronological_frame_ids": [
+        "0",
+        "189",
+        "214"
+      ],
+      "proposed_gt": [
+        2,
+        1
+      ],
+      "chronological_item_indices_at_numbered_slots": [
+        2,
+        1
+      ],
+      "draft_binding_sha256": "d8285fee2833337f1ca50a5d7c8527afe63b2cc34e334e9d151b3033f7ac8ce7",
+      "draft_only": true
+    },
+    {
+      "parent_diagnostic_id": "conservative_semantic_v1_usim_train_episode_001549_inverse_world_modeling_3_steps_429ee8fc",
+      "episode_key": "usim_train_episode_001549",
+      "direction": "inverse",
+      "L": 3,
+      "chronological_frame_ids": [
+        "75",
+        "183",
+        "219"
+      ],
+      "proposed_gt": [
+        1,
+        2
+      ],
+      "chronological_item_indices_at_numbered_slots": [
+        1,
+        2
+      ],
+      "draft_binding_sha256": "abdb1ba911f8aa3fb50a6b8fa0371598e06b827023346dc8c753fa3b7fc22521",
+      "draft_only": true
+    },
+    {
+      "parent_diagnostic_id": "conservative_semantic_v1_usim_train_episode_001259_inverse_world_modeling_3_steps_68e9ca71",
+      "episode_key": "usim_train_episode_001259",
+      "direction": "inverse",
+      "L": 3,
+      "chronological_frame_ids": [
+        "57",
+        "170",
+        "203"
+      ],
+      "proposed_gt": [
+        2,
+        1
+      ],
+      "chronological_item_indices_at_numbered_slots": [
+        2,
+        1
+      ],
+      "draft_binding_sha256": "d29d37f829f179f66215a8adcca317dcae28a32bdb93e15a3a399b61ae0871bd",
+      "draft_only": true
+    },
+    {
+      "parent_diagnostic_id": "conservative_semantic_v1_usim_train_episode_001650_inverse_world_modeling_3_steps_f095dbf8",
+      "episode_key": "usim_train_episode_001650",
+      "direction": "inverse",
+      "L": 3,
+      "chronological_frame_ids": [
+        "0",
+        "190",
+        "219"
+      ],
+      "proposed_gt": [
+        1,
+        2
+      ],
+      "chronological_item_indices_at_numbered_slots": [
+        1,
+        2
+      ],
+      "draft_binding_sha256": "bde48dd2ded26c5a460543865a432aa99b87c80b2ff9e8456162f4e06e4062fe",
+      "draft_only": true
+    },
+    {
+      "parent_diagnostic_id": "conservative_semantic_v1_usim_train_episode_001273_inverse_world_modeling_3_steps_a9bcd10c",
+      "episode_key": "usim_train_episode_001273",
+      "direction": "inverse",
+      "L": 3,
+      "chronological_frame_ids": [
+        "179",
+        "261",
+        "288"
+      ],
+      "proposed_gt": [
+        2,
+        1
+      ],
+      "chronological_item_indices_at_numbered_slots": [
+        2,
+        1
+      ],
+      "draft_binding_sha256": "7d18775609b4768c2f2eb3df7776c4e5f12236b99f9bbcc4a7d451b04caeb9df",
+      "draft_only": true
+    },
+    {
+      "parent_diagnostic_id": "conservative_semantic_v1_usim_train_episode_001145_inverse_world_modeling_3_steps_d54869c3",
+      "episode_key": "usim_train_episode_001145",
+      "direction": "inverse",
+      "L": 3,
+      "chronological_frame_ids": [
+        "88",
+        "128",
+        "161"
+      ],
+      "proposed_gt": [
+        1,
+        2
+      ],
+      "chronological_item_indices_at_numbered_slots": [
+        1,
+        2
+      ],
+      "draft_binding_sha256": "b6fa63f3bad89e292b8c779014c6cc65b624c99a41fe724e340ebf6bffda2749",
+      "draft_only": true
+    },
+    {
+      "parent_diagnostic_id": "conservative_semantic_v1_usim_train_episode_001384_forward_world_modeling_4_steps_67ba5330",
+      "episode_key": "usim_train_episode_001384",
+      "direction": "forward",
+      "L": 4,
+      "chronological_frame_ids": [
+        "164",
+        "209",
+        "239",
+        "486"
+      ],
+      "proposed_gt": [
+        3,
+        1,
+        2
+      ],
+      "chronological_item_indices_at_numbered_slots": [
+        2,
+        3,
+        1
+      ],
+      "draft_binding_sha256": "82fcc04631be8fa5ef37800247edb4e085d4bf9c8914f2db60a8c42f0813dc10",
+      "draft_only": true
+    },
+    {
+      "parent_diagnostic_id": "conservative_semantic_v1_usim_train_episode_001378_forward_world_modeling_4_steps_6bdb4e9a",
+      "episode_key": "usim_train_episode_001378",
+      "direction": "forward",
+      "L": 4,
+      "chronological_frame_ids": [
+        "60",
+        "176",
+        "206",
+        "448"
+      ],
+      "proposed_gt": [
+        1,
+        2,
+        3
+      ],
+      "chronological_item_indices_at_numbered_slots": [
+        1,
+        2,
+        3
+      ],
+      "draft_binding_sha256": "3f975ddfac1f46845c79c196e054140b3e2683b514b829090fd42c450b57fb30",
+      "draft_only": true
+    },
+    {
+      "parent_diagnostic_id": "conservative_semantic_v1_usim_train_episode_001384_inverse_world_modeling_4_steps_67ba5330",
+      "episode_key": "usim_train_episode_001384",
+      "direction": "inverse",
+      "L": 4,
+      "chronological_frame_ids": [
+        "164",
+        "209",
+        "239",
+        "486"
+      ],
+      "proposed_gt": [
+        2,
+        1,
+        3
+      ],
+      "chronological_item_indices_at_numbered_slots": [
+        2,
+        1,
+        3
+      ],
+      "draft_binding_sha256": "dcd2cee9c872dd790670e1e4b440e71a282fa8403def1c41d3477d8a8efe3ec5",
+      "draft_only": true
+    },
+    {
+      "parent_diagnostic_id": "conservative_semantic_v1_usim_train_episode_001378_inverse_world_modeling_4_steps_6bdb4e9a",
+      "episode_key": "usim_train_episode_001378",
+      "direction": "inverse",
+      "L": 4,
+      "chronological_frame_ids": [
+        "60",
+        "176",
+        "206",
+        "448"
+      ],
+      "proposed_gt": [
+        2,
+        3,
+        1
+      ],
+      "chronological_item_indices_at_numbered_slots": [
+        3,
+        1,
+        2
+      ],
+      "draft_binding_sha256": "e51ad189c5a9b6da3edc0b9553145d64b990fc4121395dced18a064d462f1848",
+      "draft_only": true
+    }
+  ],
+  "formal_QA_built": false,
+  "image_writes": 0,
+  "original_annotation_writes": 0,
+  "independent_acceptance": "0/10"
+}

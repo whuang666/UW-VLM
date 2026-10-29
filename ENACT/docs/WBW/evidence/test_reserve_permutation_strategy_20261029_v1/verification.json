@@ -1,0 +1,33 @@
+{
+  "schema": "usim-permutation-design-verification/v1",
+  "version": "test-reserve-balanced-labels-draft-v1",
+  "diagnostic_constant_baseline": {
+    "count": 20,
+    "valid_permutations": 20,
+    "invalid_or_missing": 0,
+    "invalid_reasons": {},
+    "EM": 1.0,
+    "semantic_only": 0.0,
+    "TA": 1.0,
+    "PA_item_mean": 1.0,
+    "PA_transition_micro": 1.0,
+    "transitions_total": 44
+  },
+  "actual_chain_signature_sets_distinct": 20,
+  "relabeling_verifier_calls": 208,
+  "all_relabelings_have_single_accepted_reference": true,
+  "distinct_signatures_general_counterexample_found": true,
+  "schedule_independent_of_input_row_order": true,
+  "finite_sample_balance_checks_pass": true,
+  "forward_slot_inverse_checks_pass": true,
+  "input_sha256": {
+    "ENACT/docs/WBW/evidence/test_reserve_conservative_semantic_20261029_v1/diagnostic_full_chain_qa.jsonl": "a4dc74184f02d0620a2f3630d3c2c099f6236f377c95edf74a517f0546f82312",
+    "ENACT/docs/WBW/evidence/test_reserve_conservative_semantic_20261029_v1/permutation_audit.json": "c8e4fa63595b480dff9d7e20a44a7154aa4321ddf8169798349cc8d8c11a0924",
+    "ENACT/docs/WBW/evidence/test_reserve_conservative_semantic_20261029_v1/summary.json": "7d7f3ec1017db7d5cd029ddf42a94d1154696d559018048acc09431e012256aa",
+    "ENACT/enact/core/evaluators.py": "b69c18604e0572ebbeefeeb9b801b0d5745f79454c0cc20aa7b9b77f12222572",
+    "ENACT/docs/WBW/evidence/test_reserve_permutation_strategy_20261029_v1/verify_strategy.py": "9d261715ea042926e1367cdbaa0e469e334d6600184051b32ec6068062a1f04e"
+  },
+  "model_api_calls": 0,
+  "socket_attempts": 0,
+  "formal_QA_writes": 0
+}

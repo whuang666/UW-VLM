@@ -1,0 +1,15 @@
+{
+  "draft_rows": 20,
+  "independent_episode_count": 10,
+  "draft_binding_hashes_unique": true,
+  "stock_relabeling_checks": 208,
+  "general_counterexample_reproduced": true,
+  "constant_bounds_match": true,
+  "full_presentation_56_weighting_checked": true,
+  "input_hashes_checked": 5,
+  "local_links_checked": 10,
+  "broken_links": [],
+  "old_files_unchanged": 545,
+  "formal_QA_writes": 0,
+  "model_api_calls": 0
+}

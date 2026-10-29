@@ -1,0 +1,8 @@
+{
+  "checks": {
+    "refuse_overwrite": 1,
+    "refuse_frozen_output": 1
+  },
+  "passed": 2,
+  "source_compiles": true
+}

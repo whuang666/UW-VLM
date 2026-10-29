@@ -1,0 +1,92 @@
+{
+  "schema": "usim-distinct-transition-counterexample/v1",
+  "synthetic_only": true,
+  "L": 5,
+  "all_objects_visible": true,
+  "states": [
+    [],
+    [
+      "Open"
+    ],
+    [
+      "Heated"
+    ],
+    [
+      "Heated",
+      "ToggledOn"
+    ],
+    [
+      "Open",
+      "ToggledOn"
+    ]
+  ],
+  "reference_signatures": [
+    [
+      "node_add_the synthetic_Open"
+    ],
+    [
+      "node_add_the synthetic_Heated",
+      "node_remove_the synthetic_Open"
+    ],
+    [
+      "node_add_the synthetic_ToggledOn"
+    ],
+    [
+      "node_add_the synthetic_Open",
+      "node_remove_the synthetic_Heated"
+    ]
+  ],
+  "pairwise_distinct": true,
+  "reference_answer": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "alternative_accepted_answer": [
+    4,
+    2,
+    3,
+    1
+  ],
+  "alternative_result": {
+    "exact_match": false,
+    "semantic_match": true,
+    "task_accuracy": true,
+    "pairwise_accuracy": 1
+  },
+  "accepted_answers": [
+    [
+      1,
+      2,
+      3,
+      4
+    ],
+    [
+      4,
+      2,
+      3,
+      1
+    ]
+  ],
+  "alternative_full_signatures": [
+    [
+      "node_add_the synthetic_Open",
+      "node_add_the synthetic_ToggledOn"
+    ],
+    [
+      "node_add_the synthetic_Heated",
+      "node_remove_the synthetic_Open",
+      "node_remove_the synthetic_ToggledOn"
+    ],
+    [
+      "node_add_the synthetic_ToggledOn"
+    ],
+    [
+      "node_add_the synthetic_Open",
+      "node_remove_the synthetic_Heated",
+      "node_remove_the synthetic_ToggledOn"
+    ]
+  ],
+  "implication": "Distinct adjacent signatures alone do not establish uniqueness under stock subset semantics"
+}

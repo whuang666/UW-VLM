@@ -1,0 +1,13 @@
+{
+  "schema": "usim-permutation-plan-preservation/v1",
+  "source_head": "8a04f51d72cbd4657256844ccac0b0bdb039b68d",
+  "old_files_checked": 545,
+  "changed": [],
+  "added_under_protected_scopes": [],
+  "old_material_preserved": true,
+  "formal_qa_writes": 0,
+  "image_writes": 0,
+  "original_annotation_writes": 0,
+  "model_prediction_writes": 0,
+  "model_api_calls": 0
+}
