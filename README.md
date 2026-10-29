@@ -26,6 +26,8 @@
 
 后续[均衡QA候选v1已建成](docs/workbuddyRead/test_reserve_balanced_qa_build_20261029_zh.md)：独立版本20题／64张标号图，实际唯一性、oracle及图文绑定通过；长度常量0.45、方向×长度常量0.50，文本基线0.75（inverse10/10）。105项测试、原1818文件冻结通过，0次API。源帧1650@f0的管子可见性仍有争议，独立验收0/10，当前不能作为最终test放行。
 
+独立复核者可直接使用[离线验收工作包](docs/workbuddyRead/test_human_acceptance_workpack_20261029_zh.md)：10份空表、原生与相邻图、4项判断、导出JSON及校验流程已备。图片策略采用新／未跟踪数据集PNG留本地，annotation／QA／清单及重建证据保留；v0.1已有PNG不取消跟踪。
+
 ## 目录与阅读入口
 
 | 路径 | 用途 |
@@ -62,6 +64,6 @@ API 凭据仅通过 `VLM_API_KEY` 环境变量读取。`VLM_API_URL` 和 `VLM_MO
 
 ## Git 保存范围与来源
 
-仓库保存代码、项目文档、紧凑题集、关键帧、预测、评分报告、输入清单和下载核验证据。完整 USIM 视频／Parquet、模型权重、传输配置、本地 agent 状态以及复核临时拼图和裁剪缓存留在外部存储或本地，受 `.gitignore` 排除。
+仓库保存代码、项目文档、紧凑标注／题集、预测、评分报告、输入清单和下载核验证据。新／未跟踪的数据集PNG按`ENACT/.gitignore`留在本地，通过固定来源、输入哈希与重建脚本复现；已有v0.1图片保持历史跟踪。完整USIM视频／Parquet、模型权重、传输配置、本地agent状态以及复核临时拼图和裁剪缓存受忽略规则排除。
 
 ENACT 上游历史已合并保留，导入起点为 `87e323a985418f7dcb09e9f62d065a9d010ce98b`。第三方代码和数据的来源、许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。文件保留原始字节，避免自动换行转换破坏已有哈希记录。

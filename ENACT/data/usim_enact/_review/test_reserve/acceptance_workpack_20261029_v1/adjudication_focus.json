@@ -1,0 +1,27 @@
+{
+  "version": "test-human-acceptance-workpack-20261029-v1",
+  "open_after_own_judgment": true,
+  "issues": [
+    {
+      "episode": 1650,
+      "frame": 0,
+      "issue": "Target pipe not identifiable in technical native-frame review; current snapshot cannot be accepted while this remains unresolved"
+    },
+    {
+      "episode": 1259,
+      "frames": [
+        57,
+        170,
+        203
+      ],
+      "issue": "Multiple attempts: close159, open186, close190; command alone cannot establish holding or support"
+    },
+    {
+      "episodes": [
+        1378,
+        1384
+      ],
+      "issue": "NearBox means release-position proximity, not merely a visible box; no Lifted or OnSeabed may be inferred at the retained final state"
+    }
+  ]
+}

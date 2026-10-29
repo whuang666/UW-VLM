@@ -1,0 +1,144 @@
+{
+  "ok": true,
+  "root": "E:\\code\\UW-VLM\\ENACT",
+  "groups": {
+    "audit_evidence": {
+      "ok": true,
+      "expected_count": 1,
+      "actual_count": 1,
+      "missing": [],
+      "extra": [],
+      "hash_mismatches": {},
+      "digest_expected": "bd653571701f77ce78de1e96a8dc1bd7397c391b5c916e7ed55b49bff92baf0b",
+      "digest_actual": "bd653571701f77ce78de1e96a8dc1bd7397c391b5c916e7ed55b49bff92baf0b"
+    },
+    "code": {
+      "ok": true,
+      "expected_count": 24,
+      "actual_count": 24,
+      "missing": [],
+      "extra": [],
+      "hash_mismatches": {},
+      "digest_expected": "f8a46c3bc4d857022ae2ff89167236c71abf1c47926cb7328eb8aa2f2521adb5",
+      "digest_actual": "f8a46c3bc4d857022ae2ff89167236c71abf1c47926cb7328eb8aa2f2521adb5"
+    },
+    "condition_d": {
+      "ok": true,
+      "expected_count": 3,
+      "actual_count": 3,
+      "missing": [],
+      "extra": [],
+      "hash_mismatches": {},
+      "digest_expected": "74a5b8cb0fb4f6e4b53e8fa289197499e66a4e229d380df49b09e1631951df70",
+      "digest_actual": "74a5b8cb0fb4f6e4b53e8fa289197499e66a4e229d380df49b09e1631951df70"
+    },
+    "dataset_manifest": {
+      "ok": true,
+      "expected_count": 1,
+      "actual_count": 1,
+      "missing": [],
+      "extra": [],
+      "hash_mismatches": {},
+      "digest_expected": "44b4e5888a325d4ee6521402dbf98b712e38f5acd9693dba3026f36356617e6c",
+      "digest_actual": "44b4e5888a325d4ee6521402dbf98b712e38f5acd9693dba3026f36356617e6c"
+    },
+    "docs": {
+      "ok": true,
+      "expected_count": 2,
+      "actual_count": 2,
+      "missing": [],
+      "extra": [],
+      "hash_mismatches": {},
+      "digest_expected": "cbe72af28163915e6b538361623e7302a6414ff900f297dbe8d0d396e02eafb0",
+      "digest_actual": "cbe72af28163915e6b538361623e7302a6414ff900f297dbe8d0d396e02eafb0"
+    },
+    "images": {
+      "ok": true,
+      "expected_count": 1672,
+      "actual_count": 1672,
+      "missing": [],
+      "extra": [],
+      "hash_mismatches": {},
+      "digest_expected": "e000ac29488ef657bc46a31abcfe2eb8f4cba8ae966d9ee0b4324a1ad25b160b",
+      "digest_actual": "e000ac29488ef657bc46a31abcfe2eb8f4cba8ae966d9ee0b4324a1ad25b160b"
+    },
+    "inputs": {
+      "ok": true,
+      "expected_count": 8,
+      "actual_count": 8,
+      "missing": [],
+      "extra": [],
+      "hash_mismatches": {},
+      "digest_expected": "a781499cb73a5c4ec47c8668943982f5d5c9b9be81aff7e9228d29f27804fd3d",
+      "digest_actual": "a781499cb73a5c4ec47c8668943982f5d5c9b9be81aff7e9228d29f27804fd3d"
+    },
+    "labels": {
+      "ok": true,
+      "expected_count": 81,
+      "actual_count": 81,
+      "missing": [],
+      "extra": [],
+      "hash_mismatches": {},
+      "digest_expected": "a69268c60836f674b55f7e38c1da015743e2d10953bf8494e3eb8beb57ec6c8d",
+      "digest_actual": "a69268c60836f674b55f7e38c1da015743e2d10953bf8494e3eb8beb57ec6c8d"
+    },
+    "model_config": {
+      "ok": true,
+      "expected_count": 1,
+      "actual_count": 1,
+      "missing": [],
+      "extra": [],
+      "hash_mismatches": {},
+      "digest_expected": "a093c73c66240106bc21916109ca116d3033ab05725231d257d0c760437d3874",
+      "digest_actual": "a093c73c66240106bc21916109ca116d3033ab05725231d257d0c760437d3874"
+    },
+    "program_baselines": {
+      "ok": true,
+      "expected_count": 18,
+      "actual_count": 18,
+      "missing": [],
+      "extra": [],
+      "hash_mismatches": {},
+      "digest_expected": "3fd4a9035e32cbf7105ade89aa4e60904cbc6957fd7a9988061272e79d6863b4",
+      "digest_actual": "3fd4a9035e32cbf7105ade89aa4e60904cbc6957fd7a9988061272e79d6863b4"
+    },
+    "qa": {
+      "ok": true,
+      "expected_count": 6,
+      "actual_count": 6,
+      "missing": [],
+      "extra": [],
+      "hash_mismatches": {},
+      "digest_expected": "0fe86281a5666adc398425a855ae711860924e3c08e55de68cd43dfbcaffd48f",
+      "digest_actual": "0fe86281a5666adc398425a855ae711860924e3c08e55de68cd43dfbcaffd48f"
+    },
+    "registration": {
+      "ok": true,
+      "expected_count": 1,
+      "actual_count": 1,
+      "missing": [],
+      "extra": [],
+      "hash_mismatches": {},
+      "digest_expected": "528b1485da3bca51ef0b0100d37ea144c69eccd0f4db1e467a4b617776f63c9e",
+      "digest_actual": "528b1485da3bca51ef0b0100d37ea144c69eccd0f4db1e467a4b617776f63c9e"
+    },
+    "run_artifacts": {
+      "ok": true,
+      "expected_count": 0,
+      "actual_count": 0,
+      "missing": [],
+      "extra": [],
+      "hash_mismatches": {},
+      "digest_expected": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "digest_actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "errors": [],
+  "manifest_payload_sha256": {
+    "recorded": "6d14fb83f822a6088f7d9acc4d638971147b90e8f8e1cca6070b333d23c8c10b",
+    "recomputed": "6d14fb83f822a6088f7d9acc4d638971147b90e8f8e1cca6070b333d23c8c10b",
+    "match": true
+  },
+  "manifest": "ENACT\\data\\usim_enact\\_protocol\\freeze_usim-enact-v0.2_20261027b.json",
+  "checked_at": "2026-10-29T18:30:12+08:00"
+}

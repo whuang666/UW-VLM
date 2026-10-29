@@ -1,0 +1,16 @@
+{
+  "workpack_version": "test-human-acceptance-workpack-20261029-v1",
+  "episode_count": 10,
+  "keyframe_count": 32,
+  "packet_pngs_checked": 94,
+  "blank_review_correctly_rejected": true,
+  "headless_rendered_episodes": 10,
+  "unit_tests_passed": 115,
+  "old_files_unchanged": 545,
+  "historical_tracked_pngs_preserved": 504,
+  "new_dataset_dry_run_pngs": 0,
+  "local_links_checked": 17,
+  "broken_links": [],
+  "independent_acceptance": "0/10",
+  "model_api_calls": 0
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "usim-exclusion-scenario/v1",
+  "scenario_only": true,
+  "dataset_modified": false,
+  "current_version_questions": 20,
+  "excluded_episode_in_scenario": 1650,
+  "scenario_episode_count": 9,
+  "scenario_question_count": 18,
+  "uniform_random_EM": "23/54",
+  "best_constant_on_unchanged_remaining_mapping": {
+    "length": {
+      "maximum_empirical_constant_EM": "4/9",
+      "correct": 8,
+      "N": 18
+    },
+    "direction_length": {
+      "maximum_empirical_constant_EM": "5/9",
+      "correct": 10,
+      "N": 18
+    }
+  },
+  "L3_each_direction": {
+    "N": 7,
+    "minimum_possible_best_constant_EM": "4/7"
+  },
+  "new_qa_rebalance_and_audit_required": true
+}

@@ -1,0 +1,9 @@
+{
+  "episodes": 10,
+  "keyframes": 32,
+  "source_video_hashes_match_prior_build": 10,
+  "packet_png_hashes_checked": 94,
+  "proposed_fact_values_in_packet": false,
+  "blank_review_templates": 10,
+  "prefilled_identity_or_acceptance": false
+}

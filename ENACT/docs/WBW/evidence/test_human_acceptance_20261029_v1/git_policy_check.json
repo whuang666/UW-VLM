@@ -1,0 +1,46 @@
+{
+  "schema": "usim-dataset-git-policy-check/v1",
+  "policy": "ignore new/untracked dataset PNGs; metadata remains eligible; retain historical tracked PNGs",
+  "versions": {
+    "usim-enact-v0.1": {
+      "tracked_files": 557,
+      "tracked_pngs": 504,
+      "local_pngs": 504,
+      "png_bytes": 40823491
+    },
+    "usim-enact-v0.2": {
+      "tracked_files": 89,
+      "tracked_pngs": 0,
+      "local_pngs": 1672,
+      "png_bytes": 116788114
+    },
+    "usim-enact-v0.2-conservative-balanced-20261029-v1": {
+      "tracked_files": 0,
+      "tracked_pngs": 0,
+      "local_pngs": 128,
+      "png_bytes": 7200915
+    }
+  },
+  "sample_checks": {
+    "old_untracked_png": {
+      "ignored": true,
+      "returncode": 0
+    },
+    "new_candidate_png": {
+      "ignored": true,
+      "returncode": 0
+    },
+    "new_candidate_manifest": {
+      "ignored": false,
+      "returncode": 1
+    },
+    "new_candidate_qa": {
+      "ignored": false,
+      "returncode": 1
+    }
+  },
+  "new_dataset_dry_run_add_files": 33,
+  "new_dataset_dry_run_png_files": 0,
+  "git_index_mutated": false,
+  "legacy_tracked_images_removed": 0
+}

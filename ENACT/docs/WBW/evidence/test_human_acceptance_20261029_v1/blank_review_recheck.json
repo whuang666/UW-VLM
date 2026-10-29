@@ -1,0 +1,154 @@
+{
+  "schema": "usim-human-review-validation/v1",
+  "packet_version": "test-human-acceptance-workpack-20261029-v1",
+  "declared_reviewer_identity": "",
+  "identity_independently_authenticated": false,
+  "reviewer_declaration_valid": false,
+  "prior_answer_exposure": null,
+  "complete_review_declarations": 0,
+  "accepted_current_snapshot_episodes": 0,
+  "all_dispositions_complete": false,
+  "all_current_snapshot_episodes_accepted": false,
+  "candidate_rebuild_needed": false,
+  "episodes": [
+    {
+      "episode_key": "usim_train_episode_001078",
+      "decision": null,
+      "valid_complete_review_declaration": false,
+      "accepted_current_snapshot": false,
+      "errors": [
+        "Review incomplete",
+        "Decision missing or unsupported",
+        "Decision reason missing",
+        "Named reviewer signature/attestation missing or inconsistent",
+        "Valid signed_at with timezone missing"
+      ]
+    },
+    {
+      "episode_key": "usim_train_episode_001145",
+      "decision": null,
+      "valid_complete_review_declaration": false,
+      "accepted_current_snapshot": false,
+      "errors": [
+        "Review incomplete",
+        "Decision missing or unsupported",
+        "Decision reason missing",
+        "Named reviewer signature/attestation missing or inconsistent",
+        "Valid signed_at with timezone missing"
+      ]
+    },
+    {
+      "episode_key": "usim_train_episode_001259",
+      "decision": null,
+      "valid_complete_review_declaration": false,
+      "accepted_current_snapshot": false,
+      "errors": [
+        "Review incomplete",
+        "Decision missing or unsupported",
+        "Decision reason missing",
+        "Named reviewer signature/attestation missing or inconsistent",
+        "Valid signed_at with timezone missing"
+      ]
+    },
+    {
+      "episode_key": "usim_train_episode_001273",
+      "decision": null,
+      "valid_complete_review_declaration": false,
+      "accepted_current_snapshot": false,
+      "errors": [
+        "Review incomplete",
+        "Decision missing or unsupported",
+        "Decision reason missing",
+        "Named reviewer signature/attestation missing or inconsistent",
+        "Valid signed_at with timezone missing"
+      ]
+    },
+    {
+      "episode_key": "usim_train_episode_001378",
+      "decision": null,
+      "valid_complete_review_declaration": false,
+      "accepted_current_snapshot": false,
+      "errors": [
+        "Review incomplete",
+        "Decision missing or unsupported",
+        "Decision reason missing",
+        "Named reviewer signature/attestation missing or inconsistent",
+        "Valid signed_at with timezone missing"
+      ]
+    },
+    {
+      "episode_key": "usim_train_episode_001384",
+      "decision": null,
+      "valid_complete_review_declaration": false,
+      "accepted_current_snapshot": false,
+      "errors": [
+        "Review incomplete",
+        "Decision missing or unsupported",
+        "Decision reason missing",
+        "Named reviewer signature/attestation missing or inconsistent",
+        "Valid signed_at with timezone missing"
+      ]
+    },
+    {
+      "episode_key": "usim_train_episode_001497",
+      "decision": null,
+      "valid_complete_review_declaration": false,
+      "accepted_current_snapshot": false,
+      "errors": [
+        "Review incomplete",
+        "Decision missing or unsupported",
+        "Decision reason missing",
+        "Named reviewer signature/attestation missing or inconsistent",
+        "Valid signed_at with timezone missing"
+      ]
+    },
+    {
+      "episode_key": "usim_train_episode_001549",
+      "decision": null,
+      "valid_complete_review_declaration": false,
+      "accepted_current_snapshot": false,
+      "errors": [
+        "Review incomplete",
+        "Decision missing or unsupported",
+        "Decision reason missing",
+        "Named reviewer signature/attestation missing or inconsistent",
+        "Valid signed_at with timezone missing"
+      ]
+    },
+    {
+      "episode_key": "usim_train_episode_001650",
+      "decision": null,
+      "valid_complete_review_declaration": false,
+      "accepted_current_snapshot": false,
+      "errors": [
+        "Review incomplete",
+        "Decision missing or unsupported",
+        "Decision reason missing",
+        "Named reviewer signature/attestation missing or inconsistent",
+        "Valid signed_at with timezone missing"
+      ]
+    },
+    {
+      "episode_key": "usim_train_episode_001734",
+      "decision": null,
+      "valid_complete_review_declaration": false,
+      "accepted_current_snapshot": false,
+      "errors": [
+        "Review incomplete",
+        "Decision missing or unsupported",
+        "Decision reason missing",
+        "Named reviewer signature/attestation missing or inconsistent",
+        "Valid signed_at with timezone missing"
+      ]
+    }
+  ],
+  "errors": [
+    "Human identity, independence or prior-answer-exposure declaration missing"
+  ],
+  "release_eligible": false,
+  "final_execution_protocol_frozen": false,
+  "model_api_calls": 0,
+  "packet_manifest_sha256": "58b521bba2e617fd92384dc759a79af92926e7194c9556795987089bd74218dd",
+  "review_bundle_sha256": "afd2ad1552d06f35cea5c5c1eac77bbb11f0238150c241e544ef60adea47deb4",
+  "candidate_snapshot_sha256": "6cc699908ffb78134795645203893cf36abec97449ee070f0f56722492358835"
+}

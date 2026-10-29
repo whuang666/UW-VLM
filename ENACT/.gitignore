@@ -21,6 +21,10 @@
 !/data/usim_enact/runs/
 !/data/usim_enact/_review/
 
+# Keep new dataset PNGs local; retain manifests, hashes and rebuild scripts.
+# Git continues tracking historical images that are already in the index.
+/data/usim_enact/usim-enact-v*/**/*.png
+
 # Review sheets/crops and ad-hoc work can be regenerated from source inputs.
 /data/usim_enact/_review/**/*.png
 /data/usim_enact/_review/**/*.jpg
