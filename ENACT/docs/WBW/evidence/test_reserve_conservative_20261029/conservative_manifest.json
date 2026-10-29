@@ -1,0 +1,213 @@
+{
+  "schema": "usim-test-reserve-conservative/v1",
+  "version": "test-reserve-conservative-20261029-v1",
+  "date": "2026-10-29",
+  "api_requests": 0,
+  "policy": {
+    "pick_max_frames": 3,
+    "transfer_max_frames": 4,
+    "length_cap_only": true,
+    "removed_states": [
+      "Lifted"
+    ],
+    "on_seabed_removal_rule": "仅当该 episode 内支撑状态不可判时移出整条 scope（transfer 的 at_box）",
+    "at_box": "保留但独立验收，不隐含 Lifted"
+  },
+  "originals_preserved": [
+    "initial_20261028_v1",
+    "reauthored_20261029_v1",
+    "根目录前 4 条初标"
+  ],
+  "items": [
+    {
+      "episode": 1078,
+      "family": "pick",
+      "frames": [
+        0,
+        189,
+        214
+      ],
+      "transitions": 2,
+      "perm_len": 2,
+      "chance": 0.5,
+      "check_exit": 0,
+      "relations": [
+        "OnSeabed",
+        "InGripper",
+        "NextTo"
+      ]
+    },
+    {
+      "episode": 1650,
+      "family": "pick",
+      "frames": [
+        0,
+        190,
+        219
+      ],
+      "transitions": 2,
+      "perm_len": 2,
+      "chance": 0.5,
+      "check_exit": 0,
+      "relations": [
+        "OnSeabed",
+        "InGripper",
+        "NextTo"
+      ]
+    },
+    {
+      "episode": 1734,
+      "family": "pick",
+      "frames": [
+        150,
+        274,
+        312
+      ],
+      "transitions": 2,
+      "perm_len": 2,
+      "chance": 0.5,
+      "check_exit": 0,
+      "relations": [
+        "OnSeabed",
+        "InGripper",
+        "NextTo"
+      ]
+    },
+    {
+      "episode": 1259,
+      "family": "pick",
+      "frames": [
+        57,
+        170,
+        203
+      ],
+      "transitions": 2,
+      "perm_len": 2,
+      "chance": 0.5,
+      "check_exit": 0,
+      "relations": [
+        "OnSeabed",
+        "InGripper",
+        "NextTo"
+      ]
+    },
+    {
+      "episode": 1273,
+      "family": "pick",
+      "frames": [
+        179,
+        261,
+        288
+      ],
+      "transitions": 2,
+      "perm_len": 2,
+      "chance": 0.5,
+      "check_exit": 0,
+      "relations": [
+        "OnSeabed",
+        "InGripper",
+        "NextTo"
+      ]
+    },
+    {
+      "episode": 1145,
+      "family": "pick",
+      "frames": [
+        88,
+        128,
+        161
+      ],
+      "transitions": 2,
+      "perm_len": 2,
+      "chance": 0.5,
+      "check_exit": 0,
+      "relations": [
+        "OnSeabed",
+        "InGripper",
+        "NextTo"
+      ]
+    },
+    {
+      "episode": 1497,
+      "family": "pick",
+      "frames": [
+        42,
+        111,
+        145
+      ],
+      "transitions": 2,
+      "perm_len": 2,
+      "chance": 0.5,
+      "check_exit": 0,
+      "relations": [
+        "OnSeabed",
+        "InGripper",
+        "NextTo"
+      ]
+    },
+    {
+      "episode": 1549,
+      "family": "pick",
+      "frames": [
+        75,
+        183,
+        219
+      ],
+      "transitions": 2,
+      "perm_len": 2,
+      "chance": 0.5,
+      "check_exit": 0,
+      "relations": [
+        "OnSeabed",
+        "InGripper",
+        "NextTo"
+      ]
+    },
+    {
+      "episode": 1384,
+      "family": "transfer",
+      "frames": [
+        164,
+        209,
+        239,
+        486
+      ],
+      "transitions": 3,
+      "perm_len": 3,
+      "chance": 0.166667,
+      "check_exit": 0,
+      "relations": [
+        "InGripper",
+        "NextTo",
+        "NearBox"
+      ]
+    },
+    {
+      "episode": 1378,
+      "family": "transfer",
+      "frames": [
+        60,
+        176,
+        206,
+        448
+      ],
+      "transitions": 3,
+      "perm_len": 3,
+      "chance": 0.166667,
+      "check_exit": 0,
+      "relations": [
+        "InGripper",
+        "NextTo",
+        "NearBox"
+      ]
+    }
+  ],
+  "independent_acceptance": "0/10",
+  "not_done": [
+    "语义答案唯一性审计",
+    "oracle 复算",
+    "独立人眼验收",
+    "新 QA 构建",
+    "文本基线重算"
+  ]
+}
