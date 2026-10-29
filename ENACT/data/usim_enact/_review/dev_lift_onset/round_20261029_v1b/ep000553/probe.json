@@ -1,0 +1,413 @@
+{
+  "episode_key": "usim_train_episode_000553",
+  "episode": 553,
+  "task_text": "Pick up the red cylinder",
+  "task_family": "pick",
+  "source_files": {
+    "ego_video": {
+      "path": "usim/train/videos/chunk-000/observation.images.ego/episode_000553.mp4",
+      "sha256": "22cfd630194e9f731afb3fb829204f98dd95d31c5bcd649aaa75cae79c73e606",
+      "pinned_hash_match": true
+    },
+    "parquet": {
+      "path": "usim/train/data/chunk-000/episode_000553.parquet",
+      "sha256": "434f3d314d002f7e408246de33b84a4ff81b399176c4480aa910a32ebf4c8e64",
+      "pinned_hash_match": true
+    }
+  },
+  "decoded_frames": 263,
+  "parquet_rows": 263,
+  "annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2/annotations/episodes/usim_train_episode_000553.json",
+  "annotation_sha256": "87e849dbc19fc370cb60e4fb454b06533550abd7939cc626d0352949a96902b4",
+  "old_frames": [
+    110,
+    140,
+    168,
+    248
+  ],
+  "old_hold_records": [
+    {
+      "slot": 1,
+      "source_frame": 110,
+      "hold_index": 7,
+      "hold_length": 1,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/old_slot_01_f00110.png",
+      "native_png_sha256": "b41842366014a7e8f6a5ee1c67fb5fdec2b26cd8fb15680d92c6afc2c5d46bd6"
+    },
+    {
+      "slot": 2,
+      "source_frame": 140,
+      "hold_index": 10,
+      "hold_length": 18,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/old_slot_02_f00140.png",
+      "native_png_sha256": "8332f8e1ad042be3cca15aabac3a31e572966d16cce3cfd7411d114f59d3bced"
+    },
+    {
+      "slot": 3,
+      "source_frame": 168,
+      "hold_index": 13,
+      "hold_length": 20,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/old_slot_03_f00168.png",
+      "native_png_sha256": "981f35e8ad624107a2640566aad73b981033c4e9c8fd5403ffac24f08dfc25e2"
+    },
+    {
+      "slot": 4,
+      "source_frame": 248,
+      "hold_index": 21,
+      "hold_length": 20,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/old_slot_04_f00248.png",
+      "native_png_sha256": "f382f8cb2a8a3b0208db7ebba6794f15f513d98112e55ef1455519a9502536c5"
+    }
+  ],
+  "old_spacing": [
+    {
+      "left": 110,
+      "right": 140,
+      "frame_gap": 30,
+      "threshold_segment_steps": 3,
+      "stable_hold_steps": 1
+    },
+    {
+      "left": 140,
+      "right": 168,
+      "frame_gap": 28,
+      "threshold_segment_steps": 3,
+      "stable_hold_steps": 1
+    },
+    {
+      "left": 168,
+      "right": 248,
+      "frame_gap": 80,
+      "threshold_segment_steps": 8,
+      "stable_hold_steps": 4
+    }
+  ],
+  "qa_questions": 4,
+  "qa_ids": [
+    "usim_train_episode_000553_forward_world_modeling_3_steps_bdd319c2",
+    "usim_train_episode_000553_forward_world_modeling_4_steps_5965fa9d",
+    "usim_train_episode_000553_inverse_world_modeling_3_steps_bdd319c2",
+    "usim_train_episode_000553_inverse_world_modeling_4_steps_5965fa9d"
+  ],
+  "signal": {
+    "events": [
+      {
+        "frame": 149,
+        "event": "close"
+      }
+    ],
+    "main_close_signal_candidate": 149,
+    "main_close_visually_confirmed": false,
+    "release_after_main_close": null,
+    "baseline_search_half_open": [
+      129,
+      263
+    ],
+    "minimum_frame": 146,
+    "minimum_value": 0.2152913361787796,
+    "robot_rise_proxy_frame": 194,
+    "proxy_window_raw": [
+      234,
+      254
+    ],
+    "proxy_window_available": [
+      234,
+      254
+    ]
+  },
+  "holds": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 17,
+      "length": 18,
+      "representative_frame": 8,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_000_f00008.png",
+      "native_png_sha256": "5861e3738292306dd3b4b607c2d4623808a844ed8e3938694347a19722b010f7",
+      "dvl_at_representative": 0.3447508215904236,
+      "gripper_at_representative": -2.1684014692259105e-20
+    },
+    {
+      "index": 1,
+      "start": 18,
+      "end": 47,
+      "length": 30,
+      "representative_frame": 32,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_001_f00032.png",
+      "native_png_sha256": "a7bb1e5d048bb99f8e9ecdfce6954b13ab15b46b07e93f59c1321a47a2cf6404",
+      "dvl_at_representative": 0.34719470143318176,
+      "gripper_at_representative": 3.569128239178099e-05
+    },
+    {
+      "index": 2,
+      "start": 48,
+      "end": 48,
+      "length": 1,
+      "representative_frame": 48,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_002_f00048.png",
+      "native_png_sha256": "fa8026e30ac0ef818d638eb16f2f1100237398a39e9489cd772b1ebaade04071",
+      "dvl_at_representative": 0.34986162185668945,
+      "gripper_at_representative": 3.569127511582337e-05
+    },
+    {
+      "index": 3,
+      "start": 49,
+      "end": 49,
+      "length": 1,
+      "representative_frame": 49,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_003_f00049.png",
+      "native_png_sha256": "20c10c6b1842094c3cde6b0e1dca8a6571fb000e57fa141d10eeafa57058ec8f",
+      "dvl_at_representative": 0.34986162185668945,
+      "gripper_at_representative": 3.569127511582337e-05
+    },
+    {
+      "index": 4,
+      "start": 50,
+      "end": 65,
+      "length": 16,
+      "representative_frame": 57,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_004_f00057.png",
+      "native_png_sha256": "5282c54d3719d7cfca0f852df0c759735893b21f0f8e7cdbfaef15e0610999dc",
+      "dvl_at_representative": 0.3472799062728882,
+      "gripper_at_representative": 3.569127511582337e-05
+    },
+    {
+      "index": 5,
+      "start": 66,
+      "end": 87,
+      "length": 22,
+      "representative_frame": 76,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_005_f00076.png",
+      "native_png_sha256": "ac7b4f61e10dd7ff75b90ce4d11f0233bd4abf7bb6229816cfac580a358f02a9",
+      "dvl_at_representative": 0.34131962060928345,
+      "gripper_at_representative": 3.569127511582337e-05
+    },
+    {
+      "index": 6,
+      "start": 88,
+      "end": 109,
+      "length": 22,
+      "representative_frame": 98,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_006_f00098.png",
+      "native_png_sha256": "6abcb5ffeac03d25ee0e75341e2bc5376d4b08893fd364df68ec1b0ef4e819a2",
+      "dvl_at_representative": 0.32332944869995117,
+      "gripper_at_representative": 4.2291863792343065e-05
+    },
+    {
+      "index": 7,
+      "start": 110,
+      "end": 110,
+      "length": 1,
+      "representative_frame": 110,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_007_f00110.png",
+      "native_png_sha256": "b41842366014a7e8f6a5ee1c67fb5fdec2b26cd8fb15680d92c6afc2c5d46bd6",
+      "dvl_at_representative": 0.271451473236084,
+      "gripper_at_representative": 4.2291863792343065e-05
+    },
+    {
+      "index": 8,
+      "start": 111,
+      "end": 111,
+      "length": 1,
+      "representative_frame": 111,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_008_f00111.png",
+      "native_png_sha256": "76a1fbe72994a1aa02d004b9212512f5a1461d4e11cb3de2a14067f5f056318b",
+      "dvl_at_representative": 0.271451473236084,
+      "gripper_at_representative": 4.2291863792343065e-05
+    },
+    {
+      "index": 9,
+      "start": 112,
+      "end": 133,
+      "length": 22,
+      "representative_frame": 122,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_009_f00122.png",
+      "native_png_sha256": "f0473520a4c890c84697f9b8a9d3f617a47f348dc62267c93ba636abdf8591a1",
+      "dvl_at_representative": 0.2351870834827423,
+      "gripper_at_representative": 4.269649798516184e-05
+    },
+    {
+      "index": 10,
+      "start": 134,
+      "end": 151,
+      "length": 18,
+      "representative_frame": 142,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_010_f00142.png",
+      "native_png_sha256": "8332f8e1ad042be3cca15aabac3a31e572966d16cce3cfd7411d114f59d3bced",
+      "dvl_at_representative": 0.21558326482772827,
+      "gripper_at_representative": 4.239915870130062e-05
+    },
+    {
+      "index": 11,
+      "start": 152,
+      "end": 152,
+      "length": 1,
+      "representative_frame": 152,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_011_f00152.png",
+      "native_png_sha256": "dcb3c9582f4ce714e1e510240edd32997dba7909abbcbc64e315765aa0f93fde",
+      "dvl_at_representative": 0.21907354891300201,
+      "gripper_at_representative": 0.01490524597465992
+    },
+    {
+      "index": 12,
+      "start": 153,
+      "end": 153,
+      "length": 1,
+      "representative_frame": 153,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_012_f00153.png",
+      "native_png_sha256": "9d3e5fb5c2b1db0e600344518c197685072b01e9686b2a53d2dfadc24c97d214",
+      "dvl_at_representative": 0.21907354891300201,
+      "gripper_at_representative": 0.014903301373124123
+    },
+    {
+      "index": 13,
+      "start": 154,
+      "end": 173,
+      "length": 20,
+      "representative_frame": 163,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_013_f00163.png",
+      "native_png_sha256": "981f35e8ad624107a2640566aad73b981033c4e9c8fd5403ffac24f08dfc25e2",
+      "dvl_at_representative": 0.22425776720046997,
+      "gripper_at_representative": 0.014903143048286438
+    },
+    {
+      "index": 14,
+      "start": 174,
+      "end": 174,
+      "length": 1,
+      "representative_frame": 174,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_014_f00174.png",
+      "native_png_sha256": "a5e55dc4be818760e1183fc3143bee3debc7194ff524a6b8b0d782e4f771fb78",
+      "dvl_at_representative": 0.23148465156555176,
+      "gripper_at_representative": 0.014903311617672443
+    },
+    {
+      "index": 15,
+      "start": 175,
+      "end": 175,
+      "length": 1,
+      "representative_frame": 175,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_015_f00175.png",
+      "native_png_sha256": "ec6b8518c83c1aae9808e7b041d1847a3297719028a0c4d784227d0900edc47d",
+      "dvl_at_representative": 0.23148465156555176,
+      "gripper_at_representative": 0.014903147704899311
+    },
+    {
+      "index": 16,
+      "start": 176,
+      "end": 193,
+      "length": 18,
+      "representative_frame": 184,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_016_f00184.png",
+      "native_png_sha256": "71d8e029f4e28ffed85f6cc31a4d1dfad00d4500205275f37ce5937b7dd0ec2e",
+      "dvl_at_representative": 0.23817205429077148,
+      "gripper_at_representative": 0.014903346076607704
+    },
+    {
+      "index": 17,
+      "start": 194,
+      "end": 194,
+      "length": 1,
+      "representative_frame": 194,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_017_f00194.png",
+      "native_png_sha256": "a52b2c2312a091f4547ce5d712029ba824d7eff0a1ae358ad354879c190b706f",
+      "dvl_at_representative": 0.2697608768939972,
+      "gripper_at_representative": 0.014907456934452057
+    },
+    {
+      "index": 18,
+      "start": 195,
+      "end": 195,
+      "length": 1,
+      "representative_frame": 195,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_018_f00195.png",
+      "native_png_sha256": "ef2dd1986ab1a59cb6de5d444950c0701e855096d321e1610f631bd24de55836",
+      "dvl_at_representative": 0.2697608768939972,
+      "gripper_at_representative": 0.01490742526948452
+    },
+    {
+      "index": 19,
+      "start": 196,
+      "end": 215,
+      "length": 20,
+      "representative_frame": 205,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_019_f00205.png",
+      "native_png_sha256": "7539c5170d3734477eddc21a6efdc1d5ba288efab261bb2495a659f88e3aa0b8",
+      "dvl_at_representative": 0.3107143044471741,
+      "gripper_at_representative": 0.014907442033290863
+    },
+    {
+      "index": 20,
+      "start": 216,
+      "end": 235,
+      "length": 20,
+      "representative_frame": 225,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_020_f00225.png",
+      "native_png_sha256": "c23bce0d87b4dcb94f522c53254f9617d5d4ed866452abc9c51fcc486e7a36bd",
+      "dvl_at_representative": 0.3767227828502655,
+      "gripper_at_representative": 0.014907325617969036
+    },
+    {
+      "index": 21,
+      "start": 236,
+      "end": 255,
+      "length": 20,
+      "representative_frame": 245,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_021_f00245.png",
+      "native_png_sha256": "f382f8cb2a8a3b0208db7ebba6794f15f513d98112e55ef1455519a9502536c5",
+      "dvl_at_representative": 0.40544793009757996,
+      "gripper_at_representative": 0.014907356351613998
+    },
+    {
+      "index": 22,
+      "start": 256,
+      "end": 256,
+      "length": 1,
+      "representative_frame": 256,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_022_f00256.png",
+      "native_png_sha256": "372905923b0bc5261ae0f53d0b1430d087fa861daa43633b77328084f121d52a",
+      "dvl_at_representative": 0.4205346703529358,
+      "gripper_at_representative": 0.014907386153936386
+    },
+    {
+      "index": 23,
+      "start": 257,
+      "end": 257,
+      "length": 1,
+      "representative_frame": 257,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_023_f00257.png",
+      "native_png_sha256": "4fd298cf152b388c6a77fcca1a4abb3b81488f5405f08929593fd53cb5324bf0",
+      "dvl_at_representative": 0.4205346703529358,
+      "gripper_at_representative": 0.01490737870335579
+    },
+    {
+      "index": 24,
+      "start": 258,
+      "end": 261,
+      "length": 4,
+      "representative_frame": 259,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_024_f00259.png",
+      "native_png_sha256": "67a241ee9584e575bcd0cdf2a3ca434495741ac97851c51b7cadae764d3f4aa0",
+      "dvl_at_representative": 0.4193544089794159,
+      "gripper_at_representative": 0.01490742340683937
+    },
+    {
+      "index": 25,
+      "start": 262,
+      "end": 262,
+      "length": 1,
+      "representative_frame": 262,
+      "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_025_f00262.png",
+      "native_png_sha256": "6b6c15a5f0570d4d3af547a73aefce740f1446179ef65582c65e7769e7a8d176",
+      "dvl_at_representative": 0.42328813672065735,
+      "gripper_at_representative": 0.014907317236065865
+    }
+  ],
+  "timeline_sheets": [
+    "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/timeline_01.png",
+    "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/timeline_02.png"
+  ],
+  "stable_overview": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/stable_overview.png",
+  "old_keyframe_sheet": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/old_keyframes.png",
+  "visual_review_complete": false
+}

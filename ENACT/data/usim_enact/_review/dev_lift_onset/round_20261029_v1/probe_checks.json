@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "reject_workspace": true,
+    "reject_frozen_data": true,
+    "reject_test_review": true,
+    "reject_existing_dev_output": true,
+    "reject_nine_future_samples": true,
+    "accept_ten_future_samples": true,
+    "reject_persistence_dip": true,
+    "reject_nonfinite_signal": true,
+    "reject_missing_close": true
+  },
+  "passed": 9,
+  "model_api_calls": 0
+}

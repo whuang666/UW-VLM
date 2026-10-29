@@ -1,0 +1,52 @@
+{
+  "schema": "usim-dev-lift-feasibility-plan/v1",
+  "version": "dev-lift-onset-feasibility-v1",
+  "probe_revision": 2,
+  "created_at_utc": "2026-10-29T04:14:18.463182+00:00",
+  "draft_path": "docs/workbuddyRead/test_lift_onset_pick_transfer_draft_20261029_zh.md",
+  "draft_sha256": "05d5d22e8549573f0b3232a29bf2324db7a072dead566ea0a7ea80dd36e9aadd",
+  "probe_sha256": "4893bde27ae8ea0530da11d96d9a13f44d6d55e8689bb7f90046c77b53f9e2e6",
+  "split_manifest_sha256": "6dfe7fdc04d4a4eb659005facb9b875c30d081aa3fef2e822d88f713e4bd7370",
+  "dev_qa_sha256": "3a1399b1120ec75ebb189bf0709ca589dcffcc08e0240e978119be472630c5ef",
+  "source_commit": "88c3612bf99d10652f19ec531052a38c04f0202e",
+  "expected_inventory_sha256": "663c1980f3c3bcc467e80edd7b9d8eefc9c9bb1165e77392eb7a32933c3b8b9d",
+  "episode_keys": [
+    "usim_train_episode_000104",
+    "usim_train_episode_000175",
+    "usim_train_episode_000200",
+    "usim_train_episode_000201",
+    "usim_train_episode_000287",
+    "usim_train_episode_000297",
+    "usim_train_episode_000501",
+    "usim_train_episode_000533",
+    "usim_train_episode_000552",
+    "usim_train_episode_000553",
+    "usim_train_episode_000555",
+    "usim_train_episode_000556",
+    "usim_train_episode_000587",
+    "usim_train_episode_000628",
+    "usim_train_episode_000653",
+    "usim_train_episode_000756",
+    "usim_train_episode_001302",
+    "usim_train_episode_001304",
+    "usim_train_episode_001318"
+  ],
+  "questions": 84,
+  "forbidden_overlap": [],
+  "hold_segmentation": {
+    "measure": "adjacent decoded gray mean absolute difference",
+    "new_hold_when_above": 0.5,
+    "minimum_hold_length": 8
+  },
+  "candidate_strategy": "first_visual_gap_ready_hold_draft_v1",
+  "spacing": {
+    "frames_at_least": 25,
+    "render_updates_at_least": 2
+  },
+  "spacing_measurement_note": "Threshold segment steps are proxies, not certified independent render updates",
+  "visual_review": "technical feasibility review; independent human acceptance not performed",
+  "visual_labels_assigned_by_probe": false,
+  "existing_model_predictions_loaded": false,
+  "model_api_calls": 0,
+  "annotation_writes": 0
+}

@@ -1,0 +1,128 @@
+{
+  "schema": "usim-dev-lift-feasibility-summary/v1",
+  "rule_version": "dev-lift-onset-feasibility-v1",
+  "source_head": "3ee37bdbeb1f1567eb89b3c8ca087d5145dcbd2a",
+  "scope": {
+    "episodes": 19,
+    "questions": 84,
+    "pick": 16,
+    "transfer": 3,
+    "held_out_overlap": 0
+  },
+  "mechanical": {
+    "source_hash_checks_passed": 38,
+    "aligned_episodes": 19,
+    "decoded_threshold_segments": 825,
+    "reviewed_stable_segment_representatives": 198,
+    "old_lift_in_new_proxy_window": 12,
+    "old_frame_gap_below25": [
+      533,
+      1302
+    ],
+    "old_hold_below8": [
+      553
+    ],
+    "proxy_window_empty": [
+      587
+    ],
+    "proxy_window_partial": [
+      104,
+      201,
+      297,
+      552,
+      556,
+      628,
+      756
+    ]
+  },
+  "visual_screen": {
+    "episodes_screened": 19,
+    "provisional_inspection_candidates": 16,
+    "pipe_gap_reference_unresolved": [
+      104,
+      175,
+      756
+    ],
+    "complete_departure_brackets": 0,
+    "confirmed_half_width_gaps": 0,
+    "confirmed_first_qualifying_holds": 0,
+    "transfer_phase_boundaries_unresolved": [
+      1302,
+      1304,
+      1318
+    ],
+    "complete_new_rule_technical_verifications": 0,
+    "independent_double_annotation": false
+  },
+  "hypothetical_input_impact": {
+    "inspection_candidate_in_different_hold_from_old_lift": 13,
+    "questions_containing_corresponding_old_lift": 44,
+    "question_ids": [
+      "usim_train_episode_000200_forward_world_modeling_4_steps_ea4ca751",
+      "usim_train_episode_000200_inverse_world_modeling_4_steps_ea4ca751",
+      "usim_train_episode_000201_forward_world_modeling_4_steps_bdff3379",
+      "usim_train_episode_000201_inverse_world_modeling_4_steps_bdff3379",
+      "usim_train_episode_000287_forward_world_modeling_3_steps_61d06247",
+      "usim_train_episode_000287_forward_world_modeling_4_steps_b3087c3c",
+      "usim_train_episode_000287_inverse_world_modeling_3_steps_61d06247",
+      "usim_train_episode_000287_inverse_world_modeling_4_steps_b3087c3c",
+      "usim_train_episode_000297_forward_world_modeling_3_steps_a024b08b",
+      "usim_train_episode_000297_forward_world_modeling_4_steps_c2832bb3",
+      "usim_train_episode_000297_inverse_world_modeling_3_steps_a024b08b",
+      "usim_train_episode_000297_inverse_world_modeling_4_steps_c2832bb3",
+      "usim_train_episode_000501_forward_world_modeling_3_steps_70a5e1a5",
+      "usim_train_episode_000501_forward_world_modeling_4_steps_0814182a",
+      "usim_train_episode_000501_inverse_world_modeling_3_steps_70a5e1a5",
+      "usim_train_episode_000501_inverse_world_modeling_4_steps_0814182a",
+      "usim_train_episode_000533_forward_world_modeling_3_steps_a3dccb7b",
+      "usim_train_episode_000533_forward_world_modeling_4_steps_cda525ee",
+      "usim_train_episode_000533_inverse_world_modeling_3_steps_a3dccb7b",
+      "usim_train_episode_000533_inverse_world_modeling_4_steps_cda525ee",
+      "usim_train_episode_000552_forward_world_modeling_4_steps_b95e6e61",
+      "usim_train_episode_000552_inverse_world_modeling_4_steps_b95e6e61",
+      "usim_train_episode_000553_forward_world_modeling_3_steps_bdd319c2",
+      "usim_train_episode_000553_forward_world_modeling_4_steps_5965fa9d",
+      "usim_train_episode_000553_inverse_world_modeling_3_steps_bdd319c2",
+      "usim_train_episode_000553_inverse_world_modeling_4_steps_5965fa9d",
+      "usim_train_episode_000555_forward_world_modeling_3_steps_712815ba",
+      "usim_train_episode_000555_inverse_world_modeling_3_steps_712815ba",
+      "usim_train_episode_000556_forward_world_modeling_3_steps_9b9af4a6",
+      "usim_train_episode_000556_inverse_world_modeling_3_steps_9b9af4a6",
+      "usim_train_episode_000628_forward_world_modeling_3_steps_7bfbf8cb",
+      "usim_train_episode_000628_forward_world_modeling_4_steps_329d4bf2",
+      "usim_train_episode_000628_inverse_world_modeling_3_steps_7bfbf8cb",
+      "usim_train_episode_000628_inverse_world_modeling_4_steps_329d4bf2",
+      "usim_train_episode_001302_forward_world_modeling_3_steps_6ddf9c86",
+      "usim_train_episode_001302_forward_world_modeling_4_steps_68512d26",
+      "usim_train_episode_001302_inverse_world_modeling_3_steps_6ddf9c86",
+      "usim_train_episode_001302_inverse_world_modeling_4_steps_68512d26",
+      "usim_train_episode_001318_forward_world_modeling_4_steps_12caed01",
+      "usim_train_episode_001318_forward_world_modeling_4_steps_4db57cf9",
+      "usim_train_episode_001318_forward_world_modeling_5_steps_a1dcd6d1",
+      "usim_train_episode_001318_inverse_world_modeling_4_steps_12caed01",
+      "usim_train_episode_001318_inverse_world_modeling_4_steps_4db57cf9",
+      "usim_train_episode_001318_inverse_world_modeling_5_steps_a1dcd6d1"
+    ],
+    "interpretation": "Only a coverage bound if these provisional inspection frames were substituted. No replacement has been selected, and no accuracy inference is valid."
+  },
+  "existing_four_test_technical_pass_items": {
+    "episodes": [
+      1259,
+      1273,
+      1549,
+      1384
+    ],
+    "reexamined_in_this_pilot": false,
+    "new_protocol_acceptances_inherited": 0,
+    "independent_acceptance_complete": "0/10",
+    "test_annotation_writes": 0
+  },
+  "decision": {
+    "replace_old_hard_window_now": false,
+    "reason": "Source/packet preparation works, but support/departure brackets, half-width references and first-eligible-state evidence remain incomplete. Transfer stage overlap and pre-existing frame constraints need explicit handling."
+  },
+  "model_api_calls": 0,
+  "inference_requests": 0,
+  "prediction_rescoring_performed": false,
+  "annotation_writes": 0
+}

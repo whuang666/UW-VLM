@@ -1,0 +1,2753 @@
+{
+  "schema": "usim-dev-lift-episode-inventory/v1",
+  "version": "dev-lift-onset-feasibility-v1",
+  "review_inventory_path": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/inventory.json",
+  "review_inventory_sha256": "3643f10a29f5e022617d8397b9792e1a43a7ee0c6f899d488cd76c17fbc8609e",
+  "episodes": [
+    {
+      "episode_key": "usim_train_episode_000104",
+      "episode": 104,
+      "task_text": "Pick up the pipe",
+      "task_family": "pick",
+      "qa_questions": 4,
+      "source_files": {
+        "ego_video": {
+          "path": "usim/train/videos/chunk-000/observation.images.ego/episode_000104.mp4",
+          "sha256": "b57ffb0c0994927b3813a399e719ba31d6cd632b7d7009bc60272d79589b1e5b",
+          "pinned_hash_match": true
+        },
+        "parquet": {
+          "path": "usim/train/data/chunk-000/episode_000104.parquet",
+          "sha256": "d3644c01ab6f918631bc17869a31b2bffde6597d274f98caf115d34c482c914c",
+          "pinned_hash_match": true
+        }
+      },
+      "decoded_frames": 386,
+      "annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2/annotations/episodes/usim_train_episode_000104.json",
+      "annotation_sha256": "6a2b6ef211806f5e76a7d387bad7a70babbaf7c241a18981a9310cd0a9d5ed10",
+      "old_frames": [
+        194,
+        262,
+        292,
+        364
+      ],
+      "old_hold_records": [
+        {
+          "slot": 1,
+          "source_frame": 194,
+          "hold_index": 20,
+          "hold_length": 18,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000104/old_slot_01_f00194.png",
+          "native_png_sha256": "6d3cca7acb02240afd9aa104edf10b57312ed9d12edd670182435a80554f4a64"
+        },
+        {
+          "slot": 2,
+          "source_frame": 262,
+          "hold_index": 25,
+          "hold_length": 18,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000104/old_slot_02_f00262.png",
+          "native_png_sha256": "861b99a6d143272e08c6fecb490790cc5a06228a1109191fb4e3b39712e584bc"
+        },
+        {
+          "slot": 3,
+          "source_frame": 292,
+          "hold_index": 31,
+          "hold_length": 14,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000104/old_slot_03_f00292.png",
+          "native_png_sha256": "d76c79ca2541296ed159a1a7c50702cecd4cff141e577a4a14bb9018ea52224e"
+        },
+        {
+          "slot": 4,
+          "source_frame": 364,
+          "hold_index": 39,
+          "hold_length": 10,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000104/old_slot_04_f00364.png",
+          "native_png_sha256": "c7dba7d60df998d893c8ff02f22062004ba690755f5090091cf376207d20a475"
+        }
+      ],
+      "old_spacing": [
+        {
+          "left": 194,
+          "right": 262,
+          "frame_gap": 68,
+          "threshold_segment_steps": 5,
+          "stable_hold_steps": 3
+        },
+        {
+          "left": 262,
+          "right": 292,
+          "frame_gap": 30,
+          "threshold_segment_steps": 6,
+          "stable_hold_steps": 2
+        },
+        {
+          "left": 292,
+          "right": 364,
+          "frame_gap": 72,
+          "threshold_segment_steps": 8,
+          "stable_hold_steps": 4
+        }
+      ],
+      "signal": {
+        "events": [
+          {
+            "frame": 277,
+            "event": "close"
+          }
+        ],
+        "main_close_signal_candidate": 277,
+        "main_close_visually_confirmed": false,
+        "release_after_main_close": null,
+        "baseline_search_half_open": [
+          257,
+          386
+        ],
+        "minimum_frame": 302,
+        "minimum_value": 0.2489231377840042,
+        "robot_rise_proxy_frame": 326,
+        "proxy_window_raw": [
+          366,
+          386
+        ],
+        "proxy_window_available": [
+          366,
+          385
+        ]
+      },
+      "stable_overview": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000104/stable_overview.png",
+      "reviewed_stable_hold_indices": [
+        22,
+        25,
+        28,
+        31,
+        34,
+        35,
+        36,
+        39,
+        42
+      ],
+      "old_min_frame_gap": 30,
+      "old_min_hold_length": 10,
+      "provisional_visual_inspection_frame": null,
+      "visual_screen_note": "管端完整可见且随夹爪改变姿态；最低管端相对无纹理沙面的半宽间隙缺少可靠参照，保留未决，不能用管子中段升高作证。"
+    },
+    {
+      "episode_key": "usim_train_episode_000175",
+      "episode": 175,
+      "task_text": "Pick up the pipe",
+      "task_family": "pick",
+      "qa_questions": 4,
+      "source_files": {
+        "ego_video": {
+          "path": "usim/train/videos/chunk-000/observation.images.ego/episode_000175.mp4",
+          "sha256": "8b2849c965111424016e05ad060e47891e1575f4aa9edb9ee0c4005a78a67f42",
+          "pinned_hash_match": true
+        },
+        "parquet": {
+          "path": "usim/train/data/chunk-000/episode_000175.parquet",
+          "sha256": "a78a86730a4e849104c40fcaa56f6c81e9b00d2fb46117a99be71c78bfcc375a",
+          "pinned_hash_match": true
+        }
+      },
+      "decoded_frames": 296,
+      "annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2/annotations/episodes/usim_train_episode_000175.json",
+      "annotation_sha256": "5f4b866ea470701b2134415ec2e73b5b8477836aaa04d80dd8f67d70529ca43d",
+      "old_frames": [
+        98,
+        172,
+        202,
+        278
+      ],
+      "old_hold_records": [
+        {
+          "slot": 1,
+          "source_frame": 98,
+          "hold_index": 8,
+          "hold_length": 16,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000175/old_slot_01_f00098.png",
+          "native_png_sha256": "a85573cf197ff497f7de3a117d76ba4f61b2cc85c6043cf28edc1853cbc14877"
+        },
+        {
+          "slot": 2,
+          "source_frame": 172,
+          "hold_index": 13,
+          "hold_length": 18,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000175/old_slot_02_f00172.png",
+          "native_png_sha256": "fdb6308d2081b048e3b5962aabc0cb4f702d74e4e4a3ca297ab1c633cb006eeb"
+        },
+        {
+          "slot": 3,
+          "source_frame": 202,
+          "hold_index": 19,
+          "hold_length": 24,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000175/old_slot_03_f00202.png",
+          "native_png_sha256": "f724ca515f5977edf62ba81f3bfdf96e8315bcde9abc8861b02316d82521714d"
+        },
+        {
+          "slot": 4,
+          "source_frame": 278,
+          "hold_index": 24,
+          "hold_length": 14,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000175/old_slot_04_f00278.png",
+          "native_png_sha256": "86651c513106398910933a38e81cfee327f4d39a28177f05634a644fd8aa68ce"
+        }
+      ],
+      "old_spacing": [
+        {
+          "left": 98,
+          "right": 172,
+          "frame_gap": 74,
+          "threshold_segment_steps": 5,
+          "stable_hold_steps": 3
+        },
+        {
+          "left": 172,
+          "right": 202,
+          "frame_gap": 30,
+          "threshold_segment_steps": 6,
+          "stable_hold_steps": 2
+        },
+        {
+          "left": 202,
+          "right": 278,
+          "frame_gap": 76,
+          "threshold_segment_steps": 5,
+          "stable_hold_steps": 3
+        }
+      ],
+      "signal": {
+        "events": [
+          {
+            "frame": 187,
+            "event": "close"
+          }
+        ],
+        "main_close_signal_candidate": 187,
+        "main_close_visually_confirmed": false,
+        "release_after_main_close": null,
+        "baseline_search_half_open": [
+          167,
+          296
+        ],
+        "minimum_frame": 201,
+        "minimum_value": 0.21312929689884186,
+        "robot_rise_proxy_frame": 235,
+        "proxy_window_raw": [
+          275,
+          295
+        ],
+        "proxy_window_available": [
+          275,
+          295
+        ]
+      },
+      "stable_overview": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000175/stable_overview.png",
+      "reviewed_stable_hold_indices": [
+        12,
+        13,
+        16,
+        19,
+        20,
+        21,
+        24
+      ],
+      "old_min_frame_gap": 30,
+      "old_min_hold_length": 14,
+      "provisional_visual_inspection_frame": null,
+      "visual_screen_note": "H16管子近乎平铺，H19后被斜持；H21/H24可见沙面背景，但最低管端到实际支撑面的距离不能据屏幕空白直接确认。"
+    },
+    {
+      "episode_key": "usim_train_episode_000200",
+      "episode": 200,
+      "task_text": "Pick up the blue cylinder",
+      "task_family": "pick",
+      "qa_questions": 4,
+      "source_files": {
+        "ego_video": {
+          "path": "usim/train/videos/chunk-000/observation.images.ego/episode_000200.mp4",
+          "sha256": "849656e3077eae9890197ed60504ebf7c808dc8185c19ca30d4d510f20c2e56f",
+          "pinned_hash_match": true
+        },
+        "parquet": {
+          "path": "usim/train/data/chunk-000/episode_000200.parquet",
+          "sha256": "047f9a9f42b209bf7084228c4689281ebb855e08e6e800547043ba1357ffe7d0",
+          "pinned_hash_match": true
+        }
+      },
+      "decoded_frames": 343,
+      "annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2/annotations/episodes/usim_train_episode_000200.json",
+      "annotation_sha256": "c9d1f5b97a7aad5ca1017b1e9ac25eb99aebad3592b220c00d95738d2f6f828f",
+      "old_frames": [
+        140,
+        213,
+        248,
+        328
+      ],
+      "old_hold_records": [
+        {
+          "slot": 1,
+          "source_frame": 140,
+          "hold_index": 17,
+          "hold_length": 12,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000200/old_slot_01_f00140.png",
+          "native_png_sha256": "fd3d726c8ef89264eed2c3c416003a703c295473a0434411ffe967256a6f1f68"
+        },
+        {
+          "slot": 2,
+          "source_frame": 213,
+          "hold_index": 30,
+          "hold_length": 22,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000200/old_slot_02_f00213.png",
+          "native_png_sha256": "3678ebfa270cbca043f79a4331575b5dd7c692d68120242b7033c4fb83548606"
+        },
+        {
+          "slot": 3,
+          "source_frame": 248,
+          "hold_index": 31,
+          "hold_length": 24,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000200/old_slot_03_f00248.png",
+          "native_png_sha256": "14dba344d4a855bdf2daf67646289898b464c5932f0e6c1e0f6d883ca75dcd1c"
+        },
+        {
+          "slot": 4,
+          "source_frame": 328,
+          "hold_index": 39,
+          "hold_length": 26,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000200/old_slot_04_f00328.png",
+          "native_png_sha256": "ff227f9204d08621d5fc49a077ed60dd5bc5787a9676ab4776aa1307552cf1c4"
+        }
+      ],
+      "old_spacing": [
+        {
+          "left": 140,
+          "right": 213,
+          "frame_gap": 73,
+          "threshold_segment_steps": 13,
+          "stable_hold_steps": 5
+        },
+        {
+          "left": 213,
+          "right": 248,
+          "frame_gap": 35,
+          "threshold_segment_steps": 1,
+          "stable_hold_steps": 1
+        },
+        {
+          "left": 248,
+          "right": 328,
+          "frame_gap": 80,
+          "threshold_segment_steps": 8,
+          "stable_hold_steps": 4
+        }
+      ],
+      "signal": {
+        "events": [
+          {
+            "frame": 228,
+            "event": "close"
+          }
+        ],
+        "main_close_signal_candidate": 228,
+        "main_close_visually_confirmed": false,
+        "release_after_main_close": null,
+        "baseline_search_half_open": [
+          208,
+          343
+        ],
+        "minimum_frame": 249,
+        "minimum_value": 0.23465842008590698,
+        "robot_rise_proxy_frame": 277,
+        "proxy_window_raw": [
+          317,
+          337
+        ],
+        "proxy_window_available": [
+          317,
+          337
+        ]
+      },
+      "stable_overview": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000200/stable_overview.png",
+      "reviewed_stable_hold_indices": [
+        24,
+        27,
+        30,
+        31,
+        34,
+        35,
+        38,
+        39,
+        40
+      ],
+      "old_min_frame_gap": 35,
+      "old_min_hold_length": 12,
+      "provisional_visual_inspection_frame": {
+        "hold_index": 38,
+        "frame": 297,
+        "hold": [
+          290,
+          305
+        ],
+        "length": 16,
+        "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000200/hold_038_f00297.png",
+        "native_png_sha256": "668f21848652b503d8df654d1c62ade9e9f7d5a37e506b31d001049e989facc5",
+        "frame_gap_from_old_grasp": 49,
+        "stable_hold_steps_from_old_grasp": 3,
+        "different_threshold_hold_from_old_lift": true,
+        "old_lift_used_by_questions": 2,
+        "not_selected_replacement": true
+      },
+      "visual_screen_note": "蓝圆柱呈紫色；H31后姿态与末端共同变化，H38可作携带状态候选。H30/H31附近的支撑与首次分离仍未闭合，不能单凭姿态改变赋OnSeabed=false。"
+    },
+    {
+      "episode_key": "usim_train_episode_000201",
+      "episode": 201,
+      "task_text": "Pick up the blue cylinder",
+      "task_family": "pick",
+      "qa_questions": 4,
+      "source_files": {
+        "ego_video": {
+          "path": "usim/train/videos/chunk-000/observation.images.ego/episode_000201.mp4",
+          "sha256": "fbd5ccb70ee1349c0c6ae3220aef78954cdbaeaa8af81f695eb0d55a2965a3ad",
+          "pinned_hash_match": true
+        },
+        "parquet": {
+          "path": "usim/train/data/chunk-000/episode_000201.parquet",
+          "sha256": "d63f8b422b0c7723ceed1daa2ce976caa649a2a5c2d946339b1f77c6b765646c",
+          "pinned_hash_match": true
+        }
+      },
+      "decoded_frames": 368,
+      "annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2/annotations/episodes/usim_train_episode_000201.json",
+      "annotation_sha256": "05f0acc5597dbe29f47d3bf464c7ed9d60c3d041b202eb6f0d26fb80a68aac3d",
+      "old_frames": [
+        199,
+        244,
+        279,
+        357
+      ],
+      "old_hold_records": [
+        {
+          "slot": 1,
+          "source_frame": 199,
+          "hold_index": 16,
+          "hold_length": 24,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000201/old_slot_01_f00199.png",
+          "native_png_sha256": "a6003d108ebba513bbba746af97b9617b4715aab5e01fe0719753ced1476bed7"
+        },
+        {
+          "slot": 2,
+          "source_frame": 244,
+          "hold_index": 20,
+          "hold_length": 18,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000201/old_slot_02_f00244.png",
+          "native_png_sha256": "643fb18c65a6b11688cae1dda6954d95bc7e39f16de6b7513a283c2018e7f083"
+        },
+        {
+          "slot": 3,
+          "source_frame": 279,
+          "hold_index": 26,
+          "hold_length": 18,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000201/old_slot_03_f00279.png",
+          "native_png_sha256": "9e46abcc4ff68bbd44424c67e3de3f1fff372ecb6b0bd2891a057b268655e3f8"
+        },
+        {
+          "slot": 4,
+          "source_frame": 357,
+          "hold_index": 34,
+          "hold_length": 12,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000201/old_slot_04_f00357.png",
+          "native_png_sha256": "b91542d78a53788350e7f4cd76ec7a20bd7ea4342507ecda1e6af2f8de146893"
+        }
+      ],
+      "old_spacing": [
+        {
+          "left": 199,
+          "right": 244,
+          "frame_gap": 45,
+          "threshold_segment_steps": 4,
+          "stable_hold_steps": 2
+        },
+        {
+          "left": 244,
+          "right": 279,
+          "frame_gap": 35,
+          "threshold_segment_steps": 6,
+          "stable_hold_steps": 2
+        },
+        {
+          "left": 279,
+          "right": 357,
+          "frame_gap": 78,
+          "threshold_segment_steps": 8,
+          "stable_hold_steps": 4
+        }
+      ],
+      "signal": {
+        "events": [
+          {
+            "frame": 259,
+            "event": "close"
+          }
+        ],
+        "main_close_signal_candidate": 259,
+        "main_close_visually_confirmed": false,
+        "release_after_main_close": null,
+        "baseline_search_half_open": [
+          239,
+          368
+        ],
+        "minimum_frame": 279,
+        "minimum_value": 0.23132050037384033,
+        "robot_rise_proxy_frame": 309,
+        "proxy_window_raw": [
+          349,
+          369
+        ],
+        "proxy_window_available": [
+          349,
+          367
+        ]
+      },
+      "stable_overview": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000201/stable_overview.png",
+      "reviewed_stable_hold_indices": [
+        17,
+        20,
+        23,
+        26,
+        29,
+        30,
+        33,
+        34
+      ],
+      "old_min_frame_gap": 35,
+      "old_min_hold_length": 12,
+      "provisional_visual_inspection_frame": {
+        "hold_index": 33,
+        "frame": 345,
+        "hold": [
+          336,
+          355
+        ],
+        "length": 20,
+        "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000201/hold_033_f00345.png",
+        "native_png_sha256": "289ddd71194c8a9af61b5e3ffd5fe08b77e270d13dc3e6ec11b634a13e3d7422",
+        "frame_gap_from_old_grasp": 66,
+        "stable_hold_steps_from_old_grasp": 3,
+        "different_threshold_hold_from_old_lift": true,
+        "old_lift_used_by_questions": 2,
+        "not_selected_replacement": true
+      },
+      "visual_screen_note": "H26后紫色目标被持有，H33候选可见最低端；画面中的小红鱼不是目标。沙面参照不足以定下首次半宽离底。"
+    },
+    {
+      "episode_key": "usim_train_episode_000287",
+      "episode": 287,
+      "task_text": "Pick up the blue cylinder",
+      "task_family": "pick",
+      "qa_questions": 4,
+      "source_files": {
+        "ego_video": {
+          "path": "usim/train/videos/chunk-000/observation.images.ego/episode_000287.mp4",
+          "sha256": "f8cd09d6e33fcdf047bdcdaf51558ba0f309d6f1da736c9508984873fdb5964e",
+          "pinned_hash_match": true
+        },
+        "parquet": {
+          "path": "usim/train/data/chunk-000/episode_000287.parquet",
+          "sha256": "0adebe8858292e98a35f50dd7c1382ce37e5910f0e94372f3ce32425c3766d83",
+          "pinned_hash_match": true
+        }
+      },
+      "decoded_frames": 442,
+      "annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2/annotations/episodes/usim_train_episode_000287.json",
+      "annotation_sha256": "3ffb03d2b7ede1e730cb2f2c26999d1a5b1185c6a6553949bd0a92c3bde6d599",
+      "old_frames": [
+        208,
+        312,
+        342,
+        424
+      ],
+      "old_hold_records": [
+        {
+          "slot": 1,
+          "source_frame": 208,
+          "hold_index": 19,
+          "hold_length": 22,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000287/old_slot_01_f00208.png",
+          "native_png_sha256": "35fd85c7c62bce69eb8c647f265e270062a55f744fc56d5c31e6ad3ee4e1c808"
+        },
+        {
+          "slot": 2,
+          "source_frame": 312,
+          "hold_index": 29,
+          "hold_length": 8,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000287/old_slot_02_f00312.png",
+          "native_png_sha256": "ce0e932c728e3eff8b6b95fa4b22ca4500c5f0ef66178ec62adc6add1d506107"
+        },
+        {
+          "slot": 3,
+          "source_frame": 342,
+          "hold_index": 35,
+          "hold_length": 14,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000287/old_slot_03_f00342.png",
+          "native_png_sha256": "ded0f8554366deead630dc39c23205cc94beaff747593fcb0ff7ea2eecd8eda9"
+        },
+        {
+          "slot": 4,
+          "source_frame": 424,
+          "hold_index": 48,
+          "hold_length": 10,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000287/old_slot_04_f00424.png",
+          "native_png_sha256": "50a8d11a563fc0bba52f06cf965b67c967496e696fbfc662a77dca4a79c541f9"
+        }
+      ],
+      "old_spacing": [
+        {
+          "left": 208,
+          "right": 312,
+          "frame_gap": 104,
+          "threshold_segment_steps": 10,
+          "stable_hold_steps": 6
+        },
+        {
+          "left": 312,
+          "right": 342,
+          "frame_gap": 30,
+          "threshold_segment_steps": 6,
+          "stable_hold_steps": 2
+        },
+        {
+          "left": 342,
+          "right": 424,
+          "frame_gap": 82,
+          "threshold_segment_steps": 13,
+          "stable_hold_steps": 7
+        }
+      ],
+      "signal": {
+        "events": [
+          {
+            "frame": 327,
+            "event": "close"
+          }
+        ],
+        "main_close_signal_candidate": 327,
+        "main_close_visually_confirmed": false,
+        "release_after_main_close": null,
+        "baseline_search_half_open": [
+          307,
+          442
+        ],
+        "minimum_frame": 340,
+        "minimum_value": 0.23949183523654938,
+        "robot_rise_proxy_frame": 376,
+        "proxy_window_raw": [
+          416,
+          436
+        ],
+        "proxy_window_available": [
+          416,
+          436
+        ]
+      },
+      "stable_overview": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000287/stable_overview.png",
+      "reviewed_stable_hold_indices": [
+        24,
+        25,
+        28,
+        29,
+        32,
+        35,
+        36,
+        39,
+        40,
+        43,
+        44,
+        47,
+        48,
+        51
+      ],
+      "old_min_frame_gap": 30,
+      "old_min_hold_length": 8,
+      "provisional_visual_inspection_frame": {
+        "hold_index": 40,
+        "frame": 382,
+        "hold": [
+          376,
+          389
+        ],
+        "length": 14,
+        "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000287/hold_040_f00382.png",
+        "native_png_sha256": "890cfa085e563198e07006cc7f1cd3de531626ef5fdebc0215a1f87f9bda4cac",
+        "frame_gap_from_old_grasp": 40,
+        "stable_hold_steps_from_old_grasp": 3,
+        "different_threshold_hold_from_old_lift": true,
+        "old_lift_used_by_questions": 4,
+        "not_selected_replacement": true
+      },
+      "visual_screen_note": "H35/H36出现夹持姿态，H40可作后续候选；右下红色干扰物不纳入目标证据。最低端分离需要原生局部参照补证。"
+    },
+    {
+      "episode_key": "usim_train_episode_000297",
+      "episode": 297,
+      "task_text": "Pick up the blue cylinder",
+      "task_family": "pick",
+      "qa_questions": 4,
+      "source_files": {
+        "ego_video": {
+          "path": "usim/train/videos/chunk-000/observation.images.ego/episode_000297.mp4",
+          "sha256": "09ce1228d85baa195110a37dec70845f0d672b170cfe0397e8fa47c4fb815cbd",
+          "pinned_hash_match": true
+        },
+        "parquet": {
+          "path": "usim/train/data/chunk-000/episode_000297.parquet",
+          "sha256": "30fa9faa6905e269f10eb7bd85d81abeafc91596c3e44b9e1d4d7b293f7b4846",
+          "pinned_hash_match": true
+        }
+      },
+      "decoded_frames": 627,
+      "annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2/annotations/episodes/usim_train_episode_000297.json",
+      "annotation_sha256": "574b32e78ef3ab10fc54ace6d746352ed1ae167ff25f9c092e3b182d23ddf85f",
+      "old_frames": [
+        358,
+        503,
+        533,
+        612
+      ],
+      "old_hold_records": [
+        {
+          "slot": 1,
+          "source_frame": 358,
+          "hold_index": 38,
+          "hold_length": 18,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000297/old_slot_01_f00358.png",
+          "native_png_sha256": "f08a39afaba0bec1b06e48af3c06e221bfd8c633bb64eafa5e4c8eab5547aa1e"
+        },
+        {
+          "slot": 2,
+          "source_frame": 503,
+          "hold_index": 48,
+          "hold_length": 16,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000297/old_slot_02_f00503.png",
+          "native_png_sha256": "6c93fc9f28cef1d6c46c0c162d7047fd73a1e18efe9799dcc13c717458b9bd22"
+        },
+        {
+          "slot": 3,
+          "source_frame": 533,
+          "hold_index": 51,
+          "hold_length": 20,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000297/old_slot_03_f00533.png",
+          "native_png_sha256": "248bd49d8e0ecea2800f89e3af71fda9ef2ec75447159f8bafd168ae198ccc18"
+        },
+        {
+          "slot": 4,
+          "source_frame": 612,
+          "hold_index": 60,
+          "hold_length": 18,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000297/old_slot_04_f00612.png",
+          "native_png_sha256": "9c4869b486902ae2347266d1c6c46907ae8c497035157b6c04f4ad6c19aa04f2"
+        }
+      ],
+      "old_spacing": [
+        {
+          "left": 358,
+          "right": 503,
+          "frame_gap": 145,
+          "threshold_segment_steps": 10,
+          "stable_hold_steps": 8
+        },
+        {
+          "left": 503,
+          "right": 533,
+          "frame_gap": 30,
+          "threshold_segment_steps": 3,
+          "stable_hold_steps": 1
+        },
+        {
+          "left": 533,
+          "right": 612,
+          "frame_gap": 79,
+          "threshold_segment_steps": 9,
+          "stable_hold_steps": 5
+        }
+      ],
+      "signal": {
+        "events": [
+          {
+            "frame": 186,
+            "event": "close"
+          },
+          {
+            "frame": 213,
+            "event": "open"
+          },
+          {
+            "frame": 217,
+            "event": "close"
+          },
+          {
+            "frame": 242,
+            "event": "open"
+          },
+          {
+            "frame": 518,
+            "event": "close"
+          }
+        ],
+        "main_close_signal_candidate": 518,
+        "main_close_visually_confirmed": false,
+        "release_after_main_close": null,
+        "baseline_search_half_open": [
+          498,
+          627
+        ],
+        "minimum_frame": 539,
+        "minimum_value": 0.23639102280139923,
+        "robot_rise_proxy_frame": 569,
+        "proxy_window_raw": [
+          609,
+          629
+        ],
+        "proxy_window_available": [
+          609,
+          626
+        ]
+      },
+      "stable_overview": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000297/stable_overview.png",
+      "reviewed_stable_hold_indices": [
+        44,
+        47,
+        48,
+        51,
+        54,
+        57,
+        58,
+        59,
+        60
+      ],
+      "old_min_frame_gap": 30,
+      "old_min_hold_length": 16,
+      "provisional_visual_inspection_frame": {
+        "hold_index": 59,
+        "frame": 598,
+        "hold": [
+          590,
+          607
+        ],
+        "length": 18,
+        "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000297/hold_059_f00598.png",
+        "native_png_sha256": "24720d644381794e57d3b902cc517c35356a7167438e549e35fb4ce9b4a3daf9",
+        "frame_gap_from_old_grasp": 65,
+        "stable_hold_steps_from_old_grasp": 4,
+        "different_threshold_hold_from_old_lift": true,
+        "old_lift_used_by_questions": 4,
+        "not_selected_replacement": true
+      },
+      "visual_screen_note": "H54后目标与末端共同运动，H59/H60处于携带状态；先前保持段间的支撑切换难从平滑沙面判定。"
+    },
+    {
+      "episode_key": "usim_train_episode_000501",
+      "episode": 501,
+      "task_text": "Pick up the blue cylinder",
+      "task_family": "pick",
+      "qa_questions": 4,
+      "source_files": {
+        "ego_video": {
+          "path": "usim/train/videos/chunk-000/observation.images.ego/episode_000501.mp4",
+          "sha256": "c366d98d000f12bf7cde77b6a951882e2d9eda0dffb162177c5e53aa37e98af5",
+          "pinned_hash_match": true
+        },
+        "parquet": {
+          "path": "usim/train/data/chunk-000/episode_000501.parquet",
+          "sha256": "07f0866f42467b4aa0cef8c3ffdc8dae8c4e0c13b45ab7b41c45835e5dff0391",
+          "pinned_hash_match": true
+        }
+      },
+      "decoded_frames": 320,
+      "annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2/annotations/episodes/usim_train_episode_000501.json",
+      "annotation_sha256": "231547ca04c5507b1cd944684c2c3121f1d4567b7b71cfad4fcb57b6013044d7",
+      "old_frames": [
+        137,
+        196,
+        228,
+        306
+      ],
+      "old_hold_records": [
+        {
+          "slot": 1,
+          "source_frame": 137,
+          "hold_index": 17,
+          "hold_length": 20,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000501/old_slot_01_f00137.png",
+          "native_png_sha256": "b65c8c33ca9eac8f82553e6eb4cb3a48f7823ae52029f3e0db324a5985aafe7e"
+        },
+        {
+          "slot": 2,
+          "source_frame": 196,
+          "hold_index": 24,
+          "hold_length": 20,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000501/old_slot_02_f00196.png",
+          "native_png_sha256": "02f7c55fc69ebfeda83b2964bc50e6290ca86fedecd371d8918d18e55ba96023"
+        },
+        {
+          "slot": 3,
+          "source_frame": 228,
+          "hold_index": 26,
+          "hold_length": 22,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000501/old_slot_03_f00228.png",
+          "native_png_sha256": "e8000ca3423361e23ac1584a6e5ccd896b02dd3d41a00a3eab88aecb36d934fd"
+        },
+        {
+          "slot": 4,
+          "source_frame": 306,
+          "hold_index": 31,
+          "hold_length": 24,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000501/old_slot_04_f00306.png",
+          "native_png_sha256": "77ef9cd0a8f0ae18147ac633756c2be2dc982871c0e970bd0fdfa58607f24d6d"
+        }
+      ],
+      "old_spacing": [
+        {
+          "left": 137,
+          "right": 196,
+          "frame_gap": 59,
+          "threshold_segment_steps": 7,
+          "stable_hold_steps": 3
+        },
+        {
+          "left": 196,
+          "right": 228,
+          "frame_gap": 32,
+          "threshold_segment_steps": 2,
+          "stable_hold_steps": 2
+        },
+        {
+          "left": 228,
+          "right": 306,
+          "frame_gap": 78,
+          "threshold_segment_steps": 5,
+          "stable_hold_steps": 3
+        }
+      ],
+      "signal": {
+        "events": [
+          {
+            "frame": 211,
+            "event": "close"
+          }
+        ],
+        "main_close_signal_candidate": 211,
+        "main_close_visually_confirmed": false,
+        "release_after_main_close": null,
+        "baseline_search_half_open": [
+          191,
+          320
+        ],
+        "minimum_frame": 227,
+        "minimum_value": 0.23446859419345856,
+        "robot_rise_proxy_frame": 259,
+        "proxy_window_raw": [
+          299,
+          319
+        ],
+        "proxy_window_available": [
+          299,
+          319
+        ]
+      },
+      "stable_overview": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000501/stable_overview.png",
+      "reviewed_stable_hold_indices": [
+        21,
+        24,
+        25,
+        26,
+        27,
+        28,
+        31
+      ],
+      "old_min_frame_gap": 32,
+      "old_min_hold_length": 20,
+      "provisional_visual_inspection_frame": {
+        "hold_index": 28,
+        "frame": 282,
+        "hold": [
+          272,
+          293
+        ],
+        "length": 22,
+        "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000501/hold_028_f00282.png",
+        "native_png_sha256": "d4ba41f29b3c51dc95bce4499de33cfaddc2da175f8093ec75f898cdaa4edbc6",
+        "frame_gap_from_old_grasp": 54,
+        "stable_hold_steps_from_old_grasp": 2,
+        "different_threshold_hold_from_old_lift": true,
+        "old_lift_used_by_questions": 4,
+        "not_selected_replacement": true
+      },
+      "visual_screen_note": "闭合信号早于渲染抓取；H26以后目标横向被持有，H28是检查候选。不能把h上升或目标缩短的透视变化当作间隙量测。"
+    },
+    {
+      "episode_key": "usim_train_episode_000533",
+      "episode": 533,
+      "task_text": "Pick up the blue cylinder",
+      "task_family": "pick",
+      "qa_questions": 4,
+      "source_files": {
+        "ego_video": {
+          "path": "usim/train/videos/chunk-000/observation.images.ego/episode_000533.mp4",
+          "sha256": "68893cca2c06b1bf709789d02f550bb2f947341ecbe91e332ce383cc3cea050e",
+          "pinned_hash_match": true
+        },
+        "parquet": {
+          "path": "usim/train/data/chunk-000/episode_000533.parquet",
+          "sha256": "1772b3a220c9cbcd78a3eff11334dfdfe78c1bb1eb9ba9752b2d918d13ba5927",
+          "pinned_hash_match": true
+        }
+      },
+      "decoded_frames": 364,
+      "annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2/annotations/episodes/usim_train_episode_000533.json",
+      "annotation_sha256": "54a1a21ebe1c68018d8042eca8d0495b28dc64a25c2b01d4933f72b61e9d6572",
+      "old_frames": [
+        90,
+        236,
+        260,
+        306
+      ],
+      "old_hold_records": [
+        {
+          "slot": 1,
+          "source_frame": 90,
+          "hold_index": 5,
+          "hold_length": 16,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000533/old_slot_01_f00090.png",
+          "native_png_sha256": "a411a27ab4a89259a07c718fb5459b4f55479762fb26d5f2c37f515e2f0ca0c7"
+        },
+        {
+          "slot": 2,
+          "source_frame": 236,
+          "hold_index": 22,
+          "hold_length": 20,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000533/old_slot_02_f00236.png",
+          "native_png_sha256": "8b2069e48f01590065d8930edf7119c081283c58fb06a1a43ceb6f55fa45db98"
+        },
+        {
+          "slot": 3,
+          "source_frame": 260,
+          "hold_index": 25,
+          "hold_length": 28,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000533/old_slot_03_f00260.png",
+          "native_png_sha256": "ecc8d321e1f7b595a627562902712636483b9941b288b8656a871655978d1957"
+        },
+        {
+          "slot": 4,
+          "source_frame": 306,
+          "hold_index": 27,
+          "hold_length": 22,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000533/old_slot_04_f00306.png",
+          "native_png_sha256": "a5c4ee92d00428351d11fb1801ce592f2be26173a6d0399a8f835ce5c3fb81e8"
+        }
+      ],
+      "old_spacing": [
+        {
+          "left": 90,
+          "right": 236,
+          "frame_gap": 146,
+          "threshold_segment_steps": 17,
+          "stable_hold_steps": 8
+        },
+        {
+          "left": 236,
+          "right": 260,
+          "frame_gap": 24,
+          "threshold_segment_steps": 3,
+          "stable_hold_steps": 1
+        },
+        {
+          "left": 260,
+          "right": 306,
+          "frame_gap": 46,
+          "threshold_segment_steps": 2,
+          "stable_hold_steps": 2
+        }
+      ],
+      "signal": {
+        "events": [
+          {
+            "frame": 250,
+            "event": "close"
+          }
+        ],
+        "main_close_signal_candidate": 250,
+        "main_close_visually_confirmed": false,
+        "release_after_main_close": null,
+        "baseline_search_half_open": [
+          230,
+          364
+        ],
+        "minimum_frame": 250,
+        "minimum_value": 0.20000000298023224,
+        "robot_rise_proxy_frame": 290,
+        "proxy_window_raw": [
+          330,
+          350
+        ],
+        "proxy_window_available": [
+          330,
+          350
+        ]
+      },
+      "stable_overview": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000533/stable_overview.png",
+      "reviewed_stable_hold_indices": [
+        18,
+        19,
+        22,
+        25,
+        26,
+        27,
+        30,
+        33,
+        34
+      ],
+      "old_min_frame_gap": 24,
+      "old_min_hold_length": 16,
+      "provisional_visual_inspection_frame": {
+        "hold_index": 30,
+        "frame": 324,
+        "hold": [
+          316,
+          333
+        ],
+        "length": 18,
+        "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000533/hold_030_f00324.png",
+        "native_png_sha256": "abb53ebdb1dabdd6ab7ce6f9dca0ed7085812a81035b4d16091eed5dc24c9f86",
+        "frame_gap_from_old_grasp": 64,
+        "stable_hold_steps_from_old_grasp": 3,
+        "different_threshold_hold_from_old_lift": true,
+        "old_lift_used_by_questions": 4,
+        "not_selected_replacement": true
+      },
+      "visual_screen_note": "H25后紫色目标随末端运动，H30可供离底复核；原approach236到grasp260仅24帧，新草案25帧要求下需另行处理，换lift帧不能修复此问题。"
+    },
+    {
+      "episode_key": "usim_train_episode_000552",
+      "episode": 552,
+      "task_text": "Pick up the red cylinder",
+      "task_family": "pick",
+      "qa_questions": 4,
+      "source_files": {
+        "ego_video": {
+          "path": "usim/train/videos/chunk-000/observation.images.ego/episode_000552.mp4",
+          "sha256": "6ff9b85a038c24178cc75863131af73fe52086e37d54b79ef4fbc89600bf5e31",
+          "pinned_hash_match": true
+        },
+        "parquet": {
+          "path": "usim/train/data/chunk-000/episode_000552.parquet",
+          "sha256": "d97d1372342321ecdd2b0c764e5890c76a1a066973b3e756623e8bf67bb10db9",
+          "pinned_hash_match": true
+        }
+      },
+      "decoded_frames": 374,
+      "annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2/annotations/episodes/usim_train_episode_000552.json",
+      "annotation_sha256": "5601e161705b82eab32eaf75c57a862e6f81c54d6224ede096e1d68e81500917",
+      "old_frames": [
+        120,
+        249,
+        284,
+        364
+      ],
+      "old_hold_records": [
+        {
+          "slot": 1,
+          "source_frame": 120,
+          "hold_index": 14,
+          "hold_length": 12,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000552/old_slot_01_f00120.png",
+          "native_png_sha256": "0d8a0f2840fcbac95f58a5db76879d5ac7362922a35ea61b18d02f8934816341"
+        },
+        {
+          "slot": 2,
+          "source_frame": 249,
+          "hold_index": 29,
+          "hold_length": 26,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000552/old_slot_02_f00249.png",
+          "native_png_sha256": "3491a87f060c9638c56a6e9e52ebec69e813d892bf48f68a1a81f3ae303627f8"
+        },
+        {
+          "slot": 3,
+          "source_frame": 284,
+          "hold_index": 30,
+          "hold_length": 24,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000552/old_slot_03_f00284.png",
+          "native_png_sha256": "73dbefeef3012f53b37708282bba697fda994b3181038bf4eeb54e3d559961e2"
+        },
+        {
+          "slot": 4,
+          "source_frame": 364,
+          "hold_index": 37,
+          "hold_length": 12,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000552/old_slot_04_f00364.png",
+          "native_png_sha256": "de095e62e027dd7f96b58494277268962f2eea9b372ca1d972db5c109388158a"
+        }
+      ],
+      "old_spacing": [
+        {
+          "left": 120,
+          "right": 249,
+          "frame_gap": 129,
+          "threshold_segment_steps": 15,
+          "stable_hold_steps": 7
+        },
+        {
+          "left": 249,
+          "right": 284,
+          "frame_gap": 35,
+          "threshold_segment_steps": 1,
+          "stable_hold_steps": 1
+        },
+        {
+          "left": 284,
+          "right": 364,
+          "frame_gap": 80,
+          "threshold_segment_steps": 7,
+          "stable_hold_steps": 5
+        }
+      ],
+      "signal": {
+        "events": [
+          {
+            "frame": 264,
+            "event": "close"
+          }
+        ],
+        "main_close_signal_candidate": 264,
+        "main_close_visually_confirmed": false,
+        "release_after_main_close": null,
+        "baseline_search_half_open": [
+          244,
+          374
+        ],
+        "minimum_frame": 288,
+        "minimum_value": 0.2594301700592041,
+        "robot_rise_proxy_frame": 314,
+        "proxy_window_raw": [
+          354,
+          374
+        ],
+        "proxy_window_available": [
+          354,
+          373
+        ]
+      },
+      "stable_overview": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000552/stable_overview.png",
+      "reviewed_stable_hold_indices": [
+        26,
+        29,
+        30,
+        31,
+        34,
+        35,
+        36,
+        37
+      ],
+      "old_min_frame_gap": 35,
+      "old_min_hold_length": 12,
+      "provisional_visual_inspection_frame": {
+        "hold_index": 35,
+        "frame": 336,
+        "hold": [
+          330,
+          343
+        ],
+        "length": 14,
+        "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000552/hold_035_f00336.png",
+        "native_png_sha256": "d83c1b28d96acbf3168ea6f22265abf1e125e4bfc6133766be8912344f2ba16e",
+        "frame_gap_from_old_grasp": 52,
+        "stable_hold_steps_from_old_grasp": 3,
+        "different_threshold_hold_from_old_lift": true,
+        "old_lift_used_by_questions": 2,
+        "not_selected_replacement": true
+      },
+      "visual_screen_note": "H31后红圆柱被夹持，H35为检查候选；H36/H37有后续姿态改变，应核对目标最低点及沙面参照，不把所有后续帧视作同一lift状态。"
+    },
+    {
+      "episode_key": "usim_train_episode_000553",
+      "episode": 553,
+      "task_text": "Pick up the red cylinder",
+      "task_family": "pick",
+      "qa_questions": 4,
+      "source_files": {
+        "ego_video": {
+          "path": "usim/train/videos/chunk-000/observation.images.ego/episode_000553.mp4",
+          "sha256": "22cfd630194e9f731afb3fb829204f98dd95d31c5bcd649aaa75cae79c73e606",
+          "pinned_hash_match": true
+        },
+        "parquet": {
+          "path": "usim/train/data/chunk-000/episode_000553.parquet",
+          "sha256": "434f3d314d002f7e408246de33b84a4ff81b399176c4480aa910a32ebf4c8e64",
+          "pinned_hash_match": true
+        }
+      },
+      "decoded_frames": 263,
+      "annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2/annotations/episodes/usim_train_episode_000553.json",
+      "annotation_sha256": "87e849dbc19fc370cb60e4fb454b06533550abd7939cc626d0352949a96902b4",
+      "old_frames": [
+        110,
+        140,
+        168,
+        248
+      ],
+      "old_hold_records": [
+        {
+          "slot": 1,
+          "source_frame": 110,
+          "hold_index": 7,
+          "hold_length": 1,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/old_slot_01_f00110.png",
+          "native_png_sha256": "b41842366014a7e8f6a5ee1c67fb5fdec2b26cd8fb15680d92c6afc2c5d46bd6"
+        },
+        {
+          "slot": 2,
+          "source_frame": 140,
+          "hold_index": 10,
+          "hold_length": 18,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/old_slot_02_f00140.png",
+          "native_png_sha256": "8332f8e1ad042be3cca15aabac3a31e572966d16cce3cfd7411d114f59d3bced"
+        },
+        {
+          "slot": 3,
+          "source_frame": 168,
+          "hold_index": 13,
+          "hold_length": 20,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/old_slot_03_f00168.png",
+          "native_png_sha256": "981f35e8ad624107a2640566aad73b981033c4e9c8fd5403ffac24f08dfc25e2"
+        },
+        {
+          "slot": 4,
+          "source_frame": 248,
+          "hold_index": 21,
+          "hold_length": 20,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/old_slot_04_f00248.png",
+          "native_png_sha256": "f382f8cb2a8a3b0208db7ebba6794f15f513d98112e55ef1455519a9502536c5"
+        }
+      ],
+      "old_spacing": [
+        {
+          "left": 110,
+          "right": 140,
+          "frame_gap": 30,
+          "threshold_segment_steps": 3,
+          "stable_hold_steps": 1
+        },
+        {
+          "left": 140,
+          "right": 168,
+          "frame_gap": 28,
+          "threshold_segment_steps": 3,
+          "stable_hold_steps": 1
+        },
+        {
+          "left": 168,
+          "right": 248,
+          "frame_gap": 80,
+          "threshold_segment_steps": 8,
+          "stable_hold_steps": 4
+        }
+      ],
+      "signal": {
+        "events": [
+          {
+            "frame": 149,
+            "event": "close"
+          }
+        ],
+        "main_close_signal_candidate": 149,
+        "main_close_visually_confirmed": false,
+        "release_after_main_close": null,
+        "baseline_search_half_open": [
+          129,
+          263
+        ],
+        "minimum_frame": 146,
+        "minimum_value": 0.2152913361787796,
+        "robot_rise_proxy_frame": 194,
+        "proxy_window_raw": [
+          234,
+          254
+        ],
+        "proxy_window_available": [
+          234,
+          254
+        ]
+      },
+      "stable_overview": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/stable_overview.png",
+      "reviewed_stable_hold_indices": [
+        6,
+        9,
+        10,
+        13,
+        16,
+        19,
+        20,
+        21
+      ],
+      "old_min_frame_gap": 28,
+      "old_min_hold_length": 1,
+      "provisional_visual_inspection_frame": {
+        "hold_index": 20,
+        "frame": 225,
+        "hold": [
+          216,
+          235
+        ],
+        "length": 20,
+        "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000553/hold_020_f00225.png",
+        "native_png_sha256": "c23bce0d87b4dcb94f522c53254f9617d5d4ed866452abc9c51fcc486e7a36bd",
+        "frame_gap_from_old_grasp": 57,
+        "stable_hold_steps_from_old_grasp": 3,
+        "different_threshold_hold_from_old_lift": true,
+        "old_lift_used_by_questions": 4,
+        "not_selected_replacement": true
+      },
+      "visual_screen_note": "前段目标靠近画面下边缘；H13后被持有，H20可供检查。原start110落在运动阈值分段的单帧段，原支撑参考和稳定性均需复核。"
+    },
+    {
+      "episode_key": "usim_train_episode_000555",
+      "episode": 555,
+      "task_text": "Pick up the red cylinder",
+      "task_family": "pick",
+      "qa_questions": 2,
+      "source_files": {
+        "ego_video": {
+          "path": "usim/train/videos/chunk-000/observation.images.ego/episode_000555.mp4",
+          "sha256": "3460ab16ca0b484501203922c83fb9c498106da6732d3bcd90e2e5a2eb489e34",
+          "pinned_hash_match": true
+        },
+        "parquet": {
+          "path": "usim/train/data/chunk-000/episode_000555.parquet",
+          "sha256": "fcfe1699db69977ae3a6ad5a000ce4e1bf437b26afd4f0533adbb05ee0c30c91",
+          "pinned_hash_match": true
+        }
+      },
+      "decoded_frames": 392,
+      "annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2/annotations/episodes/usim_train_episode_000555.json",
+      "annotation_sha256": "e501553a100bc9e362a09359f32e6722da8f1dea51c3c5d390d3c4edc67a5aaf",
+      "old_frames": [
+        140,
+        262,
+        297,
+        377
+      ],
+      "old_hold_records": [
+        {
+          "slot": 1,
+          "source_frame": 140,
+          "hold_index": 10,
+          "hold_length": 26,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000555/old_slot_01_f00140.png",
+          "native_png_sha256": "63697053fd419b766cabd7a567811b30ed02588c93665e787f4d11d8fbd035fe"
+        },
+        {
+          "slot": 2,
+          "source_frame": 262,
+          "hold_index": 22,
+          "hold_length": 22,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000555/old_slot_02_f00262.png",
+          "native_png_sha256": "595684161d5a5a7577f8657d0037d9dbf8ee72da0a9d3073d979e5d5684df09f"
+        },
+        {
+          "slot": 3,
+          "source_frame": 297,
+          "hold_index": 24,
+          "hold_length": 22,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000555/old_slot_03_f00297.png",
+          "native_png_sha256": "d1ee39681789ab803fe3bb174a30ddc3e2b05f7fea64c5be632479faa692b560"
+        },
+        {
+          "slot": 4,
+          "source_frame": 377,
+          "hold_index": 34,
+          "hold_length": 18,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000555/old_slot_04_f00377.png",
+          "native_png_sha256": "d65d47968bbded7acbead12e92c5743258315d30eaee1c8d491b9768b7bd3191"
+        }
+      ],
+      "old_spacing": [
+        {
+          "left": 140,
+          "right": 262,
+          "frame_gap": 122,
+          "threshold_segment_steps": 12,
+          "stable_hold_steps": 6
+        },
+        {
+          "left": 262,
+          "right": 297,
+          "frame_gap": 35,
+          "threshold_segment_steps": 2,
+          "stable_hold_steps": 2
+        },
+        {
+          "left": 297,
+          "right": 377,
+          "frame_gap": 80,
+          "threshold_segment_steps": 10,
+          "stable_hold_steps": 4
+        }
+      ],
+      "signal": {
+        "events": [
+          {
+            "frame": 278,
+            "event": "close"
+          }
+        ],
+        "main_close_signal_candidate": 278,
+        "main_close_visually_confirmed": false,
+        "release_after_main_close": null,
+        "baseline_search_half_open": [
+          258,
+          392
+        ],
+        "minimum_frame": 309,
+        "minimum_value": 0.24441498517990112,
+        "robot_rise_proxy_frame": 329,
+        "proxy_window_raw": [
+          369,
+          389
+        ],
+        "proxy_window_available": [
+          369,
+          389
+        ]
+      },
+      "stable_overview": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000555/stable_overview.png",
+      "reviewed_stable_hold_indices": [
+        21,
+        22,
+        23,
+        24,
+        27,
+        30,
+        31,
+        34
+      ],
+      "old_min_frame_gap": 35,
+      "old_min_hold_length": 18,
+      "provisional_visual_inspection_frame": {
+        "hold_index": 31,
+        "frame": 362,
+        "hold": [
+          354,
+          371
+        ],
+        "length": 18,
+        "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000555/hold_031_f00362.png",
+        "native_png_sha256": "9cf642dc7977cf9a7169ec610dbed2afd6b7a4ebf9a710198c5585b1b1069ad4",
+        "frame_gap_from_old_grasp": 65,
+        "stable_hold_steps_from_old_grasp": 3,
+        "different_threshold_hold_from_old_lift": true,
+        "old_lift_used_by_questions": 2,
+        "not_selected_replacement": true
+      },
+      "visual_screen_note": "H24后红圆柱横向被夹持，H31最低端可见但影子／沙面参照需明确；没有据DVL低点把早段支撑自动判为true。"
+    },
+    {
+      "episode_key": "usim_train_episode_000556",
+      "episode": 556,
+      "task_text": "Pick up the red cylinder",
+      "task_family": "pick",
+      "qa_questions": 2,
+      "source_files": {
+        "ego_video": {
+          "path": "usim/train/videos/chunk-000/observation.images.ego/episode_000556.mp4",
+          "sha256": "0631c24e6d6abb6847fdb24e7d6d1cd97a699e33361e1b907c71a4289ce755ff",
+          "pinned_hash_match": true
+        },
+        "parquet": {
+          "path": "usim/train/data/chunk-000/episode_000556.parquet",
+          "sha256": "0445032b7dbed52a0227ae34bff4ef075900e4693d65f95e4d9dedab3f3b385e",
+          "pinned_hash_match": true
+        }
+      },
+      "decoded_frames": 429,
+      "annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2/annotations/episodes/usim_train_episode_000556.json",
+      "annotation_sha256": "ff3104e801ddc457a985ee2035a7a2a831510d053605c960018ff9de06d8a1d0",
+      "old_frames": [
+        180,
+        304,
+        339,
+        419
+      ],
+      "old_hold_records": [
+        {
+          "slot": 1,
+          "source_frame": 180,
+          "hold_index": 12,
+          "hold_length": 16,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000556/old_slot_01_f00180.png",
+          "native_png_sha256": "76cd7cd9b526b6c2482676952a3fd0220045826140203554a5b13295e31b1999"
+        },
+        {
+          "slot": 2,
+          "source_frame": 304,
+          "hold_index": 25,
+          "hold_length": 12,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000556/old_slot_02_f00304.png",
+          "native_png_sha256": "f0d68eb4dcab22d43caf5d1f56615b76c9e278be860577e0fcead1e0ad2eb554"
+        },
+        {
+          "slot": 3,
+          "source_frame": 339,
+          "hold_index": 31,
+          "hold_length": 12,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000556/old_slot_03_f00339.png",
+          "native_png_sha256": "3b6246f00e9a428b70de4cb8bad56ce0044293168375446142b48522d8dc3e60"
+        },
+        {
+          "slot": 4,
+          "source_frame": 419,
+          "hold_index": 37,
+          "hold_length": 16,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000556/old_slot_04_f00419.png",
+          "native_png_sha256": "26c77da0799303819737f842cc6e488e31086848d966fe70109fc616521fa666"
+        }
+      ],
+      "old_spacing": [
+        {
+          "left": 180,
+          "right": 304,
+          "frame_gap": 124,
+          "threshold_segment_steps": 13,
+          "stable_hold_steps": 7
+        },
+        {
+          "left": 304,
+          "right": 339,
+          "frame_gap": 35,
+          "threshold_segment_steps": 6,
+          "stable_hold_steps": 2
+        },
+        {
+          "left": 339,
+          "right": 419,
+          "frame_gap": 80,
+          "threshold_segment_steps": 6,
+          "stable_hold_steps": 4
+        }
+      ],
+      "signal": {
+        "events": [
+          {
+            "frame": 319,
+            "event": "close"
+          }
+        ],
+        "main_close_signal_candidate": 319,
+        "main_close_visually_confirmed": false,
+        "release_after_main_close": null,
+        "baseline_search_half_open": [
+          299,
+          429
+        ],
+        "minimum_frame": 338,
+        "minimum_value": 0.23326541483402252,
+        "robot_rise_proxy_frame": 370,
+        "proxy_window_raw": [
+          410,
+          430
+        ],
+        "proxy_window_available": [
+          410,
+          428
+        ]
+      },
+      "stable_overview": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000556/stable_overview.png",
+      "reviewed_stable_hold_indices": [
+        21,
+        24,
+        25,
+        28,
+        31,
+        34,
+        35,
+        36,
+        37
+      ],
+      "old_min_frame_gap": 35,
+      "old_min_hold_length": 12,
+      "provisional_visual_inspection_frame": {
+        "hold_index": 36,
+        "frame": 399,
+        "hold": [
+          388,
+          411
+        ],
+        "length": 24,
+        "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000556/hold_036_f00399.png",
+        "native_png_sha256": "5a9c9b4fba36dff829ec2ec8eea5d6abca4d2d044f0739ba243138567b5f4c80",
+        "frame_gap_from_old_grasp": 60,
+        "stable_hold_steps_from_old_grasp": 3,
+        "different_threshold_hold_from_old_lift": true,
+        "old_lift_used_by_questions": 2,
+        "not_selected_replacement": true
+      },
+      "visual_screen_note": "H31/H34保持低位夹持，H36可供检查，H37为原lift所在段；紫色远处物体不是本条红目标。视觉支撑边界仍未定。"
+    },
+    {
+      "episode_key": "usim_train_episode_000587",
+      "episode": 587,
+      "task_text": "Pick up the red cylinder",
+      "task_family": "pick",
+      "qa_questions": 4,
+      "source_files": {
+        "ego_video": {
+          "path": "usim/train/videos/chunk-000/observation.images.ego/episode_000587.mp4",
+          "sha256": "b2e091a9f7941467c611aa48b9993f9ec127cfee3abf3d923bd8112eef66e647",
+          "pinned_hash_match": true
+        },
+        "parquet": {
+          "path": "usim/train/data/chunk-000/episode_000587.parquet",
+          "sha256": "1d29f33669c263b5bff922832ab96ac6060afd29340d5356ec989542032161b2",
+          "pinned_hash_match": true
+        }
+      },
+      "decoded_frames": 314,
+      "annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2/annotations/episodes/usim_train_episode_000587.json",
+      "annotation_sha256": "a40eb02734441d1f7f509914c22b241e7862c3d1d4b82fd34bfa0761d8fee7be",
+      "old_frames": [
+        190,
+        224,
+        256,
+        305
+      ],
+      "old_hold_records": [
+        {
+          "slot": 1,
+          "source_frame": 190,
+          "hold_index": 19,
+          "hold_length": 18,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000587/old_slot_01_f00190.png",
+          "native_png_sha256": "8a1999557d07db1b84e958ed741633e904df8b09b1515c2bb7efc13d828d61f7"
+        },
+        {
+          "slot": 2,
+          "source_frame": 224,
+          "hold_index": 20,
+          "hold_length": 24,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000587/old_slot_02_f00224.png",
+          "native_png_sha256": "e7d5f4edf1c556a54cbf037d839e6b926b368814b15d4d16b6d5d8d8276eae97"
+        },
+        {
+          "slot": 3,
+          "source_frame": 256,
+          "hold_index": 24,
+          "hold_length": 22,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000587/old_slot_03_f00256.png",
+          "native_png_sha256": "df53dc5156688119de915c9b5e1532c79a37f2dbdcc5a4d17bbd86e7c5305738"
+        },
+        {
+          "slot": 4,
+          "source_frame": 305,
+          "hold_index": 28,
+          "hold_length": 12,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000587/old_slot_04_f00305.png",
+          "native_png_sha256": "7269646335a918498ec98b2186f72b531f14121bcb3dc7e3d93e84d8055259d5"
+        }
+      ],
+      "old_spacing": [
+        {
+          "left": 190,
+          "right": 224,
+          "frame_gap": 34,
+          "threshold_segment_steps": 1,
+          "stable_hold_steps": 1
+        },
+        {
+          "left": 224,
+          "right": 256,
+          "frame_gap": 32,
+          "threshold_segment_steps": 4,
+          "stable_hold_steps": 2
+        },
+        {
+          "left": 256,
+          "right": 305,
+          "frame_gap": 49,
+          "threshold_segment_steps": 4,
+          "stable_hold_steps": 2
+        }
+      ],
+      "signal": {
+        "events": [
+          {
+            "frame": 239,
+            "event": "close"
+          }
+        ],
+        "main_close_signal_candidate": 239,
+        "main_close_visually_confirmed": false,
+        "release_after_main_close": null,
+        "baseline_search_half_open": [
+          219,
+          314
+        ],
+        "minimum_frame": 263,
+        "minimum_value": 0.2376682609319687,
+        "robot_rise_proxy_frame": 287,
+        "proxy_window_raw": [
+          327,
+          347
+        ],
+        "proxy_window_available": null
+      },
+      "stable_overview": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000587/stable_overview.png",
+      "reviewed_stable_hold_indices": [
+        19,
+        20,
+        21,
+        24,
+        25,
+        28
+      ],
+      "old_min_frame_gap": 32,
+      "old_min_hold_length": 12,
+      "provisional_visual_inspection_frame": {
+        "hold_index": 28,
+        "frame": 305,
+        "hold": [
+          300,
+          311
+        ],
+        "length": 12,
+        "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000587/hold_028_f00305.png",
+        "native_png_sha256": "7269646335a918498ec98b2186f72b531f14121bcb3dc7e3d93e84d8055259d5",
+        "frame_gap_from_old_grasp": 49,
+        "stable_hold_steps_from_old_grasp": 2,
+        "different_threshold_hold_from_old_lift": false,
+        "old_lift_used_by_questions": 4,
+        "not_selected_replacement": true
+      },
+      "visual_screen_note": "H28保留可见红色携带目标，原lift也在此段。机器人高度诊断窗口完全越界，但这不能推出物体没有离底。"
+    },
+    {
+      "episode_key": "usim_train_episode_000628",
+      "episode": 628,
+      "task_text": "Pick up the red cylinder",
+      "task_family": "pick",
+      "qa_questions": 4,
+      "source_files": {
+        "ego_video": {
+          "path": "usim/train/videos/chunk-000/observation.images.ego/episode_000628.mp4",
+          "sha256": "b438026fb30b7cb63115a403b9e541706894377898b3971c0b946971d40ed4f4",
+          "pinned_hash_match": true
+        },
+        "parquet": {
+          "path": "usim/train/data/chunk-000/episode_000628.parquet",
+          "sha256": "36671c1de1004a26cd6f07750b3838ca2199fa108c97ec9b8455c60aeb3b643c",
+          "pinned_hash_match": true
+        }
+      },
+      "decoded_frames": 378,
+      "annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2/annotations/episodes/usim_train_episode_000628.json",
+      "annotation_sha256": "ef0eb4cb559e4553c68ce4dbbd8a4e317ac53a0943ac819f53479c246729454e",
+      "old_frames": [
+        221,
+        254,
+        288,
+        365
+      ],
+      "old_hold_records": [
+        {
+          "slot": 1,
+          "source_frame": 221,
+          "hold_index": 19,
+          "hold_length": 24,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000628/old_slot_01_f00221.png",
+          "native_png_sha256": "437319726d7d1b1bb6bb16d09836961d084f75ef52aabf1b8a232deed6021407"
+        },
+        {
+          "slot": 2,
+          "source_frame": 254,
+          "hold_index": 23,
+          "hold_length": 32,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000628/old_slot_02_f00254.png",
+          "native_png_sha256": "dfce2797e83ab2bf136e5c8dc0256d8306acfee06b85a8fe59b3fa069cc03d6c"
+        },
+        {
+          "slot": 3,
+          "source_frame": 288,
+          "hold_index": 24,
+          "hold_length": 18,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000628/old_slot_03_f00288.png",
+          "native_png_sha256": "acd535ed473fc8891c8cac0cc180837d44e0f7759b3a416c500d3be6f6a46ade"
+        },
+        {
+          "slot": 4,
+          "source_frame": 365,
+          "hold_index": 29,
+          "hold_length": 24,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000628/old_slot_04_f00365.png",
+          "native_png_sha256": "7d69de13268c1308db1fcb309a1978777e0139b0528d0a75a90fe67a44296674"
+        }
+      ],
+      "old_spacing": [
+        {
+          "left": 221,
+          "right": 254,
+          "frame_gap": 33,
+          "threshold_segment_steps": 4,
+          "stable_hold_steps": 2
+        },
+        {
+          "left": 254,
+          "right": 288,
+          "frame_gap": 34,
+          "threshold_segment_steps": 1,
+          "stable_hold_steps": 1
+        },
+        {
+          "left": 288,
+          "right": 365,
+          "frame_gap": 77,
+          "threshold_segment_steps": 5,
+          "stable_hold_steps": 3
+        }
+      ],
+      "signal": {
+        "events": [
+          {
+            "frame": 269,
+            "event": "close"
+          }
+        ],
+        "main_close_signal_candidate": 269,
+        "main_close_visually_confirmed": false,
+        "release_after_main_close": null,
+        "baseline_search_half_open": [
+          249,
+          378
+        ],
+        "minimum_frame": 289,
+        "minimum_value": 0.23333652317523956,
+        "robot_rise_proxy_frame": 319,
+        "proxy_window_raw": [
+          359,
+          379
+        ],
+        "proxy_window_available": [
+          359,
+          377
+        ]
+      },
+      "stable_overview": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000628/stable_overview.png",
+      "reviewed_stable_hold_indices": [
+        19,
+        20,
+        23,
+        24,
+        27,
+        28,
+        29
+      ],
+      "old_min_frame_gap": 33,
+      "old_min_hold_length": 18,
+      "provisional_visual_inspection_frame": {
+        "hold_index": 28,
+        "frame": 342,
+        "hold": [
+          332,
+          353
+        ],
+        "length": 22,
+        "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000628/hold_028_f00342.png",
+        "native_png_sha256": "2d96b01fc3d8f3eed55da8cb3fe44950e6ae2e2589ab4cb9f13cfd0ddd062a9e",
+        "frame_gap_from_old_grasp": 54,
+        "stable_hold_steps_from_old_grasp": 2,
+        "different_threshold_hold_from_old_lift": true,
+        "old_lift_used_by_questions": 4,
+        "not_selected_replacement": true
+      },
+      "visual_screen_note": "蓝色干扰圆柱与红目标一度贴邻夹爪，后段蓝物体分离；H28可作红目标检查候选。需单独验证持有指代，不能把两物体合成一个目标轮廓。"
+    },
+    {
+      "episode_key": "usim_train_episode_000653",
+      "episode": 653,
+      "task_text": "Pick up the red cylinder",
+      "task_family": "pick",
+      "qa_questions": 4,
+      "source_files": {
+        "ego_video": {
+          "path": "usim/train/videos/chunk-000/observation.images.ego/episode_000653.mp4",
+          "sha256": "a17a87ad5dece96b5a36d1a71a7892a3dcd4ff276955e772bcc40c2819ffc59a",
+          "pinned_hash_match": true
+        },
+        "parquet": {
+          "path": "usim/train/data/chunk-000/episode_000653.parquet",
+          "sha256": "16733c0525647a62ec4fd1902cf9073ce8c94d25b32270fa59e40c40e60c6e68",
+          "pinned_hash_match": true
+        }
+      },
+      "decoded_frames": 279,
+      "annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2/annotations/episodes/usim_train_episode_000653.json",
+      "annotation_sha256": "cc2c1c3c9e749d853b9d939b4bac062f338e8a6ef1b1076977d94a124860cbfd",
+      "old_frames": [
+        20,
+        155,
+        203,
+        249
+      ],
+      "old_hold_records": [
+        {
+          "slot": 1,
+          "source_frame": 20,
+          "hold_index": 3,
+          "hold_length": 14,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000653/old_slot_01_f00020.png",
+          "native_png_sha256": "a23c5f2949a0823a9e540a4d98df9aae93ae5536e27c45a084eb5422f504e45f"
+        },
+        {
+          "slot": 2,
+          "source_frame": 155,
+          "hold_index": 18,
+          "hold_length": 24,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000653/old_slot_02_f00155.png",
+          "native_png_sha256": "47ae4a851fc1e1ee8c33f6718ccd5dadf89c843c2fcdaa70e1698ac923237154"
+        },
+        {
+          "slot": 3,
+          "source_frame": 203,
+          "hold_index": 22,
+          "hold_length": 16,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000653/old_slot_03_f00203.png",
+          "native_png_sha256": "de3883bf265b0be12ab6b564180c2f6efec76e4e1c05e1697020c50fa1e97dea"
+        },
+        {
+          "slot": 4,
+          "source_frame": 249,
+          "hold_index": 28,
+          "hold_length": 26,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000653/old_slot_04_f00249.png",
+          "native_png_sha256": "0925730b5a7e19ab34d8f5499455a04b8c42539984b2698df37d079f2124c828"
+        }
+      ],
+      "old_spacing": [
+        {
+          "left": 20,
+          "right": 155,
+          "frame_gap": 135,
+          "threshold_segment_steps": 15,
+          "stable_hold_steps": 7
+        },
+        {
+          "left": 155,
+          "right": 203,
+          "frame_gap": 48,
+          "threshold_segment_steps": 4,
+          "stable_hold_steps": 2
+        },
+        {
+          "left": 203,
+          "right": 249,
+          "frame_gap": 46,
+          "threshold_segment_steps": 6,
+          "stable_hold_steps": 2
+        }
+      ],
+      "signal": {
+        "events": [
+          {
+            "frame": 170,
+            "event": "close"
+          }
+        ],
+        "main_close_signal_candidate": 170,
+        "main_close_visually_confirmed": false,
+        "release_after_main_close": null,
+        "baseline_search_half_open": [
+          150,
+          279
+        ],
+        "minimum_frame": 188,
+        "minimum_value": 0.2259076088666916,
+        "robot_rise_proxy_frame": 218,
+        "proxy_window_raw": [
+          258,
+          278
+        ],
+        "proxy_window_available": [
+          258,
+          278
+        ]
+      },
+      "stable_overview": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000653/stable_overview.png",
+      "reviewed_stable_hold_indices": [
+        15,
+        18,
+        21,
+        22,
+        25,
+        28,
+        31
+      ],
+      "old_min_frame_gap": 46,
+      "old_min_hold_length": 14,
+      "provisional_visual_inspection_frame": {
+        "hold_index": 28,
+        "frame": 250,
+        "hold": [
+          238,
+          263
+        ],
+        "length": 26,
+        "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000653/hold_028_f00250.png",
+        "native_png_sha256": "0925730b5a7e19ab34d8f5499455a04b8c42539984b2698df37d079f2124c828",
+        "frame_gap_from_old_grasp": 47,
+        "stable_hold_steps_from_old_grasp": 2,
+        "different_threshold_hold_from_old_lift": false,
+        "old_lift_used_by_questions": 2,
+        "not_selected_replacement": true
+      },
+      "visual_screen_note": "H22开始出现夹持姿态，H28与原lift249同段；可保留为检查候选，但未定位可复查的半宽阈值首次通过点。"
+    },
+    {
+      "episode_key": "usim_train_episode_000756",
+      "episode": 756,
+      "task_text": "Pick up the pipe",
+      "task_family": "pick",
+      "qa_questions": 4,
+      "source_files": {
+        "ego_video": {
+          "path": "usim/train/videos/chunk-000/observation.images.ego/episode_000756.mp4",
+          "sha256": "a40fe20f1a39d169b986c5f52f06f9178d7535641a29724ed91b5e87a496af00",
+          "pinned_hash_match": true
+        },
+        "parquet": {
+          "path": "usim/train/data/chunk-000/episode_000756.parquet",
+          "sha256": "38f805f7506228185dc0628001b206a99f74f50e81f2f81b80288ac9ff37906e",
+          "pinned_hash_match": true
+        }
+      },
+      "decoded_frames": 378,
+      "annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2/annotations/episodes/usim_train_episode_000756.json",
+      "annotation_sha256": "671ce2f77b7f7e7b2e76e0d9e07fafbb46ddfca9843eca4e410f9e2434b7394a",
+      "old_frames": [
+        15,
+        254,
+        280,
+        352
+      ],
+      "old_hold_records": [
+        {
+          "slot": 1,
+          "source_frame": 15,
+          "hold_index": 3,
+          "hold_length": 16,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000756/old_slot_01_f00015.png",
+          "native_png_sha256": "8e715cd6e75de13087e4215702ae5a5605b5e1ec3fd0e29c4efa30ad30b6404b"
+        },
+        {
+          "slot": 2,
+          "source_frame": 254,
+          "hold_index": 36,
+          "hold_length": 14,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000756/old_slot_02_f00254.png",
+          "native_png_sha256": "9762e95261182770e5716814e30fb0f64c3d8a49db59293e406c968b1faa65e5"
+        },
+        {
+          "slot": 3,
+          "source_frame": 280,
+          "hold_index": 42,
+          "hold_length": 14,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000756/old_slot_03_f00280.png",
+          "native_png_sha256": "be84985a837390042b3bf0442c08df03eb8eafe01e9571848d1cb5ccb5c747cc"
+        },
+        {
+          "slot": 4,
+          "source_frame": 352,
+          "hold_index": 56,
+          "hold_length": 10,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000756/old_slot_04_f00352.png",
+          "native_png_sha256": "e68e1b50e504d9eea9b0ab9b0a6663f95b12896252d3235e2fa42f1a9c6eef71"
+        }
+      ],
+      "old_spacing": [
+        {
+          "left": 15,
+          "right": 254,
+          "frame_gap": 239,
+          "threshold_segment_steps": 33,
+          "stable_hold_steps": 16
+        },
+        {
+          "left": 254,
+          "right": 280,
+          "frame_gap": 26,
+          "threshold_segment_steps": 6,
+          "stable_hold_steps": 2
+        },
+        {
+          "left": 280,
+          "right": 352,
+          "frame_gap": 72,
+          "threshold_segment_steps": 14,
+          "stable_hold_steps": 6
+        }
+      ],
+      "signal": {
+        "events": [
+          {
+            "frame": 269,
+            "event": "close"
+          }
+        ],
+        "main_close_signal_candidate": 269,
+        "main_close_visually_confirmed": false,
+        "release_after_main_close": null,
+        "baseline_search_half_open": [
+          249,
+          378
+        ],
+        "minimum_frame": 298,
+        "minimum_value": 0.2419007122516632,
+        "robot_rise_proxy_frame": 318,
+        "proxy_window_raw": [
+          358,
+          378
+        ],
+        "proxy_window_available": [
+          358,
+          377
+        ]
+      },
+      "stable_overview": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep000756/stable_overview.png",
+      "reviewed_stable_hold_indices": [
+        32,
+        35,
+        36,
+        39,
+        42,
+        45,
+        48,
+        49,
+        52,
+        53,
+        56,
+        59
+      ],
+      "old_min_frame_gap": 26,
+      "old_min_hold_length": 10,
+      "provisional_visual_inspection_frame": null,
+      "visual_screen_note": "弯管的最低端随旋转改变，H52以后弯端朝下；最低端与沙面缺少可靠参照。不能沿用直管中段或夹爪高度代证。"
+    },
+    {
+      "episode_key": "usim_train_episode_001302",
+      "episode": 1302,
+      "task_text": "Pick up the red cylinder and transfer it to the box",
+      "task_family": "transfer",
+      "qa_questions": 4,
+      "source_files": {
+        "ego_video": {
+          "path": "usim/train/videos/chunk-001/observation.images.ego/episode_001302.mp4",
+          "sha256": "f0e7763165e3af3cb96299d23fae6ce633b6fa624175913407474ac63816ee26",
+          "pinned_hash_match": true
+        },
+        "parquet": {
+          "path": "usim/train/data/chunk-001/episode_001302.parquet",
+          "sha256": "25fb2da550748dfa7408684300a5678a0b035f1632f94c2652e13425bbe2be1a",
+          "pinned_hash_match": true
+        }
+      },
+      "decoded_frames": 466,
+      "annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2/annotations/episodes/usim_train_episode_001302.json",
+      "annotation_sha256": "3f261c0040cc0b8daa857111f925e31518bdb5a886927c0e616533d8cd268bdf",
+      "old_frames": [
+        150,
+        168,
+        196,
+        415
+      ],
+      "old_hold_records": [
+        {
+          "slot": 1,
+          "source_frame": 150,
+          "hold_index": 17,
+          "hold_length": 16,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep001302/old_slot_01_f00150.png",
+          "native_png_sha256": "c3242d72dad49675b9b03d53787357266e509e983ef908f893e7f317ed43404a"
+        },
+        {
+          "slot": 2,
+          "source_frame": 168,
+          "hold_index": 20,
+          "hold_length": 16,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep001302/old_slot_02_f00168.png",
+          "native_png_sha256": "37721138bb4a6c379f351a02ebe2b7ad53b05a3874021b36c039ccf618e4549a"
+        },
+        {
+          "slot": 3,
+          "source_frame": 196,
+          "hold_index": 24,
+          "hold_length": 18,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep001302/old_slot_03_f00196.png",
+          "native_png_sha256": "29ed5d73a49ce61a092a86e11dd8bb0520e7dedad7729599f0548daab873fea3"
+        },
+        {
+          "slot": 4,
+          "source_frame": 415,
+          "hold_index": 49,
+          "hold_length": 14,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep001302/old_slot_04_f00415.png",
+          "native_png_sha256": "aa8fe762191482447b72b7b90317ed8ecbf03cb5fdd4059373e5a73c81e06383"
+        }
+      ],
+      "old_spacing": [
+        {
+          "left": 150,
+          "right": 168,
+          "frame_gap": 18,
+          "threshold_segment_steps": 3,
+          "stable_hold_steps": 1
+        },
+        {
+          "left": 168,
+          "right": 196,
+          "frame_gap": 28,
+          "threshold_segment_steps": 4,
+          "stable_hold_steps": 2
+        },
+        {
+          "left": 196,
+          "right": 415,
+          "frame_gap": 219,
+          "threshold_segment_steps": 25,
+          "stable_hold_steps": 13
+        }
+      ],
+      "signal": {
+        "events": [
+          {
+            "frame": 176,
+            "event": "close"
+          },
+          {
+            "frame": 448,
+            "event": "open"
+          }
+        ],
+        "main_close_signal_candidate": 176,
+        "main_close_visually_confirmed": false,
+        "release_after_main_close": 448,
+        "baseline_search_half_open": [
+          156,
+          296
+        ],
+        "minimum_frame": 181,
+        "minimum_value": 0.24194906651973724,
+        "robot_rise_proxy_frame": 227,
+        "proxy_window_raw": [
+          267,
+          287
+        ],
+        "proxy_window_available": [
+          267,
+          287
+        ]
+      },
+      "stable_overview": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep001302/stable_overview.png",
+      "reviewed_stable_hold_indices": [
+        16,
+        17,
+        20,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        31,
+        34,
+        37,
+        38,
+        41,
+        42,
+        45,
+        48,
+        49,
+        52,
+        53
+      ],
+      "old_min_frame_gap": 18,
+      "old_min_hold_length": 14,
+      "provisional_visual_inspection_frame": {
+        "hold_index": 26,
+        "frame": 240,
+        "hold": [
+          232,
+          249
+        ],
+        "length": 18,
+        "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep001302/hold_026_f00240.png",
+        "native_png_sha256": "1bb00a2e37c287512bf764b31e3f790571044aa94399c2ce3e69a33867db6b70",
+        "frame_gap_from_old_grasp": 44,
+        "stable_hold_steps_from_old_grasp": 2,
+        "different_threshold_hold_from_old_lift": true,
+        "old_lift_used_by_questions": 4,
+        "not_selected_replacement": true
+      },
+      "visual_screen_note": "H25/H26附近目标被持有，绿箱相对位置随后持续变化；初次离底与搬运边界重叠。原末帧415在很晚的搬运段，另有start150到approach168仅18帧问题。"
+    },
+    {
+      "episode_key": "usim_train_episode_001304",
+      "episode": 1304,
+      "task_text": "Pick up the red cylinder and transfer it to the box",
+      "task_family": "transfer",
+      "qa_questions": 10,
+      "source_files": {
+        "ego_video": {
+          "path": "usim/train/videos/chunk-001/observation.images.ego/episode_001304.mp4",
+          "sha256": "697e7c707a5f4eebc39f71ceda3136dbf646d1608e0d00ea09150f5c206375d3",
+          "pinned_hash_match": true
+        },
+        "parquet": {
+          "path": "usim/train/data/chunk-001/episode_001304.parquet",
+          "sha256": "c6cd1e3f576eff701f74d0d5836deaf65f5bafa5d74c2e93d1d034c008c8fe74",
+          "pinned_hash_match": true
+        }
+      },
+      "decoded_frames": 513,
+      "annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2/annotations/episodes/usim_train_episode_001304.json",
+      "annotation_sha256": "66bb7543c9b5e76ad9ea970e420cfe8eaf7b9ffa5654ccae4eb2746f009b7217",
+      "old_frames": [
+        132,
+        177,
+        244,
+        292,
+        481
+      ],
+      "old_hold_records": [
+        {
+          "slot": 1,
+          "source_frame": 132,
+          "hold_index": 11,
+          "hold_length": 16,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep001304/old_slot_01_f00132.png",
+          "native_png_sha256": "565825f49bb80718e5549992d02badedabd38ece1ff2063175e3827f3cef2b8d"
+        },
+        {
+          "slot": 2,
+          "source_frame": 177,
+          "hold_index": 20,
+          "hold_length": 18,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep001304/old_slot_02_f00177.png",
+          "native_png_sha256": "f68ade2297386e631594200d9166b878aec9c997e45a1254e9302e11323b2198"
+        },
+        {
+          "slot": 3,
+          "source_frame": 244,
+          "hold_index": 30,
+          "hold_length": 16,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep001304/old_slot_03_f00244.png",
+          "native_png_sha256": "2d403f22159a619bc15dc5d07dc59d09bd0d271d30ab36d6205950948de7ebef"
+        },
+        {
+          "slot": 4,
+          "source_frame": 292,
+          "hold_index": 36,
+          "hold_length": 16,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep001304/old_slot_04_f00292.png",
+          "native_png_sha256": "9bc6c30fad0b9dbfa65ecff3c996db6297e9979a0ed110d3fe2e2f6489ad6571"
+        },
+        {
+          "slot": 5,
+          "source_frame": 481,
+          "hold_index": 64,
+          "hold_length": 12,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep001304/old_slot_05_f00481.png",
+          "native_png_sha256": "7c70ba3f72d0e379c73b4aee74f4a13b805be162c89146494503057f65d29a1e"
+        }
+      ],
+      "old_spacing": [
+        {
+          "left": 132,
+          "right": 177,
+          "frame_gap": 45,
+          "threshold_segment_steps": 9,
+          "stable_hold_steps": 3
+        },
+        {
+          "left": 177,
+          "right": 244,
+          "frame_gap": 67,
+          "threshold_segment_steps": 10,
+          "stable_hold_steps": 4
+        },
+        {
+          "left": 244,
+          "right": 292,
+          "frame_gap": 48,
+          "threshold_segment_steps": 6,
+          "stable_hold_steps": 2
+        },
+        {
+          "left": 292,
+          "right": 481,
+          "frame_gap": 189,
+          "threshold_segment_steps": 28,
+          "stable_hold_steps": 12
+        }
+      ],
+      "signal": {
+        "events": [
+          {
+            "frame": 192,
+            "event": "close"
+          },
+          {
+            "frame": 217,
+            "event": "open"
+          },
+          {
+            "frame": 229,
+            "event": "close"
+          },
+          {
+            "frame": 496,
+            "event": "open"
+          }
+        ],
+        "main_close_signal_candidate": 229,
+        "main_close_visually_confirmed": false,
+        "release_after_main_close": 496,
+        "baseline_search_half_open": [
+          209,
+          349
+        ],
+        "minimum_frame": 228,
+        "minimum_value": 0.2346166968345642,
+        "robot_rise_proxy_frame": 270,
+        "proxy_window_raw": [
+          310,
+          330
+        ],
+        "proxy_window_available": [
+          310,
+          330
+        ]
+      },
+      "stable_overview": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep001304/stable_overview.png",
+      "reviewed_stable_hold_indices": [
+        20,
+        21,
+        24,
+        27,
+        30,
+        33,
+        36,
+        39,
+        42,
+        45,
+        48,
+        51,
+        52,
+        53,
+        56,
+        59,
+        60,
+        63,
+        64,
+        65
+      ],
+      "old_min_frame_gap": 45,
+      "old_min_hold_length": 12,
+      "provisional_visual_inspection_frame": {
+        "hold_index": 36,
+        "frame": 287,
+        "hold": [
+          280,
+          295
+        ],
+        "length": 16,
+        "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep001304/hold_036_f00287.png",
+        "native_png_sha256": "9bc6c30fad0b9dbfa65ecff3c996db6297e9979a0ed110d3fe2e2f6489ad6571",
+        "frame_gap_from_old_grasp": 43,
+        "stable_hold_steps_from_old_grasp": 2,
+        "different_threshold_hold_from_old_lift": false,
+        "old_lift_used_by_questions": 6,
+        "not_selected_replacement": true
+      },
+      "visual_screen_note": "信号close192→open217→close229；H27附近仍须确认实际主抓取，H36与原lift292同段。绿箱相对移动与高度变化重叠，不能从最后close机械划出独立抬升阶段。"
+    },
+    {
+      "episode_key": "usim_train_episode_001318",
+      "episode": 1318,
+      "task_text": "Pick up the red cylinder and transfer it to the box",
+      "task_family": "transfer",
+      "qa_questions": 10,
+      "source_files": {
+        "ego_video": {
+          "path": "usim/train/videos/chunk-001/observation.images.ego/episode_001318.mp4",
+          "sha256": "c46f9191da8e5907e5d2413242449eff8a70ca91d588db036bef5ba8bbdd4b72",
+          "pinned_hash_match": true
+        },
+        "parquet": {
+          "path": "usim/train/data/chunk-001/episode_001318.parquet",
+          "sha256": "ea02fbb80d387dcc1319d89280fb433d7b2a8ed6cfff7aa43eb514fcfcbc293d",
+          "pinned_hash_match": true
+        }
+      },
+      "decoded_frames": 549,
+      "annotation_path": "ENACT/data/usim_enact/usim-enact-v0.2/annotations/episodes/usim_train_episode_001318.json",
+      "annotation_sha256": "437ef1c2c739fbf65ee5e8d2ee85190b7bc0b6e96af03a1ada103a4c2c1baec6",
+      "old_frames": [
+        200,
+        245,
+        275,
+        352,
+        517
+      ],
+      "old_hold_records": [
+        {
+          "slot": 1,
+          "source_frame": 200,
+          "hold_index": 29,
+          "hold_length": 14,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep001318/old_slot_01_f00200.png",
+          "native_png_sha256": "94f79d4d755a7e86027dc5c03421e91782c14c0f174b9842a1d66f7de2d65d77"
+        },
+        {
+          "slot": 2,
+          "source_frame": 245,
+          "hold_index": 36,
+          "hold_length": 16,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep001318/old_slot_02_f00245.png",
+          "native_png_sha256": "3ed2e03930302b40d4817d12982bd8b976d72b8e043fa3eaff31742be652053c"
+        },
+        {
+          "slot": 3,
+          "source_frame": 275,
+          "hold_index": 40,
+          "hold_length": 18,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep001318/old_slot_03_f00275.png",
+          "native_png_sha256": "a6406ca866ff95a3d32ebe77716e6095d90cb362fce886b81914b63a59d69fcf"
+        },
+        {
+          "slot": 4,
+          "source_frame": 352,
+          "hold_index": 50,
+          "hold_length": 16,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep001318/old_slot_04_f00352.png",
+          "native_png_sha256": "ccb6c25dcf36428aa0acdfbf0f81f3cb1d00b0a7c0451acda826213b5307a9fb"
+        },
+        {
+          "slot": 5,
+          "source_frame": 517,
+          "hold_index": 66,
+          "hold_length": 14,
+          "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep001318/old_slot_05_f00517.png",
+          "native_png_sha256": "34e6331d79e58835a59cedf7907028587fc5b53c2702f5bd3f288de6232c093d"
+        }
+      ],
+      "old_spacing": [
+        {
+          "left": 200,
+          "right": 245,
+          "frame_gap": 45,
+          "threshold_segment_steps": 7,
+          "stable_hold_steps": 3
+        },
+        {
+          "left": 245,
+          "right": 275,
+          "frame_gap": 30,
+          "threshold_segment_steps": 4,
+          "stable_hold_steps": 2
+        },
+        {
+          "left": 275,
+          "right": 352,
+          "frame_gap": 77,
+          "threshold_segment_steps": 10,
+          "stable_hold_steps": 4
+        },
+        {
+          "left": 352,
+          "right": 517,
+          "frame_gap": 165,
+          "threshold_segment_steps": 16,
+          "stable_hold_steps": 10
+        }
+      ],
+      "signal": {
+        "events": [
+          {
+            "frame": 260,
+            "event": "close"
+          },
+          {
+            "frame": 532,
+            "event": "open"
+          }
+        ],
+        "main_close_signal_candidate": 260,
+        "main_close_visually_confirmed": false,
+        "release_after_main_close": 532,
+        "baseline_search_half_open": [
+          240,
+          380
+        ],
+        "minimum_frame": 278,
+        "minimum_value": 0.22883379459381104,
+        "robot_rise_proxy_frame": 310,
+        "proxy_window_raw": [
+          350,
+          370
+        ],
+        "proxy_window_available": [
+          350,
+          370
+        ]
+      },
+      "stable_overview": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep001318/stable_overview.png",
+      "reviewed_stable_hold_indices": [
+        32,
+        35,
+        36,
+        39,
+        40,
+        41,
+        44,
+        47,
+        50,
+        53,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        65,
+        66,
+        69,
+        72
+      ],
+      "old_min_frame_gap": 30,
+      "old_min_hold_length": 14,
+      "provisional_visual_inspection_frame": {
+        "hold_index": 47,
+        "frame": 333,
+        "hold": [
+          326,
+          341
+        ],
+        "length": 16,
+        "native_png": "ENACT/data/usim_enact/_review/dev_lift_onset/round_20261029_v1b/ep001318/hold_047_f00333.png",
+        "native_png_sha256": "76c515bd42c83fea005475314f35127a29e94d91aafe9e65301ae51c47562bb7",
+        "frame_gap_from_old_grasp": 58,
+        "stable_hold_steps_from_old_grasp": 3,
+        "different_threshold_hold_from_old_lift": true,
+        "old_lift_used_by_questions": 6,
+        "not_selected_replacement": true
+      },
+      "visual_screen_note": "H44/H47附近目标持有且绿箱相对运动已开始；后续长携带段及末段下降均可辨，但首个离底与运输分界仍需事件区间记录。"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "usim-dev-lift-preservation/v1",
+  "source_head": "3ee37bdbeb1f1567eb89b3c8ca087d5145dcbd2a",
+  "checked_files": 455,
+  "changed": [],
+  "new_files_in_protected_scopes": [],
+  "scope": [
+    "test-reserve original and reauthored annotation JSON",
+    "test-reserve review JSON",
+    "v0.2 annotation JSON and dataset manifest",
+    "protocol and historical run JSON/JSONL",
+    "curated v0.2 QA JSONL",
+    "original v0.2 annotation specification",
+    "pick/transfer onset draft"
+  ],
+  "old_material_preserved": true,
+  "model_api_calls": 0,
+  "annotation_writes": 0
+}

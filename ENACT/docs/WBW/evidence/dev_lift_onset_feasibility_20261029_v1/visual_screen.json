@@ -1,0 +1,41 @@
+{
+  "schema": "usim-dev-lift-visual-screen/v1",
+  "rule_version": "dev-lift-onset-feasibility-v1",
+  "date": "2026-10-29",
+  "reviewer_identity": "Codex AI agent; technical feasibility screen in the current chat",
+  "independent_double_annotation": false,
+  "blind_review_claimed": false,
+  "existing_annotation_metadata_seen": true,
+  "model_predictions_consulted": false,
+  "model_api_calls": 0,
+  "annotation_writes": 0,
+  "review_scope": "Chronological native-resolution stable-hold overviews from 45 frames before the last close signal to episode end; first episode also checked against full timeline and old-keyframe sheet. This is a candidate screen, not full predicate reannotation.",
+  "candidate_meaning": "A visible target carried by the gripper and sand visible below its image silhouette suggests a frame for closer review. It does not establish a half-width physical gap, the first eligible state, or a completed departure bracket.",
+  "common_unresolved_requirements": [
+    "No episode has a completed, separately documented last-supported A / first-separated B visual bracket in this screen.",
+    "No half-width gap is declared confirmed without a recheckable local seabed reference and object-width basis.",
+    "The provisional frames below are inspection targets, not selected replacement keyframes or accepted Lifted labels.",
+    "Transfer stage boundaries overlap in the visual screen and have not been accepted as disjoint phases."
+  ],
+  "items": [
+    {"episode": 104, "visual_candidate_hold_index": null, "inspection_hold_index": 39, "support_reference_hold_index": 28, "departure_bracket_confirmed": false, "half_width_gap_confirmed": false, "first_qualifying_hold_confirmed": false, "note_zh": "管端完整可见且随夹爪改变姿态；最低管端相对无纹理沙面的半宽间隙缺少可靠参照，保留未决，不能用管子中段升高作证。"},
+    {"episode": 175, "visual_candidate_hold_index": null, "inspection_hold_index": 24, "support_reference_hold_index": 16, "departure_bracket_confirmed": false, "half_width_gap_confirmed": false, "first_qualifying_hold_confirmed": false, "note_zh": "H16管子近乎平铺，H19后被斜持；H21/H24可见沙面背景，但最低管端到实际支撑面的距离不能据屏幕空白直接确认。"},
+    {"episode": 200, "visual_candidate_hold_index": 38, "support_reference_hold_index": 30, "departure_bracket_confirmed": false, "half_width_gap_confirmed": false, "first_qualifying_hold_confirmed": false, "note_zh": "蓝圆柱呈紫色；H31后姿态与末端共同变化，H38可作携带状态候选。H30/H31附近的支撑与首次分离仍未闭合，不能单凭姿态改变赋OnSeabed=false。"},
+    {"episode": 201, "visual_candidate_hold_index": 33, "support_reference_hold_index": 23, "departure_bracket_confirmed": false, "half_width_gap_confirmed": false, "first_qualifying_hold_confirmed": false, "note_zh": "H26后紫色目标被持有，H33候选可见最低端；画面中的小红鱼不是目标。沙面参照不足以定下首次半宽离底。"},
+    {"episode": 287, "visual_candidate_hold_index": 40, "support_reference_hold_index": 32, "departure_bracket_confirmed": false, "half_width_gap_confirmed": false, "first_qualifying_hold_confirmed": false, "note_zh": "H35/H36出现夹持姿态，H40可作后续候选；右下红色干扰物不纳入目标证据。最低端分离需要原生局部参照补证。"},
+    {"episode": 297, "visual_candidate_hold_index": 59, "support_reference_hold_index": 48, "departure_bracket_confirmed": false, "half_width_gap_confirmed": false, "first_qualifying_hold_confirmed": false, "note_zh": "H54后目标与末端共同运动，H59/H60处于携带状态；先前保持段间的支撑切换难从平滑沙面判定。"},
+    {"episode": 501, "visual_candidate_hold_index": 28, "support_reference_hold_index": 25, "departure_bracket_confirmed": false, "half_width_gap_confirmed": false, "first_qualifying_hold_confirmed": false, "note_zh": "闭合信号早于渲染抓取；H26以后目标横向被持有，H28是检查候选。不能把h上升或目标缩短的透视变化当作间隙量测。"},
+    {"episode": 533, "visual_candidate_hold_index": 30, "support_reference_hold_index": 22, "departure_bracket_confirmed": false, "half_width_gap_confirmed": false, "first_qualifying_hold_confirmed": false, "note_zh": "H25后紫色目标随末端运动，H30可供离底复核；原approach236到grasp260仅24帧，新草案25帧要求下需另行处理，换lift帧不能修复此问题。"},
+    {"episode": 552, "visual_candidate_hold_index": 35, "support_reference_hold_index": 30, "departure_bracket_confirmed": false, "half_width_gap_confirmed": false, "first_qualifying_hold_confirmed": false, "note_zh": "H31后红圆柱被夹持，H35为检查候选；H36/H37有后续姿态改变，应核对目标最低点及沙面参照，不把所有后续帧视作同一lift状态。"},
+    {"episode": 553, "visual_candidate_hold_index": 20, "support_reference_hold_index": null, "departure_bracket_confirmed": false, "half_width_gap_confirmed": false, "first_qualifying_hold_confirmed": false, "note_zh": "前段目标靠近画面下边缘；H13后被持有，H20可供检查。原start110落在运动阈值分段的单帧段，原支撑参考和稳定性均需复核。"},
+    {"episode": 555, "visual_candidate_hold_index": 31, "support_reference_hold_index": 23, "departure_bracket_confirmed": false, "half_width_gap_confirmed": false, "first_qualifying_hold_confirmed": false, "note_zh": "H24后红圆柱横向被夹持，H31最低端可见但影子／沙面参照需明确；没有据DVL低点把早段支撑自动判为true。"},
+    {"episode": 556, "visual_candidate_hold_index": 36, "support_reference_hold_index": 28, "departure_bracket_confirmed": false, "half_width_gap_confirmed": false, "first_qualifying_hold_confirmed": false, "note_zh": "H31/H34保持低位夹持，H36可供检查，H37为原lift所在段；紫色远处物体不是本条红目标。视觉支撑边界仍未定。"},
+    {"episode": 587, "visual_candidate_hold_index": 28, "support_reference_hold_index": 21, "departure_bracket_confirmed": false, "half_width_gap_confirmed": false, "first_qualifying_hold_confirmed": false, "note_zh": "H28保留可见红色携带目标，原lift也在此段。机器人高度诊断窗口完全越界，但这不能推出物体没有离底。"},
+    {"episode": 628, "visual_candidate_hold_index": 28, "support_reference_hold_index": 23, "departure_bracket_confirmed": false, "half_width_gap_confirmed": false, "first_qualifying_hold_confirmed": false, "note_zh": "蓝色干扰圆柱与红目标一度贴邻夹爪，后段蓝物体分离；H28可作红目标检查候选。需单独验证持有指代，不能把两物体合成一个目标轮廓。"},
+    {"episode": 653, "visual_candidate_hold_index": 28, "support_reference_hold_index": 21, "departure_bracket_confirmed": false, "half_width_gap_confirmed": false, "first_qualifying_hold_confirmed": false, "note_zh": "H22开始出现夹持姿态，H28与原lift249同段；可保留为检查候选，但未定位可复查的半宽阈值首次通过点。"},
+    {"episode": 756, "visual_candidate_hold_index": null, "inspection_hold_index": 59, "support_reference_hold_index": 39, "departure_bracket_confirmed": false, "half_width_gap_confirmed": false, "first_qualifying_hold_confirmed": false, "note_zh": "弯管的最低端随旋转改变，H52以后弯端朝下；最低端与沙面缺少可靠参照。不能沿用直管中段或夹爪高度代证。"},
+    {"episode": 1302, "visual_candidate_hold_index": 26, "support_reference_hold_index": 17, "departure_bracket_confirmed": false, "half_width_gap_confirmed": false, "first_qualifying_hold_confirmed": false, "transport_stage_boundary_status": "overlap_unresolved", "note_zh": "H25/H26附近目标被持有，绿箱相对位置随后持续变化；初次离底与搬运边界重叠。原末帧415在很晚的搬运段，另有start150到approach168仅18帧问题。"},
+    {"episode": 1304, "visual_candidate_hold_index": 36, "support_reference_hold_index": 27, "departure_bracket_confirmed": false, "half_width_gap_confirmed": false, "first_qualifying_hold_confirmed": false, "transport_stage_boundary_status": "overlap_unresolved", "note_zh": "信号close192→open217→close229；H27附近仍须确认实际主抓取，H36与原lift292同段。绿箱相对移动与高度变化重叠，不能从最后close机械划出独立抬升阶段。"},
+    {"episode": 1318, "visual_candidate_hold_index": 47, "support_reference_hold_index": 36, "departure_bracket_confirmed": false, "half_width_gap_confirmed": false, "first_qualifying_hold_confirmed": false, "transport_stage_boundary_status": "overlap_unresolved", "note_zh": "H44/H47附近目标持有且绿箱相对运动已开始；后续长携带段及末段下降均可辨，但首个离底与运输分界仍需事件区间记录。"}
+  ]
+}

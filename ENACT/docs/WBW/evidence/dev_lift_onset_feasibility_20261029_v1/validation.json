@@ -1,0 +1,12 @@
+{
+  "machine_summary_consistent": true,
+  "rule_and_probe_hashes_match": true,
+  "candidate_image_hashes_checked": 16,
+  "candidate_frame_spacing_passed": 16,
+  "local_links_checked": 16,
+  "broken_links": [],
+  "probe_compiles": true,
+  "protected_files_unchanged": 455,
+  "model_api_calls": 0,
+  "annotation_writes": 0
+}
